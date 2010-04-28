@@ -1,0 +1,173 @@
+
+pre { font-family: monospace; }
+hr { color:#ccc; height: 1px; background-color: #ccc; }
+sub { vertical-align: sub; }
+
+/********************************/
+/* Frames, spacing, link-to-top */
+/********************************/
+p.csc-linkToTop { text-align: right; }
+p.csc-linkToTop a { font-weight: bold; }
+
+.csc-frame { border: 0; }
+.csc-frame-invisible {}
+.csc-frame-rulerBefore { border-top: 1px solid #ccc; }
+.csc-frame-rulerAfter { border-bottom: 1px solid #ccc; }
+.csc-frame-indent { padding-left: 100px; }
+.csc-frame-indent3366 { padding-left: 33%; }
+.csc-frame-indent6633 { padding-right: 33%; }
+.csc-frame-frame1 { background-color: #f2f2f2; padding: 1em;  margin-bottom: 2em; }
+div.csc-frame-frame2 { background-color: #e5e5e5; padding: 1em;  margin-bottom: 2em; }
+
+div.csc-frame-frame1 h1, div.csc-frame-frame1 h2, div.csc-frame-frame1 h3, div.csc-frame-frame1 h4, div.csc-frame-frame1 h5 { margin-top: 2px; }
+div.csc-frame-frame2 h1, div.csc-frame-frame2 h2, div.csc-frame-frame2 h3, div.csc-frame-frame2 h4, div.csc-frame-frame2 h5 { margin-top: 2px; }
+
+
+/******************/
+/* Headers, plain */
+/******************/
+h1.csc-firstHeader, h2.csc-firstHeader, h3.csc-firstHeader, h4.csc-firstHeader, h5.csc-firstHeader, h6.csc-firstHeader { margin-top: 0; }
+
+
+/* Header date */
+p.csc-header-date { font-size: 90%; }
+
+/* Subheader, general */
+p.csc-subheader { }
+
+/*******************/
+/* RTE / Bodytext: */
+/*******************/
+.align-center { text-align: center; }
+.align-right { text-align: right; }
+
+/* RTE / table styling */
+table.contenttable { border: 1px #CFCECF solid; margin: 10px 0px 10px 0px; width: 100%; }
+table.contenttable tr td { padding: 0 3px 0px 3px; }
+table.contenttable tr { background-color: #f2f2f2; }
+.indent { margin-left:2em;}
+
+/**********/
+/* Images */
+/**********/
+
+/* Images / Captions */
+.csc-textpic-caption { font-size: 90%; line-height:1.2em; }
+
+/***************/
+/* Bulletlists */
+/***************/
+/* lists */
+ul, ol {margin-bottom:1em;}
+ol li { list-style-type:decimal; list-style-position:outside; margin-left:2em;}
+ul li { list-style-type:disc; list-style-position:outside; margin-left: 2em;}
+ul ul{margin-left:1em;}
+ol ol { margin-left:1.8em;}
+
+/* Bulletlists, general */
+ul.csc-bulletlist li {  }
+
+/* Bulletlists, specifically */
+ul.csc-bulletlist-0 { }
+ul.csc-bulletlist-1 li { list-style-type : decimal; }
+ul.csc-bulletlist-2 li { list-style-type : circle; }
+ul.csc-bulletlist-3 li { list-style-type : square; }
+
+
+/*********************/
+/* tables, generally */
+/*********************/
+table.contenttable p { }
+table.contenttable tr td { vertical-align: top; }
+
+/* tables, specifically */
+table.contenttable-0 p {  }
+
+table.contenttable-1 p {  }
+table.contenttable-1 tr.tr-0 td p { font-weight: bold; }
+table.contenttable-1 tr.tr-0 td { background-color: #e5e5e5; }
+
+table.contenttable-2 p {  }
+table.contenttable-2 tr td.td-0 { background-color: #f2f2f2; }
+table.contenttable-2 tr td.td-0 p { font-weight: bold; }
+
+table.contenttable-3 p {  }
+table.contenttable-3 tr td.td-0, table.contenttable-3 tr.tr-0 td { background-color: #e5e5e5;}
+table.contenttable-3 tr td.td-0 p, table.contenttable-3 tr.tr-0 td p { font-weight: bold; }
+
+
+/************************/
+/* Filelinks, generally */
+/************************/
+table.csc-uploads { border: 0; margin-bottom: 2em; }
+table.csc-uploads tr td p { background-color : transparent; }
+table.csc-uploads tr td { vertical-align : top; padding: 0.5em; }
+table.csc-uploads tr.tr-even { background-color: #e5e5e5; }
+table.csc-uploads tr.tr-odd { background-color: #f2f2f2; }
+table.csc-uploads tr td.csc-uploads-icon { padding: 0.5em 0 0.5em 0.5em; width: 1%; text-align: center; }
+table.csc-uploads tr td.csc-uploads-fileName { width: 80%; padding-right: 0;}
+table.csc-uploads tr td.csc-uploads-fileName p { margin: 0; }
+table.csc-uploads tr td.csc-uploads-fileName p a { font-weight: bold; }
+table.csc-uploads tr td.csc-uploads-fileName p.csc-uploads-description {margin-top: 0.5em; }
+table.csc-uploads tr td.csc-uploads-fileSize { white-space: nowrap; text-align: right; }
+
+
+/*****************/
+/* Various forms */
+/*****************/
+
+/* Email, Login and Search forms generally: */
+fieldset { border: 0; }
+
+/* Email form, specifically */
+form .csc-mailform-field { margin: 0 0 0.5em; 0; clear:both; }
+form .csc-mailform-field label { float: left; text-align: right; margin-right: 5%; width:30%; }
+form .csc-mailform-field input, .csc-mailform-field textarea, .csc-mailform-field select, .csc-mailform-radio fieldset { width:50%; }
+form .csc-mailform-field input.csc-mailform-submit, form .csc-mailform-field input.csc-mailform-check, form .csc-mailform-field input.csc-mailform-radio { width:auto; }
+form .csc-mailform-field input.csc-mailform-submit { margin-left: 35% !important;/* see label width + margin*/ }
+form .csc-mailform-radio legend { display: none; }
+form .csc-mailform-radio fieldset input { float: none; }
+form .csc-mailform-radio fieldset label { text-align: left; float: none; width: auto; margin: 0; }
+form .csc-mailform-field input.mf-check, form .csc-mailform-field input.csc-mailform-radio { width: auto; }
+form .csc-mailform-field input.csc-mailform-radio { margin-right: 0.5em; }
+
+/* fe login*/
+
+.tx-felogin-pi1 form div { margin: 0 0 0.5em; 0; clear:both; }
+.tx-felogin-pi1 legend { color:#515151; }
+/*****************************/
+/* Menu / Sitemap, generally */
+/*****************************/
+
+ul.csc-menu { }
+ul.csc-menu a { }
+ul.csc-menu a:hover { }
+ul.csc-menu .csc-section { font-weight: normal; margin-left: 20px; font-style: italic; }
+
+/* Menu / Sitemap, "Menu of these pages" */
+ul.csc-menu-def {  }
+
+/* Menu / Sitemap, "Menu of subpages to these pages" */
+ul.csc-menu-1 { }
+
+/* Menu / Sitemap, "Sitemap" */
+div.csc-sitemap { }
+div.csc-sitemap ul { }
+
+/* Menu / Sitemap, "Section index (pagecontent w/Index checked)" */
+ul.csc-menu-3 { }
+ul.csc-menu-3 li.csc-section { }
+
+/* Menu / Sitemap, "Menu of subpages to these pages (with abstract)" */
+dl.csc-menu-4 { }
+dl.csc-menu-4 dt { }
+dl.csc-menu-4 dd { font-weight: normal; font-style: italic; margin-top: 0; padding: 0 2px 2px 20px; }
+
+/* Menu / Sitemap, "Recently updated pages" */
+ul.csc-menu-5 { }
+
+/* Menu / Sitemap, "Related pages (based on keywords)" */
+ul.csc-menu-6 { }
+
+/* Menu / Sitemap, "Menu of subpages to these pages + sections" */
+ul.csc-menu-7 { }

@@ -1,0 +1,6 @@
+
+page = Page
+page.template = Template
+page.template {
+
+}
