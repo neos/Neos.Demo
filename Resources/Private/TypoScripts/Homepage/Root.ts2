@@ -1,6 +1,4 @@
-
 page = Page
-page.template = Template
-page.template {
 
-}
+page.template = Template
+page.template.source = 'package://PhoenixDemoTypo3Org/Private/Templates/Page/Default.html'
