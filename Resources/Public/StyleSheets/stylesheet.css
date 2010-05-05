@@ -95,7 +95,7 @@ div#mainContent {
 /* STYLING AND POSITIONING OF INDIVIDUAL GENERAL ELEMENTS */
 /**********************************************************/
 body {
-	background: #494949 url(../images/bg.gif) top left repeat-x;
+	background: #494949 url(../Images/bg.gif) top left repeat-x;
 	}
 html {
 	background:#494949;
@@ -104,10 +104,10 @@ strong {
 	font-weight:bold;
 	}
 div#header {
-	background:#3c8dd9 url(../images/header_overlay.png);
+	background:#3c8dd9 url(../Images/header_overlay.png);
 	}
 div#contentWrap {
-	background: url(../images/bg_contentWrap.gif) top left repeat-y;
+	background: url(../Images/bg_contentWrap.gif) top left repeat-y;
 	overflow:hidden;
 	clear:both
 	}
@@ -117,7 +117,7 @@ div#secondary {
 	margin-top:48px;
 	}
 div#footer {
-	background:url(../images/bg_footer.jpg) top center no-repeat;
+	background:url(../Images/bg_footer.jpg) top center no-repeat;
 	}
 div#footer .footerFrame {
 	float:left;
@@ -148,7 +148,7 @@ div.secondaryContentSection {
 	font-size:90%;
 	}
 div#navigationFirstLevel {
-	background: #3c8dd9 url(../images/navOverlay.png) top left repeat-x;
+	background: #3c8dd9 url(../Images/navOverlay.png) top left repeat-x;
 	}
 div#navigationFirstLevelMenu ul {
 	overflow:hidden;
@@ -200,7 +200,7 @@ div#navigationSecondLevelMenu li.active ul li {
 	font-weight:normal;
 	}
 div#navigationSecondLevelMenu li.selected {
-	background: #fff url(../images/bg_liCurrent.gif) top right no-repeat;
+	background: #fff url(../Images/bg_liCurrent.gif) top right no-repeat;
 	font-weight: bold !important;
 	border-top:1px solid #ccc;
 	}
@@ -248,7 +248,7 @@ div#navigationFirstLevelMenu ul li a.selected, div#navigationFirstLevelMenu ul l
 	background:#353535;
 	}
 div#navigationFirstLevelMenu ul li a:hover {
-	background: url(../images/navButtonOverlay.png);
+	background: url(../Images/navButtonOverlay.png);
 	text-decoration: none;
 	}
 div#breadcrumb a {
@@ -346,7 +346,7 @@ div#searchBox {
 	position:relative;
 	width: 168px;
 	height: 21px;
-	background: url(../images/bg_searchInput.gif) no-repeat;
+	background: url(../Images/bg_searchInput.gif) no-repeat;
 	margin-left:8px;
 	}
 div#searchBox input#inputText {
