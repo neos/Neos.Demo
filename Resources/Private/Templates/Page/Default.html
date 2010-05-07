@@ -53,9 +53,18 @@
 						<p><a href="#">{title}</a></p>
 					</div>
 					<div id="mainContent">
-						{f:raw(value: sections.default)}
+						{f:raw(value: sections.main)}
 					</div>
 				</div>
+				<f:if condition="{sections.secondary}">
+					<div id="secondary">
+						<div id="secondayContent">
+							<div class="secondaryContentSection">
+								{f:raw(value: sections.secondary)}
+							</div>
+						</div>
+					</div>
+				</f:if>
 			</div>
 			<div id="footer">
 				<h3>Footer</h3>
