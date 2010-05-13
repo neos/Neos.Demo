@@ -1,5 +1,5 @@
 
-pre { font-family: monospace; }
+pre { font-family: monospace; overflow: auto; }
 hr { color:#ccc; height: 1px; background-color: #ccc; }
 sub { vertical-align: sub; }
 
