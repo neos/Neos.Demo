@@ -2,7 +2,7 @@
  * Root TypoScript template for the TYPO3 Phoenix Demo Site
  */
 page = Page
-page.template.source = 'package://PhoenixDemoTypo3Org/Private/Templates/Page/Default.html'
+page.template.source = 'resource://PhoenixDemoTypo3Org/Private/Templates/Page/Default.html'
 
 # Sample processors:
 page.title << 1.wrap('to ', '!')
