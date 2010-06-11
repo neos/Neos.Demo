@@ -40,9 +40,7 @@
 			<div id="navigationFirstLevel">
 				<h2>First Level Navigation</h2>
 				<div id="navigationFirstLevelMenu">
-					<ul>
-						<li><a href="#" class="active">Phoenix Demo</a></li>
-					</ul>
+					{parts.firstLevelMenu}
 				</div>
 			</div>
 			<div id="contentWrap">
@@ -56,14 +54,14 @@
 						<p><a href="#">{title}</a></p>
 					</div>
 					<div id="mainContent">
-						{sections.main}
+						{content.main}
 					</div>
 				</div>
-				<f:if condition="{sections.secondary}">
+				<f:if condition="{content.secondary}">
 					<div id="secondary">
 						<div id="secondayContent">
 							<div class="secondaryContentSection">
-								{sections.secondary}
+								{content.secondary}
 							</div>
 						</div>
 					</div>
