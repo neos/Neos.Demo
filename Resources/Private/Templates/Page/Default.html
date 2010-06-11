@@ -14,7 +14,7 @@
 		<script type="text/javascript" src="{f:uri.resource(path: 'JavaScripts/Cookies.js', package:'PhoenixDemoTypo3Org')}"></script>
 		<script type="text/javascript" src="{f:uri.resource(path: 'JavaScripts/LoginHelper.js', package:'PhoenixDemoTypo3Org')}"></script>
 	</head>
-	<body data-identity="{identity}">
+	<body data-identity="{f:persistence.identity(object: domainModel)}">
 		<div id="navigationAids">
 			<ul>
 				<li><a href="#navigation">Skip to navigation</a></li>
