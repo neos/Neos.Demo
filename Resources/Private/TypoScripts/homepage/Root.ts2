@@ -10,7 +10,16 @@ page.template.source = 'resource://PhoenixDemoTypo3Org/Private/Templates/Page/De
 page.title << 1.wrap('to ', '!')
 page.title << 2.wrap('Welcome ', '')
 
-# Sample menu:
+page.parts {
 
-page.parts.firstLevelMenu = Menu
+	firstLevelMenu = Menu
+	firstLevelMenu {
+		firstLevel = 1
+		lastLevel = 3
+	}
 
+	breadcrumbMenu = BreadcrumbMenu
+	breadcrumbMenu {
+		lastLevel = -1
+	}
+}
