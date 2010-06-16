@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\Site" nodename="phoenix.demo.typo3.org">
+		<name>TYPO3 Phoenix Demo Site</name>
+		<state>1</state>
+		<section name="default">
+			<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="homepage" locale="mul_ZZ">
+				<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
+					<title>TYPO3 Phoenix</title>
+				</content>
+				<section name="default">
+					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="anotherpage" locale="mul_ZZ">
+						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
+							<title>Another Page</title>
+						</content>
+						<section name="main">
+							<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="text1" locale="mul_ZZ">
+								<content uuid="" type="F3\TYPO3\Domain\Model\Content\Text" locale="mul_ZZ">
+									<headline>Want More?</headline>
+									<text><![CDATA[This is another page which exists for the solely purpose to demonstrate sub pages in TYPO3 Phoenix.]]></text>
+								</content>
+							</structure>
+						</section>
+					</structure>
+				</section>
+				<section name="main">
+					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="text1" locale="mul_ZZ">
+						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Text" locale="mul_ZZ">
+							<headline>TYPO3 Phoenix Hatched</headline>
+							<text><![CDATA[The fact that you can read these lines means that TYPO3 Phoenix is able to render content. This page was automatically created by our demo setup controller.</p>
+<p>There is even <a href="homepage/anotherpage.html">another page</a> which demonstrates that support for sub pages is also implemented already.]]></text>
+						</content>
+					</structure>
+					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="text2" locale="mul_ZZ">
+						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Text" locale="mul_ZZ">
+							<headline>TypoScript</headline>
+							<text><![CDATA[There's a TypoScript template which renders this page, check it out at <code>Resources/Private/TypoScripts/homepage/Root.ts2</code> in the PhoenixDemoTypo3Org package]]></text>
+						</content>
+					</structure>
+					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="text3" locale="mul_ZZ">
+						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Text" locale="mul_ZZ">
+							<headline>PHP</headline>
+							<text><![CDATA[The content for this page was created by importing the XML file found at <code>Resources/Private/Content/Content.xml</code>in the PhoenixDemoTypo3Org package.]]></text>
+						</content>
+					</structure>
+				</section>
+				<section name="secondary">
+					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="samplecontent" locale="mul_ZZ">
+						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Text" locale="mul_ZZ">
+							<headline>Latest Tweet</headline>
+							<text><![CDATA[Go to twitter.com and search for TYPO3 Phoenix yourself :)]]></text>
+						</content>
+					</structure>
+				</section>
+			</structure>
+		</section>
+	</structure>
+</root>
