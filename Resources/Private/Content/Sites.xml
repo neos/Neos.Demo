@@ -13,11 +13,26 @@
 						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
 							<title>Another Page</title>
 						</content>
+						<section name="default">
+							<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="thirdlevelpage" locale="mul_ZZ">
+								<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
+									<title>Page on the third level</title>
+								</content>
+								<section name="main">
+									<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="text1" locale="mul_ZZ">
+										<content uuid="" type="F3\TYPO3\Domain\Model\Content\Text" locale="mul_ZZ">
+											<headline>Wow, that can't be true</headline>
+											<text><![CDATA[Here is yet more content, even on the third level.]]></text>
+										</content>
+									</structure>
+								</section>
+							</structure>
+						</section>
 						<section name="main">
 							<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="text1" locale="mul_ZZ">
 								<content uuid="" type="F3\TYPO3\Domain\Model\Content\Text" locale="mul_ZZ">
 									<headline>Want More?</headline>
-									<text><![CDATA[This is another page which exists for the solely purpose to demonstrate sub pages in TYPO3 Phoenix.]]></text>
+									<text><![CDATA[This is another page which exists for the solely purpose to demonstrate sub pages in TYPO3 Phoenix. And you know what? There is even a page <a href="homepage/anotherpage/thirdlevelpage.html">on the third level</a>]]></text>
 								</content>
 							</structure>
 						</section>
