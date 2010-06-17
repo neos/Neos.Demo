@@ -37,6 +37,50 @@
 							</structure>
 						</section>
 					</structure>
+					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="secondpage" locale="mul_ZZ">
+						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
+							<title>Second Page</title>
+						</content>
+						<section name="default">
+							<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="subpage1" locale="mul_ZZ">
+								<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
+									<title>First Subpage</title>
+								</content>
+								<section name="default">
+									<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="subsubpage1" locale="mul_ZZ">
+										<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
+											<title>First Sub-Subpage</title>
+										</content>
+									</structure>
+								</section>
+							</structure>
+							<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="subpage2" locale="mul_ZZ">
+								<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
+									<title>Second Subpage</title>
+								</content>
+							</structure>
+							<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="subpage3" locale="mul_ZZ">
+								<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
+									<title>Third Subpage</title>
+								</content>
+							</structure>
+						</section>
+					</structure>
+					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="thirdpage" locale="mul_ZZ">
+						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
+							<title>Third Page</title>
+						</content>
+					</structure>
+					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="fourthpage" locale="mul_ZZ">
+						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
+							<title>Fourth Page</title>
+						</content>
+					</structure>
+					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="fifthpage" locale="mul_ZZ">
+						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
+							<title>Fifth Page</title>
+						</content>
+					</structure>
 				</section>
 				<section name="main">
 					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="text1" locale="mul_ZZ">
