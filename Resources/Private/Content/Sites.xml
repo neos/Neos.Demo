@@ -6,7 +6,7 @@
 		<section name="default">
 			<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="homepage" locale="mul_ZZ">
 				<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
-					<title>TYPO3 Phoenix</title>
+					<title>Home</title>
 				</content>
 				<section name="default">
 					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="anotherpage" locale="mul_ZZ">

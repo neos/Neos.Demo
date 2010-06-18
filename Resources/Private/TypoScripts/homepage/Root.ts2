@@ -5,21 +5,20 @@ page = Page
 page.content = Content
 page.template.source = 'resource://PhoenixDemoTypo3Org/Private/Templates/Page/Default.html'
 
-# Sample processors:
-
-page.title << 1.wrap('to ', '!')
-page.title << 2.wrap('Welcome ', '')
+# Other parts of the page:
 
 page.parts {
+
+	breadcrumbMenu = BreadcrumbMenu
 
 	firstLevelMenu = Menu
 	firstLevelMenu {
 		firstLevel = 1
-		lastLevel = 3
+		lastLevel = 1
 	}
 
-	breadcrumbMenu = BreadcrumbMenu
-	breadcrumbMenu {
-		lastLevel = -1
+	secondLevelMenu = Menu
+	secondLevelMenu {
+		firstLevel = 2
 	}
 }
