@@ -13,12 +13,13 @@ page.parts {
 
 	firstLevelMenu = Menu
 	firstLevelMenu {
-		firstLevel = 1
-		lastLevel = 1
+		entryLevel = 2
 	}
 
 	secondLevelMenu = Menu
 	secondLevelMenu {
-		firstLevel = 2
+		entryLevel = 2
+		maximumLevels = 2
 	}
+
 }
