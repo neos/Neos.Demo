@@ -2,8 +2,9 @@
  * Root TypoScript template for the TYPO3 Phoenix Demo Site
  */
 page = Page
-page.content = Content
-page.template.source = 'resource://PhoenixDemoTypo3Org/Private/Templates/Page/Default.html'
+page.body = Template
+page.body.source = 'resource://PhoenixDemoTypo3Org/Private/Templates/Page/Default.html'
+page.body.renderSection = "body"
 
 # Other parts of the page:
 

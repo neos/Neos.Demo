@@ -10,76 +10,78 @@
 		<meta name="DC.creator" content="" />
 		<f:base />
 		<title>TYPO3 Phoenix Demo Template</title>
-		<link rel="stylesheet" type="text/css" href="{f:uri.resource(path: 'StyleSheets/stylesheet.css', package:'PhoenixDemoTypo3Org')}" />
-		<script type="text/javascript" src="{f:uri.resource(path: 'JavaScripts/Cookies.js', package:'PhoenixDemoTypo3Org')}"></script>
-		<script type="text/javascript" src="{f:uri.resource(path: 'JavaScripts/LoginHelper.js', package:'PhoenixDemoTypo3Org')}"></script>
+		<link rel="stylesheet" type="text/css" href="../../../Public/StyleSheets/stylesheet.css" />
+		<script type="text/javascript" src="../../../Public/JavaScripts/Cookies.js"></script>
+		<script type="text/javascript" src="../../../Public/JavaScripts/LoginHelper.js"></script>
 	</head>
 	<body data-identity="{f:persistence.identity(object: domainModel)}">
-		<div id="navigationAids">
-			<ul>
-				<li><a href="#navigation">Skip to navigation</a></li>
-				<li><a href="#mainContent">Skip to content</a></li>
-			</ul>
-		</div>
-		<div id="outerWrap">
-			<div id="header">
-				<h1>TYPO3 Phoenix Demo Site</h1>
-				<div id="topMenu">
-					<ul>
-						<li><f:link.action action="index" controller="Backend\Backend" package="TYPO3" target="_top">Backend login</f:link.action></li>
-					</ul>
-				</div>
-				<div id="searchBox">
-					<form id="search_form" method="post" action="/">
-						<input type="text" id="inputText" value="Future Search" />
-						<input type="image" src="{f:uri.resource(path: 'Images/bg_searchButton.gif', package:'PhoenixDemoTypo3Org')}" width="20" height="20" id="inputButton" alt="Search" title="Search" />
-					</form>
-				</div>
+		<f:section name="body">
+			<div id="navigationAids">
+				<ul>
+					<li><a href="#navigation">Skip to navigation</a></li>
+					<li><a href="#mainContent">Skip to content</a></li>
+				</ul>
+			</div>
+			<div id="outerWrap">
+				<div id="header">
+					<h1>TYPO3 Phoenix Demo Site</h1>
+					<div id="topMenu">
+						<ul>
+							<li><f:link.action action="index" controller="Backend\Backend" package="TYPO3" target="_top">Backend login</f:link.action></li>
+						</ul>
+					</div>
+					<div id="searchBox">
+						<form id="search_form" method="post" action="/">
+							<input type="text" id="inputText" value="Future Search" />
+							<input type="image" src="../../../Public/Images/bg_searchButton.gif" width="20" height="20" id="inputButton" alt="Search" title="Search" />
+						</form>
+					</div>
 
-			</div>
-			<div id="navigationFirstLevel">
-				<h2>First Level Navigation</h2>
-				<div id="navigationFirstLevelMenu">
-					{parts.firstLevelMenu}
 				</div>
-			</div>
-			<div id="contentWrap">
-				<div id="navigationSecondLevel">
-					<div id="navigationSecondLevelMenu">
-						{parts.secondLevelMenu}
-					</div>
-					<div id="navigationContent">
-						<p>This website demonstrates a few basic features of TYPO3 Phoenix, the next generation of the TYPO3 CMS.</p>
+				<div id="navigationFirstLevel">
+					<h2>First Level Navigation</h2>
+					<div id="navigationFirstLevelMenu">
+						{parts.firstLevelMenu}
 					</div>
 				</div>
-				<div id="main">
-					<div id="breadcrumb">
-						{parts.breadcrumbMenu}
-					</div>
-					<div id="mainContent">
-						{content.main}
-					</div>
-				</div>
-				<f:if condition="{content.secondary}">
-					<div id="secondary">
-						<div id="secondayContent">
-							<div class="secondaryContentSection">
-								{content.secondary}
-							</div>
+				<div id="contentWrap">
+					<div id="navigationSecondLevel">
+						<div id="navigationSecondLevelMenu">
+							{parts.secondLevelMenu}
+						</div>
+						<div id="navigationContent">
+							<p>This website demonstrates a few basic features of TYPO3 Phoenix, the next generation of the TYPO3 CMS.</p>
 						</div>
 					</div>
-				</f:if>
-			</div>
-			<div id="footer">
-				<h3>Footer</h3>
-				<div id="footerMenu">
-					<p>
-						<a href="http://www.typo3.org/">TYPO3 Phoenix</a> &middot;
-						<a href="http://flow3.typo3.org">Powered by FLOW3</a>
-						<img src="{f:uri.resource(path: 'Images/FLOW3-Logo-11px.png', package:'PhoenixDemoTypo3Org')}" width="11" height="11" alt="FLOW3 Logo" />
-					</p>
+					<div id="main">
+						<div id="breadcrumb">
+							{parts.breadcrumbMenu}
+						</div>
+						<div id="mainContent">
+							{content.main}
+						</div>
+					</div>
+					<f:if condition="{content.secondary}">
+						<div id="secondary">
+							<div id="secondayContent">
+								<div class="secondaryContentSection">
+									{content.secondary}
+								</div>
+							</div>
+						</div>
+					</f:if>
+				</div>
+				<div id="footer">
+					<h3>Footer</h3>
+					<div id="footerMenu">
+						<p>
+							<a href="http://www.typo3.org/">TYPO3 Phoenix</a> &middot;
+							<a href="http://flow3.typo3.org">Powered by FLOW3</a>
+							<img src="../../../Public/Images/FLOW3-Logo-11px.png" width="11" height="11" alt="FLOW3 Logo" />
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
+		</f:section>
 	</body>
 </html>
