@@ -6,6 +6,21 @@ page.body = Template
 page.body.source = 'resource://PhoenixDemoTypo3Org/Private/Templates/Page/Default.html'
 page.body.sectionName = "body"
 
+page.head {
+	javaScripts {
+		typo3Cookies = JavaScript
+		typo3Cookies.source = 'resource://PhoenixDemoTypo3Org/Public/JavaScripts/Cookies.js'
+
+		typo3LoginHelper = JavaScript
+		typo3LoginHelper.source = 'resource://PhoenixDemoTypo3Org/Public/JavaScripts/LoginHelper.js'
+	}
+	stylesheets {
+		typo3Stylesheet = Stylesheet
+		typo3Stylesheet.source = 'resource://PhoenixDemoTypo3Org/Public/StyleSheets/stylesheet.css'
+		typo3Stylesheet.media = 'screen'
+	}
+}
+
 # Other parts of the page:
 
 page.parts {
