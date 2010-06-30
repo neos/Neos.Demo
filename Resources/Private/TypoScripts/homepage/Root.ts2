@@ -4,7 +4,7 @@
 page = Page
 page.body = Template
 page.body.source = 'resource://PhoenixDemoTypo3Org/Private/Templates/Page/Default.html'
-page.body.renderSection = "body"
+page.body.sectionName = "body"
 
 # Other parts of the page:
 
