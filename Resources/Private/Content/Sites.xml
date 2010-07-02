@@ -84,6 +84,11 @@
 				</section>
 				<section name="main">
 					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="text1" locale="mul_ZZ">
+						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Block" locale="mul_ZZ">
+							<html><![CDATA[HTML which should be edited.]]></html>
+						</content>
+					</structure>
+					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="text1" locale="mul_ZZ">
 						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Text" locale="mul_ZZ">
 							<headline>TYPO3 Phoenix Hatched</headline>
 							<text><![CDATA[The fact that you can read these lines means that TYPO3 Phoenix is able to render content. This page was automatically created by our demo setup controller.</p>
