@@ -83,7 +83,7 @@
 					</structure>
 				</section>
 				<section name="main">
-					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="text1" locale="mul_ZZ">
+					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="text4" locale="mul_ZZ">
 						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Block" locale="mul_ZZ">
 							<html><![CDATA[HTML which should be edited.]]></html>
 						</content>
