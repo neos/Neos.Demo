@@ -115,37 +115,39 @@
 							<text><![CDATA[
 <script src="http://widgets.twimg.com/j/2/widget.js"></script>
 <script>
-new TWTR.Widget({
-  version: 2,
-  type: 'search',
-  search: 'TYPO3 Phoenix',
-  interval: 6000,
-  //title: 'Latest tweets about',
-  subject: 'on TYPO3 Phoenix',
-  width: 'auto',
-  height: 300,
-  theme: {
-    shell: {
-      background: '#F2F2F2',
-      color: '#000000'
-    },
-    tweets: {
-      background: '#F2F2F2',
-      color: '#000000',
-      links: '#f18d0b'
-    }
-  },
-  features: {
-    scrollbar: false,
-    loop: true,
-    live: true,
-    hashtags: true,
-    timestamp: true,
-    avatars: false,
-    toptweets: true,
-    behavior: 'default'
-  }
-}).render().start();
+if (typeof TWTR != 'undefined') {
+	new TWTR.Widget({
+	  version: 2,
+	  type: 'search',
+	  search: 'TYPO3 Phoenix',
+	  interval: 6000,
+	  //title: 'Latest tweets about',
+	  subject: 'on TYPO3 Phoenix',
+	  width: 'auto',
+	  height: 300,
+	  theme: {
+		shell: {
+		  background: '#F2F2F2',
+		  color: '#000000'
+		},
+		tweets: {
+		  background: '#F2F2F2',
+		  color: '#000000',
+		  links: '#f18d0b'
+		}
+	  },
+	  features: {
+		scrollbar: false,
+		loop: true,
+		live: true,
+		hashtags: true,
+		timestamp: true,
+		avatars: false,
+		toptweets: true,
+		behavior: 'default'
+	  }
+	}).render().start();
+}
 </script>							]]></text>
 						</content>
 					</structure>
