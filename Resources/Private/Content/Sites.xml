@@ -92,8 +92,8 @@
 					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="text1" locale="mul_ZZ">
 						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Block" locale="mul_ZZ">
 							<headline>TYPO3 Phoenix Hatched</headline>
-							<html><![CDATA[The fact that you can read these lines means that TYPO3 Phoenix is able to render content. This page was automatically created by our demo setup controller.</p>
-<p>There is even <a href="homepage/anotherpage.html">another page</a> which demonstrates that support for sub pages is also implemented already.]]></html>
+							<html><![CDATA[The fact that you can read these lines means that TYPO3 Phoenix is able to render content. This page was automatically created by our demo setup controller.
+<br /><br />There is even <a href="homepage/anotherpage.html">another page</a> which demonstrates that support for sub pages is also implemented already.]]></html>
 						</content>
 					</structure>
 					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="text2" locale="mul_ZZ">
