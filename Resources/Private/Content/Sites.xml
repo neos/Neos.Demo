@@ -1,159 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\Site" nodename="phoenix.demo.typo3.org">
-		<name>TYPO3 Phoenix Demo Site</name>
-		<state>1</state>
-		<section name="default">
-			<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="homepage" locale="mul_ZZ">
-				<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
-					<title>Home</title>
-				</content>
-				<section name="default">
-					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="anotherpage" locale="mul_ZZ">
-						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
-							<title>Another Page</title>
-						</content>
-						<section name="default">
-							<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="thirdlevelpage" locale="mul_ZZ">
-								<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
-									<title>Page on the third level</title>
-								</content>
-								<section name="main">
-									<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="text1" locale="mul_ZZ">
-										<content uuid="" type="F3\TYPO3\Domain\Model\Content\Block" locale="mul_ZZ">
-											<headline>Wow, that can't be true</headline>
-											<html><![CDATA[Here is yet more content, even on the third level.]]></html>
-										</content>
-									</structure>
-								</section>
-							</structure>
-						</section>
-						<section name="main">
-							<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="text1" locale="mul_ZZ">
-								<content uuid="" type="F3\TYPO3\Domain\Model\Content\Block" locale="mul_ZZ">
-									<headline>Want More?</headline>
-									<html><![CDATA[This is another page which exists for the sole purpose to demonstrate sub pages in TYPO3 Phoenix. And you know what? There is even a page <a href="homepage/anotherpage/thirdlevelpage.html">on the third level</a>]]></html>
-								</content>
-							</structure>
-						</section>
-					</structure>
-					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="secondpage" locale="mul_ZZ">
-						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
-							<title>Second Page</title>
-						</content>
-						<section name="default">
-							<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="subpage1" locale="mul_ZZ">
-								<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
-									<title>First Subpage</title>
-								</content>
-								<section name="default">
-									<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="subsubpage1" locale="mul_ZZ">
-										<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
-											<title>First Sub-Subpage</title>
-										</content>
-									</structure>
-								</section>
-							</structure>
-							<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="subpage2" locale="mul_ZZ">
-								<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
-									<title>Second Subpage</title>
-								</content>
-							</structure>
-							<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="subpage3" locale="mul_ZZ">
-								<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
-									<title>Third Subpage</title>
-								</content>
-							</structure>
-						</section>
-					</structure>
-					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="thirdpage" locale="mul_ZZ">
-						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
-							<title>Third Page</title>
-						</content>
-					</structure>
-					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="fourthpage" locale="mul_ZZ">
-						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
-							<title>Fourth Page</title>
-						</content>
-					</structure>
-					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="fifthpage" locale="mul_ZZ">
-						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Page" locale="mul_ZZ">
-							<title>Fifth Page</title>
-						</content>
-					</structure>
-				</section>
-				<section name="main">
-					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="text4" locale="mul_ZZ">
-						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Block" locale="mul_ZZ">
-							<headline>A headline which should be edited.</headline>
-							<html><![CDATA[HTML which should be edited.]]></html>
-						</content>
-					</structure>
-					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="text1" locale="mul_ZZ">
-						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Block" locale="mul_ZZ">
-							<headline>TYPO3 Phoenix Hatched</headline>
-							<html><![CDATA[The fact that you can read these lines means that TYPO3 Phoenix is able to render content. This page was automatically created by our demo setup controller.
-<br /><br />There is even <a href="homepage/anotherpage.html">another page</a> which demonstrates that support for sub pages is also implemented already.]]></html>
-						</content>
-					</structure>
-					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="text2" locale="mul_ZZ">
-						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Block" locale="mul_ZZ">
-							<headline>TypoScript</headline>
-							<html><![CDATA[There's a TypoScript template which renders this page, check it out at <code>Resources/Private/TypoScripts/homepage/Root.ts2</code> in the PhoenixDemoTypo3Org package.]]></html>
-						</content>
-					</structure>
-					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="text3" locale="mul_ZZ">
-						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Block" locale="mul_ZZ">
-							<headline>Content</headline>
-							<html><![CDATA[The content for this site was created by importing the XML file found at <code>Resources/Private/Content/Content.xml</code>in the PhoenixDemoTypo3Org package.]]></html>
-						</content>
-					</structure>
-				</section>
-				<section name="secondary">
-					<structure uuid="" type="F3\TYPO3\Domain\Model\Structure\ContentNode" nodename="samplecontent" locale="mul_ZZ">
-						<content uuid="" type="F3\TYPO3\Domain\Model\Content\Text" locale="mul_ZZ">
-							<headline>Latest Tweets</headline>
-							<text><![CDATA[
-<script src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
-if (typeof TWTR != 'undefined') {
-	new TWTR.Widget({
-	  version: 2,
-	  type: 'search',
-	  search: 'TYPO3 Phoenix',
-	  interval: 6000,
-	  //title: 'Latest tweets about',
-	  subject: 'on TYPO3 Phoenix',
-	  width: 'auto',
-	  height: 300,
-	  theme: {
-		shell: {
-		  background: '#F2F2F2',
-		  color: '#000000'
-		},
-		tweets: {
-		  background: '#F2F2F2',
-		  color: '#000000',
-		  links: '#f18d0b'
-		}
-	  },
-	  features: {
-		scrollbar: false,
-		loop: true,
-		live: true,
-		hashtags: true,
-		timestamp: true,
-		avatars: false,
-		toptweets: true,
-		behavior: 'default'
-	  }
-	}).render().start();
-}
-</script>							]]></text>
-						</content>
-					</structure>
-				</section>
-			</structure>
-		</section>
-	</structure>
+	<site uuid="" nodeName="phoenix.demo.typo3.org">
+		<properties>
+			<name>TYPO3 Phoenix Demo Site</name>
+			<state>1</state>
+		</properties>
+		<node uuid="" type="typo3:page" nodeName="homepage" locale="en_EN">
+			<properties>
+				<title>Home</title>
+			</properties>
+			<node uuid="" type="typo3:section" nodeName="main" locale="en_EN">
+				<node uuid="" type="typo3:text" nodeName="text1" locale="en_EN">
+					<properties>
+						<headline>TYPO3 Phoenix Hatched</headline>
+						<text><![CDATA[The fact that you can read these lines means that TYPO3 Phoenix is able to render content. This page was automatically created by our demo setup
+							controller.<br /><br />There is even <a href="homepage/anotherpage.html">another page</a> which demonstrates that support for sub pages is also implemented
+							already.]]>
+						</text>
+					</properties>
+				</node>
+				<node uuid="" type="typo3:text" nodeName="text2" locale="en_EN">
+					<properties>
+						<headline>TypoScript</headline>
+						<text><![CDATA[There's a TypoScript template which renders this page, check it out at <code>Resources/Private/TypoScripts/homepage/Root.ts2</code> in the
+							PhoenixDemoTypo3Org package.]]>
+						</text>
+					</properties>
+				</node>
+				<node uuid="" type="typo3:text" nodeName="text3" locale="en_EN">
+					<properties>
+						<headline>Content</headline>
+						<text><![CDATA[The content for this site was created by importing the XML file found at <code>Resources/Private/Content/Content.xml</code>in the PhoenixDemoTypo3Org package.]]></text>
+					</properties>
+				</node>
+			</node>
+			<node uuid="" type="typo3:section" nodeName="secondary" locale="en_EN">
+				<node uuid="" type="typo3:text" nodeName="text1" locale="en_EN">
+					<properties>
+						<headline>Latest Tweets</headline>
+						<text><![CDATA[
+							<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+							<script>
+							if (typeof TWTR != 'undefined') {
+							new TWTR.Widget({
+							version: 2,
+							type: 'search',
+							search: 'TYPO3 Phoenix',
+							interval: 6000,
+							//title: 'Latest tweets about',
+							subject: 'on TYPO3 Phoenix',
+							width: 'auto',
+							height: 300,
+							theme: {
+							shell: {
+							  background: '#F2F2F2',
+							  color: '#000000'
+							},
+							tweets: {
+							  background: '#F2F2F2',
+							  color: '#000000',
+							  links: '#f18d0b'
+							}
+							},
+							features: {
+							scrollbar: false,
+							loop: true,
+							live: true,
+							hashtags: true,
+							timestamp: true,
+							avatars: false,
+							toptweets: true,
+							behavior: 'default'
+							}
+							}).render().start();
+							}
+							</script>							]]>
+						</text>
+					</properties>
+				</node>
+			</node>
+			<node uuid="" type="typo3:page" nodeName="anotherpage" locale="en_EN">
+				<properties>
+					<title>Another Page</title>
+				</properties>
+				<node uuid="" type="typo3:text" nodeName="text1" locale="en_EN">
+					<properties>
+						<headline>Want More?</headline>
+						<text><![CDATA[This is another page which exists for the sole purpose to demonstrate sub pages in TYPO3 Phoenix. And you know what? There is even a page <a href="homepage/anotherpage/thirdlevelpage.html">on the third level</a>]]></text>
+					</properties>
+				</node>
+				<node uuid="" type="typo3:page" nodeName="thirdlevel" locale="en_EN" >
+					<properties>
+						<title>Page on the third level</title>
+					</properties>
+					<node uuid="" type="typo3:section" nodeName="main" locale="en_EN">
+						<node uuid="" type="typo3:text" nodeName="text1" locale="en_EN">
+							<properties>
+								<headline>Wow, that can't be true</headline>
+								<text><![CDATA[Here is yet more content, even on the third level.]]></text>
+							</properties>
+						</node>
+					</node>
+				</node>
+			</node>
+		</node>
+	</site>
 </root>
