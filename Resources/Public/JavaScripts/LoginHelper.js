@@ -1,1 +1,0 @@
-Ext.util.Cookies.set('TYPO3FeURI', window.location.href);

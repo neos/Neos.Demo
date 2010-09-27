@@ -7,13 +7,6 @@ page.body.source = 'resource://PhoenixDemoTypo3Org/Private/Templates/Page/Defaul
 page.body.sectionName = "body"
 
 page.head {
-	javaScripts {
-		typo3Cookies = JavaScript
-		typo3Cookies.source = 'resource://PhoenixDemoTypo3Org/Public/JavaScripts/Cookies.js'
-
-		typo3LoginHelper = JavaScript
-		typo3LoginHelper.source = 'resource://PhoenixDemoTypo3Org/Public/JavaScripts/LoginHelper.js'
-	}
 	stylesheets {
 		typo3Stylesheet = Stylesheet
 		typo3Stylesheet.source = 'resource://PhoenixDemoTypo3Org/Public/StyleSheets/stylesheet.css'
