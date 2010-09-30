@@ -91,7 +91,7 @@
 						</properties>
 					</node>
 				</node>
-				<node uuid="" type="TYPO3:Page" nodeName="thirdlevel" locale="en_EN" >
+				<node uuid="" type="TYPO3:Page" nodeName="thirdlevelpage" locale="en_EN" >
 					<properties>
 						<title>Page on the third level</title>
 					</properties>
