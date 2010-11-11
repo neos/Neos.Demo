@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<site uuid="" nodeName="phoenix.demo.typo3.org">
+	<site uuid="" nodeName="phoenixdemotypo3org">
 		<properties>
 			<name>TYPO3 Phoenix Demo Site</name>
 			<state>1</state>
@@ -15,7 +15,7 @@
 						<headline>TYPO3 Phoenix Hatched</headline>
 						<text><![CDATA[The fact that you can read these lines means that TYPO3 Phoenix is able to render content. This page was automatically created by our demo setup
 							controller.<br /><br />There is even <a href="homepage/anotherpage.html">another page</a> which demonstrates that support for sub pages is also implemented
-							already.<br /><br />There's also a REST service making content of this website accessible for other systems: <a href="typo3/service/rest/v1/node/live/sites/phoenix.demo.typo3.org/homepage.json">this URL</a>
+							already.<br /><br />There's also a REST service making content of this website accessible for other systems: <a href="typo3/service/rest/v1/node/live/sites/phoenixdemotypo3org/homepage.json">this URL</a>
 							points to a JSON representation of this homepage.]]>
 						</text>
 					</properties>
