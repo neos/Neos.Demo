@@ -1,6 +1,7 @@
 <!DOCTYPE html
 	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{namespace typo3=F3\TYPO3\ViewHelpers}
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -21,21 +22,23 @@
 				</ul>
 			</div>
 			<div id="outerWrap">
-				<div id="header">
-					<h1>TYPO3 Phoenix Demo Site</h1>
-					<div id="topMenu">
-						<ul>
-							<li><f:link.action action="index" controller="Backend\Backend" package="TYPO3" target="_top">Backend login</f:link.action></li>
-						</ul>
-					</div>
-					<div id="searchBox">
-						<form id="search_form" method="post" action="/">
-							<input type="text" id="inputText" value="Future Search" />
-							<input type="image" src="../../../Public/Images/bg_searchButton.gif" width="20" height="20" id="inputButton" alt="Search" title="Search" />
-						</form>
-					</div>
+				<typo3:aloha.notEditable>
+					<div id="header">
+						<h1>TYPO3 Phoenix Demo Site</h1>
+						<div id="topMenu">
+							<ul>
+								<li><f:link.action action="index" controller="Backend\Backend" package="TYPO3" target="_top">Backend login</f:link.action></li>
+							</ul>
+						</div>
+						<div id="searchBox">
+							<form id="search_form" method="post" action="/">
+								<input type="text" id="inputText" value="Future Search" />
+								<input type="image" src="../../../Public/Images/bg_searchButton.gif" width="20" height="20" id="inputButton" alt="Search" title="Search" />
+							</form>
+						</div>
 
-				</div>
+					</div>
+				</typo3:aloha.notEditable>
 				<div id="navigationFirstLevel">
 					<h2>First Level Navigation</h2>
 					<div id="navigationFirstLevelMenu">
@@ -69,16 +72,18 @@
 						</div>
 					</f:if>
 				</div>
-				<div id="footer">
-					<h3>Footer</h3>
-					<div id="footerMenu">
-						<p>
-							<a href="http://www.typo3.org/">TYPO3 Phoenix</a> &middot;
-							<a href="http://flow3.typo3.org">Powered by FLOW3</a>
-							<img src="../../../Public/Images/FLOW3-Logo-11px.png" width="11" height="11" alt="FLOW3 Logo" />
-						</p>
+				<typo3:aloha.notEditable>
+					<div id="footer">
+						<h3>Footer</h3>
+						<div id="footerMenu">
+							<p>
+								<a href="http://www.typo3.org/">TYPO3 Phoenix</a> &middot;
+								<a href="http://flow3.typo3.org">Powered by FLOW3</a>
+								<img src="../../../Public/Images/FLOW3-Logo-11px.png" width="11" height="11" alt="FLOW3 Logo" />
+							</p>
+						</div>
 					</div>
-				</div>
+				</typo3:aloha.notEditable>
 			</div>
 		</f:section>
 	</body>
