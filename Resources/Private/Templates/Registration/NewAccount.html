@@ -1,0 +1,11 @@
+<f:flashMessages class="flashmessages" />
+<f:form action="createAccount" object="{registration}" objectName="registration" section="registration">
+	<dl>
+		<f:render partial="InputField" arguments="{label: 'Username', property: 'username'}" />
+		<f:render partial="InputField" arguments="{label: 'Password', property: 'password', isPasswordField: 1}" />
+		<f:render partial="InputField" arguments="{label: 'First name', property: 'firstName'}" />
+		<f:render partial="InputField" arguments="{label: 'Last name', property: 'lastName'}" />
+
+		<f:form.submit value="Create Account" />
+	</dl>
+</f:form>
