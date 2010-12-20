@@ -1,0 +1,14 @@
+<dt>
+	<label for="{property}">{label}:</label>
+</dt>
+<dd>
+	<f:render partial="FieldErrors" arguments="{property: property}" />
+	<f:if condition="{isPasswordField}">
+		<f:then>
+			<f:form.password id="{property}" property="{property}" />
+		</f:then>
+		<f:else>
+			<f:form.textfield id="{property}" property="{property}" />
+		</f:else>
+	</f:if>
+</dd>
