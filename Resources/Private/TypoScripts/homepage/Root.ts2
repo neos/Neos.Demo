@@ -15,7 +15,6 @@ page.head {
 }
 
 # Other parts of the page:
-namespace: demo = F3\PhoenixDemoTypo3Org\TypoScript
 page.parts {
 
 	breadcrumbMenu = BreadcrumbMenu
@@ -30,7 +29,4 @@ page.parts {
 		entryLevel = 2
 		maximumLevels = 2
 	}
-
-	registration = demo\Registration
-
 }

@@ -57,11 +57,18 @@ class RegistrationController extends \F3\FLOW3\MVC\Controller\ActionController {
 	 * @author Bastian Waidelich <bastian@typo3.org>
 	 */
 	public function newAccountAction(\F3\PhoenixDemoTypo3Org\Domain\Model\Registration $registration = NULL) {
+		if ($registration === NULL) {
+			$number = (time() - 1292863102);
+			$registration = $this->objectManager->create('F3\PhoenixDemoTypo3Org\Domain\Model\Registration');
+			$registration->setFirstName('Santa');
+			$registration->setLastName('Claus');
+			$registration->setUsername('santa' . $number);
+		}
 		$this->view->assign('registration', $registration);
 	}
 
 	/**
-	 * Creates a temporary account
+	 * Action for creating a temporary account
 	 *
 	 * @param \F3\PhoenixDemoTypo3Org\Domain\Model\Registration $registration
 	 * @return void
@@ -77,11 +84,12 @@ class RegistrationController extends \F3\FLOW3\MVC\Controller\ActionController {
 
 		$account = $this->createTemporaryAccount($accountIdentifier, $registration->getPassword(), $registration->getFirstName(), $registration->getLastName());
 		$this->accountRepository->add($account);
-
-		$this->redirect('createAccountConfirmation', NULL, NULL, array('username' => $accountIdentifier));
+		$this->redirect('index', 'Login', 'TYPO3', array('username' => $accountIdentifier));
 	}
 
 	/**
+	 * Creates a temporary account
+	 *
 	 * @param string $accountIdentifier
 	 * @param string $password
 	 * @param string $firstName

@@ -12,20 +12,24 @@
 			<node uuid="" type="TYPO3:Section" nodeName="main" locale="en_EN">
 				<node uuid="" type="TYPO3:Text" nodeName="text1" locale="en_EN">
 					<properties>
-						<headline>TYPO3 Phoenix Hatched</headline>
-						<text><![CDATA[The fact that you can read these lines means that TYPO3 Phoenix is able to render content. This page was automatically created by our demo setup
-							controller.<br /><br />There is even <a href="homepage/anotherpage.html">another page</a> which demonstrates that support for sub pages is also implemented
-							already.<br /><br />There's also a REST service making content of this website accessible for other systems: <a href="typo3/service/rest/v1/node/live/sites/phoenixdemotypo3org/homepage.json">this URL</a>
-							points to a JSON representation of this homepage.]]>
+						<headline>I'm here to be defaced ;-)</headline>
+						<text><![CDATA[This is the TYPO3 Phoenix demo website. It's there to let you experiment with the features
+						TYPO3 Phoenix already provides in this alpha stage.]]>
 						</text>
 					</properties>
 				</node>
 				<node uuid="" type="TYPO3:Text" nodeName="text2" locale="en_EN">
 					<properties>
-						<headline>TypoScript</headline>
-						<text><![CDATA[There's a TypoScript template which renders this page, check it out at <code>Resources/Private/TypoScripts/homepage/Root.ts2</code> in the
-							PhoenixDemoTypo3Org package.]]>
+						<headline>Try me!</headline>
+						<text><![CDATA[Just create a demo account and try out our latest development of the TYPO3 Phoenix user interface. Get
+						a first impression of Aloha, the content editor, and try out the simple publishing mechanism based on
+						workspaces.]]>
 						</text>
+					</properties>
+				</node>
+				<node uuid="" type="PhoenixDemoTypo3Org:Registration" nodeName="registration" locale="en_EN">
+					<properties>
+						<action>newAccount</action>
 					</properties>
 				</node>
 				<node uuid="" type="TYPO3:Text" nodeName="text3" locale="en_EN">
