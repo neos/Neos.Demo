@@ -63,6 +63,7 @@ class RegistrationController extends \F3\FLOW3\MVC\Controller\ActionController {
 			$registration->setFirstName('Santa');
 			$registration->setLastName('Claus');
 			$registration->setUsername('santa' . $number);
+			$registration->setPassword('demo');
 		}
 		$this->view->assign('registration', $registration);
 	}
@@ -79,7 +80,7 @@ class RegistrationController extends \F3\FLOW3\MVC\Controller\ActionController {
 		$existingAccount = $this->accountRepository->findActiveByAccountIdentifierAndAuthenticationProviderName($accountIdentifier, 'DefaultProvider');
 		if ($existingAccount !== NULL) {
 			$this->flashMessageContainer->add('An account with the username "' . $accountIdentifier . '" already exists.');
-			$this->redirect('newAccount');
+			$this->redirect('newAccount', NULL, NULL, array('registration' => $registration));
 		}
 
 		$account = $this->createTemporaryAccount($accountIdentifier, $registration->getPassword(), $registration->getFirstName(), $registration->getLastName());
@@ -98,8 +99,8 @@ class RegistrationController extends \F3\FLOW3\MVC\Controller\ActionController {
 	 */
 	protected function createTemporaryAccount($accountIdentifier, $password, $firstName, $lastName) {
 		if (strlen($firstName) === 0 && strlen($lastName) === 0) {
-			$firstName = 'Test';
-			$lastName = 'User';
+			$firstName = 'Santa';
+			$lastName = 'Claus';
 		}
 		$name = $this->objectManager->get('F3\Party\Domain\Model\PersonName', '', $firstName, '', $lastName);
 		$person = $this->objectManager->get('F3\Party\Domain\Model\Person');
@@ -119,6 +120,13 @@ class RegistrationController extends \F3\FLOW3\MVC\Controller\ActionController {
 	 */
 	public function createAccountConfirmationAction($username) {
 		$this->view->assign('username', $username);
+	}
+
+	/**
+	 * @return string|boolean The flash message or FALSE if no flash message should be set
+	 */
+	protected function getErrorFlashMessage() {
+		return FALSE;
 	}
 }
 ?>

@@ -18,15 +18,6 @@
 						</text>
 					</properties>
 				</node>
-				<node uuid="" type="TYPO3:Text" nodeName="text2" locale="en_EN">
-					<properties>
-						<headline>Try me!</headline>
-						<text><![CDATA[Just create a demo account and try out our latest development of the TYPO3 Phoenix user interface. Get
-						a first impression of Aloha, the content editor, and try out the simple publishing mechanism based on
-						workspaces.]]>
-						</text>
-					</properties>
-				</node>
 				<node uuid="" type="PhoenixDemoTypo3Org:Registration" nodeName="registration" locale="en_EN">
 					<properties>
 						<action>newAccount</action>
