@@ -3,5 +3,5 @@
 	<key>PhoenixDemoTypo3Org</key>
 	<title>phoenix.demo.typo3.org</title>
 	<description>Site package for the TYPO3 Phoenix Demo Site</description>
-	<version>1.1.0</version>
+	<version>1.2.0</version>
 </package>
