@@ -32,6 +32,15 @@ namespace F3\PhoenixDemoTypo3Org\Domain\Model;
 class Registration {
 
 	/**
+	 * This ID is only for the ORM.
+	 *
+	 * @var integer
+	 * @Id
+	 * @GeneratedValue
+	 */
+	protected $artificialId;
+
+	/**
 	 * @var string
 	 * @validate Label, NotEmpty
 	 */
