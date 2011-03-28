@@ -1,5 +1,7 @@
-<f:form.errors for="registration.{property}">
-	<div class="error">
-		{error.message}
-	</div>
-</f:form.errors>
+<f:form.validationResults for="registration.{property}">
+	<f:if condition="{validationResults.flattenedErrors}">
+		<div class="error">
+			<f:for each="{validationResults.flattenedErrors}" key="propertyPath" as="errors"><f:for each="{errors}" as="error">{error.message}</f:for></f:for>
+		</div>
+	</f:if>
+</f:form.validationResults>
