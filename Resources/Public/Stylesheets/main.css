@@ -1,0 +1,1289 @@
+* {
+	margin:0;
+	padding:0;
+	border:0;
+	text-align:left;
+	font-family:Arial,'Helvetica',Sans Serif;
+	line-height:1.4em;
+	color:#2F2F2F;
+}
+
+html, body {
+	height: 100%;
+	font-size: 12px;
+	background: #DFDFDF url(../images/backgrounds/bg-body-with-banner.gif) repeat-y scroll center top
+}
+
+body{
+	height: 101%;
+}
+
+.clear-all {
+	clear:both;
+	height:1px;
+	width:1px;
+	margin-top:-1px;
+	display:block;
+	overflow:hidden;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+a {
+	font-weight:bold;
+}
+
+a:hover {
+	color:#000;
+}
+
+#mainspacer a,
+#mainspacer a span.sponsor-name {
+	font-weight:bold;
+	color: #ff8700;
+	padding-left: 1px;
+	padding-right: 1px;
+	text-decoration: underline;
+}
+
+#mainspacer a:hover,
+#mainspacer a:hover span.sponsor-name {
+	color: #ffffff;
+	background-color: #ff8700;
+	text-decoration: none;
+}
+
+#mainspacer a span.sponsor-name {
+	font-size: 14px;
+}
+
+#mainspacer .news-list-container a {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#maincontainer a.lightbox,
+#maincontainer a > img,
+#maincontainer a:hover > img {
+	background-color: transparent;
+	padding-left: 0px;
+	padding-right: 0px;
+	text-decoration: none;
+}
+
+/* *** Social Communitys Extension Styling *** */
+
+#maincontainer .x-panel-tl,
+#maincontainer .x-grid3-header,
+#maincontainer .x-panel-tr {
+	display: none;
+}
+
+#maincontainer .x-mask-loading {
+	background-color: #333333;
+	border: none;
+}
+
+#maincontainer .x-mask-loading div {
+	color: #ffFFff;
+	border: none;
+	padding: 5px 10px 5px 15px;
+}
+
+#maincontainer .thumb-wrap {
+	float: left;
+	width: 96px;
+	height: 72px;
+	overflow: hidden;
+	margin: 0 12px 12px 0;
+}
+
+#maincontainer .thumb-wrap .thumb {
+	text-align:center;
+}
+
+#maincontainer .x-panel-mr,
+#maincontainer .x-panel-mc,
+#maincontainer .x-panel-ml {
+	padding: 0px !important;
+}
+
+#maincontainer .x-panel-body-noheader, .x-panel-mc .x-panel-body,
+#maincontainer .x-grid3-row {
+	border: none;
+}
+
+/* *** *** *** *** *** *** *** *** *** *** *** */
+
+.boxed-elements {
+	background:#F4F4F4;
+	position:relative;
+}
+
+#typo3org, #typo3org_start, #typo3org_landing {
+	background: #DFDFDF url(../images/backgrounds/bg-body-with-banner.gif) repeat-y center top;
+	text-align: center;
+}
+
+#wrapper{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1215px;
+	text-align: center;
+	height: 100%;
+}
+
+
+#master {
+	position:relative;
+	text-align:center;
+	width:984px;
+	min-height:100%;
+	background:#FFF url(../images/backgrounds/bg-nav-sub.gif) repeat-y top left;
+	border-left:1px solid #616161;
+	border-right:1px solid #616161;
+	z-index:100;
+	margin: 0px;
+	margin-top: -36px !important;
+	/*margin-right: 55px !important;*/
+	float: left;
+	top: 0px;
+}
+
+#master-single-col{
+    position: relative;
+	text-align: center;
+	width: 984px;
+	min-height: 100%;
+	background: #ffffff;
+	border-left: 1px solid #616161;
+	border-right: 1px solid #616161;
+	z-index: 100;
+	margin: 0px;
+	margin-top: -36px !important;
+	margin-right: 55px !important;
+	float: left;
+	top: 0px;
+}
+
+#banner{
+	position: static;
+	width: 180px;
+	margin: 0px;
+	border: 1px solid #838383;
+	
+	filter:alpha(opacity=50);
+	opacity: 0.5;
+	-moz-opacity:0.5;
+	
+	margin-bottom: 70px;
+	margin-left: 1042px;
+	margin-top: 96px;
+	margin-right: 0px;
+}
+
+/* IE 6 CSS overflow: visible bugfix
+ * 
+ * TODO: 
+ * Why are they not in the patch file? Lazzy guys ... */
+
+* html #banner {
+    position:relative;
+    margin-right: -1000px;
+    height: 1%;
+    margin-left: 50px;
+    margin-bottom: 80px;
+    float: right;
+}
+
+/* IE 7 BugFix
+ * 
+ * TODO: 
+ * Why are they not in the patch file? Lazzy guys ... */
+
+* + html #banner {
+	width: auto;
+	position:relative;
+    margin-right: -1000px;
+    border: 0px;
+}
+
++ html #banner iframe {
+	border: 1px solid #838383;
+}
+
+/* ------------- */
+
+input {
+  outline: none;
+}
+
+* html #master,
+* html #master-single-col {
+	height:100%;
+}
+
+#master-single-col #leftbox{
+  display: none;
+}
+
+#master-single-col #mainbox{
+  width: 100%;
+  float: none;
+}
+
+#typo3org_start div.grid-100{
+  margin: 24px 6px 24px 6px;
+}
+
+#typo3org_start #master {
+	background: #ffFFff;
+	/* 
+	 * 
+	 * Add BG grafic via HTML object in TYPO3, please. 
+	 * eg: <style>#typo3org_start #master{background: url(/fileadmin/templates/T3CON09/images/backgrounds/startback.png) no-repeat 0px 160px;}</style>
+	 *  	 
+	 */
+}
+
+#centeredbox {
+	text-align:center;
+	width:984px;
+	min-height:100%;
+	z-index:100;
+	clear: left;
+	float: left;
+}
+
+* html #centeredbox {
+	height:100%;
+}
+
+#topcontainer {
+	position:absolute;
+	top:0;
+	left:0;
+	background:url(../images/backgrounds/bg-header.gif) no-repeat center top;
+	width:100%;
+	height:96px;
+  	z-index:100;
+}
+
+#topmenu {
+	position:absolute;
+	top:96px;
+	left:0;
+  	display:block;
+	background:#585858 url(../images/backgrounds/bg-nav-shadow.gif) no-repeat left bottom;
+	width:100%;
+	height:64px;
+  	z-index:100;
+}
+
+#typo3org_start #topmenu {
+	background:#585858 url(../images/backgrounds/bg-nav-shadow-start.gif) no-repeat left bottom;
+}
+
+#maincontainer {
+	width:984px;
+	padding:157px 0px 33px 0px;
+	min-height:100%;
+}
+
+#leftbox {
+	float:left;
+	width:216px;
+}
+
+#mainbox {
+	float:right;
+	width:768px;
+}
+
+#mainspacer {
+	padding: 24px 12px;
+}
+
+#mainspacer h1{
+  margin-bottom: 0.5em;
+}
+
+#mainspacer h2{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+#mainspacer p{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.5em;
+
+}
+
+#mainspacer ul{
+	margin: 0px 0px 0px 10px;
+}
+
+#mainspacer li {
+	margin-left:  15px;
+}
+
+
+
+.startpage-smallbox:hover {
+	cursor: pointer;
+}
+
+.startpage-smallbox {
+	position:relative;
+	display:inline;
+	width:312px;
+	height:150px;
+	float:left;
+	margin-top: 12px;
+	background:#FF8700 url(../images/backgrounds/startpage-smallbox-back.gif) no-repeat top left;
+}
+
+.startpage-smallbox p{
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+}
+
+.startpage-smallbox div.bottom-shadow{
+
+	background: url(../images/backgrounds/bg-dropdownmenu-loginbox.png) repeat-x;
+	position: absolute;
+	bottom: -14px;
+	display: none;
+	width: 100%;
+
+}
+
+
+.startpage-smallbox-hover{
+	margin-top: 10px;
+}
+
+.startpage-smallbox .contentbox {
+	padding:12px;
+}
+
+.startpage-smallbox .contentbox * {
+	line-height:16px;
+	font-size:12px;
+}
+
+.startpage-smallbox-link {
+	position:absolute;
+	height:39px;
+	width:312px;
+	display:block;
+	overflow:hidden;
+	bottom:0px;
+	left:0px;
+	background:#Fc9;
+}
+
+.startpage-smallbox-link a {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:block;
+	overflow:hidden;
+	width:312px;
+	height:39px;
+}
+
+.startpage-smallbox-link a:hover img {
+	position:absolute;
+	top:-39px;
+}
+
+#bottomcontainer {
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	background:#FFF url(../images/backgrounds/bg-footer.gif) no-repeat left top;
+	width:100%;
+	z-index:100;
+
+}
+
+
+#bottomcontainer img.footer-logo{
+	position: absolute;
+	right: 12px;
+	top: 7px;
+}
+
+#bottomcontainer p{
+	font-size: 0.8em;
+	padding: 10px;
+	color: #999999;
+}
+
+#bottomcontainer a:link,
+#bottomcontainer a:visited
+{
+	color: #ff8700;
+	font-weight: normal;
+}
+
+#bottomcontainer a:hover{
+	color: black;
+	font-weight: normal;
+}
+
+
+#typo3org_start #bottomcontainer {
+	background:#FFF url(../images/backgrounds/bg-footer-start.gif) no-repeat left top;
+}
+
+body#typo3org_start #mainbox{
+	width: 100%
+}
+
+body#typo3org_start #mainbox #mainspacer{
+	padding: 0px;
+	padding-top: 1em
+
+}
+
+#loginregister{
+	position: absolute;
+	top: 0px;
+	width: 214px;
+	height: 37px;
+}
+
+#loginregister span.loggedIn {
+	background-image: url(../images/header/loggedButton.png);
+	background-position: left top;
+	display: block;
+	height: 37px;
+}
+
+#loginregister span.loggedIn:hover {
+	background-position: left center;
+}
+
+#loginregister span.loggedIn img {
+	display: none;
+}
+
+#dropdownmenu{
+	position: absolute;
+	top: 37px;
+	width: 214px;
+}
+
+#mainoverlay{
+	position: absolute;
+	display: none;
+	z-index: 1000;
+	background: #000000;
+}
+
+
+#login-register-box{
+	z-index: 200;
+	background:  url(../images/backgrounds/login-register-box.png) top center repeat-y;
+	width: 222px;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+	display: none;
+	position: absolute;
+}
+
+#login-register-box div.bottom-shadow{
+	height: 3px;
+	background: url(../images/backgrounds/bg-dropdownmenu-loginbox.png) top center repeat-x;
+	margin-left: 3px;
+	margin-right: 3px;
+	position: relative;
+	bottom: -2px;
+	left: 0px;
+}
+
+
+#dropdownmenu-links div.bottom-shadow{
+	height: 3px;
+	background: url(../images/backgrounds/bg-dropdownmenu-loginbox.png) top center repeat-x;
+	margin-left: -1px;
+	margin-right: 0px;
+	position: relative;
+	bottom: -3px;
+	left: 0px;
+	width: 218px;
+}
+
+
+#login-register-box h3{
+			color: white;
+			padding: 12px;
+			margin-bottom: -6px;
+		}
+
+#login-register-box h3.login{
+	padding: 6px;
+	background: url(../images/backgrounds/bg-login-h3.gif) 12px 9px no-repeat;
+}
+
+#login-register-box h3.register{
+	padding: 6px;
+	background: url(../images/backgrounds/bg-register-h3.gif) 12px 9px no-repeat;
+	margin-top: 36px;
+	margin-bottom: 6px;
+	height: 26px;
+}
+
+#login-register-box h3.login span,
+#login-register-box h3.register span{
+	visibility: hidden;
+	height: 20px;
+
+}
+
+#login-register-box div{
+	clear: both;
+	margin-top: 6px;
+	text-align: right;
+}
+
+#login-register-box div input{
+
+	margin: 0px 12px 3px 15px;
+	width: 202px;
+	border: 0px;
+	padding: 3px;
+	width: 170px;
+	padding-left: 24px;
+	padding-top: 4px;
+	font-size: 14px;
+	font-weight: bold;
+
+}
+
+#login-register-box div input.blur{
+	color: #BFBFBF;
+
+}
+input#username{
+	width: 192px;
+	height: 20px;
+	background: url(../images/backgrounds/bg-login-username.gif) no-repeat;
+}
+
+input#password{
+	width: 192px;
+	height: 20px;
+	background: url(../images/backgrounds/bg-login-password.gif) no-repeat;
+}
+
+
+#login-register-box div label{
+	padding-right: 15px;
+	display: block;
+	text-align: right;
+	font-size: 9px;
+	color: #80511b;
+
+
+}
+
+#login-register-box a:link,
+#login-register-box a:visited{
+	background: url(../images/misc/link-arrow.png) top left no-repeat;
+	font-size: 10px;
+	font-weight: normal;
+	color: black;
+	text-decoration: underline;
+	display: block;
+	padding: 6px;
+	padding-left: 28px;
+	margin-bottom: 12px;
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+#login-register-box span.remember-login{
+	font-size: 9px;
+	color: #80511b;
+	float: right;
+	width: 80px;
+	margin-right: 14px;
+	line-height: 0px;
+}
+
+#login-register-box span.remember-login-text {
+	float: left;
+	width: 60px;
+}
+
+#login-register-box span.remember-login input{
+	float: right;
+}
+
+#login-register-box input.login{
+	float: left;
+	background: url(../images/misc/btn-arrow.png) no-repeat;
+	width: 99px;
+	height: 23px;
+	border: 0px;
+	padding: 6px;
+	margin-left: 12px;
+}
+
+#login-register-box div.separator{
+	border-top: 1px solid #b2660e;
+	height: 1px;
+	margin: 12px;
+	}
+
+#dropdownmenu{
+	background: #484848;
+	height: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 216px;
+
+}
+#dropdownmenu img{
+	margin-left: 5px;
+}
+#dropdownmenu-links {
+    z-index: 201;
+    background: #343434;
+    width: 215px;
+    color: white;
+    font-size: 12px;
+    display: none;
+    position: absolute;
+		background:  url(../images/backgrounds/bg-dropdownmenu.png) top center repeat-y;
+		width: 222px;
+}
+#dropdownmenu-links div.wrapper-top{
+	background: #383838;
+	padding: 0px;
+	margin: 0px;
+	margin-right: 3px;
+	margin-left: 3px;
+	width: 216px;
+	padding-top: 1px;
+}
+
+#dropdownmenu-links div.wrapper-bottom{
+	background: #444444;
+	padding: 0px;
+	margin: 0px;
+	margin-right: 3px;
+	margin-left: 3px;
+	width: 216px;
+	padding-top: 1px;
+}
+
+#dropdownmenu-links h3 {
+    font-weight: bold;
+    color: #939393;
+    padding: 5px;
+    display: block;
+    background: #414141;
+    margin: 2px;
+		margin-left: 3px;
+		width: 200px;
+		font-size: 12px;
+}
+
+#dropdownmenu-links .separator{
+ 	border-top: 1px solid #525252;
+	border-bottom: 1px solid #6d6d6d;
+	width: 216px;
+	margin-left: 3px;
+	height: 1px;
+	background-color: #643400
+
+ }
+
+#dropdownmenu-links h3 span {
+    position: absolute;
+    top: 2px;
+    right: 8px;
+    color: white;
+}
+#dropdownmenu-links h3 span a:link,
+#dropdownmenu-links h3 span a:visited{
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+}
+#dropdownmenu-links h3 span a:hover {
+    color: white;
+    text-decoration: underline;
+}
+#dropdownmenu-links ul {
+    background: #343434;
+    margin: 0px;
+		width: 213px;
+    padding: 0px;
+		padding-left: 3px;
+    list-style-type: none;
+    border-bottom: 1px solid #4c4c4c;
+}
+
+#dropdownmenu-links ul.deeplinks {
+    background: #444444;
+    margin: 0px;
+		width: 213px;
+    padding: 0px;
+		padding-left: 3px;
+    list-style-type: none;
+    border-bottom: 0px solid #939393;
+}
+
+#dropdownmenu-links h3.deeplinks{
+	background: #575757;
+	width: 200px;
+}
+
+#dropdownmenu-links ul li {
+    padding: 5px;
+
+}
+#dropdownmenu-links ul li.hover {
+    background: #2d2d2d;
+    padding: 5px;
+		cursor: pointer;
+		color: white;
+		margin-left: -3px;
+		padding-left: 8px;
+}
+
+#dropdownmenu-links ul li.current-site {
+    background: transparent url(/fileadmin/templates/T3CON09/images/misc/current-site.png) no-repeat scroll 0 0;
+    padding: 5px;
+		width: 250px;
+		margin-left: -3px;
+		padding-left: 8px;
+}
+
+#dropdownmenu-links ul li h4 {
+    color: #939393;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+#dropdownmenu-links ul li h4 a:link,
+#dropdownmenu-links ul li h4 a:visited {
+    color: #939393;
+		text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#dropdownmenu-links ul li.hover{
+    color: #fff;
+		text-decoration: none;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+#dropdownmenu-links ul li.hover h4 a:link,
+#dropdownmenu-links ul li.hover h4 a:hover
+{
+    color: #fff;
+		text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+#dropdownmenu-links ul li h4 a:hover{
+	color: white;
+}
+
+#dropdownmenu-links ul li p {
+    color: white;
+    font-size: 10px;
+}
+
+#dropdownmenu-links ul li.current-site h4{
+	color: white;
+	margin-top: -2px;
+}
+
+#dropdownmenu-links ul li.current-site p{
+	margin-top: -2px;
+}
+
+#dropdownmenu-links ul li.current-site p a:link,
+#dropdownmenu-links ul li.current-site p a:visited{
+	color: #ff8700;
+	text-decoration: none;
+}
+
+div.attention-box{
+	margin-top: 24px;
+	margin-bottom: 24px;
+	padding: 10px 10px 24px 24px;
+
+}
+
+div.attention-box h3{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+div.attention-box h3 span{
+	visibility: hidden;
+	font-size: 20px;
+}
+
+div.attention-box a:link,
+div.attention-box a:visited{
+	padding: 0px 2px;
+	text-decoration: underline;
+}
+
+div.attention-box a:hover{
+	text-decoration: none;
+	padding: 0px 2px;
+}
+
+.orange{
+	background: #ffe7cc;
+	border:1px solid #ff8700;
+	border-left: 3px solid #ff8700;
+}
+
+.orange a:link,
+.orange a:visited{
+	color: #ff8700;
+}
+
+.orange a:hover{
+	color: #ffffff;
+	background: #ff8700;
+}
+
+
+.green{
+	background: #e1eddc;
+	border:1px solid #69A550;
+	border-left: 3px solid #69A550;
+}
+
+.green a:link,
+.green a:visited{
+	color: #69A550;
+}
+
+.green a:hover{
+	color: #ffffff;
+	background: #69A550;
+}
+
+.red{
+	background: #f2ccd4;
+	border:1px solid #BE0027;
+	border-left: 3px solid #BE0027;
+}
+
+.red a:link,
+.red a:visited{
+	color: #BE0027;
+}
+
+.red a:hover{
+	color: #ffffff;
+	background: #BE0027;
+}
+
+.gray{
+	background: #e9e9e9;
+	border:1px solid #515151;
+	border-left: 3px solid #515151;
+}
+
+.gray a:link,
+.gray a:visited{
+	color: #515151;
+}
+
+.gray a:hover{
+	color: #ffffff;
+	background: #515151;
+}
+
+.error {
+	color: #515151;
+	background: #f2ccd4;
+	padding: 2px 0 0 7px;
+	margin: 0 0 0 10px;
+	height: 20px;
+	border-left: 3px solid #BE0027;
+}
+
+.error strong {
+	color: #515151;
+}
+
+.news-list-container .news-list-item {
+	background: transparent url(../images/backgrounds/latest-news-header-shadow.png) repeat-x scroll 0 0;
+	padding-top: 4px;
+	margin-bottom: 12px;
+}
+
+.news-latest-container .news-latest-item .news-title-wrapper,
+.news-list-container .news-list-item .news-title-wrapper, 
+.tx-ptgsashop-pi7-tableheader, .tx-ptgsashop-pi7-tableheader *{
+  background: #2f2f2f;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+  position: relative;
+  height: 23px;
+}
+
+.news-list-container .news-list-item .news-title-wrapper *,
+.news-latest-container .news-latest-item .news-title-wrapper * {
+	color: white !important;
+}
+
+.news-latest-container .news-latest-item .news-title-wrapper .news-title,
+.news-list-container .news-list-item .news-title-wrapper .news-title{
+	width:  425px;
+	padding: 1px 0px 1px 0.3em;
+}
+
+.news-latest-container .news-latest-item .news-title-wrapper .news-title a,
+.news-list-container .news-list-item .news-title-wrapper .news-title a{
+	text-decoration: none;
+	color: white;
+}
+
+.news-latest-container .news-latest-item .news-title-wrapper .news-title a:hover,
+.news-list-container .news-list-item .news-title-wrapper .news-title a:hover{
+	background-color: #2f2f2f !important;
+}
+
+.news-latest-container .news-latest-item .news-title-wrapper .news-date,
+.news-list-container .news-list-item .news-title-wrapper .news-date{
+  width: 25px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 10px;
+  border-left: 1px solid #595959;
+  padding: 5px 3px 5px 2px;
+}
+
+.news-latest-container .news-latest-item .news-title-wrapper div em,
+.news-list-container .news-list-item .news-title-wrapper div em {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 7px;
+}
+
+.news-list-container .news-list-item .news-teaser.hover {
+	background: #515151;
+}
+
+.news-list-container .news-list-item .news-teaser.hover * {
+	color: white;
+}
+
+.news-list-container .news-list-item .new.news-list-container .news-list-item .news-teaser{
+	padding-top: 4px;
+}
+
+.news-list-container .news-list-item .news-teaser * {
+	padding-left: 0.3em;
+	line-height: 1.2em !important;
+}
+
+.news-list-container .news-list-item .title-hover .news-date {
+	display: none;
+}
+
+.news-list-container .news-list-item .news-title-wrapper .news-more {
+	display:  none;
+	padding-bottom: 12px;
+	margin-top: 5px;
+}
+
+.news-list-container .news-list-item .title-hover .news-more {
+	/*display:  table-cell;*/
+	display: block;
+	width: 25px;
+}
+
+.news-list-container .news-list-item .news-title-wrapper .news-more span.more {
+	font-size: 10px;
+	color: #636363 !important;
+}
+
+.news-list-container .news-list-item .news-title-wrapper .news-more span.arrow{
+  width: 14px;
+  background: url(../images/backgrounds/search-header-more-arrow.png) no-repeat 1px 0px;
+  position: absolute;
+  height: 26px;
+  margin: 0 0 0 0px;
+  margin-top: -3px;
+}
+
+.news-list-item p{
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+}
+
+/* Safari Patch ... in the Patch file please! ...
+ * 
+ * TODO: 
+ * Why are they not in the patch file? Lazzy guys ... */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.news-list-container .news-list-item .news-title-wrapper .news-more span.arrow{
+		top: 3px;
+		right: -12px;
+	}
+}
+
+/* ---------------- */
+
+.news-list-container .news-list-item .news-title-wrapper .news-date.date0,
+.news-list-container .news-list-item .news-title-wrapper .news-date.date0 *,
+div.legend div.legend-date.date0 {
+	color: #685f55 !important;
+	background: #2F2F2F;
+}
+
+.news-list-container .news-list-item .news-title-wrapper .news-date.date1,
+.news-list-container .news-list-item .news-title-wrapper .news-date.date1 *,
+div.legend div.legend-date.date1 {
+	color: #ffffff !important;
+	background: #FF8700;
+}
+
+.news-list-container .news-list-item .news-title-wrapper .news-date.date2,
+.news-list-container .news-list-item .news-title-wrapper .news-date.date2 *,
+div.legend div.legend-date.date2 {
+	color: #f0e0d0 !important;
+	background: #B36612;
+}
+
+.news-list-container .news-list-item .news-title-wrapper .news-date.date3,
+.news-list-container .news-list-item .news-title-wrapper .news-date.date3 *,
+div.legend div.legend-date.date3 {
+	color: #d1bca3 !important;
+	background: #8D571A;
+}
+
+.news-list-container .news-list-item .news-title-wrapper .news-date.date3,
+.news-list-container .news-list-item .news-title-wrapper .news-date.date3 *,
+div.legend div.legend-date.date3 {
+	color: #d1bca3 !important;
+	background: #8D571A;
+}
+
+.news-list-container .news-list-item .news-title-wrapper .news-date.date4,
+.news-list-container .news-list-item .news-title-wrapper .news-date.date4 *,
+div.legend div.legend-date.date4 {
+	color: #a4917a !important;
+	background: #684722;
+}
+
+.news-list-container .news-list-item .news-title-wrapper .news-date span.news-header-date {
+	font-size: 13px;
+	line-height: 1em;
+	text-align: center;
+}
+
+.news-list-container .news-list-item .news-title-wrapper .news-date span.news-header-month {
+	line-height: 1em;
+	text-align: center;
+	font-weight: normal;
+	font-size: 8px;
+}
+
+.news-list-container .news-list-item  div.news-teaser.hover {
+	cursor: pointer;
+}
+
+/**
+ * news legend
+ */
+div.legend {
+	float: right;
+	font-size: 10px;
+	margin-right: 28px;
+}
+
+div.legend * {
+	color: #707070;
+}
+
+div.legend div.legend-date {
+	padding: 0px 3px;
+	border-left: 1px solid white;
+	color: white;
+	text-align: center;
+}
+
+div.legend div.legend-label,
+div.legend div.legend-date {
+	float: left;
+	font-weight: bold;
+}
+
+div.legend div.legend-date.date1 {
+	margin-left: 20px;
+}
+
+div.legend div.legend-text {
+
+}
+
+/**
+ * user registration
+ */
+.tx-ptgsauserreg-pi1 input,
+.tx-ptgsauserreg-pi1 select,
+.tx-ptgsauserreg-pi2 input,
+.tx-ptgsauserreg-pi2 select {
+	border: 1px solid black;
+}
+
+
+/**
+ * info box upper left navi
+ */
+#userinfo {
+	height: 105px;
+	background:  transparent url(../images/backgrounds/bg-submenu-cta-top-bg.png);
+}
+
+#userinfo .info-box a {
+	text-decoration: none;
+}
+
+#userinfo .info-box.non-logged,
+#userinfo .info-box.logged {
+	height: 75px;
+	padding-top: 20px;
+}
+
+#userinfo .info-box.non-logged .info-header {
+	display: block;
+	font-size: 16px;
+	left: 75px;
+	position: relative;
+	top: 20px;
+}
+
+#userinfo .info-box.non-logged .info-text {
+	display: block;
+	position: relative;
+	left: 75px;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+#userinfo .info-box.non-logged .info-box-no {
+	background: transparent url(../images/backgrounds/bg-infobox-nav-question.png) no-repeat scroll center center;
+	height: 75px;
+	display: block;
+}
+
+#userinfo .info-box.non-logged:hover .info-box-no {
+	display: none;
+}
+
+#userinfo .info-box.non-logged .info-box-no .info-header {
+	color: #FF8700;
+}
+
+
+#userinfo .info-box.non-logged .info-box-hover {
+	background: transparent url(../images/backgrounds/bg-infobox-nav-answer.png) no-repeat scroll center center;
+	height: 75px;
+	display: none;
+}
+
+#userinfo .info-box.non-logged:hover .info-box-hover {
+	display: block;
+}
+
+#userinfo .info-box.non-logged .info-box-hover .info-header {
+	color: #69A550;
+}
+
+/**
+ * user info logged in
+ */
+ #userinfo .info-box.logged {
+	position: relative;
+}
+
+#userinfo .info-box.logged .cta-user-img,
+#userinfo .info-box.logged .cta-user-img-mask {
+	position: absolute;
+}
+
+#userinfo .info-box.logged .cta-user-info {
+	position: relative;
+	left: 75px;
+	top: 12px;
+	width: 115px;
+}
+
+#userinfo .info-box.logged .cta-user-name,
+#userinfo .info-box.logged .cta-user-text,
+#userinfo .info-box.logged .cta-user-logout {
+	position: relative;
+}
+
+/* FORMs .... */
+
+#mainspacer input,
+#mainspacer textarea {
+	border: 1px solid #666666;
+}
+
+#mainspacer input.csc-mailform-submit {
+	border: 1px solid #666666;
+	padding: 5px 15px;
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+ #mainspacer .tx-ptgsashop-pi2-formdefault input {
+	border: none;
+}
+
+ #mainspacer .slide_entry_speaker_title p,
+ #mainspacer .slide_menu_entry_opacity .slide_menu_entry_tooltip_speaker_title {
+ 	line-height: 1.0;
+ }
+
+#mainspacer .tx-felogin-pi1 input {
+	border: 1px solid #666666;
+		margin:3px;
+}
+
+#mainspacer .tx-felogin-pi1 label {
+	display:block;
+	width: 80px;
+	float:left;
+}
+#mainspacer .tx-felogin-pi1 legend {
+	font-weight:bold;
+	padding-top:5px;
+}
+

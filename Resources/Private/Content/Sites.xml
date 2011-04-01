@@ -1,107 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<site uuid="" nodeName="phoenixdemotypo3org">
+	<site uuid="" nodeName="t3con11typo3org">
 		<properties>
-			<name>TYPO3 Phoenix Demo Site</name>
+			<name>T3CON11 Site</name>
 			<state>1</state>
 		</properties>
 		<node uuid="" type="TYPO3:Page" nodeName="homepage" locale="en_EN">
 			<properties>
-				<title>Home</title>
+				<title>Homepage</title>
 			</properties>
 			<node uuid="" type="TYPO3:Section" nodeName="main" locale="en_EN">
 				<node uuid="" type="TYPO3:Text" nodeName="text1" locale="en_EN">
 					<properties>
-						<headline>I'm here to be defaced ;-)</headline>
-						<text><![CDATA[This is the TYPO3 Phoenix demo website. It's there to let you experiment with the features
-						TYPO3 Phoenix already provides in this alpha stage.]]>
+						<headline>Foo Bar</headline>
+						<text><![CDATA[Foo Bar Baz]]>
 						</text>
 					</properties>
 				</node>
-				<node uuid="" type="PhoenixDemoTypo3Org:Registration" nodeName="registration" locale="en_EN">
+				<node uuid="" type="Conference:Plugin" nodeName="test1" locale="en_EN">
 					<properties>
-						<action>newAccount</action>
-					</properties>
-				</node>
-				<node uuid="" type="TYPO3:Text" nodeName="text3" locale="en_EN">
-					<properties>
-						<headline>Content</headline>
-						<text><![CDATA[The content for this site was created by importing the XML file found at <code>Resources/Private/Content/Content.xml</code>in the PhoenixDemoTypo3Org package.]]></text>
+						<controller>Setup</controller>
+						<action>index</action>
 					</properties>
 				</node>
 			</node>
-			<node uuid="" type="TYPO3:Section" nodeName="secondary" locale="en_EN">
-				<node uuid="" type="Twitter:LatestTweets" nodeName="latesttweets" locale="en_EN"/>
-				<node uuid="" type="TYPO3:Html" nodeName="htmlelement" locale="en_EN">
-					<properties>
-						<source><![CDATA[<h1>HTML Element</h1><p>This shows a default HTML element</p><a href="http://phoenix.demo.typo3.org/" target="_blank">Phoenix demo page</a>]]></source>
-					</properties>
-				</node>
-			</node>
-			<node uuid="" type="TYPO3:Page" nodeName="anotherpage" locale="en_EN">
+			<node uuid="" type="TYPO3:Page" nodeName="login" locale="en_EN">
 				<properties>
-					<title>Another Page</title>
+					<title>Login</title>
+				</properties>
+				<node uuid="" type="TYPO3:Section" nodeName="main" locale="en_EN">
+					<node uuid="" type="Conference:Plugin" nodeName="test2" locale="en_EN">
+						<properties>
+							<controller>Account\Login</controller>
+						</properties>
+					</node>
+				</node>
+			</node>
+			<node uuid="" type="TYPO3:Page" nodeName="manageAccount" locale="en_EN">
+				<properties>
+					<title>Manage Account</title>
 				</properties>
 				<node uuid="" type="TYPO3:Section" nodeName="main" locale="en_EN">
 					<node uuid="" type="TYPO3:Text" nodeName="text1" locale="en_EN">
 						<properties>
-							<headline>Want More?</headline>
-							<text><![CDATA[This is another page which exists for the sole purpose to demonstrate sub pages in TYPO3 Phoenix. And you know what? There is even a page <a href="homepage/anotherpage/thirdlevelpage.html">on the third level</a>]]></text>
+							<headline>Manage account</headline>
+							<text><![CDATA[Bla bla manage account]]></text>
 						</properties>
 					</node>
-				</node>
-				<node uuid="" type="TYPO3:Page" nodeName="thirdlevelpage" locale="en_EN" >
-					<properties>
-						<title>Page on the third level</title>
-					</properties>
-					<node uuid="" type="TYPO3:Section" nodeName="main" locale="en_EN">
-						<node uuid="" type="TYPO3:Text" nodeName="text1" locale="en_EN">
-							<properties>
-								<headline>Wow, that can't be true</headline>
-								<text><![CDATA[Here is yet more content, even on the third level.]]></text>
-							</properties>
-						</node>
-					</node>
-				</node>
-			</node>
-			<node uuid="" type="TYPO3:Page" nodeName="secondpage" locale="en_EN">
-				<properties>
-					<title>Second Page</title>
-				</properties>
-				<node uuid="" type="TYPO3:Page" nodeName="subpage1" locale="en_EN">
-					<properties>
-						<title>First Subpage</title>
-					</properties>
-					<node uuid="" type="TYPO3:Page" nodeName="subsubpage1" locale="en_EN">
+					<node uuid="" type="Conference:Plugin" nodeName="manageAccount" locale="en_EN">
 						<properties>
-							<title>First Sub-Subpage</title>
+							<controller>Account\Overview</controller>
 						</properties>
 					</node>
 				</node>
-				<node uuid="" type="TYPO3:Page" nodeName="subpage2" locale="en_EN">
-					<properties>
-						<title>Second Subpage</title>
-					</properties>
-				</node>
-				<node uuid="" type="TYPO3:Page" nodeName="subpage3" locale="en_EN">
-					<properties>
-						<title>Third Subpage</title>
-					</properties>
+			</node>
+			<node uuid="" type="TYPO3:Page" nodeName="personalinfo" locale="en_EN">
+				<properties>
+					<title>Personal Info</title>
+				</properties>
+				<node uuid="" type="TYPO3:Section" nodeName="main" locale="en_EN">
+					<node uuid="" type="TYPO3:Text" nodeName="text1" locale="en_EN">
+						<properties>
+							<headline>Personal Info</headline>
+							<text><![CDATA[Bla bla personal info]]></text>
+						</properties>
+					</node>
+					<node uuid="" type="Conference:Plugin" nodeName="personalInfo" locale="en_EN">
+						<properties>
+							<controller>Account\Personal</controller>
+						</properties>
+					</node>
 				</node>
 			</node>
-			<node uuid="" type="TYPO3:Page" nodeName="thirdpage" locale="en_EN">
+			<node uuid="" type="TYPO3:Page" nodeName="createSpeakerProfile" locale="en_EN">
 				<properties>
-					<title>Third Page</title>
+					<title>Create Speaker Profile</title>
 				</properties>
 			</node>
-			<node uuid="" type="TYPO3:Page" nodeName="fourthpage" locale="en_EN">
+			<node uuid="" type="TYPO3:Page" nodeName="mySpeakerProfile" locale="en_EN">
 				<properties>
-					<title>Fourth Page</title>
+					<title>My Speaker Profile</title>
 				</properties>
 			</node>
-			<node uuid="" type="TYPO3:Page" nodeName="fifthpage" locale="en_EN">
+			<node uuid="" type="TYPO3:Page" nodeName="myPapers" locale="en_EN">
 				<properties>
-					<title>Fifth Page</title>
+					<title>My Papers</title>
+				</properties>
+			</node>
+			<node uuid="" type="TYPO3:Page" nodeName="reviewPapers" locale="en_EN">
+				<properties>
+					<title>Review Papers</title>
+				</properties>
+			</node>
+			<node uuid="" type="TYPO3:Page" nodeName="votePapers" locale="en_EN">
+				<properties>
+					<title>Vote Papers</title>
+				</properties>
+			</node>
+			<node uuid="" type="TYPO3:Page" nodeName="circulars" locale="en_EN">
+				<properties>
+					<title>Circulars</title>
+				</properties>
+			</node>
+			<node uuid="" type="TYPO3:Page" nodeName="conference" locale="en_EN">
+				<properties>
+					<title>Conference</title>
+				</properties>
+				<node uuid="" type="TYPO3:Page" nodeName="location" locale="en_EN">
+					<properties>
+						<title>Location</title>
+					</properties>
+				</node>
+				<node uuid="" type="TYPO3:Page" nodeName="tracks" locale="en_EN">
+					<properties>
+						<title>Tracks</title>
+					</properties>
+				</node>
+				<node uuid="" type="TYPO3:Page" nodeName="sessionTypes" locale="en_EN">
+					<properties>
+						<title>Session Types</title>
+					</properties>
+				</node>
+				<node uuid="" type="TYPO3:Page" nodeName="intermissionTypes" locale="en_EN">
+					<properties>
+						<title>Intermission Types</title>
+					</properties>
+				</node>
+			</node>
+			<node uuid="" type="TYPO3:Page" nodeName="schedule" locale="en_EN">
+				<properties>
+					<title>Schedule</title>
+				</properties>
+			</node>
+			<node uuid="" type="TYPO3:Page" nodeName="manageAccounts" locale="en_EN">
+				<properties>
+					<title>Manage Accounts</title>
 				</properties>
 			</node>
 		</node>

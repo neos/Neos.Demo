@@ -1,0 +1,100 @@
+.gradientbox {
+  position:relative;
+  height:53px;
+  width:700px;
+
+  overflow:visible;
+  margin-bottom:22px;
+}
+
+.gradientheader {
+  position:absolute;
+  height:50px;
+  width:792px;
+}
+
+.gradientheader span, .gfxheadertab span {
+  display:block;
+  width:1px;
+  height:1px;
+  line-height:50px;
+  overflow:hidden;
+}
+
+.gfxheadertab {
+  position:absolute;
+  top:0px;
+  left:743px;
+  width:48px;
+  height:50px;
+}
+
+.graphicalbox {
+  position:relative;
+  height:53px;
+  width:700px;
+  overflow:visible;
+}
+
+#typo3org_start .graphicalbox {
+  width:288px;
+  height:27px;
+	margin-left: 34px;
+}
+
+.graphicalheader {
+  position:absolute;
+  height:50px;
+  width:792px;
+}
+
+#typo3org_start .graphicalheader {
+  width:288px;
+  height:40px;
+  top:-3px;
+}
+
+.graphicalheader span {
+  display:block;
+  width:1px;
+  height:1px;
+  line-height:50px;
+  overflow:hidden;
+}
+
+div.tt-news-header {
+	border-bottom: 1px solid #515151;
+	margin-bottom: 1em;
+}
+
+div.tt-news-header h3 {
+	margin-bottom: -2px;
+}
+
+div.tt-news-header h3 span.headline{
+	display: block;
+	width: 0px;
+	height: 30px;
+	overflow: hidden;
+	float: left;
+}
+
+div.tt-news-header h3 span.rss-feed {
+	float: right;
+	background: white url(../images/icons/rss-feed.gif) no-repeat bottom right;
+	width: 14px;
+	padding-left: 3px;
+	position: relative;
+	top: 10px;
+}
+
+div.tt-news-header h3 span.rss-feed a {
+	display: block;
+	text-decoration: none;
+}
+
+.attention-box-header span {
+	overflow: hidden;
+	display: block;
+	width: 0pt;
+}

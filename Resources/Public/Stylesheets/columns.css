@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * Jens Hoffmann @ dkd 2009
+ *
+ */
+
+/* ***************************************************************** */
+/* Global (Styles for all sites)                                     */
+/* ***************************************************************** */
+
+	/* ============================================================= */
+
+	DIV.grid-25-25-25-25,
+	DIV.grid-50-25-35,
+	DIV.grid-25-50-25,
+	DIV.grid-25-25-50,
+	DIV.grid-50-50,
+	DIV.grid-75-25,
+	DIV.grid-25-75,
+	DIV.grid-60-40,
+	DIV.grid-40-60,
+	DIV.grid-37-37-25,
+	DIV.grid-33-33-33,
+	DIV.grid-100 {
+		width: 100%;
+	}
+
+	/* ============================================================= */
+
+	DIV.grid-25-25-25-25,
+	DIV.grid-50-25-25,
+	DIV.grid-25-50-25,
+	DIV.grid-25-25-50,
+	DIV.grid-75-25,
+	DIV.grid-25-75,
+	DIV.grid-60-40,
+	DIV.grid-40-60,
+	DIV.grid-100,
+	DIV.grid-37-37-25,
+	DIV.grid-66-33,
+	DIV.grid-33-33-33,
+	DIV.grid-50-50 {
+		padding-top: 12px;
+		padding-bottom: 12px;	
+	}
+
+	/* ============================================================= */
+
+	DIV.col-25,
+	DIV.col-33,
+	DIV.col-50,
+	DIV.col-75,
+	DIV.col-40,
+	DIV.col-37,
+	DIV.col-60,
+	DIV.col-66,
+	DIV.col-100 {
+		float: left;
+		padding: 0 12px;
+	}
+	
+	
+	/* ============================================================= */
+
+	DIV.col-25 {
+		width: 21.75%;
+	}
+	DIV.col-50 {
+		width: 46.77%;
+		padding: 0 12px;
+	}
+	DIV.col-75 {
+		width: 71.7%;
+	}
+	DIV.col-40 {
+		width: 40%;
+	}
+	DIV.col-60 {
+		width: 60%;
+	}
+	DIV.col-66 {
+		width: 63.4%;
+	}
+	DIV.col-100 {
+
+	}
+	
+	DIV.col-33 {
+		width: 30.1%;
+	}
+
+	body#typo3org_start DIV.grid-33-33-33{
+		padding: 0 6px;
+	}	
+	body#typo3org_start DIV.col-33{
+		width: 312px;
+		margin:  0 6px;
+		padding: 0px;
+	}
+	
+	body#typo3org_start DIV.col-50 {
+		width: 47.55%;
+	}
+	
+	#master-single-col div.col-50{
+	  width: 456px;
+	}
+	
+	DIV.col-37 {
+		width: 34.25%;
+	}
+	
+	/* ============================================================= */
+
+	DIV.colClear {
+		clear: both;
+	}
+
+	/* ============================================================= */
+
+	DIV.contentpadding {
+	}
+	
+	DIV.inner-col1,
+	DIV.inner-col2,
+	DIV.inner-col3,
+	DIV.inner-col4 {}
+	
+/* ***************************************************************** */

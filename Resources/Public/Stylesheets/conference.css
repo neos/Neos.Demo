@@ -1,0 +1,74 @@
+form.dataform {
+  padding: 0px 20px 10px 0;
+}
+form.dataform fieldset {
+  margin-bottom: 10px;
+}
+form.dataform label {
+  display: inline-block;
+  width: 130px;
+}
+form.dataform fieldset legend {
+  padding: 8px 0 8px 2px;
+  font-weight: bold;
+  font-size: 14px;
+}
+form.dataform fieldset ol {
+  margin: 0;
+  padding: 0;
+}
+form.dataform fieldset li {
+  list-style: none;
+  padding: 0 0 5px 5px;
+  margin: 0;
+}
+form.dataform fieldset fieldset {
+  border: none;
+  margin: 3px 0 0;
+}
+form.dataform fieldset fieldset legend {
+  padding: 0 0 5px;
+  font-weight: normal;
+}
+form.dataform fieldset fieldset label {
+  display: block;
+  width: auto;
+  margin-left: 133px;
+}
+form.dataform em {
+  font-weight: bold;
+  font-style: normal;
+  color: #f00;
+}
+
+form.dataform input.positive-submit {
+	background: url(../Images/backgrounds/bg-button-gradient.png) no-repeat;
+	width: 130px;
+	height: 30px;
+	border: none !important;
+	text-align: center;
+	font-weight: bold;
+	font-size: 12px;
+	margin-top: 2px;
+}
+
+form.dataform a.cancel {
+	font-weight: normal !important;
+	color: red !important;
+}
+
+ul.flashmessages, ul.flashmessages li {
+	margin: 0 !important;
+}
+
+ul.flashmessages li {
+	font-weight: bold;
+}
+
+form .required label::after {
+	content: ' *';
+}
+
+input.f3-form-error, textarea.f3-form-error, select.f3-form-error {
+	background: #F2CCD4;
+}
