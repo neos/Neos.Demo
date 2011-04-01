@@ -1,217 +1,90 @@
-{namespace typo3=F3\TYPO3\ViewHelpers}
 <!DOCTYPE html
 	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{namespace typo3=F3\TYPO3\ViewHelpers}
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
-
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-		<!--
-			Finest quality handmade source code by Robert Lemke and Karsten Dambekalns
-
-			This website is powered by FLOW3.
-			FLOW3 is a free open source application framework licensed under GNU/LGPL.
-			Information and contribution at http://flow3.typo3.org
-		-->
-
-		<f:base/>
-
-		<meta name="generator" content="FLOW3" />
-
-		<link rel="stylesheet" type="text/css" href="../../../Public/Stylesheets/conference.css" media="screen" />
-
-		<link rel="stylesheet" type="text/css" href="../../../Public/Stylesheets/stylesheet_f877b8fbe1.css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="../../../Public/Stylesheets/logo.css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="../../../Public/Stylesheets/topmenu.css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="../../../Public/Stylesheets/searchbox.css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="../../../Public/Stylesheets/sitemap.css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="../../../Public/Stylesheets/gfxheaders.css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="../../../Public/Stylesheets/main.css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="../../../Public/Stylesheets/submenu.css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="../../../Public/Stylesheets/columns.css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="../../../Public/JSCal/css/jscal2.css" media="screen" />
-		<link rel="stylesheet" type="text/css" href="../../../Public/Stylesheets/jquery-ui.css" media="screen" />
-
-		<script src="../../../Public/JavaScript/jQuery.js" type="text/javascript"></script>
-		<script src="../../../Public/JavaScript/jQuery-ui.js" type="text/javascript"></script>
-		<script src="../../../Public/JavaScript/base.js" type="text/javascript"></script>
-		<script src="../../../Public/JavaScript/sponsorlogos.js" type="text/javascript"></script>
-		<script src="../../../Public/JavaScript/iframeResizer.js" type="text/javascript"></script>
-		<script src="../../../Public/JSCal/js/jscal2.js" type="text/javascript"></script>
-		<script src="../../../Public/JSCal/js/lang/en.js" type="text/javascript"></script>
-
-		<title>T3CON11</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="DC.title" content="" />
+		<meta name="DC.creator" content="" />
+		<f:base />
+		<title>TYPO3 Phoenix Demo Template</title>
+		<link rel="stylesheet" type="text/css" href="../../../Public/StyleSheets/stylesheet.css" />
 	</head>
-
-	<body id="typo3org">
-		<div id="wrapper">
-			<typo3:aloha.notEditable>
-				<div class="sitemapcontainer">
-					<div class="sitemapcontent">
-						<div id="sitemap"></div>
-						<div id="combobox">
-							<a href="gsa-user-registration/sitemap/visible/" title="View sitemap" id="sitemaptrigger" class="sitemaptriggeroff">&#160;</a>
-							<div id="searchbox"><form method="get" action="index.php">
-									<input type="hidden" name="id" value="149" />
-									<input type="text" class="blur" name="tx_indexedsearch[sword]" title="Search" />
-									<input type="hidden" name="tx_indexedsearch[_sections]" value="0" />
-									<input type="hidden" name="tx_indexedsearch[_freeIndexUid]" value="_" />
-									<input type="hidden" name="tx_indexedsearch[pointer]" value="0" />
-									<input type="hidden" name="tx_indexedsearch[ext]" value="" />
-									<input type="hidden" name="tx_indexedsearch[type]" value="0" />
-									<input type="hidden" name="tx_indexedsearch[defOp]" value="0" />
-									<input type="hidden" name="tx_indexedsearch[media]" value="-1" />
-									<input type="hidden" name="tx_indexedsearch[order]" value="rank_flag" />
-									<input type="hidden" name="tx_indexedsearch[group]" value="flat" />
-									<input type="hidden" name="tx_indexedsearch[lang]" value="-1" />
-									<input type="hidden" name="tx_indexedsearch[desc]" value="0" />
-									<input type="hidden" name="tx_indexedsearch[results]" value="10" />
-									<input type="submit" name="submit" class="search-submit" />
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</typo3:aloha.notEditable>
-			<div id="master">
-				<div id="topcontainer">
-					<div id="logo">
-						<div style="background:url({f:uri.resource(path: 'Images/logos/typo3-logo.png')}) no-repeat top left;">
-							<a href="/" title="Home"><span>TYPO3</span></a>
-						</div>
-					</div>
-				</div>
-				<div id="centeredbox">
-					<div id="topmenu">
-						<div id="level1menu">
-							<ul><li><a href="overview/" class="gt-menu gt-8bf160d17d"><span>Overview</span></a></li><li><a href="tickets/" class="gt-menu gt-85a71c0b2a"><span>Tickets</span></a></li><li><a href="sessions/talks/talk-overview/" class="gt-menu gt-981b076838"><span>Sessions</span></a></li><li><a href="travel-hotel/hotel/" class="gt-menu gt-5a7fafb177"><span>Travel &amp; Hotel</span></a></li><li><a href="social-networks/" class="gt-menu gt-e03de4ebfd"><span>Social Networks</span></a></li><li><a href="contribute/" class="gt-menu gt-c30fe59462"><span>Contribute</span></a></li></ul>
-						</div>
-						<div id="rootlinemenu">
-							&gt;&#160;<a href="home/" onfocus="blurLink(this);">{conference.title}</a>&#160;&gt;&#160;X&#160;
-						</div>
-						<div id="dropdownmenu">
-							<a href="sites/" onclick="return false"><img src="{f:uri.resource(path: 'Images/dummy/dropdownmenu_up.png')}" alt="" /></a>
-						</div>
-						<div id="loginregister">
-							<f:security.ifAuthenticated>
-								<f:then>
-									<f:link.action action="index" controller="Account\Personal"><span class="loggedIn"><img src="{f:uri.resource(path: 'Images/header/login-register.gif')}" width="215" height="37" border="0" alt="" title="" /></span></f:link.action>
-								</f:then>
-								<f:else>
-									<img src="{f:uri.resource(path: 'Images/header/login-register.gif')}" width="215" height="37" border="0" alt="" title="" />
-								</f:else>
-							</f:security.ifAuthenticated>
-						</div>
-					</div>
-					<div id="mainoverlay">
-						<!-- OVERLAY -->
-					</div>
-					<div id="maincontainer">
-						<div id="leftbox">
-							<div id="userinfo">
-								<f:security.ifAuthenticated>
-									<f:then>
-										<div class="info-box logged">
-											<div class="cta-user-img-mask"><img src="{f:uri.resource(path: 'Images/backgrounds/cta-btn-login-bg-masked.png')}" width="207" height="75" border="0" alt="" title="" /></div>
-											<div class="cta-user-info"><div class="cta-user-name"><f:link.action action="index" controller="Account\Personal"><f:format.crop maxCharacters="16" append="…">{account.party.name}</f:format.crop></f:link.action></div>
-											<div class="cta-user-text">Not your account?</div>
-											<div class="cta-user-logout"><f:link.action action="logout" controller="Account\Login">Logout</f:link.action></div>
-											</div>
-										</div>
-									</f:then>
-									<f:else>
-										<div class="info-box non-logged"><a href="tickets/"><span class="info-box-no"><span class="info-header">Get your ticket</span><br /><span class="info-text">Conference Shop</span></span></a><a href="tickets/"><span class="info-box-hover"><span class="info-header">Join the event</span><br /><span class="info-text">Conference Shop</span></span></a></div>
-									</f:else>
-								</f:security.ifAuthenticated>
-							</div>
-							<div id="submenu">
-								{parts.subMenu}
-							</div>
-						</div>
-						<div id="mainbox">
-							<div id="mainspacer">
-								<f:flashMessages />
-								{content.main}
-							</div>
-						</div>
-						<br class="clear-all" />
-					</div>
-				</div>
-				<div id="bottomcontainer">
-					<p>&copy; <f:format.date format="Y">now</f:format.date> <a href="http://association.typo3.org" target="_blank">TYPO3 Association</a> &middot; All rights reserved. <a href="/overview/imprint/" target="_self">Imprint</a></p>
-					<img class="footer-logo" src="{f:uri.resource(path: 'Images/logos/footer-logo.gif')}" alt="" />
-				</div>
-			</div>
-			<br class="clear-all" />
-		</div>
-
-		<div id="login-register-box"><img src="{f:uri.resource(path: 'Images/header/login-register-header.png')}" alt="" />
-			<h3 class="login"><span>Login</span></h3>
-			<f:form action="authenticate" controller="Account\Login" method="post">
-				<div>
-					<label for="username">
-						Username
-					</label>
-					<f:form.textbox class="blur" id="username" name="F3[FLOW3][Security][Authentication][Token][UsernamePassword][username]" title="Username" />
-				</div>
-
-				<div>
-					<label for="password">
-						Password
-					</label>
-					<f:form.password class="blur" id="password" name="F3[FLOW3][Security][Authentication][Token][UsernamePassword][password]" title="Password" />
-				</div>
-			</f:form>
-
-			<h3 class="register"><span>Register</span></h3>
-			<f:link.action action="index" controller="Account\Registration" class="register">Join the event and <strong>register</strong> now</f:link.action>
-			<div class="bottom-shadow">&nbsp;</div>
-		</div>
-
-		<div id="dropdownmenu-links"><div class="wrapper-top"><h3>Official TYPO3 websites<span><a href="gsa-user-registration/#" onclick="return false">close</a></span></h3>
+	<body>
+		<f:section name="body">
+			<div id="navigationAids">
 				<ul>
-					<li class="current-site">
-						<h4><a href="http://t3con10.typo3.org/" target="_top">t3con10.typo3.org</a></h4>
-						<p>TYPO3-Conference 2010</p>
-					</li>
-					<li>
-						<h4><a href="http://flow3.typo3.org/" target="_blank">flow3.typo3.org</a></h4>
-						<p>Next generation PHP framework</p>
-					</li>
-					<li>
-						<h4><a href="http://association.typo3.org/" target="_blank">association.typo3.org</a></h4>
-						<p>The TYPO3 Association</p>
-					</li>
-					<li>
-						<h4><a href="http://typo3.org/community/events/" target="_blank">events.typo3.org</a></h4>
-						<p>TYPO3 Events</p>
-					</li>
-				</ul>
-				<ul>
-					<li>
-						<h4><a href="http://wiki.typo3.org/" target="_blank">wiki.typo3.org</a></h4>
-						<p>Official TYPO3 wiki</p>
-					</li>
-					<li>
-						<h4><a href="http://support.typo3.org/" target="_blank">support.typo3.org</a></h4>
-						<p>TYPO3 support forums</p>
-					</li>
-					<li>
-						<h4><a href="http://buzz.typo3.org" target="_blank">buzz.typo3.org</a></h4>
-						<p>Offical TYPO3 Blogs</p>
-					</li>
-					<li>
-						<h4><a href="http://bugs.typo3.org" target="_blank">bugs.typo3.org /.com</a></h4>
-						<p>Official TYPO3 Bugtracker</p>
-					</li>
+					<li><a href="#navigation">Skip to navigation</a></li>
+					<li><a href="#mainContent">Skip to content</a></li>
 				</ul>
 			</div>
-			<div class="separator"></div>
-			<div class="wrapper-bottom">
-				<h3 class="deeplinks">Quick Deeplink Subdomains</h3>
-				<div class="bottom-shadow"></div>
-			</div><!--div:class:wrapper-bottom-->
-		</div>
+			<div id="outerWrap">
+				<typo3:aloha.notEditable>
+					<div id="header">
+						<h1>TYPO3 Phoenix Demo Site</h1>
+						<div id="topMenu">
+							<ul>
+								<li><f:link.action action="index" controller="Backend\Backend" package="TYPO3" target="_top">Backend login</f:link.action></li>
+							</ul>
+						</div>
+						<div id="searchBox">
+							<form id="search_form" method="post" action="/">
+								<input type="text" id="inputText" value="Future Search" />
+								<input type="image" src="../../../Public/Images/bg_searchButton.gif" width="20" height="20" id="inputButton" alt="Search" title="Search" />
+							</form>
+						</div>
+
+					</div>
+				</typo3:aloha.notEditable>
+				<div id="navigationFirstLevel">
+					<h2>First Level Navigation</h2>
+					<div id="navigationFirstLevelMenu">
+						{parts.firstLevelMenu}
+					</div>
+				</div>
+				<div id="contentWrap">
+					<div id="navigationSecondLevel">
+						<div id="navigationSecondLevelMenu">
+							{parts.secondLevelMenu}
+						</div>
+						<div id="navigationContent">
+							<p>This website demonstrates a few basic features of TYPO3 Phoenix, the next generation of the TYPO3 CMS.</p>
+						</div>
+					</div>
+					<div id="main">
+						<div id="breadcrumb">
+							{parts.breadcrumbMenu}
+						</div>
+						<div id="mainContent">
+							{content.main}
+						</div>
+					</div>
+					<f:if condition="{content.secondary}">
+						<div id="secondary">
+							<div id="secondayContent">
+								<div class="secondaryContentSection">
+									{content.secondary}
+								</div>
+							</div>
+						</div>
+					</f:if>
+				</div>
+				<typo3:aloha.notEditable>
+					<div id="footer">
+						<h3>Footer</h3>
+						<div id="footerMenu">
+							<p>
+								<a href="http://www.typo3.org/">TYPO3 Phoenix</a> &middot;
+								<a href="http://flow3.typo3.org">Powered by FLOW3</a>
+								<img src="../../../Public/Images/FLOW3-Logo-11px.png" width="11" height="11" alt="FLOW3 Logo" />
+							</p>
+						</div>
+					</div>
+				</typo3:aloha.notEditable>
+			</div>
+		</f:section>
 	</body>
 </html>

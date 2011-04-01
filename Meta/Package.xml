@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://typo3.org/ns/2008/flow3/package" version="1.0">
-	<key>T3con11Typo3Org</key>
-	<title>t3con11.typo3.org</title>
-	<description>Site package for the TYPO3 Conference 2011</description>
-	<version>1.0.0</version>
+	<key>PhoenixDemoTypo3Org</key>
+	<title>phoenix.demo.typo3.org</title>
+	<description>Site package for the TYPO3 Phoenix Demo Site</description>
+	<version>1.2.0</version>
 </package>

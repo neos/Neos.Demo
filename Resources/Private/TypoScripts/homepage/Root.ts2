@@ -3,25 +3,30 @@
  */
 page = Page
 page.body = Template
-page.body.source = 'resource://T3con11Typo3Org/Private/Templates/Page/Default.html'
-#page.body.sectionName = "body"
+page.body.source = 'resource://PhoenixDemoTypo3Org/Private/Templates/Page/Default.html'
+page.body.sectionName = "body"
 
 page.head {
 	stylesheets {
 		typo3Stylesheet = Stylesheet
-		typo3Stylesheet.source = 'resource://T3con11Typo3Org/Public/StyleSheets/all.css'
+		typo3Stylesheet.source = 'resource://PhoenixDemoTypo3Org/Public/StyleSheets/stylesheet.css'
 		typo3Stylesheet.media = 'screen'
-	}
-	javascripts {
-
 	}
 }
 
 # Other parts of the page:
 page.parts {
-	subMenu = Menu
-	subMenu {
-		template.source = 'resource://T3con11Typo3Org/Private/Templates/TypoScriptObjects/SubMenu.html'
+
+	breadcrumbMenu = BreadcrumbMenu
+
+	firstLevelMenu = Menu
+	firstLevelMenu {
 		entryLevel = 2
+	}
+
+	secondLevelMenu = Menu
+	secondLevelMenu {
+		entryLevel = 0
+		maximumLevels = 2
 	}
 }
