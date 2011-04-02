@@ -55,11 +55,11 @@ class RegistrationController extends \F3\FLOW3\MVC\Controller\ActionController {
 	 * @author Bastian Waidelich <bastian@typo3.org>
 	 */
 	public function newAccountAction() {
-		$number = (time() - 1292863102);
-		$registration = $this->objectManager->create('F3\PhoenixDemoTypo3Org\Domain\Model\Registration');
-		$registration->setFirstName('Santa');
-		$registration->setLastName('Claus');
-		$registration->setUsername('santa' . $number);
+		$number = (time() - 1302876012);
+		$registration = new \F3\PhoenixDemoTypo3Org\Domain\Model\Registration();
+		$registration->setFirstName('John');
+		$registration->setLastName('Doe');
+		$registration->setUsername('demo' . $number);
 		$registration->setPassword('demo');
 
 		$this->view->assign('registration', $registration);
@@ -77,12 +77,18 @@ class RegistrationController extends \F3\FLOW3\MVC\Controller\ActionController {
 		$existingAccount = $this->accountRepository->findActiveByAccountIdentifierAndAuthenticationProviderName($accountIdentifier, 'DefaultProvider');
 		if ($existingAccount !== NULL) {
 			$this->flashMessageContainer->add('An account with the username "' . $accountIdentifier . '" already exists.');
-			$this->redirect('newAccount', NULL, NULL, array('registration' => $registration));
+			$this->forward('newAccount');
 		}
 
 		$account = $this->createTemporaryAccount($accountIdentifier, $registration->getPassword(), $registration->getFirstName(), $registration->getLastName());
 		$this->accountRepository->add($account);
-		$this->redirect('index', 'Login', 'TYPO3', array('username' => $accountIdentifier));
+
+		$uriBuilder = new \F3\FLOW3\MVC\Web\Routing\UriBuilder();
+		$uriBuilder->setRequest($this->request->getParentRequest());
+		$redirectUri = $uriBuilder
+			->setCreateAbsoluteUri(TRUE)
+			->uriFor('index', array('username' => $accountIdentifier), 'Login', 'TYPO3');
+		$this->redirectToUri($redirectUri);
 	}
 
 	/**
@@ -99,8 +105,8 @@ class RegistrationController extends \F3\FLOW3\MVC\Controller\ActionController {
 			$firstName = 'Santa';
 			$lastName = 'Claus';
 		}
-		$name = $this->objectManager->get('F3\Party\Domain\Model\PersonName', '', $firstName, '', $lastName);
-		$person = $this->objectManager->get('F3\Party\Domain\Model\Person');
+		$name = new \F3\Party\Domain\Model\PersonName('', $firstName, '', $lastName);
+		$person = new \F3\Party\Domain\Model\Person();
 		$person->setName($name);
 		$account = $this->accountFactory->createAccountWithPassword($accountIdentifier, $password, array('Administrator'));
 		$account->setParty($person);
