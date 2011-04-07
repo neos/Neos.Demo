@@ -89,7 +89,7 @@
 					</properties>
 				</node>
 			</node>
-			<node uuid="" type="TYPO3:Page" nodeName="thirdpage" locale="en_EN">
+			<node uuid="" type="TYPO3:Page" nodeName="thirdpage" locale="en_EN" hidden="true">
 				<properties>
 					<title>Third Page</title>
 				</properties>
@@ -99,10 +99,26 @@
 					<title>Fourth Page</title>
 				</properties>
 			</node>
-			<node uuid="" type="TYPO3:Page" nodeName="fifthpage" locale="en_EN">
+			<node uuid="" type="TYPO3:Page" nodeName="fifthpage" locale="en_EN" hiddenInIndex="true">
 				<properties>
-					<title>Fifth Page</title>
+					<title>Fifth Page - hidden in index</title>
 				</properties>
+			</node>
+			<node uuid="" type="TYPO3:Page" nodeName="adminpage" locale="en_EN">
+				<properties>
+					<title>Administrator Page</title>
+				</properties>
+				<accessRoles>
+					<role>Administrator</role>
+				</accessRoles>
+				<node uuid="" type="TYPO3:Section" nodeName="main" locale="en_EN">
+					<node uuid="" type="TYPO3:Text" nodeName="text1" locale="en_EN">
+						<properties>
+							<headline>Admin Page</headline>
+							<text><![CDATA[This content should only be visible if you're logged in as an administrator.]]></text>
+						</properties>
+					</node>
+				</node>
 			</node>
 		</node>
 	</site>
