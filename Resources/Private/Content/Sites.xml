@@ -103,6 +103,14 @@
 				<properties>
 					<title>Fifth Page - hidden in index</title>
 				</properties>
+				<node uuid="" type="TYPO3:Section" nodeName="main" locale="en_EN">
+					<node uuid="" type="TYPO3:Text" nodeName="text1" locale="en_EN">
+						<properties>
+							<headline>Fifth Page</headline>
+							<text><![CDATA[This page is generally visible, but it is not shown in indexes such as the site navigation.]]></text>
+						</properties>
+					</node>
+				</node>
 			</node>
 			<node uuid="" type="TYPO3:Page" nodeName="adminpage" locale="en_EN">
 				<properties>
