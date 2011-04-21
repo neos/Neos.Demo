@@ -106,10 +106,11 @@ class RegistrationController extends \F3\FLOW3\MVC\Controller\ActionController {
 			$lastName = 'Claus';
 		}
 		$name = new \F3\Party\Domain\Model\PersonName('', $firstName, '', $lastName);
-		$person = new \F3\Party\Domain\Model\Person();
-		$person->setName($name);
+		$user = new \F3\TYPO3\Domain\Model\User();
+		$user->getPreferences()->set('context.workspace', 'user-' . $accountIdentifier);
+		$user->setName($name);
 		$account = $this->accountFactory->createAccountWithPassword($accountIdentifier, $password, array('Administrator'));
-		$account->setParty($person);
+		$account->setParty($user);
 		$account->setExpirationDate(new \DateTime('+1 week'));
 		return $account;
 	}
