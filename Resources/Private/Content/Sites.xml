@@ -4,6 +4,7 @@
 		<properties>
 			<name>TYPO3 Phoenix Demo Site</name>
 			<state>1</state>
+			<siteResourcesPackageKey>PhoenixDemoTypo3Org</siteResourcesPackageKey>
 		</properties>
 		<node uuid="" type="TYPO3:Page" nodeName="homepage" locale="en_EN">
 			<properties>
