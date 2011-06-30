@@ -508,7 +508,7 @@ label {
 #mainContent input:hover, #mainContent input:focus {
 	border-color: #AAAAAA;
 }
-#mainContent input.f3-form-error {
+#mainContent input.typo3-form-error {
 	border-color: #F29416;
 }
 #mainContent input.button {

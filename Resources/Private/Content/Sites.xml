@@ -4,14 +4,14 @@
 		<properties>
 			<name>TYPO3 Phoenix Demo Site</name>
 			<state>1</state>
-			<siteResourcesPackageKey>PhoenixDemoTypo3Org</siteResourcesPackageKey>
+			<siteResourcesPackageKey>TYPO3.PhoenixDemoTypo3Org</siteResourcesPackageKey>
 		</properties>
-		<node uuid="" type="TYPO3:Page" nodeName="homepage" locale="en_EN">
+		<node uuid="" type="TYPO3.TYPO3:Page" nodeName="homepage" locale="en_EN">
 			<properties>
 				<title>Home</title>
 			</properties>
-			<node uuid="" type="TYPO3:Section" nodeName="main" locale="en_EN">
-				<node uuid="" type="TYPO3:Text" nodeName="text1" locale="en_EN">
+			<node uuid="" type="TYPO3.TYPO3:Section" nodeName="main" locale="en_EN">
+				<node uuid="" type="TYPO3.TYPO3:Text" nodeName="text1" locale="en_EN">
 					<properties>
 						<headline>I'm here to be defaced ;-)</headline>
 						<text><![CDATA[This is the TYPO3 Phoenix demo website. It's there to let you experiment with the features
@@ -19,44 +19,44 @@
 						</text>
 					</properties>
 				</node>
-				<node uuid="" type="PhoenixDemoTypo3Org:Registration" nodeName="registration" locale="en_EN">
+				<node uuid="" type="TYPO3.PhoenixDemoTypo3Org:Registration" nodeName="registration" locale="en_EN">
 					<properties>
 						<action>newAccount</action>
 					</properties>
 				</node>
-				<node uuid="" type="TYPO3:Text" nodeName="text3" locale="en_EN">
+				<node uuid="" type="TYPO3.TYPO3:Text" nodeName="text3" locale="en_EN">
 					<properties>
 						<headline>Content</headline>
-						<text><![CDATA[The content for this site was created by importing the XML file found at <code>Resources/Private/Content/Content.xml</code>in the PhoenixDemoTypo3Org package.]]></text>
+						<text><![CDATA[The content for this site was created by importing the XML file found at <code>Resources/Private/Content/Content.xml</code>in the TYPO3.PhoenixDemoTypo3Org package.]]></text>
 					</properties>
 				</node>
 			</node>
-			<node uuid="" type="TYPO3:Section" nodeName="secondary" locale="en_EN">
-				<node uuid="" type="Twitter:LatestTweets" nodeName="latesttweets" locale="en_EN"/>
-				<node uuid="" type="TYPO3:Html" nodeName="htmlelement" locale="en_EN">
+			<node uuid="" type="TYPO3.TYPO3:Section" nodeName="secondary" locale="en_EN">
+				<node uuid="" type="TYPO3.Twitter:LatestTweets" nodeName="latesttweets" locale="en_EN"/>
+				<node uuid="" type="TYPO3.TYPO3:Html" nodeName="htmlelement" locale="en_EN">
 					<properties>
 						<source><![CDATA[<h1>HTML Element</h1><p>This shows a default HTML element</p><a href="http://phoenix.demo.typo3.org/" target="_blank">Phoenix demo page</a>]]></source>
 					</properties>
 				</node>
 			</node>
-			<node uuid="" type="TYPO3:Page" nodeName="anotherpage" locale="en_EN">
+			<node uuid="" type="TYPO3.TYPO3:Page" nodeName="anotherpage" locale="en_EN">
 				<properties>
 					<title>Another Page</title>
 				</properties>
-				<node uuid="" type="TYPO3:Section" nodeName="main" locale="en_EN">
-					<node uuid="" type="TYPO3:Text" nodeName="text1" locale="en_EN">
+				<node uuid="" type="TYPO3.TYPO3:Section" nodeName="main" locale="en_EN">
+					<node uuid="" type="TYPO3.TYPO3:Text" nodeName="text1" locale="en_EN">
 						<properties>
 							<headline>Want More?</headline>
 							<text><![CDATA[This is another page which exists for the sole purpose to demonstrate sub pages in TYPO3 Phoenix. And you know what? There is even a page <a href="homepage/anotherpage/thirdlevelpage.html">on the third level</a>]]></text>
 						</properties>
 					</node>
 				</node>
-				<node uuid="" type="TYPO3:Page" nodeName="thirdlevelpage" locale="en_EN" >
+				<node uuid="" type="TYPO3.TYPO3:Page" nodeName="thirdlevelpage" locale="en_EN" >
 					<properties>
 						<title>Page on the third level</title>
 					</properties>
-					<node uuid="" type="TYPO3:Section" nodeName="main" locale="en_EN">
-						<node uuid="" type="TYPO3:Text" nodeName="text1" locale="en_EN">
+					<node uuid="" type="TYPO3.TYPO3:Section" nodeName="main" locale="en_EN">
+						<node uuid="" type="TYPO3.TYPO3:Text" nodeName="text1" locale="en_EN">
 							<properties>
 								<headline>Wow, that can't be true</headline>
 								<text><![CDATA[Here is yet more content, even on the third level.]]></text>
@@ -65,47 +65,47 @@
 					</node>
 				</node>
 			</node>
-			<node uuid="" type="TYPO3:Page" nodeName="secondpage" locale="en_EN">
+			<node uuid="" type="TYPO3.TYPO3:Page" nodeName="secondpage" locale="en_EN">
 				<properties>
 					<title>Second Page</title>
 				</properties>
-				<node uuid="" type="TYPO3:Page" nodeName="subpage1" locale="en_EN">
+				<node uuid="" type="TYPO3.TYPO3:Page" nodeName="subpage1" locale="en_EN">
 					<properties>
 						<title>First Subpage</title>
 					</properties>
-					<node uuid="" type="TYPO3:Page" nodeName="subsubpage1" locale="en_EN">
+					<node uuid="" type="TYPO3.TYPO3:Page" nodeName="subsubpage1" locale="en_EN">
 						<properties>
 							<title>First Sub-Subpage</title>
 						</properties>
 					</node>
 				</node>
-				<node uuid="" type="TYPO3:Page" nodeName="subpage2" locale="en_EN">
+				<node uuid="" type="TYPO3.TYPO3:Page" nodeName="subpage2" locale="en_EN">
 					<properties>
 						<title>Second Subpage</title>
 					</properties>
 				</node>
-				<node uuid="" type="TYPO3:Page" nodeName="subpage3" locale="en_EN">
+				<node uuid="" type="TYPO3.TYPO3:Page" nodeName="subpage3" locale="en_EN">
 					<properties>
 						<title>Third Subpage</title>
 					</properties>
 				</node>
 			</node>
-			<node uuid="" type="TYPO3:Page" nodeName="thirdpage" locale="en_EN" hidden="true">
+			<node uuid="" type="TYPO3.TYPO3:Page" nodeName="thirdpage" locale="en_EN" hidden="true">
 				<properties>
 					<title>Third Page</title>
 				</properties>
 			</node>
-			<node uuid="" type="TYPO3:Page" nodeName="fourthpage" locale="en_EN">
+			<node uuid="" type="TYPO3.TYPO3:Page" nodeName="fourthpage" locale="en_EN">
 				<properties>
 					<title>Fourth Page</title>
 				</properties>
 			</node>
-			<node uuid="" type="TYPO3:Page" nodeName="fifthpage" locale="en_EN" hiddenInIndex="true">
+			<node uuid="" type="TYPO3.TYPO3:Page" nodeName="fifthpage" locale="en_EN" hiddenInIndex="true">
 				<properties>
 					<title>Fifth Page - hidden in index</title>
 				</properties>
-				<node uuid="" type="TYPO3:Section" nodeName="main" locale="en_EN">
-					<node uuid="" type="TYPO3:Text" nodeName="text1" locale="en_EN">
+				<node uuid="" type="TYPO3.TYPO3:Section" nodeName="main" locale="en_EN">
+					<node uuid="" type="TYPO3.TYPO3:Text" nodeName="text1" locale="en_EN">
 						<properties>
 							<headline>Fifth Page</headline>
 							<text><![CDATA[This page is generally visible, but it is not shown in indexes such as the site navigation.]]></text>
@@ -113,15 +113,15 @@
 					</node>
 				</node>
 			</node>
-			<node uuid="" type="TYPO3:Page" nodeName="adminpage" locale="en_EN">
+			<node uuid="" type="TYPO3.TYPO3:Page" nodeName="adminpage" locale="en_EN">
 				<properties>
 					<title>Administrator Page</title>
 				</properties>
 				<accessRoles>
 					<role>Administrator</role>
 				</accessRoles>
-				<node uuid="" type="TYPO3:Section" nodeName="main" locale="en_EN">
-					<node uuid="" type="TYPO3:Text" nodeName="text1" locale="en_EN">
+				<node uuid="" type="TYPO3.TYPO3:Section" nodeName="main" locale="en_EN">
+					<node uuid="" type="TYPO3.TYPO3:Text" nodeName="text1" locale="en_EN">
 						<properties>
 							<headline>Admin Page</headline>
 							<text><![CDATA[This content should only be visible if you're logged in as an administrator.]]></text>

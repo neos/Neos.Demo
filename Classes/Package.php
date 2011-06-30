@@ -1,6 +1,5 @@
 <?php
-declare(ENCODING = 'utf-8');
-namespace F3\PhoenixDemoTypo3Org;
+namespace TYPO3\PhoenixDemoTypo3Org;
 
 /*                                                                        *
  * This script belongs to the FLOW3 framework.                            *
@@ -22,7 +21,7 @@ namespace F3\PhoenixDemoTypo3Org;
  * The TYPO3 project - inspiring people to share!                         *
  *                                                                        */
 
-use \F3\FLOW3\Package\Package as BasePackage;
+use \TYPO3\FLOW3\Package\Package as BasePackage;
 
 /**
  * The PhoenixDemoTypo3Org Package

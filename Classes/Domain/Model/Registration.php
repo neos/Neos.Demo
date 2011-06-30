@@ -1,6 +1,5 @@
 <?php
-declare(ENCODING = 'utf-8');
-namespace F3\PhoenixDemoTypo3Org\Domain\Model;
+namespace TYPO3\PhoenixDemoTypo3Org\Domain\Model;
 
 /*                                                                        *
  * This script belongs to the FLOW3 package "PhoenixDemoTypo3Org".        *

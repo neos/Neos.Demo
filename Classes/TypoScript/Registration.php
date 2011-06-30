@@ -1,6 +1,5 @@
 <?php
-declare(ENCODING = 'utf-8');
-namespace F3\PhoenixDemoTypo3Org\TypoScript;
+namespace TYPO3\PhoenixDemoTypo3Org\TypoScript;
 
 /*                                                                        *
  * This script belongs to the FLOW3 package "PhoenixDemoTypo3Org".        *
@@ -28,12 +27,12 @@ namespace F3\PhoenixDemoTypo3Org\TypoScript;
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  * @scope prototype
  */
-class Registration extends \F3\TYPO3\TypoScript\Plugin {
+class Registration extends \TYPO3\TYPO3\TypoScript\Plugin {
 
 	/**
 	 * @var string
 	 */
-	protected $package = 'PhoenixDemoTypo3Org';
+	protected $package = 'TYPO3.PhoenixDemoTypo3Org';
 
 	/**
 	 * @var string

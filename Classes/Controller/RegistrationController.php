@@ -1,6 +1,5 @@
 <?php
-declare(ENCODING = 'utf-8');
-namespace F3\PhoenixDemoTypo3Org\Controller;
+namespace TYPO3\PhoenixDemoTypo3Org\Controller;
 
 /*                                                                        *
  * This script belongs to the FLOW3 package "PhoenixDemoTypo3Org".        *
@@ -27,17 +26,17 @@ namespace F3\PhoenixDemoTypo3Org\Controller;
  *
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class RegistrationController extends \F3\FLOW3\MVC\Controller\ActionController {
+class RegistrationController extends \TYPO3\FLOW3\MVC\Controller\ActionController {
 
 	/**
 	 * @inject
-	 * @var \F3\FLOW3\Security\AccountRepository
+	 * @var \TYPO3\FLOW3\Security\AccountRepository
 	 */
 	protected $accountRepository;
 
 	/**
 	 * @inject
-	 * @var \F3\FLOW3\Security\AccountFactory
+	 * @var \TYPO3\FLOW3\Security\AccountFactory
 	 */
 	protected $accountFactory;
 
@@ -56,7 +55,7 @@ class RegistrationController extends \F3\FLOW3\MVC\Controller\ActionController {
 	 */
 	public function newAccountAction() {
 		$number = (time() - 1302876012);
-		$registration = new \F3\PhoenixDemoTypo3Org\Domain\Model\Registration();
+		$registration = new \TYPO3\PhoenixDemoTypo3Org\Domain\Model\Registration();
 		$registration->setFirstName('John');
 		$registration->setLastName('Doe');
 		$registration->setUsername('demo' . $number);
@@ -68,11 +67,11 @@ class RegistrationController extends \F3\FLOW3\MVC\Controller\ActionController {
 	/**
 	 * Action for creating a temporary account
 	 *
-	 * @param \F3\PhoenixDemoTypo3Org\Domain\Model\Registration $registration
+	 * @param \TYPO3\PhoenixDemoTypo3Org\Domain\Model\Registration $registration
 	 * @return void
 	 * @author Bastian Waidelich <bastian@typo3.org>
 	 */
-	public function createAccountAction(\F3\PhoenixDemoTypo3Org\Domain\Model\Registration $registration) {
+	public function createAccountAction(\TYPO3\PhoenixDemoTypo3Org\Domain\Model\Registration $registration) {
 		$accountIdentifier = $registration->getUsername();
 		$existingAccount = $this->accountRepository->findActiveByAccountIdentifierAndAuthenticationProviderName($accountIdentifier, 'DefaultProvider');
 		if ($existingAccount !== NULL) {
@@ -83,11 +82,11 @@ class RegistrationController extends \F3\FLOW3\MVC\Controller\ActionController {
 		$account = $this->createTemporaryAccount($accountIdentifier, $registration->getPassword(), $registration->getFirstName(), $registration->getLastName());
 		$this->accountRepository->add($account);
 
-		$uriBuilder = new \F3\FLOW3\MVC\Web\Routing\UriBuilder();
+		$uriBuilder = new \TYPO3\FLOW3\MVC\Web\Routing\UriBuilder();
 		$uriBuilder->setRequest($this->request->getParentRequest());
 		$redirectUri = $uriBuilder
 			->setCreateAbsoluteUri(TRUE)
-			->uriFor('index', array('username' => $accountIdentifier), 'Login', 'TYPO3');
+			->uriFor('index', array('username' => $accountIdentifier), 'Login', 'TYPO3.TYPO3');
 		$this->redirectToUri($redirectUri);
 	}
 
@@ -98,15 +97,15 @@ class RegistrationController extends \F3\FLOW3\MVC\Controller\ActionController {
 	 * @param string $password
 	 * @param string $firstName
 	 * @param string $lastName
-	 * @return \F3\FLOW3\Security\Account
+	 * @return \TYPO3\FLOW3\Security\Account
 	 */
 	protected function createTemporaryAccount($accountIdentifier, $password, $firstName, $lastName) {
 		if (strlen($firstName) === 0 && strlen($lastName) === 0) {
 			$firstName = 'Santa';
 			$lastName = 'Claus';
 		}
-		$name = new \F3\Party\Domain\Model\PersonName('', $firstName, '', $lastName);
-		$user = new \F3\TYPO3\Domain\Model\User();
+		$name = new \TYPO3\Party\Domain\Model\PersonName('', $firstName, '', $lastName);
+		$user = new \TYPO3\TYPO3\Domain\Model\User();
 		$user->getPreferences()->set('context.workspace', 'user-' . $accountIdentifier);
 		$user->setName($name);
 		$account = $this->accountFactory->createAccountWithPassword($accountIdentifier, $password, array('Administrator'));
