@@ -32,7 +32,6 @@
 				</node>
 			</node>
 			<node uuid="" type="TYPO3.TYPO3:Section" nodeName="secondary" locale="en_EN">
-				<node uuid="" type="TYPO3.Twitter:LatestTweets" nodeName="latesttweets" locale="en_EN"/>
 				<node uuid="" type="TYPO3.TYPO3:Html" nodeName="htmlelement" locale="en_EN">
 					<properties>
 						<source><![CDATA[<h1>HTML Element</h1><p>This shows a default HTML element</p><a href="http://phoenix.demo.typo3.org/" target="_blank">Phoenix demo page</a>]]></source>
