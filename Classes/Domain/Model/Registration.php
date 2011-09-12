@@ -24,7 +24,6 @@ namespace TYPO3\PhoenixDemoTypo3Org\Domain\Model;
 /**
  * Domain Model of a Registration
  *
- * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  * @entity
  * @scope prototype
  */

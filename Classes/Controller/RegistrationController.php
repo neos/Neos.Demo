@@ -24,7 +24,6 @@ namespace TYPO3\PhoenixDemoTypo3Org\Controller;
 /**
  * Controller that handles the creation of temporary Accounts
  *
- * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
 class RegistrationController extends \TYPO3\FLOW3\MVC\Controller\ActionController {
 
