@@ -72,7 +72,7 @@ class RegistrationController extends \TYPO3\FLOW3\MVC\Controller\ActionControlle
 	 */
 	public function createAccountAction(\TYPO3\PhoenixDemoTypo3Org\Domain\Model\Registration $registration) {
 		$accountIdentifier = $registration->getUsername();
-		$existingAccount = $this->accountRepository->findActiveByAccountIdentifierAndAuthenticationProviderName($accountIdentifier, 'DefaultProvider');
+		$existingAccount = $this->accountRepository->findActiveByAccountIdentifierAndAuthenticationProviderName($accountIdentifier, 'Typo3BackendProvider');
 		if ($existingAccount !== NULL) {
 			$this->flashMessageContainer->add('An account with the username "' . $accountIdentifier . '" already exists.');
 			$this->forward('newAccount');
@@ -107,7 +107,7 @@ class RegistrationController extends \TYPO3\FLOW3\MVC\Controller\ActionControlle
 		$user = new \TYPO3\TYPO3\Domain\Model\User();
 		$user->getPreferences()->set('context.workspace', 'user-' . $accountIdentifier);
 		$user->setName($name);
-		$account = $this->accountFactory->createAccountWithPassword($accountIdentifier, $password, array('Administrator'));
+		$account = $this->accountFactory->createAccountWithPassword($accountIdentifier, $password, array('Administrator'), 'Typo3BackendProvider');
 		$account->setParty($user);
 		$account->setExpirationDate(new \DateTime('+1 week'));
 		return $account;
