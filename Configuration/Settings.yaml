@@ -1,0 +1,10 @@
+#                                                                        #
+# Settings                                                               #
+#                                                                        #
+
+TYPO3:
+  TYPO3CR:
+    contentTypes:
+      'TYPO3.PhoenixDemoTypo3Org:Registration':
+        superTypes: ['TYPO3.TYPO3:Plugin']
+        label: 'Editor Registration Plugin'
