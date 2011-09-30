@@ -35,6 +35,12 @@ class RegistrationController extends \TYPO3\FLOW3\MVC\Controller\ActionControlle
 
 	/**
 	 * @inject
+	 * @var \TYPO3\Party\Domain\Repository\PartyRepository
+	 */
+	protected $partyRepository;
+
+	/**
+	 * @inject
 	 * @var \TYPO3\FLOW3\Security\AccountFactory
 	 */
 	protected $accountFactory;
@@ -78,8 +84,7 @@ class RegistrationController extends \TYPO3\FLOW3\MVC\Controller\ActionControlle
 			$this->forward('newAccount');
 		}
 
-		$account = $this->createTemporaryAccount($accountIdentifier, $registration->getPassword(), $registration->getFirstName(), $registration->getLastName());
-		$this->accountRepository->add($account);
+		$this->createTemporaryAccount($accountIdentifier, $registration->getPassword(), $registration->getFirstName(), $registration->getLastName());
 
 		$uriBuilder = new \TYPO3\FLOW3\MVC\Web\Routing\UriBuilder();
 		$uriBuilder->setRequest($this->request->getParentRequest());
@@ -103,14 +108,17 @@ class RegistrationController extends \TYPO3\FLOW3\MVC\Controller\ActionControlle
 			$firstName = 'Santa';
 			$lastName = 'Claus';
 		}
-		$name = new \TYPO3\Party\Domain\Model\PersonName('', $firstName, '', $lastName);
+
 		$user = new \TYPO3\TYPO3\Domain\Model\User();
+		$user->setName(new \TYPO3\Party\Domain\Model\PersonName('', $firstName, '', $lastName));
 		$user->getPreferences()->set('context.workspace', 'user-' . $accountIdentifier);
-		$user->setName($name);
+		$this->partyRepository->add($user);
+
 		$account = $this->accountFactory->createAccountWithPassword($accountIdentifier, $password, array('Administrator'), 'Typo3BackendProvider');
 		$account->setParty($user);
 		$account->setExpirationDate(new \DateTime('+1 week'));
-		return $account;
+
+		$this->accountRepository->add($account);
 	}
 
 	/**
