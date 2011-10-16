@@ -21,10 +21,12 @@ namespace TYPO3\PhoenixDemoTypo3Org\TypoScript;
  * The TYPO3 project - inspiring people to share!                         *
  *                                                                        */
 
+use TYPO3\FLOW3\Annotations as FLOW3;
+
 /**
  * A TypoScript object displaying the demo account registration form
  *
- * @scope prototype
+ * @FLOW3\Scope("prototype")
  */
 class Registration extends \TYPO3\TYPO3\TypoScript\Plugin {
 

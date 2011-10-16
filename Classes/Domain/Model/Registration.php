@@ -21,23 +21,26 @@ namespace TYPO3\PhoenixDemoTypo3Org\Domain\Model;
  * The TYPO3 project - inspiring people to share!                         *
  *                                                                        */
 
+use TYPO3\FLOW3\Annotations as FLOW3;
+
 /**
  * Domain Model of a Registration
  *
- * @entity
- * @scope prototype
+ * @FLOW3\Entity
+ * @FLOW3\Scope("prototype")
  */
 class Registration {
 
 	/**
 	 * @var string
-	 * @validate Label, NotEmpty
+	 * @FLOW3\Validate(type="Label")
+	 * @FLOW3\Validate(type="NotEmpty")
 	 */
 	protected $username = '';
 
 	/**
 	 * @var string
-	 * @validate NotEmpty
+	 * @FLOW3\Validate(type="NotEmpty")
 	 */
 	protected $password = '';
 
