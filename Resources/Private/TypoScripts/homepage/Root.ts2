@@ -18,11 +18,7 @@ page.body.parts {
 	secondLevelMenu.maximumLevels = 2
 
 
-	breadcrumbMenu = TYPO3.TypoScript:FluidRenderer
-	breadcrumbMenu {
-		templatePath = 'resource://TYPO3.Flow3Org/Private/Templates/TypoScriptObjects/BreadcrumbMenu.html'
-		items = ${context.parents().add(context)}
-	}
+	breadcrumbMenu = TYPO3.TYPO3:Breadcrumb
 }
 
 page.body.secondaryColumnFilled = ${context.children('secondary').children().count()}
