@@ -2,6 +2,7 @@
 	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 {namespace typo3=TYPO3\TYPO3\ViewHelpers}
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,7 +12,9 @@
 		<meta name="DC.creator" content="" />
 		<f:base />
 		<title>TYPO3 Phoenix Demo Template</title>
-		<link rel="stylesheet" type="text/css" href="../../../Public/StyleSheets/stylesheet.css" />
+		<f:section name="stylesheets">
+			<link rel="stylesheet" type="text/css" href="../../../Public/StyleSheets/stylesheet.css" />
+		</f:section>
 	</head>
 	<body>
 		<f:section name="body">
@@ -43,13 +46,13 @@
 				<div id="navigationFirstLevel" class="t3-reloadable-content">
 					<h2>First Level Navigation</h2>
 					<div id="navigationFirstLevelMenu">
-						{parts.firstLevelMenu}
+						<ts:renderTypoScript path="parts/firstLevelMenu" />
 					</div>
 				</div>
 				<div id="contentWrap" class="t3-reloadable-content">
 					<div id="navigationSecondLevel">
 						<div id="navigationSecondLevelMenu">
-							{parts.secondLevelMenu}
+							<ts:renderTypoScript path="parts/secondLevelMenu" />
 						</div>
 						<div id="navigationContent">
 							<p>This website demonstrates a few basic features of TYPO3 Phoenix, the next generation of the TYPO3 CMS.</p>
@@ -57,17 +60,17 @@
 					</div>
 					<div id="main">
 						<div id="breadcrumb">
-							{parts.breadcrumbMenu}
+							<ts:renderTypoScript path="parts/breadcrumbMenu" />
 						</div>
 						<div id="mainContent">
-							{content.main}
+							<ts:renderTypoScript path="sections/main" />
 						</div>
 					</div>
-					<f:if condition="{content.secondary}">
+					<f:if condition="{secondaryColumnFilled}">
 						<div id="secondary">
 							<div id="secondayContent">
 								<div class="secondaryContentSection">
-									{content.secondary}
+									<ts:renderTypoScript path="sections/secondary" />
 								</div>
 							</div>
 						</div>

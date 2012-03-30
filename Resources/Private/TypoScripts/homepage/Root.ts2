@@ -1,32 +1,43 @@
+include: resource://TYPO3.TYPO3/Private/DefaultTypoScript/All.ts2
+
+prototype(TYPO3.PhoenixDemoTypo3Org:Registration).implementationClassName = 'TYPO3\\PhoenixDemoTypo3Org\\TypoScript\\Registration'
+
 /**
  * Root TypoScript template for the TYPO3 Phoenix Demo Site
  */
-page = Page
-page.body = Template
-page.body.source = 'resource://TYPO3.PhoenixDemoTypo3Org/Private/Templates/Page/Default.html'
-page.body.sectionName = "body"
+page = TYPO3.TYPO3:Page
+page.body.templatePath = 'resource://TYPO3.PhoenixDemoTypo3Org/Private/Templates/Page/Default.html'
+page.body.sectionName = 'body'
 
-page.head {
-	stylesheets {
-		typo3Stylesheet = Stylesheet
-		typo3Stylesheet.source = 'resource://TYPO3.PhoenixDemoTypo3Org/Public/StyleSheets/stylesheet.css'
-		typo3Stylesheet.media = 'screen'
+page.body.parts {
+	firstLevelMenu = TYPO3.TYPO3:MenuRenderer
+	firstLevelMenu.entryLevel = 2
+
+	secondLevelMenu = TYPO3.TYPO3:MenuRenderer
+	secondLevelMenu.entryLevel = 0
+	secondLevelMenu.maximumLevels = 2
+
+
+	breadcrumbMenu = TYPO3.TypoScript:FluidRenderer
+	breadcrumbMenu {
+		templatePath = 'resource://TYPO3.Flow3Org/Private/Templates/TypoScriptObjects/BreadcrumbMenu.html'
+		items = ${context.parents().add(context)}
 	}
 }
 
-# Other parts of the page:
-page.parts {
+page.body.secondaryColumnFilled = ${context.children('secondary').children().count()}
 
-	breadcrumbMenu = BreadcrumbMenu
 
-	firstLevelMenu = Menu
-	firstLevelMenu {
-		entryLevel = 2
-	}
+page.body.sections.secondary = TYPO3.TypoScript:CollectionRenderer
+page.body.sections.secondary.collection = ${context.children('secondary').children()}
 
-	secondLevelMenu = Menu
-	secondLevelMenu {
-		entryLevel = 0
-		maximumLevels = 2
+page.body.sections.main = TYPO3.TypoScript:CollectionRenderer
+page.body.sections.main.collection = ${context.children('main').children()}
+
+page.headerData {
+	stylesheets = TYPO3.TypoScript:FluidRenderer
+	stylesheets {
+		templatePath = 'resource://TYPO3.PhoenixDemoTypo3Org/Private/Templates/Page/Default.html'
+		sectionName = 'stylesheets'
 	}
 }
