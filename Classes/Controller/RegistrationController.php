@@ -82,7 +82,7 @@ class RegistrationController extends \TYPO3\FLOW3\Mvc\Controller\ActionControlle
 		$accountIdentifier = $registration->getUsername();
 		$existingAccount = $this->accountRepository->findActiveByAccountIdentifierAndAuthenticationProviderName($accountIdentifier, 'Typo3BackendProvider');
 		if ($existingAccount !== NULL) {
-			$this->flashMessageContainer->add('An account with the username "' . $accountIdentifier . '" already exists.');
+			$this->addFlashMessage('An account with the username "' . $accountIdentifier . '" already exists.');
 			$this->forward('newAccount');
 		}
 
