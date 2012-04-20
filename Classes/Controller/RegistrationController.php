@@ -27,7 +27,7 @@ use TYPO3\FLOW3\Annotations as FLOW3;
  * Controller that handles the creation of temporary Accounts
  *
  */
-class RegistrationController extends \TYPO3\FLOW3\MVC\Controller\ActionController {
+class RegistrationController extends \TYPO3\FLOW3\Mvc\Controller\ActionController {
 
 	/**
 	 * @FLOW3\Inject
@@ -88,7 +88,7 @@ class RegistrationController extends \TYPO3\FLOW3\MVC\Controller\ActionControlle
 
 		$this->createTemporaryAccount($accountIdentifier, $registration->getPassword(), $registration->getFirstName(), $registration->getLastName());
 
-		$uriBuilder = new \TYPO3\FLOW3\MVC\Web\Routing\UriBuilder();
+		$uriBuilder = new \TYPO3\FLOW3\Mvc\Routing\UriBuilder();
 		$uriBuilder->setRequest($this->request->getParentRequest());
 		$redirectUri = $uriBuilder
 			->setCreateAbsoluteUri(TRUE)
