@@ -4,4 +4,7 @@
 	<title>phoenix.demo.typo3.org</title>
 	<description>Site package for the TYPO3 Phoenix Demo Site</description>
 	<version>1.2.0</version>
+	<categories>
+		<category>Site</category>
+	</categories>
 </package>
