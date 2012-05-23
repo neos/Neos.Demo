@@ -24,11 +24,11 @@ page.body.parts {
 page.body.secondaryColumnFilled = ${context.children('secondary').children().count()}
 
 
-page.body.sections.secondary = TYPO3.TypoScript:CollectionRenderer
-page.body.sections.secondary.collection = ${context.children('secondary').children()}
+page.body.sections.secondary = TYPO3.TYPO3:Section
+page.body.sections.secondary.nodePath = 'secondary'
 
-page.body.sections.main = TYPO3.TypoScript:CollectionRenderer
-page.body.sections.main.collection = ${context.children('main').children()}
+page.body.sections.main = TYPO3.TYPO3:Section
+page.body.sections.main.nodePath = 'main'
 
 page.headerData {
 	stylesheets = TYPO3.TypoScript:FluidRenderer
