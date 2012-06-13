@@ -1,6 +1,10 @@
 include: resource://TYPO3.TYPO3/Private/DefaultTypoScript/All.ts2
 
-prototype(TYPO3.PhoenixDemoTypo3Org:Registration).implementationClassName = 'TYPO3\\PhoenixDemoTypo3Org\\TypoScript\\Registration'
+prototype(TYPO3.PhoenixDemoTypo3Org:Registration) < prototype(TYPO3.TYPO3:PluginRenderer)
+prototype(TYPO3.PhoenixDemoTypo3Org:Registration) {
+	package = 'TYPO3.PhoenixDemoTypo3Org'
+	controller = 'Registration'
+}
 
 /**
  * Root TypoScript template for the TYPO3 Phoenix Demo Site
