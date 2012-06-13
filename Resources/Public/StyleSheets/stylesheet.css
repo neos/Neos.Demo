@@ -533,3 +533,12 @@ label {
 	color: #d78618;
 	font-weight: bold;
 }
+
+/*********/
+/* OTHER */
+/*********/
+
+figure.video {
+	text-align: center;
+	margin: 0;
+}

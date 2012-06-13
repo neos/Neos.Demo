@@ -8,21 +8,39 @@ TYPO3:
       'TYPO3.PhoenixDemoTypo3Org:Registration':
         superTypes: ['TYPO3.TYPO3:Plugin']
         label: 'Editor Registration Plugin'
-      'TYPO3.PhoenixDemoTypo3Org:Youtube':
+
+
+      'TYPO3.PhoenixDemoTypo3Org:YouTube':
         superTypes: ['TYPO3.TYPO3:ContentObject']
         group: 'General'
         icon: 'Images/Icons/White/youtube_icon-16.png'
-        label: 'Youtube'
+        label: 'YouTube'
 
         properties:
+          headline:
+            label: string
+            default: 'Enter headline here'
           video:
-            label: string
-            default: 'Enter video id here'
-        properties:
+            type: string
+            label: 'Video ID'
+            default: ''
+            category: contentSettings
+            reloadOnChange: true
           width:
-            label: string
-            default: 'Breite'
-        properties:
+            type: string
+            label: 'Width'
+            default: '400'
+            category: contentSettings
+            reloadOnChange: true
           height:
-            label: string
-            default: 'Höhe'
+            type: string
+            label: 'Height'
+            default: '300'
+            category: contentSettings
+            reloadOnChange: true
+
+        propertyGroups:
+          contentSettings:
+            label: 'Settings'
+
+        inlineEditableProperties: ['headline']

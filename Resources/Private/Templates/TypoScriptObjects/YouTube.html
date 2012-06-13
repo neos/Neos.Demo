@@ -1,0 +1,15 @@
+{namespace t=TYPO3\TYPO3\ViewHelpers}
+
+<t:contentElement node="{context}">
+	 <t:aloha.editable property="headline" tag="h1">{headline}</t:aloha.editable>
+	<f:if condition="{video}">
+		<f:then>
+			<figure class="video">
+				<iframe src="http://www.youtube.com/embed/{video}?wmode=transparent" {f:if(condition: width, then: ' width="{width}"')}{f:if(condition: height, then: ' height="{height}"')}frameborder="0" allowfullscreen></iframe>
+			</figure>
+		</f:then>
+		<f:else>
+			No video ID
+		</f:else>
+	</f:if>
+</t:contentElement>
