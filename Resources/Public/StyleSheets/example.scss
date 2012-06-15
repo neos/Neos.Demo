@@ -1,0 +1,410 @@
+pre {
+	font-family: monospace;
+	overflow: auto;
+}
+
+hr {
+	color: #ccc;
+	height: 1px;
+	background-color: #ccc;
+}
+
+sub {
+	vertical-align: sub;
+}
+
+/********************************/
+/* Frames, spacing, link-to-top */
+/********************************/
+
+p.csc-linkToTop {
+	text-align: right;
+	a {
+		font-weight: bold;
+	}
+}
+
+.csc-frame {
+	border: 0;
+}
+
+.csc-frame-invisible { }
+
+.csc-frame-rulerBefore {
+	border-top: 1px solid #ccc;
+}
+
+.csc-frame-rulerAfter {
+	border-bottom: 1px solid #ccc;
+}
+
+.csc-frame-indent {
+	padding-left: 100px;
+}
+
+.csc-frame-indent3366 {
+	padding-left: 33%;
+}
+
+.csc-frame-indent6633 {
+	padding-right: 33%;
+}
+
+.csc-frame-frame1 {
+	background-color: #f2f2f2;
+	padding: 1em;
+	margin-bottom: 2em;
+}
+
+div {
+	&.csc-frame-frame2 {
+		background-color: #e5e5e5;
+		padding: 1em;
+		margin-bottom: 2em;
+	}
+	&.csc-frame-frame1 {
+		h1, h2, h3, h4, h5 {
+			margin-top: 2px;
+		}
+	}
+	&.csc-frame-frame2 {
+		h1, h2, h3, h4, h5 {
+			margin-top: 2px;
+		}
+	}
+}
+
+/******************/
+/* Headers, plain */
+/******************/
+
+h1.csc-firstHeader, h2.csc-firstHeader, h3.csc-firstHeader, h4.csc-firstHeader, h5.csc-firstHeader, h6.csc-firstHeader {
+	margin-top: 0;
+}
+
+/* Header date */
+
+p {
+	&.csc-header-date {
+		font-size: 90%;
+	}
+	&.csc-subheader { }
+}
+
+/* Subheader, general */
+
+/*******************/
+/* RTE / Bodytext: */
+/*******************/
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+/* RTE / table styling */
+
+table.contenttable {
+	border: 1px #CFCECF solid;
+	margin: 10px 0px 10px 0px;
+	width: 100%;
+	tr {
+		td {
+			padding: 0 3px 0px 3px;
+		}
+		background-color: #f2f2f2;
+	}
+}
+
+.indent {
+	margin-left: 2em;
+}
+
+/**********/
+/* Images */
+/**********/
+
+/* Images / Captions */
+
+.csc-textpic-caption {
+	font-size: 90%;
+	line-height: 1.2em;
+}
+
+/***************/
+/* Bulletlists */
+/***************/
+/* lists */
+
+ul {
+	margin-bottom: 1em;
+}
+
+ol {
+	margin-bottom: 1em;
+	li {
+		list-style-type: decimal;
+		list-style-position: outside;
+		margin-left: 2em;
+	}
+}
+
+ul {
+	li {
+		list-style-type: disc;
+		list-style-position: outside;
+		margin-left: 2em;
+	}
+	ul {
+		margin-left: 1em;
+	}
+}
+
+ol ol {
+	margin-left: 1.8em;
+}
+
+/* Bulletlists, general */
+
+ul {
+	&.csc-bulletlist li, &.csc-bulletlist-0 { }
+	&.csc-bulletlist-1 li {
+		list-style-type: decimal;
+	}
+	&.csc-bulletlist-2 li {
+		list-style-type: circle;
+	}
+	&.csc-bulletlist-3 li {
+		list-style-type: square;
+	}
+}
+
+/* Bulletlists, specifically */
+
+/*********************/
+/* tables, generally */
+/*********************/
+
+table {
+	&.contenttable {
+		p { }
+		tr td {
+			vertical-align: top;
+		}
+	}
+	&.contenttable-0 p { }
+	&.contenttable-1 {
+		p { }
+		tr.tr-0 td {
+			p {
+				font-weight: bold;
+			}
+			background-color: #e5e5e5;
+		}
+	}
+	&.contenttable-2 {
+		p { }
+		tr td.td-0 {
+			background-color: #f2f2f2;
+			p {
+				font-weight: bold;
+			}
+		}
+	}
+	&.contenttable-3 {
+		p { }
+		tr {
+			td.td-0, &.tr-0 td {
+				background-color: #e5e5e5;
+			}
+			td.td-0 p, &.tr-0 p {
+				font-weight: bold;
+			}
+		}
+	}
+	&.csc-uploads {
+		border: 0;
+		margin-bottom: 2em;
+		tr {
+			td {
+				p {
+					background-color: transparent;
+				}
+				vertical-align: top;
+				padding: 0.5em;
+			}
+			&.tr-even {
+				background-color: #e5e5e5;
+			}
+			&.tr-odd {
+				background-color: #f2f2f2;
+			}
+			td {
+				&.csc-uploads-icon {
+					padding: 0.5em 0 0.5em 0.5em;
+					width: 1%;
+					text-align: center;
+				}
+				&.csc-uploads-fileName {
+					width: 80%;
+					padding-right: 0;
+					p {
+						margin: 0;
+						a {
+							font-weight: bold;
+						}
+						&.csc-uploads-description {
+							margin-top: 0.5em;
+						}
+					}
+				}
+				&.csc-uploads-fileSize {
+					white-space: nowrap;
+					text-align: right;
+				}
+			}
+		}
+	}
+}
+
+/* tables, specifically */
+
+/************************/
+/* Filelinks, generally */
+/************************/
+
+/*****************/
+/* Various forms */
+/*****************/
+
+/* Email, Login and Search forms generally: */
+
+fieldset {
+	border: 0;
+}
+
+/* Email form, specifically */
+
+form .csc-mailform-field {
+	margin: 0 0 0.5em;
+	clear: both;
+	label {
+		float: left;
+		text-align: right;
+		margin-right: 5%;
+		width: 30%;
+	}
+	input {
+		width: 50%;
+	}
+}
+
+.csc-mailform-field {
+	textarea, select {
+		width: 50%;
+	}
+}
+
+.csc-mailform-radio fieldset {
+	width: 50%;
+}
+
+form {
+	.csc-mailform-field input {
+		&.csc-mailform-submit, &.csc-mailform-check, &.csc-mailform-radio {
+			width: auto;
+		}
+		&.csc-mailform-submit {
+			margin-left: 35% !important;
+		/* see label width + margin*/
+		}
+	}
+	.csc-mailform-radio {
+		legend {
+			display: none;
+		}
+		fieldset {
+			input {
+				float: none;
+			}
+			label {
+				text-align: left;
+				float: none;
+				width: auto;
+				margin: 0;
+			}
+		}
+	}
+	.csc-mailform-field input {
+		&.mf-check {
+			width: auto;
+		}
+		&.csc-mailform-radio {
+			width: auto;
+			margin-right: 0.5em;
+		}
+	}
+}
+
+/* fe login*/
+
+.tx-felogin-pi1 {
+	form div {
+		margin: 0 0 0.5em;
+		clear: both;
+	}
+	legend {
+		color: #515151;
+	}
+}
+
+/*****************************/
+/* Menu / Sitemap, generally */
+/*****************************/
+
+ul {
+	&.csc-menu {
+		a:hover { }
+		.csc-section {
+			font-weight: normal;
+			margin-left: 20px;
+			font-style: italic;
+		}
+	}
+	&.csc-menu-def, &.csc-menu-1 { }
+}
+
+/* Menu / Sitemap, "Menu of these pages" */
+
+/* Menu / Sitemap, "Menu of subpages to these pages" */
+
+/* Menu / Sitemap, "Sitemap" */
+
+div.csc-sitemap ul, ul.csc-menu-3 li.csc-section { }
+
+/* Menu / Sitemap, "Section index (pagecontent w/Index checked)" */
+
+/* Menu / Sitemap, "Menu of subpages to these pages (with abstract)" */
+
+dl.csc-menu-4 {
+	dt { }
+	dd {
+		font-weight: normal;
+		font-style: italic;
+		margin-top: 0;
+		padding: 0 2px 2px 20px;
+	}
+}
+
+/* Menu / Sitemap, "Recently updated pages" */
+
+ul {
+	&.csc-menu-5, &.csc-menu-6, &.csc-menu-7 { }
+}
+
+/* Menu / Sitemap, "Related pages (based on keywords)" */
+
+/* Menu / Sitemap, "Menu of subpages to these pages + sections" */
