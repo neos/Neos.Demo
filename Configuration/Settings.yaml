@@ -9,38 +9,29 @@ TYPO3:
         superTypes: ['TYPO3.TYPO3:Plugin']
         label: 'Editor Registration Plugin'
 
-
       'TYPO3.PhoenixDemoTypo3Org:YouTube':
-        superTypes: ['TYPO3.TYPO3:ContentObject']
-        group: 'General'
+        superTypes: ['TYPO3.TYPO3:Headline']
         icon: 'Images/Icons/White/youtube_icon-16.png'
         label: 'YouTube'
-
         properties:
-          headline:
-            label: string
-            default: 'Enter headline here'
           video:
             type: string
-            label: 'Video ID'
+            label: 'ID'
             default: ''
-            category: contentSettings
+            group: 'video'
             reloadOnChange: true
           width:
-            type: string
+            type: integer
             label: 'Width'
             default: '400'
-            category: contentSettings
+            group: 'video'
             reloadOnChange: true
           height:
-            type: string
+            type: integer
             label: 'Height'
             default: '300'
-            category: contentSettings
+            group: 'video'
             reloadOnChange: true
-
-        propertyGroups:
-          contentSettings:
-            label: 'Settings'
-
-        inlineEditableProperties: ['headline']
+        groups:
+          video:
+            label: 'Video'

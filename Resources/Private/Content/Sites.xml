@@ -13,9 +13,9 @@
 			<node identifier="631740f8-b3bf-4da6-9062-bff0fe77380b" type="TYPO3.TYPO3:Section" nodeName="main" locale="en_EN">
 				<node identifier="2515892f-1925-4665-8978-53c5f2c1ec60" type="TYPO3.TYPO3:Text" nodeName="text1" locale="en_EN">
 					<properties>
-						<headline>I'm here to be defaced ;-)</headline>
-						<text><![CDATA[This is the TYPO3 Phoenix demo website. It's there to let you experiment with the features
-						TYPO3 Phoenix already provides in this alpha stage.]]>
+						<title><![CDATA[<h1>I'm here to be defaced ;-)</h1>]]></title>
+						<text>This is the TYPO3 Phoenix demo website. It's there to let you experiment with the features
+							TYPO3 Phoenix already provides in this alpha stage.
 						</text>
 					</properties>
 				</node>
@@ -26,15 +26,17 @@
 				</node>
 				<node identifier="53953e3c-130a-45af-aa68-5335193bd60d" type="TYPO3.TYPO3:Text" nodeName="text3" locale="en_EN">
 					<properties>
-						<headline>Content</headline>
-						<text><![CDATA[The content for this site was created by importing the XML file found at <code>Resources/Private/Content/Content.xml</code>in the TYPO3.PhoenixDemoTypo3Org package.]]></text>
+						<title><![CDATA[<h1>Content</h1>]]></title>
+						<text>
+							<![CDATA[The content for this site was created by importing the XML file found at <code>Resources/Private/Content/Content.xml</code>in the TYPO3.PhoenixDemoTypo3Org package.]]></text>
 					</properties>
 				</node>
 			</node>
 			<node identifier="182979f2-fc7a-46bd-a8cc-f94e36ec19de" type="TYPO3.TYPO3:Section" nodeName="secondary" locale="en_EN">
 				<node identifier="55d263b8-ce49-4e78-8e97-5fc008ebffca" type="TYPO3.TYPO3:Html" nodeName="htmlelement" locale="en_EN">
 					<properties>
-						<source><![CDATA[<h1>HTML Element</h1><p>This shows a default HTML element</p><a href="http://phoenix.demo.typo3.org/" target="_blank">Phoenix demo page</a>]]></source>
+						<source>
+							<![CDATA[<h1>HTML Element</h1><p>This shows a default HTML element</p><a href="http://phoenix.demo.typo3.org/" target="_blank">Phoenix demo page</a>]]></source>
 					</properties>
 				</node>
 			</node>
@@ -45,8 +47,9 @@
 				<node identifier="d026e99d-fa83-4029-969c-124617d3ce9b" type="TYPO3.TYPO3:Section" nodeName="main" locale="en_EN">
 					<node identifier="7f579508-53eb-44f6-9840-a4b87ec5c8e4" type="TYPO3.TYPO3:Text" nodeName="text1" locale="en_EN">
 						<properties>
-							<headline>Want More?</headline>
-							<text><![CDATA[This is another page which exists for the sole purpose to demonstrate sub pages in TYPO3 Phoenix. And you know what? There is even a page <a href="homepage/anotherpage/thirdlevelpage.html">on the third level</a>]]></text>
+							<title><![CDATA[<h1>Want More?</h1>]]></title>
+							<text>
+								<![CDATA[This is another page which exists for the sole purpose to demonstrate sub pages in TYPO3 Phoenix. And you know what? There is even a page <a href="homepage/anotherpage/thirdlevelpage.html">on the third level</a>]]></text>
 						</properties>
 					</node>
 				</node>
@@ -57,8 +60,8 @@
 					<node identifier="d3f86bcd-17a9-47bf-9075-788bd2cfe05a" type="TYPO3.TYPO3:Section" nodeName="main" locale="en_EN">
 						<node identifier="78613b37-7db8-4ca9-a8dc-2f1a4a72b5f5" type="TYPO3.TYPO3:Text" nodeName="text1" locale="en_EN">
 							<properties>
-								<headline>Wow, that can't be true</headline>
-								<text><![CDATA[Here is yet more content, even on the third level.]]></text>
+								<title><![CDATA[<h1>Wow, that can't be true</h1>]]></title>
+								<text>Here is yet more content, even on the third level.</text>
 							</properties>
 						</node>
 					</node>
@@ -106,8 +109,9 @@
 				<node identifier="f5e42c05-1658-4dc0-bd25-f310e778b6b2" type="TYPO3.TYPO3:Section" nodeName="main" locale="en_EN">
 					<node identifier="27df0f0c-685b-4f8f-9272-48e472a5d867" type="TYPO3.TYPO3:Text" nodeName="text1" locale="en_EN">
 						<properties>
-							<headline>Fifth Page</headline>
-							<text><![CDATA[This page is generally visible, but it is not shown in indexes such as the site navigation.]]></text>
+							<title><![CDATA[<h1>Fifth Page</h1>]]></title>
+							<text>This page is generally visible, but it is not shown in indexes such as the site navigation.
+							</text>
 						</properties>
 					</node>
 				</node>
@@ -122,8 +126,8 @@
 				<node identifier="46a1c761-a9e3-45ca-9063-a000b86d613e" type="TYPO3.TYPO3:Section" nodeName="main" locale="en_EN">
 					<node identifier="a3eaa452-76a2-4605-93be-7d3a6119897f" type="TYPO3.TYPO3:Text" nodeName="text1" locale="en_EN">
 						<properties>
-							<headline>Admin Page</headline>
-							<text><![CDATA[This content should only be visible if you're logged in as an administrator.]]></text>
+							<title><![CDATA[<h1>Admin Page</h1>]]></title>
+							<text>This content should only be visible if you're logged in as an administrator.</text>
 						</properties>
 					</node>
 				</node>
