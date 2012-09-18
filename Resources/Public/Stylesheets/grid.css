@@ -1,0 +1,23 @@
+/* Percentage grid
+------------------------------ */
+.g, .gc					{ zoom: 1; }
+.g:after,
+.gc:after				{ content: ""; display: block; height: 0; clear: both; visibility: hidden; }
+
+
+.g-3,
+.g-5,
+.g-6 					{ float: left; clear: right; }
+
+.g-5 					{ width: 50%; }
+.g-6 					{ width: 67%; }
+.g-3 					{ width: 33%; }
+
+.gc 					{ padding-left:10px; }
+
+.g-5:first-child > .gc,
+.g-6:first-child > .gc,
+.g-3:first-child > .gc 	{ padding-right:10px; padding-left:0;}
+
+/* Fixed grid
+------------------------------ */

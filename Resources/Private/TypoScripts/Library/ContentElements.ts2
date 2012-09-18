@@ -1,0 +1,15 @@
+# Phoenix Demo Registration Plugin TS Object
+prototype(TYPO3.PhoenixDemoTypo3Org:Registration) < prototype(TYPO3.TYPO3:Plugin)
+prototype(TYPO3.PhoenixDemoTypo3Org:Registration) {
+	package = 'TYPO3.PhoenixDemoTypo3Org'
+	controller = 'Registration'
+}
+
+# YouTube TS Object
+prototype(TYPO3.PhoenixDemoTypo3Org:YouTube) < prototype(TYPO3.TYPO3:Headline)
+prototype(TYPO3.PhoenixDemoTypo3Org:YouTube) {
+	templatePath = 'resource://TYPO3.PhoenixDemoTypo3Org/Private/Templates/TypoScriptObjects/YouTube.html'
+	video = ${q(node).property('video')}
+	width = ${q(node).property('width')}
+	height = ${q(node).property('height')}
+}

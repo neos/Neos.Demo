@@ -1,0 +1,10 @@
+.b-wi,
+.cl			{ zoom: 1; }
+
+.orange-tabs li,
+.b-comment-body,
+.b-message,
+#page .numbers-list li,
+.b-numbers-release h3,
+#page .check-list li
+			{ scrollbar-face-color: expression(!this.isInserted==true ? this.isInserted=(this.innerHTML = '' + this.innerHTML + '<i class="icon"></i>') : ''); }

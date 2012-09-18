@@ -1,0 +1,34 @@
+{namespace typo3=TYPO3\TYPO3\ViewHelpers}
+<typo3:aloha.notEditable>
+<f:render section="itemList" arguments="{items: items}" />
+</typo3:aloha.notEditable>
+<f:section name="itemList">
+	<ul class="nav">
+		<f:for each="{items}" as="item" iteration="menuItemIterator">
+			<li class="{item.state}{f:if(condition: menuItemIterator.isLast, then: ' last')}">
+				<typo3:link.node node="{item.node}">{item.label}</typo3:link.node>
+				<f:if condition="{menuItemIterator.isLast}">
+					<f:else>
+						<f:if condition="{item.subItems}">
+							<f:render section="subList" arguments="{items: item.subItems}" />
+						</f:if>
+					</f:else>
+				</f:if>
+			</li>
+		</f:for>
+	</ul>
+</f:section>
+
+<f:section name="subList">
+	<div class="nav-sub">
+		<div class="col">
+			<ul>
+				<f:for each="{items}" as="item">
+					<li class="{item.state}">
+						<typo3:link.node node="{item.node}">{item.label}</typo3:link.node>
+					</li>
+				</f:for>
+			</ul>
+		</div>
+	</div>
+</f:section>

@@ -1,0 +1,29 @@
+.nav .f-r .ico		{ top: 0; margin: 0; }
+.i-arr-down 		{ left: -5px; }
+.nav-aside ul span	{ cursor: pointer; }
+
+.ext-info .left		{ padding-right: 1px; }
+.ext-info *			{ zoom: 1; }
+
+.ext-header dd,
+.d .b-pager li		{ display: inline; }
+.d .b-pager *		{ zoom: 1; }
+
+
+#small-slider .slider-content	{ position: relative; }
+#small-slider .slider-nav		{ width: 54px; padding: 18px 0 0 10px; margin: 0; }
+#small-slider .slider-nav li	{ display: inline; }
+
+.b-drop-h .ico					{ margin-top: -9px; }
+
+.b-comment-body					{ zoom: 1; }
+
+.ico,
+.h-bar-nav > li,
+.h-bar-search-input 			{ display: inline; }
+
+
+button						{ border: 0 none !important; position: relative; background-position: 0 1px; }
+button div					{ display: block; position: absolute; top: 0; left: 0; width: 21px; height: 21px; border: 1px solid #e87c0c; }
+
+#page input.bu	{ line-height: 20px; }

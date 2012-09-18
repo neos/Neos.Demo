@@ -1,0 +1,25 @@
+{namespace typo3=TYPO3\TYPO3\ViewHelpers}
+<typo3:aloha.notEditable>
+<f:render section="itemList" arguments="{items: items, class: 'nav-aside'}" />
+</typo3:aloha.notEditable>
+<f:section name="itemList">
+	<ul{f:if(condition: class, then: ' class="{class}"')}>
+		<f:for each="{items}" as="item">
+			<li class="{item.state}">
+				<typo3:link.node node="{item.node}"><span>{item.label}</span></typo3:link.node>
+				<f:if condition="{item.subItems}">
+					<f:if condition="{0: item.state} == {0: 'current'}">
+						<f:then>
+							 <f:render section="itemList" arguments="{items: item.subItems}" />
+						</f:then>
+						<f:else>
+							<f:if condition="{0: item.state} == {0: 'active'}">
+								<f:render section="itemList" arguments="{items: item.subItems}" />
+							</f:if>
+						</f:else>
+					</f:if>
+				</f:if>
+			</li>
+		</f:for>
+	</ul>
+</f:section>

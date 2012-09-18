@@ -1,94 +1,115 @@
-<!DOCTYPE html
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-{namespace typo3=TYPO3\TYPO3\ViewHelpers}
-{namespace ts=TYPO3\TypoScript\ViewHelpers}
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<meta name="DC.title" content="" />
-		<meta name="DC.creator" content="" />
-		<f:base />
-		<title>TYPO3 Phoenix Demo Template</title>
-		<f:section name="stylesheets">
-			<link rel="stylesheet" type="text/css" href="../../../Public/StyleSheets/stylesheet.css" />
-		</f:section>
-	</head>
-	<body>
-		<f:section name="body">
-			<div id="navigationAids">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- {namespace typo3=TYPO3\TYPO3\ViewHelpers}{namespace typoScript=TYPO3\TypoScript\ViewHelpers} -->
+	<meta charset="utf-8">
+	<f:base/>
+
+	<meta name="generator" content="FLOW3" />
+	<title>Default Template</title>
+
+<f:section name="stylesheets">
+	<link rel="stylesheet" href="../../../Public/Stylesheets/reset.css" media="all" />
+	<link rel="stylesheet" href="../../../Public/Stylesheets/grid.css" media="all" />
+	<link rel="stylesheet" href="../../../Public/Stylesheets/main.css" media="all" />
+	<link rel="stylesheet" href="../../../Public/Stylesheets/print.css" media="print" />
+	<link rel="stylesheet" href="../../../Public/Stylesheets/jquery-ui-1.8.13.css" media="all" />
+	<link rel="stylesheet" href="../../../Public/Stylesheets/colorbox.css" media="all" />
+
+	<!--[if IE]><link rel="stylesheet" href="../../../Public/Stylesheets/ie.css" media="all" /><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" href="../../../Public/Stylesheets/ie7.css" media="all" /><![endif]-->
+	<!--[if IE 8]><link rel="stylesheet" href="../../../Public/Stylesheets/ie8.css" media="all" /><![endif]-->
+
+	<link rel="shortcut icon" href="../../../Public/Images/favicon.ico" />
+</f:section>
+<f:section name="javascripts">
+	<script src="../../../Public/JavaScript/css_browser_selector.js"></script>
+	<script src="../../../Public/JavaScript/jquery-1.6.4.min.js"></script>
+	<script src="../../../Public/JavaScript/jquery-ui-1.8.16.min.js"></script>
+	<script src="../../../Public/JavaScript/jquery.tools.js"></script>
+	<script src="../../../Public/JavaScript/jquery.colorbox-min.js"></script>
+
+	<script src="../../../Public/JavaScript/main.js"></script>
+</f:section>
+</head>
+
+<body class="js-off page-landing" id="typo3org">
+<f:section name="body">
+	<div class="p t3-reloadable-content" id="page">
+
+		<!-- ### content ### -->
+		<div class="c cl" id="content">
+
+			<!-- ### aside ### -->
+			<div class="a" id="aside">
+				<typoScript:renderTypoScript path="parts/subMenu" />
+				<div id="aside-end"></div>
+			</div>
+			<!-- ^^^ aside ^^^ -->
+
+			<!-- ### section ### -->
+			<div class="s d" id="section">
+				<typoScript:renderTypoScript path="parts/breadcrumb" />
+				<typoScript:renderTypoScript path="sections/main" />
+			</div>
+			<!-- ^^^ section ^^^ -->
+
+		</div>
+		<!-- ^^^ content ^^^ -->
+
+
+		<!-- ### header ### -->
+		<div class="h" id="header">
+			<a href="#" id="logo">TYPO3 Phoenix Demo Site</a>
+			<div class="h-bar">
+				<ul class="h-bar-nav">
+					<li>
+						<a href="#">
+							<span class="b-drop-h">
+								phoenix.typo3.org<span class="i-arr-down-or ico"></span>
+								<!-- shadow elements -->
+								<span class="b-drop-h-l"></span><span class="b-drop-h-r"></span>
+							</span>
+						</a>
+						<div class="b-drop-body b-drop-r">
+							<ul class="b-drop-nav">
+								<li><a href="http://flow3.org">flow3.org</a></li>
+								<li><a href="http://typo3.org">typo3.org</a></li>
+								<li><a href="http://forge.typo3.org">forge.typo3.org</a></li>
+								<li><a href="http://git.typo3.org">git.typo3.org</a></li>
+								<li><a href="http://association.typo3.org">association.typo3.org</a></li>
+							</ul>
+							<!-- shadow elements -->
+							<div class="b-drop-body-l"><div></div><div class="b-drop-r-tl"></div></div>
+							<div class="b-drop-body-b"><div></div></div>
+							<div class="b-drop-body-r"></div>
+						</div><!-- b-drop-body -->
+					</li>
+				</ul>
+			</div><!-- h-bar -->
+			<typoScript:renderTypoScript path="parts/mainMenu" />
+		</div>
+		<!-- ^^^ header ^^^ -->
+
+
+	</div><!-- ^^^ Page ^^^ -->
+
+	<!-- ### footer ### -->
+	<div class="f" id="footer">
+		<div class="f-body">
+			<div class="f-links">
 				<ul>
-					<li><a href="#navigation">Skip to navigation</a></li>
-					<li><a href="#mainContent">Skip to content</a></li>
+					<li><a href="http://typo3.org/donate">Donate</a></li>
+					<li><a href="http://association.typo3.org/" target="_blank">TYPO3 Association</a></li>
+				</ul>
+				<ul>
+					<li><a href="/download.html">Download</a></li>
 				</ul>
 			</div>
-			<div id="outerWrap">
-				<typo3:aloha.notEditable>
-					<div id="header">
-						<h1>TYPO3 Phoenix Demo Site</h1>
-						<div id="topMenu">
-							<ul>
-								<li>Workspace: {context.workspace.name}</li>
-								<li><f:link.action action="index" controller="Backend\Backend" package="TYPO3.TYPO3" target="_top">Backend login</f:link.action></li>
-							</ul>
-						</div>
-						<div id="searchBox">
-							<form id="search_form" method="post" action="/">
-								<input type="text" id="inputText" value="Future Search" />
-								<input type="image" src="../../../Public/Images/bg_searchButton.gif" width="20" height="20" id="inputButton" alt="Search" title="Search" />
-							</form>
-						</div>
-
-					</div>
-				</typo3:aloha.notEditable>
-				<div id="navigationFirstLevel" class="t3-reloadable-content">
-					<h2>First Level Navigation</h2>
-					<div id="navigationFirstLevelMenu">
-						<ts:renderTypoScript path="parts/firstLevelMenu" />
-					</div>
-				</div>
-				<div id="contentWrap" class="t3-reloadable-content">
-					<div id="navigationSecondLevel">
-						<div id="navigationSecondLevelMenu">
-							<ts:renderTypoScript path="parts/secondLevelMenu" />
-						</div>
-						<div id="navigationContent">
-							<p>This website demonstrates a few basic features of TYPO3 Phoenix, the next generation of the TYPO3 CMS.</p>
-						</div>
-					</div>
-					<div id="main">
-						<div id="breadcrumb">
-							<ts:renderTypoScript path="parts/breadcrumbMenu" />
-						</div>
-						<div id="mainContent">
-							<ts:renderTypoScript path="sections/main" />
-						</div>
-					</div>
-					<f:if condition="{secondaryColumnFilled}">
-						<div id="secondary">
-							<div id="secondayContent">
-								<div class="secondaryContentSection">
-									<ts:renderTypoScript path="sections/secondary" />
-								</div>
-							</div>
-						</div>
-					</f:if>
-				</div>
-				<typo3:aloha.notEditable>
-					<div id="footer">
-						<h3>Footer</h3>
-						<div id="footerMenu">
-							<p>
-								<a href="http://www.typo3.org/">TYPO3 Phoenix</a> &middot;
-								<a href="http://flow3.typo3.org">Powered by FLOW3</a>
-								<img src="{f:uri.resource(path: 'Images/FLOW3-Logo-11px.png', package: 'TYPO3.PhoenixDemoTypo3Org')}" width="11" height="11" alt="FLOW3 Logo" />
-							</p>
-						</div>
-					</div>
-				</typo3:aloha.notEditable>
-			</div>
-		</f:section>
-	</body>
+			<p>Powered by TYPO3 Phoenix alpha &amp; FLOW3 1.2</p>
+		</div><!-- f-body -->
+	</div>
+	<!-- ^^^ footer ^^^ -->
+</f:section>
+</body>
 </html>
