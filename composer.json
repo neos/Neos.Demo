@@ -1,0 +1,14 @@
+{
+    "name": "typo3/phoenixdemotypo3org",
+    "type": "flow3-site",
+    "description": "Site package for the TYPO3 Phoenix Demo Site",
+    "version": "1.2.0",
+    "require": {
+        "typo3/phoenix": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "TYPO3\\PhoenixDemoTypo3Org": "Classes"
+        }
+    }
+}
