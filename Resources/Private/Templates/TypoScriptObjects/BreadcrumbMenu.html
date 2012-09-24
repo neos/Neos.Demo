@@ -2,7 +2,11 @@
 <f:if condition="{items}">
 	<ul class="breadcrumbs">
 	<f:for each="{items}" as="item" reverse="TRUE">
-		<li><phoenix:link.node node="{item}">{item.label}</phoenix:link.node></li>
+		<f:if condition="{item.hiddenInIndex} == 0">
+			<li>
+				<phoenix:link.node node="{item}">{item.label}</phoenix:link.node>
+			</li>
+		</f:if>
 	</f:for>
 	</ul>
 </f:if>
