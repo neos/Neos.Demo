@@ -2,45 +2,36 @@
 namespace TYPO3\PhoenixDemoTypo3Org\Domain\Model;
 
 /*                                                                        *
- * This script belongs to the FLOW3 package "PhoenixDemoTypo3Org".        *
+ * This script belongs to the TYPO3 Flow package "PhoenixDemoTypo3Org".   *
  *                                                                        *
  * It is free software; you can redistribute it and/or modify it under    *
  * the terms of the GNU General Public License as published by the Free   *
  * Software Foundation, either version 3 of the License, or (at your      *
  * option) any later version.                                             *
  *                                                                        *
- * This script is distributed in the hope that it will be useful, but     *
- * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHAN-    *
- * TABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General      *
- * Public License for more details.                                       *
- *                                                                        *
- * You should have received a copy of the GNU General Public License      *
- * along with the script.                                                 *
- * If not, see http://www.gnu.org/licenses/gpl.html                       *
- *                                                                        *
  * The TYPO3 project - inspiring people to share!                         *
  *                                                                        */
 
-use TYPO3\FLOW3\Annotations as FLOW3;
+use TYPO3\Flow\Annotations as Flow;
 
 /**
  * Domain Model of a Registration
  *
- * @FLOW3\Entity
- * @FLOW3\Scope("prototype")
+ * @Flow\Entity
+ * @Flow\Scope("prototype")
  */
 class Registration {
 
 	/**
 	 * @var string
-	 * @FLOW3\Validate(type="Label")
-	 * @FLOW3\Validate(type="NotEmpty")
+	 * @Flow\Validate(type="Label")
+	 * @Flow\Validate(type="NotEmpty")
 	 */
 	protected $username = '';
 
 	/**
 	 * @var string
-	 * @FLOW3\Validate(type="NotEmpty")
+	 * @Flow\Validate(type="NotEmpty")
 	 */
 	protected $password = '';
 

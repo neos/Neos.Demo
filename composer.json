@@ -1,6 +1,6 @@
 {
     "name": "typo3/phoenixdemotypo3org",
-    "type": "flow3-site",
+    "type": "typo3-flow-site",
     "description": "Site package for the TYPO3 Phoenix Demo Site",
     "version": "1.2.0",
     "require": {

@@ -2,48 +2,39 @@
 namespace TYPO3\PhoenixDemoTypo3Org\Controller;
 
 /*                                                                        *
- * This script belongs to the FLOW3 package "PhoenixDemoTypo3Org".        *
+ * This script belongs to the TYPO3 Flow package "PhoenixDemoTypo3Org".   *
  *                                                                        *
  * It is free software; you can redistribute it and/or modify it under    *
  * the terms of the GNU General Public License as published by the Free   *
  * Software Foundation, either version 3 of the License, or (at your      *
  * option) any later version.                                             *
  *                                                                        *
- * This script is distributed in the hope that it will be useful, but     *
- * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHAN-    *
- * TABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General      *
- * Public License for more details.                                       *
- *                                                                        *
- * You should have received a copy of the GNU General Public License      *
- * along with the script.                                                 *
- * If not, see http://www.gnu.org/licenses/gpl.html                       *
- *                                                                        *
  * The TYPO3 project - inspiring people to share!                         *
  *                                                                        */
 
-use TYPO3\FLOW3\Annotations as FLOW3;
+use TYPO3\Flow\Annotations as Flow;
 
 /**
  * Controller that handles the creation of temporary Accounts
  *
  */
-class RegistrationController extends \TYPO3\FLOW3\Mvc\Controller\ActionController {
+class RegistrationController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 
 	/**
-	 * @FLOW3\Inject
-	 * @var \TYPO3\FLOW3\Security\AccountRepository
+	 * @Flow\Inject
+	 * @var \TYPO3\Flow\Security\AccountRepository
 	 */
 	protected $accountRepository;
 
 	/**
-	 * @FLOW3\Inject
+	 * @Flow\Inject
 	 * @var \TYPO3\Party\Domain\Repository\PartyRepository
 	 */
 	protected $partyRepository;
 
 	/**
-	 * @FLOW3\Inject
-	 * @var \TYPO3\FLOW3\Security\AccountFactory
+	 * @Flow\Inject
+	 * @var \TYPO3\Flow\Security\AccountFactory
 	 */
 	protected $accountFactory;
 
@@ -88,7 +79,7 @@ class RegistrationController extends \TYPO3\FLOW3\Mvc\Controller\ActionControlle
 
 		$this->createTemporaryAccount($accountIdentifier, $registration->getPassword(), $registration->getFirstName(), $registration->getLastName());
 
-		$uriBuilder = new \TYPO3\FLOW3\Mvc\Routing\UriBuilder();
+		$uriBuilder = new \TYPO3\Flow\Mvc\Routing\UriBuilder();
 		$uriBuilder->setRequest($this->request->getParentRequest());
 		$redirectUri = $uriBuilder
 			->setCreateAbsoluteUri(TRUE)
@@ -103,7 +94,7 @@ class RegistrationController extends \TYPO3\FLOW3\Mvc\Controller\ActionControlle
 	 * @param string $password
 	 * @param string $firstName
 	 * @param string $lastName
-	 * @return \TYPO3\FLOW3\Security\Account
+	 * @return \TYPO3\Flow\Security\Account
 	 */
 	protected function createTemporaryAccount($accountIdentifier, $password, $firstName, $lastName) {
 		if (strlen($firstName) === 0 && strlen($lastName) === 0) {
