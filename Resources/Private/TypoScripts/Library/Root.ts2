@@ -2,7 +2,7 @@ include: TypoScripts/Library/ContentElements.ts2
 namespace: TypoScript=TYPO3.TypoScript
 
 /**
- * Root TypoScript template for the Phoenix website
+ * Root TypoScript template for the Neos website
  */
 page = Page
 page.headerData {
