@@ -1,10 +1,10 @@
-{namespace phoenix=TYPO3\TYPO3\ViewHelpers}
+{namespace neos=TYPO3\Neos\ViewHelpers}
 <f:if condition="{items}">
 	<ul class="breadcrumbs">
 	<f:for each="{items}" as="item" reverse="TRUE">
 		<f:if condition="{item.hiddenInIndex} == 0">
 			<li>
-				<phoenix:link.node node="{item}">{item.label}</phoenix:link.node>
+				<neos:link.node node="{item}">{item.label}</neos:link.node>
 			</li>
 		</f:if>
 	</f:for>

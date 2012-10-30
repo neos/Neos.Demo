@@ -1,8 +1,8 @@
 <?php
-namespace TYPO3\PhoenixDemoTypo3Org\Domain\Model;
+namespace TYPO3\NeosDemoTypo3Org\Domain\Model;
 
 /*                                                                        *
- * This script belongs to the TYPO3 Flow package "PhoenixDemoTypo3Org".   *
+ * This script belongs to the TYPO3 Flow package "NeosDemoTypo3Org".      *
  *                                                                        *
  * It is free software; you can redistribute it and/or modify it under    *
  * the terms of the GNU General Public License as published by the Free   *

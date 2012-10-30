@@ -1,8 +1,8 @@
 <?php
-namespace TYPO3\PhoenixDemoTypo3Org\Controller;
+namespace TYPO3\NeosDemoTypo3Org\Controller;
 
 /*                                                                        *
- * This script belongs to the TYPO3 Flow package "PhoenixDemoTypo3Org".   *
+ * This script belongs to the TYPO3 Flow package "NeosDemoTypo3Org".      *
  *                                                                        *
  * It is free software; you can redistribute it and/or modify it under    *
  * the terms of the GNU General Public License as published by the Free   *
@@ -53,7 +53,7 @@ class RegistrationController extends \TYPO3\Flow\Mvc\Controller\ActionController
 	 */
 	public function newAccountAction() {
 		$number = (time() - 1302876012);
-		$registration = new \TYPO3\PhoenixDemoTypo3Org\Domain\Model\Registration();
+		$registration = new \TYPO3\NeosDemoTypo3Org\Domain\Model\Registration();
 		$registration->setFirstName('John');
 		$registration->setLastName('Doe');
 		$registration->setUsername('demo' . $number);
@@ -65,11 +65,11 @@ class RegistrationController extends \TYPO3\Flow\Mvc\Controller\ActionController
 	/**
 	 * Action for creating a temporary account
 	 *
-	 * @param \TYPO3\PhoenixDemoTypo3Org\Domain\Model\Registration $registration
+	 * @param \TYPO3\NeosDemoTypo3Org\Domain\Model\Registration $registration
 	 * @return void
 	 * @author Bastian Waidelich <bastian@typo3.org>
 	 */
-	public function createAccountAction(\TYPO3\PhoenixDemoTypo3Org\Domain\Model\Registration $registration) {
+	public function createAccountAction(\TYPO3\NeosDemoTypo3Org\Domain\Model\Registration $registration) {
 		$accountIdentifier = $registration->getUsername();
 		$existingAccount = $this->accountRepository->findActiveByAccountIdentifierAndAuthenticationProviderName($accountIdentifier, 'Typo3BackendProvider');
 		if ($existingAccount !== NULL) {
@@ -102,7 +102,7 @@ class RegistrationController extends \TYPO3\Flow\Mvc\Controller\ActionController
 			$lastName = 'Claus';
 		}
 
-		$user = new \TYPO3\TYPO3\Domain\Model\User();
+		$user = new \TYPO3\Neos\Domain\Model\User();
 		$user->setName(new \TYPO3\Party\Domain\Model\PersonName('', $firstName, '', $lastName));
 		$user->getPreferences()->set('context.workspace', 'user-' . $accountIdentifier);
 		$this->partyRepository->add($user);

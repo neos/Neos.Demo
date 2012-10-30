@@ -1,14 +1,14 @@
 {
-    "name": "typo3/phoenixdemotypo3org",
+    "name": "typo3/neosdemotypo3org",
     "type": "typo3-flow-site",
-    "description": "Site package for the TYPO3 Phoenix Demo Site",
+    "description": "Site package for the TYPO3 Neos Demo Site",
     "version": "1.2.0",
     "require": {
-        "typo3/phoenix": "*"
+        "typo3/neos": "*"
     },
     "autoload": {
         "psr-0": {
-            "TYPO3\\PhoenixDemoTypo3Org": "Classes"
+            "TYPO3\\NeosDemoTypo3Org": "Classes"
         }
     }
 }
