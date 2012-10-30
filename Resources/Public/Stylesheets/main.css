@@ -171,7 +171,6 @@ table.no-borders td { border: none; }
 /* Buttons
 ------------------------------ */
 #page .bu	{ height: 23px; color: #FFF; line-height: 23px; font-size: 11px; background: transparent url(../Images/s-buttons.png) no-repeat 0 0; padding: 0 12px; cursor: pointer; text-decoration: none; display: inline-block; vertical-align: middle; border: 1px solid #E97E0D; -o-user-select: none; -webkit-user-select: none; -moz-user-select: -moz-none; -khtml-user-select: none; -ms-user-select: none; user-select: none; }
-#page .bu.red-bu { background: transparent url(../Images/s-buttons-red.png) no-repeat 0 0; border: 1px solid #A0001F; }
 .bu div		{ display: none; }
 #page .dark-grey		{ background: url(../Images/dark-grey.png) repeat-x 0 0; border-color: #8b8b8b; }
 #page .dark-grey		{ background: url(../Images/dark-grey.png) repeat-x 0 0; border-color: #8b8b8b; }
