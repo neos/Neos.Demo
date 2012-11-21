@@ -446,7 +446,7 @@
 			<node identifier="8a4da33d-a412-4d99-ba5c-88f391549b65" type="TYPO3.Neos.NodeTypes:Page"
 				  nodeName="adminpage" locale="">
 				<accessRoles>
-					<role>Administrator</role>
+					<role>TYPO3.Neos:Administrator</role>
 				</accessRoles>
 				<properties>
 					<title>Administrator Page</title>
