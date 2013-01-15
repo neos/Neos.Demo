@@ -149,9 +149,7 @@
 					<node identifier="9fa044a5-5fc6-4494-a0ff-e1959d4c314f" type="TYPO3.Neos.ContentTypes:Text"
 						  nodeName="node50657879b779f" locale="">
 						<properties>
-							<text><![CDATA[
-								<p>TYPO3 Neos is not just another CMS. Instead, the TYPO3 Community&nbsp;has created it based on the previous experiences. It's not the first CMS built, but instead there is a big amount of knowledge which has accumulated over the last 15 years.</p>]]></text>
-							<title></title>
+							<text><![CDATA[<p>TYPO3 Neos is not just another CMS. Instead, the TYPO3 Community&nbsp;has created it based on the previous experiences. It's not the first CMS built, but instead there is a big amount of knowledge which has accumulated over the last 15 years.</p>]]></text>
 						</properties>
 					</node>
 					<node identifier="f0467a2a-5390-4acb-a213-60ed30c156f6" type="TYPO3.Neos.ContentTypes:Headline"
@@ -163,9 +161,7 @@
 					<node identifier="9d62e6f9-f1c0-4254-a53d-59d20f24cb10" type="TYPO3.Neos.ContentTypes:Text"
 						  nodeName="node5065769b64536" locale="">
 						<properties>
-							<text><![CDATA[
-								<p>We know that a website does not only contain static parts. In today's world, you often integrate external services, have to model complex business logic or tweak the output of the website in a very fine-grained way. That's why our main goal is <b>developer happiness</b>. We want you to be effective, being able to re-use concepts and code across your websites.</p><p>Of course, that is no free ride: You need to learn the concepts used in Neos. However, by implementing established practices in software development, your knowledge can be applied to a wide variety of languages, frameworks and use-cases. <b>We want to help you become better programmers</b>!</p><div><div>The Learn Once, Run Everywhere Philosophy is the main guidance principle for the development of Neos: All components are usable inside the CMS context, but also in stand-alone web applications. That of course also includes your own components.</div><div><div><div><div><p></p></div></div></div></div></div>]]></text>
-							<title></title>
+							<text><![CDATA[<p>We know that a website does not only contain static parts. In today's world, you often integrate external services, have to model complex business logic or tweak the output of the website in a very fine-grained way. That's why our main goal is <b>developer happiness</b>. We want you to be effective, being able to re-use concepts and code across your websites.</p><p>Of course, that is no free ride: You need to learn the concepts used in Neos. However, by implementing established practices in software development, your knowledge can be applied to a wide variety of languages, frameworks and use-cases. <b>We want to help you become better programmers</b>!</p><div>The Learn Once, Run Everywhere Philosophy is the main guidance principle for the development of Neos: All components are usable inside the CMS context, but also in stand-alone web applications. That of course also includes your own components.</div>]]></text>
 						</properties>
 					</node>
 					<node identifier="81e140ab-ce03-4c56-803a-d67f740f968b" type="TYPO3.Neos.ContentTypes:Headline"
@@ -177,9 +173,7 @@
 					<node identifier="84b18af1-55e8-4486-8391-ece1d726e705" type="TYPO3.Neos.ContentTypes:Text"
 						  nodeName="node506584527f590" locale="">
 						<properties>
-							<text><![CDATA[
-								<p>If Neos was a car, <a href="http://flow3.typo3.org">TYPO3 Flow</a> were its main engine. It powers many foundational features for building extensible and adjustable&nbsp;web applications of today, such as Dependency Injection, Aspect-Oriented Programming and a unique Model-View-Controller Framework. And best of all: Everything is usable directly in Neos, should you ever need it.</p><p>TYPO3 Flow has first-class support for <b>Domain-Driven Design</b>: It helps you to focus on the problem domain of your customer, shielding you from implementation details until you need them. Worried about form validation, security, file-uploads or logging? All directly built into Flow. Couple that with powerful, composer-based package management and a doctrine-based persistence layer, and you can build on the shoulders of giants.</p><p>You might wonder whether it was worth to develop TYPO3 Flow from scratch. But if you try it out and experience the flow-feeling of development, you will see what we mean with it.</p><ul><li></li></ul><p></p>]]></text>
-							<title></title>
+							<text><![CDATA[<p>If Neos was a car, <a href="http://flow3.typo3.org">TYPO3 Flow</a> were its main engine. It powers many foundational features for building extensible and adjustable&nbsp;web applications of today, such as Dependency Injection, Aspect-Oriented Programming and a unique Model-View-Controller Framework. And best of all: Everything is usable directly in Neos, should you ever need it.</p><p>TYPO3 Flow has first-class support for <b>Domain-Driven Design</b>: It helps you to focus on the problem domain of your customer, shielding you from implementation details until you need them. Worried about form validation, security, file-uploads or logging? All directly built into Flow. Couple that with powerful, composer-based package management and a doctrine-based persistence layer, and you can build on the shoulders of giants.</p><p>You might wonder whether it was worth to develop TYPO3 Flow from scratch. But if you try it out and experience the flow-feeling of development, you will see what we mean with it.</p>]]></text>
 						</properties>
 					</node>
 					<node identifier="18f71660-b5df-4f9e-980d-e5ca04ec9950" type="TYPO3.Neos.ContentTypes:Headline"
@@ -191,9 +185,7 @@
 					<node identifier="0584521a-4bc9-4102-89b2-37786d73bcf1" type="TYPO3.Neos.ContentTypes:Text"
 						  nodeName="node506579f8ce7b6" locale="">
 						<properties>
-							<text><![CDATA[
-								<p>TYPO3 Neos can easily be extended with <b>plugins</b>, which are just standard packages of TYPO3 Flow with a little extra configuration. &nbsp;The same works for backend modules. By using convention over configuration, the required settings you need to do boils down to a minimum.</p><p>Of course we know that the there's one thing where you need full control: The rendering of your website. In Neos, a custom package called <b>Typoscript</b> powers the rendering process, allowing for fine-grained control over the output. No need to override complete templates or hack the source.</p><p>If you know Typoscript from the old days in TYPO3 CMS, rest assured that it has changed a lot. It has not only been re-built, but re-thought from scratch and is now object-oriented, consistent and much more powerful than before.</p><p></p>]]></text>
-							<title></title>
+							<text><![CDATA[<p>TYPO3 Neos can easily be extended with <b>plugins</b>, which are just standard packages of TYPO3 Flow with a little extra configuration. &nbsp;The same works for backend modules. By using convention over configuration, the required settings you need to do boils down to a minimum.</p><p>Of course we know that the there's one thing where you need full control: The rendering of your website. In Neos, a custom package called <b>Typoscript</b> powers the rendering process, allowing for fine-grained control over the output. No need to override complete templates or hack the source.</p><p>If you know Typoscript from the old days in TYPO3 CMS, rest assured that it has changed a lot. It has not only been re-built, but re-thought from scratch and is now object-oriented, consistent and much more powerful than before.</p>]]></text>
 						</properties>
 					</node>
 					<node identifier="860997e4-b0f2-46d8-b98f-7f1d73c57f9e" type="TYPO3.Neos.ContentTypes:Headline"
@@ -205,9 +197,7 @@
 					<node identifier="a7833a8c-38d3-4484-8b85-acc08cbfb8a2" type="TYPO3.Neos.ContentTypes:Text"
 						  nodeName="node506592601b845" locale="">
 						<properties>
-							<text><![CDATA[
-								<p>Don't explain anymore how editing works. Just discover it yourself! All contents are directly edited on the page, just styled like the live content. Powered by Aloha Editor and Hallo Editor, you'll directly see what you write, just as the end-user does.</p><p>Furthermore, the editing is based on semantic technologies such as RDFa, which we consume using VIE and CreateJS. This allows to expose the whole content of your website in a machine-readable way, should you ever need that.</p><p>You also see Neos is not just developed by the core team, but we're also using and contributing to other, shared projects.</p><p></p>]]></text>
-							<title></title>
+							<text><![CDATA[<p>Don't explain anymore how editing works. Just discover it yourself! All contents are directly edited on the page, just styled like the live content. Powered by Aloha Editor and Hallo Editor, you'll directly see what you write, just as the end-user does.</p><p>Furthermore, the editing is based on semantic technologies such as RDFa, which we consume using VIE and CreateJS. This allows to expose the whole content of your website in a machine-readable way, should you ever need that.</p><p>You also see Neos is not just developed by the core team, but we're also using and contributing to other, shared projects.</p>]]></text>
 						</properties>
 					</node>
 					<node identifier="722fb2de-5b42-4fc8-9a97-955faa774cc9" type="TYPO3.Neos.ContentTypes:Headline"
@@ -219,9 +209,7 @@
 					<node identifier="ff073538-d42f-4c96-a71c-a1ff50f33e31" type="TYPO3.Neos.ContentTypes:Text"
 						  nodeName="node5065784c5467a" locale="">
 						<properties>
-							<text><![CDATA[
-								<p></p><p>While Neos still stores its data in a relational database, you won't access this directly when working with content. Instead, we're using a tree-based approach of storing content which we call the TYPO3 Content Repository (TYPO3CR). This tree enables you to not only structure your content using a page tree, but also nest content into other content in a page.</p><p>Furthermore, the Content Repository allows you to easily create new content elements, just using a Fluid Template, one line of Typoscript and a few lines of configuration.</p><p></p>]]></text>
-							<title></title>
+							<text><![CDATA[<p>While Neos still stores its data in a relational database, you won't access this directly when working with content. Instead, we're using a tree-based approach of storing content which we call the TYPO3 Content Repository (TYPO3CR). This tree enables you to not only structure your content using a page tree, but also nest content into other content in a page.</p><p>Furthermore, the Content Repository allows you to easily create new content elements, just using a Fluid Template, one line of Typoscript and a few lines of configuration.</p>]]></text>
 						</properties>
 					</node>
 					<node identifier="e51e5a44-41fa-4879-bf6d-2e91f6db3327" type="TYPO3.Neos.ContentTypes:Headline"
@@ -233,9 +221,7 @@
 					<node identifier="845397c1-790e-4429-aea2-5ac6c60da477" type="TYPO3.Neos.ContentTypes:Text"
 						  nodeName="node5065852a544d6" locale="">
 						<properties>
-							<text><![CDATA[
-								<p>Check out the <a href="download.html">download</a> yourself, and try it out. Make sure to give us some feedback, either on our Mailing Lists or in IRC.</p>]]></text>
-							<title></title>
+							<text><![CDATA[<p>Check out the <a href="download.html">download</a> yourself, and try it out. Make sure to give us some feedback, either on our Mailing Lists or in IRC.</p>]]></text>
 						</properties>
 					</node>
 				</node>
@@ -256,57 +242,43 @@
 					<node identifier="d603ccf3-8211-4785-81f2-dd2e0d61919d" type="TYPO3.Neos.ContentTypes:Text"
 						  nodeName="node506586bc14559" locale="">
 						<properties>
-							<text><![CDATA[
-								<p>While the release of TYPO3 Neos Alpha 1 is an important point of our development timeline, there a still a lot of tasks to do: Quite some exciting features will follow up. This page shall give an overview about the upcoming tasks.</p>]]></text>
-							<title></title>
+							<text><![CDATA[<p>While the release of TYPO3 Neos Alpha 1 is an important point of our development timeline, there a still a lot of tasks to do: Quite some exciting features will follow up. This page shall give an overview about the upcoming tasks.</p>]]></text>
 						</properties>
 					</node>
 					<node identifier="9516d7ff-45cc-4fc4-91a4-550543db4375" type="TYPO3.Neos.ContentTypes:Text"
 						  nodeName="node50699a78a16e9" locale="">
 						<properties>
-							<text><![CDATA[
-								<p><h2 style="margin-top: 22px;">Consistent Visual Design</h2><p>Due to time constraints and because we are a quite small team, we were not able to ship Alpha 1 with a consistent, clean and well-thought-out visual design. Still, we know that this part is extremely important for the success of Neos; so we're taking steps to work in this area.</p></p>]]></text>
-							<title></title>
+							<text><![CDATA[<p><h2 style="margin-top: 22px;">Consistent Visual Design</h2><p>Due to time constraints and because we are a quite small team, we were not able to ship Alpha 1 with a consistent, clean and well-thought-out visual design. Still, we know that this part is extremely important for the success of Neos; so we're taking steps to work in this area.</p></p>]]></text>
 						</properties>
 					</node>
 					<node identifier="8dc9e977-8e63-4a70-be06-a4f20e32d53c" type="TYPO3.Neos.ContentTypes:Text"
 						  nodeName="node50699a8b197fe" locale="">
 						<properties>
-							<text><![CDATA[
-								<p></p><h2 style="margin-top: 22px;">Multilanguage support in TYPO3CR and User Interface</h2><p>Handling of multiple languages and areas with proper fallback support is a key feature of every advanced CMS. While we thought about multilanguage features right from the first concept, it is not yet implemented in TYPO3CR. We will close this gap, supporting multiple languages and locales in a way such that we can add more content dimensions lateron.</p><p>Furthermore, the user interface should also be localized, both for the backend as well as for the content editing experience. This is rather straight-forward, as TYPO3 Flow already has a sophisticated localization system in place which just has to be used.</p><p></p>]]></text>
-							<title></title>
+							<text><![CDATA[<h2 style="margin-top: 22px;">Multilanguage support in TYPO3CR and User Interface</h2><p>Handling of multiple languages and areas with proper fallback support is a key feature of every advanced CMS. While we thought about multilanguage features right from the first concept, it is not yet implemented in TYPO3CR. We will close this gap, supporting multiple languages and locales in a way such that we can add more content dimensions lateron.</p><p>Furthermore, the user interface should also be localized, both for the backend as well as for the content editing experience. This is rather straight-forward, as TYPO3 Flow already has a sophisticated localization system in place which just has to be used.</p>]]></text>
 						</properties>
 					</node>
 					<node identifier="44cc0abd-456f-4531-86ca-86c3be8c508f" type="TYPO3.Neos.ContentTypes:Text"
 						  nodeName="node50699a9857b95" locale="">
 						<properties>
-							<text><![CDATA[
-								<p></p><h2 style="margin-top: 22px;">JavaScript and Server-Side Code Cleanup</h2><p>Furthermore, we still have some open tasks regarding the structure and test coverage of our JavaScript code base – we want to apply the same level of detail to this part as well.</p><p>Additionally, now that composer forms the foundation of package management, we have the tools to separate Neos into more separate packages for different concerns. Ideally, every backend module should become its own package to be easily maintainable.</p><p></p>]]></text>
-							<title></title>
+							<text><![CDATA[<h2 style="margin-top: 22px;">JavaScript and Server-Side Code Cleanup</h2><p>Furthermore, we still have some open tasks regarding the structure and test coverage of our JavaScript code base – we want to apply the same level of detail to this part as well.</p><p>Additionally, now that composer forms the foundation of package management, we have the tools to separate Neos into more separate packages for different concerns. Ideally, every backend module should become its own package to be easily maintainable.</p>]]></text>
 						</properties>
 					</node>
 					<node identifier="9a21c11d-3317-41ca-b6d0-f9ea8b12046e" type="TYPO3.Neos.ContentTypes:Text"
 						  nodeName="node50699aa0f1df4" locale="">
 						<properties>
-							<text><![CDATA[
-								<p></p><h2 style="margin-top: 22px;">Expose: An Extensible&nbsp;Admin Interface<br></h2><p>We have created the TYPO3 Expose package to be an extensible base package for listing and editing arbitrary records, be it content in Neos or arbitrary domain objects of any Flow application.</p><p>While the package is roughly working, there are still lots of details in terms of user interaction which need to be fixed.</p><p></p>]]></text>
-							<title></title>
+							<text><![CDATA[<h2 style="margin-top: 22px;">Expose: An Extensible&nbsp;Admin Interface<br></h2><p>We have created the TYPO3 Expose package to be an extensible base package for listing and editing arbitrary records, be it content in Neos or arbitrary domain objects of any Flow application.</p><p>While the package is roughly working, there are still lots of details in terms of user interaction which need to be fixed.</p>]]></text>
 						</properties>
 					</node>
 					<node identifier="1645c95b-e1eb-4667-ba8f-511fa5225b94" type="TYPO3.Neos.ContentTypes:Text"
 						  nodeName="node50699aa932484" locale="">
 						<properties>
-							<text><![CDATA[
-								<p></p><h2 style="margin-top: 22px;">Content Synchronization and Syndication</h2><p>We know that content management of today is different than a few years ago. To deal with high load, distributed services are very common. In TYPO3 Neos, we want to make our export/import functionality more versatile to use, also creating a content synchronization service across different web sites.</p><p>Because of its robust foundations, clean abstraction layers and the use of universally unique identifiers (UUIDs), this is a lot easier to implement than with classical web applications.</p><p></p>]]></text>
-							<title></title>
+							<text><![CDATA[<h2 style="margin-top: 22px;">Content Synchronization and Syndication</h2><p>We know that content management of today is different than a few years ago. To deal with high load, distributed services are very common. In TYPO3 Neos, we want to make our export/import functionality more versatile to use, also creating a content synchronization service across different web sites.</p><p>Because of its robust foundations, clean abstraction layers and the use of universally unique identifiers (UUIDs), this is a lot easier to implement than with classical web applications.</p>]]></text>
 						</properties>
 					</node>
 					<node identifier="18b816aa-fb16-4eb3-9c75-0cfdc3645268" type="TYPO3.Neos.ContentTypes:Text"
 						  nodeName="node50699ad7dc6d5" locale="">
 						<properties>
-							<text><![CDATA[
-								<h1>You Can Shape The Future</h1><p>TYPO3 Neos cannot be built without participation of many dedicated community members – we need your help to implement your favourite feature. Just <a href="contribute.html">get in touch with us</a>, so we can bring you up to speed.</p>]]></text>
-							<title></title>
+							<text><![CDATA[<h1>You Can Shape The Future</h1><p>TYPO3 Neos cannot be built without participation of many dedicated community members – we need your help to implement your favourite feature. Just <a href="contribute.html">get in touch with us</a>, so we can bring you up to speed.</p>]]></text>
 						</properties>
 					</node>
 				</node>
@@ -327,9 +299,7 @@
 					<node identifier="a0bb927b-e84d-463a-b0b6-c6e350508013" type="TYPO3.Neos.ContentTypes:Text"
 						  nodeName="node506e093212c6f" locale="">
 						<properties>
-							<text>
-								<![CDATA[<p>This page shows an overview of all the content types which are available in TYPO3 Neos.</p>]]></text>
-							<title></title>
+							<text><![CDATA[<p>This page shows an overview of all the content types which are available in TYPO3 Neos.</p>]]></text>
 						</properties>
 					</node>
 					<node identifier="f262be9a-59e9-4b81-8b79-22f122458d71" type="TYPO3.Neos.ContentTypes:Headline"
@@ -341,9 +311,7 @@
 					<node identifier="763e1ae8-7e3a-4596-a189-dce74ff42bd6" type="TYPO3.Neos.ContentTypes:Text"
 						  nodeName="node506e097a97c1f" locale="">
 						<properties>
-							<text>
-								<![CDATA[<p>The headline is a separate element, and not related to this text element. This way you have full control over which text elements actually should be prepended by a headline.</p>]]></text>
-							<title></title>
+							<text><![CDATA[<p>The headline is a separate element, and not related to this text element. This way you have full control over which text elements actually should be prepended by a headline.</p>]]></text>
 						</properties>
 					</node>
 					<node identifier="ffa2411c-f06d-4747-aa3a-f194ea12b378" type="TYPO3.Neos.ContentTypes:FourColumn"
@@ -356,9 +324,7 @@
 							<node identifier="018cfeae-b52e-4668-be8b-661de3bb8307"
 								  type="TYPO3.Neos.ContentTypes:Text" nodeName="node506e09bf6671a" locale="">
 								<properties>
-									<text>
-										<![CDATA[<p>This is a text element in the first column of a four column element.</p>]]></text>
-									<title></title>
+									<text><![CDATA[<p>This is a text element in the first column of a four column element.</p>]]></text>
 								</properties>
 							</node>
 						</node>
@@ -367,9 +333,7 @@
 							<node identifier="0a1aa5cb-6612-4366-bdac-a982dbe07fe8"
 								  type="TYPO3.Neos.ContentTypes:Text" nodeName="node506e09e4ea6f8" locale="">
 								<properties>
-									<text>
-										<![CDATA[<p>This is a text element in the first column of a four column element.</p>]]></text>
-									<title></title>
+									<text><![CDATA[<p>This is a text element in the second column of a four column element.</p>]]></text>
 								</properties>
 							</node>
 						</node>
@@ -378,9 +342,7 @@
 							<node identifier="e40e2a36-ae91-4014-a72f-2af970ecd26c"
 								  type="TYPO3.Neos.ContentTypes:Text" nodeName="node506e09fb52b2a" locale="">
 								<properties>
-									<text>
-										<![CDATA[<p>This is a text element in the first column of a four column element.</p>]]></text>
-									<title></title>
+									<text><![CDATA[<p>This is a text element in the third column of a four column element.</p>]]></text>
 								</properties>
 							</node>
 						</node>
@@ -389,9 +351,7 @@
 							<node identifier="5bc0df5d-4889-46f2-ba13-d940dc6ad81e"
 								  type="TYPO3.Neos.ContentTypes:Text" nodeName="node506e0a0dede1a" locale="">
 								<properties>
-									<text>
-										<![CDATA[<p>This is a text element in the four column of a four column element.</p>]]></text>
-									<title></title>
+									<text><![CDATA[<p>This is a text element in the fourth column of a four column element.</p>]]></text>
 								</properties>
 							</node>
 						</node>
@@ -408,7 +368,6 @@
 								<properties>
 									<source>
 										<![CDATA[<p>This is a <strong>HTML</strong> element placed in the first column of a three column element.</p>]]></source>
-									<title></title>
 								</properties>
 							</node>
 						</node>
@@ -419,7 +378,6 @@
 								<properties>
 									<source>
 										<![CDATA[<p>This is a <strong>HTML</strong> element placed in the second column of a three column element.</p>]]></source>
-									<title></title>
 								</properties>
 							</node>
 						</node>
@@ -430,7 +388,6 @@
 								<properties>
 									<source>
 										<![CDATA[<p>This is a <strong>HTML</strong> element placed in the third column of a three column element.</p>]]></source>
-									<title></title>
 								</properties>
 							</node>
 						</node>
@@ -457,7 +414,6 @@
 											</resource>
 										</originalImage>
 									</image>
-									<title></title>
 								</properties>
 							</node>
 						</node>
@@ -467,8 +423,7 @@
 								  type="TYPO3.Neos.ContentTypes:TextWithImage" nodeName="node506e0a9cf4040"
 								  locale="">
 								<properties>
-									<text>
-										<![CDATA[<p>This is a text with image element in the second column of a two column element. The element in the first column in</p>]]></text>
+									<text><![CDATA[<p>This is a text with image element in the second column of a two column element. The element in the first column in</p>]]></text>
 									<position></position>
 									<image __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant">
 										<processingInstructions>
@@ -482,7 +437,6 @@
 											</resource>
 										</originalImage>
 									</image>
-									<title></title>
 								</properties>
 							</node>
 						</node>
@@ -523,8 +477,7 @@
 					<node identifier="a3eaa452-76a2-4605-93be-7d3a6119897f" type="TYPO3.Neos.ContentTypes:Text"
 						  nodeName="text1" locale="">
 						<properties>
-							<text><![CDATA[
-								TYPO3 Neos is publicly available. You can download your version from the <a href="http://neos.typo3.org/download.html" target="_blank">TYPO3 Neos Download Page</a>.]]></text>
+							<text><![CDATA[TYPO3 Neos is publicly available. You can download your version from the <a href="http://neos.typo3.org/download.html" target="_blank">TYPO3 Neos Download Page</a>.]]></text>
 						</properties>
 					</node>
 				</node>
