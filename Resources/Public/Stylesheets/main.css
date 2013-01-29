@@ -133,7 +133,7 @@ table.no-borders td { border: none; }
 .page-home .p {
     background: none repeat scroll 0 0 transparent;
 }
-.s 			{ padding: 22px 28px 0 33px; overflow: hidden; }
+.s 			{ padding: 22px 28px 0 33px; margin-left: 208px; }
 .s-sidebar	{ float: right; width: 166px;  padding: 0 0 0 27px; min-height: 1px; }
 .s-body		{ overflow: hidden; padding-right: 20px; }
 .a 			{ }
