@@ -474,7 +474,7 @@
 				</properties>
 				<node identifier="cc04b6f8-0c0f-49ae-9468-005ec115a530" type="TYPO3.Neos.ContentTypes:Section"
 					  nodeName="main" locale="">
-					<node identifier="a3eaa452-76a2-4605-93be-7d3a6119897f" type="TYPO3.Neos.ContentTypes:Text"
+					<node identifier="a3eaa452-76a2-4605-93be-7d3a6119897c" type="TYPO3.Neos.ContentTypes:Text"
 						  nodeName="text1" locale="">
 						<properties>
 							<text><![CDATA[TYPO3 Neos is publicly available. You can download your version from the <a href="http://neos.typo3.org/download.html" target="_blank">TYPO3 Neos Download Page</a>.]]></text>
