@@ -9,7 +9,7 @@ up:
             nodeType: 'TYPO3.PhoenixDemoTypo3Org:Registration'
       transformations:
         -
-          type: 'ChangeContentType'
+          type: 'ChangeNodeType'
           settings:
             newType: 'TYPO3.NeosDemoTypo3Org:Registration'
     -
@@ -20,7 +20,7 @@ up:
             nodeType: 'TYPO3.PhoenixDemoTypo3Org:YouTube'
       transformations:
         -
-          type: 'ChangeContentType'
+          type: 'ChangeNodeType'
           settings:
             newType: 'TYPO3.NeosDemoTypo3Org:YouTube'
     -
@@ -46,7 +46,7 @@ down:
             nodeType: 'TYPO3.NeosDemoTypo3Org:Registration'
       transformations:
         -
-          type: 'ChangeContentType'
+          type: 'ChangeNodeType'
           settings:
             newType: 'TYPO3.PhoenixDemoTypo3Org:Registration'
     -
@@ -57,7 +57,7 @@ down:
             nodeType: 'TYPO3.NeosDemoTypo3Org:YouTube'
       transformations:
         -
-          type: 'ChangeContentType'
+          type: 'ChangeNodeType'
           settings:
             newType: 'TYPO3.PhoenixDemoTypo3Org:YouTube'
     -

@@ -1,11 +1,11 @@
 'TYPO3.NeosDemoTypo3Org:Registration':
-  superTypes: ['TYPO3.Neos.ContentTypes:Plugin']
+  superTypes: ['TYPO3.Neos.NodeTypes:Plugin']
   ui:
     label: 'Editor Registration Plugin'
     group: 'Plugins'
 
 'TYPO3.NeosDemoTypo3Org:YouTube':
-  superTypes: ['TYPO3.Neos.ContentTypes:Headline']
+  superTypes: ['TYPO3.Neos.NodeTypes:Headline']
   ui:
     label: 'YouTube'
     group: 'General'
