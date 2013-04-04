@@ -19,25 +19,25 @@
   properties:
     video:
       type: string
+      defaultValue: ''
       ui:
         label: 'ID'
-        defaultValue: ''
-        reloadIfChanged: true
+        reloadIfChanged: TRUE
         inspector:
           group: 'video'
     width:
       type: integer
+      defaultValue: 400
       ui:
         label: 'Width'
-        defaultValue: 400
-        reloadIfChanged: true
+        reloadIfChanged: TRUE
         inspector:
           group: 'video'
     height:
       type: integer
+      defaultValue: 300
       ui:
         label: 'Height'
-        defaultValue: 300
-        reloadIfChanged: true
+        reloadIfChanged: TRUE
         inspector:
           group: 'video'
