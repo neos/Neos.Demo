@@ -1,7 +1,5 @@
 {namespace typo3=TYPO3\Neos\ViewHelpers}
-<typo3:aloha.notEditable>
 <f:render section="itemList" arguments="{items: items, class: 'nav-aside'}" />
-</typo3:aloha.notEditable>
 <f:section name="itemList">
 	<ul{f:if(condition: class, then: ' class="{class}"')}>
 		<f:for each="{items}" as="item">
