@@ -36,28 +36,6 @@
 <body class="js-off page-landing" id="typo3org">
 <f:section name="body">
 	<div class="p t3-reloadable-content" id="page">
-
-		<!-- ### content ### -->
-		<div class="c cl" id="content">
-
-			<!-- ### aside ### -->
-			<div class="a" id="aside">
-				<typoScript:renderTypoScript path="parts/subMenu" />
-				<div id="aside-end"></div>
-			</div>
-			<!-- ^^^ aside ^^^ -->
-
-			<!-- ### section ### -->
-			<div class="s d" id="section">
-				<typoScript:renderTypoScript path="parts/breadcrumb" />
-				<typoScript:renderTypoScript path="sections/main" />
-			</div>
-			<!-- ^^^ section ^^^ -->
-
-		</div>
-		<!-- ^^^ content ^^^ -->
-
-
 		<!-- ### header ### -->
 		<div class="h" id="header">
 			<a href="#" id="logo"><img src="{f:uri.resource(path: 'Images/typo3_neos_logo.png', package:'TYPO3.NeosDemoTypo3Org')}" alt="TYPO3 Neos - Hands on" width="228" height="40"/></a>
@@ -91,7 +69,25 @@
 		</div>
 		<!-- ^^^ header ^^^ -->
 
+		<!-- ### content ### -->
+		<div class="c cl" id="content">
 
+			<!-- ### aside ### -->
+			<div class="a" id="aside">
+				<typoScript:renderTypoScript path="parts/subMenu" />
+				<div id="aside-end"></div>
+			</div>
+			<!-- ^^^ aside ^^^ -->
+
+			<!-- ### section ### -->
+			<div class="s d" id="section">
+				<typoScript:renderTypoScript path="parts/breadcrumb" />
+				<typoScript:renderTypoScript path="sections/main" />
+			</div>
+			<!-- ^^^ section ^^^ -->
+
+		</div>
+		<!-- ^^^ content ^^^ -->
 	</div><!-- ^^^ Page ^^^ -->
 
 	<!-- ### footer ### -->

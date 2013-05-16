@@ -37,24 +37,6 @@
 	<body class="js-off page-landing" id="typo3org">
 		<f:section name="body">
 			<div class="p t3-reloadable-content home-page-template" id="page"><!-- ### Page ### 208-->
-
-				<!-- ### content ### -->
-				<div class="c" id="content">
-					<typoScript:renderTypoScript path="sections/teaser" />
-					<!-- ### section ### -->
-					<div class="s d" id="section">
-						<div class="g">
-							<div class="g-6">
-								<typoScript:renderTypoScript path="sections/main" />
-							</div>
-							<div class="g-3"></div>
-						</div>
-					</div>
-					<!-- ^^^ section ^^^ -->
-
-				</div>
-				<!-- ^^^ content ^^^ -->
-
 				<!-- ### header ### -->
 				<div class="h" id="header">
 					<a href="#" id="logo"><img src="{f:uri.resource(path: 'Images/typo3_neos_logo.png', package:'TYPO3.NeosDemoTypo3Org')}" alt="TYPO3 Neos - Hands on" width="228" height="40" /></a>
@@ -97,7 +79,22 @@
 				</div>
 				<!-- ^^^ header ^^^ -->
 
+				<!-- ### content ### -->
+				<div class="c" id="content">
+					<typoScript:renderTypoScript path="sections/teaser" />
+					<!-- ### section ### -->
+					<div class="s d" id="section">
+						<div class="g">
+							<div class="g-6">
+								<typoScript:renderTypoScript path="sections/main" />
+							</div>
+							<div class="g-3"></div>
+						</div>
+					</div>
+					<!-- ^^^ section ^^^ -->
 
+				</div>
+				<!-- ^^^ content ^^^ -->
 			</div>
 			<!-- ^^^ Page ^^^ -->
 

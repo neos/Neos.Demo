@@ -148,7 +148,7 @@ table.no-borders td { border: none; }
 .f .g-5:first-child > .gc { padding-right: 45px; }
 .f .gc		{ padding-left: 45px; }
 .f p		{ margin: 0 0 14px 0; }
-.c 			{ min-height:500px; position: relative; z-index: 0; padding-bottom: 40px; }
+.c 			{ min-height:500px; position: relative; padding-bottom: 40px; }
 .bodxy-template .c { border: 0px none; }
 
 

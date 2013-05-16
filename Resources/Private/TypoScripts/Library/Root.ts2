@@ -30,15 +30,15 @@ page.body {
 	parts {
 		mainMenu = Menu
 		mainMenu {
-			entryLevel = 2
+			entryLevel = 1
 			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/MainMenu.html'
 			maximumLevels = 2
 		}
 		subMenu = Menu
 		subMenu {
-			entryLevel = 3
+			entryLevel = 2
 			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/SubMenu.html'
-			maximumLevels = 3
+			maximumLevels = 2
 		}
 		breadcrumb = Template
 		breadcrumb {
