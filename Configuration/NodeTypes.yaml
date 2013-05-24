@@ -1,43 +1,45 @@
+
 'TYPO3.NeosDemoTypo3Org:Registration':
-  superTypes: ['TYPO3.Neos.NodeTypes:Plugin']
+  superTypes:
+    - 'TYPO3.Neos:Plugin'
   ui:
     label: 'Editor Registration Plugin'
-    group: 'Plugins'
-
+    group: Plugins
 'TYPO3.NeosDemoTypo3Org:YouTube':
-  superTypes: ['TYPO3.Neos.NodeTypes:Headline']
+  superTypes:
+    - 'TYPO3.Neos.NodeTypes:Headline'
   ui:
-    label: 'YouTube'
-    group: 'General'
+    label: YouTube
+    group: General
     icon:
-      light: 'Images/Icons/White/youtube_icon-16.png'
-      dark: 'Images/Icons/Black/youtube_icon-16.png'
+      light: Images/Icons/White/youtube_icon-16.png
+      dark: Images/Icons/Black/youtube_icon-16.png
     inspector:
       groups:
         video:
-          label: 'Video'
+          label: Video
   properties:
     video:
       type: string
       defaultValue: ''
       ui:
-        label: 'ID'
-        reloadIfChanged: TRUE
+        label: ID
+        reloadIfChanged: true
         inspector:
-          group: 'video'
+          group: video
     width:
       type: integer
       defaultValue: 400
       ui:
-        label: 'Width'
-        reloadIfChanged: TRUE
+        label: Width
+        reloadIfChanged: true
         inspector:
-          group: 'video'
+          group: video
     height:
       type: integer
       defaultValue: 300
       ui:
-        label: 'Height'
-        reloadIfChanged: TRUE
+        label: Height
+        reloadIfChanged: true
         inspector:
-          group: 'video'
+          group: video

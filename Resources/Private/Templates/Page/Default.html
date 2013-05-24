@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- {namespace typo3=TYPO3\Neos\ViewHelpers}{namespace typoScript=TYPO3\TypoScript\ViewHelpers} -->
+	<!-- {namespace ts=TYPO3\TypoScript\ViewHelpers} -->
 	<meta charset="utf-8">
 	<f:base/>
 
@@ -65,7 +65,7 @@
 					</li>
 				</ul>
 			</div><!-- h-bar -->
-			<typoScript:renderTypoScript path="parts/mainMenu" />
+			<ts:render path="parts.mainMenu" />
 		</div>
 		<!-- ^^^ header ^^^ -->
 
@@ -74,15 +74,15 @@
 
 			<!-- ### aside ### -->
 			<div class="a" id="aside">
-				<typoScript:renderTypoScript path="parts/subMenu" />
+				<ts:render path="parts.subMenu" />
 				<div id="aside-end"></div>
 			</div>
 			<!-- ^^^ aside ^^^ -->
 
 			<!-- ### section ### -->
 			<div class="s d" id="section">
-				<typoScript:renderTypoScript path="parts/breadcrumb" />
-				<typoScript:renderTypoScript path="sections/main" />
+				<ts:render path="parts.breadcrumb" />
+				<ts:render path="content.main" />
 			</div>
 			<!-- ^^^ section ^^^ -->
 

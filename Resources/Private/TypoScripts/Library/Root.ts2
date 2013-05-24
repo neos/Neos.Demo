@@ -47,11 +47,11 @@ page.body {
 		}
 	}
 
-	sections {
-		teaser = Section
+	content {
+		teaser = ContentCollection
 		teaser.nodePath = 'teaser'
 
-		main = Section
+		main = ContentCollection
 		main.nodePath = 'main'
 	}
 }

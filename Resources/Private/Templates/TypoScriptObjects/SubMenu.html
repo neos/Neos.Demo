@@ -1,10 +1,10 @@
-{namespace typo3=TYPO3\Neos\ViewHelpers}
+{namespace neos=TYPO3\Neos\ViewHelpers}
 <f:render section="itemList" arguments="{items: items, class: 'nav-aside'}" />
 <f:section name="itemList">
 	<ul{f:if(condition: class, then: ' class="{class}"')}>
 		<f:for each="{items}" as="item">
 			<li class="{item.state}">
-				<typo3:link.node node="{item.node}"><span>{item.label}</span></typo3:link.node>
+				<neos:link.node node="{item.node}"><span>{item.label}</span></neos:link.node>
 				<f:if condition="{item.subItems}">
 					<f:if condition="{0: item.state} == {0: 'current'}">
 						<f:then>

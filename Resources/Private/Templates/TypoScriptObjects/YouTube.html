@@ -1,6 +1,6 @@
-{namespace t=TYPO3\Neos\ViewHelpers}
-<t:contentElement node="{context}">
-	<t:aloha.editable property="title" tag="header">{title -> f:format.raw()}</t:aloha.editable>
+{namespace neos=TYPO3\Neos\ViewHelpers}
+<neos:contentElement node="{context}">
+	<neos:contentElement.editable property="title" tag="header">{title -> f:format.raw()}</neos:contentElement.editable>
 	<f:if condition="{video}">
 		<f:then>
 			<figure class="video">
@@ -11,4 +11,4 @@
 			No video ID
 		</f:else>
 	</f:if>
-</t:contentElement>
+</neos:contentElement>

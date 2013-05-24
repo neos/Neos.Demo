@@ -1,5 +1,5 @@
 # Neos Demo Registration Plugin TS Object
-prototype(TYPO3.NeosDemoTypo3Org:Registration) < prototype(TYPO3.Neos.NodeTypes:Plugin)
+prototype(TYPO3.NeosDemoTypo3Org:Registration) < prototype(TYPO3.Neos:Plugin)
 prototype(TYPO3.NeosDemoTypo3Org:Registration) {
 	package = 'TYPO3.NeosDemoTypo3Org'
 	controller = 'Registration'

@@ -1,10 +1,10 @@
-{namespace typo3=TYPO3\Neos\ViewHelpers}
+{namespace neos=TYPO3\Neos\ViewHelpers}
 <f:render section="itemList" arguments="{items: items}" />
 <f:section name="itemList">
 	<ul class="nav">
 		<f:for each="{items}" as="item" iteration="menuItemIterator">
 			<li class="{item.state}{f:if(condition: menuItemIterator.isLast, then: ' last')}">
-				<typo3:link.node node="{item.node}">{item.label}</typo3:link.node>
+				<neos:link.node node="{item.node}">{item.label}</neos:link.node>
 				<f:if condition="{menuItemIterator.isLast}">
 					<f:else>
 						<f:if condition="{item.subItems}">
@@ -23,7 +23,7 @@
 			<ul>
 				<f:for each="{items}" as="item">
 					<li class="{item.state}">
-						<typo3:link.node node="{item.node}">{item.label}</typo3:link.node>
+						<neos:link.node node="{item.node}">{item.label}</neos:link.node>
 					</li>
 				</f:for>
 			</ul>
