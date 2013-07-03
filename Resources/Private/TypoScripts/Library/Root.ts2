@@ -5,7 +5,7 @@ namespace: TypoScript=TYPO3.TypoScript
  * Root TypoScript template for the Neos website
  */
 page = Page
-page.headerData {
+page.head {
 	stylesheets = Template
 	stylesheets {
 		templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
