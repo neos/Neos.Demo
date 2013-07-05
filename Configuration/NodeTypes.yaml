@@ -3,15 +3,14 @@
     - 'TYPO3.Neos:Plugin'
   ui:
     label: 'Editor Registration Plugin'
+    icon: 'icon-user'
 
 'TYPO3.NeosDemoTypo3Org:YouTube':
   superTypes:
     - 'TYPO3.Neos.NodeTypes:Headline'
   ui:
     label: YouTube
-    icon:
-      light: Images/Icons/White/youtube_icon-16.png
-      dark: Images/Icons/Black/youtube_icon-16.png
+    icon: 'icon-youtube'
     inspector:
       groups:
         video:
