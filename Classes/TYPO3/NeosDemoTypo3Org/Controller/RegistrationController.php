@@ -83,7 +83,7 @@ class RegistrationController extends \TYPO3\Flow\Mvc\Controller\ActionController
 		$uriBuilder->setRequest($this->request->getParentRequest());
 		$redirectUri = $uriBuilder
 			->setCreateAbsoluteUri(TRUE)
-			->uriFor('index', array('username' => $accountIdentifier), 'Login', 'TYPO3.TYPO3');
+			->uriFor('index', array('username' => $accountIdentifier), 'Login', 'TYPO3.Neos');
 		$this->redirectToUri($redirectUri);
 	}
 
@@ -112,17 +112,6 @@ class RegistrationController extends \TYPO3\Flow\Mvc\Controller\ActionController
 		$account->setExpirationDate(new \DateTime('+1 week'));
 
 		$this->accountRepository->add($account);
-	}
-
-	/**
-	 * Confirmation for createAccountAction
-	 *
-	 * @param string $username Identifier of the account that was created
-	 * @return void
-	 * @author Bastian Waidelich <bastian@typo3.org>
-	 */
-	public function createAccountConfirmationAction($username) {
-		$this->view->assign('username', $username);
 	}
 
 	/**
