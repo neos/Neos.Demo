@@ -1,3 +1,24 @@
+'TYPO3.Neos:Page':
+  properties:
+    layout:
+      ui:
+        inspector:
+          editorOptions:
+            values:
+              'default':
+                label: 'Default'
+              'homepage':
+                label: 'Home'
+    subpageLayout:
+      ui:
+        inspector:
+          editorOptions:
+            values:
+              'default':
+                label: 'Default'
+              'homepage':
+                label: 'Home'
+
 'TYPO3.NeosDemoTypo3Org:Registration':
   superTypes:
     - 'TYPO3.Neos:Plugin'
