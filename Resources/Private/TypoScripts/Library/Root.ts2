@@ -56,4 +56,14 @@ page.body {
 	}
 }
 
+homepage < page {
+	body.templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Home.html'
 
+	head.javascripts.templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Home.html'
+	head.stylesheets.templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
+}
+
+root.homepage {
+	condition = ${node == q(site).children('home').get(0)}
+	renderPath = '/homepage'
+}
