@@ -1,0 +1,12 @@
+#                                                                        #
+# Security policy for the TYPO3 Neos Demo Site package                   #
+#                                                                        #
+
+resources:
+  methods:
+    TYPO3_Neos_DemoSite_RegistrationPlugin: 'method(TYPO3\NeosDemoTypo3Org\Controller\RegistrationController->.*Action())'
+
+acls:
+  Everybody:
+    methods:
+      TYPO3_Neos_DemoSite_RegistrationPlugin: GRANT
