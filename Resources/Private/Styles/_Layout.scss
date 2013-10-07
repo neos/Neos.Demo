@@ -1,0 +1,83 @@
+@font-face {
+	font-family: 'Noto';
+	src: url('../Fonts/NotoSans-Regular-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../Fonts/NotoSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../Fonts/NotoSans-Regular-webfont.woff') format('woff'), /* Modern Browsers */
+		url('../Fonts/NotoSans-Regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../Fonts/NotoSans-Regular-webfont.svg#noto_sansregular') format('svg'); /* Legacy iOS */
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Poly';
+	src: url('../Fonts/Poly-Regular-webfont.eot');
+	src: url('../Fonts/Poly-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../Fonts/Poly-Regular-webfont.woff') format('woff'),
+		url('../Fonts/Poly-Regular-webfont.ttf') format('truetype'),
+		url('../Fonts/Poly-Regular-webfont.svg#polyregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin font {
+	font-family: 'Poly', serif;
+}
+
+body {
+	@include font;
+	padding-top: 150px;
+
+	@media #{$screen-sm} {
+		padding-top: 0px;
+	}
+}
+
+footer {
+	.panel {
+		margin-bottom: 0;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@include font;
+}
+
+a {
+	color: $primary;
+	@include transition(color, background-color 0.2s);
+
+	&:hover {
+		color: $blueDark;
+	}
+}
+
+.row {
+	margin-bottom: 2em;
+}
+
+// Big hero unit at the top of the template
+.jumbotron {
+	color: #666;
+	background-color: #eee;
+	overflow: hidden;
+	min-height: 400px;
+}
+
+// Inline image alignments
+.typo3-image-alignment-right {
+	float: right;
+	margin-left: 2em;
+	margin-bottom: 1em;
+}
+
+.typo3-image-alignment-left {
+	float: left;
+	margin-right: 2em;
+	margin-bottom: 1em;
+}

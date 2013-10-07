@@ -1,0 +1,223 @@
+/*!
+ *
+.||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||.
+
+	.                                      '||            .
+  .||.  .... ... ... ...    ....  ... ...   ||   ....   .||.    ....
+   ||    '|.  |   ||'  || .|...||  ||'  ||  ||  '' .||   ||   .|...||
+   ||     '|.|    ||    | ||       ||    |  ||  .|' ||   ||   ||
+   '|.'    '|     ||...'   '|...'  ||...'  .||. '|..'|'  '|.'  '|...'
+		.. |      ||               ||
+		 ''      ''''             ''''      A Typographic Starter Kit
+
+  URL ........... http://typeplate.com
+  VERSION ....... 1.1.1
+  Github ........ https://github.com/typeplate/typeplate.github.io
+  AUTHORS ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
+  LICENSE ....... Creative Commmons Attribution 3.0
+  LICENSE URL ... http://creativecommons.org/licenses/by/3.0
+
+ .||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||.
+ *
+ */
+@font-face { font-family: "Ampersand"; src: local("Georgia"), local("Garamond"), local("Palatino"), local("Book Antiqua"); unicode-range: U+0026; }
+
+@font-face { font-family: "Ampersand"; src: local("Georgia"); unicode-range: U+270C; }
+
+body { word-wrap: break-word; }
+
+pre code { word-wrap: normal; }
+
+/** Dropcap Sass @include Use the following Sass @include with any selector you feel necessary. 
+	@include dropcap($dropcap-float-position, $dropcap-font-size, $dropcap-font-family, $dropcap-txt-indent, $dropcap-margin, $dropcap-padding, $dropcap-color, $dropcap-line-height, $dropcap-bg);  Extend this object into your custom stylesheet. Let the variables do the work.  */
+html { font: normal 112.5%/1.65 serif; }
+
+body { -webkit-hyphens: auto; -moz-hyphens: auto; -ms-hyphens: auto; -o-hyphens: auto; hyphens: auto; color: #444444; }
+
+small { font-size: 65%; }
+
+h1, h2, h3, h4, h5, h6 { text-rendering: optimizeLegibility; line-height: 1; margin-top: 0; }
+
+.tera { font-size: 117px; font-size: 6.5rem; margin-bottom: 0.25385rem; }
+
+.giga { font-size: 90px; font-size: 5rem; margin-bottom: 0.33rem; }
+
+.mega { font-size: 72px; font-size: 4rem; margin-bottom: 0.4125rem; }
+
+.alpha, h1 { font-size: 60px; font-size: 3.33333rem; margin-bottom: 0.495rem; }
+
+.beta, h2 { font-size: 48px; font-size: 2.66667rem; margin-bottom: 0.61875rem; }
+
+.gamma, h3 { font-size: 36px; font-size: 2rem; margin-bottom: 0.825rem; }
+
+.delta, h4 { font-size: 24px; font-size: 1.33333rem; margin-bottom: 1.2375rem; }
+
+.epsilon, h5 { font-size: 21px; font-size: 1.16667rem; margin-bottom: 1.41429rem; }
+
+.zeta, h6 { font-size: 18px; font-size: 1rem; margin-bottom: 1.65rem; }
+
+p { margin: auto auto 1.5em; }
+p + p { text-indent: 1.5em; margin-top: -1.5em; }
+
+abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var, xmp { -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; -o-hyphens: none; hyphens: none; }
+
+pre code { white-space: -moz-pre-wrap; white-space: pre-wrap; }
+
+pre { white-space: pre; }
+
+code { white-space: pre; font-family: monospace; }
+
+/** Abbreviations Markup 
+	<abbr title="hyper text markup language">HMTL</abbr>  Extend this object into your markup.  */
+abbr { font-variant: small-caps; font-weight: 600; text-transform: lowercase; color: gray; }
+abbr[title]:hover { cursor: help; }
+
+h1, h2, h3, h4, h5, h6 { color: #222222; }
+
+p + .drop-cap { text-indent: 0; margin-top: 0; }
+
+.drop-cap:first-letter { float: left; margin: inherit; padding: inherit; font-size: 4em; font-family: inherit; line-height: 1; text-indent: 0; background: transparent; color: inherit; }
+
+/** Lining Definition Style Markup 
+	<dl class="lining">
+		<dt><b></b></dt>
+		<dd></dd>
+	</dl>  Extend this object into your markup.  */
+.lining dt, .lining dd { display: inline; margin: 0; }
+.lining dt + dt:before, .lining dd + dt:before { content: "\A"; white-space: pre; }
+.lining dd + dd:before { content: ", "; }
+.lining dd:before { content: ": "; margin-left: -0.2rem; }
+
+/** Dictionary Definition Style Markup 
+	<dl class="dictionary-style">
+		<dt><b></b></dt>
+			<dd></dd>
+	</dl>  Extend this object into your markup.  */
+.dictionary-style dt { display: inline; counter-reset: definitions; }
+.dictionary-style dt + dt:before { content: ", "; margin-left: -0.2rem; }
+.dictionary-style dd { display: block; counter-increment: definitions; }
+.dictionary-style dd:before { content: counter(definitions,decimal) ". "; }
+
+/** Blockquote Markup 
+		<figure>
+			<blockquote cite="">
+				<p></p>
+			</blockquote>
+			<figcaption>
+				<cite>
+					<small><a href=""></a></small>
+				</cite>
+			</figcaption>
+		</figure>  Extend this object into your markup.  */
+/** Pull Quotes Markup 
+	<aside class="pull-quote">
+		<blockquote>
+			<p></p>
+		</blockquote>
+	</aside>  Extend this object into your custom stylesheet.  */
+.pull-quote { position: relative; padding: 1em; }
+.pull-quote:before, .pull-quote:after { height: 1em; opacity: 0.5; position: absolute; font-size: 4em; color: #dc976e; }
+.pull-quote:before { content: '“'; top: 0; left: 0; }
+.pull-quote:after { content: '”'; bottom: 0; right: 0; }
+
+/** Figures Markup 
+	<figure>
+		<figcaption>
+			<strong>Fig. 4.2 | </strong>Type Anatomy, an excerpt from Mark Boulton's book<cite title="http://designingfortheweb.co.uk/book/part3/part3_chapter11.php">"Designing for the Web"</cite>
+		</figcaption>
+	</figure>  Extend this object into your markup.  */
+/** Footnote Markup : Replace 'X' with your unique number for each footnote 
+	<article>
+		<p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
+		<footer>
+			<ol class="foot-notes">
+				<li id="fn-itemX"><a href="#fn-returnX">↩</a></li>
+			</ol>
+		</footer>
+	</article>  Extend this object into your markup.  */
+@font-face { font-family: 'Noto'; src: url("../Fonts/NotoSans-Regular-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../Fonts/NotoSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/NotoSans-Regular-webfont.woff") format("woff"), url("../Fonts/NotoSans-Regular-webfont.ttf") format("truetype"), url("../Fonts/NotoSans-Regular-webfont.svg#noto_sansregular") format("svg");
+  /* Legacy iOS */
+  font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Poly'; src: url("../Fonts/Poly-Regular-webfont.eot"); src: url("../Fonts/Poly-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/Poly-Regular-webfont.woff") format("woff"), url("../Fonts/Poly-Regular-webfont.ttf") format("truetype"), url("../Fonts/Poly-Regular-webfont.svg#polyregular") format("svg"); font-weight: normal; font-style: normal; }
+
+body { font-family: 'Poly', serif; padding-top: 150px; }
+@media only screen and (max-width: 768px) { body { padding-top: 0px; } }
+
+footer .panel { margin-bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Poly', serif; }
+
+a { color: #00b5ff; -webkit-transition: color, background-color 0.2s; -moz-transition: color, background-color 0.2s; -o-transition: color, background-color 0.2s; transition: color, background-color 0.2s; }
+a:hover { color: #007fb2; }
+
+.row { margin-bottom: 2em; }
+
+.jumbotron { color: #666; background-color: #eee; overflow: hidden; min-height: 400px; }
+
+.typo3-image-alignment-right { float: right; margin-left: 2em; margin-bottom: 1em; }
+
+.typo3-image-alignment-left { float: left; margin-right: 2em; margin-bottom: 1em; }
+
+.carousel .jumbotron { margin: -50px -60px; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
+@media only screen and (max-width: 768px) { .carousel .jumbotron { margin: -30px; } }
+
+.carousel-indicators { bottom: 0; }
+.carousel-indicators li { width: 16px; height: 16px; margin: 0; border-color: #ccc; background-color: #888; -webkit-transition: box-shadow 0.1s; -moz-transition: box-shadow 0.1s; -o-transition: box-shadow 0.1s; transition: box-shadow 0.1s; -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
+.carousel-indicators .active { width: 16px; height: 16px; background-color: #00b5ff; -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5); box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5); }
+@media only screen and (max-width: 768px) { .carousel-indicators { display: none; } }
+
+.carousel-control.right, .carousel-control.left { background: none; }
+.neos-backend .carousel-control { display: none; }
+
+@media only screen and (max-width: 768px) { .carousel-caption { font-size: 15px; padding-bottom: 0; } }
+
+.top-navigation-wrap { background-color: white; background-color: rgba(255, 255, 255, 0.97); transition: box-shadow 0.2s linear; }
+.top-navigation-wrap.scrolling { -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); }
+@media only screen and (max-width: 768px) { .top-navigation-wrap { position: relative; margin-left: -15px; margin-right: -15px; }
+  .top-navigation-wrap, .top-navigation-wrap.scrolling { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; } }
+.neos-backend:not(.neos-previewmode) .top-navigation-wrap { top: 82px; }
+@media only screen and (max-width: 768px) { .neos-backend:not(.neos-previewmode) .top-navigation-wrap { top: auto; } }
+.neos-inspector-panel-open:not(.neos-previewmode) .top-navigation-wrap { right: 320px; }
+.neos-tree-panel-open:not(.neos-previewmode) .top-navigation-wrap { left: 320px; }
+
+.first-level-navigation { margin-top: 25px; margin-bottom: 15px; }
+.first-level-navigation a { font-size: 1.3em; }
+
+.second-level-navigation { border-bottom: 1px solid #e6e6e6; background-color: #f7f7f7; }
+
+.navbar-brand { background-image: url("../Images/logo.png"); background-repeat: no-repeat; background-size: 100px; text-indent: -999px; width: 135px; height: 50px; margin-right: 20px; margin-left: 20px; }
+@media only screen and (max-width: 768px) { .navbar-brand { background-image: url("../Images/logo@2x.png"); background-size: 157px 50px; } }
+
+.navbar-default { background-color: transparent; border: 0; }
+.navbar-default .navbar-toggle { background-color: #ff8700; }
+.navbar-default .navbar-toggle .icon-bar { background-color: white; }
+
+.navbar-collapse { max-height: none; border-top: 0; }
+
+.nav-pills > li { display: block; float: left; width: auto; font-family: 'Noto'; }
+.nav-pills > li + li { padding-left: 55px; }
+.nav-pills > li > a { font-size: 14px; line-height: 46px; vertical-align: bottom; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; padding: 0; border-top: 4px solid transparent; }
+.nav-pills > li > a:hover { background-color: transparent; }
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .nav-pills > li.current > a, .nav-pills > li.current > a:hover, .nav-pills > li.current > a:focus { color: black; background-color: transparent; border-top: 4px solid #ff8700; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
+
+.nav .caret { border-top-color: #323232; border-bottom-color: #323232; }
+.nav .active .caret, .nav .current .caret { border-top-color: white; border-bottom-color: white; }
+
+.nav-tabs { border-bottom: 0; font-family: 'Noto'; }
+.nav-tabs > li > a { padding: 0; }
+.nav-tabs > li > a:hover { background-color: transparent; border-color: transparent; }
+.nav-tabs > li + li { padding-left: 55px; }
+.nav-tabs > li.current > a { color: #555555; cursor: default; background-color: transparent; border-color: transparent; }
+.nav-tabs > li.current > a, .nav-tabs > li.current > a:hover { border-bottom: 1px solid #ff8700; }
+
+footer.navbar { margin-bottom: 0; }
+
+.breadcrumb { padding-left: 0; margin: 0; color: #5b5b5b; background-color: transparent; }
+
+.chapter-menu li { margin-bottom: 10px; list-style-type: none; overflow: hidden; *zoom: 1; }
+.chapter-menu li img { margin-right: 2em; }
+
+.form-navigation li { list-style-type: none; }

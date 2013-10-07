@@ -1,0 +1,11 @@
+.chapter-menu {
+	li {
+		margin-bottom: 10px;
+		list-style-type: none;
+		@include clearfix();
+
+		img {
+			margin-right: 2em;
+		}
+	}
+}

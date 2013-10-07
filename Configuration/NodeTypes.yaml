@@ -7,8 +7,8 @@
             values:
               'default':
                 label: 'Default'
-              'homepage':
-                label: 'Home'
+              'landingPage':
+                label: 'Landing page'
     subpageLayout:
       ui:
         inspector:
@@ -16,8 +16,38 @@
             values:
               'default':
                 label: 'Default'
-              'homepage':
-                label: 'Home'
+              'landingPage':
+                label: 'Landing page'
+
+'TYPO3.NeosDemoTypo3Org:Chapter':
+  superTypes: ['TYPO3.Neos:Document']
+  ui:
+    label: 'Chapter'
+    icon: 'icon-book'
+    inspector:
+      groups:
+        document:
+          label: 'Chapter details'
+  properties:
+    chapterDescription:
+      type: string
+      ui:
+        label: 'Chapter description'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'document'
+    chapterImage:
+      type: TYPO3\Media\Domain\Model\ImageVariant
+      ui:
+        label: 'Chapter image'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'document'
+
+'TYPO3.NeosDemoTypo3Org:ChapterMenu':
+  superTypes: ['TYPO3.Neos.NodeTypes:Menu']
+  ui:
+    label: 'Chapter menu'
 
 'TYPO3.NeosDemoTypo3Org:Registration':
   superTypes:
@@ -61,3 +91,78 @@
         reloadIfChanged: TRUE
         inspector:
           group: video
+
+'TYPO3.NeosDemoTypo3Org:Carousel':
+  superTypes: ['TYPO3.Neos:Content']
+  childNodes:
+    carouselItems:
+      type: 'TYPO3.Neos:ContentCollection'
+  ui:
+    label: 'Carousel'
+    group: 'Plugins'
+    icon: 'icon-picture'
+    inlineEditable: TRUE
+
+'TYPO3.Neos.NodeTypes:TwoColumn':
+  properties:
+    layout:
+      defaultValue: '6-6'
+      ui:
+        inspector:
+          editorOptions:
+            values:
+              '50-50': ~
+              '75-25': ~
+              '25-75': ~
+              '66-33': ~
+              '33-66': ~
+              '6-6':
+                label: '50% / 50%'
+              '8-4':
+                label: '66% / 33%'
+              '4-8':
+                label: '33% / 66%'
+
+'TYPO3.Neos.NodeTypes:ThreeColumn':
+  properties:
+    layout:
+      defaultValue: '4-4-4'
+      ui:
+        inspector:
+          editorOptions:
+            values:
+              '33-33-33': ~
+              '50-25-25': ~
+              '25-50-25': ~
+              '25-25-50': ~
+              '4-4-4':
+                label: '33% / 33% / 33%'
+              '6-3-3':
+                label: '50% / 25% / 33%'
+              '3-6-3':
+                label: '25% / 50% / 25%'
+              '3-3-6':
+                label: '25% / 25% / 50%'
+
+'TYPO3.Neos.NodeTypes:FourColumn':
+  properties:
+    layout:
+      defaultValue: '3-3-3-3'
+      ui:
+        inspector:
+          editorOptions:
+            values:
+              '25-25-25-25': ~
+              '3-3-3-3':
+                label: '25% / 25% / 25% / 25%'
+
+'TYPO3.Neos.NodeTypes:Form':
+  properties:
+    formIdentifier:
+      ui:
+        inspector:
+          editorOptions:
+            values:
+              '': ~
+              'contact-form':
+                label: 'Contact form'

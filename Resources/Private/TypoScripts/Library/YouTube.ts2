@@ -1,0 +1,7 @@
+# YouTube TS Object
+prototype(TYPO3.NeosDemoTypo3Org:YouTube) < prototype(TYPO3.Neos.NodeTypes:Headline) {
+	templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/YouTube.html'
+	video = ${q(node).property('video')}
+	width = ${q(node).property('width')}
+	height = ${q(node).property('height')}
+}

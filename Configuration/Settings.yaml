@@ -1,0 +1,18 @@
+TYPO3:
+  Form:
+    yamlPersistenceManager:
+      savePath: 'resource://TYPO3.NeosDemoTypo3Org/Private/Form/'
+    presets:
+      bootstrap:
+        title: 'Twitter bootstrap'
+        parentPreset: 'default'
+        formElementTypes:
+          'TYPO3.Form:Base':
+            renderingOptions:
+              layoutPathPattern: 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/ContactForm/{@type}.html'
+          'TYPO3.Form:FormElement':
+            properties:
+              elementClassAttribute: 'form-control'
+          'TYPO3.Form:MultiLineText':
+            properties:
+              elementClassAttribute: 'form-control'

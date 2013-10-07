@@ -1,10 +1,17 @@
-include: TypoScripts/Library/ContentElements.ts2
+include: TypoScripts/Library/MultiColumn.ts2
+include: TypoScripts/Library/MultiColumnItem.ts2
+include: TypoScripts/Library/Registration.ts2
+include: TypoScripts/Library/Carousel.ts2
+include: TypoScripts/Library/YouTube.ts2
+include: TypoScripts/Library/ChapterMenu.ts2
+include: TypoScripts/Library/Forms.ts2
 namespace: TypoScript=TYPO3.TypoScript
 
 /**
  * Root TypoScript template for the Neos website
  */
 page = Page
+
 page.head {
 	stylesheets = Template
 	stylesheets {
@@ -12,10 +19,10 @@ page.head {
 		sectionName = 'stylesheets'
 	}
 
-	javascripts = Template
-	javascripts {
+	metadata = Template
+	metadata {
 		templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
-		sectionName = 'javascripts'
+		sectionName = 'metadata'
 	}
 
 	title = Template
@@ -23,6 +30,7 @@ page.head {
 	title.items = ${q(node).add(q(node).parents())}
 	title << 1.wrap(prefix:'<title>', suffix: '</title>')
 }
+
 page.body {
 	templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
 	sectionName = 'body'
@@ -32,14 +40,25 @@ page.body {
 		mainMenu {
 			entryLevel = 1
 			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/MainMenu.html'
-			maximumLevels = 2
+			maximumLevels = 3
 		}
-		subMenu = Menu
-		subMenu {
+
+		secondLevelMenu = Menu
+		secondLevelMenu {
 			entryLevel = 2
-			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/SubMenu.html'
-			maximumLevels = 2
+			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/SecondLevelMenu.html'
+			maximumLevels = 1
 		}
+
+		metaMenu = Menu
+		metaMenu {
+			# TODO: entryLevel should be relative not absolute
+			entryLevel = 2
+			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/MetaMenu.html'
+			maximumLevels = 1
+			startingPoint = ${q(site).children('metamenu').get(0)}
+		}
+
 		breadcrumb = Template
 		breadcrumb {
 			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/BreadcrumbMenu.html'
@@ -50,17 +69,43 @@ page.body {
 	content {
 		teaser = ContentCollection
 		teaser.nodePath = 'teaser'
+		teaser {
+			// Overwrite the image template in the teaser section to make them responsive
+			prototype(TYPO3.Neos.NodeTypes:Image) {
+				imageClassName = 'img-responsive'
+			}
+		}
 
+		# Hide teaser block in frontend when no teaser elements exist
+		showTeasers = ${q(node).children('teaser').children().count() > 0 || node.context.workspace.name != 'live'}
+
+		// Default content section
 		main = ContentCollection
 		main.nodePath = 'main'
+	}
+
+	# A shared footer which can be edited from all pages
+	footer = TYPO3.Neos:ContentCollection {
+		nodePath = ${q(site).children('home').children('footer').property('_path')}
+		collection = ${q(site).children('home').children('footer').children()}
+	}
+
+	// Javascripts are added at the bottom of the body tag to improve page loading speed
+	javascripts {
+		templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
+		sectionName = 'javascripts'
 	}
 }
 
 default < page
 
-homepage < page {
-	body.templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Home.html'
+# Special page type with less navigation components
+landingPage < page
+landingPage.body {
+	# Hide breadcrumb on landing pages
+	# TODO: support unsetting with ">" or something like "Empty" TS object
+	parts.breadcrumb = TYPO3.TypoScript:Array
 
-	head.javascripts.templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Home.html'
-	head.stylesheets.templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
+	# Hide second level menu on landing pages
+	parts.secondLevelMenu = TYPO3.TypoScript:Array
 }

@@ -1,0 +1,21 @@
+# Carousel element
+prototype(TYPO3.NeosDemoTypo3Org:Carousel) < prototype(TYPO3.Neos:Template) {
+	templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/Carousel.html'
+
+	carouselItems = TYPO3.Neos:ContentCollection {
+		nodePath = 'carouselItems'
+		iterationName = 'carouselItemsIteration'
+		className = 'carousel-inner'
+	}
+
+	carouselItemArray = ${q(node).children('carouselItems').children()}
+
+	# Enhance image prototype for the carousel
+	prototype(TYPO3.Neos.NodeTypes:Image) {
+		# Render images in the carousel with a special template.
+		templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/CarouselItem.html'
+
+		# We want to use the item iterator in the template so we have to store it in ts.
+		iteration = ${carouselItemsIteration}
+	}
+}

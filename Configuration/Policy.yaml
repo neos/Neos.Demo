@@ -1,12 +1,12 @@
 #                                                                        #
-# Security policy for the TYPO3 Neos Demo Site package                   #
+# Security policy for the TYPO3.NeosDemoTypo3Org package                 #
 #                                                                        #
 
 resources:
   methods:
-    TYPO3_Neos_DemoSite_RegistrationPlugin: 'method(TYPO3\NeosDemoTypo3Org\Controller\RegistrationController->.*Action())'
+    TYPO3_NeosDemoTypo3Org_RegistrationAccess: 'method(TYPO3\NeosDemoTypo3Org\Controller\RegistrationController->(index|newAccount|createAccount|createTemporaryAccount)Action())'
 
 acls:
   Everybody:
     methods:
-      TYPO3_Neos_DemoSite_RegistrationPlugin: GRANT
+      TYPO3_NeosDemoTypo3Org_RegistrationAccess: GRANT
