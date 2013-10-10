@@ -28,7 +28,7 @@ page.head {
 	title = Template
 	title.templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/TitleMenu.html'
 	title.items = ${q(node).add(q(node).parents())}
-	title << 1.wrap(prefix:'<title>', suffix: '</title>')
+	title.@process.1 = ${'<title>' + value + '</title>'}
 }
 
 page.body {
@@ -103,9 +103,8 @@ default < page
 landingPage < page
 landingPage.body {
 	# Hide breadcrumb on landing pages
-	# TODO: support unsetting with ">" or something like "Empty" TS object
-	parts.breadcrumb = TYPO3.TypoScript:Array
+	parts.breadcrumb >
 
 	# Hide second level menu on landing pages
-	parts.secondLevelMenu = TYPO3.TypoScript:Array
+	parts.secondLevelMenu >
 }
