@@ -141,14 +141,12 @@ p + .drop-cap { text-indent: 0; margin-top: 0; }
   /* Legacy iOS */
   font-weight: normal; font-style: normal; }
 
-@font-face { font-family: 'Poly'; src: url("../Fonts/Poly-Regular-webfont.eot"); src: url("../Fonts/Poly-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/Poly-Regular-webfont.woff") format("woff"), url("../Fonts/Poly-Regular-webfont.ttf") format("truetype"), url("../Fonts/Poly-Regular-webfont.svg#polyregular") format("svg"); font-weight: normal; font-style: normal; }
-
-body { font-family: 'Poly', serif; padding-top: 150px; }
+body { font-family: 'Noto', serif; padding-top: 150px; }
 @media only screen and (max-width: 768px) { body { padding-top: 0px; } }
 
 footer .panel { margin-bottom: 0; }
 
-h1, h2, h3, h4, h5, h6 { font-family: 'Poly', serif; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Noto', serif; }
 
 a { color: #00b5ff; -webkit-transition: color, background-color 0.2s; -moz-transition: color, background-color 0.2s; -o-transition: color, background-color 0.2s; transition: color, background-color 0.2s; }
 a:hover { color: #007fb2; }

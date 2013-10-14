@@ -9,19 +9,8 @@
 	font-style: normal;
 }
 
-@font-face {
-	font-family: 'Poly';
-	src: url('../Fonts/Poly-Regular-webfont.eot');
-	src: url('../Fonts/Poly-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-		url('../Fonts/Poly-Regular-webfont.woff') format('woff'),
-		url('../Fonts/Poly-Regular-webfont.ttf') format('truetype'),
-		url('../Fonts/Poly-Regular-webfont.svg#polyregular') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
 @mixin font {
-	font-family: 'Poly', serif;
+	font-family: 'Noto', serif;
 }
 
 body {
