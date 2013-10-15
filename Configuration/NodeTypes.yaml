@@ -99,7 +99,7 @@
       type: 'TYPO3.Neos:ContentCollection'
   ui:
     label: 'Carousel'
-    group: 'Plugins'
+    group: 'plugins'
     icon: 'icon-picture'
     inlineEditable: TRUE
 
