@@ -80,7 +80,7 @@ page.body {
 		showTeasers = ${q(node).children('teaser').children().count() > 0 || node.context.workspace.name != 'live'}
 
 		// Default content section
-		main = ContentCollection
+		main = PrimaryContent
 		main.nodePath = 'main'
 	}
 
