@@ -3,7 +3,7 @@
 <neos:contentElement node="{node}">
 	<div class="carousel slide" id="{node.identifier}">
 		<!-- Indicators -->
-		<ol class="carousel-indicators">
+		<ol class="carousel-indicators neos-wireframe-hidden">
 			<f:for each="{carouselItemArray}" as="item" iteration="itemIterator">
 				<li data-target="#{node.identifier}" data-slide-to="{itemIterator.index}" class="{f:if(condition: itemIterator.isFirst, then: 'active')}"></li>
 			</f:for>
@@ -13,10 +13,10 @@
 		{carouselItems -> f:format.raw()}
 
 		<!-- Controls -->
-		<a class="left carousel-control" href="#{node.identifier}" data-slide="prev">
+		<a class="left carousel-control neos-wireframe-hidden" href="#{node.identifier}" data-slide="prev">
 			<span class="icon-prev"></span>
 		</a>
-		<a class="right carousel-control" href="#{node.identifier}" data-slide="next">
+		<a class="right carousel-control neos-wireframe-hidden" href="#{node.identifier}" data-slide="next">
 			<span class="icon-next"></span>
 		</a>
 	</div>
