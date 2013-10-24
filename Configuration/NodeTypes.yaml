@@ -1,4 +1,7 @@
 'TYPO3.Neos:Page':
+  childNodes:
+    teaser:
+      type: 'TYPO3.Neos:ContentCollection'
   properties:
     layout:
       ui:
