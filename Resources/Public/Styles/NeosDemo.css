@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  *
 .||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||.
@@ -179,7 +180,7 @@ a:hover { color: #007fb2; }
 .neos-backend:not(.neos-previewmode) .top-navigation-wrap { top: 82px; }
 @media only screen and (max-width: 768px) { .neos-backend:not(.neos-previewmode) .top-navigation-wrap { top: auto; } }
 .neos-inspector-panel-open:not(.neos-previewmode) .top-navigation-wrap { right: 320px; }
-.neos-tree-panel-open:not(.neos-previewmode) .top-navigation-wrap { left: 320px; }
+.neos-menu-panel-open:not(.neos-previewmode) .top-navigation-wrap, .neos-navigate-panel-open:not(.neos-previewmode) .top-navigation-wrap { left: 320px; }
 
 .first-level-navigation { margin-top: 25px; margin-bottom: 15px; }
 .first-level-navigation a { font-size: 1.3em; }
@@ -195,8 +196,8 @@ a:hover { color: #007fb2; }
 
 .navbar-collapse { max-height: none; border-top: 0; }
 
-.nav-pills > li { display: block; float: left; width: auto; font-family: 'Noto'; }
-.nav-pills > li + li { padding-left: 55px; }
+.nav-pills > li { display: block; float: left; width: auto; }
+.nav-pills > li + li { margin-left: 55px; }
 .nav-pills > li > a { font-size: 14px; line-height: 46px; vertical-align: bottom; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; padding: 0; border-top: 4px solid transparent; }
 .nav-pills > li > a:hover { background-color: transparent; }
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .nav-pills > li.current > a, .nav-pills > li.current > a:hover, .nav-pills > li.current > a:focus { color: black; background-color: transparent; border-top: 4px solid #ff8700; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
@@ -204,10 +205,10 @@ a:hover { color: #007fb2; }
 .nav .caret { border-top-color: #323232; border-bottom-color: #323232; }
 .nav .active .caret, .nav .current .caret { border-top-color: white; border-bottom-color: white; }
 
-.nav-tabs { border-bottom: 0; font-family: 'Noto'; }
+.nav-tabs { border-bottom: 0; }
+.nav-tabs > li { margin-right: 55px; margin-bottom: 5px; }
 .nav-tabs > li > a { padding: 0; }
 .nav-tabs > li > a:hover { background-color: transparent; border-color: transparent; }
-.nav-tabs > li + li { padding-left: 55px; }
 .nav-tabs > li.current > a { color: #555555; cursor: default; background-color: transparent; border-color: transparent; }
 .nav-tabs > li.current > a, .nav-tabs > li.current > a:hover { border-bottom: 1px solid #ff8700; }
 

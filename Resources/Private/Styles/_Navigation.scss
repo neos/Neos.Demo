@@ -30,7 +30,8 @@
 		right: 320px;
 	}
 
-	.neos-tree-panel-open:not(.neos-previewmode) & {
+	.neos-menu-panel-open:not(.neos-previewmode) &,
+	.neos-navigate-panel-open:not(.neos-previewmode) & {
 		left: 320px;
 	}
 }
@@ -91,10 +92,9 @@
 	display: block;
 	float: left;
 	width: auto;
-	font-family: 'Noto';
 
 	& + li {
-		padding-left: 55px;
+		margin-left: 55px;
 	}
 
 	& > a {
@@ -140,9 +140,11 @@
 // Second level navigation shown for bigger devices
 .nav-tabs {
 	border-bottom: 0;
-	font-family: 'Noto';
 
 	& > li {
+		margin-right: 55px;
+		margin-bottom: 5px;
+
 		& > a {
 			padding: 0;
 
@@ -150,10 +152,6 @@
 				background-color: transparent;
 				border-color: transparent;
 			}
-		}
-
-		& + li {
-			padding-left: 55px;
 		}
 
 		&.current > a {
