@@ -1,5 +1,5 @@
 @font-face {
-	font-family: 'Noto';
+	font-family: 'Noto Sans Regular';
 	src: url('../Fonts/NotoSans-Regular-webfont.eot'); /* IE9 Compat Modes */
 	src: url('../Fonts/NotoSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
 		url('../Fonts/NotoSans-Regular-webfont.woff') format('woff'), /* Modern Browsers */
@@ -9,13 +9,36 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Noto Sans Bold';
+	src: url('../Fonts/NotoSans-Bold-webfont.eot'); /* IE9 Compat Modes */
+	src: url('../Fonts/NotoSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../Fonts/NotoSans-Bold-webfont.woff') format('woff'), /* Modern Browsers */
+	url('../Fonts/NotoSans-Bold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('../Fonts/NotoSans-Bold-webfont.svg#noto_sansregular') format('svg'); /* Legacy iOS */
+	font-weight: normal;
+	font-style: normal;
+}
+
 @mixin font {
-	font-family: 'Noto', serif;
+	font-family: 'Noto Sans Regular', serif;
+}
+
+@mixin font-bold {
+	font-family: 'Noto Sans Bold', serif;
+}
+
+@mixin font-bolditalic {
+	font-family: 'Noto Sans Italic', serif;
 }
 
 body {
 	@include font;
-	padding-top: 150px;
+	padding-top: 85px;
+
+	&.has-subpages {
+		padding-top: 115px;
+	}
 
 	@media #{$screen-sm} {
 		padding-top: 0px;
@@ -25,6 +48,18 @@ body {
 footer {
 	.panel {
 		margin-bottom: 0;
+
+		.panel-footer {
+			padding-top: 30px;
+		}
+
+		@media #{$screen-sm} {
+			.panel-body,
+			.panel-footer {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
 	}
 }
 
@@ -35,14 +70,21 @@ h4,
 h5,
 h6 {
 	@include font;
+	line-height: 1.1;
+}
+
+h1 {
+	@include font-bold;
+	letter-spacing: -2.5px;
 }
 
 a {
-	color: $primary;
+	color: $warning;
+	text-decoration: none;
 	@include transition(color, background-color 0.2s);
 
 	&:hover {
-		color: $blueDark;
+		color: $warning;
 	}
 }
 
@@ -50,12 +92,19 @@ a {
 	margin-bottom: 2em;
 }
 
-// Big hero unit at the top of the template
-.jumbotron {
-	color: #666;
-	background-color: #eee;
+.main-header {
+	background-color: $warning;
 	overflow: hidden;
-	min-height: 400px;
+	min-height: 375px;
+	padding-top: 115px;
+	padding-bottom: 115px;
+	margin-bottom: 115px;
+	@font font-bold;
+
+	&,
+	h1 {
+		color: #fff;
+	}
 }
 
 // Inline image alignments

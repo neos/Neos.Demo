@@ -12,6 +12,8 @@ namespace: TypoScript=TYPO3.TypoScript
  */
 page = Page
 
+page.bodyTag.attributes.class = ${q(node).parents().count() > 1 || q(node).children('[instanceof TYPO3.Neos:Document]').filter('[_hideInMenu=0]').count() > 0 ? 'has-subpages' : ''}
+
 page.head {
 	stylesheets = Template
 	stylesheets {
@@ -76,9 +78,6 @@ page.body {
 			}
 		}
 
-		# Hide teaser block in frontend when no teaser elements exist
-		showTeasers = ${q(node).children('teaser').children().count() > 0 || node.context.workspace.name != 'live'}
-
 		// Default content section
 		main = PrimaryContent
 		main.nodePath = 'main'
@@ -104,7 +103,5 @@ landingPage < page
 landingPage.body {
 	# Hide breadcrumb on landing pages
 	parts.breadcrumb >
-
-	# Hide second level menu on landing pages
-	parts.secondLevelMenu >
+	landingPage = ${true}
 }

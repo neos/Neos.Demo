@@ -3,6 +3,7 @@
 	background-color: $white;
 	background-color: rgba(255, 255, 255, 0.97);
 	transition: box-shadow 0.2s linear;
+	min-height: 85px;
 
 	&.scrolling {
 		@include box-shadow(0 5px 15px rgba(0, 0, 0, 0.15));
@@ -39,7 +40,7 @@
 // First level top navigation which can be toggled on small devices
 .first-level-navigation {
 	margin-top: 25px;
-	margin-bottom: 15px;
+	margin-bottom: 0;
 
 	a {
 		font-size: 1.3em;
@@ -48,33 +49,56 @@
 
 // Second level navigation which is contained in the first level navigation and shown for small devices
 .second-level-navigation {
-	border-bottom: 1px solid #e6e6e6;
-	background-color: darken($white, 3%);
+	margin-left: 155px;
+	margin-bottom: 0;
+	min-height: 40px;
+
+	@media #{$screen-sm} {
+		display: none;
+	}
+
+	.nav-pills > li {
+		& + li {
+			margin-left: 30px;
+		}
+
+		& > a {
+			font-size: 12px;
+			line-height: 20px;
+			@include font;
+		}
+	}
 }
 
 // Neos logo
 .navbar-brand {
 	background-image: url('../Images/logo.png');
 	background-repeat: no-repeat;
-	background-size: 100px;
+	background-size: 100px 32px;
 	text-indent: -999px;
 	width: 135px;
-	height: 50px;
+	height: 32px;
 	margin-right: 20px;
-	margin-left: 20px;
 
 	@media #{$screen-sm} {
 		background-image: url('../Images/logo@2x.png');
-		background-size: 157px 50px;
+		background-size: 100px 32px;
+		margin-left: 20px;
 	}
 }
 
 .navbar-default {
 	background-color: transparent;
-	border: 0;
+	border: none;
+
+	.navbar-header {
+		padding-bottom: 18px;
+	}
 
 	.navbar-toggle {
 		background-color: $orange;
+		outline: none;
+		margin-top: 0;
 
 		.icon-bar {
 			background-color: $white;
@@ -83,9 +107,16 @@
 }
 
 // The bootstrap navbar has a height limit we don't want
-.navbar-collapse {
+.container .navbar-collapse {
 	max-height: none;
-	border-top: 0;
+	padding: 0;
+	margin: 0;
+}
+
+@media #{$screen-sm} {
+	.navbar-collapse {
+		border-bottom: 1px solid transparent;
+	}
 }
 
 .nav-pills > li {
@@ -98,15 +129,18 @@
 	}
 
 	& > a {
+		color: $textSubtle;
 		font-size: 14px;
 		line-height: 46px;
+		@include font-bold;
 		vertical-align: bottom;
 		@include border-radius(0);
 		padding: 0;
-		border-top: 4px solid transparent;
+		text-decoration: none;
 
 		&:hover {
 			background-color: transparent;
+			color: $grayDarker;
 		}
 	}
 
@@ -115,15 +149,38 @@
 		&,
 		&:hover,
 		&:focus {
-			color: $black;
+			color: $warning;
 			background-color: transparent;
-			border-top: 4px solid $orange;
 			@include border-radius(0);
+		}
+	}
+
+	li {
+		& > a {
+			color: $textSubtle;
+			font-size: 14px;
+			@include font;
+
+			&:hover {
+				background-color: transparent;
+				color: $grayDarker;
+			}
+		}
+
+		&.active > a,
+		&.current > a {
+			&,
+			&:hover,
+			&:focus {
+				color: $warning;
+				background-color: transparent;
+				@include border-radius(0);
+			}
 		}
 	}
 }
 
-// The carett for dropdown menus
+// The caret for dropdown menus
 .nav {
 	.caret {
 		border-top-color: $grayMedium;
@@ -139,7 +196,7 @@
 
 // Second level navigation shown for bigger devices
 .nav-tabs {
-	border-bottom: 0;
+	border-bottom: none;
 
 	& > li {
 		margin-right: 55px;
@@ -147,21 +204,23 @@
 
 		& > a {
 			padding: 0;
+			text-decoration: none;
+			border: none;
 
 			&:hover {
 				background-color: transparent;
-				border-color: transparent;
+				color: $grayDarker;
 			}
 		}
 
 		&.current > a {
-			color: #555555;
+			color: $textSubtle;
 			cursor: default;
 			background-color: transparent;
-			border-color: transparent;
 
-			&, &:hover {
-				border-bottom: 1px solid $orange;
+			&,
+			&:hover {
+				color: $warning;
 			}
 		}
 	}
