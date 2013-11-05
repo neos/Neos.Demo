@@ -1,7 +1,5 @@
 # Carousel element
-prototype(TYPO3.NeosDemoTypo3Org:Carousel) < prototype(TYPO3.Neos:Template) {
-	templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/Carousel.html'
-
+prototype(TYPO3.NeosDemoTypo3Org:Carousel) {
 	carouselItems = TYPO3.Neos:ContentCollection {
 		nodePath = 'carouselItems'
 		iterationName = 'carouselItemsIteration'
