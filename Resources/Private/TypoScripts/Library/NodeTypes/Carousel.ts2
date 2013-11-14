@@ -3,7 +3,7 @@ prototype(TYPO3.NeosDemoTypo3Org:Carousel) {
 	carouselItems = TYPO3.Neos:ContentCollection {
 		nodePath = 'carouselItems'
 		iterationName = 'carouselItemsIteration'
-		className = 'carousel-inner'
+		attributes.class = 'carousel-inner'
 	}
 
 	carouselItemArray = ${q(node).children('carouselItems').children()}
