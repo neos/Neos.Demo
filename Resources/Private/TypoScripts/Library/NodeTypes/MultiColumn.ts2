@@ -1,5 +1,5 @@
 # Modify Neos MultiColumn to use bootstrap classes
 prototype(TYPO3.Neos.NodeTypes:MultiColumn) {
-	className = 'row'
+	attributes.class = ${'row'}
 	columns.iterationName = 'multiColumnIteration'
 }

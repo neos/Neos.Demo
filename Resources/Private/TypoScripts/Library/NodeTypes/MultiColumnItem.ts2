@@ -1,5 +1,5 @@
 # Modify Neos MultiColumnItem to use bootstrap classes
 prototype(TYPO3.Neos.NodeTypes:MultiColumnItem) {
 	# TODO: Replace parents().first() by parent()
-	className = ${'col-sm-' + String.split(q(node).parents().first().property('layout'), '-')[multiColumnIteration.index]}
+	attributes.class = ${'col-sm-' + String.split(q(node).parents().first().property('layout'), '-')[multiColumnIteration.index]}
 }

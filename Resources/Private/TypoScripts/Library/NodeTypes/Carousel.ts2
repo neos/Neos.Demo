@@ -13,6 +13,8 @@ prototype(TYPO3.NeosDemoTypo3Org:Carousel) {
 		# Render images in the carousel with a special template.
 		templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/CarouselItem.html'
 
+		attributes.class = ${'item' + (carouselItemsIteration.isFirst ? ' active' : '')}
+
 		# We want to use the item iterator in the template so we have to store it in ts.
 		iteration = ${carouselItemsIteration}
 	}

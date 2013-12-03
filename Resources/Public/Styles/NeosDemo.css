@@ -28,7 +28,7 @@ body { word-wrap: break-word; }
 
 pre code { word-wrap: normal; }
 
-/** Dropcap Sass @include Use the following Sass @include with any selector you feel necessary. 
+/** Dropcap Sass @include Use the following Sass @include with any selector you feel necessary.
 	@include dropcap($dropcap-float-position, $dropcap-font-size, $dropcap-font-family, $dropcap-txt-indent, $dropcap-margin, $dropcap-padding, $dropcap-color, $dropcap-line-height, $dropcap-bg);  Extend this object into your custom stylesheet. Let the variables do the work.  */
 html { font: normal 112.5%/1.65 serif; }
 
@@ -67,7 +67,7 @@ pre { white-space: pre; }
 
 code { white-space: pre; font-family: monospace; }
 
-/** Abbreviations Markup 
+/** Abbreviations Markup
 	<abbr title="hyper text markup language">HMTL</abbr>  Extend this object into your markup.  */
 abbr { font-variant: small-caps; font-weight: 600; text-transform: lowercase; color: gray; }
 abbr[title]:hover { cursor: help; }
@@ -78,7 +78,7 @@ p + .drop-cap { text-indent: 0; margin-top: 0; }
 
 .drop-cap:first-letter { float: left; margin: inherit; padding: inherit; font-size: 4em; font-family: inherit; line-height: 1; text-indent: 0; background: transparent; color: inherit; }
 
-/** Lining Definition Style Markup 
+/** Lining Definition Style Markup
 	<dl class="lining">
 		<dt><b></b></dt>
 		<dd></dd>
@@ -88,7 +88,7 @@ p + .drop-cap { text-indent: 0; margin-top: 0; }
 .lining dd + dd:before { content: ", "; }
 .lining dd:before { content: ": "; margin-left: -0.2rem; }
 
-/** Dictionary Definition Style Markup 
+/** Dictionary Definition Style Markup
 	<dl class="dictionary-style">
 		<dt><b></b></dt>
 			<dd></dd>
@@ -98,7 +98,7 @@ p + .drop-cap { text-indent: 0; margin-top: 0; }
 .dictionary-style dd { display: block; counter-increment: definitions; }
 .dictionary-style dd:before { content: counter(definitions,decimal) ". "; }
 
-/** Blockquote Markup 
+/** Blockquote Markup
 		<figure>
 			<blockquote cite="">
 				<p></p>
@@ -109,7 +109,7 @@ p + .drop-cap { text-indent: 0; margin-top: 0; }
 				</cite>
 			</figcaption>
 		</figure>  Extend this object into your markup.  */
-/** Pull Quotes Markup 
+/** Pull Quotes Markup
 	<aside class="pull-quote">
 		<blockquote>
 			<p></p>
@@ -120,13 +120,13 @@ p + .drop-cap { text-indent: 0; margin-top: 0; }
 .pull-quote:before { content: '“'; top: 0; left: 0; }
 .pull-quote:after { content: '”'; bottom: 0; right: 0; }
 
-/** Figures Markup 
+/** Figures Markup
 	<figure>
 		<figcaption>
 			<strong>Fig. 4.2 | </strong>Type Anatomy, an excerpt from Mark Boulton's book<cite title="http://designingfortheweb.co.uk/book/part3/part3_chapter11.php">"Designing for the Web"</cite>
 		</figcaption>
 	</figure>  Extend this object into your markup.  */
-/** Footnote Markup : Replace 'X' with your unique number for each footnote 
+/** Footnote Markup : Replace 'X' with your unique number for each footnote
 	<article>
 		<p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
 		<footer>
@@ -167,9 +167,9 @@ a:hover { color: #ff460d; }
 .main-header { background-color: #ff460d; overflow: hidden; min-height: 375px; padding-top: 115px; padding-bottom: 115px; margin-bottom: 115px; @font font-bold; }
 .main-header, .main-header h1 { color: #fff; }
 
-.typo3-image-alignment-right { float: right; margin-left: 2em; margin-bottom: 1em; }
+.typo3-neos-alignment-right { float: right; margin-left: 2em; margin-bottom: 1em; }
 
-.typo3-image-alignment-left { float: left; margin-right: 2em; margin-bottom: 1em; }
+.typo3-neos-alignment-left { float: left; margin-right: 2em; margin-bottom: 1em; }
 
 .carousel .jumbotron { margin: -50px -60px; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
 @media only screen and (max-width: 768px) { .carousel .jumbotron { margin: -30px; } }
