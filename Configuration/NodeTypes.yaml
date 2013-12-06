@@ -26,6 +26,9 @@
   properties:
     title:
       defaultValue: '<h4>Enter headline here</h4>'
+      ui:
+        aloha:
+          format: ['h4']
 
 'TYPO3.NeosDemoTypo3Org:Chapter':
   superTypes: ['TYPO3.Neos:Document']
