@@ -100,3 +100,17 @@ landingPage.body {
 	parts.breadcrumb >
 	landingPage = ${true}
 }
+
+# Special layout for chapter nodes
+chapter < page
+chapter {
+	bodyTag.attributes.class = 'chapter'
+	body {
+		templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Chapter.html'
+
+		# Get the previous chapter by traversing to the node which preceds the current one.
+		# We need to specify the nodetype because there could be other node types like content collections on the same level.
+		previousChapter = ${q(documentNode).prev('[instanceof TYPO3.Neos:Document]').get(0)}
+		nextChapter = ${q(documentNode).next('[instanceof TYPO3.Neos:Document]').get(0)}
+	}
+}

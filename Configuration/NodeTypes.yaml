@@ -32,6 +32,9 @@
 
 'TYPO3.NeosDemoTypo3Org:Chapter':
   superTypes: ['TYPO3.Neos:Document']
+  childNodes:
+    main:
+      type: 'TYPO3.Neos:ContentCollection'
   ui:
     label: 'Chapter'
     icon: 'icon-book'
@@ -40,6 +43,9 @@
         document:
           label: 'Chapter details'
   properties:
+    layout:
+      type: string
+      defaultValue: 'chapter'
     chapterDescription:
       type: string
       ui:

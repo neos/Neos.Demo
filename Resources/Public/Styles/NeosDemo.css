@@ -242,4 +242,14 @@ footer.navbar { margin-top: 20px; margin-bottom: 0; }
 .chapter-menu li { margin-bottom: 10px; list-style-type: none; overflow: hidden; *zoom: 1; }
 .chapter-menu li img { margin-right: 2em; }
 
+.chapter { padding-top: 20px; background-color: #fafafa; }
+
+.chapter-container { max-width: 640px; font-size: 1.3em; text-align: justify; }
+.chapter-container p:first-of-type:first-letter { float: left; margin: 0 10px 2px 0; padding: inherit; font-size: 4em; font-family: Times; line-height: 1; text-indent: 0; background: transparent; color: #ff460d; }
+.chapter-container p { margin-bottom: 2em; }
+.chapter-container img { max-width: 250px; height: auto; margin: 0 0 0.5em 0.8em; }
+
+.chapter-pager { padding-left: 0; text-align: center; font-size: 0.8em; }
+.chapter-pager li { list-style-type: none; display: inline; }
+
 .form-navigation li { list-style-type: none; }
