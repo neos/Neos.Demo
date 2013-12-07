@@ -58,14 +58,16 @@
 	}
 
 	.nav-pills > li {
-		& + li {
-			margin-left: 30px;
-		}
+		margin-right: 30px;
 
 		& > a {
 			font-size: 12px;
 			line-height: 20px;
 			@include font;
+		}
+
+		&:last-of-type {
+			margin-right: 0;
 		}
 	}
 }
@@ -123,9 +125,14 @@
 	display: block;
 	float: left;
 	width: auto;
+	margin-right: 55px;
 
 	& + li {
-		margin-left: 55px;
+		margin-left: 0;
+	}
+
+	&:last-of-type {
+		margin-right: 0;
 	}
 
 	& > a {
@@ -228,5 +235,6 @@
 
 // Footer navigation
 footer.navbar {
+	margin-top: 20px;
 	margin-bottom: 0;
 }

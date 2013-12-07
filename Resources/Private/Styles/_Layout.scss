@@ -37,7 +37,7 @@ body {
 	padding-top: 85px;
 
 	&.has-subpages {
-		padding-top: 115px;
+		padding-top: 125px;
 	}
 
 	@media #{$screen-sm} {
@@ -104,6 +104,15 @@ a {
 	&,
 	h1 {
 		color: #fff;
+	}
+
+	a {
+		color: #fff;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
 	}
 }
 

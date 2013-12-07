@@ -24,12 +24,14 @@ page = Page {
 
 		title = Template {
 			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/TitleMenu.html'
-			items = ${q(node).add(q(node).parents())}
+			items = ${Array.reverse(q(node).add(q(node).parents()).get())}
 			@process.1 = ${'<title>' + value + '</title>'}
 		}
 	}
 
-	bodyTag.attributes.class = ${q(node).parents().count() > 1 || q(node).children('[instanceof TYPO3.Neos:Document]').filter('[_hideInMenu=0]').count() > 0 ? 'has-subpages' : ''}
+	// This query checks if the second level menu has items and sets an additional class for the body
+	bodyTag.attributes.class = ${q(node).parents().count() >= 1 && q(node).children('[instanceof TYPO3.Neos:Document]').filter('[_hiddenInIndex=false]').count() > 0 ? 'has-subpages' : ''}
+
 	body {
 		templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
 		sectionName = 'body'
@@ -82,10 +84,9 @@ page = Page {
 			collection = ${q(site).children('footer').children()}
 		}
 
-		// Javascripts are added at the bottom of the body tag to improve page loading speed
-		javascripts {
+		javascripts.site = Template {
 			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
-			sectionName = 'javascripts'
+			sectionName = 'bodyScripts'
 		}
 	}
 }
