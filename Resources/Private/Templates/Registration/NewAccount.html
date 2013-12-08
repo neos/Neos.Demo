@@ -1,8 +1,6 @@
-<h2>Try me</h2>
-<p>Just create a demo account and try out our latest development of the TYPO3 Neos user interface. Get a first impression of Aloha, the content editor, and try out the simple publishing mechanism based on workspaces.</p>
 <div class="panel panel-default">
 	<div class="panel-body">
-		<f:form action="createAccount" class="form-horizontal" object="{registration}" objectName="registration" section="registration" method="POST" additionalAttributes="{role:'form'}">
+		<f:form action="createAccount" class="form-horizontal clearfix" object="{registration}" objectName="registration" section="registration" method="POST" additionalAttributes="{role:'form'}">
 			<f:flashMessages class="flashmessages" />
 			<div class="form-group">
 				<f:render partial="InputField" arguments="{label: 'Username', property: 'username'}" />
@@ -17,7 +15,7 @@
 				<f:render partial="InputField" arguments="{label: 'Last name', property: 'lastName'}" />
 			</div>
 			<div class="form-group">
-				<div class="col-lg-offset-2 col-lg-10">
+				<div class="col-lg-8 pull-right">
 					<f:form.submit value="Create Account" class="btn btn-primary" />
 				</div>
 			</div>

@@ -105,4 +105,3 @@ class Registration {
 		return $this->lastName;
 	}
 }
-?>

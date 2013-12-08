@@ -367,11 +367,11 @@
          <alignment></alignment>
          <caption><![CDATA[<p>Enter caption here</p>]]></caption>
          <image __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant">
-          <processingInstructions><![CDATA[a:2:{i:0;a:2:{s:7:"command";s:4:"crop";s:7:"options";a:2:{s:5:"start";a:2:{s:1:"x";i:0;s:1:"y";i:0;}s:4:"size";a:2:{s:5:"width";i:800;s:6:"height";i:532;}}}i:1;a:2:{s:7:"command";s:6:"resize";s:7:"options";a:1:{s:4:"size";a:2:{s:5:"width";i:800;s:6:"height";i:532;}}}}]]></processingInstructions>
+          <processingInstructions><![CDATA[a:2:{i:0;a:2:{s:7:"command";s:4:"crop";s:7:"options";a:2:{s:5:"start";a:2:{s:1:"x";i:0;s:1:"y";i:0;}s:4:"size";a:2:{s:5:"width";i:1600;s:6:"height";i:500;}}}i:1;a:2:{s:7:"command";s:6:"resize";s:7:"options";a:1:{s:4:"size";a:2:{s:5:"width";i:1600;s:6:"height";i:499;}}}}]]></processingInstructions>
           <originalImage __type="object" __classname="TYPO3\Media\Domain\Model\Image">
            <resource __type="object" __classname="TYPO3\Flow\Resource\Resource">
-            <filename>Done.jpg</filename>
-            <hash>2033dc2a8a53bba7c760b49b21eecea402a61c5b</hash>
+            <filename>Mad-Hatter.jpg</filename>
+            <hash>510905a6fae272e24c71a11c3646a96bf9443a70</hash>
            </resource>
           </originalImage>
          </image>
@@ -386,11 +386,11 @@
          <alignment></alignment>
          <caption><![CDATA[<p>Enter caption here</p>]]></caption>
          <image __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant">
-          <processingInstructions><![CDATA[a:2:{i:0;a:2:{s:7:"command";s:4:"crop";s:7:"options";a:2:{s:5:"start";a:2:{s:1:"x";i:0;s:1:"y";i:0;}s:4:"size";a:2:{s:5:"width";i:4928;s:6:"height";i:3264;}}}i:1;a:2:{s:7:"command";s:6:"resize";s:7:"options";a:1:{s:4:"size";a:2:{s:5:"width";s:3:"800";s:6:"height";i:529;}}}}]]></processingInstructions>
+          <processingInstructions><![CDATA[a:2:{i:0;a:2:{s:7:"command";s:4:"crop";s:7:"options";a:2:{s:5:"start";a:2:{s:1:"x";i:0;s:1:"y";i:0;}s:4:"size";a:2:{s:5:"width";i:1600;s:6:"height";i:500;}}}i:1;a:2:{s:7:"command";s:6:"resize";s:7:"options";a:1:{s:4:"size";a:2:{s:5:"width";i:1600;s:6:"height";i:499;}}}}]]></processingInstructions>
           <originalImage __type="object" __classname="TYPO3\Media\Domain\Model\Image">
            <resource __type="object" __classname="TYPO3\Flow\Resource\Resource">
-            <filename>Responsibility.jpg</filename>
-            <hash>3d42a3aaa6d52d7cdc82ac506d8fc92b24d64e2a</hash>
+            <filename>Alice-In-Wonderland.jpg</filename>
+            <hash>53e0e394fda7e8943fd5e15f041da1919e03d534</hash>
            </resource>
           </originalImage>
          </image>
@@ -406,14 +406,7 @@
       <properties>
        <layout>6-6</layout>
       </properties>
-      <node identifier="dc65a066-b3c6-de95-7f67-51354d2bbabf" type="TYPO3.Neos:ContentCollection" nodeName="column0" locale="">
-       <node identifier="aa9c27c0-2147-f3b5-3beb-a2bacea5f832" type="TYPO3.Neos.NodeTypes:Text" nodeName="node524bce45936e3" locale="">
-        <properties>
-         <text><![CDATA[
-										<p>You can easily create your own plugins with a few lines of code!</p><p>Beautiful Soup, so rich and green,<br/>Waiting in a hot tureen!<br/>Who for such dainties would not stoop?<br/>Soup of the evening, beautiful Soup!<br/>Soup of the evening, beautiful Soup!<br/>Beau—ootiful Soo—oop!<br/>Beau—ootiful Soo—oop!<br/>Soo—oop of the e—e—evening,<br/>Beautiful, beautiful Soup!<br/> </p>]]></text>
-        </properties>
-       </node>
-      </node>
+      <node identifier="dc65a066-b3c6-de95-7f67-51354d2bbabf" type="TYPO3.Neos:ContentCollection" nodeName="column0" locale=""/>
      </node>
      <node identifier="ce5f123b-754d-1441-ee46-52fa42407c2d" type="TYPO3.NeosDemoTypo3Org:Carousel" nodeName="node526df4e550032" locale=""/>
      <node identifier="3b6e3fa2-a8a4-a0e1-ed23-08601c20ec20" type="TYPO3.Neos.NodeTypes:TwoColumn" nodeName="node524da90dd5b59" locale="">
@@ -430,11 +423,6 @@
         </properties>
        </node>
       </node>
-     </node>
-     <node identifier="e08d2da3-e60f-fc43-7121-5be0be8d45c6" type="TYPO3.NeosDemoTypo3Org:Registration" nodeName="node524dabaf47175" locale="">
-      <properties>
-       <action>newAccount</action>
-      </properties>
      </node>
     </node>
    </node>
@@ -756,85 +744,39 @@
     </node>
    </node>
   </node>
-  <node identifier="a319a653-ef38-448d-9d19-0894299068aa" type="TYPO3.Neos:Page" nodeName="roadmap" locale="">
+  <node identifier="a319a653-ef38-448d-9d19-0894299068aa" type="TYPO3.Neos:Page" nodeName="try-me" locale="">
    <properties>
-    <title>Roadmap</title>
-    <layout>landingPage</layout>
+    <title>Try me</title>
+    <layout>default</layout>
     <subpageLayout></subpageLayout>
    </properties>
    <node identifier="d0c3e50c-59ef-485e-ae30-bf9c760dc476" type="TYPO3.Neos:ContentCollection" nodeName="main" locale="">
-    <node identifier="d603ccf3-8211-4785-81f2-dd2e0d61919d" type="TYPO3.Neos.NodeTypes:Text" nodeName="node506586bc14559" locale="">
+    <node identifier="55a38b4b-98a6-09ef-bab4-972e19e51995" type="TYPO3.Neos.NodeTypes:TwoColumn" nodeName="node52a4394db3af3" locale="">
      <properties>
-      <text><![CDATA[
-							<h5>While the release of TYPO3 Neos Alpha 7 is an important point of our development timeline, there a still a lot of tasks to do: Quite some exciting features will follow up. This page shall give an overview about the upcoming tasks.</h5>]]></text>
+      <layout>6-6</layout>
      </properties>
-    </node>
-    <node identifier="61dbc53d-751c-5e7d-9ca4-c67d675f58dd" type="TYPO3.Neos.NodeTypes:ThreeColumn" nodeName="node524d3dc069e4a" locale="">
-     <properties>
-      <layout>4-4-4</layout>
-     </properties>
-     <node identifier="8e2bbb0e-92ae-76ef-a4ba-d7842d2a5b59" type="TYPO3.Neos:ContentCollection" nodeName="column0" locale="">
-      <node identifier="6920309c-b87e-301d-05aa-3b2e1a98c377" type="TYPO3.Neos.NodeTypes:Text" nodeName="node524d3de4800af" locale="">
+     <node identifier="df5b0727-9dcb-0e4a-b2a3-facccb911872" type="TYPO3.Neos:ContentCollection" nodeName="column0" locale="">
+      <node identifier="d8a8a5e5-275f-c01b-c6be-f082ef11d0ad" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node52a43b8c4c64e" locale="">
        <properties>
-        <text><![CDATA[
-									<p><br/></p><h4>Consistent Visual Design</h4><p>Due to time constraints and because we are a quite small team, we were not able to ship Alpha 1 with a consistent, clean and well-thought-out visual design. Still, we know that this part is extremely important for the success of Neos; so we're taking steps to work in this area.</p><p><br/></p>]]></text>
+        <title><![CDATA[<h4>Create an account and access the backend<br/></h4>]]></title>
+       </properties>
+      </node>
+      <node identifier="26793a24-bc4e-70e9-7f4b-50022a1d902c" type="TYPO3.Neos.NodeTypes:Text" nodeName="node52a43c490581d" locale="">
+       <properties>
+        <text><![CDATA[<p>Try out our latest development of the TYPO3 Neos user interface. Get a first impression of Aloha, the content editor, and try out the simple publishing mechanism based on workspaces.<br/></p>]]></text>
        </properties>
       </node>
      </node>
-     <node identifier="afec7ebf-991b-d310-26b6-2fe267bef174" type="TYPO3.Neos:ContentCollection" nodeName="column1" locale="">
-      <node identifier="3326a772-6e85-1520-6497-9d7b2ae64369" type="TYPO3.Neos.NodeTypes:Text" nodeName="node524d3e4b420ad" locale="">
+     <node identifier="0d696c16-ae86-3f5c-3632-147615b4100b" type="TYPO3.Neos:ContentCollection" nodeName="column1" locale="">
+      <node identifier="e08d2da3-e60f-fc43-7121-5be0be8d45c6" type="TYPO3.NeosDemoTypo3Org:Registration" nodeName="node524dabaf47175" locale="">
        <properties>
-        <text><![CDATA[
-									<h4>Multilanguage support in TYPO3CR and User Interface</h4><p>Handling of multiple languages and areas with proper fallback support is a key feature of every advanced CMS. While we thought about multilanguage features right from the first concept, it is not yet implemented in TYPO3CR. We will close this gap, supporting multiple languages and locales in a way such that we can add more content dimensions lateron.</p><p>Furthermore, the user interface should also be localized, both for the backend as well as for the content editing experience. This is rather straight-forward, as TYPO3 Flow already has a sophisticated localization system in place which just has to be used.</p>]]></text>
-       </properties>
-      </node>
-     </node>
-     <node identifier="58965a56-2153-c288-ae60-ba3c05afa809" type="TYPO3.Neos:ContentCollection" nodeName="column2" locale="">
-      <node identifier="5e29ee9a-7f09-aca4-d1b9-43e106e9bae7" type="TYPO3.Neos.NodeTypes:Text" nodeName="node524d3e6be2e31" locale="">
-       <properties>
-        <text><![CDATA[
-									<h4>JavaScript and Server-Side Code Cleanup</h4><p>Furthermore, we still have some open tasks regarding the structure and test coverage of our JavaScript code base – we want to apply the same level of detail to this part as well.</p><p>Additionally, now that composer forms the foundation of package management, we have the tools to separate Neos into more separate packages for different concerns. Ideally, every backend module should become its own package to be easily maintainable.</p>]]></text>
-       </properties>
-      </node>
-     </node>
-    </node>
-    <node identifier="18fd7448-2584-828d-9f87-b6b17eaaebe5" type="TYPO3.Neos.NodeTypes:ThreeColumn" nodeName="node524d3e87381f7" locale="">
-     <properties>
-      <layout>4-4-4</layout>
-     </properties>
-     <node identifier="843ef096-8a7c-24d3-93ba-8fd3e432bd72" type="TYPO3.Neos:ContentCollection" nodeName="column0" locale="">
-      <node identifier="13479b7c-916e-f8ff-4ae9-ed0bbe837387" type="TYPO3.Neos.NodeTypes:Text" nodeName="node524d3ea3587d7" locale="">
-       <properties>
-        <text><![CDATA[
-									<h4>Expose: An Extensible Admin Interface<br/></h4><p>We have created the TYPO3 Expose package to be an extensible base package for listing and editing arbitrary records, be it content in Neos or arbitrary domain objects of any Flow application.</p><p>While the package is roughly working, there are still lots of details in terms of user interaction which need to be fixed.</p>]]></text>
-       </properties>
-      </node>
-     </node>
-     <node identifier="28bd8334-6860-56b5-7b2e-bfb664d59afd" type="TYPO3.Neos:ContentCollection" nodeName="column1" locale="">
-      <node identifier="8f00d294-bac6-9392-dd79-b633f53bd83f" type="TYPO3.Neos.NodeTypes:Text" nodeName="node524d3eb710014" locale="">
-       <properties>
-        <text><![CDATA[
-									<h4>Content Synchronization and Syndication</h4><p>We know that content management of today is different than a few years ago. To deal with high load, distributed services are very common. In TYPO3 Neos, we want to make our export/import functionality more versatile to use, also creating a content synchronization service across different web sites.</p><p>Because of its robust foundations, clean abstraction layers and the use of universally unique identifiers (UUIDs), this is a lot easier to implement than with classical web applications.</p>]]></text>
-       </properties>
-      </node>
-     </node>
-     <node identifier="6aa49d93-48a2-0260-ad5a-5f4fd7831e3a" type="TYPO3.Neos:ContentCollection" nodeName="column2" locale="">
-      <node identifier="19ba0c50-a17d-449d-5c74-fb142890daac" type="TYPO3.Neos.NodeTypes:Text" nodeName="node524d40f34a510" locale="">
-       <properties>
-        <text><![CDATA[
-									<h4>You Can Shape The Future</h4><p>TYPO3 Neos cannot be built without participation of many dedicated community members – we need your help to implement your favourite feature. Just <a href="/metamenu/contribute.html">get in touch with us</a>, so we can bring you up to speed.</p>]]></text>
+        <action>newAccount</action>
        </properties>
       </node>
      </node>
     </node>
    </node>
-   <node identifier="9d244084-be48-e35e-621d-108aa825df33" type="TYPO3.Neos:ContentCollection" nodeName="teaser" locale="">
-    <node identifier="f7284370-24e1-3504-dbc5-04395e46ed94" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node524d3daace4ca" locale="">
-     <properties>
-      <title><![CDATA[<h1>Development Never Stops</h1>]]></title>
-     </properties>
-    </node>
-   </node>
+   <node identifier="9d244084-be48-e35e-621d-108aa825df33" type="TYPO3.Neos:ContentCollection" nodeName="teaser" locale=""/>
   </node>
   <node identifier="517ad799-35df-4324-9429-5c75629a8b34" type="TYPO3.Neos:Page" nodeName="download" locale="">
    <properties>

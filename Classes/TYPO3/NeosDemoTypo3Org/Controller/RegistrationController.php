@@ -13,34 +13,42 @@ namespace TYPO3\NeosDemoTypo3Org\Controller;
  *                                                                        */
 
 use TYPO3\Flow\Annotations as Flow;
+use TYPO3\Flow\Error\Message;
+use TYPO3\Flow\Mvc\Controller\ActionController;
+use TYPO3\Flow\Mvc\Routing\UriBuilder;
+use TYPO3\Flow\Security\AccountFactory;
+use TYPO3\Flow\Security\AccountRepository;
+use TYPO3\Neos\Domain\Model\User;
+use TYPO3\NeosDemoTypo3Org\Domain\Model\Registration;
+use TYPO3\Party\Domain\Model\PersonName;
+use TYPO3\Party\Domain\Repository\PartyRepository;
 
 /**
  * Controller that handles the creation of temporary Accounts
  *
  */
-class RegistrationController extends \TYPO3\Flow\Mvc\Controller\ActionController {
+class RegistrationController extends ActionController {
 
 	/**
 	 * @Flow\Inject
-	 * @var \TYPO3\Flow\Security\AccountRepository
+	 * @var AccountRepository
 	 */
 	protected $accountRepository;
 
 	/**
 	 * @Flow\Inject
-	 * @var \TYPO3\Party\Domain\Repository\PartyRepository
+	 * @var PartyRepository
 	 */
 	protected $partyRepository;
 
 	/**
 	 * @Flow\Inject
-	 * @var \TYPO3\Flow\Security\AccountFactory
+	 * @var AccountFactory
 	 */
 	protected $accountFactory;
 
 	/**
 	 * @return string
-	 * @author Bastian Waidelich <bastian@typo3.org>
 	 */
 	public function indexAction() {
 	}
@@ -49,11 +57,10 @@ class RegistrationController extends \TYPO3\Flow\Mvc\Controller\ActionController
 	 * Displays a form that creates a temporary account
 	 *
 	 * @return void
-	 * @author Bastian Waidelich <bastian@typo3.org>
 	 */
 	public function newAccountAction() {
 		$number = (time() - 1302876012);
-		$registration = new \TYPO3\NeosDemoTypo3Org\Domain\Model\Registration();
+		$registration = new Registration();
 		$registration->setFirstName('John');
 		$registration->setLastName('Doe');
 		$registration->setUsername('demo' . $number);
@@ -65,21 +72,20 @@ class RegistrationController extends \TYPO3\Flow\Mvc\Controller\ActionController
 	/**
 	 * Action for creating a temporary account
 	 *
-	 * @param \TYPO3\NeosDemoTypo3Org\Domain\Model\Registration $registration
+	 * @param Registration $registration
 	 * @return void
-	 * @author Bastian Waidelich <bastian@typo3.org>
 	 */
-	public function createAccountAction(\TYPO3\NeosDemoTypo3Org\Domain\Model\Registration $registration) {
+	public function createAccountAction(Registration $registration) {
 		$accountIdentifier = $registration->getUsername();
 		$existingAccount = $this->accountRepository->findActiveByAccountIdentifierAndAuthenticationProviderName($accountIdentifier, 'Typo3BackendProvider');
 		if ($existingAccount !== NULL) {
-			$this->addFlashMessage('An account with the username "' . $accountIdentifier . '" already exists.');
+			$this->addFlashMessage('An account with the username "%s" already exists.', 'Account already exists', Message::SEVERITY_ERROR, array($accountIdentifier));
 			$this->forward('newAccount');
 		}
 
 		$this->createTemporaryAccount($accountIdentifier, $registration->getPassword(), $registration->getFirstName(), $registration->getLastName());
 
-		$uriBuilder = new \TYPO3\Flow\Mvc\Routing\UriBuilder();
+		$uriBuilder = new UriBuilder();
 		$uriBuilder->setRequest($this->request->getParentRequest());
 		$redirectUri = $uriBuilder
 			->setCreateAbsoluteUri(TRUE)
@@ -102,8 +108,8 @@ class RegistrationController extends \TYPO3\Flow\Mvc\Controller\ActionController
 			$lastName = 'Claus';
 		}
 
-		$user = new \TYPO3\Neos\Domain\Model\User();
-		$user->setName(new \TYPO3\Party\Domain\Model\PersonName('', $firstName, '', $lastName));
+		$user = new User();
+		$user->setName(new PersonName('', $firstName, '', $lastName));
 		$user->getPreferences()->set('context.workspace', 'user-' . $accountIdentifier);
 		$this->partyRepository->add($user);
 
@@ -121,4 +127,3 @@ class RegistrationController extends \TYPO3\Flow\Mvc\Controller\ActionController
 		return FALSE;
 	}
 }
-?>
