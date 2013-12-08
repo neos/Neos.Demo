@@ -6,7 +6,7 @@
 				<li class="{item.state}">
 					<f:if condition="{itemIterator.isLast} != 1">
 						<f:then>
-							<neos:link.node node="{item}">{item.label}</neos:link.node>
+							<neos:link.node node="{item}" title="foo">{item.label}</neos:link.node>
 						</f:then>
 						<f:else>
 							{item.label}

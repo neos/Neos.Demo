@@ -859,7 +859,7 @@
      <node identifier="7f8551da-da3f-72f4-1fe1-a0209bd95cc0" type="TYPO3.Neos:ContentCollection" nodeName="column0" locale="">
       <node identifier="89246d3d-8f9d-d26b-57e7-03e1aab62fed" type="TYPO3.Neos.NodeTypes:Text" nodeName="node524e96be7a9f4" locale="">
        <properties>
-        <text>Select a chapter on the right to start reading</text>
+        <text><![CDATA[<p>Select a chapter to start reading</p>]]></text>
        </properties>
       </node>
      </node>

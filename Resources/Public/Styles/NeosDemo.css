@@ -147,9 +147,8 @@ p + .drop-cap { text-indent: 0; margin-top: 0; }
   /* Legacy iOS */
   font-weight: normal; font-style: normal; }
 
-body { font-family: 'Noto Sans Regular', serif; padding-top: 85px; }
-body.has-subpages { padding-top: 125px; }
-@media only screen and (max-width: 768px) { body { padding-top: 0px; } }
+body { font-family: 'Noto Sans Regular', serif; }
+@media only screen and (max-width: 768px) { body { padding-top: 0px !important; } }
 
 footer .panel { margin-bottom: 0; }
 footer .panel .panel-footer { padding-top: 30px; }
@@ -168,6 +167,8 @@ a:hover { color: #ff460d; }
 .main-header, .main-header h1 { color: #fff; }
 .main-header a { color: #fff; text-decoration: underline; }
 .main-header a:hover { text-decoration: none; }
+@media only screen and (max-width: 768px) { .main-header { margin-bottom: 20px; padding-top: 50px; padding-bottom: 50px; min-height: 0; }
+  .main-header h1 { font-size: 1.8rem; } }
 
 .typo3-neos-alignment-right { float: right; margin-left: 2em; margin-bottom: 1em; }
 
@@ -197,8 +198,9 @@ a:hover { color: #ff460d; }
 
 .first-level-navigation { margin-top: 25px; margin-bottom: 0; }
 .first-level-navigation a { font-size: 1.3em; }
+@media only screen and (max-width: 768px) { .first-level-navigation .nav-pills > li { float: none; margin-right: 0px; } }
 
-.second-level-navigation { margin-left: 155px; margin-bottom: 0; min-height: 40px; }
+.second-level-navigation { margin-left: 155px; margin-bottom: 0; min-height: 40px; padding-bottom: 8px; }
 @media only screen and (max-width: 768px) { .second-level-navigation { display: none; } }
 .second-level-navigation .nav-pills > li { margin-right: 30px; }
 .second-level-navigation .nav-pills > li > a { font-size: 12px; line-height: 20px; font-family: 'Noto Sans Regular', serif; }
@@ -238,9 +240,11 @@ a:hover { color: #ff460d; }
 footer.navbar { margin-top: 20px; margin-bottom: 0; }
 
 .breadcrumb { padding-left: 0; color: #5b5b5b; background-color: transparent; }
+.breadcrumb li { display: inline; }
 
+.chapter-menu ul { padding-left: 0; }
 .chapter-menu li { margin-bottom: 10px; list-style-type: none; overflow: hidden; *zoom: 1; }
-.chapter-menu li img { margin-right: 2em; }
+.chapter-menu li img { margin: 0 15px 10px 0; }
 
 .chapter { padding-top: 20px; background-color: #fafafa; }
 
@@ -248,6 +252,7 @@ footer.navbar { margin-top: 20px; margin-bottom: 0; }
 .chapter-container p:first-of-type:first-letter { float: left; margin: 0 10px 2px 0; padding: inherit; font-size: 4em; font-family: Times; line-height: 1; text-indent: 0; background: transparent; color: #ff460d; }
 .chapter-container p { margin-bottom: 2em; }
 .chapter-container img { max-width: 250px; height: auto; margin: 0 0 0.5em 0.8em; }
+@media only screen and (max-width: 768px) { .chapter-container img { margin-left: auto; margin-right: auto; float: none; display: block; width: 100%; max-width: 100%; } }
 
 .chapter-pager { padding-left: 0; text-align: center; font-size: 0.8em; }
 .chapter-pager li { list-style-type: none; display: inline; }

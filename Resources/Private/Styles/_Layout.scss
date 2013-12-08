@@ -34,14 +34,9 @@
 
 body {
 	@include font;
-	padding-top: 85px;
-
-	&.has-subpages {
-		padding-top: 125px;
-	}
 
 	@media #{$screen-sm} {
-		padding-top: 0px;
+		padding-top: 0px !important;
 	}
 }
 
@@ -112,6 +107,17 @@ a {
 
 		&:hover {
 			text-decoration: none;
+		}
+	}
+
+	@media #{$screen-sm} {
+		margin-bottom: 20px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		min-height: 0;
+
+		h1 {
+			font-size: 1.8rem;
 		}
 	}
 }
