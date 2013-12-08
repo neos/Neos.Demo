@@ -1,0 +1,57 @@
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+{namespace bootstrap=TYPO3\Twitter\Bootstrap\ViewHelpers}
+{namespace neos=TYPO3\Neos\ViewHelpers}
+{namespace media=TYPO3\Media\ViewHelpers}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<f:section name="metadata">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		</f:section>
+
+		<f:section name="stylesheets">
+			<link rel="stylesheet" href="{f:uri.resource(path: '3/css/bootstrap.min.css', package: 'TYPO3.Twitter.Bootstrap')}" media="all" />
+			<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/NeosDemo.css', package: 'TYPO3.NeosDemoTypo3Org')}" media="all" />
+		</f:section>
+	</head>
+
+	<body>
+		<f:section name="body">
+
+			<div class="container chapter-container">
+				{parts.breadcrumb -> f:format.raw()}
+
+				<f:if condition="{node.properties.chapterImage}">
+					<media:image image="{node.properties.chapterImage}" class="pull-right" alt="{node.properties.chapterImage.alternativeText}" title="{node.properties.chapterImage.title}" />
+				</f:if>
+
+				{content.main -> f:format.raw()}
+
+				<ul class="chapter-pager">
+					<f:if condition="{previousChapter}">
+						<li><neos:link.node node="{previousChapter}">{previousChapter.properties.title}</neos:link.node> &mdash;</li>
+					</f:if>
+					<li>{node.properties.title}</li>
+					<f:if condition="{nextChapter}">
+						<li>&mdash; <neos:link.node node="{nextChapter}">{nextChapter.properties.title}</neos:link.node></li>
+					</f:if>
+				</ul>
+			</div>
+
+			<footer role="navigation" class="navbar navbar-default">
+				<div class="panel panel-default">
+					<div class="panel-body clearfix">
+						<div class="container">
+							{parts.metaMenu -> f:format.raw()}
+						</div>
+					</div>
+					<div class="panel-footer">
+						<div class="container">
+							{footer -> f:format.raw()}
+						</div>
+					</div>
+				</div>
+			</footer>
+		</f:section>
+	</body>
+</html>
