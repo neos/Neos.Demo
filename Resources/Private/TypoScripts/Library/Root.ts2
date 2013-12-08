@@ -12,17 +12,17 @@ namespace: TypoScript=TYPO3.TypoScript
  */
 page = Page {
 	head {
-		stylesheets = Template {
+		stylesheets = TypoScript:Template {
 			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
 			sectionName = 'stylesheets'
 		}
 
-		metadata = Template {
+		metadata = TypoScript:Template {
 			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
 			sectionName = 'metadata'
 		}
 
-		title = Template {
+		title = TypoScript:Template {
 			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/TitleMenu.html'
 			items = ${Array.reverse(q(node).add(q(node).parents()).get())}
 			@process.1 = ${'<title>' + value + '</title>'}
@@ -57,7 +57,7 @@ page = Page {
 				startingPoint = ${q(site).children('metamenu').get(0)}
 			}
 
-			breadcrumb = Template {
+			breadcrumb = TypoScript:Template {
 				templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/BreadcrumbMenu.html'
 				items = ${q(node).add(q(node).parents())}
 			}
@@ -84,7 +84,7 @@ page = Page {
 			collection = ${q(site).children('footer').children()}
 		}
 
-		javascripts.site = Template {
+		javascripts.site = TypoScript:Template {
 			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
 			sectionName = 'bodyScripts'
 		}
