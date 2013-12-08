@@ -22,10 +22,18 @@ page = Page {
 			sectionName = 'metadata'
 		}
 
-		title = TypoScript:Template {
-			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/TitleMenu.html'
-			items = ${Array.reverse(q(node).add(q(node).parents()).get())}
-			@process.1 = ${'<title>' + value + '</title>'}
+		titleTag {
+			// Overwrite the title tags content with a collection to create a breadcrumb
+			content = TYPO3.TypoScript:Collection {
+				// Retrieve all parent document nodes excluding the homepage
+				collection = ${q(documentNode).add(q(documentNode).parents()).slice(0, -1).get()}
+				itemName = 'node'
+				iterationName = 'nodeIterator'
+				// Implode node titles with a dash
+				itemRenderer = ${q(node).property('title') + (nodeIterator.isLast ? '' : ' - ')}
+				// Always add general site name as suffix
+				@process.siteName = ${(value ? value + ' - ' : '') + 'TYPO3 Neos'}
+			}
 		}
 	}
 
