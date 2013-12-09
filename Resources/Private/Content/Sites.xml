@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
- <site identifier="995c9174-ddd6-4d5c-cfc0-1ffc82184677" type="TYPO3.Neos:Page" nodeName="neosdemotypo3org" locale="">
+ <site identifier="995c9174-ddd6-4d5c-cfc0-1ffc82184677" type="TYPO3.Neos.NodeTypes:Page" nodeName="neosdemotypo3org" locale="">
   <properties>
    <name>TYPO3 Neos Demo Site</name>
    <title>Home</title>
@@ -56,7 +56,7 @@
     </properties>
    </node>
   </node>
-  <node identifier="a3474e1d-dd60-4a84-82b1-18d2f21891a3" type="TYPO3.Neos:Page" nodeName="features" locale="">
+  <node identifier="a3474e1d-dd60-4a84-82b1-18d2f21891a3" type="TYPO3.Neos.NodeTypes:Page" nodeName="features" locale="">
    <properties>
     <title>Features</title>
     <layout>landingPage</layout>
@@ -68,7 +68,7 @@
      <targetMode>firstChildNode</targetMode>
      <targetNode __type="reference"/>
     </properties>
-    <node identifier="b082c6b6-8a64-4786-b767-d62ef22209b2" type="TYPO3.Neos:Page" nodeName="downtherabbithole" locale="">
+    <node identifier="b082c6b6-8a64-4786-b767-d62ef22209b2" type="TYPO3.Neos.NodeTypes:Page" nodeName="downtherabbithole" locale="">
      <properties>
       <title>Down the rabbit-hole</title>
       <layout>landingPage</layout>
@@ -200,7 +200,7 @@
      </properties>
     </node>
    </node>
-   <node identifier="452374b3-3580-2af3-71bd-f9932faea84d" type="TYPO3.Neos:Page" nodeName="multiple-columns" locale="">
+   <node identifier="452374b3-3580-2af3-71bd-f9932faea84d" type="TYPO3.Neos.NodeTypes:Page" nodeName="multiple-columns" locale="">
     <properties>
      <title>Multiple columns</title>
      <layout></layout>
@@ -352,7 +352,7 @@
      </node>
     </node>
    </node>
-   <node identifier="2bd20ef8-ab75-867a-a3e1-764c82b1552d" type="TYPO3.Neos:Page" nodeName="plugins" locale="">
+   <node identifier="2bd20ef8-ab75-867a-a3e1-764c82b1552d" type="TYPO3.Neos.NodeTypes:Page" nodeName="plugins" locale="">
     <properties>
      <title>Plugins</title>
      <layout></layout>
@@ -426,7 +426,7 @@
      </node>
     </node>
    </node>
-   <node identifier="14ccf43a-562a-c9f7-2fd1-733e27068524" type="TYPO3.Neos:Page" nodeName="imagetext" locale="">
+   <node identifier="14ccf43a-562a-c9f7-2fd1-733e27068524" type="TYPO3.Neos.NodeTypes:Page" nodeName="imagetext" locale="">
     <properties>
      <title><![CDATA[Text & images]]></title>
      <layout></layout>
@@ -536,7 +536,7 @@
      </node>
     </node>
    </node>
-   <node identifier="f7574a19-2b47-4a6f-8929-339afb506d51" type="TYPO3.Neos:Page" nodeName="content-types" locale="">
+   <node identifier="f7574a19-2b47-4a6f-8929-339afb506d51" type="TYPO3.Neos.NodeTypes:Page" nodeName="content-types" locale="">
     <properties>
      <title>Content Types</title>
     </properties>
@@ -683,7 +683,7 @@
      </node>
     </node>
    </node>
-   <node identifier="a66ec7db-3459-b67b-7bcb-16e2508a89f0" type="TYPO3.Neos:Page" nodeName="custom-menus" locale="">
+   <node identifier="a66ec7db-3459-b67b-7bcb-16e2508a89f0" type="TYPO3.Neos.NodeTypes:Page" nodeName="custom-menus" locale="">
     <properties>
      <title>Custom menus</title>
     </properties>
@@ -721,7 +721,7 @@
       </node>
      </node>
     </node>
-    <node identifier="7c3e4946-d216-14d0-92c5-d7fa75163863" type="TYPO3.Neos:Page" nodeName="first-item" locale="">
+    <node identifier="7c3e4946-d216-14d0-92c5-d7fa75163863" type="TYPO3.Neos.NodeTypes:Page" nodeName="first-item" locale="">
      <properties>
       <title>Subpage #1</title>
       <layout></layout>
@@ -730,7 +730,7 @@
      <node identifier="aabc8791-4da2-6b41-2142-20c550ce783d" type="TYPO3.Neos:ContentCollection" nodeName="teaser" locale=""/>
      <node identifier="057b0ac5-890e-0df5-fd1c-a8aed4d38fff" type="TYPO3.Neos:ContentCollection" nodeName="main" locale=""/>
     </node>
-    <node identifier="336d96a5-b6c6-7d81-685f-89d32c37756e" type="TYPO3.Neos:Page" nodeName="second-item" locale="">
+    <node identifier="336d96a5-b6c6-7d81-685f-89d32c37756e" type="TYPO3.Neos.NodeTypes:Page" nodeName="second-item" locale="">
      <properties>
       <title>Subpage #2</title>
       <layout></layout>
@@ -739,7 +739,7 @@
      <node identifier="c1d29cb7-5421-6d1d-95d2-4ae56633f4e8" type="TYPO3.Neos:ContentCollection" nodeName="main" locale=""/>
      <node identifier="32d4952e-4b05-02dc-aa22-49d4695f7269" type="TYPO3.Neos:ContentCollection" nodeName="teaser" locale=""/>
     </node>
-    <node identifier="e93e299d-5c26-34d1-44d7-526a00e1f2e2" type="TYPO3.Neos:Page" nodeName="third-item" locale="">
+    <node identifier="e93e299d-5c26-34d1-44d7-526a00e1f2e2" type="TYPO3.Neos.NodeTypes:Page" nodeName="third-item" locale="">
      <properties>
       <title>Subpage #3</title>
       <layout></layout>
@@ -750,7 +750,7 @@
     </node>
    </node>
   </node>
-  <node identifier="a319a653-ef38-448d-9d19-0894299068aa" type="TYPO3.Neos:Page" nodeName="try-me" locale="">
+  <node identifier="a319a653-ef38-448d-9d19-0894299068aa" type="TYPO3.Neos.NodeTypes:Page" nodeName="try-me" locale="">
    <properties>
     <title>Try me</title>
     <layout>default</layout>
@@ -784,7 +784,7 @@
    </node>
    <node identifier="9d244084-be48-e35e-621d-108aa825df33" type="TYPO3.Neos:ContentCollection" nodeName="teaser" locale=""/>
   </node>
-  <node identifier="517ad799-35df-4324-9429-5c75629a8b34" type="TYPO3.Neos:Page" nodeName="download" locale="">
+  <node identifier="517ad799-35df-4324-9429-5c75629a8b34" type="TYPO3.Neos.NodeTypes:Page" nodeName="download" locale="">
    <properties>
     <title>Download</title>
    </properties>
@@ -812,7 +812,7 @@
     </node>
    </node>
   </node>
-  <node identifier="ac9f9c81-d674-8f01-7d38-d8ee44148630" type="TYPO3.Neos:Page" nodeName="metamenu" locale="" hiddenInIndex="true">
+  <node identifier="ac9f9c81-d674-8f01-7d38-d8ee44148630" type="TYPO3.Neos.NodeTypes:Page" nodeName="metamenu" locale="" hiddenInIndex="true">
    <properties>
     <title>Metamenu</title>
     <layout></layout>
@@ -827,7 +827,7 @@
      </targetNode>
     </properties>
    </node>
-   <node identifier="2d26b296-d3d2-69c1-b73e-0d1c801fe07a" type="TYPO3.Neos:Page" nodeName="contribute" locale="">
+   <node identifier="2d26b296-d3d2-69c1-b73e-0d1c801fe07a" type="TYPO3.Neos.NodeTypes:Page" nodeName="contribute" locale="">
     <properties>
      <title>Contribute</title>
     </properties>
@@ -844,7 +844,7 @@
    <node identifier="8f3db295-0634-3cf2-06e7-a330da1c323b" type="TYPO3.Neos:ContentCollection" nodeName="main" locale=""/>
    <node identifier="b6388236-73c2-7587-79cf-7e054ab392d7" type="TYPO3.Neos:ContentCollection" nodeName="teaser" locale=""/>
   </node>
-  <node identifier="1ce0d7b3-250c-5254-a94e-cbcaca5534eb" type="TYPO3.Neos:Page" nodeName="the-book" locale="">
+  <node identifier="1ce0d7b3-250c-5254-a94e-cbcaca5534eb" type="TYPO3.Neos.NodeTypes:Page" nodeName="the-book" locale="">
    <properties>
     <title>The book</title>
     <layout>landingPage</layout>
