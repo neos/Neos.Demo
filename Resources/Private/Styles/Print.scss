@@ -1,0 +1,37 @@
+// Reset body colors background and font-family
+body {
+	background: #fff;
+	padding-top: 0 !important;
+	color: #000;
+	font-family: Georgia, Times, serif;
+}
+
+// Hide some elements which shouldn't show in print view
+.top-navigation-wrap,
+.carousel,
+.responsive-video {
+	display: none;
+}
+
+.container {
+	footer {
+		.panel-body {
+			display: none;
+		}
+
+		.panel-footer {
+			background: #fff;
+		}
+	}
+
+	a {
+		font-weight: bold;
+		text-decoration: underline;
+		color: #06c;
+
+		// Show link url after each link
+		&:after {
+			content: " (" attr(href) ") ";
+		}
+	}
+}

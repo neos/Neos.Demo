@@ -191,10 +191,12 @@ a:hover { color: #ff460d; }
 .top-navigation-wrap.scrolling { -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); }
 @media only screen and (max-width: 768px) { .top-navigation-wrap { position: relative; margin-left: -15px; margin-right: -15px; }
   .top-navigation-wrap, .top-navigation-wrap.scrolling { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; } }
-.neos-backend:not(.neos-previewmode) .top-navigation-wrap { top: 82px; }
-@media only screen and (max-width: 768px) { .neos-backend:not(.neos-previewmode) .top-navigation-wrap { top: auto; } }
-.neos-inspector-panel-open:not(.neos-previewmode) .top-navigation-wrap { right: 320px; }
-.neos-menu-panel-open:not(.neos-previewmode) .top-navigation-wrap, .neos-navigate-panel-open:not(.neos-previewmode) .top-navigation-wrap { left: 320px; }
+.neos-backend:not(.neos-full-screen) .top-navigation-wrap { top: 82px; }
+@media only screen and (max-width: 768px) { .neos-backend:not(.neos-full-screen) .top-navigation-wrap { top: auto; } }
+.neos-edit-preview-panel-open:not(.neos-full-screen) .top-navigation-wrap { top: 182px; }
+@media only screen and (max-width: 768px) { .neos-edit-preview-panel-open:not(.neos-full-screen) .top-navigation-wrap { top: auto; } }
+.neos-inspector-panel-open:not(.neos-full-screen) .top-navigation-wrap { right: 320px; }
+.neos-menu-panel-open:not(.neos-full-screen) .top-navigation-wrap, .neos-navigate-panel-open:not(.neos-full-screen) .top-navigation-wrap { left: 320px; }
 
 .first-level-navigation { margin-top: 25px; margin-bottom: 0; }
 .first-level-navigation a { font-size: 1.3em; }

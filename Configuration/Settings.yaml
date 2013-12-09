@@ -16,3 +16,12 @@ TYPO3:
           'TYPO3.Form:MultiLineText':
             properties:
               elementClassAttribute: 'form-control'
+  Neos:
+    userInterface:
+      editPreviewModes:
+        print:
+          isEditingMode: FALSE
+          isPreviewMode: TRUE
+          typoScriptRenderingPath: 'print'
+          title: 'Print'
+          position: 200

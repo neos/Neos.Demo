@@ -20,19 +20,26 @@
 	}
 
 	// Fix for menu position in neos backend
-	.neos-backend:not(.neos-previewmode) & {
+	.neos-backend:not(.neos-full-screen) & {
 		top: 82px;
 		@media #{$screen-sm} {
 			top: auto;
 		}
 	}
 
-	.neos-inspector-panel-open:not(.neos-previewmode) & {
+	.neos-edit-preview-panel-open:not(.neos-full-screen) & {
+		top: 182px;
+		@media #{$screen-sm} {
+			top: auto;
+		}
+	}
+
+	.neos-inspector-panel-open:not(.neos-full-screen) & {
 		right: 320px;
 	}
 
-	.neos-menu-panel-open:not(.neos-previewmode) &,
-	.neos-navigate-panel-open:not(.neos-previewmode) & {
+	.neos-menu-panel-open:not(.neos-full-screen) &,
+	.neos-navigate-panel-open:not(.neos-full-screen) & {
 		left: 320px;
 	}
 }
