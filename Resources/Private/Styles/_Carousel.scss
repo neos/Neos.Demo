@@ -1,14 +1,6 @@
 // Styling the carousel for TYPO3
 .carousel {
-	// Fill the jumbotron with the carousel by using negative margins
-	.jumbotron {
-		margin: -50px -60px;
-		@include border-radius(0);
-
-		@media #{$screen-sm} {
-			margin: -30px;
-		}
-	}
+	margin-bottom: 1.5em;
 }
 
 .carousel-indicators {

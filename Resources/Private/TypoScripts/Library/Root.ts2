@@ -58,7 +58,6 @@ page = Page {
 			}
 
 			metaMenu = Menu {
-				# TODO: entryLevel should be relative not absolute
 				entryLevel = 2
 				templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/MetaMenu.html'
 				maximumLevels = 1
@@ -86,7 +85,7 @@ page = Page {
 			}
 		}
 
-		# A shared footer which can be edited from all pages
+		// A shared footer which can be edited from all pages
 		footer = TYPO3.Neos:ContentCollection {
 			nodePath = ${q(site).children('footer').property('_path')}
 			collection = ${q(site).children('footer').children()}
@@ -101,23 +100,23 @@ page = Page {
 
 default < page
 
-# Special page layout with less navigation components
+// Special page layout with less navigation components
 landingPage < page
 landingPage.body {
-	# Hide breadcrumb on landing pages
+	// Hide breadcrumb on landing pages
 	parts.breadcrumb >
 	landingPage = ${true}
 }
 
-# Special layout for chapter nodes
+// Special layout for chapter nodes
 chapter < page
 chapter {
 	bodyTag.attributes.class = 'chapter'
 	body {
 		templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Chapter.html'
 
-		# Get the previous chapter by traversing to the node which preceds the current one.
-		# We need to specify the nodetype because there could be other node types like content collections on the same level.
+		// Get the previous chapter by traversing to the node which preceds the current one.
+		// We need to specify the nodetype because there could be other node types like content collections on the same level.
 		previousChapter = ${q(documentNode).prev('[instanceof TYPO3.Neos:Document]').get(0)}
 		nextChapter = ${q(documentNode).next('[instanceof TYPO3.Neos:Document]').get(0)}
 	}

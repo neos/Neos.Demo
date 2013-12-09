@@ -38,20 +38,21 @@ renderables:
           placeholder: 'Your Message'
         defaultValue: ''
 finishers:
-  -
-    identifier: 'TYPO3.Form:Email'
-    options:
-      templatePathAndFilename: resource://TYPO3.NeosDemoTypo3Org/Private/Templates/ContactForm/Email.txt
-      subject: 'Contact from example.net'
-      recipientAddress: 'office@example.net'
-      recipientName: 'Office of Company'
-      senderAddress: 'server@example.net'
-      senderName: 'TYPO3 Neos Demo Site'
-      replyToAddress: 'office@example.net'
-      format: plaintext
+# Uncomment the following lines and install the typo3/swiftmailer package to send mails
+#  -
+#    identifier: 'TYPO3.Form:Email'
+#    options:
+#      templatePathAndFilename: resource://TYPO3.NeosDemoTypo3Org/Private/Templates/ContactForm/Email.txt
+#      subject: 'Contact from example.net'
+#      recipientAddress: 'office@example.net'
+#      recipientName: 'Office of Company'
+#      senderAddress: 'server@example.net'
+#      senderName: 'TYPO3 Neos Demo Site'
+#      replyToAddress: 'office@example.net'
+#      format: plaintext
   -
     identifier: 'TYPO3.Form:Confirmation'
     options:
       message: >
-        <h3>Thank you for your feedback</h3>
-        <p>We will process it as soon as possible.</p>
+        <h3>Thank you for your feedback!</h3>
+        <p>Your email would have been sent. It's easy to create custom forms with the TYPO3 form package.</p>
