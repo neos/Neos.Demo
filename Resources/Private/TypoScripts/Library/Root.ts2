@@ -12,7 +12,7 @@ namespace: TypoScript=TYPO3.TypoScript
  */
 page = Page {
 	head {
-		stylesheets = TypoScript:Template {
+		stylesheets.site = TypoScript:Template {
 			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
 			sectionName = 'stylesheets'
 		}
@@ -119,5 +119,22 @@ chapter {
 		// We need to specify the nodetype because there could be other node types like content collections on the same level.
 		previousChapter = ${q(documentNode).prev('[instanceof TYPO3.Neos:Document]').get(0)}
 		nextChapter = ${q(documentNode).next('[instanceof TYPO3.Neos:Document]').get(0)}
+	}
+}
+
+print < page
+print {
+	head {
+		stylesheets.printCss = TYPO3.TypoScript:Tag {
+			@position = 'end 10'
+			tagName = 'link'
+			attributes {
+				media = 'all'
+				rel = 'stylesheet'
+				href = TYPO3.TypoScript:ResourceUri {
+					path = 'resource://TYPO3.NeosDemoTypo3Org/Public/Styles/Print.css'
+				}
+			}
+		}
 	}
 }
