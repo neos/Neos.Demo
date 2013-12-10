@@ -6,7 +6,7 @@ prototype(TYPO3.NeosDemoTypo3Org:Carousel) {
 		attributes.class = 'carousel-inner'
 	}
 
-	carouselItemArray = ${q(node).children('carouselItems').children()}
+	carouselItemArray = ${q(node).children('carouselItems').children('[instanceof TYPO3.Neos.NodeTypes:Image]')}
 
 	// Enhance image prototype for the carousel
 	prototype(TYPO3.Neos.NodeTypes:Image) {
