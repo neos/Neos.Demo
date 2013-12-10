@@ -2,7 +2,7 @@
 # Adjust the "Page" node type:
 # Add two properties "layout" and "subpageLayout" to the default "Page" NodeType
 #
-'TYPO3.Neos:Page':
+'TYPO3.Neos.NodeTypes:Page':
   childNodes:
     'teaser':
       type: 'TYPO3.Neos:ContentCollection'
