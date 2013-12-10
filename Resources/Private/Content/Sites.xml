@@ -598,7 +598,7 @@
      </node>
     </node>
    </node>
-   <node identifier="f0eb464e-4701-d909-7023-34f06056bf7c" type="TYPO3.Neos:Page" nodeName="forms" locale="">
+   <node identifier="f0eb464e-4701-d909-7023-34f06056bf7c" type="TYPO3.Neos.NodeTypes:Page" nodeName="forms" locale="">
     <properties>
      <title>Forms</title>
     </properties>
@@ -800,7 +800,7 @@
      </node>
     </node>
    </node>
-   <node identifier="a56a3763-fa45-e12e-2236-5921e35ea756" type="TYPO3.Neos:Page" nodeName="documentation" locale="">
+   <node identifier="a56a3763-fa45-e12e-2236-5921e35ea756" type="TYPO3.Neos.NodeTypes:Page" nodeName="documentation" locale="">
     <properties>
      <title>Documentation</title>
      <layout>default</layout>
