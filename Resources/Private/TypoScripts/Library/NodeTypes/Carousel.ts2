@@ -1,4 +1,6 @@
-// Carousel element
+##
+# "Carousel" element
+#
 prototype(TYPO3.NeosDemoTypo3Org:Carousel) {
 	carouselItems = TYPO3.Neos:ContentCollection {
 		nodePath = 'carouselItems'

@@ -1,6 +1,5 @@
 {namespace neos=TYPO3\Neos\ViewHelpers}
 <div{attributes -> f:format.raw()}>
-	{neos:contentElement.editable(property: 'title', tag: 'header')}
 	<f:if condition="{video}">
 		<f:then>
 			<figure class="video">
@@ -8,7 +7,7 @@
 			</figure>
 		</f:then>
 		<f:else>
-			<p>No video ID</p>
+			<p>Please specify video ID</p>
 		</f:else>
 	</f:if>
 </div>

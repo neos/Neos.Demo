@@ -18,7 +18,6 @@ use TYPO3\Flow\Annotations as Flow;
  * Domain Model of a Registration
  *
  * @Flow\Entity
- * @Flow\Scope("prototype")
  */
 class Registration {
 
