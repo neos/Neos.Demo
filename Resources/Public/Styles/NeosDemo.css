@@ -263,3 +263,7 @@ footer.navbar { margin-top: 20px; margin-bottom: 0; }
 
 .responsive-video { position: relative; padding-bottom: 55%; padding-top: 15px; margin-bottom: 1.5em; height: 0; overflow: hidden; }
 .responsive-video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.flickr-stream ul { padding-left: 0; }
+.flickr-stream li { list-style-type: none; width: 240px; margin: 0 10px 10px; text-align: center; }
+.flickr-stream img { margin-bottom: 10px; max-height: 190px; max-width: 250px; }

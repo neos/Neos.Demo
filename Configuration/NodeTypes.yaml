@@ -75,6 +75,32 @@
     label: 'Editor Registration Plugin'
     icon: 'icon-user'
 
+'TYPO3.NeosDemoTypo3Org:Flickr':
+  superTypes:
+    - 'TYPO3.Neos:Plugin'
+  ui:
+    label: 'Flickr feed'
+    icon: 'icon-rss'
+    inspector:
+      groups:
+        'feed':
+          label: 'Feed'
+  options:
+    pluginViews:
+      'UserFeed':
+        label: 'User feed'
+        controllerActions:
+          'TYPO3\NeosDemoTypo3Org\Controller\FlickrController': ['userStream']
+  properties:
+    'tags':
+      type: string
+      defaultValue: ''
+      ui:
+        label: 'Tag(s) for the flickr feed'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'feed'
+
 'TYPO3.NeosDemoTypo3Org:YouTube':
   superTypes:
     - 'TYPO3.Neos.NodeTypes:Headline'

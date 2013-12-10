@@ -5,8 +5,10 @@
 resources:
   methods:
     TYPO3_NeosDemoTypo3Org_RegistrationAccess: 'method(TYPO3\NeosDemoTypo3Org\Controller\RegistrationController->(index|newAccount|createAccount|createTemporaryAccount)Action())'
+    TYPO3_NeosDemoTypo3Org_FlickrAccess: 'method(TYPO3\NeosDemoTypo3Org\Controller\FlickrController->(tagStream|userStream)Action())'
 
 acls:
   Everybody:
     methods:
       TYPO3_NeosDemoTypo3Org_RegistrationAccess: GRANT
+      TYPO3_NeosDemoTypo3Org_FlickrAccess: GRANT
