@@ -170,6 +170,7 @@ a:hover { color: #ff460d; }
 .main-header a:hover { text-decoration: none; }
 @media only screen and (max-width: 768px) { .main-header { margin-bottom: 20px; padding-top: 50px; padding-bottom: 50px; min-height: 0; }
   .main-header h1 { font-size: 1.8rem; } }
+.main-header img { width: 100%; height: auto; }
 
 .typo3-neos-alignment-right { float: right; margin-left: 2em; margin-bottom: 1em; }
 
