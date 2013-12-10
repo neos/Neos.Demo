@@ -83,6 +83,11 @@ a {
 	}
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 .row {
 	margin-bottom: 2em;
 }
@@ -119,11 +124,6 @@ a {
 		h1 {
 			font-size: 1.8rem;
 		}
-	}
-
-	img {
-		width: 100%;
-		height: auto;
 	}
 }
 
