@@ -9,13 +9,15 @@ include: NodeTypes/YouTube.ts2
 namespace: TypoScript=TYPO3.TypoScript
 
 /**
- * Root TypoScript template for the Neos website
+ * Root TypoScript template for the Neos demo website
  */
 page = Page {
 	head {
-		stylesheets.site = TypoScript:Template {
-			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
-			sectionName = 'stylesheets'
+		stylesheets {
+			site = TypoScript:Template {
+				templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
+				sectionName = 'stylesheets'
+			}
 		}
 
 		metadata = TypoScript:Template {
