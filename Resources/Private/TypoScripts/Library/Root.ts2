@@ -74,10 +74,6 @@ page = Page {
 		content {
 			teaser = ContentCollection {
 				nodePath = 'teaser'
-				// Overwrite the image template in the teaser section to make them responsive
-				prototype(TYPO3.Neos.NodeTypes:Image) {
-					imageClassName = 'img-responsive'
-				}
 			}
 
 			// Default content section
