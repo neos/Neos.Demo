@@ -25,3 +25,7 @@ TYPO3:
           typoScriptRenderingPath: 'print'
           title: 'Print'
           position: 200
+  NeosDemoTypo3Org:
+    flickr:
+      tagStreamUriPattern: 'http://api.flickr.com/services/feeds/photos_public.gne?format=json&nojsoncallback=1&tags=%s'
+      userStreamUriPattern: 'http://api.flickr.com/services/feeds/photos_public.gne?format=json&nojsoncallback=1&id=%s'
