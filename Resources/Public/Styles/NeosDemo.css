@@ -162,6 +162,8 @@ h1 { font-family: 'Noto Sans Bold', serif; letter-spacing: -2.5px; }
 a { color: #ff460d; text-decoration: none; -webkit-transition: color, background-color 0.2s; -moz-transition: color, background-color 0.2s; -o-transition: color, background-color 0.2s; transition: color, background-color 0.2s; }
 a:hover { color: #ff460d; }
 
+img { max-width: 100%; height: auto; }
+
 .row { margin-bottom: 2em; }
 
 .main-header { background-color: #ff460d; overflow: hidden; min-height: 375px; padding-top: 115px; padding-bottom: 115px; margin-bottom: 115px; @font font-bold; }
@@ -170,7 +172,6 @@ a:hover { color: #ff460d; }
 .main-header a:hover { text-decoration: none; }
 @media only screen and (max-width: 768px) { .main-header { margin-bottom: 20px; padding-top: 50px; padding-bottom: 50px; min-height: 0; }
   .main-header h1 { font-size: 1.8rem; } }
-.main-header img { width: 100%; height: auto; }
 
 .typo3-neos-alignment-right { float: right; margin-left: 2em; margin-bottom: 1em; }
 
