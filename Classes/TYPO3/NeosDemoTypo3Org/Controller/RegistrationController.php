@@ -16,6 +16,7 @@ use TYPO3\Flow\Annotations as Flow;
 use TYPO3\Flow\Error\Message;
 use TYPO3\Flow\Mvc\Controller\ActionController;
 use TYPO3\Flow\Mvc\Routing\UriBuilder;
+use TYPO3\Flow\Security\Account;
 use TYPO3\Flow\Security\AccountFactory;
 use TYPO3\Flow\Security\AccountRepository;
 use TYPO3\Neos\Domain\Model\User;
@@ -25,7 +26,6 @@ use TYPO3\Party\Domain\Repository\PartyRepository;
 
 /**
  * Controller that handles the creation of temporary Accounts
- *
  */
 class RegistrationController extends ActionController {
 
@@ -59,11 +59,11 @@ class RegistrationController extends ActionController {
 	 * @return void
 	 */
 	public function newAccountAction() {
-		$number = (time() - 1302876012);
+		$uniqueUsername = 'demo' . (time() - 1302876012);
 		$registration = new Registration();
 		$registration->setFirstName('John');
 		$registration->setLastName('Doe');
-		$registration->setUsername('demo' . $number);
+		$registration->setUsername($uniqueUsername);
 		$registration->setPassword('demo');
 
 		$this->view->assign('registration', $registration);
@@ -100,7 +100,7 @@ class RegistrationController extends ActionController {
 	 * @param string $password
 	 * @param string $firstName
 	 * @param string $lastName
-	 * @return \TYPO3\Flow\Security\Account
+	 * @return Account
 	 */
 	protected function createTemporaryAccount($accountIdentifier, $password, $firstName, $lastName) {
 		if (strlen($firstName) === 0 && strlen($lastName) === 0) {
@@ -121,7 +121,7 @@ class RegistrationController extends ActionController {
 	}
 
 	/**
-	 * @return string|boolean The flash message or FALSE if no flash message should be set
+	 * @return boolean Disable the default error flash message
 	 */
 	protected function getErrorFlashMessage() {
 		return FALSE;
