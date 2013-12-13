@@ -52,6 +52,7 @@ page = Page {
 				entryLevel = 1
 				templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/MainMenu.html'
 				maximumLevels = 3
+				site = ${site}
 			}
 
 			secondLevelMenu = Menu {
