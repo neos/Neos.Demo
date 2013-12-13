@@ -113,7 +113,7 @@ class RegistrationController extends ActionController {
 		$user->getPreferences()->set('context.workspace', 'user-' . $accountIdentifier);
 		$this->partyRepository->add($user);
 
-		$account = $this->accountFactory->createAccountWithPassword($accountIdentifier, $password, array('TYPO3.Neos:Administrator'), 'Typo3BackendProvider');
+		$account = $this->accountFactory->createAccountWithPassword($accountIdentifier, $password, array('TYPO3.Neos:Editor'), 'Typo3BackendProvider');
 		$account->setParty($user);
 		$account->setExpirationDate(new \DateTime('+1 week'));
 
