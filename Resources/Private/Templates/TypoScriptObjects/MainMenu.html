@@ -1,5 +1,5 @@
 {namespace neos=TYPO3\Neos\ViewHelpers}
-<f:render section="itemList" arguments="{items: items}" />
+<f:render section="itemList" arguments="{items: items, site: site}" />
 
 <f:section name="itemList">
 	<nav class="navbar navbar-static-top navbar-default first-level-navigation" role="navigation">
@@ -10,7 +10,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="/">TYPO3 Neos</a>
+			<a class="navbar-brand" href="{neos:uri.node(node: site)}">TYPO3 Neos</a>
 		</div>
 
 		<div class="collapse navbar-collapse navbar-main-collapse">
