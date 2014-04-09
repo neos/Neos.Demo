@@ -69,21 +69,7 @@ page = Page {
 				startingPoint = ${q(site).children('metamenu').get(0)}
 			}
 
-			breadcrumb = TypoScript:Template {
-				templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/BreadcrumbMenu.html'
-				items = ${q(node).add(q(node).parents())}
-
-				@cache {
-					mode = 'cached'
-					entryIdentifier {
-						documentNode = ${documentNode}
-					}
-					entryTags {
-						// Flush the breadcrumb menu on any document node change
-						1 = 'NodeType_TYPO3.Neos:Document'
-					}
-				}
-			}
+			breadcrumb = TYPO3.Neos:BreadcrumbMenu
 		}
 
 		content {
