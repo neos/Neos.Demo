@@ -11,6 +11,9 @@
 			<link rel="stylesheet" href="{f:uri.resource(path: '3/css/bootstrap.min.css', package: 'TYPO3.Twitter.Bootstrap')}" media="all" />
 			<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/NeosDemo.css', package: 'TYPO3.NeosDemoTypo3Org')}" media="all" />
 			<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/Print.css', package: 'TYPO3.NeosDemoTypo3Org')}" media="print" />
+			<f:if condition="{node.context.workspace.name} != 'live'">
+				<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/Backend.css', package: 'TYPO3.NeosDemoTypo3Org')}" media="all" />
+			</f:if>
 		</f:section>
 	</head>
 

@@ -17,6 +17,7 @@ page = Page {
 			site = TypoScript:Template {
 				templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
 				sectionName = 'stylesheets'
+				node = ${node}
 			}
 		}
 
