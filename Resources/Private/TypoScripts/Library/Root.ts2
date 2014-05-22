@@ -36,7 +36,7 @@ page = Page {
 				// Implode node titles with a dash
 				itemRenderer = ${q(node).property('title') + (nodeIterator.isLast ? '' : ' - ')}
 				// Always add general site name as suffix
-				@process.siteName = ${(value ? value + ' - ' : '') + 'TYPO3 Neos'}
+				@process.siteName = ${(value ? String.stripTags(value) + ' - ' : '') + 'TYPO3 Neos'}
 			}
 		}
 	}
@@ -120,6 +120,8 @@ chapter {
 	bodyTag.attributes.class = 'chapter'
 	body {
 		templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Chapter.html'
+		title = ${q(node).property('title')}
+		title.@process.convertUris = TYPO3.Neos:ConvertUris
 
 		// Get the previous chapter by traversing to the node which preceds the current one.
 		// We need to specify the nodetype because there could be other node types like content collections on the same level.

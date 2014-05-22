@@ -155,6 +155,31 @@
         reloadIfChanged: TRUE
         inspector:
           group: 'document'
+    title:
+      validation: ~
+      ui:
+        inlineEditable: TRUE
+        inspector:
+          group: ~
+        aloha:
+          placeholder: 'Enter title here'
+          'format':
+            'b': TRUE
+            'i': TRUE
+            'u': TRUE
+            'sub': TRUE
+            'sup': TRUE
+            'p': FALSE
+            'h1': FALSE
+            'h2': FALSE
+            'h3': FALSE
+            'pre': FALSE
+            'removeFormat': FALSE
+          'table': []
+          'list': []
+          'link':
+            'a': TRUE
+          'alignment': []
 
 ##
 # A custom "Menu" NodeType for chapters
