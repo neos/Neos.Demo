@@ -29,11 +29,11 @@
 
 				<ul class="chapter-pager">
 					<f:if condition="{previousChapter}">
-						<li><neos:link.node node="{previousChapter}">{previousChapter.properties.title}</neos:link.node> &mdash;</li>
+						<li><neos:link.node node="{previousChapter}">{previousChapter.fullLabel}</neos:link.node> &mdash;</li>
 					</f:if>
-					<li>{node.properties.title}</li>
+					<li>{node.fullLabel}</li>
 					<f:if condition="{nextChapter}">
-						<li>&mdash; <neos:link.node node="{nextChapter}">{nextChapter.properties.title}</neos:link.node></li>
+						<li>&mdash; <neos:link.node node="{nextChapter}">{nextChapter.fullLabel}</neos:link.node></li>
 					</f:if>
 				</ul>
 			</div>
