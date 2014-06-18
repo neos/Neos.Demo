@@ -634,6 +634,61 @@
      </node>
     </node>
    </node>
+   <node identifier="82c24d81-51fa-87e5-b4ec-73eb505cb826" type="TYPO3.Neos.NodeTypes:Page" nodeName="other-elements">
+    <properties>
+     <title>Other elements</title>
+    </properties>
+    <node identifier="51b70c59-dfd5-f30e-3bf6-117f4da3a7f0" type="TYPO3.Neos:ContentCollection" nodeName="main">
+     <node identifier="0c252a29-4e18-a4e6-adf7-acc272a4f41d" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node53a18f52e9726">
+      <properties>
+       <title><![CDATA[<h1>Other elements</h1>]]></title>
+      </properties>
+     </node>
+     <node identifier="fe49e180-0faf-260f-f143-5707c9dfe812" type="TYPO3.Neos.NodeTypes:TwoColumn" nodeName="node-53a1fc469bc10">
+      <properties>
+       <layout>6-6</layout>
+      </properties>
+      <node identifier="fe77660a-2b06-4edb-f387-173b404e46c9" type="TYPO3.Neos:ContentCollection" nodeName="column0">
+       <node identifier="e2cfa14c-514a-74f3-a383-035e27354201" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node-53a1fc5ec7a1b">
+        <properties>
+         <title><![CDATA[<h4>List of files</h4>]]></title>
+        </properties>
+       </node>
+       <node identifier="b8585c3b-6e2b-75f1-855e-3d14f042366f" type="TYPO3.Neos.NodeTypes:Text" nodeName="node-53a1fd21d6a5c">
+        <properties>
+         <text><![CDATA[<p>You can add an 'Asset List' element to show a list of files that are uploaded to the server.</p>]]></text>
+        </properties>
+       </node>
+       <node identifier="e45e3b2c-3f14-2c14-6230-687fa4696504" type="TYPO3.Neos.NodeTypes:AssetList" nodeName="node53a18fb53bdf2">
+        <properties>
+         <assets __type="array">
+          <image __classname="TYPO3\Media\Domain\Model\Image" __identifier="08aaeb84-dccc-6af4-0086-93499de4e1bc">
+           <properties>
+            <width>359</width>
+            <height>500</height>
+            <type>2</type>
+           </properties>
+           <resource __type="object" __classname="TYPO3\Flow\Resource\Resource" __identifier="3640b4ba-a68b-7e2f-4199-d4e3a2b684c3">
+            <filename>alice-1.jpg</filename>
+            <hash>30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f</hash>
+           </resource>
+          </image>
+          <asset __classname="TYPO3\Media\Domain\Model\Asset" __identifier="89cd85cc-270e-0902-7113-d14ac7539c75">
+           <properties/>
+           <resource __type="object" __classname="TYPO3\Flow\Resource\Resource" __identifier="8a4496e4-fa0d-8550-0995-01fd869728bf">
+            <filename>TYPO3_Neos-logo_sRGB_color.pdf</filename>
+            <hash>bed9a3e45070e97b921877e2bd9c35ba368beca0</hash>
+           </resource>
+          </asset>
+         </assets>
+        </properties>
+       </node>
+      </node>
+      <node identifier="0aad53bf-8760-8293-feb2-fb1ab1535eb5" type="TYPO3.Neos:ContentCollection" nodeName="column1"/>
+     </node>
+    </node>
+    <node identifier="696ce24e-6549-3564-73a0-2d8095634355" type="TYPO3.Neos:ContentCollection" nodeName="teaser"/>
+   </node>
    <node identifier="f0eb464e-4701-d909-7023-34f06056bf7c" type="TYPO3.Neos.NodeTypes:Page" nodeName="forms">
     <properties>
      <title>Forms</title>
