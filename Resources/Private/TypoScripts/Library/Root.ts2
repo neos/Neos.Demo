@@ -53,7 +53,7 @@ page = Page {
 				entryLevel = 1
 				templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/MainMenu.html'
 				maximumLevels = 3
-				site = ${site}
+				itemCollection = ${q(site).add(q(site).children('[instanceof TYPO3.Neos:Document]')).get()}
 			}
 
 			secondLevelMenu = Menu {
