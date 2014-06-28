@@ -932,13 +932,6 @@
 						Alice, &quot;without pictures or conversations?&quot;</chapterDescription>
      <layout>chapter</layout>
     </properties>
-    <node identifier="6bc5042c-72a7-30af-a257-4d28fb8ddcb9" type="TYPO3.Neos:ContentCollection" nodeName="teaser">
-     <node identifier="e391aaed-4762-49be-9aab-e1ed7c24fab2" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node524e9afd253b1">
-      <properties>
-       <title><![CDATA[<h1>Down the Rabbit-hole</h1>]]></title>
-      </properties>
-     </node>
-    </node>
     <node identifier="5e4710a5-6826-85f9-4d9b-9e9969c168d0" type="TYPO3.Neos:ContentCollection" nodeName="main">
      <node identifier="490a4be2-624e-4d34-1406-d87925604349" type="TYPO3.Neos.NodeTypes:Text" nodeName="node52a31523cce3c">
       <properties>
@@ -966,13 +959,6 @@
 					</chapterDescription>
      <layout>chapter</layout>
     </properties>
-    <node identifier="033c2aed-c2f6-88cd-e071-0a596536619d" type="TYPO3.Neos:ContentCollection" nodeName="teaser">
-     <node identifier="0e8ffecf-90da-cf75-7248-9e0f79e8b9f3" type="TYPO3.Neos.NodeTypes:Headline" nodeName="node524e9b26d9694">
-      <properties>
-       <title><![CDATA[<h1>The Pool of Tears</h1>]]></title>
-      </properties>
-     </node>
-    </node>
     <node identifier="63c63fcc-3bf7-d042-d364-8b80e94fc34c" type="TYPO3.Neos:ContentCollection" nodeName="main">
      <node identifier="d68180c8-446c-e3c4-074d-9a135eec6b3a" type="TYPO3.Neos.NodeTypes:Text" nodeName="node52a3769634249">
       <properties>
@@ -999,7 +985,6 @@
      </chapterImage>
      <layout>chapter</layout>
     </properties>
-    <node identifier="9e46ab98-6ebd-0996-4342-b6d81207fa21" type="TYPO3.Neos:ContentCollection" nodeName="teaser"/>
     <node identifier="debc2075-6dce-0e71-001d-1f4708b3c456" type="TYPO3.Neos:ContentCollection" nodeName="main">
      <node identifier="c0f1e17e-2fb6-08e2-21fb-ad3a1dfbe9df" type="TYPO3.Neos.NodeTypes:Text" nodeName="node52a378165cec3">
       <properties>
@@ -1027,7 +1012,6 @@
      </chapterImage>
      <layout>chapter</layout>
     </properties>
-    <node identifier="c1dd18db-f476-c48d-11c3-beb2971bb774" type="TYPO3.Neos:ContentCollection" nodeName="teaser"/>
     <node identifier="c481c76e-8068-e41c-730a-167f23b01c03" type="TYPO3.Neos:ContentCollection" nodeName="main">
      <node identifier="1833a0d9-f43f-f378-be0e-ab253d0b9a8a" type="TYPO3.Neos.NodeTypes:Text" nodeName="node52a37aa58eeeb">
       <properties>
@@ -1053,7 +1037,6 @@
      </chapterImage>
      <layout>chapter</layout>
     </properties>
-    <node identifier="de38284f-8c1d-076e-be65-be0c6d25dccc" type="TYPO3.Neos:ContentCollection" nodeName="teaser"/>
     <node identifier="da622e19-e3c4-f558-a1ac-4220b0aefebb" type="TYPO3.Neos:ContentCollection" nodeName="main">
      <node identifier="0559d0ad-4472-c00e-9ab7-373674afdf3b" type="TYPO3.Neos.NodeTypes:Text" nodeName="node52a37c39c22dd">
       <properties>
@@ -1081,7 +1064,6 @@
      </chapterImage>
      <layout>chapter</layout>
     </properties>
-    <node identifier="a1a342e0-f748-7da2-ae6b-3869f3ca891e" type="TYPO3.Neos:ContentCollection" nodeName="teaser"/>
     <node identifier="cf336842-d249-6111-0217-7b57d263dcdc" type="TYPO3.Neos:ContentCollection" nodeName="main">
      <node identifier="d4bd562b-2bdf-17c5-dc62-417c80b828ef" type="TYPO3.Neos.NodeTypes:Text" nodeName="node52a39a3a68eaf">
       <properties>
@@ -1105,7 +1087,6 @@
      </chapterImage>
      <layout>chapter</layout>
     </properties>
-    <node identifier="fef4cc66-e001-59a8-9595-fda2a7e851b5" type="TYPO3.Neos:ContentCollection" nodeName="teaser"/>
     <node identifier="ba7309eb-52b4-9920-1366-b5c3574af563" type="TYPO3.Neos:ContentCollection" nodeName="main">
      <node identifier="037e4a67-a80d-d05a-ba37-11ae18515f38" type="TYPO3.Neos.NodeTypes:Text" nodeName="node52a39d015051d">
       <properties>
