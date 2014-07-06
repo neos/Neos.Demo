@@ -75,10 +75,6 @@ page = Page {
 		content {
 			teaser = ContentCollection {
 				nodePath = 'teaser'
-
-				@cache {
-					mode = 'cached'
-				}
 			}
 
 			// Default content section
@@ -91,10 +87,6 @@ page = Page {
 		footer = TYPO3.Neos:ContentCollection {
 			nodePath = ${q(site).children('footer').property('_path')}
 			collection = ${q(site).children('footer').children()}
-
-			@cache {
-				mode = 'cached'
-			}
 		}
 
 		javascripts.site = TypoScript:Template {
