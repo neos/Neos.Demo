@@ -180,6 +180,9 @@
           'link':
             'a': TRUE
           'alignment': []
+          'formatlesspaste':
+            'button': FALSE
+            'formatlessPasteOption': TRUE
 
 ##
 # A custom "Menu" NodeType for chapters
