@@ -28,7 +28,7 @@
 				</neos:contentElement.wrap>
 
 				<f:if condition="{node.properties.chapterImage}">
-					<media:image image="{node.properties.chapterImage}" class="pull-right" alt="{node.properties.chapterImage.alternativeText}" title="{node.properties.chapterImage.title}" />
+					<media:image asset="{node.properties.chapterImage}" class="pull-right" alt="{node.properties.chapterImage.alternativeText}" title="{node.properties.chapterImage.title}" />
 				</f:if>
 
 				{content.main -> f:format.raw()}
