@@ -6,6 +6,11 @@
   childNodes:
     'teaser':
       type: 'TYPO3.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          '*': FALSE
+          'TYPO3.Neos.NodeTypes:Headline': TRUE
+          'TYPO3.Neos.NodeTypes:Image': TRUE
   properties:
     'layout':
       ui:
