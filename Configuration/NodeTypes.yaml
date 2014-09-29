@@ -36,7 +36,6 @@
       ui:
         aloha:
           'format':
-            'p': FALSE
             'h4': TRUE
             'h5': TRUE
 
