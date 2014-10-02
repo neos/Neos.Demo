@@ -1,3 +1,9 @@
+##
+# Create shorthand namespace for our site package name.
+# It is available in all included typoscript files.
+#
+namespace: Site=TYPO3.NeosDemoTypo3Org
+
 include: NodeTypes/Carousel.ts2
 include: NodeTypes/ChapterMenu.ts2
 include: NodeTypes/Form.ts2
@@ -6,7 +12,6 @@ include: NodeTypes/MultiColumnItem.ts2
 include: NodeTypes/Registration.ts2
 include: NodeTypes/Flickr.ts2
 include: NodeTypes/YouTube.ts2
-namespace: TypoScript=TYPO3.TypoScript
 
 /**
  * Root TypoScript template for the Neos demo website
@@ -14,14 +19,14 @@ namespace: TypoScript=TYPO3.TypoScript
 page = Page {
 	head {
 		stylesheets {
-			site = TypoScript:Template {
+			site = TYPO3.TypoScript:Template {
 				templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
 				sectionName = 'stylesheets'
 				node = ${node}
 			}
 		}
 
-		metadata = TypoScript:Template {
+		metadata = TYPO3.TypoScript:Template {
 			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
 			sectionName = 'metadata'
 		}
@@ -69,7 +74,7 @@ page = Page {
 				startingPoint = ${q(site).children('metamenu').get(0)}
 			}
 
-			breadcrumb = TYPO3.Neos:BreadcrumbMenu
+			breadcrumb = BreadcrumbMenu
 		}
 
 		content {
@@ -84,12 +89,12 @@ page = Page {
 		}
 
 		// A shared footer which can be edited from all pages
-		footer = TYPO3.Neos:ContentCollection {
+		footer = ContentCollection {
 			nodePath = ${q(site).children('footer').property('_path')}
 			collection = ${q(site).children('footer').children()}
 		}
 
-		javascripts.site = TypoScript:Template {
+		javascripts.site = TYPO3.TypoScript:Template {
 			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
 			sectionName = 'bodyScripts'
 		}
@@ -113,7 +118,7 @@ chapter {
 	body {
 		templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Chapter.html'
 		title = ${q(node).property('title')}
-		title.@process.convertUris = TYPO3.Neos:ConvertUris
+		title.@process.convertUris = ConvertUris
 
 		// Get the previous chapter by traversing to the node which preceds the current one.
 		// We need to specify the nodetype because there could be other node types like content collections on the same level.

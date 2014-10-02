@@ -1,8 +1,8 @@
 ##
 # "Carousel" element
 #
-prototype(TYPO3.NeosDemoTypo3Org:Carousel) {
-	carouselItems = TYPO3.Neos:ContentCollection {
+prototype(Site:Carousel) {
+	carouselItems = ContentCollection {
 		nodePath = 'carouselItems'
 		iterationName = 'carouselItemsIteration'
 		attributes.class = 'carousel-inner'
