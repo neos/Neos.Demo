@@ -66,7 +66,7 @@
     <properties>
      <title>Shortcut</title>
      <targetMode>firstChildNode</targetMode>
-     <targetNode __type="reference"/>
+     <target/>
     </properties>
     <node identifier="b082c6b6-8a64-4786-b767-d62ef22209b2" type="TYPO3.Neos.NodeTypes:Page" nodeName="downtherabbithole">
      <properties>
@@ -835,10 +835,8 @@
    <node identifier="ce3081c7-7b7a-612c-081c-cc85bdfc1c4c" type="TYPO3.Neos:Shortcut" nodeName="download">
     <properties>
      <title>Download</title>
-     <targetMode>selectedNode</targetMode>
-     <targetNode __type="reference">
-      <node identifier="517ad799-35df-4324-9429-5c75629a8b34"/>
-     </targetNode>
+     <targetMode>selectedTarget</targetMode>
+     <target>node://517ad799-35df-4324-9429-5c75629a8b34</target>
     </properties>
    </node>
    <node identifier="2d26b296-d3d2-69c1-b73e-0d1c801fe07a" type="TYPO3.Neos.NodeTypes:Page" nodeName="contribute">
