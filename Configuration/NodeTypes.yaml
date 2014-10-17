@@ -11,6 +11,7 @@
           '*': FALSE
           'TYPO3.Neos.NodeTypes:Headline': TRUE
           'TYPO3.Neos.NodeTypes:Image': TRUE
+          'TYPO3.Neos.NodeTypes:Text': TRUE
   properties:
     'layout':
       ui:
