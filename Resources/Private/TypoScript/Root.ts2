@@ -4,14 +4,7 @@
 #
 namespace: Site=TYPO3.NeosDemoTypo3Org
 
-include: NodeTypes/Carousel.ts2
-include: NodeTypes/ChapterMenu.ts2
-include: NodeTypes/Form.ts2
-include: NodeTypes/MultiColumn.ts2
-include: NodeTypes/MultiColumnItem.ts2
-include: NodeTypes/Registration.ts2
-include: NodeTypes/Flickr.ts2
-include: NodeTypes/YouTube.ts2
+include: NodeTypes/*
 
 /**
  * Root TypoScript template for the Neos demo website
