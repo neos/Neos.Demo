@@ -29,6 +29,8 @@ TYPO3:
   TYPO3CR:
     contentDimensions:
       'language':
+        label: 'Language'
+        icon: 'icon-language'
         default: 'en_US'
         defaultPreset: 'en_US'
         presets:
@@ -43,23 +45,23 @@ TYPO3:
             uriSegment: 'uk'
           'de':
             label: 'German'
-            values: ['de', 'en_UK', 'en_US']
+            values: ['de']
             uriSegment: 'de'
           'fr':
             label: 'French'
-            values: ['fr', 'de', 'en_US']
+            values: ['fr']
             uriSegment: 'fr'
           'nl':
             label: 'Dutch'
-            values: ['nl', 'en_US']
+            values: ['nl', 'de']
             uriSegment: 'nl'
           'dk':
             label: 'Danish'
-            values: ['dk', 'en_US']
+            values: ['dk']
             uriSegment: 'dk'
           'lv':
             label: 'Latvian'
-            values: ['lv', 'en_US']
+            values: ['lv']
             uriSegment: 'lv'
 
   NeosDemoTypo3Org:
