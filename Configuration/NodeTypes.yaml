@@ -2,247 +2,290 @@
 # Adjust the "Page" node type:
 # Add two properties "layout" and "subpageLayout" to the default "Page" NodeType
 #
-
 'TYPO3.Neos.NodeTypes:Page':
   childNodes:
-    teaser:
+    'teaser':
       type: 'TYPO3.Neos:ContentCollection'
       constraints:
         nodeTypes:
-          '*': false
-          'TYPO3.Neos.NodeTypes:Headline': true
-          'TYPO3.Neos.NodeTypes:Image': true
-          'TYPO3.Neos.NodeTypes:Text': true
+          '*': FALSE
+          'TYPO3.Neos.NodeTypes:Headline': TRUE
+          'TYPO3.Neos.NodeTypes:Image': TRUE
+          'TYPO3.Neos.NodeTypes:Text': TRUE
   properties:
-    layout:
+    'layout':
       ui:
         inspector:
-          group: layout
+          group: 'layout'
           editorOptions:
             values:
-              default:
-                label: Default
-              landingPage:
+              'default':
+                label: 'Default'
+              'landingPage':
                 label: 'Landing page'
-    subpageLayout:
+    'subpageLayout':
       ui:
         inspector:
-          group: layout
+          group: 'layout'
           editorOptions:
             values:
-              default:
-                label: Default
-              landingPage:
+              'default':
+                label: 'Default'
+              'landingPage':
                 label: 'Landing page'
+
+##
+# Adjust the "Headline" node type:
+# Enable 4th and 5th level and disable "p" in the aloha format selector of the "title" property
+#
 'TYPO3.Neos.NodeTypes:Headline':
   properties:
-    title:
+    'title':
       ui:
         aloha:
-          format:
-            h4: true
-            h5: true
+          'format':
+            'h4': TRUE
+            'h5': TRUE
+
+##
+# Adjust the "TwoColumn" node type:
+# Disable some of the layout options, override labels and set the default layout
+#
 'TYPO3.Neos.NodeTypes:TwoColumn':
   properties:
-    layout:
-      defaultValue: 6-6
+    'layout':
+      defaultValue: '6-6'
       ui:
         inspector:
           editorOptions:
             values:
-              50-50: null
-              75-25: null
-              25-75: null
-              66-33: null
-              33-66: null
-              6-6:
+              '50-50': ~
+              '75-25': ~
+              '25-75': ~
+              '66-33': ~
+              '33-66': ~
+              '6-6':
                 label: '50% / 50%'
-              8-4:
+              '8-4':
                 label: '66% / 33%'
-              4-8:
+              '4-8':
                 label: '33% / 66%'
+
+##
+# Adjust the "ThreeColumn" node type:
+# Disable some of the layout options, override labels and set the default layout
+#
 'TYPO3.Neos.NodeTypes:ThreeColumn':
   properties:
-    layout:
-      defaultValue: 4-4-4
+    'layout':
+      defaultValue: '4-4-4'
       ui:
         inspector:
           editorOptions:
             values:
-              33-33-33: null
-              50-25-25: null
-              25-50-25: null
-              25-25-50: null
-              4-4-4:
+              '33-33-33': ~
+              '50-25-25': ~
+              '25-50-25': ~
+              '25-25-50': ~
+              '4-4-4':
                 label: '33% / 33% / 33%'
-              6-3-3:
+              '6-3-3':
                 label: '50% / 25% / 33%'
-              3-6-3:
+              '3-6-3':
                 label: '25% / 50% / 25%'
-              3-3-6:
+              '3-3-6':
                 label: '25% / 25% / 50%'
+
+##
+# Adjust the "FourColumn" node type:
+# Disable some of the layout options, override labels and set the default layout
+#
 'TYPO3.Neos.NodeTypes:FourColumn':
   properties:
-    layout:
-      defaultValue: 3-3-3-3
+    'layout':
+      defaultValue: '3-3-3-3'
       ui:
         inspector:
           editorOptions:
             values:
-              25-25-25-25: null
-              3-3-3-3:
+              '25-25-25-25': ~
+              '3-3-3-3':
                 label: '25% / 25% / 25% / 25%'
+
+##
+# Adjust the "Form" node type:
+# Remove the empty select option and register the "contact-form"-Form
+#
 'TYPO3.Neos.NodeTypes:Form':
   properties:
-    formIdentifier:
+    'formIdentifier':
       ui:
         inspector:
           editorOptions:
             values:
-              '': null
-              contact-form:
+              '': ~
+              'contact-form':
                 label: 'Contact form'
+
+
+##
+# A new Document NodeType "Chapter"
+#
 'TYPO3.NeosDemoTypo3Org:Chapter':
-  superTypes:
-    - 'TYPO3.Neos:Document'
+  superTypes: ['TYPO3.Neos:Document']
   childNodes:
-    main:
+    'main':
       type: 'TYPO3.Neos:ContentCollection'
   ui:
-    label: Chapter
-    icon: icon-book
+    label: 'Chapter'
+    icon: 'icon-book'
     inspector:
       groups:
-        document:
+        'document':
           label: 'Chapter details'
   properties:
-    layout:
+    'layout':
       type: string
-      defaultValue: chapter
-    chapterDescription:
+      defaultValue: 'chapter'
+    'chapterDescription':
       type: string
       ui:
         label: 'Chapter description'
-        reloadIfChanged: true
+        reloadIfChanged: TRUE
         inspector:
-          group: document
-          editor: TYPO3.Neos/Inspector/Editors/TextAreaEditor
-    chapterImage:
-      type: TYPO3\Media\Domain\Model\ImageVariant
+          group: 'document'
+          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
+    'chapterImage':
+      type: 'TYPO3\Media\Domain\Model\ImageVariant'
       ui:
         label: 'Chapter image'
-        reloadIfChanged: true
+        reloadIfChanged: TRUE
         inspector:
-          group: document
+          group: 'document'
     title:
-      validation: null
+      validation: ~
       ui:
-        inlineEditable: true
+        inlineEditable: TRUE
         inspector:
-          group: null
+          group: ~
         aloha:
           placeholder: 'Enter title here'
-          format:
-            b: true
-            i: true
-            u: true
-            sub: true
-            sup: true
-            p: false
-            h1: false
-            h2: false
-            h3: false
-            pre: false
-            removeFormat: false
-          table: {  }
-          list: {  }
-          link:
-            a: true
-          alignment: {  }
-          formatlesspaste:
-            button: false
-            formatlessPasteOption: true
+          'format':
+            'b': TRUE
+            'i': TRUE
+            'u': TRUE
+            'sub': TRUE
+            'sup': TRUE
+            'p': FALSE
+            'h1': FALSE
+            'h2': FALSE
+            'h3': FALSE
+            'pre': FALSE
+            'removeFormat': FALSE
+          'table': []
+          'list': []
+          'link':
+            'a': TRUE
+          'alignment': []
+          'formatlesspaste':
+            'button': FALSE
+            'formatlessPasteOption': TRUE
+
+##
+# A custom "Menu" NodeType for chapters
+#
 'TYPO3.NeosDemoTypo3Org:ChapterMenu':
-  superTypes:
-    - 'TYPO3.Neos.NodeTypes:Menu'
+  superTypes: ['TYPO3.Neos.NodeTypes:Menu']
   ui:
     label: 'Chapter menu'
+
+##
+# A "Registration" plugin that allows creation of Neos user accounts through the Frontend
+# Warning: This is not to be used on productive Websites!
+#
 'TYPO3.NeosDemoTypo3Org:Registration':
-  superTypes:
-    - 'TYPO3.Neos:Plugin'
+  superTypes: ['TYPO3.Neos:Plugin']
   ui:
     label: 'Editor Registration Plugin'
-    icon: icon-user
+    icon: 'icon-user'
+
+##
+# A simple "Flickr" plugin that demonstrates the "PluginViews"-feature
+#
 'TYPO3.NeosDemoTypo3Org:Flickr':
-  superTypes:
-    - 'TYPO3.Neos:Plugin'
+  superTypes: ['TYPO3.Neos:Plugin']
   ui:
     label: 'Flickr photo feed'
-    icon: icon-rss
+    icon: 'icon-rss'
     inspector:
       groups:
-        feed:
-          label: Feed
+        'feed':
+          label: 'Feed'
   options:
-    pluginViews:
-      UserFeed:
+    'pluginViews':
+      'UserFeed':
         label: 'User feed'
         controllerActions:
-          TYPO3\NeosDemoTypo3Org\Controller\FlickrController:
-            - userStream
+          'TYPO3\NeosDemoTypo3Org\Controller\FlickrController': ['userStream']
   properties:
-    tags:
+    'tags':
       type: string
       defaultValue: ''
       ui:
         label: 'Tag(s) for the flickr feed'
-        reloadIfChanged: true
+        reloadIfChanged: TRUE
         inspector:
-          group: feed
+          group: 'feed'
+
+##
+# A "Youtube" content element
+#
 'TYPO3.NeosDemoTypo3Org:YouTube':
-  superTypes:
-    - 'TYPO3.Neos:Content'
+  superTypes: ['TYPO3.Neos:Content']
   ui:
     label: YouTube
-    icon: icon-youtube
+    icon: 'icon-youtube'
     inspector:
       groups:
-        video:
+        'video':
           label: Video
           position: 50
   properties:
-    video:
+    'video':
       type: string
       defaultValue: ''
       ui:
         label: 'Youtube video ID'
-        reloadIfChanged: true
+        reloadIfChanged: TRUE
         inspector:
-          group: video
-    width:
+          group: 'video'
+    'width':
       type: integer
       defaultValue: 400
       ui:
-        label: Width
-        reloadIfChanged: true
+        label: 'Width'
+        reloadIfChanged: TRUE
         inspector:
-          group: video
-    height:
+          group: 'video'
+    'height':
       type: integer
       defaultValue: 300
       ui:
-        label: Height
-        reloadIfChanged: true
+        label: 'Height'
+        reloadIfChanged: TRUE
         inspector:
-          group: video
+          group: 'video'
+
+##
+# A "Carousel" content element that renders "Image" child nodes into a JavaScript based slideshow
+#
 'TYPO3.NeosDemoTypo3Org:Carousel':
-  superTypes:
-    - 'TYPO3.Neos:Content'
+  superTypes: ['TYPO3.Neos:Content']
   childNodes:
     carouselItems:
       type: 'TYPO3.Neos:ContentCollection'
   ui:
-    label: Carousel
-    group: plugins
-    icon: icon-picture
-    inlineEditable: true
+    label: 'Carousel'
+    group: 'plugins'
+    icon: 'icon-picture'
+    inlineEditable: TRUE

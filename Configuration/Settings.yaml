@@ -1,4 +1,3 @@
-
 TYPO3:
   Form:
     yamlPersistenceManager:
@@ -6,72 +5,65 @@ TYPO3:
     presets:
       bootstrap:
         title: 'Twitter bootstrap'
-        parentPreset: default
+        parentPreset: 'default'
         formElementTypes:
           'TYPO3.Form:Base':
             renderingOptions:
               layoutPathPattern: 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/ContactForm/{@type}.html'
           'TYPO3.Form:FormElement':
             properties:
-              elementClassAttribute: form-control
+              elementClassAttribute: 'form-control'
           'TYPO3.Form:MultiLineText':
             properties:
-              elementClassAttribute: form-control
+              elementClassAttribute: 'form-control'
   Neos:
     userInterface:
       editPreviewModes:
         print:
-          isEditingMode: false
-          isPreviewMode: true
-          typoScriptRenderingPath: print
-          title: Print
+          isEditingMode: FALSE
+          isPreviewMode: TRUE
+          typoScriptRenderingPath: 'print'
+          title: 'Print'
           position: 200
+
   TYPO3CR:
     contentDimensions:
-      language:
-        label: Language
-        icon: icon-language
-        default: en_US
-        defaultPreset: en_US
+      'language':
+        label: 'Language'
+        icon: 'icon-language'
+        default: 'en_US'
+        defaultPreset: 'en_US'
         presets:
-          all: null
-          en_US:
+          'all': ~
+          'en_US':
             label: 'English (US)'
-            values:
-              - en_US
-            uriSegment: en
-          en_UK:
+            values: ['en_US']
+            uriSegment: 'en'
+          'en_UK':
             label: 'English (UK)'
-            values:
-              - en_UK
-              - en_US
-            uriSegment: uk
-          de:
-            label: German
-            values:
-              - de
-            uriSegment: de
-          fr:
-            label: French
-            values:
-              - fr
-            uriSegment: fr
-          nl:
-            label: Dutch
-            values:
-              - nl
-              - de
-            uriSegment: nl
-          dk:
-            label: Danish
-            values:
-              - dk
-            uriSegment: dk
-          lv:
-            label: Latvian
-            values:
-              - lv
-            uriSegment: lv
+            values: ['en_UK', 'en_US']
+            uriSegment: 'uk'
+          'de':
+            label: 'German'
+            values: ['de']
+            uriSegment: 'de'
+          'fr':
+            label: 'French'
+            values: ['fr']
+            uriSegment: 'fr'
+          'nl':
+            label: 'Dutch'
+            values: ['nl', 'de']
+            uriSegment: 'nl'
+          'dk':
+            label: 'Danish'
+            values: ['dk']
+            uriSegment: 'dk'
+          'lv':
+            label: 'Latvian'
+            values: ['lv']
+            uriSegment: 'lv'
+
   NeosDemoTypo3Org:
     flickr:
       tagStreamUriPattern: 'http://api.flickr.com/services/feeds/photos_public.gne?format=json&nojsoncallback=1&tags=%s'
