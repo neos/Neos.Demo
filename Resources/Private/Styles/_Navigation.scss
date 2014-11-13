@@ -312,10 +312,12 @@ footer.navbar {
 		position: absolute;
 		background-color: #fff;
 		box-shadow: 0 0 2px #000;
-		width: 138px;
+		width: 100px;
 
 		@media #{$screen-sm} {
-			width: 44px;
+			width: 42px;
+			margin: 0 1px;
+			text-align: center;
 		}
 
 		&:before,
