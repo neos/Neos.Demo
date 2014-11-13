@@ -68,6 +68,11 @@ page = Page {
 			}
 
 			breadcrumb = BreadcrumbMenu
+
+			languageMenu = TYPO3.Neos:DimensionMenu {
+				dimension = 'language'
+				templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/LanguageMenu.html'
+			}
 		}
 
 		content {
