@@ -247,8 +247,8 @@ footer.navbar { margin-top: 20px; margin-bottom: 0; }
   .language-menu div .language-menu-full { display: none; }
   .language-menu div .language-menu-short { display: inline; } }
 .language-menu:hover ul { display: block; }
-.language-menu ul { display: none; margin: 0; padding-left: 0; position: absolute; background-color: #fff; box-shadow: 0 0 2px #000; width: 138px; }
-@media only screen and (max-width: 768px) { .language-menu ul { width: 44px; } }
+.language-menu ul { display: none; margin: 0; padding-left: 0; position: absolute; background-color: #fff; box-shadow: 0 0 2px #000; width: 100px; }
+@media only screen and (max-width: 768px) { .language-menu ul { width: 42px; margin: 0 1px; text-align: center; } }
 .language-menu ul:before, .language-menu ul:after { content: ''; width: 10px; height: 10px; position: absolute; top: -5px; left: 50%; margin-left: -5px; background-color: #fff; }
 .language-menu ul:before { box-shadow: 0 0 2px #000; -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
 .language-menu ul:after { top: 0; width: 20px; margin-left: -10px; }
