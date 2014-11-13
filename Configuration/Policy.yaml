@@ -2,13 +2,18 @@
 # Security policy for the TYPO3.NeosDemoTypo3Org package                 #
 #                                                                        #
 
-resources:
-  methods:
-    TYPO3_NeosDemoTypo3Org_RegistrationAccess: 'method(TYPO3\NeosDemoTypo3Org\Controller\RegistrationController->(index|newAccount|createAccount|createTemporaryAccount)Action())'
-    TYPO3_NeosDemoTypo3Org_FlickrAccess: 'method(TYPO3\NeosDemoTypo3Org\Controller\FlickrController->(tagStream|userStream)Action())'
-
-acls:
-  Everybody:
-    methods:
-      TYPO3_NeosDemoTypo3Org_RegistrationAccess: GRANT
-      TYPO3_NeosDemoTypo3Org_FlickrAccess: GRANT
+privilegeTargets:
+  TYPO3\Flow\Security\Authorization\Privilege\Method\MethodPrivilege:
+    TYPO3_NeosDemoTypo3Org_RegistrationAccess:
+      matcher: method(TYPO3\NeosDemoTypo3Org\Controller\RegistrationController->(index|newAccount|createAccount|createTemporaryAccount)Action())
+    TYPO3_NeosDemoTypo3Org_FlickrAccess:
+      matcher: method(TYPO3\NeosDemoTypo3Org\Controller\FlickrController->(tagStream|userStream)Action())
+roles:
+  'TYPO3.Flow:Everybody':
+    privileges:
+      -
+        privilegeTarget: TYPO3_NeosDemoTypo3Org_RegistrationAccess
+        permission: GRANT
+      -
+        privilegeTarget: TYPO3_NeosDemoTypo3Org_FlickrAccess
+        permission: GRANT
