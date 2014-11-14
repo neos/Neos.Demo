@@ -1547,61 +1547,156 @@
        </node>
       </node>
      </node>
-     <node identifier="b082c6b6-8a64-4786-b767-d62ef22209b1" nodeName="shortcut">
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:Shortcut" version="4" removed="" hidden="" hiddenInIndex="">
+     <node identifier="b082c6b6-8a64-4786-b767-d62ef22209b1" nodeName="shortcuts">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="5" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <properties>
-        <title __type="string">Shortcut</title>
-        <targetMode __type="string">firstChildNode</targetMode>
-        <uriPathSegment __type="string">shortcut</uriPathSegment>
+        <title __type="string">Shortcuts</title>
+        <uriPathSegment __type="string">shortcuts</uriPathSegment>
        </properties>
       </variant>
-      <node identifier="b082c6b6-8a64-4786-b767-d62ef22209b2" nodeName="downtherabbithole">
-       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="4" removed="" hidden="" hiddenInIndex="">
+      <node identifier="93a7382b-2a9e-07f6-6015-0dc73bf672b2" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en_US</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <properties/>
+       </variant>
+       <node identifier="53ac4bd9-6d88-40a9-11cc-34639bbf46d2" nodeName="node-5465d9398184b">
+        <variant sortingIndex="50" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="22" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>en_US</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <properties>
+          <text __type="string">&lt;h1&gt;Shortcuts&lt;/h1&gt;&lt;p&gt;These are the four different shortcut node types TYPO3 Neos currently supports:&lt;/p&gt;</text>
+         </properties>
+        </variant>
+       </node>
+      </node>
+       <node identifier="6eb15e74-2487-df70-9890-518ecb75d29e" nodeName="node-5465d92c55e70">
+        <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Menu" version="3" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>en_US</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <properties>
+          <startLevel __type="string">0</startLevel>
+          <maximumLevels __type="string">1</maximumLevels>
+         </properties>
+        </variant>
+       </node>
+      <node identifier="e9b80fb4-99a9-1ded-a468-6b41ae28584c" nodeName="shortcut-to-child-node">
+       <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos:Shortcut" version="3" removed="" hidden="" hiddenInIndex="">
         <dimensions>
          <language>en_US</language>
         </dimensions>
         <accessRoles __type="array"/>
         <properties>
-         <title __type="string">Down the rabbit-hole</title>
-         <layout __type="string">landingPage</layout>
-         <uriPathSegment __type="string">down-the-rabbit-hole</uriPathSegment>
+         <targetMode __type="string">firstChildNode</targetMode>
+         <title __type="string">Shortcut to child node</title>
+         <uriPathSegment __type="string">shortcut-to-child-node</uriPathSegment>
         </properties>
        </variant>
-       <node identifier="545ace53-ceff-e6c9-dabc-d4118e6915aa" nodeName="main">
-        <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+       <node identifier="b082c6b6-8a64-4786-b767-d62ef22209b2" nodeName="downtherabbithole">
+        <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="5" removed="" hidden="" hiddenInIndex="">
          <dimensions>
           <language>en_US</language>
          </dimensions>
          <accessRoles __type="array"/>
-         <properties/>
+         <properties>
+          <title __type="string">Down the rabbit-hole</title>
+          <layout __type="string">landingPage</layout>
+          <uriPathSegment __type="string">down-the-rabbit-hole</uriPathSegment>
+         </properties>
         </variant>
-       </node>
-       <node identifier="eae63dcf-ac09-537b-3fb5-1dd2fba6847d" nodeName="teaser">
-        <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
-         <dimensions>
-          <language>en_US</language>
-         </dimensions>
-         <accessRoles __type="array"/>
-         <properties/>
-        </variant>
-        <node identifier="8170a593-17ce-86a0-feeb-229fbb33758d" nodeName="node52a72865bd65a">
-         <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Image" version="3" removed="" hidden="" hiddenInIndex="">
+        <node identifier="545ace53-ceff-e6c9-dabc-d4118e6915aa" nodeName="main">
+         <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
           <dimensions>
            <language>en_US</language>
           </dimensions>
           <accessRoles __type="array"/>
-          <properties>
-           <caption __type="string">&lt;p&gt;Enter caption here&lt;/p&gt;</caption>
-           <image __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;originalImage&quot;:{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;typo3-logo-cornify-small.png&quot;,&quot;hash&quot;:&quot;508d533cb989bddf1dbc68b4cb7cc5c72e598cf3&quot;,&quot;__identity&quot;:&quot;2561f821-2bea-1a41-34d9-862fd368b092&quot;},&quot;__identity&quot;:&quot;54da13ee-9ced-e56f-aa4f-b1265f35fb0c&quot;},&quot;processingInstructions&quot;:[{&quot;command&quot;:&quot;crop&quot;,&quot;options&quot;:{&quot;start&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;size&quot;:{&quot;width&quot;:1200,&quot;height&quot;:335}}},{&quot;command&quot;:&quot;resize&quot;,&quot;options&quot;:{&quot;size&quot;:{&quot;width&quot;:1200,&quot;height&quot;:336}}}]}</image>
-           <title __type="string">TYPO3 Cornified</title>
-          </properties>
+          <properties/>
          </variant>
         </node>
+        <node identifier="eae63dcf-ac09-537b-3fb5-1dd2fba6847d" nodeName="teaser">
+         <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
+          <dimensions>
+           <language>en_US</language>
+          </dimensions>
+          <accessRoles __type="array"/>
+          <properties/>
+         </variant>
+         <node identifier="8170a593-17ce-86a0-feeb-229fbb33758d" nodeName="node52a72865bd65a">
+          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Image" version="4" removed="" hidden="" hiddenInIndex="">
+           <dimensions>
+            <language>en_US</language>
+           </dimensions>
+           <accessRoles __type="array"/>
+           <properties>
+            <caption __type="string">&lt;p&gt;Enter caption here&lt;/p&gt;</caption>
+            <image __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;originalImage&quot;:{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;typo3-logo-cornify-small.png&quot;,&quot;hash&quot;:&quot;508d533cb989bddf1dbc68b4cb7cc5c72e598cf3&quot;,&quot;__identity&quot;:&quot;2561f821-2bea-1a41-34d9-862fd368b092&quot;},&quot;__identity&quot;:&quot;54da13ee-9ced-e56f-aa4f-b1265f35fb0c&quot;},&quot;processingInstructions&quot;:[{&quot;command&quot;:&quot;crop&quot;,&quot;options&quot;:{&quot;start&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;size&quot;:{&quot;width&quot;:1200,&quot;height&quot;:335}}},{&quot;command&quot;:&quot;resize&quot;,&quot;options&quot;:{&quot;size&quot;:{&quot;width&quot;:1200,&quot;height&quot;:336}}}]}</image>
+            <title __type="string">TYPO3 Cornified</title>
+           </properties>
+          </variant>
+         </node>
+        </node>
        </node>
+      </node>
+      <node identifier="b37faa61-8631-ed1c-3151-d042cd3470c7" nodeName="shortcut-to-external-uri">
+       <variant sortingIndex="450" workspace="live" nodeType="TYPO3.Neos:Shortcut" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en_US</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <properties>
+         <targetMode __type="string">selectedTarget</targetMode>
+         <title __type="string">Shortcut to external URI</title>
+         <uriPathSegment __type="string">shortcut-to-external-uri</uriPathSegment>
+         <target __type="string">http://neos.typo3.org</target>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="d2be2a94-685a-c572-471d-f5039d936492" nodeName="shortcut-to-parent-node">
+       <variant sortingIndex="350" workspace="live" nodeType="TYPO3.Neos:Shortcut" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en_US</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <properties>
+         <targetMode __type="string">parentNode</targetMode>
+         <title __type="string">Shortcut to parent node</title>
+         <uriPathSegment __type="string">shortcut-to-parent-node</uriPathSegment>
+         <target __type="string"></target>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="e9ffe2fe-e6d7-7025-50f1-6ecf2fa353c5" nodeName="shortcut-to-selected-target">
+       <variant sortingIndex="400" workspace="live" nodeType="TYPO3.Neos:Shortcut" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en_US</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <properties>
+         <targetMode __type="string">selectedTarget</targetMode>
+         <title __type="string">Shortcut to selected target</title>
+         <uriPathSegment __type="string">shortcut-to-selected-target</uriPathSegment>
+         <target __type="string">node://b082c6b6-8a64-4786-b767-d62ef22209b2</target>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="f1804145-9042-1d1f-6324-bcce01ad3bdc" nodeName="teaser">
+       <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en_US</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <properties/>
+       </variant>
       </node>
      </node>
      <node identifier="0e941a26-d4d7-2e89-5376-4f5daaa28828" nodeName="teaser">
