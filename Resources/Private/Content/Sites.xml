@@ -1577,7 +1577,6 @@
          </properties>
         </variant>
        </node>
-      </node>
        <node identifier="6eb15e74-2487-df70-9890-518ecb75d29e" nodeName="node-5465d92c55e70">
         <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Menu" version="3" removed="" hidden="" hiddenInIndex="">
          <dimensions>
@@ -1590,6 +1589,7 @@
          </properties>
         </variant>
        </node>
+      </node>
       <node identifier="e9b80fb4-99a9-1ded-a468-6b41ae28584c" nodeName="shortcut-to-child-node">
        <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos:Shortcut" version="3" removed="" hidden="" hiddenInIndex="">
         <dimensions>
