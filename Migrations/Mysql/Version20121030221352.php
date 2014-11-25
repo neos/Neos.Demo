@@ -17,8 +17,7 @@ class Version20121030221352 extends AbstractMigration {
 		$this->abortIf($this->connection->getDatabasePlatform()->getName() != "mysql");
 
 		$this->addSql("ALTER TABLE typo3_phoenixdemotypo3org_domain_model_registration RENAME TO typo3_neosdemotypo3org_domain_model_registration");
-		$this->addSql("UPDATE typo3_neos_domain_model_site SET nodename = 'neosdemotypo3org', siteresourcespackagekey = 'TYPO3.NeosDemoTypo3Org' WHERE nodename
-= 'phoenixdemotypo3org'");
+		$this->addSql("UPDATE typo3_neos_domain_model_site SET nodename = 'neosdemotypo3org', siteresourcespackagekey = 'TYPO3.NeosDemoTypo3Org' WHERE nodename = 'phoenixdemotypo3org'");
 	}
 
 	/**
@@ -29,8 +28,7 @@ class Version20121030221352 extends AbstractMigration {
 		$this->abortIf($this->connection->getDatabasePlatform()->getName() != "mysql");
 
 		$this->addSql("ALTER TABLE typo3_neosdemotypo3org_domain_model_registration RENAME TO typo3_phoenixdemotypo3org_domain_model_registration");
-		$this->addSql("UPDATE typo3_neos_domain_model_site SET nodename = 'phoenixdemotypo3org', siteresourcespackagekey = 'TYPO3.PhoenixDemoTypo3Org' WHERE nodename
-= 'neosdemotypo3org'");
+		$this->addSql("UPDATE typo3_neos_domain_model_site SET nodename = 'phoenixdemotypo3org', siteresourcespackagekey = 'TYPO3.PhoenixDemoTypo3Org' WHERE nodename = 'neosdemotypo3org'");
 	}
 }
 
