@@ -286,3 +286,15 @@ footer.navbar { margin-top: 20px; margin-bottom: 0; }
 .flickr-stream ul { padding-left: 0; }
 .flickr-stream li { list-style-type: none; width: 240px; margin: 0 10px 10px; text-align: center; }
 .flickr-stream img { margin-bottom: 10px; max-height: 190px; max-width: 250px; }
+
+ol.neos-list-decimal { list-style-type: decimal; }
+ol.neos-list-decimal-leading-zero { list-style-type: decimal-leading-zero; }
+ol.neos-list-lower-roman { list-style-type: lower-roman; }
+ol.neos-list-upper-roman { list-style-type: upper-roman; }
+ol.neos-list-lower-greek { list-style-type: lower-greek; }
+ol.neos-list-lower-latin { list-style-type: lower-latin; }
+ol.neos-list-upper-latin { list-style-type: upper-latin; }
+
+ul.neos-list-disc { list-style-type: disc; }
+ul.neos-list-circle { list-style-type: circle; }
+ul.neos-list-square { list-style-type: square; }
