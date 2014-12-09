@@ -1,7 +1,7 @@
 // Wrap for first and second level navigation at the top
 .top-navigation-wrap {
 	background-color: $white;
-	background-color: rgba(255, 255, 255, 0.97);
+	background-color: rgba(255, 255, 255, 0.92);
 	transition: box-shadow 0.2s linear;
 	min-height: 85px;
 
@@ -140,7 +140,7 @@
 	display: block;
 	float: left;
 	width: auto;
-	margin-right: 55px;
+	margin-right: 40px;
 
 	& + li {
 		margin-left: 0;

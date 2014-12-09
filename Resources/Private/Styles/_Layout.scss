@@ -93,10 +93,10 @@ img {
 }
 
 .main-header {
-	background-color: $warning;
+	background-color: #141414;
 	overflow: hidden;
-	min-height: 375px;
-	padding-top: 115px;
+	height: 100%;
+	padding-top: 85px;
 	padding-bottom: 115px;
 	margin-bottom: 115px;
 	@font font-bold;
@@ -104,6 +104,29 @@ img {
 	&,
 	h1 {
 		color: #fff;
+	}
+
+	&.image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding: 0;
+		padding-top: calc(85px);
+		background-position: 50% 50%;
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		margin-bottom: 0;
+
+		.container {
+			margin-top: calc(33vh + 85px);
+			text-align: center;
+		}
+
+		h1 {
+			text-shadow: 1px 0 0 rgba(0, 0, 0, 0.5);
+			letter-spacing: -1px;
+		}
 	}
 
 	a {
@@ -116,15 +139,14 @@ img {
 	}
 
 	@media #{$screen-sm} {
-		margin-bottom: 20px;
-		padding-top: 50px;
-		padding-bottom: 50px;
-		min-height: 0;
-
 		h1 {
 			font-size: 1.8rem;
 		}
 	}
+}
+
+.main-header.image + .container {
+	margin-top: calc(100vh);
 }
 
 // Inline alignments
