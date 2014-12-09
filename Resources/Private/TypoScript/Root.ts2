@@ -32,6 +32,13 @@ page = Page {
 	body {
 		templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
 		sectionName = 'body'
+		imageUri = TYPO3.Neos:ImageUri {
+			asset = ${q(node).property('image')}
+			maximumWidth = 2560
+			maximumHeight = 1280
+			@if.image = ${q(node).property('image')}
+		}
+		imageTitleText = ${q(node).property('imageTitleText')}
 
 		parts {
 			mainMenu = Menu {

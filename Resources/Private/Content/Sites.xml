@@ -3,18 +3,18 @@
  <site name="TYPO3 Neos Demo Site" state="1" siteResourcesPackageKey="TYPO3.NeosDemoTypo3Org" siteNodeName="neosdemotypo3org">
   <nodes formatVersion="2.0">
    <node identifier="995c9174-ddd6-4d5c-cfc0-1ffc82184677" nodeName="neosdemotypo3org">
-    <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="4" removed="" hidden="" hiddenInIndex="">
+    <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="14" removed="" hidden="" hiddenInIndex="">
      <dimensions>
       <language>en_US</language>
      </dimensions>
      <accessRoles __type="array"/>
      <properties>
-      <name __type="string">TYPO3 Neos Demo Site</name>
       <title __type="string">Home</title>
       <layout __type="string">landingPage</layout>
-      <state __type="string">1</state>
-      <siteResourcesPackageKey __type="string">TYPO3.NeosDemoTypo3Org</siteResourcesPackageKey>
       <uriPathSegment __type="string">home</uriPathSegment>
+      <image __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;originalImage&quot;:{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;enjoy-the-view-by-daniel-bischoff.jpg&quot;,&quot;hash&quot;:&quot;a0fcd1a8d6529424beaa69e070320ee9dc387723&quot;,&quot;__identity&quot;:&quot;53488dec-7960-466d-2287-3fb627c3f587&quot;},&quot;__identity&quot;:&quot;4d01043b-d738-cbd3-199a-63cba0f66ef9&quot;},&quot;processingInstructions&quot;:[{&quot;command&quot;:&quot;crop&quot;,&quot;options&quot;:{&quot;start&quot;:{&quot;x&quot;:0,&quot;y&quot;:100},&quot;size&quot;:{&quot;width&quot;:3000,&quot;height&quot;:1500}}},{&quot;command&quot;:&quot;resize&quot;,&quot;options&quot;:{&quot;size&quot;:{&quot;width&quot;:3000,&quot;height&quot;:1500}}}]}</image>
+      <imageTitleText __type="string">Photo by www.daniel-bischoff.photo</imageTitleText>
+      <subpageLayout __type="string"></subpageLayout>
      </properties>
     </variant>
     <node identifier="517ad799-35df-4324-9429-5c75629a8b34" nodeName="download">
@@ -1566,17 +1566,6 @@
         <accessRoles __type="array"/>
         <properties/>
        </variant>
-       <node identifier="53ac4bd9-6d88-40a9-11cc-34639bbf46d2" nodeName="node-5465d9398184b">
-        <variant sortingIndex="50" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="22" removed="" hidden="" hiddenInIndex="">
-         <dimensions>
-          <language>en_US</language>
-         </dimensions>
-         <accessRoles __type="array"/>
-         <properties>
-          <text __type="string">&lt;h1&gt;Shortcuts&lt;/h1&gt;&lt;p&gt;These are the four different shortcut node types TYPO3 Neos currently supports:&lt;/p&gt;</text>
-         </properties>
-        </variant>
-       </node>
        <node identifier="6eb15e74-2487-df70-9890-518ecb75d29e" nodeName="node-5465d92c55e70">
         <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Menu" version="3" removed="" hidden="" hiddenInIndex="">
          <dimensions>
@@ -1586,6 +1575,17 @@
          <properties>
           <startLevel __type="string">0</startLevel>
           <maximumLevels __type="string">1</maximumLevels>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="53ac4bd9-6d88-40a9-11cc-34639bbf46d2" nodeName="node-5465d9398184b">
+        <variant sortingIndex="50" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="22" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>en_US</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <properties>
+          <text __type="string">&lt;h1&gt;Shortcuts&lt;/h1&gt;&lt;p&gt;These are the four different shortcut node types TYPO3 Neos currently supports:&lt;/p&gt;</text>
          </properties>
         </variant>
        </node>
@@ -1671,7 +1671,6 @@
          <targetMode __type="string">parentNode</targetMode>
          <title __type="string">Shortcut to parent node</title>
          <uriPathSegment __type="string">shortcut-to-parent-node</uriPathSegment>
-         <target __type="string"></target>
         </properties>
        </variant>
       </node>
@@ -1708,7 +1707,7 @@
        <properties/>
       </variant>
       <node identifier="68c4dfc4-f9cf-a87b-a908-9c538ad3c272" nodeName="node524dad3b286ed">
-       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="3" removed="" hidden="" hiddenInIndex="">
+       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="4" removed="" hidden="" hiddenInIndex="">
         <dimensions>
          <language>en_US</language>
         </dimensions>
@@ -1981,7 +1980,7 @@
        </dimensions>
        <accessRoles __type="array"/>
        <properties>
-        <title __type="string">&lt;h1&gt;Planned for change.&lt;/h1&gt;</title>
+        <title __type="string">&lt;h1&gt;Internationalized.&lt;/h1&gt;</title>
        </properties>
       </variant>
      </node>

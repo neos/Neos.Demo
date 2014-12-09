@@ -10,8 +10,14 @@
         nodeTypes:
           '*': FALSE
           'TYPO3.Neos.NodeTypes:Headline': TRUE
-          'TYPO3.Neos.NodeTypes:Image': TRUE
           'TYPO3.Neos.NodeTypes:Text': TRUE
+          'TYPO3.Neos.NodeTypes:Image': TRUE
+  ui:
+    inspector:
+      groups:
+        image:
+          label: 'Image'
+          position: 200
   properties:
     'layout':
       ui:
@@ -33,6 +39,28 @@
                 label: 'Default'
               'landingPage':
                 label: 'Landing page'
+    'image':
+      type: TYPO3\Media\Domain\Model\ImageVariant
+      ui:
+        label: 'Image'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'image'
+          position: 50
+          editorOptions:
+            crop:
+              aspectRatio:
+                locked:
+                  width: 2
+                  height: 1
+    'imageTitleText':
+      type: string
+      ui:
+        label: 'Title text'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'image'
+          position: 100
 
 ##
 # Adjust the "Headline" node type:
