@@ -40,7 +40,7 @@
               'landingPage':
                 label: 'Landing page'
     'image':
-      type: TYPO3\Media\Domain\Model\ImageInterface
+      type: 'TYPO3\Media\Domain\Model\ImageInterface'
       ui:
         label: 'Image'
         reloadIfChanged: TRUE
@@ -184,7 +184,7 @@
           group: 'document'
           editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
     'chapterImage':
-      type: 'TYPO3\Media\Domain\Model\ImageVariant'
+      type: 'TYPO3\Media\Domain\Model\ImageInterface'
       ui:
         label: 'Chapter image'
         reloadIfChanged: TRUE
