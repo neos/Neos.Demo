@@ -243,7 +243,7 @@ img { max-width: 100%; height: auto; }
 
 footer.navbar { margin-top: 20px; margin-bottom: 0; }
 
-.language-menu { float: right; margin-top: 25px; font-size: 14px; line-height: 46px; position: relative; z-index: 1001; font-family: 'Noto Sans Bold', serif; }
+.language-menu { float: right; margin-top: 25px; font-size: 14px; line-height: 46px; position: relative; z-index: 1001; cursor: pointer; font-family: 'Noto Sans Bold', serif; }
 .language-menu div .language-menu-full { font-size: 14px; }
 .language-menu div .language-menu-short { display: none; }
 .language-menu div span { font-size: 10px; }

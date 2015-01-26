@@ -261,6 +261,7 @@ footer.navbar {
 	line-height: 46px;
 	position: relative;
 	z-index: 1001;
+	cursor: pointer;
 	@include font-bold;
 
 	div {
