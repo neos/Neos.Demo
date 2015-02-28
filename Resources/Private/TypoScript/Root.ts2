@@ -23,7 +23,6 @@ page = Page {
 			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
 			sectionName = 'metadata'
 		}
-
 	}
 
 	// This query checks if the second level menu has items and sets an additional class for the body
