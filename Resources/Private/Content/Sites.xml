@@ -12,9 +12,8 @@
       <title __type="string">Home</title>
       <layout __type="string">landingPage</layout>
       <uriPathSegment __type="string">home</uriPathSegment>
-      <image __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;originalImage&quot;:{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;enjoy-the-view-by-daniel-bischoff.jpg&quot;,&quot;hash&quot;:&quot;a0fcd1a8d6529424beaa69e070320ee9dc387723&quot;,&quot;__identity&quot;:&quot;53488dec-7960-466d-2287-3fb627c3f587&quot;},&quot;__identity&quot;:&quot;4d01043b-d738-cbd3-199a-63cba0f66ef9&quot;},&quot;processingInstructions&quot;:[{&quot;command&quot;:&quot;crop&quot;,&quot;options&quot;:{&quot;start&quot;:{&quot;x&quot;:0,&quot;y&quot;:100},&quot;size&quot;:{&quot;width&quot;:3000,&quot;height&quot;:1500}}},{&quot;command&quot;:&quot;resize&quot;,&quot;options&quot;:{&quot;size&quot;:{&quot;width&quot;:3000,&quot;height&quot;:1500}}}]}</image>
+      <image __type="object" __identifier="8d6bb77b-7a5c-bff9-a805-fce8df4f1de1" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;8d6bb77b-7a5c-bff9-a805-fce8df4f1de1&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;4d01043b-d738-cbd3-199a-63cba0f66ef9&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;enjoy-the-view-by-daniel-bischoff.jpg&quot;,&quot;hash&quot;:&quot;a0fcd1a8d6529424beaa69e070320ee9dc387723&quot;,&quot;__identity&quot;:&quot;53488dec-7960-466d-2287-3fb627c3f587&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;ratioMode&quot;:null,&quot;width&quot;:3000,&quot;__identity&quot;:&quot;3cdfafd7-63de-abc6-e799-e5e56fe6f353&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;},{&quot;height&quot;:1500,&quot;width&quot;:3000,&quot;x&quot;:0,&quot;y&quot;:100,&quot;__identity&quot;:&quot;ddf6cedd-2dbb-170c-535a-ecce8a1219a7&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
       <imageTitleText __type="string">Photo by www.daniel-bischoff.photo</imageTitleText>
-      <subpageLayout __type="string"></subpageLayout>
      </properties>
     </variant>
     <node identifier="517ad799-35df-4324-9429-5c75629a8b34" nodeName="download">
@@ -55,14 +54,14 @@
          <properties/>
         </variant>
         <node identifier="be9c3007-650c-5372-602e-233b7b294228" nodeName="node524d2f8cddd3d">
-         <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+         <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
           <dimensions>
            <language>en_US</language>
           </dimensions>
           <accessRoles __type="array"/>
           <properties>
-           <text __type="string">
-									TYPO3 Neos is publicly available. You can download your version from the &lt;a href=&quot;http://neos.typo3.org/download.html&quot; target=&quot;_blank&quot;&gt;TYPO3 Neos Download Page&lt;/a&gt;.</text>
+           <text __type="string">&lt;p&gt;
+									TYPO3 Neos is publicly available. You can download your version from the &lt;a href=&quot;http://neos.typo3.org/download.html&quot; target=&quot;_blank&quot;&gt;TYPO3 Neos Download Page&lt;/a&gt;.&lt;/p&gt;</text>
           </properties>
          </variant>
         </node>
@@ -148,26 +147,28 @@
           <properties/>
          </variant>
          <node identifier="2e01ea76-c1c6-6313-41cd-d1697081af2f" nodeName="node5270f5d9e1496">
-          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Image" version="3" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Image" version="4" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
            <accessRoles __type="array"/>
            <properties>
             <caption __type="string">&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</caption>
-            <image __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;originalImage&quot;:{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Mad-Hatter.jpg&quot;,&quot;hash&quot;:&quot;510905a6fae272e24c71a11c3646a96bf9443a70&quot;,&quot;__identity&quot;:&quot;3e3c60c3-df00-04f5-fb62-e8e947a1319c&quot;},&quot;__identity&quot;:&quot;6aac7ce2-b2e1-4e20-6987-42daa4edfbd2&quot;},&quot;processingInstructions&quot;:[{&quot;command&quot;:&quot;crop&quot;,&quot;options&quot;:{&quot;start&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;size&quot;:{&quot;width&quot;:1600,&quot;height&quot;:500}}},{&quot;command&quot;:&quot;resize&quot;,&quot;options&quot;:{&quot;size&quot;:{&quot;width&quot;:1600,&quot;height&quot;:499}}}]}</image>
+            <image __type="object" __identifier="7b6b96fe-4985-6566-b1fc-43ff02cc1814" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;7b6b96fe-4985-6566-b1fc-43ff02cc1814&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;6aac7ce2-b2e1-4e20-6987-42daa4edfbd2&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Mad-Hatter.jpg&quot;,&quot;hash&quot;:&quot;510905a6fae272e24c71a11c3646a96bf9443a70&quot;,&quot;__identity&quot;:&quot;3e3c60c3-df00-04f5-fb62-e8e947a1319c&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;width&quot;:1600,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;78146508-9a09-000a-9a03-585d346f40c3&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;height&quot;:499,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;ratioMode&quot;:null,&quot;width&quot;:1600,&quot;__identity&quot;:&quot;adfbc39d-e2f5-814a-a90c-6a3c70f39f88&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+            <alignment __type="string"></alignment>
            </properties>
           </variant>
          </node>
          <node identifier="7d38b536-a52a-afc2-e2c8-ae04a134c76b" nodeName="node5270f60a66dfb">
-          <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Image" version="3" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Image" version="4" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
            <accessRoles __type="array"/>
            <properties>
             <caption __type="string">&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</caption>
-            <image __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;originalImage&quot;:{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Alice-In-Wonderland.jpg&quot;,&quot;hash&quot;:&quot;53e0e394fda7e8943fd5e15f041da1919e03d534&quot;,&quot;__identity&quot;:&quot;c9366596-9bae-1514-d003-76b2e82a6fc3&quot;},&quot;__identity&quot;:&quot;a126280f-2a8e-0592-0e14-cc2cd9808bb2&quot;},&quot;processingInstructions&quot;:[{&quot;command&quot;:&quot;crop&quot;,&quot;options&quot;:{&quot;start&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;size&quot;:{&quot;width&quot;:1600,&quot;height&quot;:500}}},{&quot;command&quot;:&quot;resize&quot;,&quot;options&quot;:{&quot;size&quot;:{&quot;width&quot;:1600,&quot;height&quot;:499}}}]}</image>
+            <image __type="object" __identifier="c3bc8cf4-bc6a-ba5f-b53a-2a6483970279" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;c3bc8cf4-bc6a-ba5f-b53a-2a6483970279&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a126280f-2a8e-0592-0e14-cc2cd9808bb2&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Alice-In-Wonderland.jpg&quot;,&quot;hash&quot;:&quot;53e0e394fda7e8943fd5e15f041da1919e03d534&quot;,&quot;__identity&quot;:&quot;c9366596-9bae-1514-d003-76b2e82a6fc3&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;width&quot;:1600,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;8f79a69a-5cd5-c705-fe5c-cd5aae3d38a4&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;height&quot;:499,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;ratioMode&quot;:null,&quot;width&quot;:1600,&quot;__identity&quot;:&quot;90e25de9-ef61-49f3-d81b-c049ce47b257&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+            <alignment __type="string"></alignment>
            </properties>
           </variant>
          </node>
@@ -192,16 +193,15 @@
           <properties/>
          </variant>
          <node identifier="0f180a1f-a33d-f7ef-be38-e8da0b542bac" nodeName="node524da91461f23">
-          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:YouTube" version="3" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:YouTube" version="4" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
            <accessRoles __type="array"/>
            <properties>
-            <title __type="string">&lt;h4&gt;A YouTube video element&lt;/h4&gt;</title>
             <video __type="string">zeIXfdogJbA</video>
-            <width __type="string">520</width>
-            <height __type="string">350</height>
+            <width __type="integer">520</width>
+            <height __type="integer">350</height>
            </properties>
           </variant>
          </node>
@@ -273,7 +273,7 @@
        </node>
       </node>
       <node identifier="6e275c0e-32a6-70f6-e43d-4b3af4047ffe" nodeName="teaser">
-       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+       <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
         <dimensions>
          <language>en_US</language>
         </dimensions>
@@ -412,14 +412,14 @@
           <properties/>
          </variant>
          <node identifier="b5c89d6d-4c3e-fac0-b3d9-4f21a1bc5e22" nodeName="node524c1878dbb26">
-          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
            <accessRoles __type="array"/>
            <properties>
-            <text __type="string">
-										&lt;div&gt;Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, &quot;and what is the use of a book,&quot; thought Alice, &quot;without pictures or conversations?&quot;&lt;/div&gt;&lt;div&gt;So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid) whether the pleasure of making a daisy-chain would be worth the trouble of getting up and picking the daisies, when suddenly a White Rabbit with pink eyes ran close by her.&lt;/div&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;</text>
+            <text __type="string">&lt;p&gt;
+										&lt;/p&gt;&lt;div&gt;Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, &quot;and what is the use of a book,&quot; thought Alice, &quot;without pictures or conversations?&quot;&lt;/div&gt;&lt;div&gt;So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid) whether the pleasure of making a daisy-chain would be worth the trouble of getting up and picking the daisies, when suddenly a White Rabbit with pink eyes ran close by her.&lt;/div&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;</text>
            </properties>
           </variant>
          </node>
@@ -433,13 +433,13 @@
           <properties/>
          </variant>
          <node identifier="26c92b43-cf7e-f6e8-a329-1f360005127c" nodeName="node524c18b107a6a">
-          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
            <accessRoles __type="array"/>
            <properties>
-            <text __type="string">There was nothing so very remarkable in that; nor did Alice think it so very
+            <text __type="string">&lt;p&gt;There was nothing so very remarkable in that; nor did Alice think it so very
 										much out of the way to hear the Rabbit say to itself, &quot;Oh dear! Oh dear! I
 										shall be too late!&quot; (when she thought it over afterwards, it occurred to
 										her that she ought to have wondered at this, but at the time it all seemed quite
@@ -449,7 +449,7 @@
 										waistcoat-pocket, or a watch to take out of it, and burning with curiosity, she
 										ran across the field after it, and was just in time to see it pop down a large
 										rabbit-hole under the hedge.
-									</text>
+									&lt;/p&gt;</text>
            </properties>
           </variant>
          </node>
@@ -463,14 +463,14 @@
           <properties/>
          </variant>
          <node identifier="9835d866-affc-5d5c-60ae-6eb3594a5ed2" nodeName="node524c18beddbd0">
-          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
            <accessRoles __type="array"/>
            <properties>
-            <text __type="string">
-										&lt;div&gt;In another moment down went Alice after it, never once considering how in the world she was to get out again.&lt;/div&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;&lt;div&gt;The rabbit-hole went straight on like a tunnel for some way, and then dipped suddenly down, so suddenly that Alice had not a moment to think about stopping herself before she found herself falling down what seemed to be a very deep well.&lt;/div&gt;</text>
+            <text __type="string">&lt;p&gt;
+										&lt;/p&gt;&lt;div&gt;In another moment down went Alice after it, never once considering how in the world she was to get out again.&lt;/div&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;&lt;div&gt;The rabbit-hole went straight on like a tunnel for some way, and then dipped suddenly down, so suddenly that Alice had not a moment to think about stopping herself before she found herself falling down what seemed to be a very deep well.&lt;/div&gt;</text>
            </properties>
           </variant>
          </node>
@@ -495,7 +495,7 @@
           <properties/>
          </variant>
          <node identifier="5a085bc7-5c51-39c8-62d8-90d079200f9c" nodeName="node524c21dc90666">
-          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:TextWithImage" version="3" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:TextWithImage" version="4" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
@@ -503,9 +503,13 @@
            <properties>
             <alignment __type="string">right</alignment>
             <caption __type="string">&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</caption>
-            <text __type="string">
-										&lt;p&gt;Either the well was very deep, or she fell very slowly, for she had plenty of time as she went down to look about her, and to wonder what was going to happen next. First, she tried to look down and make out what she was coming to, but it was too dark to see anything; then she looked at the sides of the well and noticed that they were filled with cupboards and book-shelves: here and there she saw maps and pictures hung upon pegs. She took down a jar from one of the shelves as she passed; it was labelled &quot;ORANGE MARMALADE,&quot; but to her disappointment it was empty; she did not like to drop the jar for fear of killing somebody underneath, so managed to put it into one of the cupboards as she fell past it. &lt;/p&gt;</text>
-            <image __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;originalImage&quot;:{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-1.jpg&quot;,&quot;hash&quot;:&quot;30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f&quot;,&quot;__identity&quot;:&quot;3640b4ba-a68b-7e2f-4199-d4e3a2b684c3&quot;},&quot;__identity&quot;:&quot;08aaeb84-dccc-6af4-0086-93499de4e1bc&quot;},&quot;processingInstructions&quot;:[{&quot;command&quot;:&quot;crop&quot;,&quot;options&quot;:{&quot;start&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;size&quot;:{&quot;width&quot;:359,&quot;height&quot;:500}}},{&quot;command&quot;:&quot;resize&quot;,&quot;options&quot;:{&quot;size&quot;:{&quot;width&quot;:&quot;200&quot;,&quot;height&quot;:278}}}]}</image>
+            <text __type="string">&lt;p&gt;
+										&lt;/p&gt;&lt;p&gt;Either the well was very deep, or she fell very slowly, for she had plenty of time as she went down to look about her, and to wonder what was going to happen next. First, she tried to look down and make out what she was coming to, but it was too dark to see anything; then she looked at the sides of the well and noticed that they were filled with cupboards and book-shelves: here and there she saw maps and pictures hung upon pegs. She took down a jar from one of the shelves as she passed; it was labelled &quot;ORANGE MARMALADE,&quot; but to her disappointment it was empty; she did not like to drop the jar for fear of killing somebody underneath, so managed to put it into one of the cupboards as she fell past it. &lt;/p&gt;</text>
+            <image __type="object" __identifier="f1aed746-643b-74f4-c4e9-02a52e889f08" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f1aed746-643b-74f4-c4e9-02a52e889f08&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;08aaeb84-dccc-6af4-0086-93499de4e1bc&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-1.jpg&quot;,&quot;hash&quot;:&quot;30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f&quot;,&quot;__identity&quot;:&quot;3640b4ba-a68b-7e2f-4199-d4e3a2b684c3&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;3ae987da-9ee9-3340-67bc-772e2d06941c&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;height&quot;:278,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;ratioMode&quot;:null,&quot;width&quot;:200,&quot;__identity&quot;:&quot;489d08eb-6c0a-c429-4b4f-de04cea80e70&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+            <alternativeText __type="string"></alternativeText>
+            <title __type="string"></title>
+            <link __type="string"></link>
+            <hasCaption __type="boolean"></hasCaption>
            </properties>
           </variant>
          </node>
@@ -519,7 +523,7 @@
           <properties/>
          </variant>
          <node identifier="afe00cb9-4166-c3d0-8ba3-6e9edad2cbe9" nodeName="node524c2887753b8">
-          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:TextWithImage" version="3" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:TextWithImage" version="4" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
@@ -527,9 +531,13 @@
            <properties>
             <alignment __type="string">left</alignment>
             <caption __type="string">&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</caption>
-            <text __type="string">
-										&lt;p&gt;Five and Seven said nothing, but looked at Two. Two began in a low voice, &quot;Why, the fact is, you see, Miss, this here ought to have been a red rose-tree, and we put a white one in by mistake; and if the Queen was to find it out, we should all have our heads cut off, you know. So you see, Miss, we're doing our best, afore she comes, to——&quot; At this moment, Five, who had been anxiously looking across the garden, called out &quot;The Queen! The Queen!&quot; and the three gardeners instantly threw themselves flat upon their faces. There[98] was a sound of many footsteps, and Alice looked round, eager to see the Queen. &lt;/p&gt;</text>
-            <image __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;originalImage&quot;:{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-2.jpg&quot;,&quot;hash&quot;:&quot;0641ce611d5171161c853f70ff1ae0f33dd4dc24&quot;,&quot;__identity&quot;:&quot;1eb38dbc-0580-1280-f293-4749dc1fffe5&quot;},&quot;__identity&quot;:&quot;11d3aded-fb1a-70e7-1412-0b465b11fcd8&quot;},&quot;processingInstructions&quot;:[{&quot;command&quot;:&quot;crop&quot;,&quot;options&quot;:{&quot;start&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;size&quot;:{&quot;width&quot;:353,&quot;height&quot;:500}}},{&quot;command&quot;:&quot;resize&quot;,&quot;options&quot;:{&quot;size&quot;:{&quot;width&quot;:200,&quot;height&quot;:283}}}]}</image>
+            <text __type="string">&lt;p&gt;
+										&lt;/p&gt;&lt;p&gt;Five and Seven said nothing, but looked at Two. Two began in a low voice, &quot;Why, the fact is, you see, Miss, this here ought to have been a red rose-tree, and we put a white one in by mistake; and if the Queen was to find it out, we should all have our heads cut off, you know. So you see, Miss, we're doing our best, afore she comes, to——&quot; At this moment, Five, who had been anxiously looking across the garden, called out &quot;The Queen! The Queen!&quot; and the three gardeners instantly threw themselves flat upon their faces. There[98] was a sound of many footsteps, and Alice looked round, eager to see the Queen. &lt;/p&gt;</text>
+            <image __type="object" __identifier="b8062715-0885-8df4-3a19-508a1429c04a" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;b8062715-0885-8df4-3a19-508a1429c04a&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;11d3aded-fb1a-70e7-1412-0b465b11fcd8&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-2.jpg&quot;,&quot;hash&quot;:&quot;0641ce611d5171161c853f70ff1ae0f33dd4dc24&quot;,&quot;__identity&quot;:&quot;1eb38dbc-0580-1280-f293-4749dc1fffe5&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:283,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;ratioMode&quot;:null,&quot;width&quot;:200,&quot;__identity&quot;:&quot;3f7c3ab7-ba72-d6c4-be00-8aec6fd574ca&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;},{&quot;height&quot;:500,&quot;width&quot;:353,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;fec69f93-6cea-8e5a-5a25-6ed442c04224&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
+            <alternativeText __type="string"></alternativeText>
+            <title __type="string"></title>
+            <link __type="string"></link>
+            <hasCaption __type="boolean"></hasCaption>
            </properties>
           </variant>
          </node>
@@ -548,7 +556,7 @@
        </node>
       </node>
       <node identifier="a808bff3-2cd1-f7cb-087e-1786e3e25a92" nodeName="teaser">
-       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+       <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
         <dimensions>
          <language>en_US</language>
         </dimensions>
@@ -606,14 +614,14 @@
          </variant>
         </node>
         <node identifier="ac55924c-9a74-140d-7733-8fbc7048bdd9" nodeName="node524c38b97b429">
-         <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+         <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
           <dimensions>
            <language>en_US</language>
           </dimensions>
           <accessRoles __type="array"/>
           <properties>
-           <text __type="string">
-									&lt;p&gt;TYPO3 Neos is not just another CMS. Instead, the TYPO3 Community has created it based on the previous experiences. It's not the first CMS built, but instead there is a big amount of knowledge which has accumulated over the last 15 years.&lt;/p&gt;</text>
+           <text __type="string">&lt;p&gt;
+									&lt;/p&gt;&lt;p&gt;TYPO3 Neos is not just another CMS. Instead, the TYPO3 Community has created it based on the previous experiences. It's not the first CMS built, but instead there is a big amount of knowledge which has accumulated over the last 15 years.&lt;/p&gt;</text>
           </properties>
          </variant>
         </node>
@@ -638,14 +646,14 @@
          </variant>
         </node>
         <node identifier="732d2a69-6f2e-dbf0-67ac-632879f3f8fc" nodeName="node524c38e478450">
-         <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+         <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
           <dimensions>
            <language>en_US</language>
           </dimensions>
           <accessRoles __type="array"/>
           <properties>
-           <text __type="string">
-									&lt;p&gt;We know that a website does not only contain static parts. In today's world, you often integrate external services, have to model complex business logic or tweak the output of the website in a very fine-grained way. That's why our main goal is developer happiness. We want you to be effective, being able to re-use concepts and code across your websites.&lt;/p&gt;&lt;p&gt;Of course, that is no free ride: You need to learn the concepts used in Neos. However, by implementing established practices in software development, your knowledge can be applied to a wide variety of languages, frameworks and use-cases. We want to help you become better programmers!&lt;/p&gt;&lt;div&gt;The Learn Once, Run Everywhere Philosophy is the main guidance principle for the development of Neos: All components are usable inside the CMS context, but also in stand-alone web applications. That of course also includes your own components.&lt;/div&gt;</text>
+           <text __type="string">&lt;p&gt;
+									&lt;/p&gt;&lt;p&gt;We know that a website does not only contain static parts. In today's world, you often integrate external services, have to model complex business logic or tweak the output of the website in a very fine-grained way. That's why our main goal is developer happiness. We want you to be effective, being able to re-use concepts and code across your websites.&lt;/p&gt;&lt;p&gt;Of course, that is no free ride: You need to learn the concepts used in Neos. However, by implementing established practices in software development, your knowledge can be applied to a wide variety of languages, frameworks and use-cases. We want to help you become better programmers!&lt;/p&gt;&lt;div&gt;The Learn Once, Run Everywhere Philosophy is the main guidance principle for the development of Neos: All components are usable inside the CMS context, but also in stand-alone web applications. That of course also includes your own components.&lt;/div&gt;</text>
           </properties>
          </variant>
         </node>
@@ -670,14 +678,14 @@
          </variant>
         </node>
         <node identifier="0143d9ce-d20d-f7ef-39f4-910386f213eb" nodeName="node524c390fb3cd2">
-         <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+         <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
           <dimensions>
            <language>en_US</language>
           </dimensions>
           <accessRoles __type="array"/>
           <properties>
-           <text __type="string">
-									&lt;p&gt;If Neos was a car, &lt;a href=&quot;http://flow.typo3.org&quot;&gt;TYPO3 Flow&lt;/a&gt; were its main engine. It powers many foundational features for building extensible and adjustable web applications of today, such as Dependency Injection, Aspect-Oriented Programming and a unique Model-View-Controller Framework. And best of all: Everything is usable directly in Neos, should you ever need it.&lt;/p&gt;&lt;p&gt;TYPO3 Flow has first-class support for Domain-Driven Design: It helps you to focus on the problem domain of your customer, shielding you from implementation details until you need them. Worried about form validation, security, file-uploads or logging? All directly built into Flow. Couple that with powerful, composer-based package management and a doctrine-based persistence layer, and you can build on the shoulders of giants.&lt;/p&gt;&lt;p&gt;You might wonder whether it was worth to develop TYPO3 Flow from scratch. But if you try it out and experience the flow-feeling of development, you will see what we mean with it.&lt;/p&gt;</text>
+           <text __type="string">&lt;p&gt;
+									&lt;/p&gt;&lt;p&gt;If Neos was a car, &lt;a href=&quot;http://flow.typo3.org&quot;&gt;TYPO3 Flow&lt;/a&gt; were its main engine. It powers many foundational features for building extensible and adjustable web applications of today, such as Dependency Injection, Aspect-Oriented Programming and a unique Model-View-Controller Framework. And best of all: Everything is usable directly in Neos, should you ever need it.&lt;/p&gt;&lt;p&gt;TYPO3 Flow has first-class support for Domain-Driven Design: It helps you to focus on the problem domain of your customer, shielding you from implementation details until you need them. Worried about form validation, security, file-uploads or logging? All directly built into Flow. Couple that with powerful, composer-based package management and a doctrine-based persistence layer, and you can build on the shoulders of giants.&lt;/p&gt;&lt;p&gt;You might wonder whether it was worth to develop TYPO3 Flow from scratch. But if you try it out and experience the flow-feeling of development, you will see what we mean with it.&lt;/p&gt;</text>
           </properties>
          </variant>
         </node>
@@ -713,14 +721,14 @@
          </variant>
         </node>
         <node identifier="de9ecb77-46df-02b2-0c71-405c9e6afd5d" nodeName="node524da24645828">
-         <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+         <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
           <dimensions>
            <language>en_US</language>
           </dimensions>
           <accessRoles __type="array"/>
           <properties>
-           <text __type="string">
-									&lt;p&gt;TYPO3 Neos can easily be extended with plugins, which are just standard packages of TYPO3 Flow with a little extra configuration. &amp;nbsp;The same works for backend modules. By using convention over configuration, the required settings you need to do boils down to a minimum.&lt;/p&gt;&lt;p&gt;Of course we know that the there's one thing where you need full control: The rendering of your website. In Neos, a custom package called Typoscript powers the rendering process, allowing for fine-grained control over the output. No need to override complete templates or hack the source.&lt;/p&gt;&lt;p&gt;If you know Typoscript from the old days in TYPO3 CMS, rest assured that it has changed a lot. It has not only been re-built, but re-thought from scratch and is now object-oriented, consistent and much more powerful than before.&lt;/p&gt;</text>
+           <text __type="string">&lt;p&gt;
+									&lt;/p&gt;&lt;p&gt;TYPO3 Neos can easily be extended with plugins, which are just standard packages of TYPO3 Flow with a little extra configuration.  The same works for backend modules. By using convention over configuration, the required settings you need to do boils down to a minimum.&lt;/p&gt;&lt;p&gt;Of course we know that the there's one thing where you need full control: The rendering of your website. In Neos, a custom package called Typoscript powers the rendering process, allowing for fine-grained control over the output. No need to override complete templates or hack the source.&lt;/p&gt;&lt;p&gt;If you know Typoscript from the old days in TYPO3 CMS, rest assured that it has changed a lot. It has not only been re-built, but re-thought from scratch and is now object-oriented, consistent and much more powerful than before.&lt;/p&gt;</text>
           </properties>
          </variant>
         </node>
@@ -745,14 +753,14 @@
          </variant>
         </node>
         <node identifier="e5171e7f-8898-be7a-4c05-147ed00f7a00" nodeName="node524da282203b1">
-         <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+         <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
           <dimensions>
            <language>en_US</language>
           </dimensions>
           <accessRoles __type="array"/>
           <properties>
-           <text __type="string">
-									&lt;p&gt;Don't explain anymore how editing works. Just discover it yourself! All contents are directly edited on the page, just styled like the live content. Powered by Aloha Editor and Hallo Editor, you'll directly see what you write, just as the end-user does.&lt;/p&gt;&lt;p&gt;Furthermore, the editing is based on semantic technologies such as RDFa, which we consume using VIE and CreateJS. This allows to expose the whole content of your website in a machine-readable way, should you ever need that.&lt;/p&gt;&lt;p&gt;You also see Neos is not just developed by the core team, but we're also using and contributing to other, shared projects.&lt;/p&gt;</text>
+           <text __type="string">&lt;p&gt;
+									&lt;/p&gt;&lt;p&gt;Don't explain anymore how editing works. Just discover it yourself! All contents are directly edited on the page, just styled like the live content. Powered by Aloha Editor and Hallo Editor, you'll directly see what you write, just as the end-user does.&lt;/p&gt;&lt;p&gt;Furthermore, the editing is based on semantic technologies such as RDFa, which we consume using VIE and CreateJS. This allows to expose the whole content of your website in a machine-readable way, should you ever need that.&lt;/p&gt;&lt;p&gt;You also see Neos is not just developed by the core team, but we're also using and contributing to other, shared projects.&lt;/p&gt;</text>
           </properties>
          </variant>
         </node>
@@ -788,14 +796,14 @@
          </variant>
         </node>
         <node identifier="8ce8529b-6ae9-0420-f58b-c2f7e18527ec" nodeName="node524dac43689e7">
-         <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+         <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
           <dimensions>
            <language>en_US</language>
           </dimensions>
           <accessRoles __type="array"/>
           <properties>
-           <text __type="string">
-									&lt;p&gt;While Neos still stores its data in a relational database, you won't access this directly when working with content. Instead, we're using a tree-based approach of storing content which we call the TYPO3 Content Repository (TYPO3CR). This tree enables you to not only structure your content using a page tree, but also nest content into other content in a page.&lt;/p&gt;&lt;p&gt;Furthermore, the Content Repository allows you to easily create new content elements, just using a Fluid Template, one line of Typoscript and a few lines of configuration.&lt;/p&gt;</text>
+           <text __type="string">&lt;p&gt;
+									&lt;/p&gt;&lt;p&gt;While Neos still stores its data in a relational database, you won't access this directly when working with content. Instead, we're using a tree-based approach of storing content which we call the TYPO3 Content Repository (TYPO3CR). This tree enables you to not only structure your content using a page tree, but also nest content into other content in a page.&lt;/p&gt;&lt;p&gt;Furthermore, the Content Repository allows you to easily create new content elements, just using a Fluid Template, one line of Typoscript and a few lines of configuration.&lt;/p&gt;</text>
           </properties>
          </variant>
         </node>
@@ -820,14 +828,14 @@
          </variant>
         </node>
         <node identifier="ab9d7e80-ad51-dab9-fbd8-6ead57b061b2" nodeName="node524dac66a8765">
-         <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+         <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
           <dimensions>
            <language>en_US</language>
           </dimensions>
           <accessRoles __type="array"/>
           <properties>
-           <text __type="string">
-									&lt;p&gt;Check out the &lt;a href=&quot;download.html&quot;&gt;download&lt;/a&gt; yourself, and try it out. Make sure to give us some feedback, either on our Mailing Lists or in IRC.&lt;/p&gt;</text>
+           <text __type="string">&lt;p&gt;
+									&lt;/p&gt;&lt;p&gt;Check out the &lt;a href=&quot;download.html&quot;&gt;download&lt;/a&gt; yourself, and try it out. Make sure to give us some feedback, either on our Mailing Lists or in IRC.&lt;/p&gt;</text>
           </properties>
          </variant>
         </node>
@@ -872,13 +880,13 @@
           <properties/>
          </variant>
          <node identifier="2222f152-129a-fd14-bcdc-0eadca990d90" nodeName="node5249b0794117a">
-          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
            <accessRoles __type="array"/>
            <properties>
-            <text __type="string">The first question of course was, how to get dry again: they had a
+            <text __type="string">&lt;p&gt;The first question of course was, how to get dry again: they had a
 										consultation about this, and after a few minutes it seemed quite natural to
 										Alice to find herself talking familiarly with them, as if she had known them all
 										her life. Indeed, she had quite a long argument with the Lory, who at last
@@ -886,7 +894,7 @@
 										better;&quot; and this Alice would not allow without knowing how old it was,
 										and, as the Lory positively refused to tell its age, there was no more to be
 										said.
-									</text>
+									&lt;/p&gt;</text>
            </properties>
           </variant>
          </node>
@@ -900,18 +908,18 @@
           <properties/>
          </variant>
          <node identifier="2a431846-fbff-26ca-d9ca-cf712506487b" nodeName="node5249b0963fad4">
-          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
            <accessRoles __type="array"/>
            <properties>
-            <text __type="string">At last the Mouse, who seemed to be a person of authority among them, called
+            <text __type="string">&lt;p&gt;At last the Mouse, who seemed to be a person of authority among them, called
 										out &quot;Sit down, all of you, and listen to me! I'll soon make you dry enough!&quot;
 										They all sat down at once, in a large ring, with the Mouse in the middle. Alice
 										kept her eyes anxiously fixed on it, for she felt sure she would catch a bad
 										cold if she did not get dry very soon.
-									</text>
+									&lt;/p&gt;</text>
            </properties>
           </variant>
          </node>
@@ -947,20 +955,20 @@
           <properties/>
          </variant>
          <node identifier="c2273444-4cb0-2af8-6fcd-8c0101cf6b47" nodeName="node524a9d3c133b4">
-          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
            <accessRoles __type="array"/>
            <properties>
-            <text __type="string">First it marked out a race-course, in a sort of circle, (&quot;the exact shape
+            <text __type="string">&lt;p&gt;First it marked out a race-course, in a sort of circle, (&quot;the exact shape
 										doesn't matter,&quot; it said,) and then all the party were placed along the
 										course, here and there. There was no &quot;One, two, three, and away,&quot; but
 										they began running when they liked, and left off when they liked, so that it was
 										not easy to know when the race was over. However, when they had been running
 										half an hour or so, and were quite dry again, the Dodo suddenly called &quot;The
 										race is over!&quot; and they all crowded round it, panting, and asking &quot;But
-										who has won?&quot;</text>
+										who has won?&quot;&lt;/p&gt;</text>
            </properties>
           </variant>
          </node>
@@ -974,17 +982,17 @@
           <properties/>
          </variant>
          <node identifier="6285ae7b-9e37-58ec-99fc-f637db95318e" nodeName="node524a9df3b6389">
-          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
            <accessRoles __type="array"/>
            <properties>
-            <text __type="string">This question the Dodo could not answer without a great deal of thought, and
+            <text __type="string">&lt;p&gt;This question the Dodo could not answer without a great deal of thought, and
 										it stood for a long time with one finger pressed upon its forehead (the position
 										in which you usually see Shakespeare, in the pictures of him), while the rest
 										waited in silence. At last the Dodo said &quot;Everybody has won, and all must
-										have prizes.&quot;</text>
+										have prizes.&quot;&lt;/p&gt;</text>
            </properties>
           </variant>
          </node>
@@ -998,17 +1006,17 @@
           <properties/>
          </variant>
          <node identifier="4bc02083-aef4-3dc3-9622-c764843a02b8" nodeName="node524a9dff228ac">
-          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
            <accessRoles __type="array"/>
            <properties>
-            <text __type="string">The next thing was to eat the comfits; this caused some noise and confusion,
+            <text __type="string">&lt;p&gt;The next thing was to eat the comfits; this caused some noise and confusion,
 										as the large birds complained that they could not taste theirs, and the small
 										ones choked and had to be patted on the back. However, it was over at last, and
 										they sat down again in a ring, and begged the Mouse to tell them something more.
-									</text>
+									&lt;/p&gt;</text>
            </properties>
           </variant>
          </node>
@@ -1044,16 +1052,16 @@
           <properties/>
          </variant>
          <node identifier="bade4900-afef-dc24-698a-77945917ddf1" nodeName="node524a9e0880aa0">
-          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
            <accessRoles __type="array"/>
            <properties>
-            <text __type="string">Alice replied eagerly, for she was always ready to talk about her pet: &quot;Dinah's
+            <text __type="string">&lt;p&gt;Alice replied eagerly, for she was always ready to talk about her pet: &quot;Dinah's
 										our cat. And she's such a capital one for catching mice, you ca'n't think! And
 										oh, I wish you could see her after the birds! Why, she'll eat a little bird as
-										soon as look at it!&quot;</text>
+										soon as look at it!&quot;&lt;/p&gt;</text>
            </properties>
           </variant>
          </node>
@@ -1067,19 +1075,19 @@
           <properties/>
          </variant>
          <node identifier="83345593-6adc-4a4f-d9d5-bee93aed1f42" nodeName="node524a9e11c11b2">
-          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
            <accessRoles __type="array"/>
            <properties>
-            <text __type="string">This speech caused a remarkable sensation among the party. Some of the birds
+            <text __type="string">&lt;p&gt;This speech caused a remarkable sensation among the party. Some of the birds
 										hurried off at once; one old Magpie began wrapping itself up very carefully,
 										remarking &quot;I really must be getting home; the night-air doesn't suit my
 										throat!&quot; and a Canary called out in a trembling voice to its children
 										&quot;Come away, my dears! It's high time you were all in bed!&quot; On various
 										pretexts they all moved off, and Alice was soon left alone.
-									</text>
+									&lt;/p&gt;</text>
            </properties>
           </variant>
          </node>
@@ -1093,20 +1101,20 @@
           <properties/>
          </variant>
          <node identifier="ddc0e9b2-8279-1c8f-5960-a91ef350774d" nodeName="node524a9e24e1127">
-          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
            <accessRoles __type="array"/>
            <properties>
-            <text __type="string">&quot;I wish I hadn't mentioned Dinah!&quot; she said to herself in a
+            <text __type="string">&lt;p&gt;&quot;I wish I hadn't mentioned Dinah!&quot; she said to herself in a
 										melancholy tone. &quot;Nobody seems to like her, down here, and I'm sure she's
 										the best cat in the world! Oh, my dear Dinah! I wonder if I shall ever see you
 										any more!&quot; And here poor Alice began to cry again, for she felt very lonely
 										and low-spirited. In a little while, however, she again heard a little pattering
 										of footsteps in the distance, and she looked up eagerly, half hoping that the
 										Mouse had changed his mind, and was coming back to finish his story.
-									</text>
+									&lt;/p&gt;</text>
            </properties>
           </variant>
          </node>
@@ -1120,18 +1128,18 @@
           <properties/>
          </variant>
          <node identifier="b074ce9e-d970-7e33-e836-ce321f9e67f2" nodeName="node524a9e1c138e3">
-          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
            <accessRoles __type="array"/>
            <properties>
-            <text __type="string">Very soon the Rabbit noticed Alice, as she went hunting about, and called out
+            <text __type="string">&lt;p&gt;Very soon the Rabbit noticed Alice, as she went hunting about, and called out
 										to her in an angry tone, &quot;Why, Mary Ann, what[36] are you doing out here?
 										Run home this moment, and fetch me a pair of gloves and a fan! Quick, now!&quot;
 										And Alice was so much frightened that she ran off at once in the direction it
 										pointed to, without trying to explain the mistake it had made.
-									</text>
+									&lt;/p&gt;</text>
            </properties>
           </variant>
          </node>
@@ -1150,7 +1158,7 @@
        </node>
       </node>
       <node identifier="255e22e8-9e81-d117-4f98-f4dd6d5f37d7" nodeName="teaser">
-       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+       <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
         <dimensions>
          <language>en_US</language>
         </dimensions>
@@ -1191,7 +1199,7 @@
         </variant>
        </node>
        <node identifier="aabc8791-4da2-6b41-2142-20c550ce783d" nodeName="teaser">
-        <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+        <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
          <dimensions>
           <language>en_US</language>
          </dimensions>
@@ -1297,7 +1305,7 @@
        </node>
       </node>
       <node identifier="1ee7c6d2-0b03-f39e-4f8e-00ce25ad5927" nodeName="teaser">
-       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+       <variant sortingIndex="250" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
         <dimensions>
          <language>en_US</language>
         </dimensions>
@@ -1326,7 +1334,7 @@
         </variant>
        </node>
        <node identifier="ab0381c5-56bc-96fe-7402-6193e3bfe505" nodeName="teaser">
-        <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+        <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
          <dimensions>
           <language>en_US</language>
          </dimensions>
@@ -1403,8 +1411,8 @@
            <accessRoles __type="array"/>
            <properties>
             <assets __type="array">
-             <entry0 __type="object" __identifier="08aaeb84-dccc-6af4-0086-93499de4e1bc" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-1.jpg&quot;,&quot;hash&quot;:&quot;30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f&quot;,&quot;__identity&quot;:&quot;3640b4ba-a68b-7e2f-4199-d4e3a2b684c3&quot;}}</entry0>
-             <entry1 __type="object" __identifier="89cd85cc-270e-0902-7113-d14ac7539c75" __classname="TYPO3\Media\Domain\Model\Asset" __encoding="json">{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;TYPO3_Neos-logo_sRGB_color.pdf&quot;,&quot;hash&quot;:&quot;bed9a3e45070e97b921877e2bd9c35ba368beca0&quot;,&quot;__identity&quot;:&quot;8a4496e4-fa0d-8550-0995-01fd869728bf&quot;}}</entry1>
+             <entry0 __type="object" __identifier="08aaeb84-dccc-6af4-0086-93499de4e1bc" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;08aaeb84-dccc-6af4-0086-93499de4e1bc&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-1.jpg&quot;,&quot;hash&quot;:&quot;30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f&quot;,&quot;__identity&quot;:&quot;3640b4ba-a68b-7e2f-4199-d4e3a2b684c3&quot;}}</entry0>
+             <entry1 __type="object" __identifier="1eef052d-bac9-a9fa-bcd3-1d0c9661571d" __classname="TYPO3\Media\Domain\Model\Document" __encoding="json">{&quot;__identity&quot;:&quot;1eef052d-bac9-a9fa-bcd3-1d0c9661571d&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;TYPO3_Neos-logo_sRGB_color.pdf&quot;,&quot;hash&quot;:&quot;bed9a3e45070e97b921877e2bd9c35ba368beca0&quot;,&quot;__identity&quot;:&quot;8a4496e4-fa0d-8550-0995-01fd869728bf&quot;}}</entry1>
             </assets>
            </properties>
           </variant>
@@ -1624,7 +1632,7 @@
          </variant>
         </node>
         <node identifier="eae63dcf-ac09-537b-3fb5-1dd2fba6847d" nodeName="teaser">
-         <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
+         <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="5" removed="" hidden="" hiddenInIndex="">
           <dimensions>
            <language>en_US</language>
           </dimensions>
@@ -1632,15 +1640,16 @@
           <properties/>
          </variant>
          <node identifier="8170a593-17ce-86a0-feeb-229fbb33758d" nodeName="node52a72865bd65a">
-          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Image" version="4" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Image" version="5" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
            <accessRoles __type="array"/>
            <properties>
             <caption __type="string">&lt;p&gt;Enter caption here&lt;/p&gt;</caption>
-            <image __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;originalImage&quot;:{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;typo3-logo-cornify-small.png&quot;,&quot;hash&quot;:&quot;508d533cb989bddf1dbc68b4cb7cc5c72e598cf3&quot;,&quot;__identity&quot;:&quot;2561f821-2bea-1a41-34d9-862fd368b092&quot;},&quot;__identity&quot;:&quot;54da13ee-9ced-e56f-aa4f-b1265f35fb0c&quot;},&quot;processingInstructions&quot;:[{&quot;command&quot;:&quot;crop&quot;,&quot;options&quot;:{&quot;start&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;size&quot;:{&quot;width&quot;:1200,&quot;height&quot;:335}}},{&quot;command&quot;:&quot;resize&quot;,&quot;options&quot;:{&quot;size&quot;:{&quot;width&quot;:1200,&quot;height&quot;:336}}}]}</image>
+            <image __type="object" __identifier="66dd5945-5973-91b0-2bba-cc5be58fcc2b" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;66dd5945-5973-91b0-2bba-cc5be58fcc2b&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;54da13ee-9ced-e56f-aa4f-b1265f35fb0c&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;typo3-logo-cornify-small.png&quot;,&quot;hash&quot;:&quot;508d533cb989bddf1dbc68b4cb7cc5c72e598cf3&quot;,&quot;__identity&quot;:&quot;2561f821-2bea-1a41-34d9-862fd368b092&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:335,&quot;width&quot;:1200,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;5d06f745-0fb6-d50e-d1b0-76667be6879c&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;height&quot;:336,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;ratioMode&quot;:null,&quot;width&quot;:1200,&quot;__identity&quot;:&quot;64d96638-9b75-5e72-4e9f-412d38799eef&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
             <title __type="string">TYPO3 Cornified</title>
+            <alignment __type="string"></alignment>
            </properties>
           </variant>
          </node>
@@ -1767,14 +1776,14 @@
         <properties/>
        </variant>
        <node identifier="5f055aca-616a-dd77-112b-3c45d1b591fb" nodeName="node524a8a41c2f1f">
-        <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+        <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
          <dimensions>
           <language>en_US</language>
          </dimensions>
          <accessRoles __type="array"/>
          <properties>
-          <text __type="string">
-								&lt;p&gt;In only a few years from now, the world will have entirely new cities. Cities where development has not even started. Cities that can draw from all we know about liveability and functionality. &lt;/p&gt;&lt;p&gt;The same goes for websites. Major websites will be built with the tools we’re constructing today. But we don't know how they will be like. Just think of how different sites were 3 years ago. For both cities and websites, one basic rule counts: Things are constantly changing and can never be fully anticipated.&lt;/p&gt;&lt;p&gt;The inspiration from urban planning permeates our UX master plan, giving us crucial guidelines for structuring everything we know  - and making room for all the future change we don’t know.  &lt;/p&gt;</text>
+          <text __type="string">&lt;p&gt;
+								&lt;/p&gt;&lt;p&gt;In only a few years from now, the world will have entirely new cities. Cities where development has not even started. Cities that can draw from all we know about liveability and functionality. &lt;/p&gt;&lt;p&gt;The same goes for websites. Major websites will be built with the tools we’re constructing today. But we don't know how they will be like. Just think of how different sites were 3 years ago. For both cities and websites, one basic rule counts: Things are constantly changing and can never be fully anticipated.&lt;/p&gt;&lt;p&gt;The inspiration from urban planning permeates our UX master plan, giving us crucial guidelines for structuring everything we know  - and making room for all the future change we don’t know.  &lt;/p&gt;</text>
          </properties>
         </variant>
        </node>
@@ -1799,14 +1808,14 @@
         <properties/>
        </variant>
        <node identifier="dbfd9c7d-1689-2f00-9d91-420d2a7ceb63" nodeName="node524a8a4beba47">
-        <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+        <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
          <dimensions>
           <language>en_US</language>
          </dimensions>
          <accessRoles __type="array"/>
          <properties>
-          <text __type="string">
-								&lt;p&gt;The distribution of power in a city makes sure that everyone gets what they need. You don’t power a shed in the way you power a nuclear plant. The ultra-simple editing already available in the alpha makes editors center their attention on content. If you need to add SEO data next to the content, Neos has an inspector that opens up for that kind of functionality. Just a bit more power, one step at a time... &lt;/p&gt;&lt;p&gt;If you need more, the inspector will be expandable to the full backend screen providing the user with all the options. That’s not enough? Create custom backend modules. And if even that's not enough, underlying Neos, we have Flow - a first-class web framework that enables you to build web applications that integrate with your other systems. &lt;/p&gt;&lt;p&gt; &lt;/p&gt;</text>
+          <text __type="string">&lt;p&gt;
+								&lt;/p&gt;&lt;p&gt;The distribution of power in a city makes sure that everyone gets what they need. You don’t power a shed in the way you power a nuclear plant. The ultra-simple editing already available in the alpha makes editors center their attention on content. If you need to add SEO data next to the content, Neos has an inspector that opens up for that kind of functionality. Just a bit more power, one step at a time... &lt;/p&gt;&lt;p&gt;If you need more, the inspector will be expandable to the full backend screen providing the user with all the options. That’s not enough? Create custom backend modules. And if even that's not enough, underlying Neos, we have Flow - a first-class web framework that enables you to build web applications that integrate with your other systems. &lt;/p&gt;&lt;p&gt; &lt;/p&gt;</text>
          </properties>
         </variant>
        </node>
@@ -1910,14 +1919,13 @@
         </variant>
        </node>
        <node identifier="1c971ea6-e7f1-bf97-0994-16870c4d1160" nodeName="untitled">
-        <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
+        <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
          <dimensions>
           <language>en_US</language>
          </dimensions>
          <accessRoles __type="array"/>
          <properties>
           <text __type="string">&lt;p&gt;Besides developing we try to offer &lt;a href=&quot;http://neos.typo3.org/documentation.html&quot;&gt;documentation&lt;/a&gt; as good as possible. While this documentation is not yet a full reference on how to use all features of TYPO3 Neos in detail, it will get you started using the product. Any help in improving the documentation is highly appreciated!&lt;br/&gt;&lt;/p&gt;</text>
-          <title __type="string">Untitled</title>
          </properties>
         </variant>
        </node>
@@ -1966,7 +1974,7 @@
      </node>
     </node>
     <node identifier="f380fbcd-2c5a-4c9b-b1c3-da9e1dc803cc" nodeName="teaser">
-     <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="250" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>en_US</language>
       </dimensions>
@@ -1992,13 +2000,13 @@
         <title __type="string">&lt;h1&gt;Internationalisiert.&lt;br/&gt;&lt;/h1&gt;</title>
        </properties>
       </variant>
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="2" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="3" removed="" hidden="" hiddenInIndex="">
        <dimensions>
-        <language>fr</language>
+        <language>nl</language>
        </dimensions>
        <accessRoles __type="array"/>
        <properties>
-        <title __type="string">&lt;h1&gt;International.&lt;br/&gt;&lt;/h1&gt;</title>
+        <title __type="string">&lt;h1&gt;Geïnternationaliseerd.&lt;/h1&gt;</title>
        </properties>
       </variant>
       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="3" removed="" hidden="" hiddenInIndex="">
@@ -2012,20 +2020,20 @@
       </variant>
       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="2" removed="" hidden="" hiddenInIndex="">
        <dimensions>
+        <language>fr</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <properties>
+        <title __type="string">&lt;h1&gt;International.&lt;br/&gt;&lt;/h1&gt;</title>
+       </properties>
+      </variant>
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
         <language>lv</language>
        </dimensions>
        <accessRoles __type="array"/>
        <properties>
         <title __type="string">&lt;h1&gt;Internacionalizēts.&lt;/h1&gt;</title>
-       </properties>
-      </variant>
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="3" removed="" hidden="" hiddenInIndex="">
-       <dimensions>
-        <language>nl</language>
-       </dimensions>
-       <accessRoles __type="array"/>
-       <properties>
-        <title __type="string">&lt;h1&gt;Geïnternationaliseerd.&lt;/h1&gt;</title>
        </properties>
       </variant>
      </node>
@@ -2050,7 +2058,7 @@
        <accessRoles __type="array"/>
        <properties>
         <title __type="string">I. Down the Rabbit-hole</title>
-        <chapterImage __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;originalImage&quot;:{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-1.jpg&quot;,&quot;hash&quot;:&quot;30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f&quot;,&quot;__identity&quot;:&quot;79253932-60ce-86ad-5ad8-265c3cbeac37&quot;},&quot;__identity&quot;:&quot;b30eeaa8-4a11-0caa-a685-bd845cbb68d8&quot;},&quot;processingInstructions&quot;:[{&quot;command&quot;:&quot;crop&quot;,&quot;options&quot;:{&quot;start&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;size&quot;:{&quot;width&quot;:359,&quot;height&quot;:500}}},{&quot;command&quot;:&quot;resize&quot;,&quot;options&quot;:{&quot;size&quot;:{&quot;width&quot;:359,&quot;height&quot;:500}}}]}</chapterImage>
+        <chapterImage __type="object" __identifier="201b68e6-9f60-f34b-0083-b1bf219b08f3" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;201b68e6-9f60-f34b-0083-b1bf219b08f3&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;b30eeaa8-4a11-0caa-a685-bd845cbb68d8&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-1.jpg&quot;,&quot;hash&quot;:&quot;30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f&quot;,&quot;__identity&quot;:&quot;79253932-60ce-86ad-5ad8-265c3cbeac37&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;ratioMode&quot;:null,&quot;width&quot;:359,&quot;__identity&quot;:&quot;071c02f3-78ae-a053-66e1-5a48e191dad0&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;},{&quot;height&quot;:500,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;68598edc-78d5-5b0a-3ec5-15ea8555e318&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</chapterImage>
         <chapterDescription __type="string">Alice was beginning to get very tired of sitting by her sister on the bank, and
 						of having nothing to do: once or twice she had peeped into the book her sister was reading, but
 						it had no pictures or conversations in it, &quot;and what is the use of a book,&quot; thought
@@ -2088,7 +2096,7 @@
        <accessRoles __type="array"/>
        <properties>
         <title __type="string">II. The Pool of Tears</title>
-        <chapterImage __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;originalImage&quot;:{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-2.jpg&quot;,&quot;hash&quot;:&quot;0641ce611d5171161c853f70ff1ae0f33dd4dc24&quot;,&quot;__identity&quot;:&quot;2de69658-9cc7-f108-b361-50de3ebd3587&quot;},&quot;__identity&quot;:&quot;93c55a28-4047-f153-22fa-a0d956b4df01&quot;},&quot;processingInstructions&quot;:[{&quot;command&quot;:&quot;crop&quot;,&quot;options&quot;:{&quot;start&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;size&quot;:{&quot;width&quot;:353,&quot;height&quot;:500}}},{&quot;command&quot;:&quot;resize&quot;,&quot;options&quot;:{&quot;size&quot;:{&quot;width&quot;:353,&quot;height&quot;:500}}}]}</chapterImage>
+        <chapterImage __type="object" __identifier="1d0d4e41-bc2a-2cad-c495-21a46ffecdb8" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;1d0d4e41-bc2a-2cad-c495-21a46ffecdb8&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;93c55a28-4047-f153-22fa-a0d956b4df01&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-2.jpg&quot;,&quot;hash&quot;:&quot;0641ce611d5171161c853f70ff1ae0f33dd4dc24&quot;,&quot;__identity&quot;:&quot;2de69658-9cc7-f108-b361-50de3ebd3587&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;ratioMode&quot;:null,&quot;width&quot;:353,&quot;__identity&quot;:&quot;70331905-908f-8bfc-9ad0-4a638966a230&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;},{&quot;height&quot;:500,&quot;width&quot;:353,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;845a61c7-1441-e421-2004-63b41fd79dd5&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</chapterImage>
         <chapterDescription __type="string">Curiouser and curiouser!&quot; cried Alice (she was so much surprised, that for
 						a moment she quite forgot how to speak good English); &quot;now I'm opening out like the largest
 						telescope that ever was! Good-bye, feet!&quot; (for when she looked down at her feet, they
@@ -2131,7 +2139,7 @@
 						draggled feathers, the animals with their fur clinging close to them, and all dripping wet,
 						cross, and uncomfortable.
 					</chapterDescription>
-        <chapterImage __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;originalImage&quot;:{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;flying.jpg&quot;,&quot;hash&quot;:&quot;ae939055564831ad71ed68284e3b6725f29c1045&quot;,&quot;__identity&quot;:&quot;14148fb6-5234-fd4c-6e88-26a186e0b2f3&quot;},&quot;__identity&quot;:&quot;a798ee5d-e75b-3595-578e-056439e1695e&quot;},&quot;processingInstructions&quot;:[{&quot;command&quot;:&quot;crop&quot;,&quot;options&quot;:{&quot;start&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;size&quot;:{&quot;width&quot;:373,&quot;height&quot;:500}}},{&quot;command&quot;:&quot;resize&quot;,&quot;options&quot;:{&quot;size&quot;:{&quot;width&quot;:373,&quot;height&quot;:500}}}]}</chapterImage>
+        <chapterImage __type="object" __identifier="310de05c-479b-e16b-dd8e-db1fd4f56d28" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;310de05c-479b-e16b-dd8e-db1fd4f56d28&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a798ee5d-e75b-3595-578e-056439e1695e&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;flying.jpg&quot;,&quot;hash&quot;:&quot;ae939055564831ad71ed68284e3b6725f29c1045&quot;,&quot;__identity&quot;:&quot;14148fb6-5234-fd4c-6e88-26a186e0b2f3&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;width&quot;:373,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;1c21f25c-c4d1-f175-3746-8303f95d2666&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;ratioMode&quot;:null,&quot;width&quot;:373,&quot;__identity&quot;:&quot;a44cba47-e79f-3136-2ee8-a91cd3e1dfbe&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">iii-a-caucus-race-and-a-long-tale</uriPathSegment>
        </properties>
@@ -2170,7 +2178,7 @@
 						Duchess! The Duchess! Oh my dear paws! Oh my fur and whiskers! She'll get me executed, as sure
 						as ferrets are ferrets!
 					</chapterDescription>
-        <chapterImage __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;originalImage&quot;:{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alicecards.jpg&quot;,&quot;hash&quot;:&quot;0d5f77e755f664b393b62ca51a056c06f05e83c6&quot;,&quot;__identity&quot;:&quot;9a2cd8b5-c9ad-7bad-e483-25fb73a4c562&quot;},&quot;__identity&quot;:&quot;a0178d77-5c04-b829-a613-c9d2b6fb92cb&quot;},&quot;processingInstructions&quot;:[{&quot;command&quot;:&quot;crop&quot;,&quot;options&quot;:{&quot;start&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;size&quot;:{&quot;width&quot;:356,&quot;height&quot;:500}}},{&quot;command&quot;:&quot;resize&quot;,&quot;options&quot;:{&quot;size&quot;:{&quot;width&quot;:356,&quot;height&quot;:500}}}]}</chapterImage>
+        <chapterImage __type="object" __identifier="a24bdc6d-424b-8639-0c30-817b4ce29a64" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;a24bdc6d-424b-8639-0c30-817b4ce29a64&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a0178d77-5c04-b829-a613-c9d2b6fb92cb&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alicecards.jpg&quot;,&quot;hash&quot;:&quot;0d5f77e755f664b393b62ca51a056c06f05e83c6&quot;,&quot;__identity&quot;:&quot;9a2cd8b5-c9ad-7bad-e483-25fb73a4c562&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;ratioMode&quot;:null,&quot;width&quot;:356,&quot;__identity&quot;:&quot;253adffc-fc5b-429a-ecd2-fdc183333a71&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;},{&quot;height&quot;:500,&quot;width&quot;:356,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;73e22204-5743-2c45-090b-38ab4ad44601&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">iv-the-rabbit-sends-in-a-little-bill</uriPathSegment>
        </properties>
@@ -2206,7 +2214,7 @@
         <layout __type="string">chapter</layout>
         <title __type="string">IX. 	The Mock Turtle's Story</title>
         <chapterDescription __type="string">You can't think how glad I am to see you again, you dear old thing!&quot; said the Duchess, as she tucked her arm affectionately into Alice's, and they walked off together. Alice was very glad to find her in such a pleasant temper, and thought to herself that perhaps it was only the pepper that had made her so savage when they met in the kitchen.</chapterDescription>
-        <chapterImage __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;originalImage&quot;:{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;birds.jpg&quot;,&quot;hash&quot;:&quot;dd224dfed85490797a385d01ccd91053670d00ce&quot;,&quot;__identity&quot;:&quot;4d119e80-eda4-320e-eb34-300ddc5624e4&quot;},&quot;__identity&quot;:&quot;0bf33a79-3ee6-cdb2-94f1-95bc46beee0b&quot;},&quot;processingInstructions&quot;:[{&quot;command&quot;:&quot;crop&quot;,&quot;options&quot;:{&quot;start&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;size&quot;:{&quot;width&quot;:372,&quot;height&quot;:500}}},{&quot;command&quot;:&quot;resize&quot;,&quot;options&quot;:{&quot;size&quot;:{&quot;width&quot;:372,&quot;height&quot;:500}}}]}</chapterImage>
+        <chapterImage __type="object" __identifier="b23052f2-bd58-854c-b613-ea76f7d4a401" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;b23052f2-bd58-854c-b613-ea76f7d4a401&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;0bf33a79-3ee6-cdb2-94f1-95bc46beee0b&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;birds.jpg&quot;,&quot;hash&quot;:&quot;dd224dfed85490797a385d01ccd91053670d00ce&quot;,&quot;__identity&quot;:&quot;4d119e80-eda4-320e-eb34-300ddc5624e4&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;width&quot;:372,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;569aea25-3c4c-ca07-3421-fabe9f594266&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;ratioMode&quot;:null,&quot;width&quot;:372,&quot;__identity&quot;:&quot;d4c473b4-da95-d3a1-57aa-7eba7fe27741&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">ix-the-mock-turtle-s-story</uriPathSegment>
        </properties>
       </variant>
@@ -2293,7 +2301,7 @@
       </node>
      </node>
      <node identifier="3d9ed0c7-efe2-4d32-1977-28d24cd53aab" nodeName="teaser">
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="250" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
@@ -2323,7 +2331,7 @@
         <chapterDescription __type="string">The Caterpillar and Alice looked at each other for some time in silence: at last
 						the Caterpillar took the hookah out of its mouth, and addressed her in a languid, sleepy voice.
 					</chapterDescription>
-        <chapterImage __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;originalImage&quot;:{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;smoking.jpg&quot;,&quot;hash&quot;:&quot;930b8279a553880c49d7a73765778907ce392db5&quot;,&quot;__identity&quot;:&quot;57786bc3-d0e5-a181-c9c6-9675ff39cf91&quot;},&quot;__identity&quot;:&quot;d08de093-dc6b-55ea-adfc-d894ef87b0e0&quot;},&quot;processingInstructions&quot;:[{&quot;command&quot;:&quot;crop&quot;,&quot;options&quot;:{&quot;start&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;size&quot;:{&quot;width&quot;:337,&quot;height&quot;:500}}},{&quot;command&quot;:&quot;resize&quot;,&quot;options&quot;:{&quot;size&quot;:{&quot;width&quot;:337,&quot;height&quot;:499}}}]}</chapterImage>
+        <chapterImage __type="object" __identifier="cddbc6af-2f54-2d43-d0af-810cbd3c8bee" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;cddbc6af-2f54-2d43-d0af-810cbd3c8bee&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;d08de093-dc6b-55ea-adfc-d894ef87b0e0&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;smoking.jpg&quot;,&quot;hash&quot;:&quot;930b8279a553880c49d7a73765778907ce392db5&quot;,&quot;__identity&quot;:&quot;57786bc3-d0e5-a181-c9c6-9675ff39cf91&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;width&quot;:337,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;6eb46f32-9070-878b-e625-8ffbc2590880&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;height&quot;:499,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;ratioMode&quot;:null,&quot;width&quot;:337,&quot;__identity&quot;:&quot;ad284210-8b7c-18a1-c577-266e5bf10fd6&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">v-advice-from-a-caterpillar</uriPathSegment>
        </properties>
@@ -2362,7 +2370,7 @@
 						footman because he was in livery: otherwise, judging by his face only, she would have called him
 						a fish)—and rapped loudly at the door with his knuckles.
 					</chapterDescription>
-        <chapterImage __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;originalImage&quot;:{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;piggy.jpg&quot;,&quot;hash&quot;:&quot;85e5d4f8e34ad7dad4a34ba7af45d5584ea3db14&quot;,&quot;__identity&quot;:&quot;4bf693a4-93fe-5cba-4518-4e9897147fe4&quot;},&quot;__identity&quot;:&quot;65e3383c-173c-2f2e-1afc-259ba2bd3ca6&quot;},&quot;processingInstructions&quot;:[{&quot;command&quot;:&quot;crop&quot;,&quot;options&quot;:{&quot;start&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;size&quot;:{&quot;width&quot;:357,&quot;height&quot;:500}}},{&quot;command&quot;:&quot;resize&quot;,&quot;options&quot;:{&quot;size&quot;:{&quot;width&quot;:357,&quot;height&quot;:500}}}]}</chapterImage>
+        <chapterImage __type="object" __identifier="cc7a55e2-70f2-4a73-4856-07e9db6734b1" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;cc7a55e2-70f2-4a73-4856-07e9db6734b1&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;65e3383c-173c-2f2e-1afc-259ba2bd3ca6&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;piggy.jpg&quot;,&quot;hash&quot;:&quot;85e5d4f8e34ad7dad4a34ba7af45d5584ea3db14&quot;,&quot;__identity&quot;:&quot;4bf693a4-93fe-5cba-4518-4e9897147fe4&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;ratioMode&quot;:null,&quot;width&quot;:357,&quot;__identity&quot;:&quot;b514aabb-531b-e198-3632-a0a2346fb9fc&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;},{&quot;height&quot;:500,&quot;width&quot;:357,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;fca67d79-4159-bf16-235f-7f69f2943655&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">vi-pig-and-pepper</uriPathSegment>
        </properties>
@@ -2397,7 +2405,7 @@
        <properties>
         <title __type="string">VII. A Mad Tea-party</title>
         <chapterDescription __type="string">There was a table set out under a tree in front of the house, and the March Hare and the Hatter were having tea at it.</chapterDescription>
-        <chapterImage __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;originalImage&quot;:{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;teatime.jpg&quot;,&quot;hash&quot;:&quot;b1b18947b2bebc44c6bbab46922f2a3856f5e33b&quot;,&quot;__identity&quot;:&quot;f814656c-6e15-5ee6-1059-9735fb760816&quot;},&quot;__identity&quot;:&quot;6bc60415-af45-b2f4-af11-73b32e4532e9&quot;},&quot;processingInstructions&quot;:[{&quot;command&quot;:&quot;crop&quot;,&quot;options&quot;:{&quot;start&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;size&quot;:{&quot;width&quot;:359,&quot;height&quot;:500}}},{&quot;command&quot;:&quot;resize&quot;,&quot;options&quot;:{&quot;size&quot;:{&quot;width&quot;:359,&quot;height&quot;:500}}}]}</chapterImage>
+        <chapterImage __type="object" __identifier="f3d0fcad-03e0-c72a-4df2-258f7cfff348" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f3d0fcad-03e0-c72a-4df2-258f7cfff348&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;6bc60415-af45-b2f4-af11-73b32e4532e9&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;teatime.jpg&quot;,&quot;hash&quot;:&quot;b1b18947b2bebc44c6bbab46922f2a3856f5e33b&quot;,&quot;__identity&quot;:&quot;f814656c-6e15-5ee6-1059-9735fb760816&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;4d68929f-1a6c-8499-8416-c53e9c46d801&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;ratioMode&quot;:null,&quot;width&quot;:359,&quot;__identity&quot;:&quot;805dbf80-deec-5aab-b855-6609c3cbb661&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">vii-a-mad-tea-party</uriPathSegment>
        </properties>
@@ -2433,7 +2441,7 @@
         <layout __type="string">chapter</layout>
         <title __type="string">VIII. The Queen's Croquet-ground</title>
         <chapterDescription __type="string">A large rose-tree stood near the entrance of the garden: the roses growing on it were white, but there were three gardeners at it, busily painting them red. Alice thought this a very curious thing, and she went nearer to watch them, and just as she came up to them she heard one of them say &quot;Look out now, Five! Don't go splashing paint over me like that!&quot;</chapterDescription>
-        <chapterImage __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;originalImage&quot;:{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;queen.jpg&quot;,&quot;hash&quot;:&quot;7861cd0cc497284869845b442b46ee25224c4685&quot;,&quot;__identity&quot;:&quot;24f8cd98-708a-c664-a08b-73914f39025e&quot;},&quot;__identity&quot;:&quot;8244a1f2-5474-c7c2-0bcb-2c1f53080103&quot;},&quot;processingInstructions&quot;:[{&quot;command&quot;:&quot;crop&quot;,&quot;options&quot;:{&quot;start&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;size&quot;:{&quot;width&quot;:364,&quot;height&quot;:500}}},{&quot;command&quot;:&quot;resize&quot;,&quot;options&quot;:{&quot;size&quot;:{&quot;width&quot;:364,&quot;height&quot;:500}}}]}</chapterImage>
+        <chapterImage __type="object" __identifier="1fd75420-91e2-70b2-4f7e-20d0f5900b3c" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;1fd75420-91e2-70b2-4f7e-20d0f5900b3c&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;8244a1f2-5474-c7c2-0bcb-2c1f53080103&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;queen.jpg&quot;,&quot;hash&quot;:&quot;7861cd0cc497284869845b442b46ee25224c4685&quot;,&quot;__identity&quot;:&quot;24f8cd98-708a-c664-a08b-73914f39025e&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;ratioMode&quot;:null,&quot;width&quot;:364,&quot;__identity&quot;:&quot;27aee320-aa22-6cdd-9752-ef9d07485a87&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;},{&quot;height&quot;:500,&quot;width&quot;:364,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;880bae83-26fc-0536-9fb3-15579ca401a8&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">viii-the-queen-s-croquet-ground</uriPathSegment>
        </properties>
       </variant>
@@ -2468,7 +2476,7 @@
         <layout __type="string">chapter</layout>
         <title __type="string">X. 	The Lobster Quadrille</title>
         <chapterDescription __type="string">The Mock Turtle sighed deeply, and drew the back of one flapper across his eyes. He looked at Alice, and tried to speak, but, for a minute or two, sobs choked his voice. &quot;Same as if he had a bone in his throat,&quot; said the Gryphon: and it set to work shaking him and punching him in the back.</chapterDescription>
-        <chapterImage __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;originalImage&quot;:{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;cooking.jpg&quot;,&quot;hash&quot;:&quot;7d0265f93741373a60457ba586f6d7a8c0865a09&quot;,&quot;__identity&quot;:&quot;8eb0ba0c-bd0b-7da2-0f4d-77149299c2fe&quot;},&quot;__identity&quot;:&quot;17602a91-ba2b-c40d-e9fe-10f92ea6bd8b&quot;},&quot;processingInstructions&quot;:[{&quot;command&quot;:&quot;crop&quot;,&quot;options&quot;:{&quot;start&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;size&quot;:{&quot;width&quot;:384,&quot;height&quot;:500}}},{&quot;command&quot;:&quot;resize&quot;,&quot;options&quot;:{&quot;size&quot;:{&quot;width&quot;:384,&quot;height&quot;:500}}}]}</chapterImage>
+        <chapterImage __type="object" __identifier="24ba5744-8475-c519-9dcb-e6ef740bc0d3" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;24ba5744-8475-c519-9dcb-e6ef740bc0d3&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;17602a91-ba2b-c40d-e9fe-10f92ea6bd8b&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;cooking.jpg&quot;,&quot;hash&quot;:&quot;7d0265f93741373a60457ba586f6d7a8c0865a09&quot;,&quot;__identity&quot;:&quot;8eb0ba0c-bd0b-7da2-0f4d-77149299c2fe&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;width&quot;:384,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;0e7b7690-c9c6-1e8a-5c13-766bdb549bd0&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;ratioMode&quot;:null,&quot;width&quot;:384,&quot;__identity&quot;:&quot;b5a70ab6-9dfb-e116-3b35-bc3db5ad8609&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">x-the-lobster-quadrille</uriPathSegment>
        </properties>
       </variant>
@@ -2503,7 +2511,7 @@
         <layout __type="string">chapter</layout>
         <title __type="string">XI. 	Who Stole the Tarts?</title>
         <chapterDescription __type="string">The King and Queen of Hearts were seated on their throne when they arrived, with a great crowd assembled about them—all sorts of little birds and beasts, as well as the whole pack of cards: the Knave was standing before them, in chains, with a soldier on each side to guard him;</chapterDescription>
-        <chapterImage __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;originalImage&quot;:{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;roses.jpg&quot;,&quot;hash&quot;:&quot;ee94449bfc53d38d8e286879f38365ef3e9ca215&quot;,&quot;__identity&quot;:&quot;2710ab07-64b4-242a-a897-4fc10f83d4bd&quot;},&quot;__identity&quot;:&quot;b674d9cd-4a7f-a33a-be12-9a5efdaedb98&quot;},&quot;processingInstructions&quot;:[{&quot;command&quot;:&quot;crop&quot;,&quot;options&quot;:{&quot;start&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;size&quot;:{&quot;width&quot;:364,&quot;height&quot;:500}}},{&quot;command&quot;:&quot;resize&quot;,&quot;options&quot;:{&quot;size&quot;:{&quot;width&quot;:364,&quot;height&quot;:500}}}]}</chapterImage>
+        <chapterImage __type="object" __identifier="f16e4228-5361-cccd-8c12-4733331e65eb" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f16e4228-5361-cccd-8c12-4733331e65eb&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;b674d9cd-4a7f-a33a-be12-9a5efdaedb98&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;roses.jpg&quot;,&quot;hash&quot;:&quot;ee94449bfc53d38d8e286879f38365ef3e9ca215&quot;,&quot;__identity&quot;:&quot;2710ab07-64b4-242a-a897-4fc10f83d4bd&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;width&quot;:364,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;1fa48f42-d1a1-4fcd-43a9-536b0245f062&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;ratioMode&quot;:null,&quot;width&quot;:364,&quot;__identity&quot;:&quot;dffcef0f-92bf-749d-f47c-e20aa3c0fab6&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">xi-who-stole-the-tarts</uriPathSegment>
        </properties>
       </variant>
@@ -2538,7 +2546,7 @@
         <layout __type="string">chapter</layout>
         <title __type="string">XII. 	Alice's Evidence</title>
         <chapterDescription __type="string">&quot;There!&quot; cried Alice, quite forgetting in the flurry of the moment how large she had grown in the last few minutes, and she jumped up in such a hurry that she tipped over the jury-box with the edge of her skirt, upsetting all the jurymen on to the heads of the crowd below, and there they lay sprawling about, ...</chapterDescription>
-        <chapterImage __type="object" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;originalImage&quot;:{&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;people.jpg&quot;,&quot;hash&quot;:&quot;504f2f8ad00d1a9ef228b288ca42107905c9e22e&quot;,&quot;__identity&quot;:&quot;bf2bdc0d-64fc-ec23-84c4-7db35456dc2b&quot;},&quot;__identity&quot;:&quot;10b114c2-7fc3-6e3a-ab8f-0a85a0854143&quot;},&quot;processingInstructions&quot;:[{&quot;command&quot;:&quot;crop&quot;,&quot;options&quot;:{&quot;start&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;size&quot;:{&quot;width&quot;:359,&quot;height&quot;:500}}},{&quot;command&quot;:&quot;resize&quot;,&quot;options&quot;:{&quot;size&quot;:{&quot;width&quot;:359,&quot;height&quot;:500}}}]}</chapterImage>
+        <chapterImage __type="object" __identifier="e4abd49b-c36b-7892-d0f4-a8441b799b85" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;e4abd49b-c36b-7892-d0f4-a8441b799b85&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;10b114c2-7fc3-6e3a-ab8f-0a85a0854143&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;people.jpg&quot;,&quot;hash&quot;:&quot;504f2f8ad00d1a9ef228b288ca42107905c9e22e&quot;,&quot;__identity&quot;:&quot;bf2bdc0d-64fc-ec23-84c4-7db35456dc2b&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;0ec14cd8-6e89-aed5-2867-a48e7aeb3eb7&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;ratioMode&quot;:null,&quot;width&quot;:359,&quot;__identity&quot;:&quot;f215ca3d-b4dd-5f94-440a-8c46a46349db&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">xii-alice-s-evidence</uriPathSegment>
        </properties>
       </variant>
@@ -2634,14 +2642,12 @@
          <properties/>
         </variant>
         <node identifier="e08d2da3-e60f-fc43-7121-5be0be8d45c6" nodeName="node524dabaf47175">
-         <variant sortingIndex="100" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Registration" version="3" removed="" hidden="" hiddenInIndex="">
+         <variant sortingIndex="100" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Registration" version="4" removed="" hidden="" hiddenInIndex="">
           <dimensions>
            <language>en_US</language>
           </dimensions>
           <accessRoles __type="array"/>
-          <properties>
-           <action __type="string">newAccount</action>
-          </properties>
+          <properties/>
          </variant>
         </node>
        </node>
