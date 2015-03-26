@@ -3,12 +3,21 @@
 #                                                                        #
 
 privilegeTargets:
-  TYPO3\Flow\Security\Authorization\Privilege\Method\MethodPrivilege:
+  'TYPO3\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
+
     TYPO3_NeosDemoTypo3Org_RegistrationAccess:
       matcher: method(TYPO3\NeosDemoTypo3Org\Controller\RegistrationController->(index|newAccount|createAccount|createTemporaryAccount)Action())
     TYPO3_NeosDemoTypo3Org_FlickrAccess:
       matcher: method(TYPO3\NeosDemoTypo3Org\Controller\FlickrController->(tagStream|userStream)Action())
+
+  'TYPO3\TYPO3CR\Security\Authorization\Privilege\Node\ReadNodePrivilege':
+
+    'TYPO3.NeosDemoTypo3Org:MembersArea':
+      # fee74676-c42f-89da-208e-1741a66525d4 is the node identifier of the "member-area" node, by default located at "/sites/neosdemotypo3org/member-area"
+      matcher: 'isDescendantNodeOf("fee74676-c42f-89da-208e-1741a66525d4")'
+
 roles:
+
   'TYPO3.Flow:Everybody':
     privileges:
       -
@@ -16,4 +25,19 @@ roles:
         permission: GRANT
       -
         privilegeTarget: TYPO3_NeosDemoTypo3Org_FlickrAccess
+        permission: GRANT
+
+
+  'Flowpack.Neos.FrontendLogin:User':
+    privileges:
+      -
+          # Grant "frontend users" to access the "Member area"
+        privilegeTarget: 'TYPO3.NeosDemoTypo3Org:MembersArea'
+        permission: GRANT
+
+  'TYPO3.Neos:Editor':
+    privileges:
+      -
+          # Grant "backend users" to access the "Member area" - Otherwise those pages would be hidden in the backend, too!
+        privilegeTarget: 'TYPO3.NeosDemoTypo3Org:MembersArea'
         permission: GRANT

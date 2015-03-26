@@ -1707,6 +1707,67 @@
        </variant>
       </node>
      </node>
+     <node identifier="b6788725-56c8-4284-400f-fdb990297cfa" nodeName="frontend-user-login">
+      <variant sortingIndex="950" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en_US</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <properties>
+        <uriPathSegment __type="string">frontend-user-login</uriPathSegment>
+        <title __type="string">Frontend User Login</title>
+       </properties>
+      </variant>
+      <node identifier="d9df0160-8771-77e2-dcb2-c49a19a71c40" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en_US</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <properties/>
+       </variant>
+       <node identifier="51580fa9-90b0-edc4-a488-3724ae6bcb19" nodeName="login-form">
+        <variant sortingIndex="100" workspace="live" nodeType="Flowpack.Neos.FrontendLogin:LoginForm" version="3" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>en_US</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <properties/>
+        </variant>
+       </node>
+       <node identifier="39609b41-500a-fcc8-c9ef-392e99528119" nodeName="node-5511c8a29528e">
+        <variant sortingIndex="50" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="10" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>en_US</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <properties>
+          <title __type="string">&lt;h1&gt;Frontend User Login&lt;/h1&gt;</title>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="a96a1759-3196-33e0-f769-97216b659b0b" nodeName="node-5511c91755625">
+        <variant sortingIndex="75" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="7" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>en_US</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <properties>
+          <text __type="string">&lt;p&gt;This is a simple plugin demonstrating a &lt;strong&gt;Login Form for Frontend Users.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Once logged in, you should be able to access the exemplary &lt;a href=&quot;node://fee74676-c42f-89da-208e-1741a66525d4&quot; data-gentics-aloha-repository=&quot;node-repository&quot; data-gentics-aloha-object-id=&quot;fee74676-c42f-89da-208e-1741a66525d4&quot;&gt;Member Area&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;If you installed the demo site yourself, you can create a Frontend User via the command&lt;/p&gt;&lt;pre&gt;./flow frontenduser:create &amp;lt;username&amp;gt; &amp;lt;password&amp;gt; &amp;lt;first-name&amp;gt; &amp;lt;last-name&amp;gt;&lt;/pre&gt;&lt;p&gt;On our demo installations there is a user setup with a username &quot;&lt;strong&gt;member&lt;/strong&gt;&quot; and a password &quot;&lt;strong&gt;password&lt;/strong&gt;&quot;.&lt;br/&gt;&lt;/p&gt;</text>
+         </properties>
+        </variant>
+       </node>
+      </node>
+      <node identifier="1559605e-d706-d68f-15cd-27f8d9e28ee3" nodeName="teaser">
+       <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en_US</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <properties/>
+       </variant>
+      </node>
+     </node>
      <node identifier="0e941a26-d4d7-2e89-5376-4f5daaa28828" nodeName="teaser">
       <variant sortingIndex="500" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
        <dimensions>
@@ -2672,6 +2733,119 @@
        <accessRoles __type="array"/>
        <properties/>
       </variant>
+     </node>
+    </node>
+    <node identifier="fee74676-c42f-89da-208e-1741a66525d4" nodeName="member-area">
+     <variant sortingIndex="850" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="4" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>en_US</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <properties>
+       <uriPathSegment __type="string">member-area</uriPathSegment>
+       <title __type="string">Member area</title>
+      </properties>
+     </variant>
+     <node identifier="7202e679-37c7-92fd-0be1-b2d6ca89313d" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en_US</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <properties/>
+      </variant>
+      <node identifier="d6e3e7c4-9695-340f-5de9-1e97cd417e6e" nodeName="node-5534be1a96cc6">
+       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en_US</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <properties>
+         <title __type="string">&lt;h1&gt;Member area&lt;/h1&gt;</title>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="6699ed38-ab50-a627-b0bc-14c363dd6bfa" nodeName="node-5534be246ac2a">
+       <variant sortingIndex="150" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="58" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en_US</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <properties>
+         <text __type="string">&lt;p&gt;This an exemplary protected area of your website that should only be visible to authenticated &quot;Frontend&quot; or &quot;Backend&quot; users according to the provided Policy.yaml:&lt;/p&gt;&lt;pre&gt;privilegeTargets:   &lt;br/&gt;  'TYPO3\TYPO3CR\Security\Authorization\Privilege\Node\ReadNodePrivilege':&lt;br/&gt;    'TYPO3.NeosDemoTypo3Org:MembersArea':&lt;br/&gt;      matcher: 'isDescendantNodeOf(&quot;fee74676-c42f-89da-208e-1741a66525d4&quot;)'&lt;br/&gt;&lt;br/&gt;roles:&lt;br/&gt;  'Flowpack.Neos.FrontendLogin:User':&lt;br/&gt;    privileges:&lt;br/&gt;      -&lt;br/&gt;        privilegeTarget: 'TYPO3.NeosDemoTypo3Org:MembersArea'&lt;br/&gt;        permission: GRANT&lt;br/&gt;&lt;br/&gt;  'TYPO3.Neos:Editor':&lt;br/&gt;    privileges:&lt;br/&gt;      -&lt;br/&gt;        privilegeTarget: 'TYPO3.NeosDemoTypo3Org:MembersArea'&lt;br/&gt;        permission: GRANT&lt;br/&gt;&lt;/pre&gt;&lt;p&gt;You can use the &lt;a href=&quot;node://24f07912-4661-f2dc-dbc0-3c5edefe971e&quot; data-gentics-aloha-repository=&quot;node-repository&quot; data-gentics-aloha-object-id=&quot;24f07912-4661-f2dc-dbc0-3c5edefe971e&quot;&gt;User Profile&lt;/a&gt; to change details of the current user. &lt;br/&gt;If you un-authenticate the current user using the &lt;a href=&quot;node://b6788725-56c8-4284-400f-fdb990297cfa&quot; data-gentics-aloha-repository=&quot;node-repository&quot; data-gentics-aloha-object-id=&quot;b6788725-56c8-4284-400f-fdb990297cfa&quot;&gt;Logout form&lt;/a&gt;, the link to this page will be removed from the main navigation and you won't be able to navigate to this page anymore, even if you know the URL.&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;</text>
+        </properties>
+       </variant>
+      </node>
+     </node>
+     <node identifier="24883051-bccd-c8fb-d578-dfb5982f7f43" nodeName="teaser">
+      <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en_US</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <properties/>
+      </variant>
+     </node>
+     <node identifier="24f07912-4661-f2dc-dbc0-3c5edefe971e" nodeName="user-profile">
+      <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en_US</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <properties>
+        <uriPathSegment __type="string">user-profile</uriPathSegment>
+        <title __type="string">User Profile</title>
+       </properties>
+      </variant>
+      <node identifier="52355915-1664-4543-fd84-09682f3a0903" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en_US</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <properties/>
+       </variant>
+       <node identifier="95ca19f1-bf01-b92e-211f-9d5a7951c86a" nodeName="node-5534bf643b4a5">
+        <variant sortingIndex="150" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="5" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>en_US</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <properties>
+          <title __type="string">&lt;h1&gt;Frontend User Profile&lt;/h1&gt;</title>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="e17835f6-f095-920d-fc9a-4b2ac7550bfc" nodeName="node-5534bf7543bb1">
+        <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="25" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>en_US</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <properties>
+          <text __type="string">&lt;p&gt;The &lt;a href=&quot;https://github.com/Flowpack/Flowpack.Neos.FrontendLogin&quot; target=&quot;_blank&quot;&gt;Flowpack.Neos.FrontendLogin&lt;/a&gt; comes with a minimal example for a &quot;profile plugin&quot; that allows the current user to change its details:&lt;/p&gt;</text>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="bc613455-62d1-1666-917e-594bbcb4e1bd" nodeName="user-profile-plugin">
+        <variant sortingIndex="250" workspace="live" nodeType="Flowpack.Neos.FrontendLogin:Profile" version="4" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>en_US</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <properties/>
+        </variant>
+       </node>
+      </node>
+      <node identifier="f1689b5c-dd89-f779-63db-64f739e2f53a" nodeName="teaser">
+       <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en_US</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <properties/>
+       </variant>
+      </node>
      </node>
     </node>
    </node>
