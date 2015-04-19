@@ -63,6 +63,29 @@
           position: 100
 
 ##
+# Special homepage nodetype that declares a footer child node for usage as shared footer.
+#
+'TYPO3.NeosDemoTypo3Org:Homepage':
+  ui:
+    label: 'Homepage'
+    icon: 'icon-globe'
+  superTypes:
+    'TYPO3.Neos.NodeTypes:Page': TRUE
+  childNodes:
+    'footer':
+      position: 'end'
+      type: 'TYPO3.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          '*': FALSE
+          'TYPO3.Neos.NodeTypes:Headline': TRUE
+          'TYPO3.Neos.NodeTypes:Text': TRUE
+          'TYPO3.Neos.NodeTypes:Image': TRUE
+  constraints:
+    nodeTypes:
+      'TYPO3.NeosDemoTypo3Org:Homepage': FALSE
+
+##
 # Adjust the "Headline" node type:
 # Enable 4th and 5th level and disable "p" in the aloha format selector of the "title" property
 #
