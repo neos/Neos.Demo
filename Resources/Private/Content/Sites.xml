@@ -3,7 +3,7 @@
  <site name="TYPO3 Neos Demo Site" state="1" siteResourcesPackageKey="TYPO3.NeosDemoTypo3Org" siteNodeName="neosdemotypo3org">
   <nodes formatVersion="2.0">
    <node identifier="995c9174-ddd6-4d5c-cfc0-1ffc82184677" nodeName="neosdemotypo3org">
-    <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="27" removed="" hidden="" hiddenInIndex="">
+    <variant sortingIndex="100" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Homepage" version="27" removed="" hidden="" hiddenInIndex="">
      <dimensions>
       <language>en_US</language>
      </dimensions>
