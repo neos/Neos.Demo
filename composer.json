@@ -4,7 +4,7 @@
     "description": "Site package for the TYPO3 Neos Demo Site",
     "license": "GPL-3.0+",
     "require": {
-        "typo3/neos": "*",
+        "typo3/neos": "~2.0.0",
         "typo3/neos-seo": "dev-master",
         "flowpack/neos-frontendlogin": "~1.0"
     },
