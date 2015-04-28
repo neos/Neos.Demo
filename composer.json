@@ -6,7 +6,7 @@
     "require": {
         "typo3/neos": "*",
         "typo3/neos-seo": "dev-master",
-        "flowpack/neos-frontendlogin": "dev-master"
+        "flowpack/neos-frontendlogin": "~1.0"
     },
     "autoload": {
         "psr-0": {
