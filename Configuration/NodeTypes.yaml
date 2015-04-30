@@ -312,6 +312,16 @@
   childNodes:
     carouselItems:
       type: 'TYPO3.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          '*': FALSE
+          'TYPO3.Neos.NodeTypes:Headline': TRUE
+          'TYPO3.Neos.NodeTypes:Text': TRUE
+          'TYPO3.Neos.NodeTypes:TextWithImage': TRUE
+          'TYPO3.Neos.NodeTypes:Image': TRUE
+          'TYPO3.Neos.NodeTypes:Html': TRUE
+          'TYPO3.Neos.NodeTypes:ContentReferences': TRUE
+          'TYPO3.NeosDemoTypo3Org:YouTube': TRUE
   ui:
     label: 'Carousel'
     group: 'plugins'
