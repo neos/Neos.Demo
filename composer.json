@@ -4,7 +4,8 @@
     "description": "Site package for the TYPO3 Neos Demo Site",
     "license": "GPL-3.0+",
     "require": {
-        "typo3/neos": "*"
+        "typo3/neos": "*",
+        "typo3/neos-nodetypes": "*"
     },
     "autoload": {
         "psr-0": {
