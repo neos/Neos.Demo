@@ -493,7 +493,7 @@
 								</variant>
 							</node>
 							<node identifier="a96a1759-3196-33e0-f769-97216b659b0b" nodeName="node-5511c91755625">
-								<variant sortingIndex="75" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="7" removed="" hidden="" hiddenInIndex="">
+								<variant sortingIndex="75" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="8" removed="" hidden="" hiddenInIndex="">
 									<dimensions>
 										<language>en_US</language>
 									</dimensions>
@@ -501,7 +501,7 @@
 									<creationDateTime __type="object" __classname="DateTime">2015-04-30T23:15:00+00:00</creationDateTime>
 									<lastModificationDateTime __type="object" __classname="DateTime">2015-04-30T23:15:00+00:00</lastModificationDateTime>
 									<properties>
-										<text __type="string">&lt;p&gt;This is a simple plugin demonstrating a &lt;strong&gt;Login Form for Frontend Users.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Once logged in, you should be able to access the exemplary &lt;a href=&quot;node://fee74676-c42f-89da-208e-1741a66525d4&quot; data-gentics-aloha-repository=&quot;node-repository&quot; data-gentics-aloha-object-id=&quot;fee74676-c42f-89da-208e-1741a66525d4&quot;&gt;Member Area&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;If you installed the demo site yourself, you can create a Frontend User via the command&lt;/p&gt;&lt;pre&gt;./flow frontenduser:create &amp;lt;username&amp;gt; &amp;lt;password&amp;gt; &amp;lt;first-name&amp;gt; &amp;lt;last-name&amp;gt;&lt;/pre&gt;&lt;p&gt;On our demo installations there is a user setup with a username &quot;&lt;strong&gt;member&lt;/strong&gt;&quot; and a password &quot;&lt;strong&gt;password&lt;/strong&gt;&quot;.&lt;br/&gt;&lt;/p&gt;</text>
+										<text __type="string">&lt;p&gt;This is a simple plugin demonstrating a &lt;strong&gt;Login Form for &quot;Frontend Users&quot;.&lt;/strong&gt;&lt;br/&gt;Once logged in, you should be able to access the exemplary &lt;a href=&quot;node://fee74676-c42f-89da-208e-1741a66525d4&quot; data-gentics-aloha-repository=&quot;node-repository&quot; data-gentics-aloha-object-id=&quot;fee74676-c42f-89da-208e-1741a66525d4&quot;&gt;Member Area&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;If you installed the demo site yourself, you can create a Frontend User via the command:&lt;/p&gt;&lt;pre&gt;./flow user:create --authentication-provider &quot;Flowpack.Neos.FrontendLogin:Frontend&quot; --roles &quot;Flowpack.Neos.FrontendLogin:User&quot;&lt;br/&gt;&lt;/pre&gt;&lt;p&gt;On our demo installations there is a user setup with a username &quot;&lt;strong&gt;member&lt;/strong&gt;&quot; and a password &quot;&lt;strong&gt;password&lt;/strong&gt;&quot;.&lt;br/&gt;&lt;strong&gt;&lt;br/&gt;&lt;em&gt;Note:&lt;/em&gt;&lt;/strong&gt;&lt;em&gt; In the demo site we use the same User domain model for Frontend and Backend, but the Login/Logout plugin is agnostic to the user implementation and you should consider creating a custom User model.&lt;/em&gt;&lt;/p&gt;</text>
 									</properties>
 								</variant>
 							</node>
@@ -2298,7 +2298,7 @@
 								<creationDateTime __type="object" __classname="DateTime">2015-04-30T23:15:01+00:00</creationDateTime>
 								<lastModificationDateTime __type="object" __classname="DateTime">2015-04-30T23:15:01+00:00</lastModificationDateTime>
 								<properties>
-									<text __type="string">&lt;p&gt;This an exemplary protected area of your website that should only be visible to authenticated &quot;Frontend&quot; or &quot;Backend&quot; users according to the provided Policy.yaml:&lt;/p&gt;&lt;pre&gt;privilegeTargets: &lt;br/&gt; 'TYPO3\TYPO3CR\Security\Authorization\Privilege\Node\ReadNodePrivilege':&lt;br/&gt; 'TYPO3.NeosDemoTypo3Org:MembersArea':&lt;br/&gt; matcher: 'isDescendantNodeOf(&quot;fee74676-c42f-89da-208e-1741a66525d4&quot;)'&lt;br/&gt;&lt;br/&gt;roles:&lt;br/&gt; 'Flowpack.Neos.FrontendLogin:User':&lt;br/&gt; privileges:&lt;br/&gt; -&lt;br/&gt; privilegeTarget: 'TYPO3.NeosDemoTypo3Org:MembersArea'&lt;br/&gt; permission: GRANT&lt;br/&gt;&lt;br/&gt; 'TYPO3.Neos:Editor':&lt;br/&gt; privileges:&lt;br/&gt; -&lt;br/&gt; privilegeTarget: 'TYPO3.NeosDemoTypo3Org:MembersArea'&lt;br/&gt; permission: GRANT&lt;br/&gt;&lt;/pre&gt;&lt;p&gt;You can use the &lt;a href=&quot;node://24f07912-4661-f2dc-dbc0-3c5edefe971e&quot; data-gentics-aloha-repository=&quot;node-repository&quot; data-gentics-aloha-object-id=&quot;24f07912-4661-f2dc-dbc0-3c5edefe971e&quot;&gt;User Profile&lt;/a&gt; to change details of the current user. &lt;br/&gt;If you un-authenticate the current user using the &lt;a href=&quot;node://b6788725-56c8-4284-400f-fdb990297cfa&quot; data-gentics-aloha-repository=&quot;node-repository&quot; data-gentics-aloha-object-id=&quot;b6788725-56c8-4284-400f-fdb990297cfa&quot;&gt;Logout form&lt;/a&gt;, the link to this page will be removed from the main navigation and you won't be able to navigate to this page anymore, even if you know the URL.&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;</text>
+									<text __type="string">&lt;p&gt;This an exemplary protected area of your website that should only be visible to authenticated &quot;Frontend&quot; or &quot;Backend&quot; users according to the provided Policy.yaml:&lt;/p&gt;&lt;pre&gt;privilegeTargets:   &lt;br/&gt;  'TYPO3\TYPO3CR\Security\Authorization\Privilege\Node\ReadNodePrivilege':&lt;br/&gt;    'TYPO3.NeosDemoTypo3Org:MembersArea':&lt;br/&gt;        # fee74676-c42f-89da-208e-1741a66525d4 is the identifier of the &quot;Member area&quot; node.&lt;br/&gt;        # You can also specify the nodepath, but that is not as reliable       &lt;br/&gt;      matcher: 'isDescendantNodeOf(&quot;fee74676-c42f-89da-208e-1741a66525d4&quot;)'&lt;br/&gt;&lt;br/&gt;roles:&lt;br/&gt;  'Flowpack.Neos.FrontendLogin:User':&lt;br/&gt;    privileges:&lt;br/&gt;      -&lt;br/&gt;        privilegeTarget: 'TYPO3.NeosDemoTypo3Org:MembersArea'&lt;br/&gt;        permission: GRANT&lt;br/&gt;&lt;br/&gt;  'TYPO3.Neos:Editor':&lt;br/&gt;    privileges:&lt;br/&gt;      -&lt;br/&gt;        privilegeTarget: 'TYPO3.NeosDemoTypo3Org:MembersArea'&lt;br/&gt;        permission: GRANT&lt;br/&gt;&lt;/pre&gt;&lt;p&gt;If the session expires or you un-authenticate the current user using the &lt;a href=&quot;node://b6788725-56c8-4284-400f-fdb990297cfa&quot; data-gentics-aloha-repository=&quot;node-repository&quot; data-gentics-aloha-object-id=&quot;b6788725-56c8-4284-400f-fdb990297cfa&quot;&gt;Logout form&lt;/a&gt;, the link to this page will be removed from the main navigation and you won't be able to navigate to this page anymore, even if you know the URL.&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;</text>
 								</properties>
 							</variant>
 						</node>
@@ -2314,7 +2314,7 @@
 							<properties/>
 						</variant>
 					</node>
-					<node identifier="24f07912-4661-f2dc-dbc0-3c5edefe971e" nodeName="user-profile">
+					<node identifier="24f07912-4661-f2dc-dbc0-3c5edefe971e" nodeName="subpage">
 						<variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="4" removed="" hidden="" hiddenInIndex="">
 							<dimensions>
 								<language>en_US</language>
@@ -2323,8 +2323,8 @@
 							<creationDateTime __type="object" __classname="DateTime">2015-04-30T23:15:01+00:00</creationDateTime>
 							<lastModificationDateTime __type="object" __classname="DateTime">2015-04-30T23:15:01+00:00</lastModificationDateTime>
 							<properties>
-								<uriPathSegment __type="string">user-profile</uriPathSegment>
-								<title __type="string">User Profile</title>
+								<uriPathSegment __type="string">subpage</uriPathSegment>
+								<title __type="string">Subpage</title>
 							</properties>
 						</variant>
 						<node identifier="52355915-1664-4543-fd84-09682f3a0903" nodeName="main">
@@ -2346,7 +2346,7 @@
 									<creationDateTime __type="object" __classname="DateTime">2015-04-30T23:15:01+00:00</creationDateTime>
 									<lastModificationDateTime __type="object" __classname="DateTime">2015-04-30T23:15:01+00:00</lastModificationDateTime>
 									<properties>
-										<title __type="string">&lt;h1&gt;Frontend User Profile&lt;/h1&gt;</title>
+										<title __type="string">&lt;h1&gt;Member area subpage&lt;/h1&gt;</title>
 									</properties>
 								</variant>
 							</node>
@@ -2359,19 +2359,8 @@
 									<creationDateTime __type="object" __classname="DateTime">2015-04-30T23:15:01+00:00</creationDateTime>
 									<lastModificationDateTime __type="object" __classname="DateTime">2015-04-30T23:15:01+00:00</lastModificationDateTime>
 									<properties>
-										<text __type="string">&lt;p&gt;The &lt;a href=&quot;https://github.com/Flowpack/Flowpack.Neos.FrontendLogin&quot; target=&quot;_blank&quot;&gt;Flowpack.Neos.FrontendLogin&lt;/a&gt; comes with a minimal example for a &quot;profile plugin&quot; that allows the current user to change its details:&lt;/p&gt;</text>
+										<text __type="string">&lt;p&gt;The &lt;code&gt;isDescendantNodeOf&lt;/code&gt; matcher of the &lt;code&gt;ReadNodePrivilege&lt;/code&gt; will affect the specified node including all its child node.&lt;br/&gt;As a result this page is also only accessible to authenticated accounts with the &lt;code&gt;Flowpack.Neos.FrontendLogin:User&lt;/code&gt; role.&lt;/p&gt;</text>
 									</properties>
-								</variant>
-							</node>
-							<node identifier="bc613455-62d1-1666-917e-594bbcb4e1bd" nodeName="user-profile-plugin">
-								<variant sortingIndex="250" workspace="live" nodeType="Flowpack.Neos.FrontendLogin:Profile" version="4" removed="" hidden="" hiddenInIndex="">
-									<dimensions>
-										<language>en_US</language>
-									</dimensions>
-									<accessRoles __type="array"/>
-									<creationDateTime __type="object" __classname="DateTime">2015-04-30T23:15:01+00:00</creationDateTime>
-									<lastModificationDateTime __type="object" __classname="DateTime">2015-04-30T23:15:01+00:00</lastModificationDateTime>
-									<properties/>
 								</variant>
 							</node>
 						</node>
