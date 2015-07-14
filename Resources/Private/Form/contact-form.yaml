@@ -47,7 +47,7 @@ finishers:
 #      recipientAddress: 'office@example.net'
 #      recipientName: 'Office of Company'
 #      senderAddress: 'server@example.net'
-#      senderName: 'TYPO3 Neos Demo Site'
+#      senderName: 'Neos Demo Site'
 #      replyToAddress: 'office@example.net'
 #      format: plaintext
   -
@@ -55,4 +55,4 @@ finishers:
     options:
       message: >
         <h3>Thank you for your feedback!</h3>
-        <p>Your email would have been sent. It's easy to create custom forms with the TYPO3 form package.</p>
+        <p>Your email would have been sent. It's easy to create custom forms with the TYPO3.Form package.</p>
