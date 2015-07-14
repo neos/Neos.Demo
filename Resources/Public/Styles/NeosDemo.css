@@ -210,8 +210,8 @@ img { max-width: 100%; height: auto; }
 .second-level-navigation .nav-pills > li > a { font-size: 12px; line-height: 20px; font-family: 'Noto Sans Regular', serif; }
 .second-level-navigation .nav-pills > li:last-of-type { margin-right: 0; }
 
-.navbar-brand { background-image: url("../Images/logo.png"); background-repeat: no-repeat; background-size: 100px 32px; text-indent: -999px; width: 135px; height: 32px; margin-right: 20px; }
-@media only screen and (max-width: 767px) { .navbar-brand { background-image: url("../Images/logo@2x.png"); background-size: 100px 32px; margin-left: 20px; } }
+.navbar-brand { background-image: url("../Images/logo.png"); background-repeat: no-repeat; background-size: 67px 32px; text-indent: -999px; width: 135px; height: 32px; margin-right: 20px; }
+@media only screen and (max-width: 767px) { .navbar-brand { background-image: url("../Images/logo@2x.png"); background-size: 67px 32px; margin-left: 20px; } }
 
 .navbar-default { background-color: transparent; border: none; }
 .navbar-default .navbar-header { padding-bottom: 18px; }

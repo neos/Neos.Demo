@@ -1,7 +1,7 @@
 {
     "name": "typo3/neosdemotypo3org",
     "type": "typo3-flow-site",
-    "description": "Site package for the TYPO3 Neos Demo Site",
+    "description": "Site package for the Neos Demo Site",
     "license": "GPL-3.0+",
     "require": {
         "typo3/neos": "~2.0.0",
