@@ -16,7 +16,7 @@
     inspector:
       groups:
         image:
-          label: 'Image'
+          label: 'TYPO3.NeosDemoTypo3Org:NodeTypes.Page:groups.image'
           position: 200
   properties:
     'layout':
@@ -26,9 +26,9 @@
           editorOptions:
             values:
               'default':
-                label: 'Default'
+                label: 'TYPO3.NeosDemoTypo3Org:NodeTypes.Page:properties.layout.selectBoxEditor.values.default'
               'landingPage':
-                label: 'Landing page'
+                label: 'TYPO3.NeosDemoTypo3Org:NodeTypes.Page:properties.layout.selectBoxEditor.values.landingPage'
     'subpageLayout':
       ui:
         inspector:
@@ -36,13 +36,13 @@
           editorOptions:
             values:
               'default':
-                label: 'Default'
+                label: 'TYPO3.NeosDemoTypo3Org:NodeTypes.Page:properties.subpageLayout.selectBoxEditor.values.default'
               'landingPage':
-                label: 'Landing page'
+                label: 'TYPO3.NeosDemoTypo3Org:NodeTypes.Page:properties.subpageLayout.selectBoxEditor.values.landingPage'
     'image':
       type: 'TYPO3\Media\Domain\Model\ImageInterface'
       ui:
-        label: 'Image'
+        label: 'TYPO3.NeosDemoTypo3Org:NodeTypes.Page:properties.image'
         reloadIfChanged: TRUE
         inspector:
           group: 'image'
@@ -56,7 +56,7 @@
     'imageTitleText':
       type: string
       ui:
-        label: 'Title text'
+        label: 'TYPO3.NeosDemoTypo3Org:NodeTypes.Page:properties.imageTitleText'
         reloadIfChanged: TRUE
         inspector:
           group: 'image'
@@ -67,7 +67,7 @@
 #
 'TYPO3.NeosDemoTypo3Org:Homepage':
   ui:
-    label: 'Homepage'
+    label: i18n
     icon: 'icon-globe'
   superTypes:
     'TYPO3.Neos.NodeTypes:Page': TRUE
@@ -176,7 +176,7 @@
             values:
               '': ~
               'contact-form':
-                label: 'Contact form'
+                label: 'TYPO3.NeosDemoTypo3Org:NodeTypes.Form:properties.formIdentifier.selectBoxEditor.value.contact-form'
 
 
 ##
@@ -189,12 +189,12 @@
     'main':
       type: 'TYPO3.Neos:ContentCollection'
   ui:
-    label: 'Chapter'
+    label: i18n
     icon: 'icon-book'
     inspector:
       groups:
         'document':
-          label: 'Chapter details'
+          label: i18n
   properties:
     'layout':
       type: string
@@ -202,7 +202,7 @@
     'chapterDescription':
       type: string
       ui:
-        label: 'Chapter description'
+        label: i18n
         reloadIfChanged: TRUE
         inspector:
           group: 'document'
@@ -210,7 +210,7 @@
     'chapterImage':
       type: 'TYPO3\Media\Domain\Model\ImageInterface'
       ui:
-        label: 'Chapter image'
+        label: i18n
         reloadIfChanged: TRUE
         inspector:
           group: 'document'
@@ -250,7 +250,7 @@
   superTypes:
     'TYPO3.Neos.NodeTypes:Menu': TRUE
   ui:
-    label: 'Chapter menu'
+    label: i18n
 
 ##
 # A "Registration" plugin that allows creation of Neos user accounts through the Frontend
@@ -260,7 +260,7 @@
   superTypes:
     'TYPO3.Neos:Plugin': TRUE
   ui:
-    label: 'Editor Registration Plugin'
+    label: i18n
     icon: 'icon-user'
 
 ##
@@ -270,7 +270,7 @@
   superTypes:
     'TYPO3.Neos:Plugin': TRUE
   ui:
-    label: 'Flickr photo feed'
+    label: i18n
     icon: 'icon-rss'
     inspector:
       groups:
@@ -287,7 +287,7 @@
       type: string
       defaultValue: ''
       ui:
-        label: 'Tag(s) for the flickr feed'
+        label: i18n
         reloadIfChanged: TRUE
         inspector:
           group: 'feed'
@@ -304,14 +304,14 @@
     inspector:
       groups:
         'video':
-          label: Video
+          label: i18n
           position: 50
   properties:
     'video':
       type: string
       defaultValue: ''
       ui:
-        label: 'Youtube video ID'
+        label: i18n
         reloadIfChanged: TRUE
         inspector:
           group: 'video'
@@ -319,7 +319,7 @@
       type: integer
       defaultValue: 400
       ui:
-        label: 'Width'
+        label: i18n
         reloadIfChanged: TRUE
         inspector:
           group: 'video'
@@ -327,7 +327,7 @@
       type: integer
       defaultValue: 300
       ui:
-        label: 'Height'
+        label: i18n
         reloadIfChanged: TRUE
         inspector:
           group: 'video'
@@ -352,7 +352,7 @@
           'TYPO3.Neos.NodeTypes:ContentReferences': TRUE
           'TYPO3.NeosDemoTypo3Org:YouTube': TRUE
   ui:
-    label: 'Carousel'
+    label: i18n
     group: 'plugins'
     icon: 'icon-picture'
     inlineEditable: TRUE

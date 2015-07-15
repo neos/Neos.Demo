@@ -25,6 +25,9 @@ TYPO3:
           typoScriptRenderingPath: 'print'
           title: 'Print'
           position: 200
+      translation:
+        autoInclude:
+          'TYPO3.NeosDemoTypo3Org': ['NodeTypes/*']
 
   TYPO3CR:
     contentDimensions:
