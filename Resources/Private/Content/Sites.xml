@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-<<<<<<< HEAD
  <site name="TYPO3 Neos Demo Site" state="1" siteResourcesPackageKey="TYPO3.NeosDemoTypo3Org" siteNodeName="neosdemotypo3org">
   <nodes formatVersion="2.0">
    <node identifier="995c9174-ddd6-4d5c-cfc0-1ffc82184677" nodeName="neosdemotypo3org">
@@ -6777,5 +6776,4 @@
 			</node>
 		</nodes>
 	</site>
->>>>>>> 26b2a58... [TASK] Remove visible TYPO3 references & adjust links
 </root>
