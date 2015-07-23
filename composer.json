@@ -7,7 +7,7 @@
         "typo3/neos": "*",
         "typo3/neos-nodetypes": "*",
         "typo3/neos-seo": "dev-master",
-        "flowpack/neos-frontendlogin": "~2.0"
+        "flowpack/neos-frontendlogin": "dev-master"
     },
     "autoload": {
         "psr-0": {
