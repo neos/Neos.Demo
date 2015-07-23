@@ -28,9 +28,8 @@
 
 			<f:if condition="{landingPage}">
 				<div class="main-header{f:if(condition: imageUri, then: ' image" style="background-image: url({imageUri});')}"{f:if(condition: imageTitleText, then: ' title="{imageTitleText}"')}>
-						<div class="container">
-							{content.teaser -> f:format.raw()}
-						</div>
+					<div class="container">
+						{content.teaser -> f:format.raw()}
 					</div>
 				</div>
 			</f:if>
