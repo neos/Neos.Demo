@@ -23,11 +23,11 @@ TYPO3:
           isEditingMode: FALSE
           isPreviewMode: TRUE
           typoScriptRenderingPath: 'print'
-          title: 'Print'
+          title: 'TYPO3.NeosDemoTypo3Org:Main:editPreviewModes.print'
           position: 200
       translation:
         autoInclude:
-          'TYPO3.NeosDemoTypo3Org': ['NodeTypes/*']
+          'TYPO3.NeosDemoTypo3Org': ['Main', 'NodeTypes/*']
 
   TYPO3CR:
     contentDimensions:
