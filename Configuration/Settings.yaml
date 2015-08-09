@@ -32,7 +32,7 @@ TYPO3:
   TYPO3CR:
     contentDimensions:
       'language':
-        label: 'Language'
+        label: 'TYPO3.NeosDemoTypo3Org:Main:contentDimensions.language'
         icon: 'icon-language'
         default: 'en_US'
         defaultPreset: 'en_US'
