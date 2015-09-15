@@ -279,7 +279,7 @@
   options:
     'pluginViews':
       'UserFeed':
-        label: 'User feed'
+        label: 'TYPO3.NeosDemoTypo3Org:NodeTypes.Flickr:options.pluginViews.userFeed'
         controllerActions:
           'TYPO3\NeosDemoTypo3Org\Controller\FlickrController': ['userStream']
   properties:
