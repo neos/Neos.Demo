@@ -5,6 +5,9 @@
 			<trans-unit id="ui.label" xml:space="preserve">
 				<source>Flickr photo feed</source>
 			</trans-unit>
+			<trans-unit id="options.pluginViews.userFeed" xml:space="preserve">
+				<source>User feed</source>
+			</trans-unit>
 			<trans-unit id="properties.tags" xml:space="preserve">
 				<source>Tag(s) for the flickr feed</source>
 			</trans-unit>
