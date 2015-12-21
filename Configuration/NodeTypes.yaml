@@ -69,6 +69,8 @@
   ui:
     label: i18n
     icon: 'icon-globe'
+    help:
+     message: 'The homepage type is to be used only once and adds the shared footer.'
   superTypes:
     'TYPO3.Neos.NodeTypes:Page': TRUE
   childNodes:
@@ -191,6 +193,8 @@
   ui:
     label: i18n
     icon: 'icon-book'
+    help:
+      message: 'The Chapter node will work with all other chapter nodes on the same level to form a browsable book.'
     inspector:
       groups:
         'document':
@@ -207,6 +211,8 @@
         inspector:
           group: 'document'
           editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
+        help:
+          message: 'The description will only be used in the chapter menu.'
     'chapterImage':
       type: 'TYPO3\Media\Domain\Model\ImageInterface'
       ui:
@@ -214,6 +220,8 @@
         reloadIfChanged: TRUE
         inspector:
           group: 'document'
+        help:
+          message: 'This image will also appear in the chapter menu.'
     title:
       validation: ~
       ui:
@@ -251,6 +259,14 @@
     'TYPO3.Neos.NodeTypes:Menu': TRUE
   ui:
     label: i18n
+    help:
+      thumbnail: 'resource://TYPO3.NeosDemoTypo3Org/Public/NodeTypes/Thumbnails/ChapterMenu.png'
+      message: |
+        The ChapterMenu renders an overview of all chapters below the current document.
+        It displays:
+        * title
+        * chapter description
+        * chapter image
 
 ##
 # A "Registration" plugin that allows creation of Neos user accounts through the Frontend
@@ -262,6 +278,11 @@
   ui:
     label: i18n
     icon: 'icon-user'
+    help:
+      message: |
+        A very simple registration to allow quick access to the backend of the demo site.
+
+        **Note:** For security reasons you should disable this on live sites.
 
 ##
 # A simple "Flickr" plugin that demonstrates the "PluginViews"-feature
@@ -276,6 +297,8 @@
       groups:
         'feed':
           label: 'Feed'
+    help:
+      message: 'Displays a gallery of images from a flickr stream based on tags.'
   options:
     'pluginViews':
       'UserFeed':
@@ -306,6 +329,8 @@
         'video':
           label: i18n
           position: 50
+    help:
+      message: 'Embeds a YouTube video as content defined by a video ID.'
   properties:
     'video':
       type: string
@@ -315,6 +340,15 @@
         reloadIfChanged: TRUE
         inspector:
           group: 'video'
+        help:
+          message: |
+            The video identifier is visible in the URL to a youtube video
+
+            Eg. in the URL
+
+            `https://youtu.be/G6D1YI-41ao`
+
+            the video id is `G6D1YI-41ao`.
     'width':
       type: integer
       defaultValue: 400
@@ -356,3 +390,13 @@
     group: 'plugins'
     icon: 'icon-picture'
     inlineEditable: TRUE
+    help:
+      message: |
+        Bootstrap carousel which can display the following types of content:
+        * Headline
+        * Text
+        * TextWithImage
+        * Image
+        * HTML
+        * YouTube
+        * References
