@@ -3,99 +3,218 @@
  <site name="Neos Demo Site" state="1" siteResourcesPackageKey="TYPO3.NeosDemoTypo3Org" siteNodeName="neosdemotypo3org">
   <nodes formatVersion="2.0">
    <node identifier="995c9174-ddd6-4d5c-cfc0-1ffc82184677" nodeName="neosdemotypo3org">
-    <variant sortingIndex="100" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Homepage" version="4" removed="" hidden="" hiddenInIndex="">
-     <dimensions>
-      <language>de</language>
-     </dimensions>
-     <accessRoles __type="array"/>
-     <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:57+02:00</creationDateTime>
-     <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
-     <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T19:05:06+02:00</lastPublicationDateTime>
-     <properties>
-      <title __type="string">Home</title>
-      <layout __type="string">landingPage</layout>
-      <uriPathSegment __type="string">home</uriPathSegment>
-      <image __type="object" __identifier="c1e528e2-b495-0622-e71c-f826614ef287" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;c1e528e2-b495-0622-e71c-f826614ef287&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;ec147d63-a7a9-7029-2cea-95dc381114ab&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;photo-1421986527537-888d998adb74.jpg&quot;,&quot;hash&quot;:&quot;e40bfa0523ac36b48f501715071dc8412fdc58cc&quot;,&quot;__identity&quot;:&quot;8578818a-6efa-e209-9639-743a0fad71ac&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1254,&quot;position&quot;:10,&quot;width&quot;:2508,&quot;x&quot;:0,&quot;y&quot;:29,&quot;__identity&quot;:&quot;f100b467-f58b-48f0-9dfb-b6cdaa7c489f&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:1254,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:2508,&quot;__identity&quot;:&quot;28d9d689-5c08-2323-b15d-4cca21583bd6&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
-      <imageTitleText __type="string">Photo by Morgan Sessions</imageTitleText>
-      <canonicalLink __type="string"></canonicalLink>
-     </properties>
-    </variant>
-    <variant sortingIndex="100" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Homepage" version="31" removed="" hidden="" hiddenInIndex="">
-     <dimensions>
-      <language>en_US</language>
-     </dimensions>
-     <accessRoles __type="array"/>
-     <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:09+02:00</creationDateTime>
-     <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
-     <lastPublicationDateTime __type="object" __classname="DateTime">2015-04-30T23:33:23+02:00</lastPublicationDateTime>
-     <properties>
-      <title __type="string">Home</title>
-      <layout __type="string">landingPage</layout>
-      <uriPathSegment __type="string">home</uriPathSegment>
-      <image __type="object" __identifier="c1e528e2-b495-0622-e71c-f826614ef287" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;c1e528e2-b495-0622-e71c-f826614ef287&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;ec147d63-a7a9-7029-2cea-95dc381114ab&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;photo-1421986527537-888d998adb74.jpg&quot;,&quot;hash&quot;:&quot;e40bfa0523ac36b48f501715071dc8412fdc58cc&quot;,&quot;__identity&quot;:&quot;8578818a-6efa-e209-9639-743a0fad71ac&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1254,&quot;position&quot;:10,&quot;width&quot;:2508,&quot;x&quot;:0,&quot;y&quot;:29,&quot;__identity&quot;:&quot;f100b467-f58b-48f0-9dfb-b6cdaa7c489f&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:1254,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:2508,&quot;__identity&quot;:&quot;28d9d689-5c08-2323-b15d-4cca21583bd6&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
-      <imageTitleText __type="string">Photo by Morgan Sessions</imageTitleText>
-      <canonicalLink __type="string"></canonicalLink>
-     </properties>
-    </variant>
-    <variant sortingIndex="100" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Homepage" version="4" removed="" hidden="" hiddenInIndex="">
-     <dimensions>
-      <language>fr</language>
-     </dimensions>
-     <accessRoles __type="array"/>
-     <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:50+02:00</creationDateTime>
-     <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
-     <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T19:05:06+02:00</lastPublicationDateTime>
-     <properties>
-      <title __type="string">Home</title>
-      <layout __type="string">landingPage</layout>
-      <uriPathSegment __type="string">home</uriPathSegment>
-      <image __type="object" __identifier="c1e528e2-b495-0622-e71c-f826614ef287" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;c1e528e2-b495-0622-e71c-f826614ef287&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;ec147d63-a7a9-7029-2cea-95dc381114ab&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;photo-1421986527537-888d998adb74.jpg&quot;,&quot;hash&quot;:&quot;e40bfa0523ac36b48f501715071dc8412fdc58cc&quot;,&quot;__identity&quot;:&quot;8578818a-6efa-e209-9639-743a0fad71ac&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1254,&quot;position&quot;:10,&quot;width&quot;:2508,&quot;x&quot;:0,&quot;y&quot;:29,&quot;__identity&quot;:&quot;f100b467-f58b-48f0-9dfb-b6cdaa7c489f&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:1254,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:2508,&quot;__identity&quot;:&quot;28d9d689-5c08-2323-b15d-4cca21583bd6&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
-      <imageTitleText __type="string">Photo by Morgan Sessions</imageTitleText>
-      <canonicalLink __type="string"></canonicalLink>
-     </properties>
-    </variant>
-    <variant sortingIndex="100" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Homepage" version="6" removed="" hidden="" hiddenInIndex="">
+    <variant sortingIndex="100" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Homepage" version="7" removed="" hidden="" hiddenInIndex="">
      <dimensions>
       <language>dk</language>
      </dimensions>
      <accessRoles __type="array"/>
      <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:54:02+02:00</creationDateTime>
-     <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:08:27+02:00</lastModificationDateTime>
-     <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastPublicationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T21:55:16+01:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T21:55:16+01:00</lastPublicationDateTime>
      <properties>
       <title __type="string">Home</title>
       <layout __type="string">landingPage</layout>
       <uriPathSegment __type="string">home</uriPathSegment>
-      <image __type="object" __identifier="c1e528e2-b495-0622-e71c-f826614ef287" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;c1e528e2-b495-0622-e71c-f826614ef287&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;ec147d63-a7a9-7029-2cea-95dc381114ab&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;photo-1421986527537-888d998adb74.jpg&quot;,&quot;hash&quot;:&quot;e40bfa0523ac36b48f501715071dc8412fdc58cc&quot;,&quot;__identity&quot;:&quot;8578818a-6efa-e209-9639-743a0fad71ac&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1254,&quot;position&quot;:10,&quot;width&quot;:2508,&quot;x&quot;:0,&quot;y&quot;:29,&quot;__identity&quot;:&quot;f100b467-f58b-48f0-9dfb-b6cdaa7c489f&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:1254,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:2508,&quot;__identity&quot;:&quot;28d9d689-5c08-2323-b15d-4cca21583bd6&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+      <image __type="object" __identifier="04de8975-4462-4c75-8f78-b23061292fb6" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;04de8975-4462-4c75-8f78-b23061292fb6&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;ab4d378b-d2b8-4b0e-a2db-f5f95718ef28&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Neos2.1Desk.jpg&quot;,&quot;hash&quot;:&quot;6764994e36c070857e767ca440edc73c8f344e7d&quot;,&quot;__identity&quot;:&quot;e7f75fc3-3e0a-4e42-9108-85056fc9c9d1&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:2350,&quot;position&quot;:10,&quot;width&quot;:4709,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;afa51840-ad74-4308-8652-e996f5314345&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:1251,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:2508,&quot;__identity&quot;:&quot;8f6687fe-23f6-4188-8d85-bc5186513f95&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
       <imageTitleText __type="string">Photo by Morgan Sessions</imageTitleText>
+      <titleOverride __type="string"></titleOverride>
+      <metaDescription __type="string"></metaDescription>
+      <metaKeywords __type="string"></metaKeywords>
+      <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+      <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+      <twitterCardType __type="string"></twitterCardType>
+      <twitterCardCreator __type="string"></twitterCardCreator>
+      <twitterCardTitle __type="string"></twitterCardTitle>
+      <twitterCardDescription __type="string"></twitterCardDescription>
+      <twitterCardImage __type="string"></twitterCardImage>
       <canonicalLink __type="string"></canonicalLink>
+      <openGraphType __type="string"></openGraphType>
+      <openGraphTitle __type="string"></openGraphTitle>
+      <openGraphDescription __type="string"></openGraphDescription>
+      <openGraphImage __type="string"></openGraphImage>
+      <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+      <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+      <subpageLayout __type="string"></subpageLayout>
      </properties>
     </variant>
-    <variant sortingIndex="100" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Homepage" version="5" removed="" hidden="" hiddenInIndex="">
+    <variant sortingIndex="100" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Homepage" version="2" removed="" hidden="" hiddenInIndex="">
+     <dimensions>
+      <language>lv</language>
+     </dimensions>
+     <accessRoles __type="array"/>
+     <creationDateTime __type="object" __classname="DateTime">2015-12-21T21:56:53+01:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:02:16+01:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T22:02:16+01:00</lastPublicationDateTime>
+     <properties>
+      <title __type="string">Home</title>
+      <layout __type="string">landingPage</layout>
+      <uriPathSegment __type="string">home</uriPathSegment>
+      <image __type="object" __identifier="04de8975-4462-4c75-8f78-b23061292fb6" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;04de8975-4462-4c75-8f78-b23061292fb6&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;ab4d378b-d2b8-4b0e-a2db-f5f95718ef28&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Neos2.1Desk.jpg&quot;,&quot;hash&quot;:&quot;6764994e36c070857e767ca440edc73c8f344e7d&quot;,&quot;__identity&quot;:&quot;e7f75fc3-3e0a-4e42-9108-85056fc9c9d1&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:2350,&quot;position&quot;:10,&quot;width&quot;:4709,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;afa51840-ad74-4308-8652-e996f5314345&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:1251,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:2508,&quot;__identity&quot;:&quot;8f6687fe-23f6-4188-8d85-bc5186513f95&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+      <imageTitleText __type="string">Photo by Morgan Sessions</imageTitleText>
+      <titleOverride __type="string"></titleOverride>
+      <metaDescription __type="string"></metaDescription>
+      <metaKeywords __type="string"></metaKeywords>
+      <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+      <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+      <twitterCardType __type="string"></twitterCardType>
+      <twitterCardCreator __type="string"></twitterCardCreator>
+      <twitterCardTitle __type="string"></twitterCardTitle>
+      <twitterCardDescription __type="string"></twitterCardDescription>
+      <twitterCardImage __type="string"></twitterCardImage>
+      <canonicalLink __type="string"></canonicalLink>
+      <openGraphType __type="string"></openGraphType>
+      <openGraphTitle __type="string"></openGraphTitle>
+      <openGraphDescription __type="string"></openGraphDescription>
+      <openGraphImage __type="string"></openGraphImage>
+      <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+      <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+      <subpageLayout __type="string"></subpageLayout>
+     </properties>
+    </variant>
+    <variant sortingIndex="100" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Homepage" version="6" removed="" hidden="" hiddenInIndex="">
      <dimensions>
       <language>nl</language>
      </dimensions>
      <accessRoles __type="array"/>
      <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:53:31+02:00</creationDateTime>
-     <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
-     <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastPublicationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T21:51:52+01:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T21:51:52+01:00</lastPublicationDateTime>
      <properties>
       <title __type="string">Home</title>
       <layout __type="string">landingPage</layout>
       <uriPathSegment __type="string">home</uriPathSegment>
-      <image __type="object" __identifier="c1e528e2-b495-0622-e71c-f826614ef287" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;c1e528e2-b495-0622-e71c-f826614ef287&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;ec147d63-a7a9-7029-2cea-95dc381114ab&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;photo-1421986527537-888d998adb74.jpg&quot;,&quot;hash&quot;:&quot;e40bfa0523ac36b48f501715071dc8412fdc58cc&quot;,&quot;__identity&quot;:&quot;8578818a-6efa-e209-9639-743a0fad71ac&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1254,&quot;position&quot;:10,&quot;width&quot;:2508,&quot;x&quot;:0,&quot;y&quot;:29,&quot;__identity&quot;:&quot;f100b467-f58b-48f0-9dfb-b6cdaa7c489f&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:1254,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:2508,&quot;__identity&quot;:&quot;28d9d689-5c08-2323-b15d-4cca21583bd6&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
-      <imageTitleText __type="string">Photo by Morgan Sessions</imageTitleText>
+      <image __type="object" __identifier="30e8a0dd-7e6a-40e3-8eb1-58e8a3f789e8" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;30e8a0dd-7e6a-40e3-8eb1-58e8a3f789e8&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;ab4d378b-d2b8-4b0e-a2db-f5f95718ef28&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Neos2.1Desk.jpg&quot;,&quot;hash&quot;:&quot;6764994e36c070857e767ca440edc73c8f344e7d&quot;,&quot;__identity&quot;:&quot;e7f75fc3-3e0a-4e42-9108-85056fc9c9d1&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:2350,&quot;position&quot;:10,&quot;width&quot;:4709,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;8d3f940f-393b-4131-9ba2-8fc8f3db5754&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:1251,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:2508,&quot;__identity&quot;:&quot;e0110974-e62c-4ac0-bbc7-75c06713a93c&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+      <imageTitleText __type="string">Photo by Mr. Coffee</imageTitleText>
+      <titleOverride __type="string"></titleOverride>
+      <metaDescription __type="string"></metaDescription>
+      <metaKeywords __type="string"></metaKeywords>
+      <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+      <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+      <twitterCardType __type="string"></twitterCardType>
+      <twitterCardCreator __type="string"></twitterCardCreator>
+      <twitterCardTitle __type="string"></twitterCardTitle>
+      <twitterCardDescription __type="string"></twitterCardDescription>
+      <twitterCardImage __type="string"></twitterCardImage>
       <canonicalLink __type="string"></canonicalLink>
+      <openGraphType __type="string"></openGraphType>
+      <openGraphTitle __type="string"></openGraphTitle>
+      <openGraphDescription __type="string"></openGraphDescription>
+      <openGraphImage __type="string"></openGraphImage>
+      <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+      <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+      <subpageLayout __type="string"></subpageLayout>
+     </properties>
+    </variant>
+    <variant sortingIndex="100" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Homepage" version="32" removed="" hidden="" hiddenInIndex="">
+     <dimensions>
+      <language>en_US</language>
+     </dimensions>
+     <accessRoles __type="array"/>
+     <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:09+02:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T21:37:53+01:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T21:37:53+01:00</lastPublicationDateTime>
+     <properties>
+      <title __type="string">Home</title>
+      <layout __type="string">landingPage</layout>
+      <uriPathSegment __type="string">home</uriPathSegment>
+      <image __type="object" __identifier="32082be9-1874-4353-9055-c926ba578560" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;32082be9-1874-4353-9055-c926ba578560&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;ab4d378b-d2b8-4b0e-a2db-f5f95718ef28&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Neos2.1Desk.jpg&quot;,&quot;hash&quot;:&quot;6764994e36c070857e767ca440edc73c8f344e7d&quot;,&quot;__identity&quot;:&quot;e7f75fc3-3e0a-4e42-9108-85056fc9c9d1&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:2350,&quot;position&quot;:10,&quot;width&quot;:4709,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;41a374b9-6d67-4141-a79c-1e102073ee68&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
+      <imageTitleText __type="string">Photo by Morgan Sessions</imageTitleText>
+      <titleOverride __type="string"></titleOverride>
+      <metaDescription __type="string"></metaDescription>
+      <metaKeywords __type="string"></metaKeywords>
+      <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+      <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+      <twitterCardType __type="string"></twitterCardType>
+      <twitterCardCreator __type="string"></twitterCardCreator>
+      <twitterCardTitle __type="string"></twitterCardTitle>
+      <twitterCardDescription __type="string"></twitterCardDescription>
+      <twitterCardImage __type="string"></twitterCardImage>
+      <canonicalLink __type="string"></canonicalLink>
+      <openGraphType __type="string"></openGraphType>
+      <openGraphTitle __type="string"></openGraphTitle>
+      <openGraphDescription __type="string"></openGraphDescription>
+      <openGraphImage __type="string"></openGraphImage>
+      <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+      <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+      <subpageLayout __type="string"></subpageLayout>
+     </properties>
+    </variant>
+    <variant sortingIndex="100" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Homepage" version="5" removed="" hidden="" hiddenInIndex="">
+     <dimensions>
+      <language>fr</language>
+     </dimensions>
+     <accessRoles __type="array"/>
+     <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:50+02:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T21:51:15+01:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T21:51:15+01:00</lastPublicationDateTime>
+     <properties>
+      <title __type="string">Home</title>
+      <layout __type="string">landingPage</layout>
+      <uriPathSegment __type="string">home</uriPathSegment>
+      <image __type="object" __identifier="baa62383-29ed-413a-9700-588e80b89a3b" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;baa62383-29ed-413a-9700-588e80b89a3b&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;ab4d378b-d2b8-4b0e-a2db-f5f95718ef28&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Neos2.1Desk.jpg&quot;,&quot;hash&quot;:&quot;6764994e36c070857e767ca440edc73c8f344e7d&quot;,&quot;__identity&quot;:&quot;e7f75fc3-3e0a-4e42-9108-85056fc9c9d1&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:2350,&quot;position&quot;:10,&quot;width&quot;:4709,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;403f7604-afea-4b15-9f18-a315be05703f&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:1251,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:2508,&quot;__identity&quot;:&quot;5b981650-c2fa-4d00-b12b-8d2b9bf4b37a&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+      <imageTitleText __type="string">Photo by Mr. Coffee</imageTitleText>
+      <titleOverride __type="string"></titleOverride>
+      <metaDescription __type="string"></metaDescription>
+      <metaKeywords __type="string"></metaKeywords>
+      <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+      <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+      <twitterCardType __type="string"></twitterCardType>
+      <twitterCardCreator __type="string"></twitterCardCreator>
+      <twitterCardTitle __type="string"></twitterCardTitle>
+      <twitterCardDescription __type="string"></twitterCardDescription>
+      <twitterCardImage __type="string"></twitterCardImage>
+      <canonicalLink __type="string"></canonicalLink>
+      <openGraphType __type="string"></openGraphType>
+      <openGraphTitle __type="string"></openGraphTitle>
+      <openGraphDescription __type="string"></openGraphDescription>
+      <openGraphImage __type="string"></openGraphImage>
+      <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+      <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+      <subpageLayout __type="string"></subpageLayout>
+     </properties>
+    </variant>
+    <variant sortingIndex="100" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Homepage" version="6" removed="" hidden="" hiddenInIndex="">
+     <dimensions>
+      <language>de</language>
+     </dimensions>
+     <accessRoles __type="array"/>
+     <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:57+02:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T21:51:32+01:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T21:51:32+01:00</lastPublicationDateTime>
+     <properties>
+      <title __type="string">Home</title>
+      <layout __type="string">landingPage</layout>
+      <uriPathSegment __type="string">home</uriPathSegment>
+      <image __type="object" __identifier="edaf4760-d1cb-46cb-b11a-a77ce87d3b2f" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;edaf4760-d1cb-46cb-b11a-a77ce87d3b2f&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;ab4d378b-d2b8-4b0e-a2db-f5f95718ef28&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Neos2.1Desk.jpg&quot;,&quot;hash&quot;:&quot;6764994e36c070857e767ca440edc73c8f344e7d&quot;,&quot;__identity&quot;:&quot;e7f75fc3-3e0a-4e42-9108-85056fc9c9d1&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:2350,&quot;position&quot;:10,&quot;width&quot;:4709,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;42684bd4-84c8-40a8-ade5-cf90b0c5a4da&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:1251,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:2508,&quot;__identity&quot;:&quot;7162cefd-245f-4f2b-8b7f-eea08b010595&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+      <imageTitleText __type="string">Photo by Mr. Coffee</imageTitleText>
+      <titleOverride __type="string"></titleOverride>
+      <metaDescription __type="string"></metaDescription>
+      <metaKeywords __type="string"></metaKeywords>
+      <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+      <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+      <twitterCardType __type="string"></twitterCardType>
+      <twitterCardCreator __type="string"></twitterCardCreator>
+      <twitterCardTitle __type="string"></twitterCardTitle>
+      <twitterCardDescription __type="string"></twitterCardDescription>
+      <twitterCardImage __type="string"></twitterCardImage>
+      <canonicalLink __type="string"></canonicalLink>
+      <openGraphType __type="string"></openGraphType>
+      <openGraphTitle __type="string"></openGraphTitle>
+      <openGraphDescription __type="string"></openGraphDescription>
+      <openGraphImage __type="string"></openGraphImage>
+      <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+      <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+      <subpageLayout __type="string"></subpageLayout>
      </properties>
     </variant>
     <node identifier="517ad799-35df-4324-9429-5c75629a8b34" nodeName="download">
-     <variant sortingIndex="600" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="8" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="600" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>en_US</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:10+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
       <properties>
        <title __type="string">Download</title>
        <uriPathSegment __type="string">download</uriPathSegment>
@@ -188,13 +307,28 @@
      </node>
     </node>
     <node identifier="a3474e1d-dd60-4a84-82b1-18d2f21891a3" nodeName="features">
-     <variant sortingIndex="400" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="5" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="400" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>en_US</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:10+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
+      <properties>
+       <title __type="string">Features</title>
+       <layout __type="string">landingPage</layout>
+       <subpageLayout __type="string">default</subpageLayout>
+       <uriPathSegment __type="string">features</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+      </properties>
+     </variant>
+     <variant sortingIndex="400" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="6" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>nl</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:53:31+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
       <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastPublicationDateTime>
       <properties>
        <title __type="string">Features</title>
@@ -204,29 +338,14 @@
        <canonicalLink __type="string"></canonicalLink>
       </properties>
      </variant>
-     <variant sortingIndex="400" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="8" removed="" hidden="" hiddenInIndex="">
-      <dimensions>
-       <language>en_US</language>
-      </dimensions>
-      <accessRoles __type="array"/>
-      <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:10+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
-      <properties>
-       <title __type="string">Features</title>
-       <layout __type="string">landingPage</layout>
-       <subpageLayout __type="string">default</subpageLayout>
-       <uriPathSegment __type="string">features</uriPathSegment>
-       <canonicalLink __type="string"></canonicalLink>
-      </properties>
-     </variant>
      <node identifier="2bd20ef8-ab75-867a-a3e1-764c82b1552d" nodeName="custom-elements">
-      <variant sortingIndex="700" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="700" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:10+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <title __type="string">Custom elements</title>
         <uriPathSegment __type="string">custom-elements</uriPathSegment>
@@ -264,33 +383,33 @@
           <properties/>
          </variant>
          <node identifier="2e01ea76-c1c6-6313-41cd-d1697081af2f" nodeName="node5270f5d9e1496">
-          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Image" version="9" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Image" version="10" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
            <accessRoles __type="array"/>
            <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:10+02:00</creationDateTime>
-           <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+           <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
            <lastPublicationDateTime __type="object" __classname="DateTime">2015-04-26T19:53:27+02:00</lastPublicationDateTime>
            <properties>
             <caption __type="string">&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</caption>
-            <image __type="object" __identifier="7b6b96fe-4985-6566-b1fc-43ff02cc1814" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;7b6b96fe-4985-6566-b1fc-43ff02cc1814&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;6aac7ce2-b2e1-4e20-6987-42daa4edfbd2&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Mad-Hatter.jpg&quot;,&quot;hash&quot;:&quot;510905a6fae272e24c71a11c3646a96bf9443a70&quot;,&quot;__identity&quot;:&quot;3e3c60c3-df00-04f5-fb62-e8e947a1319c&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:1600,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;706507f7-3b07-05b5-5d64-6cc5d47564bd&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:1600,&quot;__identity&quot;:&quot;2d042b64-1db0-1387-0b4e-4ea12b31d241&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+            <image __type="object" __identifier="7b6b96fe-4985-6566-b1fc-43ff02cc1814" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;7b6b96fe-4985-6566-b1fc-43ff02cc1814&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;6aac7ce2-b2e1-4e20-6987-42daa4edfbd2&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Mad-Hatter.jpg&quot;,&quot;hash&quot;:&quot;510905a6fae272e24c71a11c3646a96bf9443a70&quot;,&quot;__identity&quot;:&quot;3e3c60c3-df00-04f5-fb62-e8e947a1319c&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:1600,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;f88c2af9-60c4-4b17-bb44-89a971160fcb&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:1600,&quot;__identity&quot;:&quot;588ecb3e-6cae-47ce-8c0f-adfd0159f64b&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
             <alignment __type="string"></alignment>
            </properties>
           </variant>
          </node>
          <node identifier="7d38b536-a52a-afc2-e2c8-ae04a134c76b" nodeName="node5270f60a66dfb">
-          <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Image" version="9" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Image" version="10" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
            <accessRoles __type="array"/>
            <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:10+02:00</creationDateTime>
-           <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+           <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
            <lastPublicationDateTime __type="object" __classname="DateTime">2015-04-26T19:53:27+02:00</lastPublicationDateTime>
            <properties>
             <caption __type="string">&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</caption>
-            <image __type="object" __identifier="c3bc8cf4-bc6a-ba5f-b53a-2a6483970279" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;c3bc8cf4-bc6a-ba5f-b53a-2a6483970279&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a126280f-2a8e-0592-0e14-cc2cd9808bb2&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Alice-In-Wonderland.jpg&quot;,&quot;hash&quot;:&quot;53e0e394fda7e8943fd5e15f041da1919e03d534&quot;,&quot;__identity&quot;:&quot;c9366596-9bae-1514-d003-76b2e82a6fc3&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:1600,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;2c5ecbb3-2a5c-5f98-5824-91fa0a4370ee&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:1600,&quot;__identity&quot;:&quot;bb3b497e-28df-3c7b-5fb7-f224781b8598&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+            <image __type="object" __identifier="c3bc8cf4-bc6a-ba5f-b53a-2a6483970279" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;c3bc8cf4-bc6a-ba5f-b53a-2a6483970279&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a126280f-2a8e-0592-0e14-cc2cd9808bb2&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Alice-In-Wonderland.jpg&quot;,&quot;hash&quot;:&quot;53e0e394fda7e8943fd5e15f041da1919e03d534&quot;,&quot;__identity&quot;:&quot;c9366596-9bae-1514-d003-76b2e82a6fc3&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:1600,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;b5ad7fa2-982f-4853-a3f6-1bd4f73acf9e&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:1600,&quot;__identity&quot;:&quot;25b7351b-9980-493c-8a8f-3248357b3fd9&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
             <alignment __type="string"></alignment>
            </properties>
           </variant>
@@ -426,13 +545,13 @@
       </node>
      </node>
      <node identifier="f0eb464e-4701-d909-7023-34f06056bf7c" nodeName="forms">
-      <variant sortingIndex="900" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="900" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <title __type="string">Forms</title>
         <uriPathSegment __type="string">forms</uriPathSegment>
@@ -537,13 +656,13 @@
       </node>
      </node>
      <node identifier="b6788725-56c8-4284-400f-fdb990297cfa" nodeName="frontend-user-login">
-      <variant sortingIndex="950" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="950" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-30T23:15:00+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <uriPathSegment __type="string">frontend-user-login</uriPathSegment>
         <title __type="string">Frontend User Login</title>
@@ -611,13 +730,13 @@
       </node>
      </node>
      <node identifier="14ccf43a-562a-c9f7-2fd1-733e27068524" nodeName="imagetext">
-      <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <title __type="string">Text &amp; images</title>
         <uriPathSegment __type="string">text-and-images</uriPathSegment>
@@ -766,7 +885,7 @@
             <caption __type="string">&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</caption>
             <text __type="string">&lt;p&gt;
 													&lt;/p&gt;&lt;p&gt;Either the well was very deep, or she fell very slowly, for she had plenty of time as she went down to look about her, and to wonder what was going to happen next. First, she tried to look down and make out what she was coming to, but it was too dark to see anything; then she looked at the sides of the well and noticed that they were filled with cupboards and book-shelves: here and there she saw maps and pictures hung upon pegs. She took down a jar from one of the shelves as she passed; it was labelled &quot;ORANGE MARMALADE,&quot; but to her disappointment it was empty; she did not like to drop the jar for fear of killing somebody underneath, so managed to put it into one of the cupboards as she fell past it. &lt;/p&gt;</text>
-            <image __type="object" __identifier="f1aed746-643b-74f4-c4e9-02a52e889f08" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f1aed746-643b-74f4-c4e9-02a52e889f08&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;08aaeb84-dccc-6af4-0086-93499de4e1bc&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-1.jpg&quot;,&quot;hash&quot;:&quot;30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f&quot;,&quot;__identity&quot;:&quot;3640b4ba-a68b-7e2f-4199-d4e3a2b684c3&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;ae198ce0-9922-669e-6264-0b68f768570d&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:278,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:200,&quot;__identity&quot;:&quot;a9a10d28-6f2b-a0c4-31de-2a31146cd334&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+            <image __type="object" __identifier="f1aed746-643b-74f4-c4e9-02a52e889f08" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f1aed746-643b-74f4-c4e9-02a52e889f08&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;08aaeb84-dccc-6af4-0086-93499de4e1bc&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-1.jpg&quot;,&quot;hash&quot;:&quot;30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f&quot;,&quot;__identity&quot;:&quot;3640b4ba-a68b-7e2f-4199-d4e3a2b684c3&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;3be835a8-7fbc-4a58-b0ae-98bf8fe558a3&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:278,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:200,&quot;__identity&quot;:&quot;834d01c8-cff9-45d4-a0c0-8eda4867145c&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
            </properties>
           </variant>
          </node>
@@ -794,7 +913,7 @@
             <caption __type="string">&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</caption>
             <text __type="string">&lt;p&gt;
 													&lt;/p&gt;&lt;p&gt;Five and Seven said nothing, but looked at Two. Two began in a low voice, &quot;Why, the fact is, you see, Miss, this here ought to have been a red rose-tree, and we put a white one in by mistake; and if the Queen was to find it out, we should all have our heads cut off, you know. So you see, Miss, we're doing our best, afore she comes, to——&quot; At this moment, Five, who had been anxiously looking across the garden, called out &quot;The Queen! The Queen!&quot; and the three gardeners instantly threw themselves flat upon their faces. There[98] was a sound of many footsteps, and Alice looked round, eager to see the Queen. &lt;/p&gt;</text>
-            <image __type="object" __identifier="b8062715-0885-8df4-3a19-508a1429c04a" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;b8062715-0885-8df4-3a19-508a1429c04a&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;11d3aded-fb1a-70e7-1412-0b465b11fcd8&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-2.jpg&quot;,&quot;hash&quot;:&quot;0641ce611d5171161c853f70ff1ae0f33dd4dc24&quot;,&quot;__identity&quot;:&quot;1eb38dbc-0580-1280-f293-4749dc1fffe5&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:353,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;1cedcf9f-aa61-936f-e57a-b2e667e7f984&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:283,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:200,&quot;__identity&quot;:&quot;71b4f895-ceed-dc75-3598-37947fe78127&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+            <image __type="object" __identifier="b8062715-0885-8df4-3a19-508a1429c04a" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;b8062715-0885-8df4-3a19-508a1429c04a&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;11d3aded-fb1a-70e7-1412-0b465b11fcd8&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-2.jpg&quot;,&quot;hash&quot;:&quot;0641ce611d5171161c853f70ff1ae0f33dd4dc24&quot;,&quot;__identity&quot;:&quot;1eb38dbc-0580-1280-f293-4749dc1fffe5&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:353,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;c25c8732-b15c-4663-801c-a02c98b2cd68&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:283,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:200,&quot;__identity&quot;:&quot;78ee29d2-c473-4e44-bd84-05390f6fddd4&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
            </properties>
           </variant>
          </node>
@@ -840,6 +959,15 @@
       </node>
      </node>
      <node identifier="88d2089c-c1cb-4082-8f01-998beac1ca7f" nodeName="main">
+      <variant sortingIndex="400" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en_US</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</lastModificationDateTime>
+       <properties/>
+      </variant>
       <variant sortingIndex="400" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>nl</language>
@@ -848,15 +976,6 @@
        <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:53:31+02:00</creationDateTime>
        <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastModificationDateTime>
        <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastPublicationDateTime>
-       <properties/>
-      </variant>
-      <variant sortingIndex="400" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
-       <dimensions>
-        <language>en_US</language>
-       </dimensions>
-       <accessRoles __type="array"/>
-       <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</lastModificationDateTime>
        <properties/>
       </variant>
       <node identifier="1e1d4039-e5e8-7b16-f9d5-be548320078d" nodeName="node524c37db511d4">
@@ -1166,13 +1285,13 @@
       </node>
      </node>
      <node identifier="452374b3-3580-2af3-71bd-f9932faea84d" nodeName="multiple-columns">
-      <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <title __type="string">Multiple columns</title>
         <uriPathSegment __type="string">multiple-columns</uriPathSegment>
@@ -1546,13 +1665,13 @@
       </node>
      </node>
      <node identifier="a66ec7db-3459-b67b-7bcb-16e2508a89f0" nodeName="navigation-elements">
-      <variant sortingIndex="600" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="600" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <title __type="string">Navigation elements</title>
         <uriPathSegment __type="string">navigation-elements</uriPathSegment>
@@ -1560,13 +1679,13 @@
        </properties>
       </variant>
       <node identifier="7c3e4946-d216-14d0-92c5-d7fa75163863" nodeName="first-item">
-       <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="8" removed="" hidden="" hiddenInIndex="">
+       <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
         <dimensions>
          <language>en_US</language>
         </dimensions>
         <accessRoles __type="array"/>
         <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-        <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
         <properties>
          <title __type="string">Subpage #1</title>
          <uriPathSegment __type="string">subpage-no1</uriPathSegment>
@@ -1675,13 +1794,13 @@
        </node>
       </node>
       <node identifier="336d96a5-b6c6-7d81-685f-89d32c37756e" nodeName="second-item">
-       <variant sortingIndex="400" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="8" removed="" hidden="" hiddenInIndex="">
+       <variant sortingIndex="400" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
         <dimensions>
          <language>en_US</language>
         </dimensions>
         <accessRoles __type="array"/>
         <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-        <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
         <properties>
          <title __type="string">Subpage #2</title>
          <uriPathSegment __type="string">subpage-no2</uriPathSegment>
@@ -1723,13 +1842,13 @@
        </variant>
       </node>
       <node identifier="e93e299d-5c26-34d1-44d7-526a00e1f2e2" nodeName="third-item">
-       <variant sortingIndex="500" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="8" removed="" hidden="" hiddenInIndex="">
+       <variant sortingIndex="500" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
         <dimensions>
          <language>en_US</language>
         </dimensions>
         <accessRoles __type="array"/>
         <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-        <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
         <properties>
          <title __type="string">Subpage #3</title>
          <uriPathSegment __type="string">subpage-no3</uriPathSegment>
@@ -1761,13 +1880,13 @@
       </node>
      </node>
      <node identifier="82c24d81-51fa-87e5-b4ec-73eb505cb826" nodeName="other-elements">
-      <variant sortingIndex="800" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="800" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <title __type="string">Other elements</title>
         <uriPathSegment __type="string">other-elements</uriPathSegment>
@@ -1892,13 +2011,13 @@
       </node>
      </node>
      <node identifier="c1fbd6ac-f32b-658f-8e6b-66e95d47b7ad" nodeName="plugins">
-      <variant sortingIndex="1000" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="1000" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <title __type="string">Plugins</title>
         <uriPathSegment __type="string">plugins</uriPathSegment>
@@ -1967,13 +2086,13 @@
        </variant>
       </node>
       <node identifier="0f832ea2-df21-7a81-909e-4b7714ec7ce7" nodeName="user-photo-stream">
-       <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="8" removed="" hidden="" hiddenInIndex="">
+       <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
         <dimensions>
          <language>en_US</language>
         </dimensions>
         <accessRoles __type="array"/>
         <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-        <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
         <properties>
          <title __type="string">User photo stream</title>
          <uriPathSegment __type="string">user-photo-stream</uriPathSegment>
@@ -2019,13 +2138,13 @@
       </node>
      </node>
      <node identifier="b082c6b6-8a64-4786-b767-d62ef22209b1" nodeName="shortcuts">
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="10" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <title __type="string">Shortcuts</title>
         <uriPathSegment __type="string">shortcuts</uriPathSegment>
@@ -2085,13 +2204,13 @@
         </properties>
        </variant>
        <node identifier="b082c6b6-8a64-4786-b767-d62ef22209b2" nodeName="downtherabbithole">
-        <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
+        <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="10" removed="" hidden="" hiddenInIndex="">
          <dimensions>
           <language>en_US</language>
          </dimensions>
          <accessRoles __type="array"/>
          <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-         <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
          <properties>
           <title __type="string">Down the rabbit-hole</title>
           <layout __type="string">landingPage</layout>
@@ -2135,17 +2254,17 @@
           <properties/>
          </variant>
          <node identifier="8170a593-17ce-86a0-feeb-229fbb33758d" nodeName="node52a72865bd65a">
-          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Image" version="11" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Image" version="12" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
            <accessRoles __type="array"/>
            <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-           <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+           <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
            <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-15T09:49:30+02:00</lastPublicationDateTime>
            <properties>
             <caption __type="string">&lt;p&gt;Enter caption here&lt;/p&gt;</caption>
-            <image __type="object" __identifier="ae3d6684-925d-4d98-773e-7f19f588aad0" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;ae3d6684-925d-4d98-773e-7f19f588aad0&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;6aac7ce2-b2e1-4e20-6987-42daa4edfbd2&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Mad-Hatter.jpg&quot;,&quot;hash&quot;:&quot;510905a6fae272e24c71a11c3646a96bf9443a70&quot;,&quot;__identity&quot;:&quot;3e3c60c3-df00-04f5-fb62-e8e947a1319c&quot;}},&quot;adjustments&quot;:[{&quot;allowUpScaling&quot;:false,&quot;height&quot;:501,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:1600,&quot;__identity&quot;:&quot;8c2df0f6-0cdd-802d-e8f8-0235eecd3cfd&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+            <image __type="object" __identifier="ae3d6684-925d-4d98-773e-7f19f588aad0" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;ae3d6684-925d-4d98-773e-7f19f588aad0&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;6aac7ce2-b2e1-4e20-6987-42daa4edfbd2&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Mad-Hatter.jpg&quot;,&quot;hash&quot;:&quot;510905a6fae272e24c71a11c3646a96bf9443a70&quot;,&quot;__identity&quot;:&quot;3e3c60c3-df00-04f5-fb62-e8e947a1319c&quot;}},&quot;adjustments&quot;:[{&quot;allowUpScaling&quot;:false,&quot;height&quot;:501,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:1600,&quot;__identity&quot;:&quot;bb370a5a-4c4e-4d1e-9d5c-26d6365bf660&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
             <title __type="string">Neos Cornified</title>
             <alignment __type="string"></alignment>
            </properties>
@@ -2214,6 +2333,15 @@
       </node>
      </node>
      <node identifier="0e941a26-d4d7-2e89-5376-4f5daaa28828" nodeName="teaser">
+      <variant sortingIndex="500" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en_US</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</lastModificationDateTime>
+       <properties/>
+      </variant>
       <variant sortingIndex="500" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>nl</language>
@@ -2222,15 +2350,6 @@
        <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:53:31+02:00</creationDateTime>
        <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastModificationDateTime>
        <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastPublicationDateTime>
-       <properties/>
-      </variant>
-      <variant sortingIndex="500" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
-       <dimensions>
-        <language>en_US</language>
-       </dimensions>
-       <accessRoles __type="array"/>
-       <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</lastModificationDateTime>
        <properties/>
       </variant>
       <node identifier="68c4dfc4-f9cf-a87b-a908-9c538ad3c272" nodeName="node524dad3b286ed">
@@ -2250,36 +2369,6 @@
      </node>
     </node>
     <node identifier="986b8bef-68f6-1883-3711-31929cfe5ed8" nodeName="footer">
-     <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
-      <dimensions>
-       <language>fr</language>
-      </dimensions>
-      <accessRoles __type="array"/>
-      <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:50+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:05:06+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T19:05:06+02:00</lastPublicationDateTime>
-      <properties/>
-     </variant>
-     <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
-      <dimensions>
-       <language>de</language>
-      </dimensions>
-      <accessRoles __type="array"/>
-      <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:57+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:05:06+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T19:05:06+02:00</lastPublicationDateTime>
-      <properties/>
-     </variant>
-     <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
-      <dimensions>
-       <language>dk</language>
-      </dimensions>
-      <accessRoles __type="array"/>
-      <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:54:02+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastPublicationDateTime>
-      <properties/>
-     </variant>
      <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>en_US</language>
@@ -2299,6 +2388,46 @@
       <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastPublicationDateTime>
       <properties/>
      </variant>
+     <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>dk</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:54:02+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastPublicationDateTime>
+      <properties/>
+     </variant>
+     <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>fr</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:50+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:05:06+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T19:05:06+02:00</lastPublicationDateTime>
+      <properties/>
+     </variant>
+     <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:57+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:05:06+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T19:05:06+02:00</lastPublicationDateTime>
+      <properties/>
+     </variant>
+     <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>lv</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-12-21T21:56:53+01:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:02:16+01:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T22:02:16+01:00</lastPublicationDateTime>
+      <properties/>
+     </variant>
      <node identifier="6fea08d6-e3c4-8937-bfdf-ce8e5d4d1bd1" nodeName="node524e798485de4">
       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="3" removed="" hidden="" hiddenInIndex="">
        <dimensions>
@@ -2314,14 +2443,23 @@
      </node>
     </node>
     <node identifier="631740f8-b3bf-4da6-9062-bff0fe77380b" nodeName="main">
-     <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
       <dimensions>
-       <language>fr</language>
+       <language>en_US</language>
       </dimensions>
       <accessRoles __type="array"/>
-      <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:50+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:05:06+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T19:05:06+02:00</lastPublicationDateTime>
+      <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</lastModificationDateTime>
+      <properties/>
+     </variant>
+     <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>nl</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:53:31+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastPublicationDateTime>
       <properties/>
      </variant>
      <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
@@ -2336,6 +2474,16 @@
      </variant>
      <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
       <dimensions>
+       <language>fr</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:50+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:05:06+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T19:05:06+02:00</lastPublicationDateTime>
+      <properties/>
+     </variant>
+     <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
        <language>de</language>
       </dimensions>
       <accessRoles __type="array"/>
@@ -2346,21 +2494,12 @@
      </variant>
      <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
       <dimensions>
-       <language>nl</language>
+       <language>lv</language>
       </dimensions>
       <accessRoles __type="array"/>
-      <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:53:31+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastPublicationDateTime>
-      <properties/>
-     </variant>
-     <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
-      <dimensions>
-       <language>en_US</language>
-      </dimensions>
-      <accessRoles __type="array"/>
-      <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</lastModificationDateTime>
+      <creationDateTime __type="object" __classname="DateTime">2015-12-21T21:56:53+01:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:02:16+01:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T22:02:16+01:00</lastPublicationDateTime>
       <properties/>
      </variant>
      <node identifier="198d23f8-5fe4-5b4f-2766-38c7418ed16e" nodeName="node524a87808ab3e">
@@ -2454,13 +2593,13 @@
      </node>
     </node>
     <node identifier="fee74676-c42f-89da-208e-1741a66525d4" nodeName="member-area">
-     <variant sortingIndex="850" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="8" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="850" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>en_US</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-04-30T23:15:01+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
       <properties>
        <uriPathSegment __type="string">member-area</uriPathSegment>
        <title __type="string">Member area</title>
@@ -2505,13 +2644,13 @@
       </node>
      </node>
      <node identifier="24f07912-4661-f2dc-dbc0-3c5edefe971e" nodeName="subpage">
-      <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-30T23:15:01+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <uriPathSegment __type="string">subpage</uriPathSegment>
         <title __type="string">Subpage</title>
@@ -2554,6 +2693,26 @@
          </properties>
         </variant>
        </node>
+       <node identifier="94f7cd09-1ed9-41e4-80d6-d5b8ef5ea6d7" nodeName="node-5678698bab786">
+        <variant sortingIndex="250" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Image" version="4" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>en_US</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2015-12-21T22:05:15+01:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:05:26+01:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T22:05:26+01:00</lastPublicationDateTime>
+         <properties>
+          <caption __type="string"></caption>
+          <alignment __type="string"></alignment>
+          <image __type="object" __identifier="8058d91b-10d9-4813-b894-df8200c4d546" __classname="TYPO3\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;8058d91b-10d9-4813-b894-df8200c4d546&quot;,&quot;title&quot;:&quot;Travem\u00fcnde Kite Festival&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Drachenfest-Travemu\u0308nde.jpg&quot;,&quot;hash&quot;:&quot;c828d0f88ce197be1aff7cc2e5e86b1244241ac6&quot;,&quot;__identity&quot;:&quot;96080ff0-b883-4886-afc3-7e2a4d7e95da&quot;}}</image>
+          <alternativeText __type="string"></alternativeText>
+          <title __type="string"></title>
+          <link __type="string"></link>
+          <hasCaption __type="boolean"></hasCaption>
+         </properties>
+        </variant>
+       </node>
       </node>
       <node identifier="f1689b5c-dd89-f779-63db-64f739e2f53a" nodeName="teaser">
        <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
@@ -2580,13 +2739,13 @@
      </node>
     </node>
     <node identifier="ac9f9c81-d674-8f01-7d38-d8ee44148630" nodeName="metamenu">
-     <variant sortingIndex="700" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="8" removed="" hidden="" hiddenInIndex="1">
+     <variant sortingIndex="700" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="1">
       <dimensions>
        <language>en_US</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
       <properties>
        <title __type="string">Metamenu</title>
        <subpageLayout __type="string">landingPage</subpageLayout>
@@ -2595,13 +2754,13 @@
       </properties>
      </variant>
      <node identifier="2d26b296-d3d2-69c1-b73e-0d1c801fe07a" nodeName="contribute">
-      <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <title __type="string">Contribute</title>
         <uriPathSegment __type="string">contribute</uriPathSegment>
@@ -2646,13 +2805,13 @@
       </node>
      </node>
      <node identifier="a56a3763-fa45-e12e-2236-5921e35ea756" nodeName="documentation">
-      <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <title __type="string">Documentation</title>
         <layout __type="string">default</layout>
@@ -2749,14 +2908,23 @@
      </node>
     </node>
     <node identifier="f380fbcd-2c5a-4c9b-b1c3-da9e1dc803cc" nodeName="teaser">
-     <variant sortingIndex="250" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="250" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
       <dimensions>
-       <language>fr</language>
+       <language>en_US</language>
       </dimensions>
       <accessRoles __type="array"/>
-      <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:50+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:05:06+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T19:05:06+02:00</lastPublicationDateTime>
+      <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</lastModificationDateTime>
+      <properties/>
+     </variant>
+     <variant sortingIndex="250" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>nl</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:53:31+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastPublicationDateTime>
       <properties/>
      </variant>
      <variant sortingIndex="250" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
@@ -2771,6 +2939,16 @@
      </variant>
      <variant sortingIndex="250" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
       <dimensions>
+       <language>fr</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:50+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:05:06+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T19:05:06+02:00</lastPublicationDateTime>
+      <properties/>
+     </variant>
+     <variant sortingIndex="250" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
        <language>de</language>
       </dimensions>
       <accessRoles __type="array"/>
@@ -2781,77 +2959,73 @@
      </variant>
      <variant sortingIndex="250" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
       <dimensions>
-       <language>nl</language>
+       <language>lv</language>
       </dimensions>
       <accessRoles __type="array"/>
-      <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:53:31+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastPublicationDateTime>
-      <properties/>
-     </variant>
-     <variant sortingIndex="250" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
-      <dimensions>
-       <language>en_US</language>
-      </dimensions>
-      <accessRoles __type="array"/>
-      <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</lastModificationDateTime>
+      <creationDateTime __type="object" __classname="DateTime">2015-12-21T21:56:53+01:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:02:16+01:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T22:02:16+01:00</lastPublicationDateTime>
       <properties/>
      </variant>
      <node identifier="d17caff2-f50c-d30b-b735-9b9216de02e9" nodeName="node52697bdfee199">
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="3" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="4" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>dk</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T21:55:16+01:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T21:55:16+01:00</lastPublicationDateTime>
        <properties>
-        <title __type="string">&lt;h1&gt;Internationaliseret.&lt;br/&gt;&lt;/h1&gt;</title>
+        <title __type="string">&lt;h1&gt;Opret fremragende indhold.&lt;br/&gt;&lt;/h1&gt;</title>
        </properties>
       </variant>
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="2" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="3" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>de</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T21:42:17+01:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T21:42:17+01:00</lastPublicationDateTime>
        <properties>
-        <title __type="string">&lt;h1&gt;Internationalisiert.&lt;br/&gt;&lt;/h1&gt;</title>
+        <title __type="string">&lt;h1&gt;Schreibe gute Texte.&lt;/h1&gt;</title>
        </properties>
       </variant>
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="2" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="4" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>fr</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T21:53:24+01:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T21:53:24+01:00</lastPublicationDateTime>
        <properties>
-        <title __type="string">&lt;h1&gt;International.&lt;br/&gt;&lt;/h1&gt;</title>
+        <title __type="string">&lt;h1&gt;&lt;br/&gt;Créer un contenu de qualité.&lt;br/&gt;&lt;/h1&gt;</title>
        </properties>
       </variant>
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="2" removed="" hidden="" hiddenInIndex="">
-       <dimensions>
-        <language>lv</language>
-       </dimensions>
-       <accessRoles __type="array"/>
-       <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</lastModificationDateTime>
-       <properties>
-        <title __type="string">&lt;h1&gt;Internacionalizēts.&lt;/h1&gt;</title>
-       </properties>
-      </variant>
-      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="3" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="4" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>nl</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T21:46:26+01:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T21:46:26+01:00</lastPublicationDateTime>
        <properties>
-        <title __type="string">&lt;h1&gt;Geïnternationaliseerd.&lt;/h1&gt;</title>
+        <title __type="string">&lt;h1&gt;Maak grote inhoud.&lt;br/&gt;&lt;/h1&gt;</title>
+       </properties>
+      </variant>
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>lv</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:02:16+01:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T22:02:16+01:00</lastPublicationDateTime>
+       <properties>
+        <title __type="string">&lt;h1&gt;Izveidojiet lielisku saturu.&lt;br/&gt;&lt;/h1&gt;</title>
        </properties>
       </variant>
       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="4" removed="" hidden="" hiddenInIndex="">
@@ -2869,13 +3043,13 @@
      </node>
     </node>
     <node identifier="1ce0d7b3-250c-5254-a94e-cbcaca5534eb" nodeName="the-book">
-     <variant sortingIndex="800" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="8" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="800" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>en_US</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
       <properties>
        <title __type="string">The book</title>
        <layout __type="string">landingPage</layout>
@@ -2884,16 +3058,16 @@
       </properties>
      </variant>
      <node identifier="6db34628-60c7-4c9a-f6dd-54742816039e" nodeName="i-down-the-rabbit-hole">
-      <variant sortingIndex="300" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="300" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <title __type="string">I. Down the Rabbit-hole</title>
-        <chapterImage __type="object" __identifier="201b68e6-9f60-f34b-0083-b1bf219b08f3" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;201b68e6-9f60-f34b-0083-b1bf219b08f3&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;08aaeb84-dccc-6af4-0086-93499de4e1bc&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-1.jpg&quot;,&quot;hash&quot;:&quot;30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f&quot;,&quot;__identity&quot;:&quot;3640b4ba-a68b-7e2f-4199-d4e3a2b684c3&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;2b2957f6-a368-6885-cd11-43a0315b8745&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:359,&quot;__identity&quot;:&quot;87f3b78e-bfe3-aa45-344b-2d83edfaea1a&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="201b68e6-9f60-f34b-0083-b1bf219b08f3" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;201b68e6-9f60-f34b-0083-b1bf219b08f3&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;08aaeb84-dccc-6af4-0086-93499de4e1bc&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-1.jpg&quot;,&quot;hash&quot;:&quot;30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f&quot;,&quot;__identity&quot;:&quot;3640b4ba-a68b-7e2f-4199-d4e3a2b684c3&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;c5237604-d3be-4658-b8a8-3962e7873c27&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:359,&quot;__identity&quot;:&quot;e2b680eb-7847-4cc7-a676-ce376bc0cf3e&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <chapterDescription __type="string">Alice was beginning to get very tired of sitting by her sister on the bank, and
 									of having nothing to do: once or twice she had peeped into the book her sister was reading, but
 									it had no pictures or conversations in it, &quot;and what is the use of a book,&quot; thought
@@ -2931,16 +3105,16 @@
       </node>
      </node>
      <node identifier="7697f046-e514-7bdc-7bda-95ab8d05eeaf" nodeName="ii-the-pool-of-tears">
-      <variant sortingIndex="400" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="400" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <title __type="string">II. The Pool of Tears</title>
-        <chapterImage __type="object" __identifier="1d0d4e41-bc2a-2cad-c495-21a46ffecdb8" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;1d0d4e41-bc2a-2cad-c495-21a46ffecdb8&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;11d3aded-fb1a-70e7-1412-0b465b11fcd8&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-2.jpg&quot;,&quot;hash&quot;:&quot;0641ce611d5171161c853f70ff1ae0f33dd4dc24&quot;,&quot;__identity&quot;:&quot;1eb38dbc-0580-1280-f293-4749dc1fffe5&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:353,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;fb87ffa8-456a-d488-a317-822a3c02481e&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:353,&quot;__identity&quot;:&quot;d4119e3c-3dcb-e191-a7c9-547816eee7c8&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="1d0d4e41-bc2a-2cad-c495-21a46ffecdb8" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;1d0d4e41-bc2a-2cad-c495-21a46ffecdb8&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;11d3aded-fb1a-70e7-1412-0b465b11fcd8&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-2.jpg&quot;,&quot;hash&quot;:&quot;0641ce611d5171161c853f70ff1ae0f33dd4dc24&quot;,&quot;__identity&quot;:&quot;1eb38dbc-0580-1280-f293-4749dc1fffe5&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:353,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;a7f75c33-9c9c-4dee-8acf-63c4bbbe3235&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:353,&quot;__identity&quot;:&quot;454b72b6-4b4a-4ab9-afa0-0733493b1d90&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <chapterDescription __type="string">Curiouser and curiouser!&quot; cried Alice (she was so much surprised, that for
 									a moment she quite forgot how to speak good English); &quot;now I'm opening out like the largest
 									telescope that ever was! Good-bye, feet!&quot; (for when she looked down at her feet, they
@@ -2979,20 +3153,20 @@
       </node>
      </node>
      <node identifier="8eb77a5d-de92-1889-2eff-8eaf2a1d0bfe" nodeName="iii-a-caucus-race-and-a-long-tale">
-      <variant sortingIndex="500" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="500" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <title __type="string">III. A Caucus-race and a Long Tale</title>
         <chapterDescription __type="string">They were indeed a queer-looking party that assembled on the bank—the birds with
 									draggled feathers, the animals with their fur clinging close to them, and all dripping wet,
 									cross, and uncomfortable.
 								</chapterDescription>
-        <chapterImage __type="object" __identifier="310de05c-479b-e16b-dd8e-db1fd4f56d28" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;310de05c-479b-e16b-dd8e-db1fd4f56d28&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a798ee5d-e75b-3595-578e-056439e1695e&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;flying.jpg&quot;,&quot;hash&quot;:&quot;ae939055564831ad71ed68284e3b6725f29c1045&quot;,&quot;__identity&quot;:&quot;14148fb6-5234-fd4c-6e88-26a186e0b2f3&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:373,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;dc29179d-b2f7-1eb7-f43b-4cbb8df0ffb6&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:373,&quot;__identity&quot;:&quot;05076625-0a7c-fc04-68b6-a27e50dbea8c&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="310de05c-479b-e16b-dd8e-db1fd4f56d28" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;310de05c-479b-e16b-dd8e-db1fd4f56d28&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a798ee5d-e75b-3595-578e-056439e1695e&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;flying.jpg&quot;,&quot;hash&quot;:&quot;ae939055564831ad71ed68284e3b6725f29c1045&quot;,&quot;__identity&quot;:&quot;14148fb6-5234-fd4c-6e88-26a186e0b2f3&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:373,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;bde6c904-2c2d-4d58-ac1e-9ce6b4e9e19e&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:373,&quot;__identity&quot;:&quot;658e8151-0b3b-49d3-a00c-ad8550061483&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">iii-a-caucus-race-and-a-long-tale</uriPathSegment>
         <canonicalLink __type="string"></canonicalLink>
@@ -3026,13 +3200,13 @@
       </node>
      </node>
      <node identifier="a8c18020-0a89-168c-2703-680fa7795114" nodeName="iv-the-rabbit-sends-in-a-little-bill">
-      <variant sortingIndex="600" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="600" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <title __type="string">IV. The Rabbit sends in a Little Bill</title>
         <chapterDescription __type="string">It was the White Rabbit, trotting slowly back again, and looking anxiously about
@@ -3040,7 +3214,7 @@
 									Duchess! The Duchess! Oh my dear paws! Oh my fur and whiskers! She'll get me executed, as sure
 									as ferrets are ferrets!
 								</chapterDescription>
-        <chapterImage __type="object" __identifier="a24bdc6d-424b-8639-0c30-817b4ce29a64" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;a24bdc6d-424b-8639-0c30-817b4ce29a64&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a0178d77-5c04-b829-a613-c9d2b6fb92cb&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alicecards.jpg&quot;,&quot;hash&quot;:&quot;0d5f77e755f664b393b62ca51a056c06f05e83c6&quot;,&quot;__identity&quot;:&quot;9a2cd8b5-c9ad-7bad-e483-25fb73a4c562&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:356,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;82168945-7e2c-9054-772e-97919ef9fb6e&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:356,&quot;__identity&quot;:&quot;93bc4fb5-63e9-f4d9-2a7e-7985ac01da3b&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="a24bdc6d-424b-8639-0c30-817b4ce29a64" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;a24bdc6d-424b-8639-0c30-817b4ce29a64&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a0178d77-5c04-b829-a613-c9d2b6fb92cb&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alicecards.jpg&quot;,&quot;hash&quot;:&quot;0d5f77e755f664b393b62ca51a056c06f05e83c6&quot;,&quot;__identity&quot;:&quot;9a2cd8b5-c9ad-7bad-e483-25fb73a4c562&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:356,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;56dd0237-1d08-470d-905e-ac306d4c93ad&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:356,&quot;__identity&quot;:&quot;2e41a292-cd27-4ef8-826b-6d4c30317764&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">iv-the-rabbit-sends-in-a-little-bill</uriPathSegment>
         <canonicalLink __type="string"></canonicalLink>
@@ -3075,18 +3249,18 @@
       </node>
      </node>
      <node identifier="50d505ea-6703-d959-550a-4a7f879607f9" nodeName="ix-the-mock-turtle-s-story">
-      <variant sortingIndex="1100" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="1100" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:12+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <layout __type="string">chapter</layout>
         <title __type="string">IX. The Mock Turtle's Story</title>
         <chapterDescription __type="string">You can't think how glad I am to see you again, you dear old thing!&quot; said the Duchess, as she tucked her arm affectionately into Alice's, and they walked off together. Alice was very glad to find her in such a pleasant temper, and thought to herself that perhaps it was only the pepper that had made her so savage when they met in the kitchen.</chapterDescription>
-        <chapterImage __type="object" __identifier="b23052f2-bd58-854c-b613-ea76f7d4a401" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;b23052f2-bd58-854c-b613-ea76f7d4a401&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;0bf33a79-3ee6-cdb2-94f1-95bc46beee0b&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;birds.jpg&quot;,&quot;hash&quot;:&quot;dd224dfed85490797a385d01ccd91053670d00ce&quot;,&quot;__identity&quot;:&quot;4d119e80-eda4-320e-eb34-300ddc5624e4&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:372,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;a455f5da-2e24-e701-719c-b496d7f7f938&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:372,&quot;__identity&quot;:&quot;59ec5063-ef62-1566-3327-47eda8002659&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="b23052f2-bd58-854c-b613-ea76f7d4a401" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;b23052f2-bd58-854c-b613-ea76f7d4a401&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;0bf33a79-3ee6-cdb2-94f1-95bc46beee0b&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;birds.jpg&quot;,&quot;hash&quot;:&quot;dd224dfed85490797a385d01ccd91053670d00ce&quot;,&quot;__identity&quot;:&quot;4d119e80-eda4-320e-eb34-300ddc5624e4&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:372,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;fe8bc371-9e7b-4cbb-aaf8-f4498960161a&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:372,&quot;__identity&quot;:&quot;a0979dff-d7da-4e0e-91d6-f2f1caa49b68&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">ix-the-mock-turtle-s-story</uriPathSegment>
         <canonicalLink __type="string"></canonicalLink>
        </properties>
@@ -3217,19 +3391,19 @@
       </node>
      </node>
      <node identifier="a0d4a0f6-bb04-1805-6e43-c76a948383ed" nodeName="v-advice-from-a-caterpillar">
-      <variant sortingIndex="700" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="700" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:12+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <title __type="string">V. Advice from a Caterpillar</title>
         <chapterDescription __type="string">The Caterpillar and Alice looked at each other for some time in silence: at last
 									the Caterpillar took the hookah out of its mouth, and addressed her in a languid, sleepy voice.
 								</chapterDescription>
-        <chapterImage __type="object" __identifier="cddbc6af-2f54-2d43-d0af-810cbd3c8bee" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;cddbc6af-2f54-2d43-d0af-810cbd3c8bee&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;d08de093-dc6b-55ea-adfc-d894ef87b0e0&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;smoking.jpg&quot;,&quot;hash&quot;:&quot;930b8279a553880c49d7a73765778907ce392db5&quot;,&quot;__identity&quot;:&quot;57786bc3-d0e5-a181-c9c6-9675ff39cf91&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:337,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;16e3a851-89be-905a-08b6-4dd35f81f3eb&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:499,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:337,&quot;__identity&quot;:&quot;2ef4a130-e29b-570e-30df-242528e7f8dc&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="cddbc6af-2f54-2d43-d0af-810cbd3c8bee" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;cddbc6af-2f54-2d43-d0af-810cbd3c8bee&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;d08de093-dc6b-55ea-adfc-d894ef87b0e0&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;smoking.jpg&quot;,&quot;hash&quot;:&quot;930b8279a553880c49d7a73765778907ce392db5&quot;,&quot;__identity&quot;:&quot;57786bc3-d0e5-a181-c9c6-9675ff39cf91&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:337,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;4c63b1eb-bc12-4ec8-9941-41815c0ab672&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:499,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:337,&quot;__identity&quot;:&quot;820db87c-9818-45f1-9c4d-7d330071bcc1&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">v-advice-from-a-caterpillar</uriPathSegment>
         <canonicalLink __type="string"></canonicalLink>
@@ -3264,13 +3438,13 @@
       </node>
      </node>
      <node identifier="65179278-97cc-7794-4182-5a80ab6f1bc9" nodeName="vi-pig-and-pepper">
-      <variant sortingIndex="800" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="800" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:12+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <title __type="string">VI. Pig and Pepper</title>
         <chapterDescription __type="string">For a minute or two she stood looking at the house, and wondering what to do
@@ -3278,7 +3452,7 @@
 									footman because he was in livery: otherwise, judging by his face only, she would have called him
 									a fish)—and rapped loudly at the door with his knuckles.
 								</chapterDescription>
-        <chapterImage __type="object" __identifier="cc7a55e2-70f2-4a73-4856-07e9db6734b1" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;cc7a55e2-70f2-4a73-4856-07e9db6734b1&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;65e3383c-173c-2f2e-1afc-259ba2bd3ca6&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;piggy.jpg&quot;,&quot;hash&quot;:&quot;85e5d4f8e34ad7dad4a34ba7af45d5584ea3db14&quot;,&quot;__identity&quot;:&quot;4bf693a4-93fe-5cba-4518-4e9897147fe4&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:357,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;12084c65-1406-037e-5792-4b336f722988&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:357,&quot;__identity&quot;:&quot;4076d7d4-4631-57c6-243d-a6ce1b5ceac1&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="cc7a55e2-70f2-4a73-4856-07e9db6734b1" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;cc7a55e2-70f2-4a73-4856-07e9db6734b1&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;65e3383c-173c-2f2e-1afc-259ba2bd3ca6&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;piggy.jpg&quot;,&quot;hash&quot;:&quot;85e5d4f8e34ad7dad4a34ba7af45d5584ea3db14&quot;,&quot;__identity&quot;:&quot;4bf693a4-93fe-5cba-4518-4e9897147fe4&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:357,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;842d6364-83fb-420f-b56b-b3e4bbe7313c&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:357,&quot;__identity&quot;:&quot;4d7f7766-73bb-4553-ab49-725422c1cc57&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">vi-pig-and-pepper</uriPathSegment>
         <canonicalLink __type="string"></canonicalLink>
@@ -3313,17 +3487,17 @@
       </node>
      </node>
      <node identifier="8454cc34-70ea-bce5-1ce4-a8783333c159" nodeName="vii-a-mad-tea-party">
-      <variant sortingIndex="900" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="900" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:12+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <title __type="string">VII. A Mad Tea-party</title>
         <chapterDescription __type="string">There was a table set out under a tree in front of the house, and the March Hare and the Hatter were having tea at it.</chapterDescription>
-        <chapterImage __type="object" __identifier="f3d0fcad-03e0-c72a-4df2-258f7cfff348" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f3d0fcad-03e0-c72a-4df2-258f7cfff348&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;6bc60415-af45-b2f4-af11-73b32e4532e9&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;teatime.jpg&quot;,&quot;hash&quot;:&quot;b1b18947b2bebc44c6bbab46922f2a3856f5e33b&quot;,&quot;__identity&quot;:&quot;f814656c-6e15-5ee6-1059-9735fb760816&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;ab097605-753c-7a98-2242-ab90d4f5f596&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:359,&quot;__identity&quot;:&quot;0987dc30-70f0-485c-52ec-6065a0acf1f4&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="f3d0fcad-03e0-c72a-4df2-258f7cfff348" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f3d0fcad-03e0-c72a-4df2-258f7cfff348&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;6bc60415-af45-b2f4-af11-73b32e4532e9&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;teatime.jpg&quot;,&quot;hash&quot;:&quot;b1b18947b2bebc44c6bbab46922f2a3856f5e33b&quot;,&quot;__identity&quot;:&quot;f814656c-6e15-5ee6-1059-9735fb760816&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;4a2b6d02-6a3b-46e1-a681-5dd9ed07c317&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:359,&quot;__identity&quot;:&quot;905cd388-5a6c-449c-a270-dd4ac29384a4&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">vii-a-mad-tea-party</uriPathSegment>
         <canonicalLink __type="string"></canonicalLink>
@@ -3358,18 +3532,18 @@
       </node>
      </node>
      <node identifier="1d776e0d-f564-6a8e-2918-b85602c3de9b" nodeName="viii-the-queen-s-croquet-ground">
-      <variant sortingIndex="1000" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="1000" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:12+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <layout __type="string">chapter</layout>
         <title __type="string">VIII. The Queen's Croquet-ground</title>
         <chapterDescription __type="string">A large rose-tree stood near the entrance of the garden: the roses growing on it were white, but there were three gardeners at it, busily painting them red. Alice thought this a very curious thing, and she went nearer to watch them, and just as she came up to them she heard one of them say &quot;Look out now, Five! Don't go splashing paint over me like that!&quot;</chapterDescription>
-        <chapterImage __type="object" __identifier="1fd75420-91e2-70b2-4f7e-20d0f5900b3c" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;1fd75420-91e2-70b2-4f7e-20d0f5900b3c&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;8244a1f2-5474-c7c2-0bcb-2c1f53080103&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;queen.jpg&quot;,&quot;hash&quot;:&quot;7861cd0cc497284869845b442b46ee25224c4685&quot;,&quot;__identity&quot;:&quot;24f8cd98-708a-c664-a08b-73914f39025e&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:364,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;652cb60a-7f9f-711c-d50b-2ef125f820eb&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:364,&quot;__identity&quot;:&quot;682724d3-12a5-d608-6eaf-c2b4737a364d&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="1fd75420-91e2-70b2-4f7e-20d0f5900b3c" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;1fd75420-91e2-70b2-4f7e-20d0f5900b3c&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;8244a1f2-5474-c7c2-0bcb-2c1f53080103&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;queen.jpg&quot;,&quot;hash&quot;:&quot;7861cd0cc497284869845b442b46ee25224c4685&quot;,&quot;__identity&quot;:&quot;24f8cd98-708a-c664-a08b-73914f39025e&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:364,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;27794e39-ff10-406e-9c05-9a14d87da176&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:364,&quot;__identity&quot;:&quot;2e05079e-10d3-4692-9c80-927681a0944d&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">viii-the-queen-s-croquet-ground</uriPathSegment>
         <canonicalLink __type="string"></canonicalLink>
        </properties>
@@ -3403,18 +3577,18 @@
       </node>
      </node>
      <node identifier="23f35ab0-0d82-21e7-0006-dd63c5b3dce8" nodeName="x-the-lobster-quadrille">
-      <variant sortingIndex="1200" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="1200" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:12+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <layout __type="string">chapter</layout>
         <title __type="string">X. The Lobster Quadrille</title>
         <chapterDescription __type="string">The Mock Turtle sighed deeply, and drew the back of one flapper across his eyes. He looked at Alice, and tried to speak, but, for a minute or two, sobs choked his voice. &quot;Same as if he had a bone in his throat,&quot; said the Gryphon: and it set to work shaking him and punching him in the back.</chapterDescription>
-        <chapterImage __type="object" __identifier="24ba5744-8475-c519-9dcb-e6ef740bc0d3" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;24ba5744-8475-c519-9dcb-e6ef740bc0d3&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;17602a91-ba2b-c40d-e9fe-10f92ea6bd8b&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;cooking.jpg&quot;,&quot;hash&quot;:&quot;7d0265f93741373a60457ba586f6d7a8c0865a09&quot;,&quot;__identity&quot;:&quot;8eb0ba0c-bd0b-7da2-0f4d-77149299c2fe&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:384,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;27334660-e7e8-6808-c77f-e129747bb1a5&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:384,&quot;__identity&quot;:&quot;391bdf9a-b53c-9a13-dbc7-f28a53475f5e&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="24ba5744-8475-c519-9dcb-e6ef740bc0d3" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;24ba5744-8475-c519-9dcb-e6ef740bc0d3&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;17602a91-ba2b-c40d-e9fe-10f92ea6bd8b&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;cooking.jpg&quot;,&quot;hash&quot;:&quot;7d0265f93741373a60457ba586f6d7a8c0865a09&quot;,&quot;__identity&quot;:&quot;8eb0ba0c-bd0b-7da2-0f4d-77149299c2fe&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:384,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;0164cdd4-0299-4a64-9c78-5637059b6501&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:384,&quot;__identity&quot;:&quot;527a9301-3bbd-42d4-8e92-239e06e8df97&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">x-the-lobster-quadrille</uriPathSegment>
         <canonicalLink __type="string"></canonicalLink>
        </properties>
@@ -3448,18 +3622,18 @@
       </node>
      </node>
      <node identifier="e40275e7-109b-ba78-da74-0a71c10c2652" nodeName="xi-who-stole-the-tarts">
-      <variant sortingIndex="1300" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="1300" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:12+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <layout __type="string">chapter</layout>
         <title __type="string">XI. Who Stole the Tarts?</title>
         <chapterDescription __type="string">The King and Queen of Hearts were seated on their throne when they arrived, with a great crowd assembled about them—all sorts of little birds and beasts, as well as the whole pack of cards: the Knave was standing before them, in chains, with a soldier on each side to guard him;</chapterDescription>
-        <chapterImage __type="object" __identifier="f16e4228-5361-cccd-8c12-4733331e65eb" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f16e4228-5361-cccd-8c12-4733331e65eb&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;b674d9cd-4a7f-a33a-be12-9a5efdaedb98&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;roses.jpg&quot;,&quot;hash&quot;:&quot;ee94449bfc53d38d8e286879f38365ef3e9ca215&quot;,&quot;__identity&quot;:&quot;2710ab07-64b4-242a-a897-4fc10f83d4bd&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:364,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;76c0d073-7e84-6f8b-c194-4925391f07b7&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:364,&quot;__identity&quot;:&quot;3add3835-949e-7cdc-872a-0af7abfa3b37&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="f16e4228-5361-cccd-8c12-4733331e65eb" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f16e4228-5361-cccd-8c12-4733331e65eb&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;b674d9cd-4a7f-a33a-be12-9a5efdaedb98&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;roses.jpg&quot;,&quot;hash&quot;:&quot;ee94449bfc53d38d8e286879f38365ef3e9ca215&quot;,&quot;__identity&quot;:&quot;2710ab07-64b4-242a-a897-4fc10f83d4bd&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:364,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;13795f24-5901-4430-a1be-d014cf3357a6&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:364,&quot;__identity&quot;:&quot;cd43e3c9-4800-41f6-9820-60121614446a&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">xi-who-stole-the-tarts</uriPathSegment>
         <canonicalLink __type="string"></canonicalLink>
        </properties>
@@ -3492,18 +3666,18 @@
       </node>
      </node>
      <node identifier="f1fbb253-1851-805a-c2fa-f4692458faeb" nodeName="xii-alice-s-evidence">
-      <variant sortingIndex="1400" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="8" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="1400" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Chapter" version="9" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:12+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <layout __type="string">chapter</layout>
         <title __type="string">XII. Alice's Evidence</title>
         <chapterDescription __type="string">&quot;There!&quot; cried Alice, quite forgetting in the flurry of the moment how large she had grown in the last few minutes, and she jumped up in such a hurry that she tipped over the jury-box with the edge of her skirt, upsetting all the jurymen on to the heads of the crowd below, and there they lay sprawling about, ...</chapterDescription>
-        <chapterImage __type="object" __identifier="e4abd49b-c36b-7892-d0f4-a8441b799b85" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;e4abd49b-c36b-7892-d0f4-a8441b799b85&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;10b114c2-7fc3-6e3a-ab8f-0a85a0854143&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;people.jpg&quot;,&quot;hash&quot;:&quot;504f2f8ad00d1a9ef228b288ca42107905c9e22e&quot;,&quot;__identity&quot;:&quot;bf2bdc0d-64fc-ec23-84c4-7db35456dc2b&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;b08696f8-ad8e-2c25-4264-473e33cc8834&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:359,&quot;__identity&quot;:&quot;374ed33e-aad8-836d-e087-ece5d1b7eb12&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="e4abd49b-c36b-7892-d0f4-a8441b799b85" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;e4abd49b-c36b-7892-d0f4-a8441b799b85&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;10b114c2-7fc3-6e3a-ab8f-0a85a0854143&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;people.jpg&quot;,&quot;hash&quot;:&quot;504f2f8ad00d1a9ef228b288ca42107905c9e22e&quot;,&quot;__identity&quot;:&quot;bf2bdc0d-64fc-ec23-84c4-7db35456dc2b&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;5c1cad7e-86dd-4866-a683-d07eff88064a&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:359,&quot;__identity&quot;:&quot;29ae5ace-e053-4985-aece-8973952d0501&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">xii-alice-s-evidence</uriPathSegment>
         <canonicalLink __type="string"></canonicalLink>
        </properties>
@@ -3537,13 +3711,13 @@
      </node>
     </node>
     <node identifier="a319a653-ef38-448d-9d19-0894299068aa" nodeName="try-me">
-     <variant sortingIndex="500" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="8" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="500" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>en_US</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:12+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T19:06:18+02:00</lastModificationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
       <properties>
        <title __type="string">Try me</title>
        <layout __type="string">default</layout>
