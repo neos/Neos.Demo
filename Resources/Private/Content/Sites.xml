@@ -16,7 +16,7 @@
       <layout __type="string">landingPage</layout>
       <uriPathSegment __type="string">home</uriPathSegment>
       <image __type="object" __identifier="04de8975-4462-4c75-8f78-b23061292fb6" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;04de8975-4462-4c75-8f78-b23061292fb6&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;ab4d378b-d2b8-4b0e-a2db-f5f95718ef28&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Neos2.1Desk.jpg&quot;,&quot;hash&quot;:&quot;6764994e36c070857e767ca440edc73c8f344e7d&quot;,&quot;__identity&quot;:&quot;e7f75fc3-3e0a-4e42-9108-85056fc9c9d1&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:2350,&quot;position&quot;:10,&quot;width&quot;:4709,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;afa51840-ad74-4308-8652-e996f5314345&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:1251,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:2508,&quot;__identity&quot;:&quot;8f6687fe-23f6-4188-8d85-bc5186513f95&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
-      <imageTitleText __type="string">Photo by Morgan Sessions</imageTitleText>
+      <imageTitleText __type="string">Photo by Mr. Coffee</imageTitleText>
       <titleOverride __type="string"></titleOverride>
       <metaDescription __type="string"></metaDescription>
       <metaKeywords __type="string"></metaKeywords>
@@ -50,7 +50,7 @@
       <layout __type="string">landingPage</layout>
       <uriPathSegment __type="string">home</uriPathSegment>
       <image __type="object" __identifier="04de8975-4462-4c75-8f78-b23061292fb6" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;04de8975-4462-4c75-8f78-b23061292fb6&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;ab4d378b-d2b8-4b0e-a2db-f5f95718ef28&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Neos2.1Desk.jpg&quot;,&quot;hash&quot;:&quot;6764994e36c070857e767ca440edc73c8f344e7d&quot;,&quot;__identity&quot;:&quot;e7f75fc3-3e0a-4e42-9108-85056fc9c9d1&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:2350,&quot;position&quot;:10,&quot;width&quot;:4709,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;afa51840-ad74-4308-8652-e996f5314345&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:1251,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:2508,&quot;__identity&quot;:&quot;8f6687fe-23f6-4188-8d85-bc5186513f95&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
-      <imageTitleText __type="string">Photo by Morgan Sessions</imageTitleText>
+      <imageTitleText __type="string">Photo by Mr. Coffee</imageTitleText>
       <titleOverride __type="string"></titleOverride>
       <metaDescription __type="string"></metaDescription>
       <metaKeywords __type="string"></metaKeywords>
@@ -118,7 +118,7 @@
       <layout __type="string">landingPage</layout>
       <uriPathSegment __type="string">home</uriPathSegment>
       <image __type="object" __identifier="32082be9-1874-4353-9055-c926ba578560" __classname="TYPO3\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;32082be9-1874-4353-9055-c926ba578560&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;ab4d378b-d2b8-4b0e-a2db-f5f95718ef28&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Neos2.1Desk.jpg&quot;,&quot;hash&quot;:&quot;6764994e36c070857e767ca440edc73c8f344e7d&quot;,&quot;__identity&quot;:&quot;e7f75fc3-3e0a-4e42-9108-85056fc9c9d1&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:2350,&quot;position&quot;:10,&quot;width&quot;:4709,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;41a374b9-6d67-4141-a79c-1e102073ee68&quot;,&quot;__type&quot;:&quot;TYPO3\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
-      <imageTitleText __type="string">Photo by Morgan Sessions</imageTitleText>
+      <imageTitleText __type="string">Photo by Mr. Coffee</imageTitleText>
       <titleOverride __type="string"></titleOverride>
       <metaDescription __type="string"></metaDescription>
       <metaKeywords __type="string"></metaKeywords>

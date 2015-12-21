@@ -260,7 +260,6 @@
   ui:
     label: i18n
     help:
-      thumbnail: 'resource://TYPO3.NeosDemoTypo3Org/Public/NodeTypes/Thumbnails/ChapterMenu.png'
       message: |
         The ChapterMenu renders an overview of all chapters below the current document.
         It displays:
