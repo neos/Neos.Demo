@@ -58,10 +58,10 @@ TYPO3:
             label: 'Dutch'
             values: ['nl', 'de']
             uriSegment: 'nl'
-          'dk':
+          'da':
             label: 'Danish'
-            values: ['dk']
-            uriSegment: 'dk'
+            values: ['da']
+            uriSegment: 'da'
           'lv':
             label: 'Latvian'
             values: ['lv']
