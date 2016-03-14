@@ -5,7 +5,7 @@
    <node identifier="995c9174-ddd6-4d5c-cfc0-1ffc82184677" nodeName="neosdemotypo3org">
     <variant sortingIndex="100" workspace="live" nodeType="TYPO3.NeosDemoTypo3Org:Homepage" version="7" removed="" hidden="" hiddenInIndex="">
      <dimensions>
-      <language>dk</language>
+      <language>da</language>
      </dimensions>
      <accessRoles __type="array"/>
      <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:54:02+02:00</creationDateTime>
@@ -2390,7 +2390,7 @@
      </variant>
      <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
       <dimensions>
-       <language>dk</language>
+       <language>da</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:54:02+02:00</creationDateTime>
@@ -2464,7 +2464,7 @@
      </variant>
      <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
       <dimensions>
-       <language>dk</language>
+       <language>da</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:54:02+02:00</creationDateTime>
@@ -2929,7 +2929,7 @@
      </variant>
      <variant sortingIndex="250" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
       <dimensions>
-       <language>dk</language>
+       <language>da</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:54:02+02:00</creationDateTime>
@@ -2970,7 +2970,7 @@
      <node identifier="d17caff2-f50c-d30b-b735-9b9216de02e9" nodeName="node52697bdfee199">
       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="4" removed="" hidden="" hiddenInIndex="">
        <dimensions>
-        <language>dk</language>
+        <language>da</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
