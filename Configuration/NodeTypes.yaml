@@ -18,6 +18,7 @@
         image:
           label: 'TYPO3.NeosDemoTypo3Org:NodeTypes.Page:groups.image'
           position: 200
+          icon: 'icon-image'
   properties:
     'layout':
       ui:
@@ -291,11 +292,12 @@
     'TYPO3.Neos:Plugin': TRUE
   ui:
     label: i18n
-    icon: 'icon-rss'
+    icon: 'icon-flickr'
     inspector:
       groups:
         'feed':
           label: 'Feed'
+          icon: 'icon-rss'
     help:
       message: 'Displays a gallery of images from a flickr stream based on tags.'
   options:
@@ -327,6 +329,7 @@
       groups:
         'video':
           label: i18n
+          icon: 'icon-film'
           position: 50
     help:
       message: 'Embeds a YouTube video as content defined by a video ID.'
