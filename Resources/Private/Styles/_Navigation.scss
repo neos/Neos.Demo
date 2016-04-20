@@ -88,19 +88,16 @@
 }
 
 // Neos logo
-.navbar-brand {
-	background-image: url('../Images/logo.png');
-	background-repeat: no-repeat;
-	background-size: 67px 32px;
-	text-indent: -999px;
-	width: 135px;
-	height: 32px;
-	margin-right: 20px;
+.navbar-brandlogo {
+	width: 50px;
+	height: 50px;
+	margin-right: 30px;
+	margin-top: -3px;
+}
 
-	@media #{$screen-sm} {
-		background-image: url('../Images/logo@2x.png');
-		background-size: 67px 32px;
-		margin-left: 20px;
+@media only screen and (max-width: 767px) {
+	.navbar-brandlogo {
+		margin-top: -9px
 	}
 }
 
