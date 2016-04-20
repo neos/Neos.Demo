@@ -110,7 +110,7 @@
 	}
 
 	.navbar-toggle {
-		background-color: $orange;
+		background-color: $brandColorPrimary;
 		outline: none;
 		margin-top: 0;
 
@@ -168,7 +168,7 @@
 		&,
 		&:hover,
 		&:focus {
-			color: $warning;
+			color: $brandColorPrimary;
 			background-color: transparent;
 			@include border-radius(0);
 		}
@@ -191,7 +191,7 @@
 			&,
 			&:hover,
 			&:focus {
-				color: $warning;
+				color: $brandColorPrimary;
 				background-color: transparent;
 				@include border-radius(0);
 			}
@@ -239,7 +239,7 @@
 
 			&,
 			&:hover {
-				color: $warning;
+				color: $brandColorPrimary;
 			}
 		}
 	}
@@ -281,7 +281,7 @@ footer.navbar {
 			line-height: 30px;
 			text-transform: uppercase;
 			margin-right: 15px;
-			background-color: $orange;
+			background-color: $brandColorPrimary;
 			color: #fff;
 			border: 1px solid #ddd;
 			border-radius: 4px;
@@ -354,7 +354,7 @@ footer.navbar {
 			}
 
 			&.current a {
-				color: $orange;
+				color: $brandColorPrimary;
 			}
 
 			a {
