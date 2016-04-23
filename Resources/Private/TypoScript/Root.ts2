@@ -2,7 +2,7 @@
 # Create shorthand namespace for our site package name.
 # It is available in all included typoscript files.
 #
-namespace: Site=TYPO3.NeosDemoTypo3Org
+namespace: Site=Neos.Demo
 
 include: NodeTypes/*
 
@@ -13,14 +13,14 @@ page = Page {
 	head {
 		stylesheets {
 			site = TYPO3.TypoScript:Template {
-				templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
+				templatePath = 'resource://Neos.Demo/Private/Templates/Page/Default.html'
 				sectionName = 'stylesheets'
 				node = ${node}
 			}
 		}
 
 		metadata = TYPO3.TypoScript:Template {
-			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
+			templatePath = 'resource://Neos.Demo/Private/Templates/Page/Default.html'
 			sectionName = 'metadata'
 		}
 	}
@@ -29,7 +29,7 @@ page = Page {
 	bodyTag.attributes.class = ${q(node).parents().count() >= 1 && q(node).children('[instanceof TYPO3.Neos:Document]').filter('[_hiddenInIndex=false]').count() > 0 ? 'has-subpages' : ''}
 
 	body {
-		templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
+		templatePath = 'resource://Neos.Demo/Private/Templates/Page/Default.html'
 		sectionName = 'body'
 		imageUri = TYPO3.Neos:ImageUri {
 			asset = ${q(node).property('image')}
@@ -41,19 +41,19 @@ page = Page {
 
 		parts {
 			mainMenu = Menu {
-				templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/MainMenu.html'
+				templatePath = 'resource://Neos.Demo/Private/Templates/TypoScriptObjects/MainMenu.html'
 				itemCollection = ${q(site).add(q(site).children('[instanceof TYPO3.Neos:Document]')).get()}
 			}
 
 			secondLevelMenu = Menu {
 				entryLevel = 2
-				templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/SecondLevelMenu.html'
+				templatePath = 'resource://Neos.Demo/Private/Templates/TypoScriptObjects/SecondLevelMenu.html'
 				maximumLevels = 1
 			}
 
 			metaMenu = Menu {
 				entryLevel = 2
-				templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/MetaMenu.html'
+				templatePath = 'resource://Neos.Demo/Private/Templates/TypoScriptObjects/MetaMenu.html'
 				maximumLevels = 1
 				startingPoint = ${q(site).children('metamenu').get(0)}
 			}
@@ -62,7 +62,7 @@ page = Page {
 
 			languageMenu = TYPO3.Neos:DimensionMenu {
 				dimension = 'language'
-				templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/TypoScriptObjects/LanguageMenu.html'
+				templatePath = 'resource://Neos.Demo/Private/Templates/TypoScriptObjects/LanguageMenu.html'
 			}
 		}
 
@@ -84,7 +84,7 @@ page = Page {
 		}
 
 		javascripts.site = TYPO3.TypoScript:Template {
-			templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Default.html'
+			templatePath = 'resource://Neos.Demo/Private/Templates/Page/Default.html'
 			sectionName = 'bodyScripts'
 		}
 	}
@@ -105,7 +105,7 @@ chapter < page
 chapter {
 	bodyTag.attributes.class = 'chapter'
 	body {
-		templatePath = 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/Page/Chapter.html'
+		templatePath = 'resource://Neos.Demo/Private/Templates/Page/Chapter.html'
 		title = ${q(node).property('title')}
 		title.@process.convertUris = ConvertUris
 
@@ -126,7 +126,7 @@ print {
 				media = 'all'
 				rel = 'stylesheet'
 				href = TYPO3.TypoScript:ResourceUri {
-					path = 'resource://TYPO3.NeosDemoTypo3Org/Public/Styles/Print.css'
+					path = 'resource://Neos.Demo/Public/Styles/Print.css'
 				}
 			}
 		}

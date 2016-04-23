@@ -16,7 +16,7 @@
     inspector:
       groups:
         image:
-          label: 'TYPO3.NeosDemoTypo3Org:NodeTypes.Page:groups.image'
+          label: 'Neos.Demo:NodeTypes.Page:groups.image'
           position: 200
           icon: 'icon-image'
   properties:
@@ -27,9 +27,9 @@
           editorOptions:
             values:
               'default':
-                label: 'TYPO3.NeosDemoTypo3Org:NodeTypes.Page:properties.layout.selectBoxEditor.values.default'
+                label: 'Neos.Demo:NodeTypes.Page:properties.layout.selectBoxEditor.values.default'
               'landingPage':
-                label: 'TYPO3.NeosDemoTypo3Org:NodeTypes.Page:properties.layout.selectBoxEditor.values.landingPage'
+                label: 'Neos.Demo:NodeTypes.Page:properties.layout.selectBoxEditor.values.landingPage'
     'subpageLayout':
       ui:
         inspector:
@@ -37,13 +37,13 @@
           editorOptions:
             values:
               'default':
-                label: 'TYPO3.NeosDemoTypo3Org:NodeTypes.Page:properties.subpageLayout.selectBoxEditor.values.default'
+                label: 'Neos.Demo:NodeTypes.Page:properties.subpageLayout.selectBoxEditor.values.default'
               'landingPage':
-                label: 'TYPO3.NeosDemoTypo3Org:NodeTypes.Page:properties.subpageLayout.selectBoxEditor.values.landingPage'
+                label: 'Neos.Demo:NodeTypes.Page:properties.subpageLayout.selectBoxEditor.values.landingPage'
     'image':
       type: 'TYPO3\Media\Domain\Model\ImageInterface'
       ui:
-        label: 'TYPO3.NeosDemoTypo3Org:NodeTypes.Page:properties.image'
+        label: 'Neos.Demo:NodeTypes.Page:properties.image'
         reloadIfChanged: TRUE
         inspector:
           group: 'image'
@@ -57,7 +57,7 @@
     'imageTitleText':
       type: string
       ui:
-        label: 'TYPO3.NeosDemoTypo3Org:NodeTypes.Page:properties.imageTitleText'
+        label: 'Neos.Demo:NodeTypes.Page:properties.imageTitleText'
         reloadIfChanged: TRUE
         inspector:
           group: 'image'
@@ -66,7 +66,7 @@
 ##
 # Special homepage nodetype that declares a footer child node for usage as shared footer.
 #
-'TYPO3.NeosDemoTypo3Org:Homepage':
+'Neos.Demo:Homepage':
   ui:
     label: i18n
     icon: 'icon-globe'
@@ -86,7 +86,7 @@
           'TYPO3.Neos.NodeTypes:Image': TRUE
   constraints:
     nodeTypes:
-      'TYPO3.NeosDemoTypo3Org:Homepage': FALSE
+      'Neos.Demo:Homepage': FALSE
 
 ##
 # Adjust the "Headline" node type:
@@ -179,13 +179,13 @@
             values:
               '': ~
               'contact-form':
-                label: 'TYPO3.NeosDemoTypo3Org:NodeTypes.Form:properties.formIdentifier.selectBoxEditor.value.contact-form'
+                label: 'Neos.Demo:NodeTypes.Form:properties.formIdentifier.selectBoxEditor.value.contact-form'
 
 
 ##
 # A new Document NodeType "Chapter"
 #
-'TYPO3.NeosDemoTypo3Org:Chapter':
+'Neos.Demo:Chapter':
   superTypes:
     'TYPO3.Neos:Document': TRUE
   childNodes:
@@ -255,7 +255,7 @@
 ##
 # A custom "Menu" NodeType for chapters
 #
-'TYPO3.NeosDemoTypo3Org:ChapterMenu':
+'Neos.Demo:ChapterMenu':
   superTypes:
     'TYPO3.Neos.NodeTypes:Menu': TRUE
   ui:
@@ -272,7 +272,7 @@
 # A "Registration" plugin that allows creation of Neos user accounts through the Frontend
 # Warning: This is not to be used on productive Websites!
 #
-'TYPO3.NeosDemoTypo3Org:Registration':
+'Neos.Demo:Registration':
   superTypes:
     'TYPO3.Neos:Plugin': TRUE
   ui:
@@ -287,7 +287,7 @@
 ##
 # A simple "Flickr" plugin that demonstrates the "PluginViews"-feature
 #
-'TYPO3.NeosDemoTypo3Org:Flickr':
+'Neos.Demo:Flickr':
   superTypes:
     'TYPO3.Neos:Plugin': TRUE
   ui:
@@ -303,7 +303,7 @@
   options:
     'pluginViews':
       'UserFeed':
-        label: 'TYPO3.NeosDemoTypo3Org:NodeTypes.Flickr:options.pluginViews.userFeed'
+        label: 'Neos.Demo:NodeTypes.Flickr:options.pluginViews.userFeed'
         controllerActions:
           'TYPO3\NeosDemoTypo3Org\Controller\FlickrController': ['userStream']
   properties:
@@ -319,7 +319,7 @@
 ##
 # A "Youtube" content element
 #
-'TYPO3.NeosDemoTypo3Org:YouTube':
+'Neos.Demo:YouTube':
   superTypes:
     'TYPO3.Neos:Content': TRUE
   ui:
@@ -371,7 +371,7 @@
 ##
 # A "Carousel" content element that renders "Image" child nodes into a JavaScript based slideshow
 #
-'TYPO3.NeosDemoTypo3Org:Carousel':
+'Neos.Demo:Carousel':
   superTypes:
     'TYPO3.Neos:Content': TRUE
   childNodes:
@@ -386,7 +386,7 @@
           'TYPO3.Neos.NodeTypes:Image': TRUE
           'TYPO3.Neos.NodeTypes:Html': TRUE
           'TYPO3.Neos.NodeTypes:ContentReferences': TRUE
-          'TYPO3.NeosDemoTypo3Org:YouTube': TRUE
+          'Neos.Demo:YouTube': TRUE
   ui:
     label: i18n
     group: 'plugins'

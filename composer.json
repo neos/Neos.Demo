@@ -1,5 +1,5 @@
 {
-    "name": "typo3/neosdemotypo3org",
+    "name": "neos/demo",
     "type": "typo3-flow-site",
     "description": "Site package for the Neos Demo Site",
     "license": "GPL-3.0+",
@@ -11,7 +11,7 @@
     },
     "autoload": {
         "psr-0": {
-            "TYPO3\\NeosDemoTypo3Org": "Classes"
+            "Neos\\Demo": "Classes"
         }
     }
 }

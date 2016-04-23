@@ -2,6 +2,6 @@
 # "Registration" element, extending "Plugin"
 #
 prototype(Site:Registration) < prototype(Plugin) {
-	package = 'TYPO3.NeosDemoTypo3Org'
+	package = 'Neos.Demo'
 	controller = 'Registration'
 }

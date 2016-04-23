@@ -1,7 +1,7 @@
 TYPO3:
   Form:
     yamlPersistenceManager:
-      savePath: 'resource://TYPO3.NeosDemoTypo3Org/Private/Form/'
+      savePath: 'resource://Neos.Demo/Private/Form/'
     presets:
       bootstrap:
         title: 'Twitter bootstrap'
@@ -9,7 +9,7 @@ TYPO3:
         formElementTypes:
           'TYPO3.Form:Base':
             renderingOptions:
-              layoutPathPattern: 'resource://TYPO3.NeosDemoTypo3Org/Private/Templates/ContactForm/{@type}.html'
+              layoutPathPattern: 'resource://Neos.Demo/Private/Templates/ContactForm/{@type}.html'
           'TYPO3.Form:FormElement':
             properties:
               elementClassAttribute: 'form-control'
@@ -23,16 +23,16 @@ TYPO3:
           isEditingMode: FALSE
           isPreviewMode: TRUE
           typoScriptRenderingPath: 'print'
-          title: 'TYPO3.NeosDemoTypo3Org:Main:editPreviewModes.print'
+          title: 'Neos.Demo:Main:editPreviewModes.print'
           position: 200
       translation:
         autoInclude:
-          'TYPO3.NeosDemoTypo3Org': ['Main', 'NodeTypes/*']
+          'Neos.Demo': ['Main', 'NodeTypes/*']
 
   TYPO3CR:
     contentDimensions:
       'language':
-        label: 'TYPO3.NeosDemoTypo3Org:Main:contentDimensions.language'
+        label: 'Neos.Demo:Main:contentDimensions.language'
         icon: 'icon-language'
         default: 'en_US'
         defaultPreset: 'en_US'

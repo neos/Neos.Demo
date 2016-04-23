@@ -42,7 +42,7 @@ finishers:
 #  -
 #    identifier: 'TYPO3.Form:Email'
 #    options:
-#      templatePathAndFilename: resource://TYPO3.NeosDemoTypo3Org/Private/Templates/ContactForm/Email.txt
+#      templatePathAndFilename: resource://Neos.Demo/Private/Templates/ContactForm/Email.txt
 #      subject: 'Contact from example.net'
 #      recipientAddress: 'office@example.net'
 #      recipientName: 'Office of Company'

@@ -8,10 +8,10 @@
 
 		<f:section name="stylesheets">
 			<link rel="stylesheet" href="{f:uri.resource(path: '3/css/bootstrap.min.css', package: 'TYPO3.Twitter.Bootstrap')}" media="all" />
-			<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/NeosDemo.css', package: 'TYPO3.NeosDemoTypo3Org')}" media="all" />
-			<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/Print.css', package: 'TYPO3.NeosDemoTypo3Org')}" media="print" />
+			<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/NeosDemo.css', package: 'Neos.Demo')}" media="all" />
+			<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/Print.css', package: 'Neos.Demo')}" media="print" />
 			<f:if condition="{node.context.workspace.name} != 'live'">
-				<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/Backend.css', package: 'TYPO3.NeosDemoTypo3Org')}" media="all" />
+				<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/Backend.css', package: 'Neos.Demo')}" media="all" />
 			</f:if>
 		</f:section>
 	</head>
@@ -58,7 +58,7 @@
 		<f:section name="bodyScripts">
 			<script src="{f:uri.resource(path: 'Libraries/jQuery/jquery-1.10.1.min.js', package: 'TYPO3.Twitter.Bootstrap')}"></script>
 			<script src="{f:uri.resource(path: '3/js/bootstrap.min.js', package: 'TYPO3.Twitter.Bootstrap')}"></script>
-			<script src="{f:uri.resource(path: 'JavaScript/main.min.js', package: 'TYPO3.NeosDemoTypo3Org')}"></script>
+			<script src="{f:uri.resource(path: 'JavaScript/main.min.js', package: 'Neos.Demo')}"></script>
 		</f:section>
 	</body>
 </html>
