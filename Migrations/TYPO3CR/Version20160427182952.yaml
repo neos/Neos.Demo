@@ -1,42 +1,5 @@
 up:
-  comments: 'Rename from Phoenix to Neos'
-  migration:
-    -
-      filters:
-        -
-          type: 'NodeType'
-          settings:
-            nodeType: 'TYPO3.PhoenixDemoTypo3Org:Registration'
-      transformations:
-        -
-          type: 'ChangeNodeType'
-          settings:
-            newType: 'TYPO3.NeosDemoTypo3Org:Registration'
-    -
-      filters:
-        -
-          type: 'NodeType'
-          settings:
-            nodeType: 'TYPO3.PhoenixDemoTypo3Org:YouTube'
-      transformations:
-        -
-          type: 'ChangeNodeType'
-          settings:
-            newType: 'TYPO3.NeosDemoTypo3Org:YouTube'
-    -
-      filters:
-        -
-          type: 'NodeName'
-          settings:
-            nodeName: 'phoenixdemotypo3org'
-      transformations:
-        -
-          type: 'RenameNode'
-          settings:
-            newName: 'neosdemotypo3org'
-
-down:
-  comments: 'Rename from Neos to Phoenix'
+  comments: 'Rename from TYPO3.NeosDemoTypo3Org to Neos.Demo'
   migration:
     -
       filters:
@@ -48,7 +11,7 @@ down:
         -
           type: 'ChangeNodeType'
           settings:
-            newType: 'TYPO3.PhoenixDemoTypo3Org:Registration'
+            newType: 'Neos.Demo:Registration'
     -
       filters:
         -
@@ -59,7 +22,7 @@ down:
         -
           type: 'ChangeNodeType'
           settings:
-            newType: 'TYPO3.PhoenixDemoTypo3Org:YouTube'
+            newType: 'Neos.Demo:YouTube'
     -
       filters:
         -
@@ -70,4 +33,41 @@ down:
         -
           type: 'RenameNode'
           settings:
-            newName: 'phoenixdemotypo3org'
+            newName: 'neosdemo'
+
+down:
+  comments: 'Rename from Neos.Demo to TYPO3.NeosDemoTypo3Org'
+  migration:
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Registration'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'TYPO3.NeosDemoTypo3Org:Registration'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:YouTube'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'TYPO3.NeosDemoTypo3Org:YouTube'
+    -
+      filters:
+        -
+          type: 'NodeName'
+          settings:
+            nodeName: 'neosdemo'
+      transformations:
+        -
+          type: 'RenameNode'
+          settings:
+            newName: 'neosdemotypo3org'
