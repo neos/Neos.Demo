@@ -305,7 +305,7 @@
       'UserFeed':
         label: 'Neos.Demo:NodeTypes.Flickr:options.pluginViews.userFeed'
         controllerActions:
-          'TYPO3\NeosDemoTypo3Org\Controller\FlickrController': ['userStream']
+          'Neos\Demo\Controller\FlickrController': ['userStream']
   properties:
     'tags':
       type: string
