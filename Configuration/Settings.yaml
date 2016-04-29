@@ -29,8 +29,50 @@ TYPO3:
         autoInclude:
           'Neos.Demo': ['Main', 'NodeTypes/*']
 
+    routing:
+      supportEmptySegmentForDimensions: false
+
   TYPO3CR:
     contentDimensions:
+      'country':
+        default: 'int'
+        defaultPreset: 'int'
+        label: 'Country'
+        icon: 'icon-globe'
+        presets:
+          'int':
+            label: 'International'
+            values: ['int']
+            uriSegment: 'int'
+          'de':
+            label: 'Germany'
+            values: ['de', 'int']
+            uriSegment: 'de'
+          'fr':
+            label: 'France'
+            values: ['fr', 'int']
+            uriSegment: 'fr'
+          'nl':
+            label: 'The Netherlands'
+            values: ['nl', 'int']
+            uriSegment: 'nl'
+          'ch':
+            label: 'Switzerland'
+            values: ['ch', 'int']
+            uriSegment: 'ch'
+          'da':
+            label: 'Denmark'
+            values: ['da', 'int']
+            uriSegment: 'da'
+          'gb':
+            label: 'United Kingdom'
+            values: ['gb', 'int']
+            uriSegment: 'gb'
+          'us':
+            label: 'USA'
+            values: ['us', 'int']
+            uriSegment: 'us'
+
       'language':
         label: 'Neos.Demo:Main:contentDimensions.language'
         icon: 'icon-language'
@@ -54,6 +96,10 @@ TYPO3:
             label: 'French'
             values: ['fr']
             uriSegment: 'fr'
+          'fr':
+            label: 'Italian'
+            values: ['it']
+            uriSegment: 'it'
           'nl':
             label: 'Dutch'
             values: ['nl', 'de']
