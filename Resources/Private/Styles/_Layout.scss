@@ -65,12 +65,12 @@ h1 {
 }
 
 a {
-	color: $warning;
+	color: $brandColorPrimary;
 	text-decoration: none;
 	@include transition(color, background-color 0.2s);
 
 	&:hover {
-		color: $warning;
+		color: $brandColorPrimary;
 	}
 }
 
