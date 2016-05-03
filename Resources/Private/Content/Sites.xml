@@ -153,7 +153,7 @@
           <lastModificationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:10+02:00</lastModificationDateTime>
           <properties>
            <text __type="string">&lt;p&gt;
-												Neos is publicly available. You can download your version from the &lt;a href=&quot;https://www.neos.io/download.html&quot; target=&quot;_blank&quot;&gt;Neos Download Page&lt;/a&gt;.&lt;/p&gt;</text>
+												Neos is publicly available. You can download your version from the &lt;a href=&quot;https://www.neos.io/download-and-extend.html&quot; target=&quot;_blank&quot;&gt;Neos Download Page&lt;/a&gt;.&lt;/p&gt;</text>
           </properties>
          </variant>
         </node>
@@ -483,7 +483,7 @@
            <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
            <lastModificationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</lastModificationDateTime>
            <properties>
-            <text __type="string">&lt;p&gt;You can easily create custom forms with the TYPO3.Form framework.&lt;/p&gt;</text>
+            <text __type="string">&lt;p&gt;You can easily create custom forms with the &lt;a href=&quot;https://flow-form-framework.readthedocs.io/en/stable/&quot;>Flow Form framework.&lt;/a&gt;&lt;/p&gt;</text>
            </properties>
           </variant>
          </node>
@@ -549,7 +549,7 @@
        <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <uriPathSegment __type="string">frontend-user-login</uriPathSegment>
-        <title __type="string">Frontend User Login</title>
+        <title __type="string">User Login</title>
        </properties>
       </variant>
       <node identifier="d9df0160-8771-77e2-dcb2-c49a19a71c40" nodeName="main">
@@ -1121,7 +1121,7 @@
           <lastModificationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</lastModificationDateTime>
           <properties>
            <text __type="string">&lt;p&gt;
-												&lt;/p&gt;&lt;p&gt;While Neos still stores its data in a relational database, you won't access this directly when working with content. Instead, we're using a tree-based approach of storing content which we call the TYPO3 Content Repository (TYPO3CR). This tree enables you to not only structure your content using a page tree, but also nest content into other content in a page.&lt;/p&gt;&lt;p&gt;Furthermore, the Content Repository allows you to easily create new content elements, just using a Fluid Template, one line of Typoscript and a few lines of configuration.&lt;/p&gt;</text>
+												&lt;/p&gt;&lt;p&gt;While Neos still stores its data in a relational database, you won't access this directly when working with content. Instead, we're using a tree-based approach of storing content which we call the Neos Content Repository (CR). This tree enables you to not only structure your content using a page tree, but also nest content into other content in a page.&lt;/p&gt;&lt;p&gt;Furthermore, the Content Repository allows you to easily create new content elements, just using a Fluid Template, one line of Typoscript and a few lines of configuration.&lt;/p&gt;</text>
           </properties>
          </variant>
         </node>
@@ -1159,7 +1159,7 @@
           <lastModificationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</lastModificationDateTime>
           <properties>
            <text __type="string">&lt;p&gt;
-												&lt;/p&gt;&lt;p&gt;Check out the &lt;a href=&quot;download.html&quot;&gt;download&lt;/a&gt; yourself, and try it out. Make sure to give us some feedback, either on our Mailing Lists or in IRC.&lt;/p&gt;</text>
+												&lt;/p&gt;&lt;p&gt;Check out the &lt;a href=&quot;node://517ad799-35df-4324-9429-5c75629a8b34&quot;&gt;download&lt;/a&gt; yourself, and try it out. Make sure to give us some feedback, either on our Mailing Lists or in IRC.&lt;/p&gt;</text>
           </properties>
          </variant>
         </node>
@@ -1918,7 +1918,7 @@
          <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
          <lastModificationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</lastModificationDateTime>
          <properties>
-          <tags __type="string">typo3neos</tags>
+          <tags __type="string">neoscms</tags>
          </properties>
         </variant>
        </node>
@@ -2712,7 +2712,7 @@
          <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
          <lastModificationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</lastModificationDateTime>
          <properties>
-          <text __type="string">&lt;p&gt;Besides developing we try to offer &lt;a href=&quot;https://www.neos.io/documentation.html&quot;&gt;documentation&lt;/a&gt; as good as possible. While this documentation is not yet a full reference on how to use all features of Neos in detail, it will get you started using the product. Any help in improving the documentation is highly appreciated!&lt;br/&gt;&lt;/p&gt;</text>
+          <text __type="string">&lt;p&gt;Besides developing we try to offer &lt;a href=&quot;https://www.neos.io/docs-and-support/documentation.html&quot;&gt;documentation&lt;/a&gt; as good as possible. While this documentation is not yet a full reference on how to use all features of Neos in detail, it will get you started using the product. Any help in improving the documentation is highly appreciated!&lt;br/&gt;&lt;/p&gt;</text>
          </properties>
         </variant>
        </node>
