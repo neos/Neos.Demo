@@ -196,6 +196,20 @@
       </variant>
      </node>
     </node>
+    <node identifier="e35d8910-9798-4c30-8759-b3b88d30f8b5" nodeName="home">
+     <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos:Shortcut" version="9" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>en_US</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2016-05-03T14:03:10+02:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2016-05-03T14:03:10+02:00</lastModificationDateTime>
+      <properties>
+       <title __type="string">Home</title>
+       <targetMode __type="string">parentNode</targetMode>
+      </properties>
+     </variant>
+    </node>
     <node identifier="a3474e1d-dd60-4a84-82b1-18d2f21891a3" nodeName="features">
      <variant sortingIndex="400" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="9" removed="" hidden="" hiddenInIndex="">
       <dimensions>
@@ -204,21 +218,6 @@
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:10+02:00</creationDateTime>
       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
-      <properties>
-       <title __type="string">Features</title>
-       <layout __type="string">landingPage</layout>
-       <subpageLayout __type="string">default</subpageLayout>
-       <uriPathSegment __type="string">features</uriPathSegment>
-      </properties>
-     </variant>
-     <variant sortingIndex="400" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="6" removed="" hidden="" hiddenInIndex="">
-      <dimensions>
-       <language>nl</language>
-      </dimensions>
-      <accessRoles __type="array"/>
-      <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:53:31+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastPublicationDateTime>
       <properties>
        <title __type="string">Features</title>
        <layout __type="string">landingPage</layout>
