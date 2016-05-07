@@ -96,7 +96,7 @@ TYPO3:
             label: 'French'
             values: ['fr']
             uriSegment: 'fr'
-          'fr':
+          'it':
             label: 'Italian'
             values: ['it']
             uriSegment: 'it'
