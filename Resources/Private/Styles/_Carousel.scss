@@ -19,7 +19,7 @@
 	.active {
 		width: 16px;
 		height: 16px;
-		background-color: $primary;
+		background-color: $brandColorPrimary;
 		@include box-shadow(0 1px 6px rgba(0, 0, 0, 0.5));
 	}
 

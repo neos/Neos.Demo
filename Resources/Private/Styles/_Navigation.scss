@@ -348,17 +348,19 @@ footer.navbar {
 			margin-bottom: 10px;
 			@include font;
 			font-size: 13px;
+			color: $textSubtle;
 
 			&:first-child {
 				margin-top: 10px;
 			}
 
 			&.current a {
-				color: $brandColorPrimary;
+				color: $brandColorSecondary;
+				text-decoration: underline;
 			}
 
 			a {
-				color: $textSubtle;
+				color: $brandColorPrimary;
 			}
 
 			.language-menu-short {

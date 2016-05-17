@@ -11,7 +11,7 @@
 	p:first-of-type {
 		$dropcap-font-family: Times;
 		$dropcap-margin: 0 10px 2px 0;
-		$dropcap-color: $warning;
+		$dropcap-color: $brandColorPrimary;
 
 		@include dropcap($dropcap-float-position, $dropcap-font-size, $dropcap-font-family, $dropcap-txt-indent, $dropcap-margin, $dropcap-padding, $dropcap-color, $dropcap-line-height, $dropcap-bg);
 	}

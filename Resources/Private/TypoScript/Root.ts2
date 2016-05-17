@@ -42,7 +42,6 @@ page = Page {
 		parts {
 			mainMenu = Menu {
 				templatePath = 'resource://Neos.Demo/Private/Templates/TypoScriptObjects/MainMenu.html'
-				itemCollection = ${q(site).add(q(site).children('[instanceof TYPO3.Neos:Document]')).get()}
 			}
 
 			secondLevelMenu = Menu {
