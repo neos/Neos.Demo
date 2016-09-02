@@ -34,5 +34,8 @@
 			$topNavigationWrap.toggleClass('scrolling', $document.scrollTop() > 0);
 		});
 
+		// Focus point image
+		$('.focuspoint').focusPoint();
+
 	});
 })(window, jQuery);

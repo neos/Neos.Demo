@@ -26,9 +26,15 @@
 
 body {
 	@include font;
+	overflow-x: hidden !important;
 	@media #{$screen-sm} {
 		padding-top: 0px !important;
 	}
+}
+
+.container {
+	max-width: 100% !important;
+	overflow-x: hidden !important;
 }
 
 footer {
@@ -112,6 +118,10 @@ img {
 		.container {
 			margin-top: calc(33vh + 85px);
 			text-align: center;
+			position: absolute;
+			left: 0;
+			right: 0;
+			padding: 3em;
 		}
 
 		h1 {
