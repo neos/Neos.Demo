@@ -20,13 +20,13 @@ use TYPO3\Flow\Mvc\Controller\ActionController;
 class FlickrController extends ActionController
 {
     /**
-     * @Flow\Inject(setting="flickr.tagStreamUriPattern")
+     * @Flow\InjectConfiguration(path="flickr.tagStreamUriPattern")
      * @var string
      */
     protected $tagStreamUriPattern;
 
     /**
-     * @Flow\Inject(setting="flickr.userStreamUriPattern")
+     * @Flow\InjectConfiguration(path="flickr.userStreamUriPattern")
      * @var string
      */
     protected $userStreamUriPattern;
