@@ -5,6 +5,9 @@
 			<trans-unit id="editPreviewModes.print" xml:space="preserve">
 				<source>Print</source>
 			</trans-unit>
+			<trans-unit id="editPreviewModes.chapter" xml:space="preserve">
+				<source>Chapter Content</source>
+			</trans-unit>
 			<trans-unit id="contentDimensions.language" xml:space="preserve">
 				<source>Language</source>
 			</trans-unit>

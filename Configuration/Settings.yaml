@@ -19,12 +19,18 @@ TYPO3:
   Neos:
     userInterface:
       editPreviewModes:
-        print:
+        'Neos.Demo:print':
           isEditingMode: FALSE
           isPreviewMode: TRUE
           typoScriptRenderingPath: 'print'
           title: 'Neos.Demo:Main:editPreviewModes.print'
-          position: 200
+          position: 100
+        'Neos.Demo:chapter':
+          isEditingMode: TRUE
+          isPreviewMode: FALSE
+          typoScriptRenderingPath: 'chapterEditingMode'
+          title: 'Neos.Demo:Main:editPreviewModes.chapter'
+          position: 10
       translation:
         autoInclude:
           'Neos.Demo': ['Main', 'NodeTypes/*']

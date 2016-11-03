@@ -1,3 +1,8 @@
+'TYPO3.Neos:Document':
+  ui:
+    editPreviewModes:
+      'Neos.Demo:print':
+        enabled: TRUE
 ##
 # Adjust the "Page" node type:
 # Add two properties "layout" and "subpageLayout" to the default "Page" NodeType
@@ -194,6 +199,13 @@
   ui:
     label: i18n
     icon: 'icon-book'
+    editPreviewModes:
+      'TYPO3.Neos:inPlace':
+        enabled: FALSE
+      'TYPO3.Neos:rawContent':
+        enabled: FALSE
+      'Neos.Demo:chapter':
+        enabled: TRUE
     help:
       message: 'The Chapter node will work with all other chapter nodes on the same level to form a browsable book.'
     inspector:

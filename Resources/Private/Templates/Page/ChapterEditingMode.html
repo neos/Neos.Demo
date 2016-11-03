@@ -1,0 +1,32 @@
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+{namespace neos=TYPO3\Neos\ViewHelpers}
+{namespace media=TYPO3\Media\ViewHelpers}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<f:section name="metadata">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		</f:section>
+
+		<f:section name="stylesheets">
+			<link rel="stylesheet" href="{f:uri.resource(path: '3/css/bootstrap.min.css', package: 'TYPO3.Twitter.Bootstrap')}" media="all" />
+			<link rel="stylesheet" href="{f:uri.resource(path: 'Styles/NeosDemo.css', package: 'Neos.Demo')}" media="all" />
+		</f:section>
+	</head>
+
+	<body>
+		<f:section name="body">
+			<div class="container chapter-container">
+				<neos:contentElement.wrap>
+					<header>
+						<neos:contentElement.editable property="title" tag="h1" />
+					</header>
+				</neos:contentElement.wrap>
+
+				<div style="outline: 2px solid #ff8700; outline-offset: 6px; background-color: whitesmoke; padding: 1em; margin: 1.8em 0;"><strong>Editor Notes:</strong> You are editing a chapter of the book, take care to respect our editing guidelines.</div>
+
+				{content.main -> f:format.raw()}
+			</div>
+		</f:section>
+	</body>
+</html>

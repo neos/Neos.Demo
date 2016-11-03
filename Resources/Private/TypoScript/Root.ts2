@@ -115,6 +115,14 @@ chapter {
 	}
 }
 
+chapterEditingMode < chapter
+chapterEditingMode {
+	bodyTag.attributes.class = 'chapter'
+	body {
+		templatePath = 'resource://Neos.Demo/Private/Templates/Page/ChapterEditingMode.html'
+	}
+}
+
 print < page
 print {
 	head {
