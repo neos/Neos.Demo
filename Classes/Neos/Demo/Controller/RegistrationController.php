@@ -22,6 +22,7 @@ use TYPO3\Neos\Domain\Model\User;
 use Neos\Demo\Domain\Model\Registration;
 use TYPO3\Party\Domain\Model\PersonName;
 use TYPO3\Party\Domain\Repository\PartyRepository;
+use TYPO3\Party\Domain\Service\PartyService;
 
 /**
  * Controller that handles the creation of temporary Accounts
@@ -39,6 +40,12 @@ class RegistrationController extends ActionController
      * @var PartyRepository
      */
     protected $partyRepository;
+
+    /**
+     * @Flow\Inject
+     * @var PartyService
+     */
+    protected $partyService;
 
     /**
      * @Flow\Inject
@@ -117,7 +124,7 @@ class RegistrationController extends ActionController
         $this->partyRepository->add($user);
 
         $account = $this->accountFactory->createAccountWithPassword($accountIdentifier, $password, array('TYPO3.Neos:Editor'), 'Typo3BackendProvider');
-        $account->setParty($user);
+        $this->partyService->assignAccountToParty($account, $user);
         $account->setExpirationDate(new \DateTime('+1 week'));
 
         $this->accountRepository->add($account);
