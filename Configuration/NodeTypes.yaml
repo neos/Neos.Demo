@@ -41,7 +41,7 @@
               'landingPage':
                 label: 'Neos.Demo:NodeTypes.Page:properties.subpageLayout.selectBoxEditor.values.landingPage'
     'image':
-      type: 'TYPO3\Media\Domain\Model\ImageInterface'
+      type: 'Neos\Media\Domain\Model\ImageInterface'
       ui:
         label: 'Neos.Demo:NodeTypes.Page:properties.image'
         reloadIfChanged: TRUE
@@ -215,7 +215,7 @@
         help:
           message: 'The description will only be used in the chapter menu.'
     'chapterImage':
-      type: 'TYPO3\Media\Domain\Model\ImageInterface'
+      type: 'Neos\Media\Domain\Model\ImageInterface'
       ui:
         label: i18n
         reloadIfChanged: TRUE
