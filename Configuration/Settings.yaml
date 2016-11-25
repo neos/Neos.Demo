@@ -1,19 +1,5 @@
 
 TYPO3:
-  Neos:
-    userInterface:
-      editPreviewModes:
-        print:
-          isEditingMode: false
-          isPreviewMode: true
-          typoScriptRenderingPath: print
-          title: 'Neos.Demo:Main:editPreviewModes.print'
-          position: 200
-      translation:
-        autoInclude:
-          Neos.Demo:
-            - Main
-            - 'NodeTypes/*'
   TYPO3CR:
     contentDimensions:
       language:
@@ -82,3 +68,17 @@ Neos:
           'Neos.Form:MultiLineText':
             properties:
               elementClassAttribute: form-control
+  Neos:
+    userInterface:
+      editPreviewModes:
+        print:
+          isEditingMode: false
+          isPreviewMode: true
+          typoScriptRenderingPath: print
+          title: 'Neos.Demo:Main:editPreviewModes.print'
+          position: 200
+      translation:
+        autoInclude:
+          Neos.Demo:
+            - Main
+            - 'NodeTypes/*'

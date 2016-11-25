@@ -1,4 +1,4 @@
-{namespace neos=TYPO3\Neos\ViewHelpers}
+{namespace neos=Neos\Neos\ViewHelpers}
 {namespace ts=TYPO3\TypoScript\ViewHelpers}
 {namespace media=Neos\Media\ViewHelpers}
 <div{attributes -> f:format.raw()}>
@@ -15,7 +15,7 @@
 					<media:image asset="{item.node.properties.chapterImage}" class="img-responsive pull-left" alt="{item.node.properties.chapterImage.alternativeText}" title="{item.node.properties.chapterImage.title}" maximumWidth="{chapterImageWidth}" maximumHeight="{chapterImageHeight}" />
 				</f:then>
 				<f:else>
-					<img src="{f:uri.resource(package: 'TYPO3.Neos', path: 'Images/dummy-image.png')}" title="Dummy image" alt="Dummy image" />
+					<img src="{f:uri.resource(package: 'Neos.Neos', path: 'Images/dummy-image.png')}" title="Dummy image" alt="Dummy image" />
 				</f:else>
 			</f:if>
 

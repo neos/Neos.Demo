@@ -11,7 +11,7 @@ up:
         -
           type: 'ChangeNodeType'
           settings:
-            newType: 'TYPO3.NeosDemoTypo3Org:Registration'
+            newType: 'Neos.NeosDemoTypo3Org:Registration'
     -
       filters:
         -
@@ -22,7 +22,7 @@ up:
         -
           type: 'ChangeNodeType'
           settings:
-            newType: 'TYPO3.NeosDemoTypo3Org:YouTube'
+            newType: 'Neos.NeosDemoTypo3Org:YouTube'
     -
       filters:
         -
@@ -43,7 +43,7 @@ down:
         -
           type: 'NodeType'
           settings:
-            nodeType: 'TYPO3.NeosDemoTypo3Org:Registration'
+            nodeType: 'Neos.NeosDemoTypo3Org:Registration'
       transformations:
         -
           type: 'ChangeNodeType'
@@ -54,7 +54,7 @@ down:
         -
           type: 'NodeType'
           settings:
-            nodeType: 'TYPO3.NeosDemoTypo3Org:YouTube'
+            nodeType: 'Neos.NeosDemoTypo3Org:YouTube'
       transformations:
         -
           type: 'ChangeNodeType'

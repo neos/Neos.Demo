@@ -18,7 +18,7 @@ class Version20121030103852 extends AbstractMigration
         $this->abortIf($this->connection->getDatabasePlatform()->getName() != "postgresql");
 
         $this->addSql("ALTER TABLE typo3_phoenixdemotypo3org_domain_model_registration RENAME TO typo3_neosdemotypo3org_domain_model_registration");
-        $this->addSql("UPDATE typo3_neos_domain_model_site SET nodename = 'neosdemotypo3org', siteresourcespackagekey = 'TYPO3.NeosDemoTypo3Org' WHERE nodename
+        $this->addSql("UPDATE typo3_neos_domain_model_site SET nodename = 'neosdemotypo3org', siteresourcespackagekey = 'Neos.NeosDemoTypo3Org' WHERE nodename
 = 'phoenixdemotypo3org'");
     }
 

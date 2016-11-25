@@ -5,7 +5,7 @@
 'Neos.NodeTypes:Page':
   childNodes:
     'teaser':
-      type: 'TYPO3.Neos:ContentCollection'
+      type: 'Neos.Neos:ContentCollection'
       constraints:
         nodeTypes:
           '*': FALSE
@@ -77,7 +77,7 @@
   childNodes:
     'footer':
       position: 'end'
-      type: 'TYPO3.Neos:ContentCollection'
+      type: 'Neos.Neos:ContentCollection'
       constraints:
         nodeTypes:
           '*': FALSE
@@ -187,10 +187,10 @@
 #
 'Neos.Demo:Chapter':
   superTypes:
-    'TYPO3.Neos:Document': TRUE
+    'Neos.Neos:Document': TRUE
   childNodes:
     'main':
-      type: 'TYPO3.Neos:ContentCollection'
+      type: 'Neos.Neos:ContentCollection'
   ui:
     label: i18n
     icon: 'icon-book'
@@ -211,7 +211,7 @@
         reloadIfChanged: TRUE
         inspector:
           group: 'document'
-          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
+          editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
         help:
           message: 'The description will only be used in the chapter menu.'
     'chapterImage':
@@ -274,7 +274,7 @@
 #
 'Neos.Demo:Registration':
   superTypes:
-    'TYPO3.Neos:Plugin': TRUE
+    'Neos.Neos:Plugin': TRUE
   ui:
     label: i18n
     icon: 'icon-user'
@@ -289,7 +289,7 @@
 #
 'Neos.Demo:Flickr':
   superTypes:
-    'TYPO3.Neos:Plugin': TRUE
+    'Neos.Neos:Plugin': TRUE
   ui:
     label: i18n
     icon: 'icon-flickr'
@@ -321,7 +321,7 @@
 #
 'Neos.Demo:YouTube':
   superTypes:
-    'TYPO3.Neos:Content': TRUE
+    'Neos.Neos:Content': TRUE
   ui:
     label: YouTube
     icon: 'icon-youtube'
@@ -373,10 +373,10 @@
 #
 'Neos.Demo:Carousel':
   superTypes:
-    'TYPO3.Neos:Content': TRUE
+    'Neos.Neos:Content': TRUE
   childNodes:
     carouselItems:
-      type: 'TYPO3.Neos:ContentCollection'
+      type: 'Neos.Neos:ContentCollection'
       constraints:
         nodeTypes:
           '*': FALSE

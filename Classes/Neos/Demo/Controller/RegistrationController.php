@@ -18,7 +18,7 @@ use Neos\Flow\Mvc\Routing\UriBuilder;
 use Neos\Flow\Security\Account;
 use Neos\Flow\Security\AccountFactory;
 use Neos\Flow\Security\AccountRepository;
-use TYPO3\Neos\Domain\Model\User;
+use Neos\Neos\Domain\Model\User;
 use Neos\Demo\Domain\Model\Registration;
 use Neos\Party\Domain\Model\PersonName;
 use Neos\Party\Domain\Repository\PartyRepository;
@@ -98,7 +98,7 @@ class RegistrationController extends ActionController
         $uriBuilder->setRequest($this->request->getParentRequest());
         $redirectUri = $uriBuilder
             ->setCreateAbsoluteUri(true)
-            ->uriFor('index', array('username' => $accountIdentifier), 'Login', 'TYPO3.Neos');
+            ->uriFor('index', array('username' => $accountIdentifier), 'Login', 'Neos.Neos');
         $this->redirectToUri($redirectUri);
     }
 
@@ -123,7 +123,7 @@ class RegistrationController extends ActionController
         $user->getPreferences()->set('context.workspace', 'user-' . $accountIdentifier);
         $this->partyRepository->add($user);
 
-        $account = $this->accountFactory->createAccountWithPassword($accountIdentifier, $password, array('TYPO3.Neos:Editor'), 'Typo3BackendProvider');
+        $account = $this->accountFactory->createAccountWithPassword($accountIdentifier, $password, array('Neos.Neos:Editor'), 'Typo3BackendProvider');
         $this->partyService->assignAccountToParty($account, $user);
         $account->setExpirationDate(new \DateTime('+1 week'));
 
