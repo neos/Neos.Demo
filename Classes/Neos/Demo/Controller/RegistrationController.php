@@ -12,7 +12,7 @@ namespace Neos\Demo\Controller;
  */
 
 use Neos\Flow\Annotations as Flow;
-use Neos\Flow\Error\Message;
+use Neos\Error\Messages\Message;
 use Neos\Flow\Mvc\Controller\ActionController;
 use Neos\Flow\Mvc\Routing\UriBuilder;
 use Neos\Flow\Security\Account;
