@@ -18,7 +18,9 @@ class Version20121030221352 extends AbstractMigration
         $this->abortIf($this->connection->getDatabasePlatform()->getName() != "mysql");
 
         $this->addSql("ALTER TABLE typo3_phoenixdemotypo3org_domain_model_registration RENAME TO typo3_neosdemotypo3org_domain_model_registration");
-        $this->addSql("UPDATE typo3_neos_domain_model_site SET nodename = 'neosdemotypo3org', siteresourcespackagekey = 'Neos.NeosDemoTypo3Org' WHERE nodename = 'phoenixdemotypo3org'");
+        if ($this->sm->tablesExist(['typo3_neos_domain_model_site'])) {
+            $this->addSql("UPDATE typo3_neos_domain_model_site SET nodename = 'neosdemotypo3org', siteresourcespackagekey = 'Neos.NeosDemoTypo3Org' WHERE nodename = 'phoenixdemotypo3org'");
+        }
     }
 
     /**
