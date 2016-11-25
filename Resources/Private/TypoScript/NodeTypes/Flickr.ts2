@@ -1,7 +1,7 @@
 ##
 # "Flickr" element, extending "Plugin"
 #
-prototype(Site:Flickr) < prototype(TYPO3.Neos:Plugin) {
+prototype(Site:Flickr) < prototype(Neos.Neos:Plugin) {
 	package = 'Neos.Demo'
 	controller = 'Flickr'
 	action = 'tagStream'
