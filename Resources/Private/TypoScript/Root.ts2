@@ -12,14 +12,14 @@ include: NodeTypes/*
 page = Page {
 	head {
 		stylesheets {
-			site = TYPO3.TypoScript:Template {
+			site = Neos.Fusion:Template {
 				templatePath = 'resource://Neos.Demo/Private/Templates/Page/Default.html'
 				sectionName = 'stylesheets'
 				node = ${node}
 			}
 		}
 
-		metadata = TYPO3.TypoScript:Template {
+		metadata = Neos.Fusion:Template {
 			templatePath = 'resource://Neos.Demo/Private/Templates/Page/Default.html'
 			sectionName = 'metadata'
 		}
@@ -82,7 +82,7 @@ page = Page {
 			collection = ${q(site).children('footer').children()}
 		}
 
-		javascripts.site = TYPO3.TypoScript:Template {
+		javascripts.site = Neos.Fusion:Template {
 			templatePath = 'resource://Neos.Demo/Private/Templates/Page/Default.html'
 			sectionName = 'bodyScripts'
 		}
@@ -118,13 +118,13 @@ chapter {
 print < page
 print {
 	head {
-		stylesheets.printCss = TYPO3.TypoScript:Tag {
+		stylesheets.printCss = Neos.Fusion:Tag {
 			@position = 'end 10'
 			tagName = 'link'
 			attributes {
 				media = 'all'
 				rel = 'stylesheet'
-				href = TYPO3.TypoScript:ResourceUri {
+				href = Neos.Fusion:ResourceUri {
 					path = 'resource://Neos.Demo/Public/Styles/Print.css'
 				}
 			}
