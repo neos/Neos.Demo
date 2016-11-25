@@ -1,16 +1,16 @@
-type: 'TYPO3.Form:Form'
+type: 'Neos.Form:Form'
 identifier: contact-form
 label: 'Contact form'
 renderingOptions:
   submitButtonLabel: 'Send'
 renderables:
   -
-    type: 'TYPO3.Form:Page'
+    type: 'Neos.Form:Page'
     identifier: page-one
     label: 'Contact'
     renderables:
       -
-        type: 'TYPO3.Form:SingleLineText'
+        type: 'Neos.Form:SingleLineText'
         identifier: name
         label: 'Name'
         validators:
@@ -19,7 +19,7 @@ renderables:
           placeholder: 'Name'
         defaultValue: ''
       -
-        type: 'TYPO3.Form:SingleLineText'
+        type: 'Neos.Form:SingleLineText'
         identifier: email
         label: 'Email'
         validators:
@@ -29,7 +29,7 @@ renderables:
           placeholder: 'Email'
         defaultValue: ''
       -
-        type: 'TYPO3.Form:MultiLineText'
+        type: 'Neos.Form:MultiLineText'
         identifier: message
         label: 'Message'
         validators:
@@ -40,7 +40,7 @@ renderables:
 finishers:
 # Uncomment the following lines and install the typo3/swiftmailer package to send mails
 #  -
-#    identifier: 'TYPO3.Form:Email'
+#    identifier: 'Neos.Form:Email'
 #    options:
 #      templatePathAndFilename: resource://Neos.Demo/Private/Templates/ContactForm/Email.txt
 #      subject: 'Contact from example.net'
@@ -51,8 +51,8 @@ finishers:
 #      replyToAddress: 'office@example.net'
 #      format: plaintext
   -
-    identifier: 'TYPO3.Form:Confirmation'
+    identifier: 'Neos.Form:Confirmation'
     options:
       message: >
         <h3>Thank you for your feedback!</h3>
-        <p>Your email would have been sent. It's easy to create custom forms with the TYPO3.Form package.</p>
+        <p>Your email would have been sent. It's easy to create custom forms with the Neos.Form package.</p>
