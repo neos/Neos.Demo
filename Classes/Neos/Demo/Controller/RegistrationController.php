@@ -20,9 +20,9 @@ use Neos\Flow\Security\AccountFactory;
 use Neos\Flow\Security\AccountRepository;
 use TYPO3\Neos\Domain\Model\User;
 use Neos\Demo\Domain\Model\Registration;
-use TYPO3\Party\Domain\Model\PersonName;
-use TYPO3\Party\Domain\Repository\PartyRepository;
-use TYPO3\Party\Domain\Service\PartyService;
+use Neos\Party\Domain\Model\PersonName;
+use Neos\Party\Domain\Repository\PartyRepository;
+use Neos\Party\Domain\Service\PartyService;
 
 /**
  * Controller that handles the creation of temporary Accounts
