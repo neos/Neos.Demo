@@ -10,7 +10,7 @@ privilegeTargets:
     Neos_Demo_FlickrAccess:
       matcher: method(Neos\Demo\Controller\FlickrController->(tagStream|userStream)Action())
 
-  'TYPO3\TYPO3CR\Security\Authorization\Privilege\Node\ReadNodePrivilege':
+  'Neos\ContentRepository\Security\Authorization\Privilege\Node\ReadNodePrivilege':
 
     'Neos.Demo:MembersArea':
       # fee74676-c42f-89da-208e-1741a66525d4 is the node identifier of the "member-area" node, by default located at "/sites/neosdemo/member-area"
