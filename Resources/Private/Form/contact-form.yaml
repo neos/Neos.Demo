@@ -14,7 +14,7 @@ renderables:
         identifier: name
         label: 'Name'
         validators:
-          - identifier: 'TYPO3.Flow:NotEmpty'
+          - identifier: 'Neos.Flow:NotEmpty'
         properties:
           placeholder: 'Name'
         defaultValue: ''
@@ -23,8 +23,8 @@ renderables:
         identifier: email
         label: 'Email'
         validators:
-          - identifier: 'TYPO3.Flow:NotEmpty'
-          - identifier: 'TYPO3.Flow:EmailAddress'
+          - identifier: 'Neos.Flow:NotEmpty'
+          - identifier: 'Neos.Flow:EmailAddress'
         properties:
           placeholder: 'Email'
         defaultValue: ''
@@ -33,7 +33,7 @@ renderables:
         identifier: message
         label: 'Message'
         validators:
-          - identifier: 'TYPO3.Flow:NotEmpty'
+          - identifier: 'Neos.Flow:NotEmpty'
         properties:
           placeholder: 'Your Message'
         defaultValue: ''

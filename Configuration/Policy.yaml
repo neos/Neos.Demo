@@ -3,7 +3,7 @@
 #                                                                        #
 
 privilegeTargets:
-  'TYPO3\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
+  'Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
 
     Neos_Demo_RegistrationAccess:
       matcher: method(Neos\Demo\Controller\RegistrationController->(index|newAccount|createAccount|createTemporaryAccount)Action())
@@ -18,7 +18,7 @@ privilegeTargets:
 
 roles:
 
-  'TYPO3.Flow:Everybody':
+  'Neos.Flow:Everybody':
     privileges:
       -
         privilegeTarget: Neos_Demo_RegistrationAccess

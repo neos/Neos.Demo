@@ -11,7 +11,7 @@ namespace Neos\Demo\Domain\Model;
  * source code.
  */
 
-use TYPO3\Flow\Annotations as Flow;
+use Neos\Flow\Annotations as Flow;
 
 /**
  * Domain Model of a Registration

@@ -11,13 +11,13 @@ namespace Neos\Demo\Controller;
  * source code.
  */
 
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Flow\Error\Message;
-use TYPO3\Flow\Mvc\Controller\ActionController;
-use TYPO3\Flow\Mvc\Routing\UriBuilder;
-use TYPO3\Flow\Security\Account;
-use TYPO3\Flow\Security\AccountFactory;
-use TYPO3\Flow\Security\AccountRepository;
+use Neos\Flow\Annotations as Flow;
+use Neos\Flow\Error\Message;
+use Neos\Flow\Mvc\Controller\ActionController;
+use Neos\Flow\Mvc\Routing\UriBuilder;
+use Neos\Flow\Security\Account;
+use Neos\Flow\Security\AccountFactory;
+use Neos\Flow\Security\AccountRepository;
 use TYPO3\Neos\Domain\Model\User;
 use Neos\Demo\Domain\Model\Registration;
 use TYPO3\Party\Domain\Model\PersonName;
