@@ -1,6 +1,6 @@
 ##
 # Set the default preset for the "Form" element
 #
-prototype(TYPO3.Neos.NodeTypes:Form) {
+prototype(Neos.NodeTypes:Form) {
 	presetName = 'bootstrap'
 }

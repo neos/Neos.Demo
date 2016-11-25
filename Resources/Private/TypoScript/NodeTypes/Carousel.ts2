@@ -8,10 +8,10 @@ prototype(Site:Carousel) {
 		attributes.class = 'carousel-inner'
 	}
 
-	carouselItemArray = ${q(node).children('carouselItems').children('[instanceof TYPO3.Neos.NodeTypes:Image]')}
+	carouselItemArray = ${q(node).children('carouselItems').children('[instanceof Neos.NodeTypes:Image]')}
 
 	// Enhance image prototype for the carousel
-	prototype(TYPO3.Neos.NodeTypes:Image) {
+	prototype(Neos.NodeTypes:Image) {
 		// Render images in the carousel with a special template.
 		templatePath = 'resource://Neos.Demo/Private/Templates/TypoScriptObjects/CarouselItem.html'
 
