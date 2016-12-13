@@ -41,18 +41,18 @@ page = Page {
 
 		parts {
 			mainMenu = Menu {
-				templatePath = 'resource://Neos.Demo/Private/Templates/TypoScriptObjects/MainMenu.html'
+				templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/MainMenu.html'
 			}
 
 			secondLevelMenu = Menu {
 				entryLevel = 2
-				templatePath = 'resource://Neos.Demo/Private/Templates/TypoScriptObjects/SecondLevelMenu.html'
+				templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/SecondLevelMenu.html'
 				maximumLevels = 1
 			}
 
 			metaMenu = Menu {
 				entryLevel = 2
-				templatePath = 'resource://Neos.Demo/Private/Templates/TypoScriptObjects/MetaMenu.html'
+				templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/MetaMenu.html'
 				maximumLevels = 1
 				startingPoint = ${q(site).children('metamenu').get(0)}
 			}
@@ -61,7 +61,7 @@ page = Page {
 
 			languageMenu = Neos.Neos:DimensionMenu {
 				dimension = 'language'
-				templatePath = 'resource://Neos.Demo/Private/Templates/TypoScriptObjects/LanguageMenu.html'
+				templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/LanguageMenu.html'
 			}
 		}
 
