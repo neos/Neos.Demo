@@ -1,13 +1,13 @@
 ##
 # Create shorthand namespace for our site package name.
-# It is available in all included typoscript files.
+# It is available in all included fusion files.
 #
 namespace: Site=Neos.Demo
 
 include: NodeTypes/*
 
 /**
- * Root TypoScript template for the Neos demo website
+ * Root Fusion template for the Neos demo website
  */
 page = Page {
 	head {
