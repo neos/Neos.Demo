@@ -27,7 +27,7 @@ Neos:
         print:
           isEditingMode: false
           isPreviewMode: true
-          typoScriptRenderingPath: print
+          fusionRenderingPath: print
           title: 'Neos.Demo:Main:editPreviewModes.print'
           position: 200
       translation:
