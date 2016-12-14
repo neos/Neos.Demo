@@ -1510,12 +1510,9 @@
                                                 the required settings you need to do boils down to a minimum.&lt;/p&gt;&lt;p&gt;Of
                                                 course we know that the there's one thing where you need full control:
                                                 The rendering of your website. In Neos, a custom package called
-                                                Typoscript powers the rendering process, allowing for fine-grained
+                                                Fusion powers the rendering process, allowing for fine-grained
                                                 control over the output. No need to override complete templates or hack
-                                                the source.&lt;/p&gt;&lt;p&gt;If you know Typoscript from the old days
-                                                in CMS, rest assured that it has changed a lot. It has not only been
-                                                re-built, but re-thought from scratch and is now object-oriented,
-                                                consistent and much more powerful than before.&lt;/p&gt;</text>
+                                                the source.&lt;/p&gt;</text>
                                         </properties>
                                     </variant>
                                 </node>
@@ -1653,7 +1650,7 @@
                                                 structure your content using a page tree, but also nest content into
                                                 other content in a page.&lt;/p&gt;&lt;p&gt;Furthermore, the Content
                                                 Repository allows you to easily create new content elements, just using
-                                                a Fluid Template, one line of Typoscript and a few lines of
+                                                a Fluid Template, one line of Fusion Code and a few lines of
                                                 configuration.&lt;/p&gt;</text>
                                         </properties>
                                     </variant>
