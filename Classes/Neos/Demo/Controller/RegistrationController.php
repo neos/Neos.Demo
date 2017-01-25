@@ -86,7 +86,7 @@ class RegistrationController extends ActionController
     public function createAccountAction(Registration $registration)
     {
         $accountIdentifier = $registration->getUsername();
-        $existingAccount = $this->accountRepository->findActiveByAccountIdentifierAndAuthenticationProviderName($accountIdentifier, 'Typo3BackendProvider');
+        $existingAccount = $this->accountRepository->findActiveByAccountIdentifierAndAuthenticationProviderName($accountIdentifier, 'Neos.Neos:Backend');
         if ($existingAccount !== null) {
             $this->addFlashMessage('An account with the username "%s" already exists.', 'Account already exists', Message::SEVERITY_ERROR, array($accountIdentifier));
             $this->forward('newAccount');
@@ -123,7 +123,7 @@ class RegistrationController extends ActionController
         $user->getPreferences()->set('context.workspace', 'user-' . $accountIdentifier);
         $this->partyRepository->add($user);
 
-        $account = $this->accountFactory->createAccountWithPassword($accountIdentifier, $password, array('Neos.Neos:Editor'), 'Typo3BackendProvider');
+        $account = $this->accountFactory->createAccountWithPassword($accountIdentifier, $password, array('Neos.Neos:Editor'), 'Neos.Neos:Backend');
         $this->partyService->assignAccountToParty($account, $user);
         $account->setExpirationDate(new \DateTime('+1 week'));
 
