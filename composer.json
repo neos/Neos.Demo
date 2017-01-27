@@ -6,12 +6,12 @@
     "require": {
         "neos/neos": "*",
         "neos/nodetypes": "*",
-        "neos/seo": "2.0.x-dev",
-        "flowpack/neos-frontendlogin": "3.0.x-dev"
+        "typo3/neos-seo": "dev-master",
+        "flowpack/neos-frontendlogin": "dev-master"
     },
     "autoload": {
-        "psr-0": {
-            "Neos\\Demo": "Classes"
+        "psr-4": {
+            "Neos\\Demo\\": "Classes"
         }
     },
     "extra": {
