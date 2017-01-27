@@ -10,8 +10,8 @@
         "flowpack/neos-frontendlogin": "3.0.x-dev"
     },
     "autoload": {
-        "psr-0": {
-            "Neos\\Demo": "Classes"
+        "psr-4": {
+            "Neos\\Demo\\": "Classes"
         }
     },
     "extra": {
