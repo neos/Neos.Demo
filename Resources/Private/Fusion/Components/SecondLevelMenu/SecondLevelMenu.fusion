@@ -1,0 +1,3 @@
+prototype(Site:SecondLevelMenu) < prototype(Menu) {
+    templatePath = 'resource://Neos.Demo/Private/Fusion/Components/SecondLevelMenu/SecondLevelMenu.html'
+}

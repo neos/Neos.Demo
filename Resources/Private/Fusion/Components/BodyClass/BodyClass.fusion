@@ -1,0 +1,3 @@
+prototype(Site:BodyClass) < prototype(Fusion:Value) {
+    value = ${q(node).parents().count() >= 1 && q(node).children('[instanceof Neos.Neos:Document]').filter('[_hiddenInIndex=false]').count() > 0 ? 'has-subpages' : ''}
+}

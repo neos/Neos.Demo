@@ -1,0 +1,4 @@
+prototype(Neos.Demo:Chapter.Document) < prototype(Neos.Demo:Default.Document) {
+    bodyTag.attributes.class = 'chapter'
+    body = Neos.Demo:Chapter
+}

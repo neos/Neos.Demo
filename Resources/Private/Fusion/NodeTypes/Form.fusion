@@ -1,6 +1,0 @@
-##
-# Set the default preset for the "Form" element
-#
-prototype(Neos.NodeTypes:Form) {
-	presetName = 'bootstrap'
-}

@@ -1,0 +1,9 @@
+'Neos.Neos:Node':
+  options:
+    fusion:
+      prototypeGenerator: ~
+
+'Neos.Neos:Document':
+  options:
+    fusion:
+      prototypeGenerator: ~

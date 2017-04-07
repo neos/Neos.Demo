@@ -1,8 +1,0 @@
-##
-# "ChapterMenu" element, extending the default "Menu"
-#
-prototype(Site:ChapterMenu) < prototype(Neos.NodeTypes:Menu) {
-	attributes.class = 'chapter-menu'
-	chapterImageWidth = '100'
-	chapterImageHeight = '100'
-}

@@ -1,0 +1,6 @@
+prototype(Site:MetaMenu) < prototype(Menu) {
+    templatePath = 'resource://Neos.Demo/Private/Fusion/Components/MetaMenu/MetaMenu.html'
+    entryLevel = 2
+    maximumLevels = 1
+    startingPoint = ${q(site).children('metamenu').get(0)}
+}

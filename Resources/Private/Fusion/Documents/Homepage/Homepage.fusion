@@ -1,0 +1,4 @@
+prototype(Neos.Demo:Homepage) < prototype(Neos.Demo:Default) {
+    parts.breadcrumb >
+    landingPage = ${true}
+}

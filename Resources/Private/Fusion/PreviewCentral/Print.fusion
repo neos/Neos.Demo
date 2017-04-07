@@ -1,0 +1,16 @@
+print < page
+print {
+    head {
+        stylesheets.printCss = Neos.Fusion:Tag {
+            @position = 'end 10'
+            tagName = 'link'
+            attributes {
+                media = 'all'
+                rel = 'stylesheet'
+                href = Neos.Fusion:ResourceUri {
+                    path = 'resource://Neos.Demo/Public/Styles/Print.css'
+                }
+            }
+        }
+    }
+}

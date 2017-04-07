@@ -1,0 +1,6 @@
+prototype(Site:HighlightImage) < prototype(ImageUri) {
+    asset = ${q(node).property('image')}
+    maximumWidth = 2560
+    maximumHeight = 1280
+    @if.image = ${q(node).property('image')}
+}

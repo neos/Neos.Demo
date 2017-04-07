@@ -1,7 +1,9 @@
 ##
 # "Carousel" element
 #
-prototype(Site:Carousel) {
+prototype(Site:Carousel) < prototype(Content) {
+    templatePath = 'resource://Neos.Demo/Private/Fusion/Contents/Carousel/Carousel.html'
+
 	carouselItems = ContentCollection {
 		nodePath = 'carouselItems'
 		content.iterationName = 'carouselItemsIteration'
@@ -13,7 +15,7 @@ prototype(Site:Carousel) {
 	// Enhance image prototype for the carousel
 	prototype(Neos.NodeTypes:Image) {
 		// Render images in the carousel with a special template.
-		templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/CarouselItem.html'
+		templatePath = 'resource://Neos.Demo/Private/Fusion/Contents/Carousel/CarouselItem.html'
 
 		attributes.class = ${'item' + (carouselItemsIteration.isFirst ? ' active' : '')}
 

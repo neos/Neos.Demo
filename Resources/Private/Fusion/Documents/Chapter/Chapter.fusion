@@ -1,0 +1,10 @@
+prototype(Neos.Demo:Chapter) < prototype(Neos.Demo:Default) {
+    templatePath = 'resource://Neos.Demo/Private/Fusion/Documents/Chapter/Chapter.Document.html'
+    title = ${q(node).property('title')}
+    title.@process.convertUris = ConvertUris
+
+    // Get the previous chapter by traversing to the node which preceds the current one.
+    // We need to specify the nodetype because there could be other node types like content collections on the same level.
+    previousChapter = ${q(documentNode).prev('[instanceof Neos.Neos:Document]').get(0)}
+    nextChapter = ${q(documentNode).next('[instanceof Neos.Neos:Document]').get(0)}
+}

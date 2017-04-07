@@ -1,0 +1,21 @@
+##
+# Set the default preset for the "Form" element
+#
+prototype(Neos.NodeTypes:Form) {
+    presetName = 'bootstrap'
+}
+
+##
+# Adjust "MultiColumn" element to Twitter bootstrap CSS classes
+#
+prototype(Neos.NodeTypes:MultiColumn) {
+    attributes.class = 'row'
+    columns.iterationName = 'multiColumnIteration'
+}
+
+##
+# Adjust "MultiColumnItem" element to Twitter bootstrap CSS classes
+#
+prototype(Neos.NodeTypes:MultiColumnItem) {
+    attributes.class = ${'col-sm-' + String.split(q(node).parent().property('layout'), '-')[multiColumnIteration.index]}
+}

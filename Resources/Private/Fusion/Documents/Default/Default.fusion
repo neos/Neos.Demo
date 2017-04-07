@@ -1,0 +1,44 @@
+prototype(Neos.Demo:Default) < prototype(Fusion:Template) {
+    @position = 'after bodyTag'
+    node = ${node}
+    site = ${site}
+
+    templatePath = 'resource://Neos.Demo/Private/Fusion/Documents/Default/Default.Document.html'
+    sectionName = 'body'
+    imageUri = Site:HighlightImage
+    imageTitleText = ${q(node).property('imageTitleText')}
+
+    parts {
+        mainMenu = Site:MainMenu
+        secondLevelMenu = Site:SecondLevelMenu
+        metaMenu = Site:MetaMenu
+        breadcrumb = BreadcrumbMenu
+        languageMenu = Site:LanguageMenu
+    }
+
+    content {
+        teaser = ContentCollection {
+            nodePath = 'teaser'
+        }
+
+        // Default content section
+        main = PrimaryContent {
+            nodePath = 'main'
+        }
+    }
+
+    // A shared footer which can be edited from all pages
+    footer = ContentCollection {
+        nodePath = ${q(site).children('footer').property('_path')}
+        collection = ${q(site).children('footer').children()}
+    }
+
+    javascripts = Neos.Fusion:Array {
+        site = Neos.Fusion:Template {
+            templatePath = 'resource://Neos.Demo/Private/Fusion/Documents/Default/Default.Document.html'
+            sectionName = 'bodyScripts'
+        }
+    }
+
+    @process.appendJavaScripts = ${value + this.javascripts}
+}

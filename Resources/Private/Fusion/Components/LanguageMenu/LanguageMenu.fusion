@@ -1,0 +1,4 @@
+prototype(Site:LanguageMenu) < prototype(DimensionMenu) {
+    templatePath = 'resource://Neos.Demo/Private/Fusion/Components/LanguageMenu/LanguageMenu.html'
+    dimension = 'language'
+}
