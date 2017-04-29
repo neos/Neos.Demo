@@ -9,7 +9,6 @@ include: Documents/**/*
 include: Contents/**/*
 
 root {
-    layout >
     default {
         renderPath >
         type = ${node.nodeType + '.Document'}
