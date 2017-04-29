@@ -1,3 +1,3 @@
-prototype(Neos.Demo:Homepage.Document) < prototype(Neos.Demo:Default.Document) {
+prototype(Neos.Demo:Homepage.Document) < prototype(Neos.Demo:Base.Document) {
     body = Neos.Demo:Homepage
 }

@@ -3,7 +3,7 @@ prototype(Neos.Demo:Default) < prototype(Fusion:Template) {
     node = ${node}
     site = ${site}
 
-    templatePath = 'resource://Neos.Demo/Private/Fusion/Documents/Default/Default.Document.html'
+    templatePath = 'resource://Neos.Demo/Private/Fusion/Documents/Base/Base.Document.html'
     sectionName = 'body'
     imageUri = Site:HighlightImage
     imageTitleText = ${q(node).property('imageTitleText')}
@@ -35,7 +35,7 @@ prototype(Neos.Demo:Default) < prototype(Fusion:Template) {
 
     javascripts = Neos.Fusion:Array {
         site = Neos.Fusion:Template {
-            templatePath = 'resource://Neos.Demo/Private/Fusion/Documents/Default/Default.Document.html'
+            templatePath = 'resource://Neos.Demo/Private/Fusion/Documents/Base/Base.Document.html'
             sectionName = 'bodyScripts'
         }
     }
