@@ -2,7 +2,6 @@ namespace: Site=Neos.Demo
 namespace: Fusion=Neos.Fusion
 
 include: Overrides.fusion
-include: Shame.fusion
 
 include: Components/**/*
 include: Documents/**/*
