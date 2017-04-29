@@ -1,7 +1,7 @@
 namespace: Site=Neos.Demo
 namespace: Fusion=Neos.Fusion
 
-include: Overrides.fusion
+include: Override.fusion
 
 include: Components/**/*
 include: Documents/**/*
