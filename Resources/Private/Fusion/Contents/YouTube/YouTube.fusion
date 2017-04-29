@@ -3,5 +3,5 @@
 #
 prototype(Site:YouTube) < prototype(Content) {
     templatePath = 'resource://Neos.Demo/Private/Fusion/Contents/YouTube/YouTube.html'
-	attributes.class = 'responsive-video'
+    attributes.class = 'responsive-video'
 }
