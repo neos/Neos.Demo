@@ -13,3 +13,5 @@ root {
         type = ${node.nodeType + '.Document'}
     }
 }
+
+landingPage = Neos.Demo:Homepage.Document
