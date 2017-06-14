@@ -38,7 +38,7 @@ renderables:
           placeholder: 'Your Message'
         defaultValue: ''
 finishers:
-# Uncomment the following lines and install the typo3/swiftmailer package to send mails
+# Uncomment the following lines and install the neos/swiftmailer package to send mails
 #  -
 #    identifier: 'Neos.Form:Email'
 #    options:
