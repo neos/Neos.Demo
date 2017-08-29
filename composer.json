@@ -4,10 +4,10 @@
     "description": "Site package for the Neos Demo Site",
     "license": "GPL-3.0+",
     "require": {
-        "neos/neos": "*",
-        "neos/nodetypes": "*",
-        "typo3/neos-seo": "dev-master",
-        "flowpack/neos-frontendlogin": "dev-master"
+        "neos/neos": "~3.2",
+        "neos/nodetypes": "~3.2",
+        "typo3/neos-seo": "~2.0",
+        "flowpack/neos-frontendlogin": "~2.0"
     },
     "autoload": {
         "psr-4": {
