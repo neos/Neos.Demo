@@ -6,7 +6,7 @@
     "require": {
         "neos/neos": "*",
         "neos/nodetypes": "*",
-        "typo3/neos-seo": "dev-master",
+        "neos/seo": "dev-master",
         "flowpack/neos-frontendlogin": "dev-master"
     },
     "autoload": {
