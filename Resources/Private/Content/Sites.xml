@@ -897,16 +897,6 @@
        <lastModificationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</lastModificationDateTime>
        <properties/>
       </variant>
-      <variant sortingIndex="400" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
-       <dimensions>
-        <language>nl</language>
-       </dimensions>
-       <accessRoles __type="array"/>
-       <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:53:31+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastModificationDateTime>
-       <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastPublicationDateTime>
-       <properties/>
-      </variant>
       <node identifier="1e1d4039-e5e8-7b16-f9d5-be548320078d" nodeName="node524c37db511d4">
        <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:ThreeColumn" version="3" removed="" hidden="" hiddenInIndex="">
         <dimensions>
@@ -2358,16 +2348,6 @@
       </node>
      </node>
      <node identifier="0e941a26-d4d7-2e89-5376-4f5daaa28828" nodeName="teaser">
-      <variant sortingIndex="500" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
-       <dimensions>
-        <language>nl</language>
-       </dimensions>
-       <accessRoles __type="array"/>
-       <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:53:31+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastModificationDateTime>
-       <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-31T18:55:50+02:00</lastPublicationDateTime>
-       <properties/>
-      </variant>
       <variant sortingIndex="500" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
