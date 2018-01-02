@@ -11,7 +11,6 @@ privilegeTargets:
       matcher: method(Neos\Demo\Controller\FlickrController->(tagStream|userStream)Action())
 
   'Neos\ContentRepository\Security\Authorization\Privilege\Node\ReadNodePrivilege':
-
     'Neos.Demo:MembersArea':
       # fee74676-c42f-89da-208e-1741a66525d4 is the node identifier of the "member-area" node, by default located at "/sites/neosdemo/member-area"
       matcher: 'isDescendantNodeOf("fee74676-c42f-89da-208e-1741a66525d4")'
@@ -31,13 +30,13 @@ roles:
   'Flowpack.Neos.FrontendLogin:User':
     privileges:
       -
-          # Grant "frontend users" to access the "Member area"
+        # Grant "frontend users" to access the "Member area"
         privilegeTarget: 'Neos.Demo:MembersArea'
         permission: GRANT
 
   'Neos.Neos:Editor':
     privileges:
       -
-          # Grant "backend users" to access the "Member area" - Otherwise those pages would be hidden in the backend, too!
+        # Grant "backend users" to access the "Member area" - Otherwise those pages would be hidden in the backend, too!
         privilegeTarget: 'Neos.Demo:MembersArea'
         permission: GRANT
