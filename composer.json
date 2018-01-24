@@ -2,7 +2,7 @@
     "name": "neos/demo",
     "type": "neos-site",
     "description": "Site package for the Neos Demo Site",
-    "license": "GPL-3.0+",
+    "license": ["GPL-3.0-or-later"],
     "require": {
         "neos/neos": "~3.3",
         "neos/nodetypes": "~3.3",
