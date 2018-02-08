@@ -1,8 +1,8 @@
 ##
 # "Carousel" element
 #
-prototype(Site:Carousel) {
-	carouselItems = ContentCollection {
+prototype(Neos.Demo:Carousel) {
+	carouselItems = Neos.Neos:ContentCollection {
 		nodePath = 'carouselItems'
 		content.iterationName = 'carouselItemsIteration'
 		attributes.class = 'carousel-inner'

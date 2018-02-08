@@ -1,6 +1,6 @@
 ##
 # "YouTube" element
 #
-prototype(Site:YouTube) < prototype(Content) {
+prototype(Neos.Demo:YouTube) < prototype(Neos.Neos:Content) {
 	attributes.class = 'responsive-video'
 }
