@@ -20,7 +20,7 @@
 	}
 
 	// Fix for menu position in neos backend
-	.neos-backend:not(.neos-full-screen) & {
+	.neos-controls & {
 		top: 82px;
 		@media #{$screen-sm} {
 			top: auto;
