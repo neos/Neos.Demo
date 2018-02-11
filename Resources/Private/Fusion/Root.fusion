@@ -1,15 +1,9 @@
-##
-# Create shorthand namespace for our site package name.
-# It is available in all included fusion files.
-#
-namespace: Site=Neos.Demo
-
 include: NodeTypes/*
 
 /**
  * Root Fusion template for the Neos demo website
  */
-page = Page {
+page = Neos.Neos:Page {
 	head {
 		stylesheets {
 			site = Neos.Fusion:Template {
@@ -40,24 +34,24 @@ page = Page {
 		imageTitleText = ${q(node).property('imageTitleText')}
 
 		parts {
-			mainMenu = Menu {
+			mainMenu = Neos.Neos:Menu {
 				templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/MainMenu.html'
 			}
 
-			secondLevelMenu = Menu {
+			secondLevelMenu = Neos.Neos:Menu {
 				entryLevel = 2
 				templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/SecondLevelMenu.html'
 				maximumLevels = 1
 			}
 
-			metaMenu = Menu {
+			metaMenu = Neos.Neos:Menu {
 				entryLevel = 2
 				templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/MetaMenu.html'
 				maximumLevels = 1
 				startingPoint = ${q(site).children('metamenu').get(0)}
 			}
 
-			breadcrumb = BreadcrumbMenu
+			breadcrumb = Neos.Neos:BreadcrumbMenu
 
 			languageMenu = Neos.Neos:DimensionMenu {
 				dimension = 'language'
@@ -66,18 +60,18 @@ page = Page {
 		}
 
 		content {
-			teaser = ContentCollection {
+			teaser = Neos.Neos:ContentCollection {
 				nodePath = 'teaser'
 			}
 
 			// Default content section
-			main = PrimaryContent {
+			main = Neos.Neos:PrimaryContent {
 				nodePath = 'main'
 			}
 		}
 
 		// A shared footer which can be edited from all pages
-		footer = ContentCollection {
+		footer = Neos.Neos:ContentCollection {
 			nodePath = ${q(site).children('footer').property('_path')}
 			collection = ${q(site).children('footer').children()}
 		}
@@ -106,7 +100,7 @@ chapter {
 	body {
 		templatePath = 'resource://Neos.Demo/Private/Templates/Page/Chapter.html'
 		title = ${q(node).property('title')}
-		title.@process.convertUris = ConvertUris
+		title.@process.convertUris = Neos.Neos:ConvertUris
 
 		// Get the previous chapter by traversing to the node which preceds the current one.
 		// We need to specify the nodetype because there could be other node types like content collections on the same level.
