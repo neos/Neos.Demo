@@ -1,0 +1,31 @@
+##
+# A simple "Flickr" plugin that demonstrates the "PluginViews"-feature
+#
+'Neos.Demo:Flickr':
+  superTypes:
+    'Neos.Neos:Plugin': TRUE
+  ui:
+    label: i18n
+    icon: 'icon-flickr'
+    inspector:
+      groups:
+        'feed':
+          label: 'Feed'
+          icon: 'icon-rss'
+    help:
+      message: 'Displays a gallery of images from a flickr stream based on tags.'
+  options:
+    'pluginViews':
+      'UserFeed':
+        label: 'Neos.Demo:NodeTypes.Flickr:options.pluginViews.userFeed'
+        controllerActions:
+          'Neos\Demo\Controller\FlickrController': ['userStream']
+  properties:
+    'tags':
+      type: string
+      defaultValue: ''
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'feed'

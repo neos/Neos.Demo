@@ -1,0 +1,15 @@
+##
+# A custom "Menu" NodeType for chapters
+#
+'Neos.Demo:ChapterMenu':
+  superTypes:
+    'Neos.NodeTypes:Menu': TRUE
+  ui:
+    label: i18n
+    help:
+      message: |
+        The ChapterMenu renders an overview of all chapters below the current document.
+        It displays:
+        * title
+        * chapter description
+        * chapter image

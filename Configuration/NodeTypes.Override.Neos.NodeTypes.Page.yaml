@@ -1,0 +1,64 @@
+##
+# Adjust the "Page" node type:
+# Add two properties "layout" and "subpageLayout" to the default "Page" NodeType
+#
+'Neos.NodeTypes:Page':
+  childNodes:
+    'teaser':
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          '*': FALSE
+          'Neos.NodeTypes:Headline': TRUE
+          'Neos.NodeTypes:Text': TRUE
+          'Neos.NodeTypes:Image': TRUE
+  ui:
+    inspector:
+      groups:
+        image:
+          label: 'Neos.Demo:NodeTypes.Page:groups.image'
+          position: 200
+          icon: 'icon-image'
+  properties:
+    'layout':
+      ui:
+        inspector:
+          group: 'layout'
+          editorOptions:
+            values:
+              'default':
+                label: 'Neos.Demo:NodeTypes.Page:properties.layout.selectBoxEditor.values.default'
+              'landingPage':
+                label: 'Neos.Demo:NodeTypes.Page:properties.layout.selectBoxEditor.values.landingPage'
+    'subpageLayout':
+      ui:
+        inspector:
+          group: 'layout'
+          editorOptions:
+            values:
+              'default':
+                label: 'Neos.Demo:NodeTypes.Page:properties.subpageLayout.selectBoxEditor.values.default'
+              'landingPage':
+                label: 'Neos.Demo:NodeTypes.Page:properties.subpageLayout.selectBoxEditor.values.landingPage'
+    'image':
+      type: 'Neos\Media\Domain\Model\ImageInterface'
+      ui:
+        label: 'Neos.Demo:NodeTypes.Page:properties.image'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'image'
+          position: 50
+          editorOptions:
+            crop:
+              aspectRatio:
+                locked:
+                  width: 2
+                  height: 1
+    'imageTitleText':
+      type: string
+      ui:
+        label: 'Neos.Demo:NodeTypes.Page:properties.imageTitleText'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'image'
+          position: 100
