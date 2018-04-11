@@ -1,0 +1,1 @@
+prototype(Neos.Demo:Homepage.Document) < prototype(Neos.NodeTypes:Page.Document)
