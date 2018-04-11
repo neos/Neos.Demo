@@ -52,7 +52,7 @@ prototype(Neos.NodeTypes:Page.Document) < prototype(Neos.Neos:Page) {
 			}
 
 			breadcrumb = Neos.Neos:BreadcrumbMenu {
-				@if.isNotLandingPage = ${layout != 'landingPage'}
+				@if.isDefaultLayout = ${layout == 'default'}
 			}
 
 			languageMenu = Neos.Neos:DimensionMenu {

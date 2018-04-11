@@ -25,6 +25,8 @@ print = Neos.NodeTypes:Page.Document {
 			}
 		}
 	}
+
+	body.landingPage = false
 }
 
 ##################################
