@@ -1,4 +1,4 @@
-<f:form.validationResults for="registration.{property}">
+<f:validation.results for="registration.{property}">
 	<f:if condition="{validationResults.flattenedErrors}">
 		<div class="bs-callout bs-callout-danger">
 			<f:for each="{validationResults.flattenedErrors}" key="propertyPath" as="errors">
@@ -6,4 +6,4 @@
 			</f:for>
 		</div>
 	</f:if>
-</f:form.validationResults>
+</f:validation.results>
