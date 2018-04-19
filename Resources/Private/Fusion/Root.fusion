@@ -3,7 +3,7 @@ include: NodeTypes/*
 /**
  * Root Fusion template for the Neos demo website
  */
-page = Neos.Neos:Page {
+prototype(Neos.NodeTypes:Page) < prototype(Neos.Neos:Page) {
 	head {
 		stylesheets {
 			site = Neos.Fusion:Template {
@@ -82,6 +82,8 @@ page = Neos.Neos:Page {
 		}
 	}
 }
+
+page = Neos.NodeTypes:Page
 
 default < page
 
