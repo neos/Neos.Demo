@@ -3,98 +3,98 @@
  <site name="Neos Demo Site" state="1" siteResourcesPackageKey="Neos.Demo" siteNodeName="neosdemo">
   <nodes formatVersion="2.0">
    <node identifier="995c9174-ddd6-4d5c-cfc0-1ffc82184677" nodeName="neosdemo">
-    <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Homepage" version="4" removed="" hidden="" hiddenInIndex="">
-     <dimensions>
-      <language>lv</language>
-     </dimensions>
-     <accessRoles __type="array"/>
-     <creationDateTime __type="object" __classname="DateTime">2015-12-21T21:56:53+01:00</creationDateTime>
-     <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:44+02:00</lastModificationDateTime>
-     <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:44+02:00</lastPublicationDateTime>
-     <properties>
-      <title __type="string">Home</title>
-      <layout __type="string">landingPage</layout>
-      <uriPathSegment __type="string">home</uriPathSegment>
-      <image __type="object" __identifier="2e482d51-0dc4-415f-9619-771bf1738650" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;2e482d51-0dc4-415f-9619-771bf1738650&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a279b415-32c6-46ce-bd72-3769c4b4e5d2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;KeyVisual.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;f891171049518e72ba90dda70df66c220d95feb0&quot;,&quot;hash&quot;:&quot;f891171049518e72ba90dda70df66c220d95feb0&quot;,&quot;__identity&quot;:&quot;8248381d-c162-445f-9fb1-8ec610bce3aa&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1496,&quot;position&quot;:10,&quot;width&quot;:3000,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;9e163f65-f935-47f8-82ef-df8376544e8d&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:1251,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:2508,&quot;__identity&quot;:&quot;2bc134bd-5ae2-46e5-ae1a-5cb8c37805d2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
-      <imageTitleText __type="string">Photo by Mr. Coffee</imageTitleText>
-     </properties>
-    </variant>
-    <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Homepage" version="8" removed="" hidden="" hiddenInIndex="">
+    <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Homepage" version="9" removed="" hidden="" hiddenInIndex="">
      <dimensions>
       <language>nl</language>
      </dimensions>
      <accessRoles __type="array"/>
      <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:53:31+02:00</creationDateTime>
-     <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:48:48+02:00</lastModificationDateTime>
-     <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:48:48+02:00</lastPublicationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastPublicationDateTime>
      <properties>
       <title __type="string">Home</title>
       <layout __type="string">landingPage</layout>
       <uriPathSegment __type="string">home</uriPathSegment>
-      <image __type="object" __identifier="40bb527a-37f7-43b9-a96c-ce7786bfeef1" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;40bb527a-37f7-43b9-a96c-ce7786bfeef1&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a279b415-32c6-46ce-bd72-3769c4b4e5d2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;KeyVisual.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;f891171049518e72ba90dda70df66c220d95feb0&quot;,&quot;hash&quot;:&quot;f891171049518e72ba90dda70df66c220d95feb0&quot;,&quot;__identity&quot;:&quot;8248381d-c162-445f-9fb1-8ec610bce3aa&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1496,&quot;position&quot;:10,&quot;width&quot;:3000,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;094bbb9d-fc7a-475f-80ee-25190eb0921a&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:1251,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:2508,&quot;__identity&quot;:&quot;9c9aa9fb-41eb-4b34-8a01-663c6cbdf364&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+      <image __type="object" __identifier="1731a09b-1cb0-4c8d-9c9e-acba46aa849d" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;1731a09b-1cb0-4c8d-9c9e-acba46aa849d&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;7831a651-3faf-4a18-9089-e27f50f11e38&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;From Neos with love&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Neos With Love.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;1ba14f95e835eee23ab90be80ac443da158ecd26&quot;,&quot;hash&quot;:&quot;1ba14f95e835eee23ab90be80ac443da158ecd26&quot;,&quot;__identity&quot;:&quot;54aeb4a9-01ca-462d-829a-94e99305dd48&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1730,&quot;position&quot;:10,&quot;width&quot;:3814,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;53b9a0d3-f8fd-4b73-9cff-2da48ce1118b&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
       <imageTitleText __type="string">Photo by Mr. Coffee</imageTitleText>
      </properties>
     </variant>
-    <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Homepage" version="7" removed="" hidden="" hiddenInIndex="">
-     <dimensions>
-      <language>fr</language>
-     </dimensions>
-     <accessRoles __type="array"/>
-     <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:50+02:00</creationDateTime>
-     <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:35+02:00</lastModificationDateTime>
-     <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:35+02:00</lastPublicationDateTime>
-     <properties>
-      <title __type="string">Home</title>
-      <layout __type="string">landingPage</layout>
-      <uriPathSegment __type="string">home</uriPathSegment>
-      <image __type="object" __identifier="5e2aaac1-8852-4334-811b-40c9caa0b51d" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;5e2aaac1-8852-4334-811b-40c9caa0b51d&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a279b415-32c6-46ce-bd72-3769c4b4e5d2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;KeyVisual.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;f891171049518e72ba90dda70df66c220d95feb0&quot;,&quot;hash&quot;:&quot;f891171049518e72ba90dda70df66c220d95feb0&quot;,&quot;__identity&quot;:&quot;8248381d-c162-445f-9fb1-8ec610bce3aa&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1496,&quot;position&quot;:10,&quot;width&quot;:3000,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;06cdef31-971d-486f-b829-6ffd048456ce&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:1251,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:2508,&quot;__identity&quot;:&quot;f630ca09-cef3-43e6-aa01-fd309836c167&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
-      <imageTitleText __type="string">Photo by Mr. Coffee</imageTitleText>
-     </properties>
-    </variant>
-    <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Homepage" version="9" removed="" hidden="" hiddenInIndex="">
-     <dimensions>
-      <language>da</language>
-     </dimensions>
-     <accessRoles __type="array"/>
-     <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:54:02+02:00</creationDateTime>
-     <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:07+02:00</lastModificationDateTime>
-     <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:07+02:00</lastPublicationDateTime>
-     <properties>
-      <title __type="string">Home</title>
-      <layout __type="string">landingPage</layout>
-      <uriPathSegment __type="string">home</uriPathSegment>
-      <image __type="object" __identifier="821d75fa-b76b-444a-bac5-ffde685bbae5" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;821d75fa-b76b-444a-bac5-ffde685bbae5&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a279b415-32c6-46ce-bd72-3769c4b4e5d2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;KeyVisual.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;f891171049518e72ba90dda70df66c220d95feb0&quot;,&quot;hash&quot;:&quot;f891171049518e72ba90dda70df66c220d95feb0&quot;,&quot;__identity&quot;:&quot;8248381d-c162-445f-9fb1-8ec610bce3aa&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1496,&quot;position&quot;:10,&quot;width&quot;:3000,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;b646112b-ad99-4fb1-96c2-420c5ec54978&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:1251,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:2508,&quot;__identity&quot;:&quot;5c48043a-b0bb-4b0c-8046-6c903546550f&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
-      <imageTitleText __type="string">Photo by Mr. Coffee</imageTitleText>
-     </properties>
-    </variant>
-    <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Homepage" version="43" removed="" hidden="" hiddenInIndex="">
+    <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Homepage" version="47" removed="" hidden="" hiddenInIndex="">
      <dimensions>
       <language>en_US</language>
      </dimensions>
      <accessRoles __type="array"/>
      <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:09+02:00</creationDateTime>
-     <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:47:58+02:00</lastModificationDateTime>
-     <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:47:58+02:00</lastPublicationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2018-04-23T20:44:40+02:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-23T20:44:40+02:00</lastPublicationDateTime>
      <properties>
       <title __type="string">Home</title>
       <layout __type="string">landingPage</layout>
       <uriPathSegment __type="string">home</uriPathSegment>
-      <image __type="object" __identifier="ef5d0bb0-d084-4640-b030-71c445642611" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;ef5d0bb0-d084-4640-b030-71c445642611&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a279b415-32c6-46ce-bd72-3769c4b4e5d2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;KeyVisual.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;f891171049518e72ba90dda70df66c220d95feb0&quot;,&quot;hash&quot;:&quot;f891171049518e72ba90dda70df66c220d95feb0&quot;,&quot;__identity&quot;:&quot;8248381d-c162-445f-9fb1-8ec610bce3aa&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1496,&quot;position&quot;:10,&quot;width&quot;:3000,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;d758b462-399a-4c91-8861-56e08a3e0bd3&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
+      <image __type="object" __identifier="3e83e14e-e5ef-4f60-bfaa-d9711ff7d693" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;3e83e14e-e5ef-4f60-bfaa-d9711ff7d693&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;7831a651-3faf-4a18-9089-e27f50f11e38&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;From Neos with love&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Neos With Love.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;1ba14f95e835eee23ab90be80ac443da158ecd26&quot;,&quot;hash&quot;:&quot;1ba14f95e835eee23ab90be80ac443da158ecd26&quot;,&quot;__identity&quot;:&quot;54aeb4a9-01ca-462d-829a-94e99305dd48&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1535,&quot;position&quot;:10,&quot;width&quot;:3071,&quot;x&quot;:328,&quot;y&quot;:694,&quot;__identity&quot;:&quot;9eab1ee3-5ade-4ba8-a1d8-be79f66cf798&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
+     </properties>
+    </variant>
+    <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Homepage" version="10" removed="" hidden="" hiddenInIndex="">
+     <dimensions>
+      <language>da</language>
+     </dimensions>
+     <accessRoles __type="array"/>
+     <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:54:02+02:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastPublicationDateTime>
+     <properties>
+      <title __type="string">Home</title>
+      <layout __type="string">landingPage</layout>
+      <uriPathSegment __type="string">home</uriPathSegment>
+      <image __type="object" __identifier="3f611e8b-6e6a-4b79-a7a4-15ec0946afaf" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;3f611e8b-6e6a-4b79-a7a4-15ec0946afaf&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;7831a651-3faf-4a18-9089-e27f50f11e38&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;From Neos with love&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Neos With Love.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;1ba14f95e835eee23ab90be80ac443da158ecd26&quot;,&quot;hash&quot;:&quot;1ba14f95e835eee23ab90be80ac443da158ecd26&quot;,&quot;__identity&quot;:&quot;54aeb4a9-01ca-462d-829a-94e99305dd48&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1706,&quot;position&quot;:10,&quot;width&quot;:3814,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;b799e06d-300c-4f65-841e-860ac679b9a6&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
+      <imageTitleText __type="string">Photo by Mr. Coffee</imageTitleText>
      </properties>
     </variant>
     <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Homepage" version="8" removed="" hidden="" hiddenInIndex="">
+     <dimensions>
+      <language>fr</language>
+     </dimensions>
+     <accessRoles __type="array"/>
+     <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:50+02:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastPublicationDateTime>
+     <properties>
+      <title __type="string">Home</title>
+      <layout __type="string">landingPage</layout>
+      <uriPathSegment __type="string">home</uriPathSegment>
+      <image __type="object" __identifier="8df8d1ff-3531-48f0-9fa6-aac25346228a" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;8df8d1ff-3531-48f0-9fa6-aac25346228a&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;7831a651-3faf-4a18-9089-e27f50f11e38&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;From Neos with love&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Neos With Love.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;1ba14f95e835eee23ab90be80ac443da158ecd26&quot;,&quot;hash&quot;:&quot;1ba14f95e835eee23ab90be80ac443da158ecd26&quot;,&quot;__identity&quot;:&quot;54aeb4a9-01ca-462d-829a-94e99305dd48&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1734,&quot;position&quot;:10,&quot;width&quot;:3814,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;b9ef624f-f14e-4042-97c3-a44b78725bb5&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
+      <imageTitleText __type="string">Photo by Mr. Coffee</imageTitleText>
+     </properties>
+    </variant>
+    <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Homepage" version="9" removed="" hidden="" hiddenInIndex="">
      <dimensions>
       <language>de</language>
      </dimensions>
      <accessRoles __type="array"/>
      <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:57+02:00</creationDateTime>
-     <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:48:28+02:00</lastModificationDateTime>
-     <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:48:28+02:00</lastPublicationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:12:52+02:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:12:52+02:00</lastPublicationDateTime>
      <properties>
       <title __type="string">Home</title>
       <layout __type="string">landingPage</layout>
       <uriPathSegment __type="string">home</uriPathSegment>
-      <image __type="object" __identifier="f1dae6d8-02a0-4de8-8f7a-dbbd98fb6b30" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f1dae6d8-02a0-4de8-8f7a-dbbd98fb6b30&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a279b415-32c6-46ce-bd72-3769c4b4e5d2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;KeyVisual.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;f891171049518e72ba90dda70df66c220d95feb0&quot;,&quot;hash&quot;:&quot;f891171049518e72ba90dda70df66c220d95feb0&quot;,&quot;__identity&quot;:&quot;8248381d-c162-445f-9fb1-8ec610bce3aa&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1496,&quot;position&quot;:10,&quot;width&quot;:3000,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;bd3343f3-618b-4f79-961f-5c010224b957&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:1251,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:2508,&quot;__identity&quot;:&quot;730aea35-e3cd-416f-a412-ae5331066384&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+      <image __type="object" __identifier="df5d794c-8c99-4602-a1ac-15e916c10a2c" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;df5d794c-8c99-4602-a1ac-15e916c10a2c&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;7831a651-3faf-4a18-9089-e27f50f11e38&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;From Neos with love&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Neos With Love.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;1ba14f95e835eee23ab90be80ac443da158ecd26&quot;,&quot;hash&quot;:&quot;1ba14f95e835eee23ab90be80ac443da158ecd26&quot;,&quot;__identity&quot;:&quot;54aeb4a9-01ca-462d-829a-94e99305dd48&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1701,&quot;position&quot;:10,&quot;width&quot;:3814,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;96a2f188-e131-482c-956f-3844a3a8202d&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
+      <imageTitleText __type="string">Photo by Mr. Coffee</imageTitleText>
+     </properties>
+    </variant>
+    <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Homepage" version="5" removed="" hidden="" hiddenInIndex="">
+     <dimensions>
+      <language>lv</language>
+     </dimensions>
+     <accessRoles __type="array"/>
+     <creationDateTime __type="object" __classname="DateTime">2015-12-21T21:56:53+01:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastPublicationDateTime>
+     <properties>
+      <title __type="string">Home</title>
+      <layout __type="string">landingPage</layout>
+      <uriPathSegment __type="string">home</uriPathSegment>
+      <image __type="object" __identifier="e50c998b-a35e-4ba3-8003-65cb6d65a360" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;e50c998b-a35e-4ba3-8003-65cb6d65a360&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;7831a651-3faf-4a18-9089-e27f50f11e38&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;From Neos with love&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Neos With Love.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;1ba14f95e835eee23ab90be80ac443da158ecd26&quot;,&quot;hash&quot;:&quot;1ba14f95e835eee23ab90be80ac443da158ecd26&quot;,&quot;__identity&quot;:&quot;54aeb4a9-01ca-462d-829a-94e99305dd48&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1716,&quot;position&quot;:10,&quot;width&quot;:3814,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;49ee28cf-e863-45b9-a50b-8c7cb0d4ebf7&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
       <imageTitleText __type="string">Photo by Mr. Coffee</imageTitleText>
      </properties>
     </variant>
@@ -267,7 +267,7 @@
            <lastPublicationDateTime __type="object" __classname="DateTime">2015-04-26T19:53:27+02:00</lastPublicationDateTime>
            <properties>
             <caption __type="string">&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</caption>
-            <image __type="object" __identifier="7b6b96fe-4985-6566-b1fc-43ff02cc1814" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;7b6b96fe-4985-6566-b1fc-43ff02cc1814&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;6aac7ce2-b2e1-4e20-6987-42daa4edfbd2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Mad-Hatter.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;510905a6fae272e24c71a11c3646a96bf9443a70&quot;,&quot;hash&quot;:&quot;510905a6fae272e24c71a11c3646a96bf9443a70&quot;,&quot;__identity&quot;:&quot;3e3c60c3-df00-04f5-fb62-e8e947a1319c&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:1600,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;1dd138df-1448-429b-9bef-39255ad3b898&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:1600,&quot;__identity&quot;:&quot;0f04b047-3eaa-4734-a61f-134d8a09effc&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+            <image __type="object" __identifier="7b6b96fe-4985-6566-b1fc-43ff02cc1814" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;7b6b96fe-4985-6566-b1fc-43ff02cc1814&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;6aac7ce2-b2e1-4e20-6987-42daa4edfbd2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Mad-Hatter.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;510905a6fae272e24c71a11c3646a96bf9443a70&quot;,&quot;hash&quot;:&quot;510905a6fae272e24c71a11c3646a96bf9443a70&quot;,&quot;__identity&quot;:&quot;3e3c60c3-df00-04f5-fb62-e8e947a1319c&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:1600,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;4466ed33-d791-4517-ae4c-bf8b886c41c7&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:1600,&quot;__identity&quot;:&quot;d89ddaa4-dfaf-4b58-8141-ac1326c72782&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
            </properties>
           </variant>
          </node>
@@ -282,7 +282,7 @@
            <lastPublicationDateTime __type="object" __classname="DateTime">2015-04-26T19:53:27+02:00</lastPublicationDateTime>
            <properties>
             <caption __type="string">&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</caption>
-            <image __type="object" __identifier="c3bc8cf4-bc6a-ba5f-b53a-2a6483970279" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;c3bc8cf4-bc6a-ba5f-b53a-2a6483970279&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a126280f-2a8e-0592-0e14-cc2cd9808bb2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Alice-In-Wonderland.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;53e0e394fda7e8943fd5e15f041da1919e03d534&quot;,&quot;hash&quot;:&quot;53e0e394fda7e8943fd5e15f041da1919e03d534&quot;,&quot;__identity&quot;:&quot;c9366596-9bae-1514-d003-76b2e82a6fc3&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:1600,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;f8bd2285-4522-4067-88a2-cb291be12a11&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:1600,&quot;__identity&quot;:&quot;56b05d55-36a2-4526-9976-12faccc22db7&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+            <image __type="object" __identifier="c3bc8cf4-bc6a-ba5f-b53a-2a6483970279" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;c3bc8cf4-bc6a-ba5f-b53a-2a6483970279&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a126280f-2a8e-0592-0e14-cc2cd9808bb2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Alice-In-Wonderland.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;53e0e394fda7e8943fd5e15f041da1919e03d534&quot;,&quot;hash&quot;:&quot;53e0e394fda7e8943fd5e15f041da1919e03d534&quot;,&quot;__identity&quot;:&quot;c9366596-9bae-1514-d003-76b2e82a6fc3&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:1600,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;fc02f8ce-907d-4c23-90b7-0a9b506e8419&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:1600,&quot;__identity&quot;:&quot;d25dced5-5cf4-4db3-8dbe-0005b10039ab&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
            </properties>
           </variant>
          </node>
@@ -805,7 +805,7 @@
                                                     like to drop the jar for fear of killing somebody underneath, so
                                                     managed to put it into one of the cupboards as she fell past it.
                                                     &lt;/p&gt;</text>
-            <image __type="object" __identifier="f1aed746-643b-74f4-c4e9-02a52e889f08" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f1aed746-643b-74f4-c4e9-02a52e889f08&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;08aaeb84-dccc-6af4-0086-93499de4e1bc&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-1.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f&quot;,&quot;hash&quot;:&quot;30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f&quot;,&quot;__identity&quot;:&quot;3640b4ba-a68b-7e2f-4199-d4e3a2b684c3&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;ee1de7ab-1359-42fb-b33d-e2b30d21af48&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:278,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:200,&quot;__identity&quot;:&quot;f623b57e-2fe6-4222-83df-b1ea71aaea34&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+            <image __type="object" __identifier="f1aed746-643b-74f4-c4e9-02a52e889f08" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f1aed746-643b-74f4-c4e9-02a52e889f08&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;08aaeb84-dccc-6af4-0086-93499de4e1bc&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-1.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f&quot;,&quot;hash&quot;:&quot;30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f&quot;,&quot;__identity&quot;:&quot;3640b4ba-a68b-7e2f-4199-d4e3a2b684c3&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;99217770-e13e-43d5-ae0c-2fe6fc516b8f&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:278,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:200,&quot;__identity&quot;:&quot;a6fbaebf-69fc-4ebb-a873-c6090349e5c4&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
            </properties>
           </variant>
          </node>
@@ -842,7 +842,7 @@
                                                     Queen!&quot; and the three gardeners instantly threw themselves flat
                                                     upon their faces. There[98] was a sound of many footsteps, and Alice
                                                     looked round, eager to see the Queen. &lt;/p&gt;</text>
-            <image __type="object" __identifier="b8062715-0885-8df4-3a19-508a1429c04a" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;b8062715-0885-8df4-3a19-508a1429c04a&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;11d3aded-fb1a-70e7-1412-0b465b11fcd8&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-2.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;0641ce611d5171161c853f70ff1ae0f33dd4dc24&quot;,&quot;hash&quot;:&quot;0641ce611d5171161c853f70ff1ae0f33dd4dc24&quot;,&quot;__identity&quot;:&quot;1eb38dbc-0580-1280-f293-4749dc1fffe5&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:353,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;30874457-6111-47fc-882c-139a444ad46b&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:283,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:200,&quot;__identity&quot;:&quot;50adec50-a023-433a-9192-103467d3a358&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+            <image __type="object" __identifier="b8062715-0885-8df4-3a19-508a1429c04a" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;b8062715-0885-8df4-3a19-508a1429c04a&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;11d3aded-fb1a-70e7-1412-0b465b11fcd8&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-2.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;0641ce611d5171161c853f70ff1ae0f33dd4dc24&quot;,&quot;hash&quot;:&quot;0641ce611d5171161c853f70ff1ae0f33dd4dc24&quot;,&quot;__identity&quot;:&quot;1eb38dbc-0580-1280-f293-4749dc1fffe5&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:353,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;98d78dac-4a8b-4527-974f-c8e8a573b299&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:283,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:200,&quot;__identity&quot;:&quot;7eede9a7-8e95-45c2-bc38-fb19b4d3acb5&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
            </properties>
           </variant>
          </node>
@@ -2280,7 +2280,7 @@
            <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-15T09:49:30+02:00</lastPublicationDateTime>
            <properties>
             <caption __type="string">&lt;p&gt;Enter caption here&lt;/p&gt;</caption>
-            <image __type="object" __identifier="ae3d6684-925d-4d98-773e-7f19f588aad0" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;ae3d6684-925d-4d98-773e-7f19f588aad0&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;6aac7ce2-b2e1-4e20-6987-42daa4edfbd2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Mad-Hatter.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;510905a6fae272e24c71a11c3646a96bf9443a70&quot;,&quot;hash&quot;:&quot;510905a6fae272e24c71a11c3646a96bf9443a70&quot;,&quot;__identity&quot;:&quot;3e3c60c3-df00-04f5-fb62-e8e947a1319c&quot;}},&quot;adjustments&quot;:[{&quot;allowUpScaling&quot;:false,&quot;height&quot;:501,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:1600,&quot;__identity&quot;:&quot;5ea88ed1-9283-4717-b6e7-560cb39e1851&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
+            <image __type="object" __identifier="ae3d6684-925d-4d98-773e-7f19f588aad0" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;ae3d6684-925d-4d98-773e-7f19f588aad0&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;6aac7ce2-b2e1-4e20-6987-42daa4edfbd2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Mad-Hatter.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;510905a6fae272e24c71a11c3646a96bf9443a70&quot;,&quot;hash&quot;:&quot;510905a6fae272e24c71a11c3646a96bf9443a70&quot;,&quot;__identity&quot;:&quot;3e3c60c3-df00-04f5-fb62-e8e947a1319c&quot;}},&quot;adjustments&quot;:[{&quot;allowUpScaling&quot;:false,&quot;height&quot;:501,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:1600,&quot;__identity&quot;:&quot;be59ae2a-5ff9-42c2-84a2-d1a732b1c307&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</image>
             <title __type="string">Neos Cornified</title>
            </properties>
           </variant>
@@ -2375,64 +2375,64 @@
      </node>
     </node>
     <node identifier="986b8bef-68f6-1883-3711-31929cfe5ed8" nodeName="footer">
-     <variant sortingIndex="300" workspace="live" nodeType="Neos.Neos:ContentCollection" version="8" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="300" workspace="live" nodeType="Neos.Neos:ContentCollection" version="12" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>en_US</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:47:58+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:47:58+02:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-04-23T20:44:40+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-23T20:44:40+02:00</lastPublicationDateTime>
       <properties/>
      </variant>
-     <variant sortingIndex="300" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="300" workspace="live" nodeType="Neos.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>nl</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:53:31+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:48:48+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:48:48+02:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastPublicationDateTime>
       <properties/>
      </variant>
-     <variant sortingIndex="300" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="300" workspace="live" nodeType="Neos.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>da</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:54:02+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:07+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:07+02:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastPublicationDateTime>
       <properties/>
      </variant>
-     <variant sortingIndex="300" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="300" workspace="live" nodeType="Neos.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>fr</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:50+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:35+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:35+02:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastPublicationDateTime>
       <properties/>
      </variant>
-     <variant sortingIndex="300" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="300" workspace="live" nodeType="Neos.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>de</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:57+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:48:28+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:48:28+02:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:12:52+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:12:52+02:00</lastPublicationDateTime>
       <properties/>
      </variant>
-     <variant sortingIndex="300" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="300" workspace="live" nodeType="Neos.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>lv</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-12-21T21:56:53+01:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:44+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:44+02:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastPublicationDateTime>
       <properties/>
      </variant>
      <node identifier="6fea08d6-e3c4-8937-bfdf-ce8e5d4d1bd1" nodeName="node524e798485de4">
@@ -2465,64 +2465,64 @@
      </variant>
     </node>
     <node identifier="631740f8-b3bf-4da6-9062-bff0fe77380b" nodeName="main">
-     <variant sortingIndex="200" workspace="live" nodeType="Neos.Neos:ContentCollection" version="8" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="200" workspace="live" nodeType="Neos.Neos:ContentCollection" version="12" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>en_US</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:47:58+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:47:58+02:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-04-23T20:44:40+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-23T20:44:40+02:00</lastPublicationDateTime>
       <properties/>
      </variant>
-     <variant sortingIndex="200" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="200" workspace="live" nodeType="Neos.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>nl</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:53:31+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:48:48+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:48:48+02:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastPublicationDateTime>
       <properties/>
      </variant>
-     <variant sortingIndex="200" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="200" workspace="live" nodeType="Neos.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>da</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:54:02+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:07+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:07+02:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastPublicationDateTime>
       <properties/>
      </variant>
-     <variant sortingIndex="200" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="200" workspace="live" nodeType="Neos.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>fr</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:50+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:35+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:35+02:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastPublicationDateTime>
       <properties/>
      </variant>
-     <variant sortingIndex="200" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="200" workspace="live" nodeType="Neos.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>de</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:57+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:48:28+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:48:28+02:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:12:52+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:12:52+02:00</lastPublicationDateTime>
       <properties/>
      </variant>
-     <variant sortingIndex="200" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="200" workspace="live" nodeType="Neos.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>lv</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-12-21T21:56:53+01:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:44+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:44+02:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastPublicationDateTime>
       <properties/>
      </variant>
      <node identifier="198d23f8-5fe4-5b4f-2766-38c7418ed16e" nodeName="node524a87808ab3e">
@@ -2967,139 +2967,144 @@
      </node>
     </node>
     <node identifier="f380fbcd-2c5a-4c9b-b1c3-da9e1dc803cc" nodeName="teaser">
-     <variant sortingIndex="250" workspace="live" nodeType="Neos.Neos:ContentCollection" version="9" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="250" workspace="live" nodeType="Neos.Neos:ContentCollection" version="13" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>en_US</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:47:58+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:47:58+02:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-04-23T20:44:40+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-23T20:44:40+02:00</lastPublicationDateTime>
       <properties/>
      </variant>
-     <variant sortingIndex="250" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="250" workspace="live" nodeType="Neos.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>nl</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:53:31+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:48:48+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:48:48+02:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastPublicationDateTime>
       <properties/>
      </variant>
-     <variant sortingIndex="250" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="250" workspace="live" nodeType="Neos.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>da</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:54:02+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:07+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:07+02:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastPublicationDateTime>
       <properties/>
      </variant>
-     <variant sortingIndex="250" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="250" workspace="live" nodeType="Neos.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>fr</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:50+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:35+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:35+02:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastPublicationDateTime>
       <properties/>
      </variant>
-     <variant sortingIndex="250" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="250" workspace="live" nodeType="Neos.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>de</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:57+02:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:48:28+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:48:28+02:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:12:52+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:12:52+02:00</lastPublicationDateTime>
       <properties/>
      </variant>
-     <variant sortingIndex="250" workspace="live" nodeType="Neos.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="250" workspace="live" nodeType="Neos.Neos:ContentCollection" version="4" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>lv</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-12-21T21:56:53+01:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:44+02:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2017-08-29T18:49:44+02:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastPublicationDateTime>
       <properties/>
      </variant>
      <node identifier="d17caff2-f50c-d30b-b735-9b9216de02e9" nodeName="node52697bdfee199">
-      <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Headline" version="4" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Headline" version="5" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>da</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T21:55:16+01:00</lastModificationDateTime>
-       <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T21:55:16+01:00</lastPublicationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastPublicationDateTime>
        <properties>
-        <title __type="string">&lt;h1&gt;Opret fremragende
-                                    indhold.&lt;br/&gt;&lt;/h1&gt;</title>
+        <title __type="string">&lt;h1&gt;Opret ❤️ indhold.&lt;/h1&gt;
+</title>
        </properties>
       </variant>
-      <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Headline" version="3" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Headline" version="4" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>de</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T21:42:17+01:00</lastModificationDateTime>
-       <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T21:42:17+01:00</lastPublicationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:12:52+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:12:52+02:00</lastPublicationDateTime>
        <properties>
-        <title __type="string">&lt;h1&gt;Schreibe gute Texte.&lt;/h1&gt;</title>
+        <title __type="string">&lt;h1&gt;Schreibe ❤️ Texte.&lt;/h1&gt;
+</title>
        </properties>
       </variant>
-      <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Headline" version="4" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Headline" version="5" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>fr</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T21:53:24+01:00</lastModificationDateTime>
-       <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T21:53:24+01:00</lastPublicationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastPublicationDateTime>
        <properties>
-        <title __type="string">&lt;h1&gt;&lt;br/&gt;Créer un contenu de qualité.&lt;br/&gt;&lt;/h1&gt;</title>
+        <title __type="string">&lt;h1&gt;&lt;br /&gt;
+Créer un contenu de ❤️.&lt;/h1&gt;
+</title>
        </properties>
       </variant>
-      <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Headline" version="4" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Headline" version="5" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>nl</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T21:46:26+01:00</lastModificationDateTime>
-       <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T21:46:26+01:00</lastPublicationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastPublicationDateTime>
        <properties>
-        <title __type="string">&lt;h1&gt;Maak grote inhoud.&lt;br/&gt;&lt;/h1&gt;</title>
+        <title __type="string">&lt;h1&gt;Maak ❤️ inhoud.&lt;/h1&gt;
+</title>
        </properties>
       </variant>
-      <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Headline" version="3" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Headline" version="4" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>lv</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:02:16+01:00</lastModificationDateTime>
-       <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T22:02:16+01:00</lastPublicationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+02:00</lastPublicationDateTime>
        <properties>
-        <title __type="string">&lt;h1&gt;Izveidojiet lielisku
-                                    saturu.&lt;br/&gt;&lt;/h1&gt;</title>
+        <title __type="string">&lt;h1&gt;Izveidojiet ❤️ saturu.&lt;/h1&gt;
+</title>
        </properties>
       </variant>
-      <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Headline" version="4" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.NodeTypes:Headline" version="5" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+02:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-04-30T23:20:35+02:00</lastModificationDateTime>
-       <lastPublicationDateTime __type="object" __classname="DateTime">2015-04-30T23:20:35+02:00</lastPublicationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2018-04-20T20:57:59+02:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T20:57:58+02:00</lastPublicationDateTime>
        <properties>
-        <title __type="string">&lt;h1&gt;Create great content.&lt;/h1&gt;</title>
+        <title __type="string">&lt;h1&gt;Create ❤️ content.&lt;/h1&gt;
+</title>
        </properties>
       </variant>
      </node>
@@ -3128,7 +3133,7 @@
        <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <title __type="string">I. Down the Rabbit-hole</title>
-        <chapterImage __type="object" __identifier="201b68e6-9f60-f34b-0083-b1bf219b08f3" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;201b68e6-9f60-f34b-0083-b1bf219b08f3&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;08aaeb84-dccc-6af4-0086-93499de4e1bc&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-1.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f&quot;,&quot;hash&quot;:&quot;30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f&quot;,&quot;__identity&quot;:&quot;3640b4ba-a68b-7e2f-4199-d4e3a2b684c3&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;2af524d5-6bf5-4340-8304-2a9411223a56&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:359,&quot;__identity&quot;:&quot;47d60bbe-f1de-4fd4-bce6-a93797872de9&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="201b68e6-9f60-f34b-0083-b1bf219b08f3" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;201b68e6-9f60-f34b-0083-b1bf219b08f3&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;08aaeb84-dccc-6af4-0086-93499de4e1bc&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-1.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f&quot;,&quot;hash&quot;:&quot;30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f&quot;,&quot;__identity&quot;:&quot;3640b4ba-a68b-7e2f-4199-d4e3a2b684c3&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;d82ecca3-7b33-49c3-92db-a668c7214595&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:359,&quot;__identity&quot;:&quot;549faadd-7e2a-43d0-afd3-e2c278e72bf3&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <chapterDescription __type="string">Alice was beginning to get very tired of sitting by
                                     her sister on the bank, and
                                     of having nothing to do: once or twice she had peeped into the book her sister was
@@ -3336,7 +3341,7 @@
        <lastModificationDateTime __type="object" __classname="DateTime">2015-12-21T22:21:22+01:00</lastModificationDateTime>
        <properties>
         <title __type="string">II. The Pool of Tears</title>
-        <chapterImage __type="object" __identifier="1d0d4e41-bc2a-2cad-c495-21a46ffecdb8" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;1d0d4e41-bc2a-2cad-c495-21a46ffecdb8&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;11d3aded-fb1a-70e7-1412-0b465b11fcd8&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-2.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;0641ce611d5171161c853f70ff1ae0f33dd4dc24&quot;,&quot;hash&quot;:&quot;0641ce611d5171161c853f70ff1ae0f33dd4dc24&quot;,&quot;__identity&quot;:&quot;1eb38dbc-0580-1280-f293-4749dc1fffe5&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:353,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;e4fbd695-791a-4804-80a9-2343c9dac0e5&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:353,&quot;__identity&quot;:&quot;6093e5fc-8eb0-4633-bda2-54e4c92605af&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="1d0d4e41-bc2a-2cad-c495-21a46ffecdb8" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;1d0d4e41-bc2a-2cad-c495-21a46ffecdb8&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;11d3aded-fb1a-70e7-1412-0b465b11fcd8&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-2.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;0641ce611d5171161c853f70ff1ae0f33dd4dc24&quot;,&quot;hash&quot;:&quot;0641ce611d5171161c853f70ff1ae0f33dd4dc24&quot;,&quot;__identity&quot;:&quot;1eb38dbc-0580-1280-f293-4749dc1fffe5&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:353,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;c3784a89-f803-4898-8b36-45f3988f492e&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:353,&quot;__identity&quot;:&quot;9e5a6dda-7db7-485a-b0fc-7f71b7e94ac2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <chapterDescription __type="string">Curiouser and curiouser!&quot; cried Alice (she was
                                     so much surprised, that for
                                     a moment she quite forgot how to speak good English); &quot;now I'm opening out like
@@ -3549,7 +3554,7 @@
                                     dripping wet,
                                     cross, and uncomfortable.
                                 </chapterDescription>
-        <chapterImage __type="object" __identifier="310de05c-479b-e16b-dd8e-db1fd4f56d28" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;310de05c-479b-e16b-dd8e-db1fd4f56d28&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a798ee5d-e75b-3595-578e-056439e1695e&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;flying.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;ae939055564831ad71ed68284e3b6725f29c1045&quot;,&quot;hash&quot;:&quot;ae939055564831ad71ed68284e3b6725f29c1045&quot;,&quot;__identity&quot;:&quot;14148fb6-5234-fd4c-6e88-26a186e0b2f3&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:373,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;2bd7ea78-9071-4a50-8ca1-1de0256533fe&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:373,&quot;__identity&quot;:&quot;03d04f11-153e-4ca2-a9e0-1357698ea4ac&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="310de05c-479b-e16b-dd8e-db1fd4f56d28" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;310de05c-479b-e16b-dd8e-db1fd4f56d28&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a798ee5d-e75b-3595-578e-056439e1695e&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;flying.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;ae939055564831ad71ed68284e3b6725f29c1045&quot;,&quot;hash&quot;:&quot;ae939055564831ad71ed68284e3b6725f29c1045&quot;,&quot;__identity&quot;:&quot;14148fb6-5234-fd4c-6e88-26a186e0b2f3&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:373,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;ca7fddb6-864a-4f20-b525-4a5d914d8069&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:373,&quot;__identity&quot;:&quot;cc97837c-851a-4796-8cc5-6be70bfac6e2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">iii-a-caucus-race-and-a-long-tale</uriPathSegment>
        </properties>
@@ -3745,7 +3750,7 @@
                                     executed, as sure
                                     as ferrets are ferrets!
                                 </chapterDescription>
-        <chapterImage __type="object" __identifier="a24bdc6d-424b-8639-0c30-817b4ce29a64" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;a24bdc6d-424b-8639-0c30-817b4ce29a64&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a0178d77-5c04-b829-a613-c9d2b6fb92cb&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alicecards.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;0d5f77e755f664b393b62ca51a056c06f05e83c6&quot;,&quot;hash&quot;:&quot;0d5f77e755f664b393b62ca51a056c06f05e83c6&quot;,&quot;__identity&quot;:&quot;9a2cd8b5-c9ad-7bad-e483-25fb73a4c562&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:356,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;b85e1571-8da8-485e-bc0b-0e61364c905b&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:356,&quot;__identity&quot;:&quot;8d4f3899-6710-4da2-901f-955ce221ce9c&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="a24bdc6d-424b-8639-0c30-817b4ce29a64" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;a24bdc6d-424b-8639-0c30-817b4ce29a64&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a0178d77-5c04-b829-a613-c9d2b6fb92cb&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alicecards.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;0d5f77e755f664b393b62ca51a056c06f05e83c6&quot;,&quot;hash&quot;:&quot;0d5f77e755f664b393b62ca51a056c06f05e83c6&quot;,&quot;__identity&quot;:&quot;9a2cd8b5-c9ad-7bad-e483-25fb73a4c562&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:356,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;f3be6906-d770-438d-b281-050217f19f1f&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:356,&quot;__identity&quot;:&quot;953e0f74-060c-4eb3-b5d2-73c4f52a96bc&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">iv-the-rabbit-sends-in-a-little-bill</uriPathSegment>
        </properties>
@@ -3995,7 +4000,7 @@
                                     pleasant temper, and thought to herself that perhaps it was only the pepper that had
                                     made her so savage when they met in the kitchen.
                                 </chapterDescription>
-        <chapterImage __type="object" __identifier="b23052f2-bd58-854c-b613-ea76f7d4a401" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;b23052f2-bd58-854c-b613-ea76f7d4a401&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;0bf33a79-3ee6-cdb2-94f1-95bc46beee0b&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;birds.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;dd224dfed85490797a385d01ccd91053670d00ce&quot;,&quot;hash&quot;:&quot;dd224dfed85490797a385d01ccd91053670d00ce&quot;,&quot;__identity&quot;:&quot;4d119e80-eda4-320e-eb34-300ddc5624e4&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:372,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;ecc98c3c-f31a-407f-a908-c296a5a617a9&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:372,&quot;__identity&quot;:&quot;0b733a05-5ea3-4c4b-8174-ae834eab142a&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="b23052f2-bd58-854c-b613-ea76f7d4a401" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;b23052f2-bd58-854c-b613-ea76f7d4a401&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;0bf33a79-3ee6-cdb2-94f1-95bc46beee0b&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;birds.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;dd224dfed85490797a385d01ccd91053670d00ce&quot;,&quot;hash&quot;:&quot;dd224dfed85490797a385d01ccd91053670d00ce&quot;,&quot;__identity&quot;:&quot;4d119e80-eda4-320e-eb34-300ddc5624e4&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:372,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;120778d8-4b29-4fd5-8e3f-4b8c46f7441d&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:372,&quot;__identity&quot;:&quot;878cbcef-7943-49d2-92d9-7ac6083f1dca&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">ix-the-mock-turtle-s-story</uriPathSegment>
        </properties>
       </variant>
@@ -4343,7 +4348,7 @@
                                     the Caterpillar took the hookah out of its mouth, and addressed her in a languid,
                                     sleepy voice.
                                 </chapterDescription>
-        <chapterImage __type="object" __identifier="cddbc6af-2f54-2d43-d0af-810cbd3c8bee" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;cddbc6af-2f54-2d43-d0af-810cbd3c8bee&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;d08de093-dc6b-55ea-adfc-d894ef87b0e0&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;smoking.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;930b8279a553880c49d7a73765778907ce392db5&quot;,&quot;hash&quot;:&quot;930b8279a553880c49d7a73765778907ce392db5&quot;,&quot;__identity&quot;:&quot;57786bc3-d0e5-a181-c9c6-9675ff39cf91&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:337,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;4cac0d07-bc25-4f04-9113-d416bd7fdbe0&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:499,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:337,&quot;__identity&quot;:&quot;7d01c0d0-429c-4e32-b591-84108f99097e&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="cddbc6af-2f54-2d43-d0af-810cbd3c8bee" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;cddbc6af-2f54-2d43-d0af-810cbd3c8bee&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;d08de093-dc6b-55ea-adfc-d894ef87b0e0&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;smoking.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;930b8279a553880c49d7a73765778907ce392db5&quot;,&quot;hash&quot;:&quot;930b8279a553880c49d7a73765778907ce392db5&quot;,&quot;__identity&quot;:&quot;57786bc3-d0e5-a181-c9c6-9675ff39cf91&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:337,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;84e48893-99c9-4dc1-889e-c3fbf8601931&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:499,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:337,&quot;__identity&quot;:&quot;a4ac8672-e9e6-48b2-b072-f1bfa9f1687f&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">v-advice-from-a-caterpillar</uriPathSegment>
        </properties>
@@ -4580,7 +4585,7 @@
                                     have called him
                                     a fish)—and rapped loudly at the door with his knuckles.
                                 </chapterDescription>
-        <chapterImage __type="object" __identifier="cc7a55e2-70f2-4a73-4856-07e9db6734b1" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;cc7a55e2-70f2-4a73-4856-07e9db6734b1&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;65e3383c-173c-2f2e-1afc-259ba2bd3ca6&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;piggy.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;85e5d4f8e34ad7dad4a34ba7af45d5584ea3db14&quot;,&quot;hash&quot;:&quot;85e5d4f8e34ad7dad4a34ba7af45d5584ea3db14&quot;,&quot;__identity&quot;:&quot;4bf693a4-93fe-5cba-4518-4e9897147fe4&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:357,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;2855a9e5-d6bc-47ed-80fe-d1ade4c745ff&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:357,&quot;__identity&quot;:&quot;8af57291-e814-4965-bb60-f6d9e16f81a6&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="cc7a55e2-70f2-4a73-4856-07e9db6734b1" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;cc7a55e2-70f2-4a73-4856-07e9db6734b1&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;65e3383c-173c-2f2e-1afc-259ba2bd3ca6&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;piggy.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;85e5d4f8e34ad7dad4a34ba7af45d5584ea3db14&quot;,&quot;hash&quot;:&quot;85e5d4f8e34ad7dad4a34ba7af45d5584ea3db14&quot;,&quot;__identity&quot;:&quot;4bf693a4-93fe-5cba-4518-4e9897147fe4&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:357,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;6bf24eec-8a24-4166-a2c7-dee023b4ef78&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:357,&quot;__identity&quot;:&quot;d8026a53-6b8f-4a7e-b5f1-dbe8ee152dce&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">vi-pig-and-pepper</uriPathSegment>
        </properties>
@@ -4840,7 +4845,7 @@
         <chapterDescription __type="string">There was a table set out under a tree in front of
                                     the house, and the March Hare and the Hatter were having tea at it.
                                 </chapterDescription>
-        <chapterImage __type="object" __identifier="f3d0fcad-03e0-c72a-4df2-258f7cfff348" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f3d0fcad-03e0-c72a-4df2-258f7cfff348&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;6bc60415-af45-b2f4-af11-73b32e4532e9&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;teatime.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;b1b18947b2bebc44c6bbab46922f2a3856f5e33b&quot;,&quot;hash&quot;:&quot;b1b18947b2bebc44c6bbab46922f2a3856f5e33b&quot;,&quot;__identity&quot;:&quot;f814656c-6e15-5ee6-1059-9735fb760816&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;72075ba9-116b-44c8-b252-4c3541745978&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:359,&quot;__identity&quot;:&quot;bd04ee27-b25c-4b1f-b0dd-d179433cb36c&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="f3d0fcad-03e0-c72a-4df2-258f7cfff348" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f3d0fcad-03e0-c72a-4df2-258f7cfff348&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;6bc60415-af45-b2f4-af11-73b32e4532e9&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;teatime.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;b1b18947b2bebc44c6bbab46922f2a3856f5e33b&quot;,&quot;hash&quot;:&quot;b1b18947b2bebc44c6bbab46922f2a3856f5e33b&quot;,&quot;__identity&quot;:&quot;f814656c-6e15-5ee6-1059-9735fb760816&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;9e4cb38a-e757-412e-bc6d-a2e0e2588ee9&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:359,&quot;__identity&quot;:&quot;7d280200-e244-4a09-8818-0d6938e9cd5b&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">vii-a-mad-tea-party</uriPathSegment>
        </properties>
@@ -5095,7 +5100,7 @@
                                     nearer to watch them, and just as she came up to them she heard one of them say
                                     &quot;Look out now, Five! Don't go splashing paint over me like
                                     that!&quot;</chapterDescription>
-        <chapterImage __type="object" __identifier="1fd75420-91e2-70b2-4f7e-20d0f5900b3c" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;1fd75420-91e2-70b2-4f7e-20d0f5900b3c&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;8244a1f2-5474-c7c2-0bcb-2c1f53080103&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;queen.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;7861cd0cc497284869845b442b46ee25224c4685&quot;,&quot;hash&quot;:&quot;7861cd0cc497284869845b442b46ee25224c4685&quot;,&quot;__identity&quot;:&quot;24f8cd98-708a-c664-a08b-73914f39025e&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:364,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;cdfda391-6088-401e-852d-9582de080cc6&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:364,&quot;__identity&quot;:&quot;8a8c906f-4665-4a3f-bb6e-51df5d8f2a04&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="1fd75420-91e2-70b2-4f7e-20d0f5900b3c" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;1fd75420-91e2-70b2-4f7e-20d0f5900b3c&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;8244a1f2-5474-c7c2-0bcb-2c1f53080103&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;queen.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;7861cd0cc497284869845b442b46ee25224c4685&quot;,&quot;hash&quot;:&quot;7861cd0cc497284869845b442b46ee25224c4685&quot;,&quot;__identity&quot;:&quot;24f8cd98-708a-c664-a08b-73914f39025e&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:364,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;707ce978-32fe-4623-b1f4-d9f8de6188a0&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:364,&quot;__identity&quot;:&quot;d3a10109-e7f2-45e8-b031-37c0543d007c&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">viii-the-queen-s-croquet-ground</uriPathSegment>
        </properties>
       </variant>
@@ -5352,7 +5357,7 @@
                                     minute or two, sobs choked his voice. &quot;Same as if he had a bone in his throat,&quot;
                                     said the Gryphon: and it set to work shaking him and punching him in the back.
                                 </chapterDescription>
-        <chapterImage __type="object" __identifier="24ba5744-8475-c519-9dcb-e6ef740bc0d3" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;24ba5744-8475-c519-9dcb-e6ef740bc0d3&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;17602a91-ba2b-c40d-e9fe-10f92ea6bd8b&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;cooking.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;7d0265f93741373a60457ba586f6d7a8c0865a09&quot;,&quot;hash&quot;:&quot;7d0265f93741373a60457ba586f6d7a8c0865a09&quot;,&quot;__identity&quot;:&quot;8eb0ba0c-bd0b-7da2-0f4d-77149299c2fe&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:384,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;7f7af52a-d3a2-440f-81e4-5c10731915af&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:384,&quot;__identity&quot;:&quot;365664be-a1b0-4a95-80b0-eda376ef97bc&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="24ba5744-8475-c519-9dcb-e6ef740bc0d3" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;24ba5744-8475-c519-9dcb-e6ef740bc0d3&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;17602a91-ba2b-c40d-e9fe-10f92ea6bd8b&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;cooking.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;7d0265f93741373a60457ba586f6d7a8c0865a09&quot;,&quot;hash&quot;:&quot;7d0265f93741373a60457ba586f6d7a8c0865a09&quot;,&quot;__identity&quot;:&quot;8eb0ba0c-bd0b-7da2-0f4d-77149299c2fe&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:384,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;a996b8af-2918-4d2e-80a4-6fb5eef86f3d&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:384,&quot;__identity&quot;:&quot;eb8b241f-cb3b-4596-bc5b-6b5ac3e99215&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">x-the-lobster-quadrille</uriPathSegment>
        </properties>
       </variant>
@@ -5581,7 +5586,7 @@
                                     little birds and beasts, as well as the whole pack of cards: the Knave was standing
                                     before them, in chains, with a soldier on each side to guard him;
                                 </chapterDescription>
-        <chapterImage __type="object" __identifier="f16e4228-5361-cccd-8c12-4733331e65eb" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f16e4228-5361-cccd-8c12-4733331e65eb&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;b674d9cd-4a7f-a33a-be12-9a5efdaedb98&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;roses.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;ee94449bfc53d38d8e286879f38365ef3e9ca215&quot;,&quot;hash&quot;:&quot;ee94449bfc53d38d8e286879f38365ef3e9ca215&quot;,&quot;__identity&quot;:&quot;2710ab07-64b4-242a-a897-4fc10f83d4bd&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:364,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;8746b8bd-5902-4c62-8dc4-bc7632b11412&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:364,&quot;__identity&quot;:&quot;c9f06085-cbcc-4ba4-be31-ac1c0dae1ee3&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="f16e4228-5361-cccd-8c12-4733331e65eb" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f16e4228-5361-cccd-8c12-4733331e65eb&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;b674d9cd-4a7f-a33a-be12-9a5efdaedb98&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;roses.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;ee94449bfc53d38d8e286879f38365ef3e9ca215&quot;,&quot;hash&quot;:&quot;ee94449bfc53d38d8e286879f38365ef3e9ca215&quot;,&quot;__identity&quot;:&quot;2710ab07-64b4-242a-a897-4fc10f83d4bd&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:364,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;afbeb0ca-fa79-463b-94ff-20009bf8bb60&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:364,&quot;__identity&quot;:&quot;3a0636d4-b424-4999-b7ee-efb628971cd2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">xi-who-stole-the-tarts</uriPathSegment>
        </properties>
       </variant>
@@ -5793,7 +5798,7 @@
                                     skirt, upsetting all the jurymen on to the heads of the crowd below, and there they
                                     lay sprawling about, ...
                                 </chapterDescription>
-        <chapterImage __type="object" __identifier="e4abd49b-c36b-7892-d0f4-a8441b799b85" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;e4abd49b-c36b-7892-d0f4-a8441b799b85&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;10b114c2-7fc3-6e3a-ab8f-0a85a0854143&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;people.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;504f2f8ad00d1a9ef228b288ca42107905c9e22e&quot;,&quot;hash&quot;:&quot;504f2f8ad00d1a9ef228b288ca42107905c9e22e&quot;,&quot;__identity&quot;:&quot;bf2bdc0d-64fc-ec23-84c4-7db35456dc2b&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;eb31edd1-5724-4cc4-bc6e-7deecf70a848&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:359,&quot;__identity&quot;:&quot;ea91deec-eee8-489d-8ad0-e1e2df9dccf9&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
+        <chapterImage __type="object" __identifier="e4abd49b-c36b-7892-d0f4-a8441b799b85" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;e4abd49b-c36b-7892-d0f4-a8441b799b85&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;10b114c2-7fc3-6e3a-ab8f-0a85a0854143&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;people.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;504f2f8ad00d1a9ef228b288ca42107905c9e22e&quot;,&quot;hash&quot;:&quot;504f2f8ad00d1a9ef228b288ca42107905c9e22e&quot;,&quot;__identity&quot;:&quot;bf2bdc0d-64fc-ec23-84c4-7db35456dc2b&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;e9df2c3e-6a7a-4732-80bb-2c09cfcd9a23&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:359,&quot;__identity&quot;:&quot;d23ca66f-ddcf-431b-84c3-941ed000cd64&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">xii-alice-s-evidence</uriPathSegment>
        </properties>
       </variant>
