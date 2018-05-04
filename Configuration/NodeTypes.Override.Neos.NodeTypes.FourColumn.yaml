@@ -1,0 +1,16 @@
+##
+# Adjust the "FourColumn" node type:
+# Disable some of the layout options, override labels and set the default layout
+#
+'Neos.NodeTypes:FourColumn':
+  properties:
+    'layout':
+      defaultValue: '3-3-3-3'
+      ui:
+        inspector:
+          editorOptions:
+            values:
+              '25-25-25-25': ~
+              '3-3-3-3':
+                label: '25% / 25% / 25% / 25%'
+

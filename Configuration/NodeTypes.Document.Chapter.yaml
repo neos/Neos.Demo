@@ -1,0 +1,69 @@
+##
+# A new Document NodeType "Chapter"
+#
+'Neos.Demo:Chapter':
+  superTypes:
+    'Neos.Neos:Document': TRUE
+  childNodes:
+    'main':
+      type: 'Neos.Neos:ContentCollection'
+  ui:
+    label: i18n
+    icon: 'icon-book'
+    help:
+      message: 'The Chapter node will work with all other chapter nodes on the same level to form a browsable book.'
+    inspector:
+      groups:
+        'document':
+          label: i18n
+  properties:
+    'layout':
+      type: string
+      defaultValue: 'chapter'
+    'chapterDescription':
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'document'
+          editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
+        help:
+          message: 'The description will only be used in the chapter menu.'
+    'chapterImage':
+      type: 'Neos\Media\Domain\Model\ImageInterface'
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'document'
+        help:
+          message: 'This image will also appear in the chapter menu.'
+    title:
+      validation: ~
+      ui:
+        inlineEditable: TRUE
+        inspector:
+          group: ~
+        aloha:
+          placeholder: 'Enter title here'
+          'format':
+            'b': TRUE
+            'i': TRUE
+            'u': TRUE
+            'sub': TRUE
+            'sup': TRUE
+            'p': FALSE
+            'h1': FALSE
+            'h2': FALSE
+            'h3': FALSE
+            'pre': FALSE
+            'removeFormat': FALSE
+          'table': []
+          'list': []
+          'link':
+            'a': TRUE
+          'alignment': []
+          'formatlesspaste':
+            'button': FALSE
+            'formatlessPasteOption': TRUE

@@ -1,0 +1,15 @@
+##
+# A "Registration" plugin that allows creation of Neos user accounts through the Frontend
+# Warning: This is not to be used on productive Websites!
+#
+'Neos.Demo:Registration':
+  superTypes:
+    'Neos.Neos:Plugin': TRUE
+  ui:
+    label: i18n
+    icon: 'icon-user'
+    help:
+      message: |
+        A very simple registration to allow quick access to the backend of the demo site.
+
+        **Note:** For security reasons you should disable this on live sites.

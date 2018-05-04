@@ -1,0 +1,34 @@
+##
+# A "Carousel" content element that renders "Image" child nodes into a JavaScript based slideshow
+#
+'Neos.Demo:Carousel':
+  superTypes:
+    'Neos.Neos:Content': TRUE
+  childNodes:
+    carouselItems:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          '*': FALSE
+          'Neos.NodeTypes:Headline': TRUE
+          'Neos.NodeTypes:Text': TRUE
+          'Neos.NodeTypes:TextWithImage': TRUE
+          'Neos.NodeTypes:Image': TRUE
+          'Neos.NodeTypes:Html': TRUE
+          'Neos.NodeTypes:ContentReferences': TRUE
+          'Neos.Demo:YouTube': TRUE
+  ui:
+    label: i18n
+    group: 'plugins'
+    icon: 'icon-picture'
+    inlineEditable: TRUE
+    help:
+      message: |
+        Bootstrap carousel which can display the following types of content:
+        * Headline
+        * Text
+        * TextWithImage
+        * Image
+        * HTML
+        * YouTube
+        * References

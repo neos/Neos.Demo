@@ -1,0 +1,14 @@
+##
+# Adjust the "Form" node type:
+# Remove the empty select option and register the "contact-form"-Form
+#
+'Neos.NodeTypes:Form':
+  properties:
+    'formIdentifier':
+      ui:
+        inspector:
+          editorOptions:
+            values:
+              '': ~
+              'contact-form':
+                label: 'Neos.Demo:NodeTypes.Form:properties.formIdentifier.selectBoxEditor.value.contact-form'

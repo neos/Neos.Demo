@@ -1,0 +1,12 @@
+##
+# Adjust the "Headline" node type:
+# Enable 4th and 5th level and disable "p" in the aloha format selector of the "title" property
+#
+'Neos.NodeTypes:Headline':
+  properties:
+    'title':
+      ui:
+        aloha:
+          'format':
+            'h4': TRUE
+            'h5': TRUE
