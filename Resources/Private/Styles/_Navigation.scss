@@ -21,7 +21,6 @@
 
 	// Fix for menu position in neos backend
 	.neos-controls & {
-		top: 82px;
 		@media #{$screen-sm} {
 			top: auto;
 		}

@@ -2,17 +2,10 @@
 	var document = scope.document,
 			$scope = $(scope),
 			$document = $(document),
-			$body = $('body'),
 			$topNavigationWrap;
-
-	function updateBodyPadding() {
-		var paddingTop = $topNavigationWrap.length > 0 ? $topNavigationWrap.outerHeight() : 20;
-		$body.css('paddingTop', paddingTop);
-	}
 
 	function initTopNavigationWrap() {
 		$topNavigationWrap = $('.top-navigation-wrap').addClass('navbar-fixed-top');
-		updateBodyPadding();
 	}
 
 	$(function() {
@@ -23,8 +16,6 @@
 		 * This is required to move the content below the navbar when scrolled to the top.
 		 */
 		initTopNavigationWrap();
-		$scope.on('resize.topnav', updateBodyPadding);
-		document.addEventListener('Neos.PageLoaded', initTopNavigationWrap, false);
 
 		/**
 		 * Check if page is scrolled and switch 'scrolling' class for top navigation.
