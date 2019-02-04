@@ -1,7 +1,7 @@
 /**
  * Homepage rendering for the Neos.Demo website
  */
-prototype(Neos.Demo:Document.Chapter) < prototype(Neos.NodeTypes:Page) {
+prototype(Neos.Demo:Document.Chapter) < prototype(Neos.Demo:Document.Page) {
     bodyTag.attributes.class = 'chapter'
     body {
         templatePath = 'resource://Neos.Demo/Private/Templates/Page/Chapter.html'

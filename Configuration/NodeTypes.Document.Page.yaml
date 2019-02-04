@@ -19,8 +19,10 @@
     nodeTypes:
       'Neos.Demo:Homepage': FALSE
   childNodes:
+    'main':
+      type: 'Neos.Demo:Collection.Content.Main'
     'teaser':
-      type: 'Neos.Neos:ContentCollection'
+      type: 'Neos.Demo:Collection.Content.Teaser'
       constraints:
         nodeTypes:
           '*': FALSE

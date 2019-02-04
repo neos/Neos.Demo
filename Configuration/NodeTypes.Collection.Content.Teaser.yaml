@@ -1,0 +1,12 @@
+##
+# A teaser collection that allows only specific contents
+#
+'Neos.Demo:Collection.Content.Teaser':
+  superTypes:
+    Neos.Neos:ContentCollection: TRUE
+  constraints:
+    nodeTypes:
+      '*': FALSE
+      'Neos.NodeTypes:Headline': TRUE
+      'Neos.NodeTypes:Text': TRUE
+      'Neos.NodeTypes:Image': TRUE

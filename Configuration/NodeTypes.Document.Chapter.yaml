@@ -6,7 +6,7 @@
     'Neos.Neos:Document': TRUE
   childNodes:
     'main':
-      type: 'Neos.Neos:ContentCollection'
+      type: 'Neos.Demo:Collection.Content.Main'
   ui:
     label: i18n
     icon: 'icon-book'
