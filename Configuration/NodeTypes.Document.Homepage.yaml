@@ -4,11 +4,11 @@
 'Neos.Demo:Document.Homepage':
   ui:
     label: i18n
-    icon: 'icon-globe'
+    icon: 'globe'
     help:
      message: 'The homepage type is to be used only once and adds the shared footer.'
   superTypes:
-    'Neos.NodeTypes:Page': TRUE
+    'Neos.Demo:Document.Page': TRUE
   childNodes:
     'footer':
       position: 'end'
@@ -19,6 +19,3 @@
           'Neos.NodeTypes:Headline': TRUE
           'Neos.NodeTypes:Text': TRUE
           'Neos.NodeTypes:Image': TRUE
-  constraints:
-    nodeTypes:
-      'Neos.Demo:Homepage': FALSE

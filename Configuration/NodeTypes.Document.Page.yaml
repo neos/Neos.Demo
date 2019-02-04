@@ -1,0 +1,52 @@
+##
+# A new Document NodeType "Page"
+#
+'Neos.Demo:Document.Page':
+  superTypes:
+    'Neos.Neos:Document': true
+  ui:
+    label: i18n
+    icon: 'file'
+    help:
+      message: 'A Page'
+    inspector:
+      groups:
+        image:
+          label: 'Neos.Demo:NodeTypes.Page:groups.image'
+          position: 200
+          icon: 'icon-image'
+  constraints:
+    nodeTypes:
+      'Neos.Demo:Homepage': FALSE
+  childNodes:
+    'teaser':
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          '*': FALSE
+          'Neos.NodeTypes:Headline': TRUE
+          'Neos.NodeTypes:Text': TRUE
+          'Neos.NodeTypes:Image': TRUE
+  properties:
+    'image':
+      type: 'Neos\Media\Domain\Model\ImageInterface'
+      ui:
+        label: 'Neos.Demo:NodeTypes.Page:properties.image'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'image'
+          position: 50
+          editorOptions:
+            crop:
+              aspectRatio:
+                locked:
+                  width: 2
+                  height: 1
+    'imageTitleText':
+      type: string
+      ui:
+        label: 'Neos.Demo:NodeTypes.Page:properties.imageTitleText'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'image'
+          position: 100

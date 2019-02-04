@@ -1,0 +1,4 @@
+/**
+ * Homepage rendering for the Neos.Demo website
+ */
+prototype(Neos.Demo:Document.Homepage) < prototype(Neos.Demo:Document.LandingPage)

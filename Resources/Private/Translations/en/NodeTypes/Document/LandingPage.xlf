@@ -3,7 +3,7 @@
 	<file original="" product-name="Neos.Demo" source-language="en" datatype="plaintext">
 		<body>
             <trans-unit id="ui.label" xml:space="preserve">
-				<source>Page</source>
+				<source>Landing Page</source>
 			</trans-unit>
 			<trans-unit id="groups.image" xml:space="preserve">
 				<source>Image</source>
