@@ -1,7 +1,8 @@
 ##
 # "Carousel" element
 #
-prototype(Neos.Demo:Carousel) {
+prototype(Neos.Demo:Content.Carousel) {
+    templatePath = 'resource://Neos.Demo/Private/Templates/NodeTypes/Carousel.html'
 	carouselItems = Neos.Neos:ContentCollection {
 		nodePath = 'carouselItems'
 		content.iterationName = 'carouselItemsIteration'

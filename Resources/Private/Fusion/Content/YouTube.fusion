@@ -1,0 +1,7 @@
+##
+# "YouTube" element
+#
+prototype(Neos.Demo:Content.YouTube) < prototype(Neos.Neos:Content) {
+    templatePath = 'resource://Neos.Demo/Private/Templates/NodeTypes/YouTube.html'
+	attributes.class = 'responsive-video'
+}

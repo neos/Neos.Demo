@@ -1,4 +1,4 @@
-include: NodeTypes/*
+include: ./**/*.fusion
 
 /**
  * Root Fusion template for the Neos demo website

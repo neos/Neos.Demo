@@ -1,0 +1,9 @@
+##
+# "ChapterMenu" element, extending the default "Menu"
+#
+prototype(Neos.Demo:Content.ChapterMenu) < prototype(Neos.NodeTypes:Menu) {
+    templatePath = 'resource://Neos.Demo/Private/Templates/NodeTypes/ChapterMenu.html'
+    attributes.class = 'chapter-menu'
+	chapterImageWidth = '100'
+	chapterImageHeight = '100'
+}
