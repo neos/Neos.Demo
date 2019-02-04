@@ -1,5 +1,5 @@
 /**
- * Default page-rendering for the Neos.Demo website
+ * Default print rendering for the Neos.Demo website
  */
 print = Neos.Demo:Document.Page {
     head {

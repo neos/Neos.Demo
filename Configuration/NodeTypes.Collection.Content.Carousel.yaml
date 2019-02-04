@@ -1,0 +1,16 @@
+##
+# A collection of contents that can be placed in a carousel
+#
+'Neos.Demo:Collection.Content.Carousel':
+  superTypes:
+    Neos.Neos:ContentCollection: TRUE
+  constraints:
+    nodeTypes:
+      '*': FALSE
+      'Neos.NodeTypes:Headline': TRUE
+      'Neos.NodeTypes:Text': TRUE
+      'Neos.NodeTypes:TextWithImage': TRUE
+      'Neos.NodeTypes:Image': TRUE
+      'Neos.NodeTypes:Html': TRUE
+      'Neos.NodeTypes:ContentReferences': TRUE
+      'Neos.Demo:Content.YouTube': TRUE
