@@ -1,7 +1,7 @@
 ##
 # A new Document NodeType "Chapter"
 #
-'Neos.Demo:Chapter':
+'Neos.Demo:Document.Chapter':
   superTypes:
     'Neos.Neos:Document': TRUE
   childNodes:

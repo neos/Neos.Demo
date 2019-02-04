@@ -1,7 +1,7 @@
 ##
 # A custom "Menu" NodeType for chapters
 #
-'Neos.Demo:ChapterMenu':
+'Neos.Demo:Content.ChapterMenu':
   superTypes:
     'Neos.NodeTypes:Menu': TRUE
   ui:

@@ -1,7 +1,7 @@
 ##
 # A simple "Flickr" plugin that demonstrates the "PluginViews"-feature
 #
-'Neos.Demo:Flickr':
+'Neos.Demo:Content.Flickr':
   superTypes:
     'Neos.Neos:Plugin': TRUE
   ui:

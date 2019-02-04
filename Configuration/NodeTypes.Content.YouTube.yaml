@@ -1,7 +1,7 @@
 ##
 # A "Youtube" content element
 #
-'Neos.Demo:YouTube':
+'Neos.Demo:Content.YouTube':
   superTypes:
     'Neos.Neos:Content': TRUE
   ui:

@@ -1,7 +1,7 @@
 ##
 # A "Carousel" content element that renders "Image" child nodes into a JavaScript based slideshow
 #
-'Neos.Demo:Carousel':
+'Neos.Demo:Content.Carousel':
   superTypes:
     'Neos.Neos:Content': TRUE
   childNodes:
@@ -16,7 +16,7 @@
           'Neos.NodeTypes:Image': TRUE
           'Neos.NodeTypes:Html': TRUE
           'Neos.NodeTypes:ContentReferences': TRUE
-          'Neos.Demo:YouTube': TRUE
+          'Neos.Demo:Content.YouTube': TRUE
   ui:
     label: i18n
     group: 'plugins'
