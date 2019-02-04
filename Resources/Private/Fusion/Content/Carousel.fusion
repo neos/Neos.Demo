@@ -1,15 +1,43 @@
 ##
 # "Carousel" element
 #
-prototype(Neos.Demo:Content.Carousel) {
-    templatePath = 'resource://Neos.Demo/Private/Templates/NodeTypes/Carousel.html'
-	carouselItems = Neos.Neos:ContentCollection {
-		nodePath = 'carouselItems'
-		content.iterationName = 'carouselItemsIteration'
-		attributes.class = 'carousel-inner'
-	}
+prototype(Neos.Demo:Content.Carousel) < prototype(Neos.Neos:ContentComponent) {
 
-	carouselItemArray = ${q(node).children('carouselItems').children('[instanceof Neos.NodeTypes:Image]')}
+    identifier = ${q(node).property('_identifier')}
+
+    carouselItems = Neos.Neos:ContentCollection {
+        nodePath = 'carouselItems'
+        content.iterationName = 'carouselItemsIteration'
+        attributes.class = 'carousel-inner'
+    }
+
+    carouselItemNumber = ${q(node).children('carouselItems').children('[instanceof Neos.NodeTypes:Image]').count()}
+
+    renderer = afx`
+        <div>
+            <div class="carousel slide" id={props.identifier}>
+
+                <ol class="carousel-indicators">
+                    <Neos.Fusion:Collection collection={Array.range(1, props.carouselItemNumber)} itemName="index" iterationName="iterator" @children="itemRenderer" >
+                        <li
+                            data-target={'#' + props.identifier}
+                            data-slide-to={iterator.index}
+                            class={iterator.isFirst ? 'active' : ''}
+                        ></li>
+                    </Neos.Fusion:Collection>
+                </ol>
+
+                {props.carouselItems}
+
+                <a class="left carousel-control" href={'#' + props.identifier} data-slide="prev">
+                    <span class="icon-prev"></span>
+                </a>
+                <a class="right carousel-control" href={'#' + props.identifier} data-slide="next">
+                    <span class="icon-next"></span>
+                </a>
+            </div>
+        </div>
+    `
 
 	// Enhance image prototype for the carousel
 	prototype(Neos.NodeTypes:Image) {

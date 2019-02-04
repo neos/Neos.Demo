@@ -1,9 +1,57 @@
 ##
-# "ChapterMenu" element, extending the default "Menu"
+# "ChapterMenu" element
 #
-prototype(Neos.Demo:Content.ChapterMenu) < prototype(Neos.NodeTypes:Menu) {
-    templatePath = 'resource://Neos.Demo/Private/Templates/NodeTypes/ChapterMenu.html'
-    attributes.class = 'chapter-menu'
-	chapterImageWidth = '100'
-	chapterImageHeight = '100'
+prototype(Neos.Demo:Content.ChapterMenu) < prototype(Neos.Neos:ContentComponent) {
+
+    chapters = Neos.Fusion:RawCollection {
+        collection = ${q(documentNode).children('[instanceof Neos.Demo:Document.Chapter]').get()}
+        itemName = 'chapter'
+        itemRenderer = Neos.Fusion:RawArray {
+            @context.chapterImage =  ${q(chapter).property('chapterImage')}
+            link = Neos.Neos:NodeUri {
+                node = ${chapter}
+            }
+            title = ${q(chapter).property('title')}
+            imageSrc = Neos.Fusion:Case {
+                hasImage {
+                    condition = ${chapterImage}
+                    renderer = Neos.Neos:ImageUri {
+                        asset = ${chapterImage}
+                        maximumWidth = 100
+                        maximumHeight = 100
+                    }
+                }
+                fallback {
+                    condition = true
+                    renderer = Neos.Fusion:ResourceUri {
+                        package = 'Neos.Neos'
+                        path= 'Images/dummy-image.png'
+                    }
+                }
+            }
+            imageAlt = ${alternativeText ? alternativeText.title : ''}
+            imageTitle = ${chapterImage ? chapterImage.title : ''}
+            description =  ${q(chapter).property('chapterDescription')}
+        }
+    }
+
+    renderer = afx`
+        <div class="chapter-menu">
+            <ul>
+                <Neos.Fusion:Collection collection={props.chapters} itemName="chapter" @children="itemRenderer">
+                    <li>
+                        <img
+                            src={chapter.imageSrc}
+                            title={chapter.imageTitle}
+                            alt={chapter.imageAlt}
+                        />
+                        <a href={chapter.link}>{chapter.title}</a>
+                        <p class="text-muted" @if.has={chapter.description}>
+                            {chapter.description}
+                        </p>
+                    </li>
+                </Neos.Fusion:Collection>
+            </ul>
+        </div>
+    `
 }

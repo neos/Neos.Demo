@@ -3,7 +3,7 @@
 #
 'Neos.Demo:Content.ChapterMenu':
   superTypes:
-    'Neos.NodeTypes:Menu': TRUE
+    'Neos.Neos:Content': TRUE
   ui:
     label: i18n
     help:

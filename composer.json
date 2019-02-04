@@ -8,6 +8,7 @@
     "require": {
         "neos/neos": "*",
         "neos/nodetypes": "*",
+        "neos/fusion-afx": "*",
         "neos/seo": "^2.0.7",
         "flowpack/neos-frontendlogin": "^3.0.3"
     },
