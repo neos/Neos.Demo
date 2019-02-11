@@ -1,82 +1,63 @@
 /**
  * Default page-rendering for the Neos.Demo website
  */
-prototype(Neos.Demo:Document.Page) < prototype(Neos.Neos:Page) {
-    head {
-        stylesheets {
-            site = Neos.Fusion:Template {
-                templatePath = 'resource://Neos.Demo/Private/Templates/Page/Default.html'
-                sectionName = 'stylesheets'
-                node = ${node}
-            }
-        }
+prototype(Neos.Demo:Document.Page) < prototype(Neos.Fusion:Component) {
 
-        metadata = Neos.Fusion:Template {
+    renderer = Neos.Demo:Document.Base {
+        bodyClass = ${q(node).parents().count() >= 1 && q(node).children('[instanceof Neos.Neos:Document]').filter('[_hiddenInIndex=false]').count() > 0 ? 'has-subpages' : null}
+        body = Neos.Fusion:Template {
             templatePath = 'resource://Neos.Demo/Private/Templates/Page/Default.html'
-            sectionName = 'metadata'
-        }
-    }
+            sectionName = 'body'
+            imageUri = Neos.Neos:ImageUri {
+                asset = ${q(node).property('image')}
+                maximumWidth = 2560
+                maximumHeight = 1280
+                @if.image = ${q(node).property('image')}
+            }
+            imageTitleText = ${q(node).property('imageTitleText')}
 
-    // This query checks if the second level menu has items and sets an additional class for the body
-	bodyTag.attributes.class = ${q(node).parents().count() >= 1 && q(node).children('[instanceof Neos.Neos:Document]').filter('[_hiddenInIndex=false]').count() > 0 ? 'has-subpages' : ''}
+            parts {
+                mainMenu = Neos.Neos:Menu {
+                    templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/MainMenu.html'
+                }
 
-    body {
-        templatePath = 'resource://Neos.Demo/Private/Templates/Page/Default.html'
-        sectionName = 'body'
-        imageUri = Neos.Neos:ImageUri {
-            asset = ${q(node).property('image')}
-            maximumWidth = 2560
-            maximumHeight = 1280
-            @if.image = ${q(node).property('image')}
-        }
-        imageTitleText = ${q(node).property('imageTitleText')}
+                secondLevelMenu = Neos.Neos:Menu {
+                    entryLevel = 2
+                    templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/SecondLevelMenu.html'
+                    maximumLevels = 1
+                }
 
-        parts {
-            mainMenu = Neos.Neos:Menu {
-                templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/MainMenu.html'
+                metaMenu = Neos.Neos:Menu {
+                    entryLevel = 2
+                    templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/MetaMenu.html'
+                    maximumLevels = 1
+                    startingPoint = ${q(site).children('metamenu').get(0)}
+                }
+
+                breadcrumb = Neos.Neos:BreadcrumbMenu
+
+                languageMenu = Neos.Neos:DimensionMenu {
+                    dimension = 'language'
+                    templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/LanguageMenu.html'
+                }
             }
 
-            secondLevelMenu = Neos.Neos:Menu {
-                entryLevel = 2
-                templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/SecondLevelMenu.html'
-                maximumLevels = 1
+            content {
+                teaser = Neos.Neos:ContentCollection {
+                    nodePath = 'teaser'
+                }
+
+                // Default content section
+            main = Neos.Neos:PrimaryContent {
+                    nodePath = 'main'
+                }
             }
 
-            metaMenu = Neos.Neos:Menu {
-                entryLevel = 2
-                templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/MetaMenu.html'
-                maximumLevels = 1
-                startingPoint = ${q(site).children('metamenu').get(0)}
+            // A shared footer which can be edited from all pages
+            footer = Neos.Neos:ContentCollection {
+                nodePath = ${q(site).children('footer').property('_path')}
+                collection = ${q(site).children('footer').children()}
             }
-
-            breadcrumb = Neos.Neos:BreadcrumbMenu
-
-            languageMenu = Neos.Neos:DimensionMenu {
-                dimension = 'language'
-                templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/LanguageMenu.html'
-            }
-        }
-
-        content {
-            teaser = Neos.Neos:ContentCollection {
-                nodePath = 'teaser'
-            }
-
-            // Default content section
-			main = Neos.Neos:PrimaryContent {
-                nodePath = 'main'
-            }
-        }
-
-        // A shared footer which can be edited from all pages
-		footer = Neos.Neos:ContentCollection {
-            nodePath = ${q(site).children('footer').property('_path')}
-            collection = ${q(site).children('footer').children()}
-        }
-
-        javascripts.site = Neos.Fusion:Template {
-            templatePath = 'resource://Neos.Demo/Private/Templates/Page/Default.html'
-            sectionName = 'bodyScripts'
         }
     }
 }

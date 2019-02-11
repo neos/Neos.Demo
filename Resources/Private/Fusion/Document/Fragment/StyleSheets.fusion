@@ -1,0 +1,10 @@
+/**
+ * Stylesheets of the page to be included in the header
+ */
+prototype(Neos.Demo:Document.Fragment.StyleSheets) < prototype(Neos.Fusion:Component) {
+    renderer = afx`
+        <Neos.Demo:Helper.StyleTag package="Neos.Twitter.Bootstrap" path="3/css/bootstrap.min.css" />
+        <Neos.Demo:Helper.StyleTag package="Neos.Demo" path="Styles/NeosDemo.css" />
+        <Neos.Demo:Helper.StyleTag package="Neos.Demo" path="Styles/Print.css" media="print" />
+    `
+}
