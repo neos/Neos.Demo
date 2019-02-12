@@ -1,0 +1,5 @@
+prototype(Neos.Demo:Document.Fragment.Content.Teaser) < prototype(Neos.Fusion:Component) {
+    renderer = Neos.Neos:ContentCollection {
+        nodePath = 'teaser'
+    }
+}

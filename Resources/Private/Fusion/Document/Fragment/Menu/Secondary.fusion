@@ -1,0 +1,7 @@
+prototype(Neos.Demo:Document.Fragment.Menu.Secondary) < prototype(Neos.Fusion:Component) {
+    renderer = Neos.Neos:Menu {
+        entryLevel = 2
+        templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/SecondLevelMenu.html'
+        maximumLevels = 1
+    }
+}

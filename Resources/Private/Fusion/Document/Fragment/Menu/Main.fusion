@@ -1,0 +1,5 @@
+prototype(Neos.Demo:Document.Fragment.Menu.Main) < prototype(Neos.Fusion:Component) {
+    renderer = Neos.Neos:Menu {
+        templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/MainMenu.html'
+    }
+}

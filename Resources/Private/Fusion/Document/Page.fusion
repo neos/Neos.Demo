@@ -3,61 +3,47 @@
  */
 prototype(Neos.Demo:Document.Page) < prototype(Neos.Fusion:Component) {
 
+    mainMenu = Neos.Demo:Document.Fragment.Menu.Main
+    secondaryMenu = Neos.Demo:Document.Fragment.Menu.Secondary
+    metaMenu = Neos.Demo:Document.Fragment.Menu.Meta
+    breadcrumbMenu = Neos.Demo:Document.Fragment.Menu.Breadcrumb
+    languageMenu = Neos.Demo:Document.Fragment.Menu.Language
+
+    mainContent = Neos.Demo:Document.Fragment.Content.Main
+    footerContent = Neos.Demo:Document.Fragment.Content.Footer
+
+    bodyClass = ${q(node).parents().count() >= 1 && q(node).children('[instanceof Neos.Neos:Document]').filter('[_hiddenInIndex=false]').count() > 0 ? 'has-subpages' : null}
+
     renderer = Neos.Demo:Document.Base {
-        bodyClass = ${q(node).parents().count() >= 1 && q(node).children('[instanceof Neos.Neos:Document]').filter('[_hiddenInIndex=false]').count() > 0 ? 'has-subpages' : null}
-        body = Neos.Fusion:Template {
-            templatePath = 'resource://Neos.Demo/Private/Templates/Page/Default.html'
-            sectionName = 'body'
-            imageUri = Neos.Neos:ImageUri {
-                asset = ${q(node).property('image')}
-                maximumWidth = 2560
-                maximumHeight = 1280
-                @if.image = ${q(node).property('image')}
-            }
-            imageTitleText = ${q(node).property('imageTitleText')}
+        bodyClass = ${props.bodyClass}
+        body = afx`
+            <div class="top-navigation-wrap">
+                <div class="container">
+                    {props.languageMenu}
+                    {props.mainMenu}
+                    {props.secondaryMenu}
+                </div>
+            </div>
 
-            parts {
-                mainMenu = Neos.Neos:Menu {
-                    templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/MainMenu.html'
-                }
+            <div class="container">
+                {props.breadcrumbMenu}
+                {props.mainContent}
+            </div>
 
-                secondLevelMenu = Neos.Neos:Menu {
-                    entryLevel = 2
-                    templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/SecondLevelMenu.html'
-                    maximumLevels = 1
-                }
-
-                metaMenu = Neos.Neos:Menu {
-                    entryLevel = 2
-                    templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/MetaMenu.html'
-                    maximumLevels = 1
-                    startingPoint = ${q(site).children('metamenu').get(0)}
-                }
-
-                breadcrumb = Neos.Neos:BreadcrumbMenu
-
-                languageMenu = Neos.Neos:DimensionMenu {
-                    dimension = 'language'
-                    templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/LanguageMenu.html'
-                }
-            }
-
-            content {
-                teaser = Neos.Neos:ContentCollection {
-                    nodePath = 'teaser'
-                }
-
-                // Default content section
-            main = Neos.Neos:PrimaryContent {
-                    nodePath = 'main'
-                }
-            }
-
-            // A shared footer which can be edited from all pages
-            footer = Neos.Neos:ContentCollection {
-                nodePath = ${q(site).children('footer').property('_path')}
-                collection = ${q(site).children('footer').children()}
-            }
-        }
+            <footer role="navigation" class="navbar navbar-default">
+                <div class="panel panel-default">
+                    <div class="panel-body clearfix">
+                        <div class="container">
+                            {props.metaMenu}
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="container">
+                            {props.footerContent}
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        `
     }
 }

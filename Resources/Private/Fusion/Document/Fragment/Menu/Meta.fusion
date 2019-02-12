@@ -1,0 +1,8 @@
+prototype(Neos.Demo:Document.Fragment.Menu.Meta) < prototype(Neos.Fusion:Component) {
+    renderer = Neos.Neos:Menu {
+        entryLevel = 2
+        templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/MetaMenu.html'
+        maximumLevels = 1
+        startingPoint = ${q(site).children('metamenu').get(0)}
+    }
+}

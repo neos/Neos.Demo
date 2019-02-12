@@ -1,0 +1,6 @@
+prototype(Neos.Demo:Document.Fragment.Menu.Language) < prototype(Neos.Fusion:Component) {
+    renderer = Neos.Neos:DimensionMenu {
+        dimension = 'language'
+        templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/LanguageMenu.html'
+    }
+}

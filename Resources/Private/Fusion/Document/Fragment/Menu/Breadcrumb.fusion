@@ -1,0 +1,3 @@
+prototype(Neos.Demo:Document.Fragment.Menu.Breadcrumb) < prototype(Neos.Fusion:Component) {
+    renderer = Neos.Neos:BreadcrumbMenu
+}
