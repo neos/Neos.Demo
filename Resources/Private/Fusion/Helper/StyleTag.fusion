@@ -1,6 +1,5 @@
 prototype(Neos.Demo:Helper.StyleTag) < prototype(Neos.Fusion:Component) {
     media = null
-    package = null
     path = null
 
     renderer = Neos.Fusion:Tag {

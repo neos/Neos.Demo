@@ -1,7 +1,26 @@
 prototype(Neos.Demo:Document.Fragment.Menu.Secondary) < prototype(Neos.Fusion:Component) {
-    renderer = Neos.Neos:Menu {
-        entryLevel = 2
-        templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/SecondLevelMenu.html'
-        maximumLevels = 1
+
+    @context.startingPoint = ${q(documentNode).parent().get(0) == site ? documentNode : q(documentNode).parents('[instanceof Neos.Neos:Document]').first().get(0)}
+
+    menuItems = Neos.Fusion:RawCollection {
+        collection = ${startingPoint ? q(startingPoint).children('[instanceof Neos.Neos:Document][_hiddenInIndex=false]').get() : []}
+        itemRenderer = Neos.Fusion:RawArray {
+            uri = Neos.Neos:NodeUri {
+                node = ${item}
+            }
+            label = ${q(item).property('title')}
+        }
     }
+
+    renderer = afx`
+        <nav class="navbar second-level-navigation" role="navigation">
+            <ul class="nav nav-pills">
+                <Neos.Fusion:Collection collection={props.menuItems} @children="itemRenderer">
+                    <li>
+                        <a href={item.uri}>{item.label}</a>
+                    </li>
+                </Neos.Fusion:Collection>
+            </ul>
+        </nav>
+    `
 }

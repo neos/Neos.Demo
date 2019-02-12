@@ -1,6 +1,43 @@
 prototype(Neos.Demo:Document.Fragment.Menu.Language) < prototype(Neos.Fusion:Component) {
-    renderer = Neos.Neos:DimensionMenu {
-        dimension = 'language'
-        templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/LanguageMenu.html'
+
+    @context.languageDimensionPresets = ${Configuration.setting('Neos.ContentRepository.contentDimensions.language.presets')}
+    @context.currentLanguagePreset = ${documentNode.context.targetDimensions.language}
+
+    currentLanguage = ${languageDimensionPresets[currentLanguagePreset].label}
+
+    menuItems = Neos.Fusion:RawCollection {
+        collection = ${languageDimensionPresets}
+        itemName = 'languagePreset'
+        itemKey = 'presetKey'
+        itemRenderer = Neos.Fusion:RawArray {
+            @context.languageDocument = ${q(documentNode).context({'dimensions': {'language':  languagePreset.values}, 'targetDimensions': {'language': presetKey}}).get(0)}
+            uri = Neos.Neos:NodeUri {
+                node = ${languageDocument}
+                absolute = true
+            }
+            title = ${languagePreset.label}
+        }
     }
+
+    renderer = afx`
+        <div class="language-menu">
+            <div>
+                {props.currentLanguage}
+                <span>▼</span>
+            </div>
+            <ul>
+                <Neos.Fusion:Collection collection={props.menuItems} @children="itemRenderer">
+                    <li>
+                        <Neos.Fusion:Tag
+                            tagName={item.uri ? 'a': 'span'}
+                            href={item.uri}
+                            class="language-menu-full"
+                        >
+                            {item.title}
+                        </Neos.Fusion:Tag>
+                    </li>
+                </Neos.Fusion:Collection>
+            </ul>
+        </div>
+    `
 }

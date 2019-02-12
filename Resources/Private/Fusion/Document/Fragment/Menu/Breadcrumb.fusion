@@ -1,3 +1,16 @@
 prototype(Neos.Demo:Document.Fragment.Menu.Breadcrumb) < prototype(Neos.Fusion:Component) {
-    renderer = Neos.Neos:BreadcrumbMenu
+    items = ${q(documentNode).parents('[instanceof Neos.Neos:Document]').get()}
+    items.@process.addCurrentDocument = ${Array.unshift(value, documentNode)}
+    items.@process.removeHidden = ${q(value).filter('[_hiddenInIndex=false]').get()}
+    items.@process.reverseOrder = ${Array.reverse(value)}
+
+    renderer = afx`
+        <ul class="breadcrumb">
+            <Neos.Fusion:Collection collection={props.items} @children="itemRenderer">
+                <li>
+                    <Neos.Demo:Helper.NodeLink node={item} />
+                </li>
+            </Neos.Fusion:Collection>
+        </ul>
+    `
 }
