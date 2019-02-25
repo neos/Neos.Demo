@@ -7,11 +7,17 @@ prototype(Neos.Demo:Content.Carousel) < prototype(Neos.Neos:ContentComponent) {
 
     carouselItems = Neos.Neos:ContentCollection {
         nodePath = 'carouselItems'
-        content.iterationName = 'carouselItemsIteration'
         attributes.class = 'carousel-inner'
+
+        // Each child item is augmented "item" and "active" class
+        prototype(Neos.Neos:ContentCase) {
+            @process.addItemAndActiveClass = Neos.Fusion:Augmenter {
+                class = ${'item' + (iterator.isFirst ? ' active' : '')}
+            }
+        }
     }
 
-    carouselItemNumber = ${q(node).children('carouselItems').children('[instanceof Neos.NodeTypes:Image]').count()}
+    carouselItemNumber = ${q(node).children('carouselItems').children().count()}
 
     renderer = afx`
         <div>
@@ -38,17 +44,4 @@ prototype(Neos.Demo:Content.Carousel) < prototype(Neos.Neos:ContentComponent) {
             </div>
         </div>
     `
-
-// @todo: Check what this actually does and wether we still need it
-//
-//	// Enhance image prototype for the carousel
-//	prototype(Neos.NodeTypes:Image) {
-//		// Render images in the carousel with a special template.
-//		templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/CarouselItem.html'
-//
-//		attributes.class = ${'item' + (carouselItemsIteration.isFirst ? ' active' : '')}
-//
-//		// We want to use the item iterator in the template so we have to store it in ts.
-//		iteration = ${carouselItemsIteration}
-//	}
 }
