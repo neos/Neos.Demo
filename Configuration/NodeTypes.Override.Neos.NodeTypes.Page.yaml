@@ -1,5 +1,0 @@
-##
-# Adjust the "Page" node type:
-#
-'Neos.NodeTypes:Page':
-  abstract: true

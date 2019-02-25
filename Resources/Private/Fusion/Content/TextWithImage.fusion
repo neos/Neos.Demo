@@ -1,0 +1,16 @@
+##
+# "Text" element
+#
+prototype(Neos.Demo:Content.TextWithImage) < prototype(Neos.Neos:ContentComponent) {
+    text = Neos.Neos:Editable {
+        property = 'text'
+    }
+
+    renderer = afx`
+        <div>
+            <Neos.Demo:Content.Fragment.Image.Figure />
+            {props.text}
+        </div>
+    `
+
+}

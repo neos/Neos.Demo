@@ -7,10 +7,10 @@
   constraints:
     nodeTypes:
       '*': FALSE
-      'Neos.NodeTypes:Headline': TRUE
-      'Neos.NodeTypes:Text': TRUE
-      'Neos.NodeTypes:TextWithImage': TRUE
-      'Neos.NodeTypes:Image': TRUE
-      'Neos.NodeTypes:Html': TRUE
-      'Neos.NodeTypes:ContentReferences': TRUE
-      'Neos.Demo:Content.YouTube': TRUE
+      'Neos.Demo:Constraint.Content.Carousel': TRUE
+
+##
+# Constraint-supertype that makes contents available in carousels
+#
+'Neos.Demo:Constraint.Content.Carousel':
+  abstract: TRUE

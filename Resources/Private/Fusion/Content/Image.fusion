@@ -1,0 +1,10 @@
+##
+# "Image" element
+#
+prototype(Neos.Demo:Content.Image) < prototype(Neos.Neos:ContentComponent) {
+    renderer = afx`
+        <div>
+            <Neos.Demo:Content.Fragment.Image.Figure />
+        </div>
+    `
+}

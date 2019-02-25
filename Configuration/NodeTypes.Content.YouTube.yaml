@@ -4,6 +4,7 @@
 'Neos.Demo:Content.YouTube':
   superTypes:
     'Neos.Neos:Content': TRUE
+    'Neos.Demo:Constraint.Content.Carousel': TRUE
   ui:
     label: YouTube
     icon: 'icon-youtube'
