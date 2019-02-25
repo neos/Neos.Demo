@@ -18,13 +18,13 @@ prototype(Neos.Demo:Content.Carousel) < prototype(Neos.Neos:ContentComponent) {
             <div class="carousel slide" id={props.identifier}>
 
                 <ol class="carousel-indicators">
-                    <Neos.Fusion:Collection collection={Array.range(1, props.carouselItemNumber)} itemName="index" iterationName="iterator" @children="itemRenderer" >
+                    <Neos.Fusion:Loop items={Array.range(1, props.carouselItemNumber)} itemName="index" iterationName="iterator" @children="itemRenderer" >
                         <li
                             data-target={'#' + props.identifier}
                             data-slide-to={iterator.index}
                             class={iterator.isFirst ? 'active' : ''}
                         ></li>
-                    </Neos.Fusion:Collection>
+                    </Neos.Fusion:Loop>
                 </ol>
 
                 {props.carouselItems}
@@ -39,14 +39,16 @@ prototype(Neos.Demo:Content.Carousel) < prototype(Neos.Neos:ContentComponent) {
         </div>
     `
 
-	// Enhance image prototype for the carousel
-	prototype(Neos.NodeTypes:Image) {
-		// Render images in the carousel with a special template.
-		templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/CarouselItem.html'
-
-		attributes.class = ${'item' + (carouselItemsIteration.isFirst ? ' active' : '')}
-
-		// We want to use the item iterator in the template so we have to store it in ts.
-		iteration = ${carouselItemsIteration}
-	}
+// @todo: Check what this actually does and wether we still need it
+//
+//	// Enhance image prototype for the carousel
+//	prototype(Neos.NodeTypes:Image) {
+//		// Render images in the carousel with a special template.
+//		templatePath = 'resource://Neos.Demo/Private/Templates/FusionObjects/CarouselItem.html'
+//
+//		attributes.class = ${'item' + (carouselItemsIteration.isFirst ? ' active' : '')}
+//
+//		// We want to use the item iterator in the template so we have to store it in ts.
+//		iteration = ${carouselItemsIteration}
+//	}
 }

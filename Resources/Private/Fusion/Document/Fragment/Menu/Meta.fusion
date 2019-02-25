@@ -1,24 +1,19 @@
 prototype(Neos.Demo:Document.Fragment.Menu.Meta) < prototype(Neos.Fusion:Component) {
-    @context.startingPoint = ${q(site).children('metamenu').get(0)}
 
-    menuItems = Neos.Fusion:RawCollection {
-        collection = ${startingPoint ? q(startingPoint).children('[instanceof Neos.Neos:Document][_hiddenInIndex=false]').get() : []}
-        itemRenderer = Neos.Fusion:RawArray {
-            uri = Neos.Neos:NodeUri {
-                node = ${item}
-            }
-            label = ${q(item).property('title')}
-        }
+    menuItems = Neos.Neos:MenuData {
+        entryLevel = 2
+        maximumLevels = 1
+        startingPoint = ${q(site).children('metamenu').get(0)}
     }
 
     renderer = afx`
         <nav class="nav" role="navigation">
             <ul class="nav nav-pills">
-                <Neos.Fusion:Collection collection={props.menuItems} @children="itemRenderer">
-                    <li>
-                        <a href={item.uri}>{item.label}</a>
+                <Neos.Fusion:Loop items={props.menuItems} @children="itemRenderer">
+                    <li class={item.state}>
+                        <Neos.Neos:NodeLink node={item.node}>{item.label}</Neos.Neos:NodeLink>
                     </li>
-                </Neos.Fusion:Collection>
+                </Neos.Fusion:Loop>
             </ul>
         </nav>
     `

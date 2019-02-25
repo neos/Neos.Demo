@@ -1,27 +1,7 @@
 prototype(Neos.Demo:Document.Fragment.Menu.Main) < prototype(Neos.Fusion:Component) {
-    homeUri =  Neos.Neos:NodeUri {
-        node = ${site}
-    }
 
-    menuItems = Neos.Fusion:RawCollection {
-        collection = ${q(site).children('[instanceof Neos.Neos:Document][_hiddenInIndex=false]').get()}
-        itemRenderer = Neos.Fusion:RawArray {
-            uri = Neos.Neos:NodeUri {
-                node = ${item}
-            }
-            label = ${q(item).property('title')}
-            children = Neos.Fusion:RawCollection {
-                @if.inRootline = ${item == documentNode || Array.indexOf(q(documentNode).parents('[instanceof Neos.Neos:Document]').get(), item) != -1}
-                collection = ${q(item).children('[instanceof Neos.Neos:Document][_hiddenInIndex=false]').get()}
-                itemRenderer = Neos.Fusion:RawArray {
-                    uri = Neos.Neos:NodeUri {
-                        node = ${item}
-                    }
-                    label = ${q(item).property('title')}
-                }
-            }
-        }
-    }
+    root = ${site}
+    menuItems = Neos.Neos:MenuData
 
     renderer = afx`
         <nav class="navbar navbar-static-top navbar-default first-level-navigation" role="navigation">
@@ -33,7 +13,7 @@ prototype(Neos.Demo:Document.Fragment.Menu.Main) < prototype(Neos.Fusion:Compone
                     <span class="icon-bar"></span>
                 </button>
 
-                <a href={props.homeUri}>
+                <Neos.Neos:NodeLink node={props.root}>
                     <svg
                         version="1.1"
                         class="navbar-brandlogo"
@@ -51,26 +31,26 @@ prototype(Neos.Demo:Document.Fragment.Menu.Main) < prototype(Neos.Fusion:Compone
                             79.436,37.5 	"/>
                         </g>
                     </svg>
-                </a>
+                </Neos.Neos:NodeLink>
             </div>
 
             <div class="collapse navbar-collapse navbar-main-collapse">
                 <ul class="nav nav-pills nav-justified">
-                    <Neos.Fusion:Collection collection={props.menuItems} itemName="firstLevelItem" @children="itemRenderer">
-                        <li>
-                            <a href={firstLevelItem.uri}>{firstLevelItem.label}</a>
+                    <Neos.Fusion:Loop items={props.menuItems} @children="itemRenderer">
+                        <li class={item.state}>
+                            <Neos.Neos:NodeLink node={item.node}>{item.label}</Neos.Neos:NodeLink>
                             <ul
-                                @if.has={firstLevelItem.children}
+                                @if.has={item.children && (item.state != 'normal')}
                                 class="second-level-sub-navigation nav nav-justified visible-xs"
                             >
-                                <Neos.Fusion:Collection collection={firstLevelItem.children} itemName="secondLevelItem" @children="itemRenderer">
-                                    <li>
-                                       <a href={secondLevelItem.uri}>{secondLevelItem.label}</a>
+                                <Neos.Fusion:Loop items={item.children} itemName="item" @children="itemRenderer">
+                                    <li class={item.state}>
+                                        <Neos.Neos:NodeLink node={item.node}>{item.label}</Neos.Neos:NodeLink>
                                     </li>
-                                </Neos.Fusion:Collection>
+                                </Neos.Fusion:Loop>
                             </ul>
                         </li>
-                    </Neos.Fusion:Collection>
+                    </Neos.Fusion:Loop>
                 </ul>
             </div>
         </nav>

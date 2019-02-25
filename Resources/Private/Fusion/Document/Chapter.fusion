@@ -1,7 +1,7 @@
 /**
  * Homepage rendering for the Neos.Demo website
  */
-prototype(Neos.Demo:Document.Chapter) < prototype(Neos.Demo:Document.Page) {
+prototype(Neos.Demo:Document.Chapter) < prototype(Neos.Fusion:Component) {
 
     @context.previousChapter = ${q(documentNode).prev('[instanceof Neos.Neos:Document]').get(0)}
     @context.nextChapter = ${q(documentNode).next('[instanceof Neos.Neos:Document]').get(0)}
@@ -41,7 +41,6 @@ prototype(Neos.Demo:Document.Chapter) < prototype(Neos.Demo:Document.Page) {
     nextChapterLink = Neos.Neos:NodeUri {
         node = ${nextChapter}
     }
-
 
     renderer = Neos.Demo:Document.Base {
         bodyClass = 'chapter'

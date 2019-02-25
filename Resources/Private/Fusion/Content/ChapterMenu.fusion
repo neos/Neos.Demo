@@ -3,10 +3,10 @@
 #
 prototype(Neos.Demo:Content.ChapterMenu) < prototype(Neos.Neos:ContentComponent) {
 
-    chapters = Neos.Fusion:RawCollection {
-        collection = ${q(documentNode).children('[instanceof Neos.Demo:Document.Chapter]').get()}
+    chapters = Neos.Fusion:Map {
+        items = ${q(documentNode).children('[instanceof Neos.Demo:Document.Chapter]').get()}
         itemName = 'chapter'
-        itemRenderer = Neos.Fusion:RawArray {
+        itemRenderer = Neos.Fusion:DataStructure {
             @context.chapterImage =  ${q(chapter).property('chapterImage')}
             link = Neos.Neos:NodeUri {
                 node = ${chapter}
@@ -38,7 +38,7 @@ prototype(Neos.Demo:Content.ChapterMenu) < prototype(Neos.Neos:ContentComponent)
     renderer = afx`
         <div class="chapter-menu">
             <ul>
-                <Neos.Fusion:Collection collection={props.chapters} itemName="chapter" @children="itemRenderer">
+                <Neos.Fusion:Loop items={props.chapters} itemName="chapter" @children="itemRenderer">
                     <li>
                         <img
                             src={chapter.imageSrc}
@@ -50,7 +50,7 @@ prototype(Neos.Demo:Content.ChapterMenu) < prototype(Neos.Neos:ContentComponent)
                             {chapter.description}
                         </p>
                     </li>
-                </Neos.Fusion:Collection>
+                </Neos.Fusion:Loop>
             </ul>
         </div>
     `
