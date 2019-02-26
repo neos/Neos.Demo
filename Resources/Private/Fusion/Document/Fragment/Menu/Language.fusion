@@ -1,6 +1,6 @@
 prototype(Neos.Demo:Document.Fragment.Menu.Language) < prototype(Neos.Fusion:Component) {
 
-    menuItems = Neos.Neos:DimensionsMenuData {
+    menuItems = Neos.Neos:DimensionsMenuItems {
         dimension = 'language'
     }
 

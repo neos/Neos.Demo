@@ -1,7 +1,7 @@
 prototype(Neos.Demo:Document.Fragment.Menu.Main) < prototype(Neos.Fusion:Component) {
 
     root = ${site}
-    menuItems = Neos.Neos:MenuData
+    menuItems = Neos.Neos:MenuItems
 
     renderer = afx`
         <nav class="navbar navbar-static-top navbar-default first-level-navigation" role="navigation">

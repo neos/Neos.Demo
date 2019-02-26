@@ -1,6 +1,6 @@
 prototype(Neos.Demo:Document.Fragment.Menu.Breadcrumb) < prototype(Neos.Fusion:Component) {
 
-    menuItems = Neos.Neos:BreadcrumbMenuData
+    menuItems = Neos.Neos:BreadcrumbMenuItems
 
     renderer = afx`
         <ul class="breadcrumb">

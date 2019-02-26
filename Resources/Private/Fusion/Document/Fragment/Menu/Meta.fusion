@@ -1,6 +1,6 @@
 prototype(Neos.Demo:Document.Fragment.Menu.Meta) < prototype(Neos.Fusion:Component) {
 
-    menuItems = Neos.Neos:MenuData {
+    menuItems = Neos.Neos:MenuItems {
         entryLevel = 2
         maximumLevels = 1
         startingPoint = ${q(site).children('metamenu').get(0)}
