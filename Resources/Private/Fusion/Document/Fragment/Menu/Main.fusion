@@ -56,4 +56,13 @@ prototype(Neos.Demo:Document.Fragment.Menu.Main) < prototype(Neos.Fusion:Compone
         </nav>
     `
 
+    @cache {
+        mode = 'cached'
+        entryIdentifier {
+            documentNode = ${documentNode}
+        }
+        entryTags {
+            1 = ${Neos.Caching.nodeTypeTag('Neos.Neos:Document', documentNode)}
+        }
+    }
 }
