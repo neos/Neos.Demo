@@ -3,11 +3,11 @@
 #
 prototype(Neos.Demo:Content.Columns.Two) < prototype(Neos.Neos:ContentComponent) {
 
-    column0 = Neos.Neos:PrimaryContent {
+    column0 = Neos.Neos:ContentCollection {
         nodePath = 'column0'
     }
 
-    column1 = Neos.Neos:PrimaryContent {
+    column1 = Neos.Neos:ContentCollection {
         nodePath = 'column1'
     }
 
