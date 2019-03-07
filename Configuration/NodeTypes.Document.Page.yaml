@@ -17,7 +17,7 @@
           icon: 'icon-image'
   constraints:
     nodeTypes:
-      'Neos.Demo:Homepage': FALSE
+      'Neos.Demo:Homepage': false
   childNodes:
     'main':
       type: 'Neos.Demo:Collection.Content.Main'
@@ -25,16 +25,16 @@
       type: 'Neos.Demo:Collection.Content.Teaser'
       constraints:
         nodeTypes:
-          '*': FALSE
-          'Neos.NodeTypes:Headline': TRUE
-          'Neos.NodeTypes:Text': TRUE
-          'Neos.NodeTypes:Image': TRUE
+          '*': false
+          'Neos.NodeTypes:Headline': true
+          'Neos.NodeTypes:Text': true
+          'Neos.NodeTypes:Image': true
   properties:
     'image':
       type: 'Neos\Media\Domain\Model\ImageInterface'
       ui:
         label: 'Neos.Demo:NodeTypes.Page:properties.image'
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: 'image'
           position: 50
@@ -48,7 +48,7 @@
       type: string
       ui:
         label: 'Neos.Demo:NodeTypes.Page:properties.imageTitleText'
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: 'image'
           position: 100

@@ -3,7 +3,7 @@
 #
 'Neos.Demo:Content.Carousel':
   superTypes:
-    'Neos.Neos:Content': TRUE
+    'Neos.Neos:Content': true
   childNodes:
     carouselItems:
       type: 'Neos.Demo:Collection.Content.Carousel'
@@ -11,7 +11,7 @@
     label: i18n
     group: 'plugins'
     icon: 'icon-picture'
-    inlineEditable: TRUE
+    inlineEditable: true
     help:
       message: |
         Bootstrap carousel which can display the following types of content:
@@ -25,4 +25,4 @@
 
 'Neos.Demo:Content.Carousel.Collection':
   superTypes:
-    'Neos.Neos:Content': TRUE
+    'Neos.Neos:Content': true

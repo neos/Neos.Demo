@@ -3,4 +3,4 @@
 #
 'Neos.Demo:Collection.Content.Main':
   superTypes:
-    Neos.Neos:ContentCollection: TRUE
+    Neos.Neos:ContentCollection: true

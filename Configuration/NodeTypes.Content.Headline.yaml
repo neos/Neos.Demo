@@ -2,7 +2,7 @@
   superTypes:
     'Neos.Neos:Content': true
     'Neos.NodeTypes:TitleMixin': true
-    'Neos.Demo:Constraint.Content.Carousel': TRUE
+    'Neos.Demo:Constraint.Content.Carousel': true
   ui:
     label: i18n
     icon: 'icon-header'
@@ -12,5 +12,5 @@
       ui:
         aloha:
           'format':
-            'h4': TRUE
-            'h5': TRUE
+            'h4': true
+            'h5': true

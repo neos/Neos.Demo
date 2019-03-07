@@ -3,7 +3,7 @@
 #
 'Neos.Demo:Content.Flickr':
   superTypes:
-    'Neos.Neos:Plugin': TRUE
+    'Neos.Neos:Plugin': true
   ui:
     label: i18n
     icon: 'icon-flickr'
@@ -26,6 +26,6 @@
       defaultValue: ''
       ui:
         label: i18n
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: 'feed'

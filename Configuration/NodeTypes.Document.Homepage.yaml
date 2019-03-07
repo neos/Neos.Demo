@@ -8,14 +8,14 @@
     help:
      message: 'The homepage type is to be used only once and adds the shared footer.'
   superTypes:
-    'Neos.Demo:Document.Page': TRUE
+    'Neos.Demo:Document.Page': true
   childNodes:
     'footer':
       position: 'end'
       type: 'Neos.Neos:ContentCollection'
       constraints:
         nodeTypes:
-          '*': FALSE
-          'Neos.NodeTypes:Headline': TRUE
-          'Neos.NodeTypes:Text': TRUE
-          'Neos.NodeTypes:Image': TRUE
+          '*': false
+          'Neos.NodeTypes:Headline': true
+          'Neos.NodeTypes:Text': true
+          'Neos.NodeTypes:Image': true

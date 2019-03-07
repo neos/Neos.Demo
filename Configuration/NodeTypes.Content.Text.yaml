@@ -2,7 +2,7 @@
   superTypes:
     'Neos.Neos:Content': true
     'Neos.NodeTypes:TextMixin': true
-    'Neos.Demo:Constraint.Content.Carousel': TRUE
+    'Neos.Demo:Constraint.Content.Carousel': true
   ui:
     label: i18n
     icon: 'icon-file-text'

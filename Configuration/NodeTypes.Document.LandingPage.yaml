@@ -8,4 +8,4 @@
     help:
       message: 'A landing Page'
   superTypes:
-    'Neos.Demo:Document.Page': TRUE
+    'Neos.Demo:Document.Page': true

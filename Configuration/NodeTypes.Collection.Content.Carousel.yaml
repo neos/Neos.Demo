@@ -3,14 +3,14 @@
 #
 'Neos.Demo:Collection.Content.Carousel':
   superTypes:
-    Neos.Neos:ContentCollection: TRUE
+    Neos.Neos:ContentCollection: true
   constraints:
     nodeTypes:
-      '*': FALSE
-      'Neos.Demo:Constraint.Content.Carousel': TRUE
+      '*': false
+      'Neos.Demo:Constraint.Content.Carousel': true
 
 ##
 # Constraint-supertype that makes contents available in carousels
 #
 'Neos.Demo:Constraint.Content.Carousel':
-  abstract: TRUE
+  abstract: true
