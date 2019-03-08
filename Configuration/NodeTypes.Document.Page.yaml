@@ -23,12 +23,6 @@
       type: 'Neos.Demo:Collection.Content.Main'
     'teaser':
       type: 'Neos.Demo:Collection.Content.Teaser'
-      constraints:
-        nodeTypes:
-          '*': false
-          'Neos.NodeTypes:Headline': true
-          'Neos.NodeTypes:Text': true
-          'Neos.NodeTypes:Image': true
   properties:
     'image':
       type: 'Neos\Media\Domain\Model\ImageInterface'

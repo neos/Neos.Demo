@@ -1,7 +1,7 @@
 'Neos.Demo:Content.Headline':
   superTypes:
     'Neos.Neos:Content': true
-    'Neos.NodeTypes:TitleMixin': true
+    'Neos.NodeTypes.BaseMixins:TitleMixin': true
     'Neos.Demo:Constraint.Content.Carousel': true
     'Neos.Demo:Constraint.Content.Column': true
   ui:
