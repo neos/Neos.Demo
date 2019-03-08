@@ -3,6 +3,7 @@
     'Neos.Neos:Content': true
     'Neos.NodeTypes:TitleMixin': true
     'Neos.Demo:Constraint.Content.Carousel': true
+    'Neos.Demo:Constraint.Content.Column': true
   ui:
     label: i18n
     icon: 'icon-header'
