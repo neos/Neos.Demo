@@ -6,7 +6,7 @@ prototype(Neos.Demo:Content.Carousel) < prototype(Neos.Neos:ContentComponent) {
     identifier = ${q(node).property('_identifier')}
 
     carouselItems = Neos.Neos:ContentCollection {
-        nodePath = 'carouselItems'
+        nodePath = 'carouselitems'
         attributes.class = 'carousel-inner'
 
         // Each child item is augmented "item" and "active" class
@@ -17,7 +17,7 @@ prototype(Neos.Demo:Content.Carousel) < prototype(Neos.Neos:ContentComponent) {
         }
     }
 
-    carouselItemNumber = ${q(node).children('carouselItems').children().count()}
+    carouselItemNumber = ${q(node).children('carouselitems').children().count()}
 
     renderer = afx`
         <div>

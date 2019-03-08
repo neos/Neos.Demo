@@ -5,7 +5,7 @@
   superTypes:
     'Neos.Neos:Content': true
   childNodes:
-    carouselItems:
+    carouselitems:
       type: 'Neos.Demo:Collection.Content.Carousel'
   ui:
     label: i18n
