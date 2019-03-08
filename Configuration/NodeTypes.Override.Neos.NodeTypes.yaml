@@ -2,6 +2,9 @@
 # Declare nodetypes from Neos.NodeTypes abstract that are replaced
 # in the Neos.Demo package namespace
 #
+'Neos.NodeTypes:Page':
+  abstract: true
+
 'Neos.NodeTypes:Headline':
   abstract: true
 

@@ -6,7 +6,7 @@ prototype(Neos.Demo:Document.Fragment.Menu.Secondary) < prototype(Neos.Fusion:Co
     }
 
     renderer = afx`
-        <nav class="navbar second-level-navigation" role="navigation">
+        <nav @if.hasMenuItems={props.menuItems} class="navbar second-level-navigation" role="navigation">
             <ul class="nav nav-pills">
                 <Neos.Fusion:Loop items={props.menuItems} @children="itemRenderer">
                     <li class={item.state}>

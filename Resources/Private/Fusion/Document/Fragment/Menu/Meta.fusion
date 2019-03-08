@@ -7,7 +7,7 @@ prototype(Neos.Demo:Document.Fragment.Menu.Meta) < prototype(Neos.Fusion:Compone
     }
 
     renderer = afx`
-        <nav class="nav" role="navigation">
+        <nav @if.hasMenuItems={props.menuItems} class="nav" role="navigation">
             <ul class="nav nav-pills">
                 <Neos.Fusion:Loop items={props.menuItems} @children="itemRenderer">
                     <li class={item.state}>
