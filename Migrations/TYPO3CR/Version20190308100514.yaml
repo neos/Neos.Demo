@@ -1,0 +1,246 @@
+up:
+  comments: 'Migrate content collection types to Neos.Demo namespace'
+  migration:
+    -
+      filters:
+        -
+          type: 'NodeName'
+          settings:
+            nodeName: 'main'
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Neos:ContentCollection'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Collection.Content.Main'
+    -
+      filters:
+        -
+          type: 'NodeName'
+          settings:
+            nodeName: 'teaser'
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Neos:ContentCollection'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Collection.Content.Teaser'
+    -
+      filters:
+        -
+          type: 'NodeName'
+          settings:
+            nodeName: 'footer'
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Neos:ContentCollection'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Collection.Content.Footer'
+    -
+      filters:
+        -
+          type: 'NodeName'
+          settings:
+            nodeName: 'carouselItems'
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Neos:ContentCollection'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Collection.Content.Carousel'
+    -
+      filters:
+        -
+          type: 'NodeName'
+          settings:
+            nodeName: 'column0'
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Neos:ContentCollection'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Collection.Content.Column'
+    -
+      filters:
+        -
+          type: 'NodeName'
+          settings:
+            nodeName: 'column1'
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Neos:ContentCollection'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Collection.Content.Column'
+    -
+      filters:
+        -
+          type: 'NodeName'
+          settings:
+            nodeName: 'column2'
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Neos:ContentCollection'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Collection.Content.Column'
+    -
+      filters:
+        -
+          type: 'NodeName'
+          settings:
+            nodeName: 'column3'
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Neos:ContentCollection'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Collection.Content.Column'
+down:
+  comments: 'Migrate content collection from Neos.Demo namespace back to Neos.Neos:ContentCollection'
+  migration:
+    -
+      filters:
+        -
+          type: 'NodeName'
+          settings:
+            nodeName: 'main'
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Collection.Content.Main'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Neos:ContentCollection'
+    -
+      filters:
+        -
+          type: 'NodeName'
+          settings:
+            nodeName: 'teaser'
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Collection.Content.Teaser'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Neos:ContentCollection'
+    -
+      filters:
+        -
+          type: 'NodeName'
+          settings:
+            nodeName: 'footer'
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Collection.Content.Footer'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Neos:ContentCollection'
+    -
+      filters:
+        -
+          type: 'NodeName'
+          settings:
+            nodeName: 'carouselItems'
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Collection.Content.Carousel'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Neos:ContentCollection'
+    -
+      filters:
+        -
+          type: 'NodeName'
+          settings:
+            nodeName: 'column0'
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Collection.Content.Column'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Neos:ContentCollection'
+    -
+      filters:
+        -
+          type: 'NodeName'
+          settings:
+            nodeName: 'column1'
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Collection.Content.Column'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Neos:ContentCollection'
+    -
+      filters:
+        -
+          type: 'NodeName'
+          settings:
+            nodeName: 'column2'
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Collection.Content.Column'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Neos:ContentCollection'
+    -
+      filters:
+        -
+          type: 'NodeName'
+          settings:
+            nodeName: 'column3'
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Collection.Content.Column'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Neos:ContentCollection'

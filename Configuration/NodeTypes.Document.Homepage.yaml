@@ -12,10 +12,4 @@
   childNodes:
     'footer':
       position: 'end'
-      type: 'Neos.Neos:ContentCollection'
-      constraints:
-        nodeTypes:
-          '*': false
-          'Neos.NodeTypes:Headline': true
-          'Neos.NodeTypes:Text': true
-          'Neos.NodeTypes:Image': true
+      type: 'Neos.Demo:Collection.Content.Footer'

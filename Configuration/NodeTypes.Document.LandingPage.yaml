@@ -9,3 +9,7 @@
       message: 'A landing Page'
   superTypes:
     'Neos.Demo:Document.Page': true
+  childNodes:
+    'teaser':
+      position: 'end'
+      type: 'Neos.Demo:Collection.Content.Teaser'
