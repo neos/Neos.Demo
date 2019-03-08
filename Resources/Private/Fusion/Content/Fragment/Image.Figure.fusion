@@ -1,5 +1,5 @@
 ##
-# "Image" element
+# Figure fragment for text and textWithImage
 #
 prototype(Neos.Demo:Content.Fragment.Image.Figure) < prototype(Neos.Fusion:Component) {
     src = Neos.Fusion:Case {
@@ -21,6 +21,7 @@ prototype(Neos.Demo:Content.Fragment.Image.Figure) < prototype(Neos.Fusion:Compo
     title = ''
     class = null
 
+    hasCaption = ${q(node).property('hasCaption')}
     caption = Neos.Neos:Editable {
         property = 'caption'
     }
@@ -28,7 +29,7 @@ prototype(Neos.Demo:Content.Fragment.Image.Figure) < prototype(Neos.Fusion:Compo
     renderer = afx`
         <figure class={props.class}>
             <img src={props.src} title={props.title} alt={props.alt} />
-            <figcaption @if.has={props.caption}>
+            <figcaption @if.has={props.hasCaption && props.caption}>
                 {props.caption}
             </figcaption>
         </figure>
