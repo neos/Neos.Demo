@@ -1,7 +1,6 @@
 ##
 # The footer content collection
 #
-#
 'Neos.Demo:Collection.Content.Footer':
   superTypes:
     Neos.Neos:ContentCollection: true
