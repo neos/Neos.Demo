@@ -12,7 +12,7 @@
     inspector:
       groups:
         image:
-          label: 'Neos.Demo:NodeTypes.Page:groups.image'
+          label: i18n
           position: 200
           icon: 'icon-image'
   constraints:
@@ -33,7 +33,7 @@
     'image':
       type: 'Neos\Media\Domain\Model\ImageInterface'
       ui:
-        label: 'Neos.Demo:NodeTypes.Page:properties.image'
+        label: i18n
         reloadIfChanged: true
         inspector:
           group: 'image'
@@ -47,7 +47,7 @@
     'imageTitleText':
       type: string
       ui:
-        label: 'Neos.Demo:NodeTypes.Page:properties.imageTitleText'
+        label: i18n
         reloadIfChanged: true
         inspector:
           group: 'image'

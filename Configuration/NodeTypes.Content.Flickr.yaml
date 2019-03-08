@@ -17,7 +17,7 @@
   options:
     'pluginViews':
       'UserFeed':
-        label: 'Neos.Demo:NodeTypes.Flickr:options.pluginViews.userFeed'
+        label: 'Neos.Demo:NodeTypes.Content.Flickr:options.pluginViews.userFeed'
         controllerActions:
           'Neos\Demo\Controller\FlickrController': ['userStream']
   properties:
