@@ -19,13 +19,14 @@ prototype(Neos.Demo:Content.Fragment.Image.Figure) < prototype(Neos.Fusion:Compo
 
     alt = ''
     title = ''
+    class = null
 
     caption = Neos.Neos:Editable {
         property = 'caption'
     }
 
     renderer = afx`
-        <figure>
+        <figure class={props.class}>
             <img src={props.src} title={props.title} alt={props.alt} />
             <figcaption @if.has={props.caption}>
                 {props.caption}
