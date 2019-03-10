@@ -1,0 +1,34 @@
+prototype(Neos.Demo:Document.Fragment.Menu.Language) < prototype(Neos.Fusion:Component) {
+    menuItems = Neos.Neos:DimensionsMenuItems {
+        dimension = 'language'
+    }
+
+    renderer = afx`
+        <div class="language-menu">
+            <div>
+                <Neos.Fusion:Loop items={props.menuItems} @children="itemRenderer">
+                    <span @if.isCurrent={item.state == 'current'} class="language-menu-full">{item.label}</span>
+                    <span @if.isCurrent={item.state == 'current'} class="language-menu-short" title="{item.label}">{item.preset.uriSegment}</span>
+                </Neos.Fusion:Loop>
+                <span>▼</span>
+            </div>
+            <ul>
+                <Neos.Fusion:Loop items={props.menuItems} @children="itemRenderer">
+                    <li>
+                        <Neos.Neos:NodeLink node={item.node}>{item.label}</Neos.Neos:NodeLink>
+                    </li>
+                </Neos.Fusion:Loop>
+            </ul>
+        </div>
+    `
+
+    @cache {
+        mode = 'cached'
+        entryIdentifier {
+            documentNode = ${documentNode}
+        }
+        entryTags {
+            1 = ${Neos.Caching.nodeTypeTag('Neos.Neos:Document', documentNode)}
+        }
+    }
+}

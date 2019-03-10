@@ -1,0 +1,97 @@
+/**
+ * Homepage rendering for the Neos.Demo website
+ */
+prototype(Neos.Demo:Document.Chapter) < prototype(Neos.Fusion:Component) {
+    @context.previousChapter = ${q(documentNode).prev('[instanceof Neos.Neos:Document]').get(0)}
+    @context.nextChapter = ${q(documentNode).next('[instanceof Neos.Neos:Document]').get(0)}
+    @context.chapterImage = ${q(documentNode).property('chapterImage')}
+
+    breadcrumbMenu = Neos.Demo:Document.Fragment.Menu.Breadcrumb
+    metaMenu = Neos.Demo:Document.Fragment.Menu.Meta
+
+    mainContent = Neos.Demo:Document.Fragment.Content.Main
+    footerContent = Neos.Demo:Document.Fragment.Content.Footer
+
+    title = Neos.Fusion:Tag {
+        tagName = 'h1'
+        content = Neos.Neos:Editable {
+            property = 'title'
+            block = false
+            @process.convertUris = Neos.Neos:ConvertUris
+        }
+        @process.contentElementWrapping = Neos.Neos:ContentElementWrapping
+    }
+
+    chapterImageSrc = Neos.Neos:ImageUri {
+        @if.has = ${chapterImage}
+        asset = ${chapterImage}
+    }
+    chapterImageAlt = ${chapterImage ? chapterImage.alternativeText : null}
+    chapterImageTitle =${chapterImage ? chapterImage.title : null}
+
+    chapterLabel = ${q(documentNode).property('_label')}
+
+    previousChapterLabel = ${q(previousChapter).property('_label')}
+    previousChapterLink = Neos.Neos:NodeUri {
+        node = ${previousChapter}
+    }
+
+    nextChapterLabel = ${q(nextChapter).property('_label')}
+    nextChapterLink = Neos.Neos:NodeUri {
+        node = ${nextChapter}
+    }
+
+    renderer = Neos.Demo:Document.Base {
+        bodyClass = 'chapter'
+        body = afx`
+            <div class="container chapter-container">
+                {props.breadcrumbMenu}
+
+                <header>
+                    {props.title}
+                </header>
+
+                <img
+                    @if.has={props.chapterImageSrc}
+                    src={props.chapterImageSrc}
+                    class="pull-right"
+                    alt={props.chapterImageAlt}
+                    title={props.chapterImageTitle}
+                    />
+
+                {props.mainContent}
+
+                <ul class="chapter-pager">
+                    <li @if.has={props.previousChapterLink}>
+                        <a href={props.previousChapterLink}>
+                            {props.previousChapterLabel}
+                        </a>
+                        &mdash;
+                    </li>
+                    <li>{props.chapterLabel}</li>
+                    <li @if.has={props.nextChapterLink}>
+                        &mdash;
+                        <a href={props.nextChapterLink}>
+                            {props.nextChapterLabel}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <footer role="navigation" class="navbar navbar-default">
+                <div class="panel panel-default">
+                    <div class="panel-body clearfix">
+                        <div class="container">
+                            {props.metaMenu}
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="container">
+                            {props.footerContent}
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        `
+    }
+}

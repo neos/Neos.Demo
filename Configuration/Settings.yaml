@@ -43,7 +43,6 @@ Neos:
         default: en_US
         defaultPreset: en_US
         presets:
-          all: null
           en_US:
             label: 'English (US)'
             values:

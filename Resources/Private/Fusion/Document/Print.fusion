@@ -1,0 +1,11 @@
+/**
+ * Default print rendering for the Neos.Demo website
+ */
+print = Neos.Demo:Document.Page {
+    prototype(Neos.Demo:Document.Fragment.StyleSheets) {
+        @process.appendPrintCssWithMediaAll = afx`
+            {value}
+            <Neos.Demo:Helper.StyleTag path="resource://Neos.Demo/Public/Styles/Print.css" media="all" />
+        `
+    }
+}

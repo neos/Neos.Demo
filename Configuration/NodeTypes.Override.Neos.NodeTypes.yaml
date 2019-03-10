@@ -1,0 +1,29 @@
+##
+# Declare nodetypes from Neos.NodeTypes abstract that are replaced
+# in the Neos.Demo package namespace
+#
+'Neos.NodeTypes:Page':
+  abstract: true
+
+'Neos.NodeTypes:Headline':
+  abstract: true
+
+'Neos.NodeTypes:Text':
+  abstract: true
+
+'Neos.NodeTypes:Image':
+  abstract: true
+
+'Neos.NodeTypes:TextWithImage':
+  abstract: true
+
+'Neos.NodeTypes:TwoColumn':
+  abstract: true
+
+'Neos.NodeTypes:ThreeColumn':
+  abstract: true
+
+'Neos.NodeTypes:FourColumn':
+  abstract: true
+
+

@@ -1,7 +1,0 @@
-##
-# Adjust "MultiColumn" element to Twitter bootstrap CSS classes
-#
-prototype(Neos.NodeTypes:MultiColumn) {
-	attributes.class = 'row'
-	columns.iterationName = 'multiColumnIteration'
-}

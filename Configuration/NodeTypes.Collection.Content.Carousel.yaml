@@ -1,0 +1,19 @@
+##
+# A collection of contents that can be placed in a carousel
+#
+'Neos.Demo:Collection.Content.Carousel':
+  superTypes:
+    Neos.Neos:ContentCollection: true
+  constraints:
+    nodeTypes:
+      '*': false
+      'Neos.Demo:Constraint.Content.Carousel': true
+
+##
+# Constraint-supertype that makes contents available in carousels
+#
+# this allows to define the usage on the content nodetypes and
+# is recommended if a collection contains many different types
+#
+'Neos.Demo:Constraint.Content.Carousel':
+  abstract: true

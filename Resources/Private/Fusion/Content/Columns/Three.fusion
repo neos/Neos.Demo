@@ -1,0 +1,24 @@
+##
+# "ThreeColumn" element
+#
+prototype(Neos.Demo:Content.Columns.Three) < prototype(Neos.Neos:ContentComponent) {
+    column0 = Neos.Neos:ContentCollection {
+        nodePath = 'column0'
+    }
+
+    column1 = Neos.Neos:ContentCollection {
+        nodePath = 'column1'
+    }
+
+    column2 = Neos.Neos:ContentCollection {
+        nodePath = 'column2'
+    }
+
+    renderer = afx`
+        <div class="row">
+            <div class="col-sm-4">{props.column0}</div>
+            <div class="col-sm-4">{props.column1}</div>
+            <div class="col-sm-4">{props.column2}</div>
+        </div>
+    `
+}

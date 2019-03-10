@@ -1,0 +1,162 @@
+up:
+  comments: 'Alter node-types to match best practices 1.0.0'
+  migration:
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Carousel'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Content.Carousel'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:ChapterMenu'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Content.ChapterMenu'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Flickr'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Content.Flickr'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Registration'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Content.Registration'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:YouTube'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Content.YouTube'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Chapter'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Document.Chapter'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Homepage'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Document.Homepage'
+
+
+down:
+  comments: 'Rename node-types back to state before best practices'
+  migration:
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Content.Carousel'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Carousel'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Content.ChapterMenu'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:ChapterMenu'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Content.Flickr'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Flickr'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Content.Registration'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Registration'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Content.YouTube'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:YouTube'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Document.Chapter'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Chapter'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Document.Homepage'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Homepage'

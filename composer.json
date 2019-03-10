@@ -6,8 +6,9 @@
         "GPL-3.0-or-later"
     ],
     "require": {
-        "neos/neos": "*",
+        "neos/neos": "^4.3 || dev-master",
         "neos/nodetypes": "*",
+        "neos/fusion-afx": "*",
         "neos/seo": "^2.0.7",
         "flowpack/neos-frontendlogin": "^3.0.3"
     },

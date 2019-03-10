@@ -1,7 +1,0 @@
-##
-# "Registration" element, extending "Plugin"
-#
-prototype(Neos.Demo:Registration) < prototype(Neos.Neos:Plugin) {
-	package = 'Neos.Demo'
-	controller = 'Registration'
-}

@@ -1,9 +1,9 @@
 ##
 # A simple "Flickr" plugin that demonstrates the "PluginViews"-feature
 #
-'Neos.Demo:Flickr':
+'Neos.Demo:Content.Flickr':
   superTypes:
-    'Neos.Neos:Plugin': TRUE
+    'Neos.Neos:Plugin': true
   ui:
     label: i18n
     icon: 'icon-flickr'
@@ -17,7 +17,7 @@
   options:
     'pluginViews':
       'UserFeed':
-        label: 'Neos.Demo:NodeTypes.Flickr:options.pluginViews.userFeed'
+        label: 'Neos.Demo:NodeTypes.Content.Flickr:options.pluginViews.userFeed'
         controllerActions:
           'Neos\Demo\Controller\FlickrController': ['userStream']
   properties:
@@ -26,6 +26,6 @@
       defaultValue: ''
       ui:
         label: i18n
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: 'feed'

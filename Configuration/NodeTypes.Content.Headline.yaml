@@ -1,0 +1,17 @@
+'Neos.Demo:Content.Headline':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.NodeTypes.BaseMixins:TitleMixin': true
+    'Neos.Demo:Constraint.Content.Carousel': true
+    'Neos.Demo:Constraint.Content.Column': true
+  ui:
+    label: i18n
+    icon: 'icon-header'
+    position: 100
+  properties:
+    'title':
+      ui:
+        aloha:
+          'format':
+            'h4': true
+            'h5': true

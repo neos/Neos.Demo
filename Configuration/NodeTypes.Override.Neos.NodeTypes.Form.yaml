@@ -11,4 +11,4 @@
             values:
               '': ~
               'contact-form':
-                label: 'Neos.Demo:NodeTypes.Form:properties.formIdentifier.selectBoxEditor.value.contact-form'
+                label: 'Neos.Demo:NodeTypes.Content.Form:properties.formIdentifier.selectBoxEditor.value.contact-form'

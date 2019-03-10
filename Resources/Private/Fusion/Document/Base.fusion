@@ -1,0 +1,23 @@
+/**
+ * Prototyoe to render a page with all scripts and styles but with
+ * a replacable body and bodyClass via props
+ */
+prototype(Neos.Demo:Document.Base) < prototype(Neos.Fusion:Component) {
+    body = null
+    bodyClass = null
+
+    renderer = Neos.Neos:Page {
+        head {
+            stylesheets {
+                site = Neos.Demo:Document.Fragment.StyleSheets
+            }
+            metadata = Neos.Demo:Document.Fragment.MetaData
+        }
+
+        bodyTag.attributes.class = ${props.bodyClass}
+        body = ${props.body}
+
+        bodyScripts = Neos.Demo:Document.Fragment.JavaScripts
+        bodyScripts.@position = 'after body'
+    }
+}

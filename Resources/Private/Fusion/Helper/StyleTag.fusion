@@ -1,0 +1,14 @@
+prototype(Neos.Demo:Helper.StyleTag) < prototype(Neos.Fusion:Component) {
+    media = null
+    path = null
+
+    renderer = Neos.Fusion:Tag {
+        tagName = 'link'
+        attributes.rel = 'stylesheet'
+        attributes.href = Neos.Fusion:ResourceUri {
+            path = ${props.path}
+            package = ${props.package}
+        }
+        attributes.media = ${props.media ? props.media : 'all'}
+    }
+}

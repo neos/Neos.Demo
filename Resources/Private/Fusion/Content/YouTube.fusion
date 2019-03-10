@@ -1,0 +1,23 @@
+##
+# "YouTube" element
+#
+prototype(Neos.Demo:Content.YouTube) < prototype(Neos.Neos:ContentComponent) {
+    videoId = ${q(node).property('video')}
+    width = ${q(node).property('width')}
+    height = ${q(node).property('height')}
+
+    renderer = afx`
+        <div class="responsive-video">
+            <figure class="video" @if.hasVideoID={props.videoId}>
+                <iframe
+                    src={'https://www.youtube.com/embed/' + props.videoId + '?wmode=transparent'}
+                    width={props.width ? props.width : false}
+                    height={props.height ? props.height : false}
+                    frameborder="0"
+                    allowfullscreen
+                ></iframe>
+            </figure>
+            <p @if.noVideoID={!props.videoId}>Please specify video ID</p>
+        </div>
+    `
+}

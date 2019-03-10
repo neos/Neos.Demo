@@ -1,0 +1,10 @@
+'Neos.Demo:Content.Text':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.NodeTypes.BaseMixins:TextMixin': true
+    'Neos.Demo:Constraint.Content.Carousel': true
+    'Neos.Demo:Constraint.Content.Column': true
+  ui:
+    label: i18n
+    icon: 'icon-file-text'
+    position: 200

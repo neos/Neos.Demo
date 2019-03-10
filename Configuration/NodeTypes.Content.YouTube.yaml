@@ -1,9 +1,11 @@
 ##
 # A "Youtube" content element
 #
-'Neos.Demo:YouTube':
+'Neos.Demo:Content.YouTube':
   superTypes:
-    'Neos.Neos:Content': TRUE
+    'Neos.Neos:Content': true
+    'Neos.Demo:Constraint.Content.Carousel': true
+    'Neos.Demo:Constraint.Content.Column': true
   ui:
     label: YouTube
     icon: 'icon-youtube'
@@ -21,7 +23,7 @@
       defaultValue: ''
       ui:
         label: i18n
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: 'video'
         help:
@@ -38,7 +40,7 @@
       defaultValue: 400
       ui:
         label: i18n
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: 'video'
     'height':
@@ -46,6 +48,6 @@
       defaultValue: 300
       ui:
         label: i18n
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: 'video'

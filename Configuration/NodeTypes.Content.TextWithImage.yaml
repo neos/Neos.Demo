@@ -1,0 +1,12 @@
+'Neos.Demo:Content.TextWithImage':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.NodeTypes.BaseMixins:TextMixin': true
+    'Neos.NodeTypes.BaseMixins:ImageMixin': true
+    'Neos.NodeTypes.BaseMixins:ImageCaptionMixin': true
+    'Neos.Demo:Constraint.Content.Carousel': true
+    'Neos.Demo:Constraint.Content.Column': true
+  ui:
+    label: i18n
+    icon: 'icon-picture'
+    position: 400

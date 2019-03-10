@@ -1,0 +1,162 @@
+up:
+  comments: 'Migrate nodetypes from Neos.NodeTypes to Neos.Demo namespace'
+  migration:
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.NodeTypes:Headline'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Content.Headline'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.NodeTypes:Text'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Content.Text'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.NodeTypes:Image'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Content.Image'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.NodeTypes:TextWithImage'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Content.TextWithImage'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.NodeTypes:FourColumn'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Content.Columns.Four'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.NodeTypes:ThreeColumn'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Content.Columns.Three'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.NodeTypes:TwoColumn'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.Demo:Content.Columns.Two'
+
+
+down:
+  comments: 'Migrate nodetypes back from Neos.NodeTypes.* namespace to Neos.NodeTypes'
+  migration:
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Content.Headline'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.NodeTypes:Headline'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Content.Text'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.NodeTypes:Text'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Content.Image'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.NodeTypes:Image'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Content.TextWithImage'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.NodeTypes:TextWithImage'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Content.Columns.Four'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.NodeTypes:FourColumn'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Content.Columns.Three'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.NodeTypes:ThreeColumn'
+    -
+      filters:
+        -
+          type: 'NodeType'
+          settings:
+            nodeType: 'Neos.Demo:Content.Columns.Two'
+      transformations:
+        -
+          type: 'ChangeNodeType'
+          settings:
+            newType: 'Neos.NodeTypes:TwoColumn'

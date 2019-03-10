@@ -1,0 +1,15 @@
+##
+# A new Document NodeType "Chapter"
+#
+'Neos.Demo:Document.LandingPage':
+  ui:
+    label: i18n
+    icon: 'file-import'
+    help:
+      message: 'A landing Page'
+  superTypes:
+    'Neos.Demo:Document.Page': true
+  childNodes:
+    'teaser':
+      position: 'end'
+      type: 'Neos.Demo:Collection.Content.Teaser'

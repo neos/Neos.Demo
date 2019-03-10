@@ -1,0 +1,46 @@
+##
+# "Carousel" element
+#
+prototype(Neos.Demo:Content.Carousel) < prototype(Neos.Neos:ContentComponent) {
+    identifier = ${q(node).property('_identifier')}
+
+    carouselItems = Neos.Neos:ContentCollection {
+        nodePath = 'carouselitems'
+        attributes.class = 'carousel-inner'
+
+        // Each child item is augmented "item" and "active" class
+        prototype(Neos.Neos:ContentCase) {
+            @process.addItemAndActiveClass = Neos.Fusion:Augmenter {
+                class = ${'item' + (iterator.isFirst ? ' active' : '')}
+            }
+        }
+    }
+
+    carouselItemNumber = ${q(node).children('carouselitems').children().count()}
+
+    renderer = afx`
+        <div>
+            <div class="carousel slide" id={props.identifier}>
+
+                <ol class="carousel-indicators">
+                    <Neos.Fusion:Loop items={Array.range(1, props.carouselItemNumber)} itemName="index" iterationName="iterator" @children="itemRenderer" >
+                        <li
+                            data-target={'#' + props.identifier}
+                            data-slide-to={iterator.index}
+                            class={iterator.isFirst ? 'active' : ''}
+                        ></li>
+                    </Neos.Fusion:Loop>
+                </ol>
+
+                {props.carouselItems}
+
+                <a class="left carousel-control" href={'#' + props.identifier} data-slide="prev">
+                    <span class="icon-prev"></span>
+                </a>
+                <a class="right carousel-control" href={'#' + props.identifier} data-slide="next">
+                    <span class="icon-next"></span>
+                </a>
+            </div>
+        </div>
+    `
+}

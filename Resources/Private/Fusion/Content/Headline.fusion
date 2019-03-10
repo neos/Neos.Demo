@@ -1,0 +1,14 @@
+##
+# "Headline" element
+#
+prototype(Neos.Demo:Content.Headline) < prototype(Neos.Neos:ContentComponent) {
+    title = Neos.Neos:Editable {
+        property = 'title'
+    }
+
+    renderer = afx`
+        <div>
+            {props.title}
+        </div>
+    `
+}

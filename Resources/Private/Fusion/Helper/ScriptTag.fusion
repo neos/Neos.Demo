@@ -1,0 +1,11 @@
+prototype(Neos.Demo:Helper.ScriptTag) < prototype(Neos.Fusion:Component) {
+    path = null
+
+    renderer = Neos.Fusion:Tag {
+        tagName = 'script'
+        attributes.src = 'stylesheet'
+        attributes.src = Neos.Fusion:ResourceUri {
+            path = ${props.path}
+        }
+    }
+}

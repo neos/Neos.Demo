@@ -1,12 +1,12 @@
 ##
 # A new Document NodeType "Chapter"
 #
-'Neos.Demo:Chapter':
+'Neos.Demo:Document.Chapter':
   superTypes:
-    'Neos.Neos:Document': TRUE
+    'Neos.Neos:Document': true
   childNodes:
     'main':
-      type: 'Neos.Neos:ContentCollection'
+      type: 'Neos.Demo:Collection.Content.Main'
   ui:
     label: i18n
     icon: 'icon-book'
@@ -24,7 +24,7 @@
       type: string
       ui:
         label: i18n
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: 'document'
           editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
@@ -34,7 +34,7 @@
       type: 'Neos\Media\Domain\Model\ImageInterface'
       ui:
         label: i18n
-        reloadIfChanged: TRUE
+        reloadIfChanged: true
         inspector:
           group: 'document'
         help:
@@ -42,28 +42,28 @@
     title:
       validation: ~
       ui:
-        inlineEditable: TRUE
+        inlineEditable: true
         inspector:
           group: ~
         aloha:
           placeholder: 'Enter title here'
           'format':
-            'b': TRUE
-            'i': TRUE
-            'u': TRUE
-            'sub': TRUE
-            'sup': TRUE
-            'p': FALSE
-            'h1': FALSE
-            'h2': FALSE
-            'h3': FALSE
-            'pre': FALSE
-            'removeFormat': FALSE
+            'b': true
+            'i': true
+            'u': true
+            'sub': true
+            'sup': true
+            'p': false
+            'h1': false
+            'h2': false
+            'h3': false
+            'pre': false
+            'removeFormat': false
           'table': []
           'list': []
           'link':
-            'a': TRUE
+            'a': true
           'alignment': []
           'formatlesspaste':
-            'button': FALSE
-            'formatlessPasteOption': TRUE
+            'button': false
+            'formatlessPasteOption': true

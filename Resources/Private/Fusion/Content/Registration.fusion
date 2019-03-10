@@ -1,0 +1,7 @@
+##
+# "Registration" element, extending "Plugin"
+#
+prototype(Neos.Demo:Content.Registration) < prototype(Neos.Neos:Plugin) {
+    package = 'Neos.Demo'
+    controller = 'Registration'
+}

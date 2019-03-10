@@ -2,9 +2,9 @@
 # A "Registration" plugin that allows creation of Neos user accounts through the Frontend
 # Warning: This is not to be used on productive Websites!
 #
-'Neos.Demo:Registration':
+'Neos.Demo:Content.Registration':
   superTypes:
-    'Neos.Neos:Plugin': TRUE
+    'Neos.Neos:Plugin': true
   ui:
     label: i18n
     icon: 'icon-user'
