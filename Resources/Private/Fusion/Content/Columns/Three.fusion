@@ -2,7 +2,6 @@
 # "ThreeColumn" element
 #
 prototype(Neos.Demo:Content.Columns.Three) < prototype(Neos.Neos:ContentComponent) {
-
     column0 = Neos.Neos:ContentCollection {
         nodePath = 'column0'
     }

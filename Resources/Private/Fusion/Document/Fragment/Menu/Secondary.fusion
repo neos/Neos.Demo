@@ -1,5 +1,4 @@
 prototype(Neos.Demo:Document.Fragment.Menu.Secondary) < prototype(Neos.Fusion:Component) {
-
     menuItems = Neos.Neos:MenuItems {
         entryLevel = 2
         maximumLevels = 1

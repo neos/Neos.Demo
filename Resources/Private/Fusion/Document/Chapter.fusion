@@ -2,7 +2,6 @@
  * Homepage rendering for the Neos.Demo website
  */
 prototype(Neos.Demo:Document.Chapter) < prototype(Neos.Fusion:Component) {
-
     @context.previousChapter = ${q(documentNode).prev('[instanceof Neos.Neos:Document]').get(0)}
     @context.nextChapter = ${q(documentNode).next('[instanceof Neos.Neos:Document]').get(0)}
     @context.chapterImage = ${q(documentNode).property('chapterImage')}

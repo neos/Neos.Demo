@@ -2,7 +2,6 @@
  *  Special landing page layout with less navigation components
  */
 prototype(Neos.Demo:Document.LandingPage) < prototype(Neos.Fusion:Component) {
-
     mainMenu = Neos.Demo:Document.Fragment.Menu.Main
     secondaryMenu = Neos.Demo:Document.Fragment.Menu.Secondary
     languageMenu = Neos.Demo:Document.Fragment.Menu.Language

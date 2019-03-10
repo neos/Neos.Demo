@@ -2,7 +2,6 @@
 # "YouTube" element
 #
 prototype(Neos.Demo:Content.YouTube) < prototype(Neos.Neos:ContentComponent) {
-
     videoId = ${q(node).property('video')}
     width = ${q(node).property('width')}
     height = ${q(node).property('height')}
@@ -21,6 +20,4 @@ prototype(Neos.Demo:Content.YouTube) < prototype(Neos.Neos:ContentComponent) {
             <p @if.noVideoID={!props.videoId}>Please specify video ID</p>
         </div>
     `
-
-
 }

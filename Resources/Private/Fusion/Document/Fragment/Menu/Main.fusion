@@ -1,5 +1,4 @@
 prototype(Neos.Demo:Document.Fragment.Menu.Main) < prototype(Neos.Fusion:Component) {
-
     root = ${site}
     menuItems = Neos.Neos:MenuItems
 

@@ -2,5 +2,5 @@
 # Set the default preset for the "Form" element
 #
 prototype(Neos.NodeTypes.Form:Form) {
-	presetName = 'bootstrap'
+    presetName = 'bootstrap'
 }

@@ -11,5 +11,4 @@ prototype(Neos.Demo:Content.Text) < prototype(Neos.Neos:ContentComponent) {
             {props.text}
         </div>
     `
-
 }

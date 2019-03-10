@@ -12,5 +12,4 @@ prototype(Neos.Demo:Content.TextWithImage) < prototype(Neos.Neos:ContentComponen
             {props.text}
         </div>
     `
-
 }

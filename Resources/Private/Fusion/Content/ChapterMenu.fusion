@@ -2,7 +2,6 @@
 # "ChapterMenu" element
 #
 prototype(Neos.Demo:Content.ChapterMenu) < prototype(Neos.Neos:ContentComponent) {
-
     chapters = Neos.Fusion:Map {
         items = ${q(documentNode).children('[instanceof Neos.Demo:Document.Chapter]').get()}
         itemName = 'chapter'

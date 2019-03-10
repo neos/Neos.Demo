@@ -2,7 +2,6 @@
  * Default page-rendering for the Neos.Demo website
  */
 prototype(Neos.Demo:Document.Page) < prototype(Neos.Fusion:Component) {
-
     mainMenu = Neos.Demo:Document.Fragment.Menu.Main
     secondaryMenu = Neos.Demo:Document.Fragment.Menu.Secondary
     metaMenu = Neos.Demo:Document.Fragment.Menu.Meta

@@ -2,7 +2,6 @@
 # "Carousel" element
 #
 prototype(Neos.Demo:Content.Carousel) < prototype(Neos.Neos:ContentComponent) {
-
     identifier = ${q(node).property('_identifier')}
 
     carouselItems = Neos.Neos:ContentCollection {

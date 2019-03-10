@@ -3,7 +3,6 @@
  * a replacable body and bodyClass via props
  */
 prototype(Neos.Demo:Document.Base) < prototype(Neos.Fusion:Component) {
-
     body = null
     bodyClass = null
 

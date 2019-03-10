@@ -2,7 +2,6 @@
 # "FourColumn" element
 #
 prototype(Neos.Demo:Content.Columns.Four) < prototype(Neos.Neos:ContentComponent) {
-
     column0 = Neos.Neos:ContentCollection {
         nodePath = 'column0'
     }
