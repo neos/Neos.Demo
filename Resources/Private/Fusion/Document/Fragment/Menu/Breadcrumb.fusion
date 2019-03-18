@@ -3,7 +3,7 @@ prototype(Neos.Demo:Document.Fragment.Menu.Breadcrumb) < prototype(Neos.Fusion:C
 
     renderer = afx`
         <ul class="breadcrumb">
-            <Neos.Fusion:Loop items={Array.reverse(props.menuItems)} @children="itemRenderer">
+            <Neos.Fusion:Loop items={Array.reverse(props.menuItems)}>
                 <li class={item.state}>
                     <Neos.Neos:NodeLink node={item.node} >{item.label}</Neos.Neos:NodeLink>
                 </li>

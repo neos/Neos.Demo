@@ -37,7 +37,7 @@ prototype(Neos.Demo:Content.ChapterMenu) < prototype(Neos.Neos:ContentComponent)
     renderer = afx`
         <div class="chapter-menu">
             <ul>
-                <Neos.Fusion:Loop items={props.chapters} itemName="chapter" @children="itemRenderer">
+                <Neos.Fusion:Loop items={props.chapters} itemName="chapter">
                     <li>
                         <img
                             src={chapter.imageSrc}
