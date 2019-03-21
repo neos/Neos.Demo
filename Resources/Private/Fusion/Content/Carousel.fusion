@@ -23,7 +23,7 @@ prototype(Neos.Demo:Content.Carousel) < prototype(Neos.Neos:ContentComponent) {
             <div class="carousel slide" id={props.identifier}>
 
                 <ol class="carousel-indicators">
-                    <Neos.Fusion:Loop items={Array.range(1, props.carouselItemNumber)} itemName="index" iterationName="iterator" @children="itemRenderer" >
+                    <Neos.Fusion:Loop items={Array.range(1, props.carouselItemNumber)} itemName="index" iterationName="iterator">
                         <li
                             data-target={'#' + props.identifier}
                             data-slide-to={iterator.index}

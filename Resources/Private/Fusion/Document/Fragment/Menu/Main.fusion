@@ -35,14 +35,14 @@ prototype(Neos.Demo:Document.Fragment.Menu.Main) < prototype(Neos.Fusion:Compone
 
             <div class="collapse navbar-collapse navbar-main-collapse">
                 <ul class="nav nav-pills nav-justified">
-                    <Neos.Fusion:Loop items={props.menuItems} @children="itemRenderer">
+                    <Neos.Fusion:Loop items={props.menuItems}>
                         <li class={item.state}>
                             <Neos.Neos:NodeLink node={item.node}>{item.label}</Neos.Neos:NodeLink>
                             <ul
                                 @if.has={item.children && (item.state != 'normal')}
                                 class="second-level-sub-navigation nav nav-justified visible-xs"
                             >
-                                <Neos.Fusion:Loop items={item.children} itemName="item" @children="itemRenderer">
+                                <Neos.Fusion:Loop items={item.children} itemName="item">
                                     <li class={item.state}>
                                         <Neos.Neos:NodeLink node={item.node}>{item.label}</Neos.Neos:NodeLink>
                                     </li>

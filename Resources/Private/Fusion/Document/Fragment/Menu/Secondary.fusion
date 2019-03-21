@@ -7,7 +7,7 @@ prototype(Neos.Demo:Document.Fragment.Menu.Secondary) < prototype(Neos.Fusion:Co
     renderer = afx`
         <nav @if.hasMenuItems={props.menuItems} class="navbar second-level-navigation" role="navigation">
             <ul class="nav nav-pills">
-                <Neos.Fusion:Loop items={props.menuItems} @children="itemRenderer">
+                <Neos.Fusion:Loop items={props.menuItems}>
                     <li class={item.state}>
                         <Neos.Neos:NodeLink node={item.node}>{item.label}</Neos.Neos:NodeLink>
                     </li>

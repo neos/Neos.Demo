@@ -6,14 +6,14 @@ prototype(Neos.Demo:Document.Fragment.Menu.Language) < prototype(Neos.Fusion:Com
     renderer = afx`
         <div class="language-menu">
             <div>
-                <Neos.Fusion:Loop items={props.menuItems} @children="itemRenderer">
+                <Neos.Fusion:Loop items={props.menuItems}>
                     <span @if.isCurrent={item.state == 'current'} class="language-menu-full">{item.label}</span>
                     <span @if.isCurrent={item.state == 'current'} class="language-menu-short" title="{item.label}">{item.preset.uriSegment}</span>
                 </Neos.Fusion:Loop>
                 <span>▼</span>
             </div>
             <ul>
-                <Neos.Fusion:Loop items={props.menuItems} @children="itemRenderer">
+                <Neos.Fusion:Loop items={props.menuItems}>
                     <li>
                         <Neos.Neos:NodeLink node={item.node}>{item.label}</Neos.Neos:NodeLink>
                     </li>
