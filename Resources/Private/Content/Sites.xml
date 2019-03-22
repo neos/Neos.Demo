@@ -15,7 +15,6 @@
       <title __type="string">Home</title>
       <uriPathSegment __type="string">home</uriPathSegment>
       <image __type="object" __identifier="7831a651-3faf-4a18-9089-e27f50f11e38" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;7831a651-3faf-4a18-9089-e27f50f11e38&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;From Neos with love&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Wald 1.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;aa4514d592e02ea7b6684cf799bc5711dd2172fd&quot;,&quot;hash&quot;:&quot;aa4514d592e02ea7b6684cf799bc5711dd2172fd&quot;,&quot;__identity&quot;:&quot;9e9f7886-778d-48cb-9605-00c2f25d6029&quot;}}</image>
-      <canonicalLink __type="string"></canonicalLink>
      </properties>
     </variant>
     <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Document.Homepage" version="13" removed="" hidden="" hiddenInIndex="">
@@ -31,7 +30,6 @@
       <uriPathSegment __type="string">home</uriPathSegment>
       <image __type="object" __identifier="1731a09b-1cb0-4c8d-9c9e-acba46aa849d" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;1731a09b-1cb0-4c8d-9c9e-acba46aa849d&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;7831a651-3faf-4a18-9089-e27f50f11e38&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;From Neos with love&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Wald 1.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;aa4514d592e02ea7b6684cf799bc5711dd2172fd&quot;,&quot;hash&quot;:&quot;aa4514d592e02ea7b6684cf799bc5711dd2172fd&quot;,&quot;__identity&quot;:&quot;9e9f7886-778d-48cb-9605-00c2f25d6029&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1179,&quot;position&quot;:10,&quot;width&quot;:2600,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;815146fe-e6df-4e7b-b2ad-56c79b8f8106&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
       <imageTitleText __type="string">Photo by Mr. Coffee</imageTitleText>
-      <canonicalLink __type="string"></canonicalLink>
      </properties>
     </variant>
     <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Document.Homepage" version="14" removed="" hidden="" hiddenInIndex="">
@@ -47,7 +45,6 @@
       <uriPathSegment __type="string">home</uriPathSegment>
       <image __type="object" __identifier="3f611e8b-6e6a-4b79-a7a4-15ec0946afaf" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;3f611e8b-6e6a-4b79-a7a4-15ec0946afaf&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;7831a651-3faf-4a18-9089-e27f50f11e38&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;From Neos with love&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Wald 1.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;aa4514d592e02ea7b6684cf799bc5711dd2172fd&quot;,&quot;hash&quot;:&quot;aa4514d592e02ea7b6684cf799bc5711dd2172fd&quot;,&quot;__identity&quot;:&quot;9e9f7886-778d-48cb-9605-00c2f25d6029&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1162,&quot;position&quot;:10,&quot;width&quot;:2600,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;c428d52f-14fe-4f70-b640-a7c294dac5b2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
       <imageTitleText __type="string">Photo by Mr. Coffee</imageTitleText>
-      <canonicalLink __type="string"></canonicalLink>
      </properties>
     </variant>
     <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Document.Homepage" version="12" removed="" hidden="" hiddenInIndex="">
@@ -63,7 +60,6 @@
       <uriPathSegment __type="string">home</uriPathSegment>
       <image __type="object" __identifier="8df8d1ff-3531-48f0-9fa6-aac25346228a" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;8df8d1ff-3531-48f0-9fa6-aac25346228a&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;7831a651-3faf-4a18-9089-e27f50f11e38&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;From Neos with love&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Wald 1.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;aa4514d592e02ea7b6684cf799bc5711dd2172fd&quot;,&quot;hash&quot;:&quot;aa4514d592e02ea7b6684cf799bc5711dd2172fd&quot;,&quot;__identity&quot;:&quot;9e9f7886-778d-48cb-9605-00c2f25d6029&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1182,&quot;position&quot;:10,&quot;width&quot;:2600,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;f7c502f5-723e-41f5-a4c8-c2b0cf22114e&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
       <imageTitleText __type="string">Photo by Mr. Coffee</imageTitleText>
-      <canonicalLink __type="string"></canonicalLink>
      </properties>
     </variant>
     <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Document.Homepage" version="13" removed="" hidden="" hiddenInIndex="">
@@ -79,7 +75,6 @@
       <uriPathSegment __type="string">home</uriPathSegment>
       <image __type="object" __identifier="df5d794c-8c99-4602-a1ac-15e916c10a2c" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;df5d794c-8c99-4602-a1ac-15e916c10a2c&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;7831a651-3faf-4a18-9089-e27f50f11e38&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;From Neos with love&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Wald 1.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;aa4514d592e02ea7b6684cf799bc5711dd2172fd&quot;,&quot;hash&quot;:&quot;aa4514d592e02ea7b6684cf799bc5711dd2172fd&quot;,&quot;__identity&quot;:&quot;9e9f7886-778d-48cb-9605-00c2f25d6029&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1159,&quot;position&quot;:10,&quot;width&quot;:2600,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;40462483-aaf2-4868-992e-f89bba201088&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
       <imageTitleText __type="string">Photo by Mr. Coffee</imageTitleText>
-      <canonicalLink __type="string"></canonicalLink>
      </properties>
     </variant>
     <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Document.Homepage" version="9" removed="" hidden="" hiddenInIndex="">
@@ -95,7 +90,6 @@
       <uriPathSegment __type="string">home</uriPathSegment>
       <image __type="object" __identifier="e50c998b-a35e-4ba3-8003-65cb6d65a360" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;e50c998b-a35e-4ba3-8003-65cb6d65a360&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;7831a651-3faf-4a18-9089-e27f50f11e38&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;From Neos with love&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Wald 1.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;aa4514d592e02ea7b6684cf799bc5711dd2172fd&quot;,&quot;hash&quot;:&quot;aa4514d592e02ea7b6684cf799bc5711dd2172fd&quot;,&quot;__identity&quot;:&quot;9e9f7886-778d-48cb-9605-00c2f25d6029&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:1169,&quot;position&quot;:10,&quot;width&quot;:2600,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;196efe7b-b5fe-4ea6-be9c-a513844ec668&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
       <imageTitleText __type="string">Photo by Mr. Coffee</imageTitleText>
-      <canonicalLink __type="string"></canonicalLink>
      </properties>
     </variant>
     <node identifier="517ad799-35df-4324-9429-5c75629a8b34" nodeName="download">
@@ -109,7 +103,6 @@
       <properties>
        <title __type="string">Download</title>
        <uriPathSegment __type="string">download</uriPathSegment>
-       <canonicalLink __type="string"></canonicalLink>
       </properties>
      </variant>
      <node identifier="91872bb6-86dd-28f9-193d-19293378d758" nodeName="main">
@@ -208,7 +201,6 @@
       <properties>
        <title __type="string">Features</title>
        <uriPathSegment __type="string">features</uriPathSegment>
-       <canonicalLink __type="string"></canonicalLink>
       </properties>
      </variant>
      <node identifier="2bd20ef8-ab75-867a-a3e1-764c82b1552d" nodeName="custom-elements">
@@ -222,7 +214,6 @@
        <properties>
         <title __type="string">Custom elements</title>
         <uriPathSegment __type="string">custom-elements</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="5e1afcd4-8925-4469-bc83-cdcfc3ace842" nodeName="main">
@@ -426,7 +417,6 @@
        <properties>
         <title __type="string">Forms</title>
         <uriPathSegment __type="string">forms</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="14d2acfe-d72f-a61b-b2b8-614158827a99" nodeName="main">
@@ -537,7 +527,6 @@
        <properties>
         <uriPathSegment __type="string">frontend-user-login</uriPathSegment>
         <title __type="string">User Login</title>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="d9df0160-8771-77e2-dcb2-c49a19a71c40" nodeName="main">
@@ -624,7 +613,6 @@
        <properties>
         <title __type="string">Text &amp; images</title>
         <uriPathSegment __type="string">text-and-images</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="55861d58-c4e5-6121-b7cf-ef9320ebfbb0" nodeName="main">
@@ -1257,7 +1245,6 @@
        <properties>
         <title __type="string">Multiple columns</title>
         <uriPathSegment __type="string">multiple-columns</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="67710271-29d9-f562-8bae-7064c040a2ce" nodeName="main">
@@ -1675,7 +1662,6 @@
        <properties>
         <title __type="string">Navigation elements</title>
         <uriPathSegment __type="string">navigation-elements</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="7c3e4946-d216-14d0-92c5-d7fa75163863" nodeName="first-item">
@@ -1689,7 +1675,6 @@
         <properties>
          <title __type="string">Subpage #1</title>
          <uriPathSegment __type="string">subpage-no1</uriPathSegment>
-         <canonicalLink __type="string"></canonicalLink>
         </properties>
        </variant>
        <node identifier="735ea536-8f55-5b96-f3ff-c2ee40a17152" nodeName="main">
@@ -1804,7 +1789,6 @@
         <properties>
          <title __type="string">Subpage #2</title>
          <uriPathSegment __type="string">subpage-no2</uriPathSegment>
-         <canonicalLink __type="string"></canonicalLink>
         </properties>
        </variant>
        <node identifier="de10411e-f4bd-8a67-0902-1f8d909e9556" nodeName="main">
@@ -1852,7 +1836,6 @@
         <properties>
          <title __type="string">Subpage #3</title>
          <uriPathSegment __type="string">subpage-no3</uriPathSegment>
-         <canonicalLink __type="string"></canonicalLink>
         </properties>
        </variant>
        <node identifier="478f339c-fcb4-c1c7-171c-018901214c7e" nodeName="main">
@@ -1890,7 +1873,6 @@
        <properties>
         <title __type="string">Other elements</title>
         <uriPathSegment __type="string">other-elements</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="51b70c59-dfd5-f30e-3bf6-117f4da3a7f0" nodeName="main">
@@ -2021,7 +2003,6 @@
        <properties>
         <title __type="string">Plugins</title>
         <uriPathSegment __type="string">plugins</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="6353f9f3-0f5b-d979-a62c-d373ce51488a" nodeName="main">
@@ -2097,7 +2078,6 @@
         <properties>
          <title __type="string">User photo stream</title>
          <uriPathSegment __type="string">user-photo-stream</uriPathSegment>
-         <canonicalLink __type="string"></canonicalLink>
         </properties>
        </variant>
        <node identifier="e86ed97b-7d98-fb27-a27c-9bcb1b06e35e" nodeName="main">
@@ -2150,7 +2130,6 @@
        <properties>
         <title __type="string">Shortcuts</title>
         <uriPathSegment __type="string">shortcuts</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="abf7d46d-0d36-065e-726b-3dcdd4b42731" nodeName="main">
@@ -2218,7 +2197,6 @@
          <properties>
           <title __type="string">Down the rabbit-hole</title>
           <uriPathSegment __type="string">down-the-rabbit-hole</uriPathSegment>
-          <canonicalLink __type="string"></canonicalLink>
          </properties>
         </variant>
         <node identifier="cd2b9f31-2325-f6a2-75b3-95861fcf0201" nodeName="main">
@@ -2368,16 +2346,6 @@
     <node identifier="037aba4f-10c1-a349-e816-352f11ad2f22" nodeName="footer">
      <variant sortingIndex="300" workspace="live" nodeType="Neos.Demo:Collection.Content.Footer" version="5" removed="" hidden="" hiddenInIndex="">
       <dimensions>
-       <language>de</language>
-      </dimensions>
-      <accessRoles __type="array"/>
-      <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:57+00:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:21:53+00:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:12:52+00:00</lastPublicationDateTime>
-      <properties/>
-     </variant>
-     <variant sortingIndex="300" workspace="live" nodeType="Neos.Demo:Collection.Content.Footer" version="5" removed="" hidden="" hiddenInIndex="">
-      <dimensions>
        <language>lv</language>
       </dimensions>
       <accessRoles __type="array"/>
@@ -2388,10 +2356,20 @@
      </variant>
      <variant sortingIndex="300" workspace="live" nodeType="Neos.Demo:Collection.Content.Footer" version="5" removed="" hidden="" hiddenInIndex="">
       <dimensions>
-       <language>nl</language>
+       <language>de</language>
       </dimensions>
       <accessRoles __type="array"/>
-      <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:53:31+00:00</creationDateTime>
+      <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:57+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:21:53+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:12:52+00:00</lastPublicationDateTime>
+      <properties/>
+     </variant>
+     <variant sortingIndex="300" workspace="live" nodeType="Neos.Demo:Collection.Content.Footer" version="5" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>da</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:54:02+00:00</creationDateTime>
       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:21:53+00:00</lastModificationDateTime>
       <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+00:00</lastPublicationDateTime>
       <properties/>
@@ -2406,16 +2384,6 @@
       <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+00:00</lastPublicationDateTime>
       <properties/>
      </variant>
-     <variant sortingIndex="300" workspace="live" nodeType="Neos.Demo:Collection.Content.Footer" version="5" removed="" hidden="" hiddenInIndex="">
-      <dimensions>
-       <language>da</language>
-      </dimensions>
-      <accessRoles __type="array"/>
-      <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:54:02+00:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:21:53+00:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+00:00</lastPublicationDateTime>
-      <properties/>
-     </variant>
      <variant sortingIndex="300" workspace="live" nodeType="Neos.Demo:Collection.Content.Footer" version="13" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>en_US</language>
@@ -2424,6 +2392,16 @@
       <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+00:00</creationDateTime>
       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:21:53+00:00</lastModificationDateTime>
       <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-23T20:44:40+00:00</lastPublicationDateTime>
+      <properties/>
+     </variant>
+     <variant sortingIndex="300" workspace="live" nodeType="Neos.Demo:Collection.Content.Footer" version="5" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>nl</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:53:31+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:21:53+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+00:00</lastPublicationDateTime>
       <properties/>
      </variant>
      <node identifier="6fea08d6-e3c4-8937-bfdf-ce8e5d4d1bd1" nodeName="node524e798485de4">
@@ -2459,6 +2437,16 @@
     <node identifier="b189bfaa-080c-96da-6cb9-f32bbc0b41b1" nodeName="main">
      <variant sortingIndex="200" workspace="live" nodeType="Neos.Demo:Collection.Content.Main" version="6" removed="" hidden="" hiddenInIndex="">
       <dimensions>
+       <language>fr</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:50+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2019-02-04T21:20:46+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+00:00</lastPublicationDateTime>
+      <properties/>
+     </variant>
+     <variant sortingIndex="200" workspace="live" nodeType="Neos.Demo:Collection.Content.Main" version="6" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
        <language>lv</language>
       </dimensions>
       <accessRoles __type="array"/>
@@ -2479,30 +2467,20 @@
      </variant>
      <variant sortingIndex="200" workspace="live" nodeType="Neos.Demo:Collection.Content.Main" version="6" removed="" hidden="" hiddenInIndex="">
       <dimensions>
-       <language>nl</language>
-      </dimensions>
-      <accessRoles __type="array"/>
-      <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:53:31+00:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2019-02-04T21:20:46+00:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+00:00</lastPublicationDateTime>
-      <properties/>
-     </variant>
-     <variant sortingIndex="200" workspace="live" nodeType="Neos.Demo:Collection.Content.Main" version="6" removed="" hidden="" hiddenInIndex="">
-      <dimensions>
-       <language>fr</language>
-      </dimensions>
-      <accessRoles __type="array"/>
-      <creationDateTime __type="object" __classname="DateTime">2015-07-31T19:04:50+00:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2019-02-04T21:20:46+00:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+00:00</lastPublicationDateTime>
-      <properties/>
-     </variant>
-     <variant sortingIndex="200" workspace="live" nodeType="Neos.Demo:Collection.Content.Main" version="6" removed="" hidden="" hiddenInIndex="">
-      <dimensions>
        <language>da</language>
       </dimensions>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:54:02+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2019-02-04T21:20:46+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+00:00</lastPublicationDateTime>
+      <properties/>
+     </variant>
+     <variant sortingIndex="200" workspace="live" nodeType="Neos.Demo:Collection.Content.Main" version="6" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>nl</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-07-31T18:53:31+00:00</creationDateTime>
       <lastModificationDateTime __type="object" __classname="DateTime">2019-02-04T21:20:46+00:00</lastModificationDateTime>
       <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+00:00</lastPublicationDateTime>
       <properties/>
@@ -2651,7 +2629,6 @@
       <properties>
        <uriPathSegment __type="string">member-area</uriPathSegment>
        <title __type="string">Member area</title>
-       <canonicalLink __type="string"></canonicalLink>
       </properties>
      </variant>
      <node identifier="7202e679-37c7-92fd-0be1-b2d6ca89313d" nodeName="main">
@@ -2721,7 +2698,6 @@
        <properties>
         <uriPathSegment __type="string">subpage</uriPathSegment>
         <title __type="string">Subpage</title>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="52355915-1664-4543-fd84-09682f3a0903" nodeName="main">
@@ -2775,7 +2751,6 @@
          <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T22:05:26+00:00</lastPublicationDateTime>
          <properties>
           <image __type="object" __identifier="8058d91b-10d9-4813-b894-df8200c4d546" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;8058d91b-10d9-4813-b894-df8200c4d546&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;Travem\u00fcnde Kite Festival&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Drachenfest-Travemu\u0308nde.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;c828d0f88ce197be1aff7cc2e5e86b1244241ac6&quot;,&quot;hash&quot;:&quot;c828d0f88ce197be1aff7cc2e5e86b1244241ac6&quot;,&quot;__identity&quot;:&quot;96080ff0-b883-4886-afc3-7e2a4d7e95da&quot;}}</image>
-          <caption __type="string"></caption>
          </properties>
         </variant>
        </node>
@@ -2815,7 +2790,6 @@
       <properties>
        <title __type="string">Metamenu</title>
        <uriPathSegment __type="string">metamenu</uriPathSegment>
-       <canonicalLink __type="string"></canonicalLink>
       </properties>
      </variant>
      <node identifier="2d26b296-d3d2-69c1-b73e-0d1c801fe07a" nodeName="contribute">
@@ -2829,7 +2803,6 @@
        <properties>
         <title __type="string">Contribute</title>
         <uriPathSegment __type="string">contribute</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="b7d589da-4d0b-c7d9-879d-03eb83b895e4" nodeName="main">
@@ -2881,7 +2854,6 @@
        <properties>
         <title __type="string">Documentation</title>
         <uriPathSegment __type="string">documentation</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="5f8101e3-cc16-9c35-5d3f-390253fad6c3" nodeName="main">
@@ -2976,7 +2948,244 @@
       </variant>
      </node>
     </node>
+    <node identifier="f6cebea5-fbef-5afc-ea0e-9e90f262499b" nodeName="notfound">
+     <variant sortingIndex="1250" workspace="live" nodeType="Neos.Demo:Document.NotFoundPage" version="1" removed="" hidden="1" hiddenInIndex="1">
+      <dimensions>
+       <language>de</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</lastModificationDateTime>
+      <properties>
+       <uriPathSegment __type="string">notfound</uriPathSegment>
+       <metaRobotsNoindex __type="boolean">1</metaRobotsNoindex>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Not Found</title>
+      </properties>
+     </variant>
+     <variant sortingIndex="1450" workspace="live" nodeType="Neos.Demo:Document.NotFoundPage" version="1" removed="" hidden="1" hiddenInIndex="1">
+      <dimensions>
+       <language>da</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</lastModificationDateTime>
+      <properties>
+       <uriPathSegment __type="string">notfound</uriPathSegment>
+       <metaRobotsNoindex __type="boolean">1</metaRobotsNoindex>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Not Found</title>
+      </properties>
+     </variant>
+     <variant sortingIndex="1350" workspace="live" nodeType="Neos.Demo:Document.NotFoundPage" version="1" removed="" hidden="1" hiddenInIndex="1">
+      <dimensions>
+       <language>lv</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</lastModificationDateTime>
+      <properties>
+       <uriPathSegment __type="string">notfound</uriPathSegment>
+       <metaRobotsNoindex __type="boolean">1</metaRobotsNoindex>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Not Found</title>
+      </properties>
+     </variant>
+     <variant sortingIndex="1150" workspace="live" nodeType="Neos.Demo:Document.NotFoundPage" version="1" removed="" hidden="1" hiddenInIndex="1">
+      <dimensions>
+       <language>nl</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</lastModificationDateTime>
+      <properties>
+       <uriPathSegment __type="string">notfound</uriPathSegment>
+       <metaRobotsNoindex __type="boolean">1</metaRobotsNoindex>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Not Found</title>
+      </properties>
+     </variant>
+     <variant sortingIndex="1050" workspace="live" nodeType="Neos.Demo:Document.NotFoundPage" version="1" removed="" hidden="1" hiddenInIndex="1">
+      <dimensions>
+       <language>fr</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</lastModificationDateTime>
+      <properties>
+       <uriPathSegment __type="string">notfound</uriPathSegment>
+       <metaRobotsNoindex __type="boolean">1</metaRobotsNoindex>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Not Found</title>
+      </properties>
+     </variant>
+     <variant sortingIndex="950" workspace="live" nodeType="Neos.Demo:Document.NotFoundPage" version="2" removed="" hidden="" hiddenInIndex="1">
+      <dimensions>
+       <language>en_US</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2019-03-22T17:38:22+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2019-03-22T17:38:22+00:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">notfound</uriPathSegment>
+       <metaRobotsNoindex __type="boolean">1</metaRobotsNoindex>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Not Found</title>
+      </properties>
+     </variant>
+     <node identifier="1f9645bb-53ba-ab52-43ef-e42e8dd57ff2" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Collection.Content.Main" version="1" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en_US</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</lastModificationDateTime>
+       <properties/>
+      </variant>
+      <variant sortingIndex="300" workspace="live" nodeType="Neos.Demo:Collection.Content.Main" version="1" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>fr</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</lastModificationDateTime>
+       <properties/>
+      </variant>
+      <variant sortingIndex="500" workspace="live" nodeType="Neos.Demo:Collection.Content.Main" version="1" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>nl</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</lastModificationDateTime>
+       <properties/>
+      </variant>
+      <variant sortingIndex="700" workspace="live" nodeType="Neos.Demo:Collection.Content.Main" version="1" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</lastModificationDateTime>
+       <properties/>
+      </variant>
+      <variant sortingIndex="900" workspace="live" nodeType="Neos.Demo:Collection.Content.Main" version="1" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>lv</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</lastModificationDateTime>
+       <properties/>
+      </variant>
+      <variant sortingIndex="1100" workspace="live" nodeType="Neos.Demo:Collection.Content.Main" version="1" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>da</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</lastModificationDateTime>
+       <properties/>
+      </variant>
+      <node identifier="25fbcc6a-27dd-4dc1-8495-8f0dcca3c6e2" nodeName="node-6ugkyqededea7">
+       <variant sortingIndex="150" workspace="live" nodeType="Neos.Demo:Content.Text" version="17" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en_US</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-03-22T17:39:20+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-03-22T17:44:35+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-03-22T17:44:34+00:00</lastPublicationDateTime>
+        <properties>
+         <text __type="string">&lt;p&gt;Neos allows you to modify the 404 - Not Found page just like any other editable page. By providing good content here you can help visitors that followed outdated links or mistyped a url.&lt;/p&gt;</text>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="c141039c-55e3-4a15-a5dd-aed4504374f3" nodeName="node-o07zq1gg92un6">
+       <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Content.Headline" version="14" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>en_US</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:43+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-03-22T17:44:35+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-03-22T17:44:34+00:00</lastPublicationDateTime>
+        <properties>
+         <title __type="string">&lt;h1&gt;Editable &quot;404 - Not Found&quot; Page!&lt;/h1&gt;</title>
+        </properties>
+       </variant>
+      </node>
+     </node>
+     <node identifier="a0709c7d-2398-d98e-421d-060afb023669" nodeName="teaser">
+      <variant sortingIndex="200" workspace="live" nodeType="Neos.Demo:Collection.Content.Teaser" version="1" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en_US</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</lastModificationDateTime>
+       <properties/>
+      </variant>
+      <variant sortingIndex="600" workspace="live" nodeType="Neos.Demo:Collection.Content.Teaser" version="1" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>nl</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</lastModificationDateTime>
+       <properties/>
+      </variant>
+      <variant sortingIndex="800" workspace="live" nodeType="Neos.Demo:Collection.Content.Teaser" version="1" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</lastModificationDateTime>
+       <properties/>
+      </variant>
+      <variant sortingIndex="1000" workspace="live" nodeType="Neos.Demo:Collection.Content.Teaser" version="1" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>lv</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</lastModificationDateTime>
+       <properties/>
+      </variant>
+      <variant sortingIndex="1200" workspace="live" nodeType="Neos.Demo:Collection.Content.Teaser" version="1" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>da</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</lastModificationDateTime>
+       <properties/>
+      </variant>
+      <variant sortingIndex="400" workspace="live" nodeType="Neos.Demo:Collection.Content.Teaser" version="1" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>fr</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-22T17:37:13+00:00</lastModificationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
     <node identifier="7005c7cf-4d19-ce36-0873-476b6cadb71a" nodeName="teaser">
+     <variant sortingIndex="250" workspace="live" nodeType="Neos.Demo:Collection.Content.Teaser" version="14" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>en_US</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2019-02-04T21:20:09+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-23T20:44:40+00:00</lastPublicationDateTime>
+      <properties/>
+     </variant>
      <variant sortingIndex="250" workspace="live" nodeType="Neos.Demo:Collection.Content.Teaser" version="5" removed="" hidden="" hiddenInIndex="">
       <dimensions>
        <language>nl</language>
@@ -3027,16 +3236,6 @@
       <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+00:00</lastPublicationDateTime>
       <properties/>
      </variant>
-     <variant sortingIndex="250" workspace="live" nodeType="Neos.Demo:Collection.Content.Teaser" version="14" removed="" hidden="" hiddenInIndex="">
-      <dimensions>
-       <language>en_US</language>
-      </dimensions>
-      <accessRoles __type="array"/>
-      <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+00:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2019-02-04T21:20:09+00:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-23T20:44:40+00:00</lastPublicationDateTime>
-      <properties/>
-     </variant>
      <node identifier="d17caff2-f50c-d30b-b735-9b9216de02e9" nodeName="node52697bdfee199">
       <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Content.Headline" version="6" removed="" hidden="" hiddenInIndex="">
        <dimensions>
@@ -3048,19 +3247,6 @@
        <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:16:17+00:00</lastPublicationDateTime>
        <properties>
         <title __type="string">&lt;h1&gt;Maak ❤️ inhoud.&lt;/h1&gt;
-</title>
-       </properties>
-      </variant>
-      <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Content.Headline" version="5" removed="" hidden="" hiddenInIndex="">
-       <dimensions>
-        <language>de</language>
-       </dimensions>
-       <accessRoles __type="array"/>
-       <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+00:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2019-02-25T17:10:06+00:00</lastModificationDateTime>
-       <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:12:52+00:00</lastPublicationDateTime>
-       <properties>
-        <title __type="string">&lt;h1&gt;Schreibe ❤️ Texte.&lt;/h1&gt;
 </title>
        </properties>
       </variant>
@@ -3077,16 +3263,16 @@
 </title>
        </properties>
       </variant>
-      <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Content.Headline" version="6" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Content.Headline" version="5" removed="" hidden="" hiddenInIndex="">
        <dimensions>
-        <language>en_US</language>
+        <language>de</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+00:00</creationDateTime>
        <lastModificationDateTime __type="object" __classname="DateTime">2019-02-25T17:10:06+00:00</lastModificationDateTime>
-       <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T20:57:58+00:00</lastPublicationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T21:12:52+00:00</lastPublicationDateTime>
        <properties>
-        <title __type="string">&lt;h1&gt;Create ❤️ content.&lt;/h1&gt;
+        <title __type="string">&lt;h1&gt;Schreibe ❤️ Texte.&lt;/h1&gt;
 </title>
        </properties>
       </variant>
@@ -3117,6 +3303,19 @@
       </variant>
       <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Content.Headline" version="6" removed="" hidden="" hiddenInIndex="">
        <dimensions>
+        <language>en_US</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-02-25T17:10:06+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2018-04-20T20:57:58+00:00</lastPublicationDateTime>
+       <properties>
+        <title __type="string">&lt;h1&gt;Create ❤️ content.&lt;/h1&gt;
+</title>
+       </properties>
+      </variant>
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Demo:Content.Headline" version="6" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
         <language>fr</language>
        </dimensions>
        <accessRoles __type="array"/>
@@ -3142,7 +3341,6 @@ Créer un contenu de ❤️.&lt;/h1&gt;
       <properties>
        <title __type="string">The book</title>
        <uriPathSegment __type="string">the-book</uriPathSegment>
-       <canonicalLink __type="string"></canonicalLink>
       </properties>
      </variant>
      <node identifier="6db34628-60c7-4c9a-f6dd-54742816039e" nodeName="i-down-the-rabbit-hole">
@@ -3165,7 +3363,6 @@ Créer un contenu de ❤️.&lt;/h1&gt;
                                     Alice, &quot;without pictures or conversations?&quot;</chapterDescription>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">i-down-the-rabbit-hole</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="fe7ddf70-2154-4ab5-88d7-05e36b34a101" nodeName="main">
@@ -3375,7 +3572,6 @@ Créer un contenu de ❤️.&lt;/h1&gt;
                                 </chapterDescription>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">ii-the-pool-of-tears</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="2c24f687-4c79-d528-ca21-bb750bd395b1" nodeName="main">
@@ -3581,7 +3777,6 @@ Créer un contenu de ❤️.&lt;/h1&gt;
         <chapterImage __type="object" __identifier="310de05c-479b-e16b-dd8e-db1fd4f56d28" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;310de05c-479b-e16b-dd8e-db1fd4f56d28&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a798ee5d-e75b-3595-578e-056439e1695e&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;flying.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;ae939055564831ad71ed68284e3b6725f29c1045&quot;,&quot;hash&quot;:&quot;ae939055564831ad71ed68284e3b6725f29c1045&quot;,&quot;__identity&quot;:&quot;14148fb6-5234-fd4c-6e88-26a186e0b2f3&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:373,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;7ddb3ccf-d729-4f45-a8de-d831a30d079d&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:373,&quot;__identity&quot;:&quot;5bb1ce8c-2786-43ff-bc56-f16d71e13e2a&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">iii-a-caucus-race-and-a-long-tale</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="2172ea72-aec1-8b88-3e6f-5e9e981a9044" nodeName="main">
@@ -3778,7 +3973,6 @@ Créer un contenu de ❤️.&lt;/h1&gt;
         <chapterImage __type="object" __identifier="a24bdc6d-424b-8639-0c30-817b4ce29a64" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;a24bdc6d-424b-8639-0c30-817b4ce29a64&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a0178d77-5c04-b829-a613-c9d2b6fb92cb&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alicecards.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;0d5f77e755f664b393b62ca51a056c06f05e83c6&quot;,&quot;hash&quot;:&quot;0d5f77e755f664b393b62ca51a056c06f05e83c6&quot;,&quot;__identity&quot;:&quot;9a2cd8b5-c9ad-7bad-e483-25fb73a4c562&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:356,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;4894620e-6c87-415d-89f8-531e83ac42c6&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:356,&quot;__identity&quot;:&quot;260abe50-b110-49cf-9eb4-7499d6a5ce3a&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">iv-the-rabbit-sends-in-a-little-bill</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="8017119c-aa10-53e0-cfde-4939b7ca6290" nodeName="main">
@@ -4028,7 +4222,6 @@ Créer un contenu de ❤️.&lt;/h1&gt;
                                 </chapterDescription>
         <chapterImage __type="object" __identifier="b23052f2-bd58-854c-b613-ea76f7d4a401" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;b23052f2-bd58-854c-b613-ea76f7d4a401&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;0bf33a79-3ee6-cdb2-94f1-95bc46beee0b&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;birds.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;dd224dfed85490797a385d01ccd91053670d00ce&quot;,&quot;hash&quot;:&quot;dd224dfed85490797a385d01ccd91053670d00ce&quot;,&quot;__identity&quot;:&quot;4d119e80-eda4-320e-eb34-300ddc5624e4&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:372,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;06530afa-5f45-4d6f-b4ed-7b11efaa8049&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:372,&quot;__identity&quot;:&quot;802de51a-6a80-4376-9310-dc60792ebe58&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">ix-the-mock-turtle-s-story</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="823f4a1e-02af-d241-e7d7-8fa069bf1c38" nodeName="main">
@@ -4373,7 +4566,6 @@ Créer un contenu de ❤️.&lt;/h1&gt;
         <chapterImage __type="object" __identifier="cddbc6af-2f54-2d43-d0af-810cbd3c8bee" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;cddbc6af-2f54-2d43-d0af-810cbd3c8bee&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;d08de093-dc6b-55ea-adfc-d894ef87b0e0&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;smoking.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;930b8279a553880c49d7a73765778907ce392db5&quot;,&quot;hash&quot;:&quot;930b8279a553880c49d7a73765778907ce392db5&quot;,&quot;__identity&quot;:&quot;57786bc3-d0e5-a181-c9c6-9675ff39cf91&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:337,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;08637455-b667-4131-8f4c-e2fe8aa429b2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:499,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:337,&quot;__identity&quot;:&quot;1414cdc9-1af0-4ca9-85d4-25a781d31eb5&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">v-advice-from-a-caterpillar</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="dbe8c26b-00e4-8770-25ba-4d2e32a60548" nodeName="main">
@@ -4611,7 +4803,6 @@ Créer un contenu de ❤️.&lt;/h1&gt;
         <chapterImage __type="object" __identifier="cc7a55e2-70f2-4a73-4856-07e9db6734b1" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;cc7a55e2-70f2-4a73-4856-07e9db6734b1&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;65e3383c-173c-2f2e-1afc-259ba2bd3ca6&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;piggy.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;85e5d4f8e34ad7dad4a34ba7af45d5584ea3db14&quot;,&quot;hash&quot;:&quot;85e5d4f8e34ad7dad4a34ba7af45d5584ea3db14&quot;,&quot;__identity&quot;:&quot;4bf693a4-93fe-5cba-4518-4e9897147fe4&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:357,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;a694af64-5e2b-46f1-8e66-f5b8ca538cbe&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:357,&quot;__identity&quot;:&quot;256a5a69-1784-44bd-8d67-a0b27a31196c&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">vi-pig-and-pepper</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="a89dd146-4065-db6e-ed5a-0a021ef7ea4e" nodeName="main">
@@ -4872,7 +5063,6 @@ Créer un contenu de ❤️.&lt;/h1&gt;
         <chapterImage __type="object" __identifier="f3d0fcad-03e0-c72a-4df2-258f7cfff348" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f3d0fcad-03e0-c72a-4df2-258f7cfff348&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;6bc60415-af45-b2f4-af11-73b32e4532e9&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;teatime.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;b1b18947b2bebc44c6bbab46922f2a3856f5e33b&quot;,&quot;hash&quot;:&quot;b1b18947b2bebc44c6bbab46922f2a3856f5e33b&quot;,&quot;__identity&quot;:&quot;f814656c-6e15-5ee6-1059-9735fb760816&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;31682d7d-257b-49aa-8a0c-fdbb877b7e5a&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:359,&quot;__identity&quot;:&quot;b38e679d-9e23-4fa8-867b-3248234d98b0&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">vii-a-mad-tea-party</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="46744843-8510-e5f1-29b0-87091c143472" nodeName="main">
@@ -5127,7 +5317,6 @@ Créer un contenu de ❤️.&lt;/h1&gt;
                                     that!&quot;</chapterDescription>
         <chapterImage __type="object" __identifier="1fd75420-91e2-70b2-4f7e-20d0f5900b3c" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;1fd75420-91e2-70b2-4f7e-20d0f5900b3c&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;8244a1f2-5474-c7c2-0bcb-2c1f53080103&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;queen.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;7861cd0cc497284869845b442b46ee25224c4685&quot;,&quot;hash&quot;:&quot;7861cd0cc497284869845b442b46ee25224c4685&quot;,&quot;__identity&quot;:&quot;24f8cd98-708a-c664-a08b-73914f39025e&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:364,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;51ffde31-582f-4b5b-a61a-72b936a1ed96&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:364,&quot;__identity&quot;:&quot;23a15751-b13f-4b90-be9a-322a2f2c1719&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">viii-the-queen-s-croquet-ground</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="9902048e-11ee-2da2-0664-88ac4c51449a" nodeName="main">
@@ -5385,7 +5574,6 @@ Créer un contenu de ❤️.&lt;/h1&gt;
                                 </chapterDescription>
         <chapterImage __type="object" __identifier="24ba5744-8475-c519-9dcb-e6ef740bc0d3" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;24ba5744-8475-c519-9dcb-e6ef740bc0d3&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;17602a91-ba2b-c40d-e9fe-10f92ea6bd8b&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;cooking.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;7d0265f93741373a60457ba586f6d7a8c0865a09&quot;,&quot;hash&quot;:&quot;7d0265f93741373a60457ba586f6d7a8c0865a09&quot;,&quot;__identity&quot;:&quot;8eb0ba0c-bd0b-7da2-0f4d-77149299c2fe&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:384,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;c57bce5c-5857-4cab-a243-1b2f1eb35994&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:384,&quot;__identity&quot;:&quot;1fca80fa-c0e3-4fca-9c20-86f0299f7e62&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">x-the-lobster-quadrille</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="95237f9c-6e93-f8df-6a4c-94d9e381fe9d" nodeName="main">
@@ -5615,7 +5803,6 @@ Créer un contenu de ❤️.&lt;/h1&gt;
                                 </chapterDescription>
         <chapterImage __type="object" __identifier="f16e4228-5361-cccd-8c12-4733331e65eb" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f16e4228-5361-cccd-8c12-4733331e65eb&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;b674d9cd-4a7f-a33a-be12-9a5efdaedb98&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;roses.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;ee94449bfc53d38d8e286879f38365ef3e9ca215&quot;,&quot;hash&quot;:&quot;ee94449bfc53d38d8e286879f38365ef3e9ca215&quot;,&quot;__identity&quot;:&quot;2710ab07-64b4-242a-a897-4fc10f83d4bd&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:364,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;d23f37da-528e-4a2a-a722-26dd163c599e&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:364,&quot;__identity&quot;:&quot;c98a6b99-ad08-4b79-923f-ecf9f8f5171e&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">xi-who-stole-the-tarts</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="34faf051-f12e-ba21-8b53-6f057962db09" nodeName="main">
@@ -5828,7 +6015,6 @@ Créer un contenu de ❤️.&lt;/h1&gt;
                                 </chapterDescription>
         <chapterImage __type="object" __identifier="e4abd49b-c36b-7892-d0f4-a8441b799b85" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;e4abd49b-c36b-7892-d0f4-a8441b799b85&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;10b114c2-7fc3-6e3a-ab8f-0a85a0854143&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;people.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;504f2f8ad00d1a9ef228b288ca42107905c9e22e&quot;,&quot;hash&quot;:&quot;504f2f8ad00d1a9ef228b288ca42107905c9e22e&quot;,&quot;__identity&quot;:&quot;bf2bdc0d-64fc-ec23-84c4-7db35456dc2b&quot;}},&quot;adjustments&quot;:[{&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;4fa70f76-989c-42f8-a27c-22329fc632bd&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:359,&quot;__identity&quot;:&quot;78c18816-508e-46b8-9f40-ffe3139a2ef0&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">xii-alice-s-evidence</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
        </properties>
       </variant>
       <node identifier="7627aa5c-8bf0-62c1-49d1-96e7698b4dbb" nodeName="main">
@@ -6052,7 +6238,6 @@ Créer un contenu de ❤️.&lt;/h1&gt;
       <properties>
        <title __type="string">Try me</title>
        <uriPathSegment __type="string">try-me</uriPathSegment>
-       <canonicalLink __type="string"></canonicalLink>
       </properties>
      </variant>
      <node identifier="ae7708fa-385d-6a5b-8fe1-6d3e3687fa6d" nodeName="main">

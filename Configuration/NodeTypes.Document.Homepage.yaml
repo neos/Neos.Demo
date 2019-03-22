@@ -10,6 +10,8 @@
   superTypes:
     'Neos.Demo:Document.Page': true
   childNodes:
+    'notfound':
+      type: 'Neos.Demo:Document.NotFoundPage'
     'footer':
       position: 'end'
       type: 'Neos.Demo:Collection.Content.Footer'
