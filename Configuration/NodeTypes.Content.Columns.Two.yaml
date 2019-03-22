@@ -8,6 +8,6 @@
     position: 400
   childNodes:
     column0:
-      type: 'Neos.Neos:ContentCollection'
+      type: 'Neos.Demo:Collection.Content.Column'
     column1:
-      type: 'Neos.Neos:ContentCollection'
+      type: 'Neos.Demo:Collection.Content.Column'
