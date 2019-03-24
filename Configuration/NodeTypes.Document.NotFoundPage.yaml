@@ -8,7 +8,10 @@
     label: i18n
     icon: 'times'
 
-  # No further sub documents are allowed here
+    # hide in node creation dialogue
+    group: ~
+
+  # no further sub documents are allowed here
   constraints:
     nodeTypes:
       'Neos.Neos:Document': false
