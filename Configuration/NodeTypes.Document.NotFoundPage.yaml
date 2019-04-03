@@ -8,9 +8,6 @@
     label: i18n
     icon: 'times'
 
-    # hide in node creation dialogue
-    group: ~
-
   # no further sub documents are allowed here
   constraints:
     nodeTypes:
