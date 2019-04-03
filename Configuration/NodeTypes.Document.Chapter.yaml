@@ -4,6 +4,10 @@
 'Neos.Demo:Document.Chapter':
   superTypes:
     'Neos.Neos:Document': true
+  constraints:
+    nodeTypes:
+      'Neos.Demo:Document.Homepage': false
+      'Neos.Demo:Document.NotFoundPage': false
   childNodes:
     'main':
       type: 'Neos.Demo:Collection.Content.Main'
