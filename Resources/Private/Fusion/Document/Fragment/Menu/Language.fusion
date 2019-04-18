@@ -8,14 +8,15 @@ prototype(Neos.Demo:Document.Fragment.Menu.Language) < prototype(Neos.Fusion:Com
             <div>
                 <Neos.Fusion:Loop items={props.menuItems}>
                     <span @if.isCurrent={item.state == 'current'} class="language-menu-full">{item.label}</span>
-                    <span @if.isCurrent={item.state == 'current'} class="language-menu-short" title="{item.label}">{item.preset.uriSegment}</span>
+                    <span @if.isCurrent={item.state == 'current'} class="language-menu-short" title={item.label}>{item.label}</span>
                 </Neos.Fusion:Loop>
                 <span>▼</span>
             </div>
             <ul>
                 <Neos.Fusion:Loop items={props.menuItems}>
                     <li>
-                        <Neos.Neos:NodeLink node={item.node}>{item.label}</Neos.Neos:NodeLink>
+                        <Neos.Neos:NodeLink node={item.node} @if.hasNode={item.node}>{item.label}</Neos.Neos:NodeLink>
+                        <span @if.hasNoNode={!item.node}>{item.label}</span>
                     </li>
                 </Neos.Fusion:Loop>
             </ul>
