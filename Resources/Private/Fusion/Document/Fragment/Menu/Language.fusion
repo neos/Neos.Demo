@@ -8,15 +8,21 @@ prototype(Neos.Demo:Document.Fragment.Menu.Language) < prototype(Neos.Fusion:Com
             <div>
                 <Neos.Fusion:Loop items={props.menuItems}>
                     <span @if.isCurrent={item.state == 'current'} class="language-menu-full">{item.label}</span>
-                    <span @if.isCurrent={item.state == 'current'} class="language-menu-short" title={item.label}>{item.label}</span>
+                    <span @if.isCurrent={item.state == 'current'} class="language-menu-short" title={item.label}>{Configuration.setting('Neos.ContentRepository.contentDimensions.language.presets.' + item.targetDimensions.language.value + '.uriSegment')}</span>
                 </Neos.Fusion:Loop>
                 <span>▼</span>
             </div>
             <ul>
                 <Neos.Fusion:Loop items={props.menuItems}>
-                    <li>
-                        <Neos.Neos:NodeLink node={item.node} @if.hasNode={item.node}>{item.label}</Neos.Neos:NodeLink>
-                        <span @if.hasNoNode={!item.node}>{item.label}</span>
+                    <li @if.hasNode={item.node}>
+                        <Neos.Neos:NodeLink node={item.node} >
+                            <span class="language-menu-full">{item.label}</span>
+                            <span class="language-menu-short" title={item.label}>{Configuration.setting('Neos.ContentRepository.contentDimensions.language.presets.' + item.targetDimensions.language.value + '.uriSegment')}</span>
+                        </Neos.Neos:NodeLink>
+                    </li>
+                    <li @if.hasNoNode={!item.node}>
+                        <span class="language-menu-full">{item.label}</span>
+                        <span class="language-menu-short" title={item.label}>{Configuration.setting('Neos.ContentRepository.contentDimensions.language.presets.' + item.targetDimensions.language.value + '.uriSegment')}</span>
                     </li>
                 </Neos.Fusion:Loop>
             </ul>
