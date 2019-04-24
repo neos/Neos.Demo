@@ -39,10 +39,10 @@ prototype(Neos.Demo:Document.Fragment.Menu.Main) < prototype(Neos.Fusion:Compone
                         <li class={item.state}>
                             <Neos.Neos:NodeLink node={item.node}>{item.label}</Neos.Neos:NodeLink>
                             <ul
-                                @if.has={item.children && (item.state != 'normal')}
+                                @if.has={item.subItems && (item.state != 'normal')}
                                 class="second-level-sub-navigation nav nav-justified visible-xs"
                             >
-                                <Neos.Fusion:Loop items={item.children} itemName="item">
+                                <Neos.Fusion:Loop items={item.subItems} itemName="item">
                                     <li class={item.state}>
                                         <Neos.Neos:NodeLink node={item.node}>{item.label}</Neos.Neos:NodeLink>
                                     </li>
