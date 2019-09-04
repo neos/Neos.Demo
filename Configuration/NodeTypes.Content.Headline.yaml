@@ -11,7 +11,8 @@
   properties:
     'title':
       ui:
-        aloha:
-          'format':
-            'h4': true
-            'h5': true
+        inline:
+          editorOptions:
+            formatting:
+              h4: true
+              h5: true

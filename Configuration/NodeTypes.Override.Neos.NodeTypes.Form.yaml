@@ -2,7 +2,7 @@
 # Adjust the "Form" node type:
 # Remove the empty select option and register the "contact-form"-Form
 #
-'Neos.NodeTypes:Form':
+'Neos.NodeTypes.Form:Form':
   properties:
     'formIdentifier':
       ui:
