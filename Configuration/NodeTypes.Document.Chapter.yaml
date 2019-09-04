@@ -49,25 +49,19 @@
         inlineEditable: true
         inspector:
           group: ~
-        aloha:
-          placeholder: 'Enter title here'
-          'format':
-            'b': true
-            'i': true
-            'u': true
-            'sub': true
-            'sup': true
-            'p': false
-            'h1': false
-            'h2': false
-            'h3': false
-            'pre': false
-            'removeFormat': false
-          'table': []
-          'list': []
-          'link':
-            'a': true
-          'alignment': []
-          'formatlesspaste':
-            'button': false
-            'formatlessPasteOption': true
+        inline:
+          editorOptions:
+            formatting:
+              sub: true
+              sup: true
+              p: false
+              h1: false
+              h2: false
+              h3: false
+              pre: false
+              removeFormat: false
+              a: true
+              strong: true
+              em: true
+              underline: true
+            placeholder: 'Enter title here'
