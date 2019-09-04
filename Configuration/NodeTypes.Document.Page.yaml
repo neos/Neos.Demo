@@ -17,6 +17,9 @@
           icon: 'icon-image'
   constraints:
     nodeTypes:
+      # Neos.NodeTypes is deprecated and we prevent adding documents from this package
+      'Neos.NodeTypes:Page': false
+      # Homepage and NotFoundPage are not meant to be added by editors
       'Neos.Demo:Document.Homepage': false
       'Neos.Demo:Document.NotFoundPage': false
   childNodes:
