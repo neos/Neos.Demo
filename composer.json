@@ -14,7 +14,7 @@
         "neos/nodetypes-form": "*",
         "neos/nodetypes-html": "*",
         "neos/nodetypes-navigation": "*",
-        "flowpack/neos-frontendlogin": "^3.0.3"
+        "flowpack/neos-frontendlogin": "^4.0"
     },
     "autoload": {
         "psr-4": {
