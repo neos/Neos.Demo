@@ -3337,23 +3337,18 @@ Créer un contenu de ❤️.&lt;/h1&gt;
       </properties>
      </variant>
      <node identifier="6db34628-60c7-4c9a-f6dd-54742816039e" nodeName="i-down-the-rabbit-hole">
-      <variant sortingIndex="300" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="12" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="300" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="13" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+00:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:22:05+00:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastPublicationDateTime>
        <properties>
         <title __type="string">I. Down the Rabbit-hole</title>
         <chapterImage __type="object" __identifier="201b68e6-9f60-f34b-0083-b1bf219b08f3" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;201b68e6-9f60-f34b-0083-b1bf219b08f3&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;08aaeb84-dccc-6af4-0086-93499de4e1bc&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-1.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f&quot;,&quot;hash&quot;:&quot;30d0d71c6e7e4dd53636a8b9a5d5c8fd9b73f10f&quot;,&quot;__identity&quot;:&quot;3640b4ba-a68b-7e2f-4199-d4e3a2b684c3&quot;}},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;5c9dc19e-444a-40a9-951b-efe4da954c7b&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:359,&quot;__identity&quot;:&quot;6dd606ba-5f82-448b-b4d7-5e92ce0bfa52&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
-        <chapterDescription __type="string">Alice was beginning to get very tired of sitting by
-                                    her sister on the bank, and
-                                    of having nothing to do: once or twice she had peeped into the book her sister was
-                                    reading, but
-                                    it had no pictures or conversations in it, &quot;and what is the use of a book,&quot;
-                                    thought
-                                    Alice, &quot;without pictures or conversations?&quot;</chapterDescription>
+        <chapterDescription __type="string">Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, &quot;and what is the use of a book,&quot; thought Alice, &quot;without pictures or conversations?&quot;</chapterDescription>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">i-down-the-rabbit-hole</uriPathSegment>
        </properties>
@@ -3545,24 +3540,18 @@ Créer un contenu de ❤️.&lt;/h1&gt;
       </node>
      </node>
      <node identifier="7697f046-e514-7bdc-7bda-95ab8d05eeaf" nodeName="ii-the-pool-of-tears">
-      <variant sortingIndex="400" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="12" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="400" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="13" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+00:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:22:05+00:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastPublicationDateTime>
        <properties>
         <title __type="string">II. The Pool of Tears</title>
         <chapterImage __type="object" __identifier="1d0d4e41-bc2a-2cad-c495-21a46ffecdb8" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;1d0d4e41-bc2a-2cad-c495-21a46ffecdb8&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;11d3aded-fb1a-70e7-1412-0b465b11fcd8&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alice-2.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;0641ce611d5171161c853f70ff1ae0f33dd4dc24&quot;,&quot;hash&quot;:&quot;0641ce611d5171161c853f70ff1ae0f33dd4dc24&quot;,&quot;__identity&quot;:&quot;1eb38dbc-0580-1280-f293-4749dc1fffe5&quot;}},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:353,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;1cbeae78-f349-4d9f-b9c6-b5447caa465f&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:353,&quot;__identity&quot;:&quot;08bf35d7-9dac-46ef-815c-381e2eb88608&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
-        <chapterDescription __type="string">Curiouser and curiouser!&quot; cried Alice (she was
-                                    so much surprised, that for
-                                    a moment she quite forgot how to speak good English); &quot;now I'm opening out like
-                                    the largest
-                                    telescope that ever was! Good-bye, feet!&quot; (for when she looked down at her
-                                    feet, they
-                                    seemed to be almost out of sight, they were getting so far off).
-                                </chapterDescription>
+        <chapterDescription __type="string">Curiouser and curiouser!&quot; cried Alice (she was so much surprised, that for a moment she quite forgot how to speak good English); &quot;now I'm opening out like the largest telescope that ever was! Good-bye, feet!&quot; (for when she looked down at her feet, they seemed to be almost out of sight, they were getting so far off). </chapterDescription>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">ii-the-pool-of-tears</uriPathSegment>
        </properties>
@@ -3752,21 +3741,17 @@ Créer un contenu de ❤️.&lt;/h1&gt;
       </node>
      </node>
      <node identifier="8eb77a5d-de92-1889-2eff-8eaf2a1d0bfe" nodeName="iii-a-caucus-race-and-a-long-tale">
-      <variant sortingIndex="500" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="12" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="500" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="13" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+00:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:22:05+00:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastPublicationDateTime>
        <properties>
         <title __type="string">III. A Caucus-race and a Long Tale</title>
-        <chapterDescription __type="string">They were indeed a queer-looking party that
-                                    assembled on the bank—the birds with
-                                    draggled feathers, the animals with their fur clinging close to them, and all
-                                    dripping wet,
-                                    cross, and uncomfortable.
-                                </chapterDescription>
+        <chapterDescription __type="string">They were indeed a queer-looking party that assembled on the bank—the birds with draggled feathers, the animals with their fur clinging close to them, and all dripping wet, cross, and uncomfortable. </chapterDescription>
         <chapterImage __type="object" __identifier="310de05c-479b-e16b-dd8e-db1fd4f56d28" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;310de05c-479b-e16b-dd8e-db1fd4f56d28&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a798ee5d-e75b-3595-578e-056439e1695e&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;flying.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;ae939055564831ad71ed68284e3b6725f29c1045&quot;,&quot;hash&quot;:&quot;ae939055564831ad71ed68284e3b6725f29c1045&quot;,&quot;__identity&quot;:&quot;14148fb6-5234-fd4c-6e88-26a186e0b2f3&quot;}},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:373,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;05236a56-f765-4b9d-8659-3207ae7b1a5f&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:373,&quot;__identity&quot;:&quot;bfca44a0-e08a-4900-8202-8d97929aa906&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">iii-a-caucus-race-and-a-long-tale</uriPathSegment>
@@ -3946,23 +3931,17 @@ Créer un contenu de ❤️.&lt;/h1&gt;
       </node>
      </node>
      <node identifier="a8c18020-0a89-168c-2703-680fa7795114" nodeName="iv-the-rabbit-sends-in-a-little-bill">
-      <variant sortingIndex="600" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="12" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="600" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="13" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+00:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:22:05+00:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastPublicationDateTime>
        <properties>
         <title __type="string">IV. The Rabbit sends in a Little Bill</title>
-        <chapterDescription __type="string">It was the White Rabbit, trotting slowly back again,
-                                    and looking anxiously about
-                                    as it went, as if it had lost something; and she heard it muttering to itself,
-                                    &quot;The
-                                    Duchess! The Duchess! Oh my dear paws! Oh my fur and whiskers! She'll get me
-                                    executed, as sure
-                                    as ferrets are ferrets!
-                                </chapterDescription>
+        <chapterDescription __type="string">It was the White Rabbit, trotting slowly back again, and looking anxiously about as it went, as if it had lost something; and she heard it muttering to itself, &quot;The Duchess! The Duchess! Oh my dear paws! Oh my fur and whiskers! She'll get me executed, as sure as ferrets are ferrets! </chapterDescription>
         <chapterImage __type="object" __identifier="a24bdc6d-424b-8639-0c30-817b4ce29a64" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;a24bdc6d-424b-8639-0c30-817b4ce29a64&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;a0178d77-5c04-b829-a613-c9d2b6fb92cb&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;alicecards.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;0d5f77e755f664b393b62ca51a056c06f05e83c6&quot;,&quot;hash&quot;:&quot;0d5f77e755f664b393b62ca51a056c06f05e83c6&quot;,&quot;__identity&quot;:&quot;9a2cd8b5-c9ad-7bad-e483-25fb73a4c562&quot;}},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:356,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;2fb751a4-b6d3-47d7-8b51-5f97fb31b8ea&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:356,&quot;__identity&quot;:&quot;3a7956cf-9311-4492-8746-25ea8acb471b&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">iv-the-rabbit-sends-in-a-little-bill</uriPathSegment>
@@ -4197,22 +4176,18 @@ Créer un contenu de ❤️.&lt;/h1&gt;
       </node>
      </node>
      <node identifier="50d505ea-6703-d959-550a-4a7f879607f9" nodeName="ix-the-mock-turtle-s-story">
-      <variant sortingIndex="1100" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="12" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="1100" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="13" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:12+00:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:22:05+00:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastPublicationDateTime>
        <properties>
         <layout __type="string">chapter</layout>
         <title __type="string">IX. The Mock Turtle's Story</title>
-        <chapterDescription __type="string">You can't think how glad I am to see you again, you
-                                    dear old thing!&quot; said the Duchess, as she tucked her arm affectionately into
-                                    Alice's, and they walked off together. Alice was very glad to find her in such a
-                                    pleasant temper, and thought to herself that perhaps it was only the pepper that had
-                                    made her so savage when they met in the kitchen.
-                                </chapterDescription>
+        <chapterDescription __type="string">You can't think how glad I am to see you again, you dear old thing!&quot; said the Duchess, as she tucked her arm affectionately into Alice's, and they walked off together. Alice was very glad to find her in such a pleasant temper, and thought to herself that perhaps it was only the pepper that had made her so savage when they met in the kitchen. </chapterDescription>
         <chapterImage __type="object" __identifier="b23052f2-bd58-854c-b613-ea76f7d4a401" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;b23052f2-bd58-854c-b613-ea76f7d4a401&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;0bf33a79-3ee6-cdb2-94f1-95bc46beee0b&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;birds.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;dd224dfed85490797a385d01ccd91053670d00ce&quot;,&quot;hash&quot;:&quot;dd224dfed85490797a385d01ccd91053670d00ce&quot;,&quot;__identity&quot;:&quot;4d119e80-eda4-320e-eb34-300ddc5624e4&quot;}},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:372,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;6f399f2f-814f-4dd4-8c89-25d3fa390ca6&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:372,&quot;__identity&quot;:&quot;70dfe5fb-50db-41e7-bd0c-ca737bd354bc&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">ix-the-mock-turtle-s-story</uriPathSegment>
        </properties>
@@ -4542,20 +4517,17 @@ Créer un contenu de ❤️.&lt;/h1&gt;
       </node>
      </node>
      <node identifier="a0d4a0f6-bb04-1805-6e43-c76a948383ed" nodeName="v-advice-from-a-caterpillar">
-      <variant sortingIndex="700" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="12" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="700" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="13" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:12+00:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:22:05+00:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastPublicationDateTime>
        <properties>
         <title __type="string">V. Advice from a Caterpillar</title>
-        <chapterDescription __type="string">The Caterpillar and Alice looked at each other for
-                                    some time in silence: at last
-                                    the Caterpillar took the hookah out of its mouth, and addressed her in a languid,
-                                    sleepy voice.
-                                </chapterDescription>
+        <chapterDescription __type="string">The Caterpillar and Alice looked at each other for some time in silence: at last the Caterpillar took the hookah out of its mouth, and addressed her in a languid, sleepy voice. </chapterDescription>
         <chapterImage __type="object" __identifier="cddbc6af-2f54-2d43-d0af-810cbd3c8bee" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;cddbc6af-2f54-2d43-d0af-810cbd3c8bee&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;d08de093-dc6b-55ea-adfc-d894ef87b0e0&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;smoking.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;930b8279a553880c49d7a73765778907ce392db5&quot;,&quot;hash&quot;:&quot;930b8279a553880c49d7a73765778907ce392db5&quot;,&quot;__identity&quot;:&quot;57786bc3-d0e5-a181-c9c6-9675ff39cf91&quot;}},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:337,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;e5029c18-dd33-4be4-9863-d4841e378ef3&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:499,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:337,&quot;__identity&quot;:&quot;25796839-68a5-4443-9ba7-d7af802dac60&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">v-advice-from-a-caterpillar</uriPathSegment>
@@ -4776,23 +4748,17 @@ Créer un contenu de ❤️.&lt;/h1&gt;
       </node>
      </node>
      <node identifier="65179278-97cc-7794-4182-5a80ab6f1bc9" nodeName="vi-pig-and-pepper">
-      <variant sortingIndex="800" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="12" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="800" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="13" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:12+00:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:22:05+00:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastPublicationDateTime>
        <properties>
         <title __type="string">VI. Pig and Pepper</title>
-        <chapterDescription __type="string">For a minute or two she stood looking at the house,
-                                    and wondering what to do
-                                    next, when suddenly a footman in livery came running out of the wood—(she considered
-                                    him to be a
-                                    footman because he was in livery: otherwise, judging by his face only, she would
-                                    have called him
-                                    a fish)—and rapped loudly at the door with his knuckles.
-                                </chapterDescription>
+        <chapterDescription __type="string">For a minute or two she stood looking at the house, and wondering what to do next, when suddenly a footman in livery came running out of the wood—(she considered him to be a footman because he was in livery: otherwise, judging by his face only, she would have called him a fish)—and rapped loudly at the door with his knuckles. </chapterDescription>
         <chapterImage __type="object" __identifier="cc7a55e2-70f2-4a73-4856-07e9db6734b1" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;cc7a55e2-70f2-4a73-4856-07e9db6734b1&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;65e3383c-173c-2f2e-1afc-259ba2bd3ca6&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;piggy.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;85e5d4f8e34ad7dad4a34ba7af45d5584ea3db14&quot;,&quot;hash&quot;:&quot;85e5d4f8e34ad7dad4a34ba7af45d5584ea3db14&quot;,&quot;__identity&quot;:&quot;4bf693a4-93fe-5cba-4518-4e9897147fe4&quot;}},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:357,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;298d5ea6-3695-4c49-b30b-213108a65798&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:357,&quot;__identity&quot;:&quot;b3365d5e-5c21-44a1-b9fd-dfd111501c1e&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">vi-pig-and-pepper</uriPathSegment>
@@ -5041,18 +5007,17 @@ Créer un contenu de ❤️.&lt;/h1&gt;
       </node>
      </node>
      <node identifier="8454cc34-70ea-bce5-1ce4-a8783333c159" nodeName="vii-a-mad-tea-party">
-      <variant sortingIndex="900" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="12" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="900" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="13" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:12+00:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:22:05+00:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastPublicationDateTime>
        <properties>
         <title __type="string">VII. A Mad Tea-party</title>
-        <chapterDescription __type="string">There was a table set out under a tree in front of
-                                    the house, and the March Hare and the Hatter were having tea at it.
-                                </chapterDescription>
+        <chapterDescription __type="string">There was a table set out under a tree in front of the house, and the March Hare and the Hatter were having tea at it. </chapterDescription>
         <chapterImage __type="object" __identifier="f3d0fcad-03e0-c72a-4df2-258f7cfff348" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f3d0fcad-03e0-c72a-4df2-258f7cfff348&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;6bc60415-af45-b2f4-af11-73b32e4532e9&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;teatime.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;b1b18947b2bebc44c6bbab46922f2a3856f5e33b&quot;,&quot;hash&quot;:&quot;b1b18947b2bebc44c6bbab46922f2a3856f5e33b&quot;,&quot;__identity&quot;:&quot;f814656c-6e15-5ee6-1059-9735fb760816&quot;}},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;bc851049-1f24-48af-91c7-21d567357ac7&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:359,&quot;__identity&quot;:&quot;b0207222-2f12-4d4b-8653-13ccbd4823b3&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <layout __type="string">chapter</layout>
         <uriPathSegment __type="string">vii-a-mad-tea-party</uriPathSegment>
@@ -5292,22 +5257,18 @@ Créer un contenu de ❤️.&lt;/h1&gt;
       </node>
      </node>
      <node identifier="1d776e0d-f564-6a8e-2918-b85602c3de9b" nodeName="viii-the-queen-s-croquet-ground">
-      <variant sortingIndex="1000" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="12" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="1000" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="13" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:12+00:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:22:05+00:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastPublicationDateTime>
        <properties>
         <layout __type="string">chapter</layout>
         <title __type="string">VIII. The Queen's Croquet-ground</title>
-        <chapterDescription __type="string">A large rose-tree stood near the entrance of the
-                                    garden: the roses growing on it were white, but there were three gardeners at it,
-                                    busily painting them red. Alice thought this a very curious thing, and she went
-                                    nearer to watch them, and just as she came up to them she heard one of them say
-                                    &quot;Look out now, Five! Don't go splashing paint over me like
-                                    that!&quot;</chapterDescription>
+        <chapterDescription __type="string">A large rose-tree stood near the entrance of the garden: the roses growing on it were white, but there were three gardeners at it, busily painting them red. Alice thought this a very curious thing, and she went nearer to watch them, and just as she came up to them she heard one of them say &quot;Look out now, Five! Don't go splashing paint over me like that!&quot;</chapterDescription>
         <chapterImage __type="object" __identifier="1fd75420-91e2-70b2-4f7e-20d0f5900b3c" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;1fd75420-91e2-70b2-4f7e-20d0f5900b3c&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;8244a1f2-5474-c7c2-0bcb-2c1f53080103&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;queen.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;7861cd0cc497284869845b442b46ee25224c4685&quot;,&quot;hash&quot;:&quot;7861cd0cc497284869845b442b46ee25224c4685&quot;,&quot;__identity&quot;:&quot;24f8cd98-708a-c664-a08b-73914f39025e&quot;}},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:364,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;2393b152-e094-40b6-8c0b-fc81cd277955&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:364,&quot;__identity&quot;:&quot;a5c6dccf-a3a3-4b6e-b956-ebe55c5c61ca&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">viii-the-queen-s-croquet-ground</uriPathSegment>
        </properties>
@@ -5550,21 +5511,18 @@ Créer un contenu de ❤️.&lt;/h1&gt;
       </node>
      </node>
      <node identifier="23f35ab0-0d82-21e7-0006-dd63c5b3dce8" nodeName="x-the-lobster-quadrille">
-      <variant sortingIndex="1200" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="12" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="1200" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="13" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:12+00:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:22:05+00:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastPublicationDateTime>
        <properties>
         <layout __type="string">chapter</layout>
         <title __type="string">X. The Lobster Quadrille</title>
-        <chapterDescription __type="string">The Mock Turtle sighed deeply, and drew the back of
-                                    one flapper across his eyes. He looked at Alice, and tried to speak, but, for a
-                                    minute or two, sobs choked his voice. &quot;Same as if he had a bone in his throat,&quot;
-                                    said the Gryphon: and it set to work shaking him and punching him in the back.
-                                </chapterDescription>
+        <chapterDescription __type="string">The Mock Turtle sighed deeply, and drew the back of one flapper across his eyes. He looked at Alice, and tried to speak, but, for a minute or two, sobs choked his voice. &quot;Same as if he had a bone in his throat,&quot; said the Gryphon: and it set to work shaking him and punching him in the back. </chapterDescription>
         <chapterImage __type="object" __identifier="24ba5744-8475-c519-9dcb-e6ef740bc0d3" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;24ba5744-8475-c519-9dcb-e6ef740bc0d3&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;17602a91-ba2b-c40d-e9fe-10f92ea6bd8b&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;cooking.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;7d0265f93741373a60457ba586f6d7a8c0865a09&quot;,&quot;hash&quot;:&quot;7d0265f93741373a60457ba586f6d7a8c0865a09&quot;,&quot;__identity&quot;:&quot;8eb0ba0c-bd0b-7da2-0f4d-77149299c2fe&quot;}},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:384,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;2d8b6bf3-b424-447f-9fdb-bc01b72274f2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:384,&quot;__identity&quot;:&quot;3fd13b3a-088c-487b-86b4-9a46c4948b22&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">x-the-lobster-quadrille</uriPathSegment>
        </properties>
@@ -5779,21 +5737,18 @@ Créer un contenu de ❤️.&lt;/h1&gt;
       </node>
      </node>
      <node identifier="e40275e7-109b-ba78-da74-0a71c10c2652" nodeName="xi-who-stole-the-tarts">
-      <variant sortingIndex="1300" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="12" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="1300" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="13" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:12+00:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:22:05+00:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:50+00:00</lastPublicationDateTime>
        <properties>
         <layout __type="string">chapter</layout>
         <title __type="string">XI. Who Stole the Tarts?</title>
-        <chapterDescription __type="string">The King and Queen of Hearts were seated on their
-                                    throne when they arrived, with a great crowd assembled about them—all sorts of
-                                    little birds and beasts, as well as the whole pack of cards: the Knave was standing
-                                    before them, in chains, with a soldier on each side to guard him;
-                                </chapterDescription>
+        <chapterDescription __type="string">The King and Queen of Hearts were seated on their throne when they arrived, with a great crowd assembled about them—all sorts of little birds and beasts, as well as the whole pack of cards: the Knave was standing before them, in chains, with a soldier on each side to guard him; </chapterDescription>
         <chapterImage __type="object" __identifier="f16e4228-5361-cccd-8c12-4733331e65eb" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f16e4228-5361-cccd-8c12-4733331e65eb&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;b674d9cd-4a7f-a33a-be12-9a5efdaedb98&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;roses.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;ee94449bfc53d38d8e286879f38365ef3e9ca215&quot;,&quot;hash&quot;:&quot;ee94449bfc53d38d8e286879f38365ef3e9ca215&quot;,&quot;__identity&quot;:&quot;2710ab07-64b4-242a-a897-4fc10f83d4bd&quot;}},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:364,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;443ed21f-9867-40e5-929a-e7a0e3e5f517&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:364,&quot;__identity&quot;:&quot;d1dc1393-c957-42c3-a248-af5396b8e965&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">xi-who-stole-the-tarts</uriPathSegment>
        </properties>
@@ -5990,22 +5945,18 @@ Créer un contenu de ❤️.&lt;/h1&gt;
       </node>
      </node>
      <node identifier="f1fbb253-1851-805a-c2fa-f4692458faeb" nodeName="xii-alice-s-evidence">
-      <variant sortingIndex="1400" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="12" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="1400" workspace="live" nodeType="Neos.Demo:Document.Chapter" version="13" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:12+00:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:22:05+00:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:47+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2019-09-05T18:12:47+00:00</lastPublicationDateTime>
        <properties>
         <layout __type="string">chapter</layout>
         <title __type="string">XII. Alice's Evidence</title>
-        <chapterDescription __type="string">&quot;There!&quot; cried Alice, quite forgetting in
-                                    the flurry of the moment how large she had grown in the last few minutes, and she
-                                    jumped up in such a hurry that she tipped over the jury-box with the edge of her
-                                    skirt, upsetting all the jurymen on to the heads of the crowd below, and there they
-                                    lay sprawling about, ...
-                                </chapterDescription>
+        <chapterDescription __type="string">&quot;There!&quot; cried Alice, quite forgetting in the flurry of the moment how large she had grown in the last few minutes, and she jumped up in such a hurry that she tipped over the jury-box with the edge of her skirt, upsetting all the jurymen on to the heads of the crowd below, and there they lay sprawling about, ... </chapterDescription>
         <chapterImage __type="object" __identifier="e4abd49b-c36b-7892-d0f4-a8441b799b85" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;e4abd49b-c36b-7892-d0f4-a8441b799b85&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;10b114c2-7fc3-6e3a-ab8f-0a85a0854143&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;people.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;504f2f8ad00d1a9ef228b288ca42107905c9e22e&quot;,&quot;hash&quot;:&quot;504f2f8ad00d1a9ef228b288ca42107905c9e22e&quot;,&quot;__identity&quot;:&quot;bf2bdc0d-64fc-ec23-84c4-7db35456dc2b&quot;}},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:500,&quot;position&quot;:10,&quot;width&quot;:359,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;ce0322ab-c101-4336-b854-cc7e125c1b5d&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;},{&quot;allowUpScaling&quot;:false,&quot;height&quot;:500,&quot;maximumHeight&quot;:null,&quot;maximumWidth&quot;:null,&quot;minimumHeight&quot;:null,&quot;minimumWidth&quot;:null,&quot;position&quot;:20,&quot;ratioMode&quot;:&quot;&quot;,&quot;width&quot;:359,&quot;__identity&quot;:&quot;d2aa8275-e892-4791-bcc8-c5fcfdda91dc&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\ResizeImageAdjustment&quot;}]}</chapterImage>
         <uriPathSegment __type="string">xii-alice-s-evidence</uriPathSegment>
        </properties>
