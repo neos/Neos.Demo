@@ -17,8 +17,8 @@ prototype(Neos.Demo:Content.Fragment.Image.Figure) < prototype(Neos.Fusion:Compo
         }
     }
 
-    alt = ''
-    title = ''
+    alt = ${q(node).property('alternativeText')}
+    title = ${q(node).property('title')}
     class = null
 
     hasCaption = ${q(node).property('hasCaption')}
