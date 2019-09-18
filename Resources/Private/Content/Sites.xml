@@ -1034,7 +1034,7 @@
           <lastModificationDateTime __type="object" __classname="DateTime">2015-04-26T19:43:11+00:00</lastModificationDateTime>
           <properties>
            <text __type="string">&lt;p&gt;
-                                                &lt;/p&gt;&lt;p&gt;If Neos was a car, &lt;a href=&quot;http://flow.typo3.org&quot;&gt;Flow&lt;/a&gt;
+                                                &lt;/p&gt;&lt;p&gt;If Neos was a car, &lt;a href=&quot;https://flow.neos.io&quot;&gt;Flow&lt;/a&gt;
                                                 were its main engine. It powers many foundational features for building
                                                 extensible and adjustable web applications of today, such as Dependency
                                                 Injection, Aspect-Oriented Programming and a unique
@@ -2684,14 +2684,14 @@
                                         should only be visible to authenticated &quot;Frontend&quot; or &quot;Backend&quot;
                                         users according to the provided Policy.yaml:&lt;/p&gt;&lt;pre&gt;privilegeTargets:
                                         &lt;br/&gt;
-                                        'TYPO3\TYPO3CR\Security\Authorization\Privilege\Node\ReadNodePrivilege':&lt;br/&gt;
+                                        'Neos\ContentRepository\Security\Authorization\Privilege\Node\ReadNodePrivilege':&lt;br/&gt;
                                         'Neos.Demo:MembersArea':&lt;br/&gt; # fee74676-c42f-89da-208e-1741a66525d4 is
                                         the identifier of the &quot;Member area&quot; node.&lt;br/&gt; # You can also
                                         specify the nodepath, but that is not as reliable &lt;br/&gt; matcher:
                                         'isDescendantNodeOf(&quot;fee74676-c42f-89da-208e-1741a66525d4&quot;)'&lt;br/&gt;&lt;br/&gt;roles:&lt;br/&gt;
                                         'Flowpack.Neos.FrontendLogin:User':&lt;br/&gt; privileges:&lt;br/&gt; -&lt;br/&gt;
                                         privilegeTarget: 'Neos.Demo:MembersArea'&lt;br/&gt; permission: GRANT&lt;br/&gt;&lt;br/&gt;
-                                        'TYPO3.Neos:Editor':&lt;br/&gt; privileges:&lt;br/&gt; -&lt;br/&gt;
+                                        'Neos.Neos:Editor':&lt;br/&gt; privileges:&lt;br/&gt; -&lt;br/&gt;
                                         privilegeTarget: 'Neos.Demo:MembersArea'&lt;br/&gt; permission: GRANT&lt;br/&gt;&lt;/pre&gt;&lt;p&gt;If
                                         the session expires or you un-authenticate the current user using the &lt;a
                                         href=&quot;node://b6788725-56c8-4284-400f-fdb990297cfa&quot;
