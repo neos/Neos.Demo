@@ -27,7 +27,7 @@ prototype(Neos.Demo:Document.LandingPage) < prototype(Neos.Fusion:Component) {
 
         body >
         body = afx`
-             <div class="top-navigation-wrap">
+             <div class="top-navigation-wrap navbar-fixed-top">
                 <div class="container">
                     {props.languageMenu}
                     {props.mainMenu}

@@ -16,7 +16,7 @@ prototype(Neos.Demo:Document.Page) < prototype(Neos.Fusion:Component) {
     renderer = Neos.Demo:Document.Base {
         bodyClass = ${props.bodyClass}
         body = afx`
-            <div class="top-navigation-wrap">
+            <div class="top-navigation-wrap navbar-fixed-top">
                 <div class="container">
                     {props.languageMenu}
                     {props.mainMenu}
