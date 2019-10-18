@@ -1,15 +1,3 @@
-@mixin font {
-  font-family: "Work Sans Regular", system-ui;
-}
-
-@mixin font-bold {
-  font-family: "Work Sans Bold", system-ui;
-}
-
-@mixin font-bolditalic {
-  font-family: "Work Sans Italic", system-ui;
-}
-
 body {
   @include font;
   @media #{$screen-sm} {
