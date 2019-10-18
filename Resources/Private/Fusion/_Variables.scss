@@ -1,0 +1,27 @@
+// Color definitions from the styleguide
+$black: #000000;
+$white: #ffffff;
+$brandColorPrimary: #00adee;
+$brandColorSecondary: #26224c;
+
+$grayDarker: #141414;
+$grayDark: #222;
+$grayMedium: #323232;
+$grayLight: #3f3f3f;
+
+$textOnWhite: #252525;
+$textOnGray: #fff;
+$textSubtle: #5b5b5b;
+
+// Media queries
+$screen-sm: "only screen and (max-width: 767px)";
+
+@mixin font {
+  font-family: "Work Sans Regular", system-ui;
+  font-weight: 400;
+}
+
+@mixin font-bold {
+  font-family: "Work Sans Regular", system-ui;
+  font-weight: 400;
+}
