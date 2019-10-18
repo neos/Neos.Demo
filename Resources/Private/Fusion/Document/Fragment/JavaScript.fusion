@@ -5,6 +5,6 @@ prototype(Neos.Demo:Document.Fragment.JavaScripts) < prototype(Neos.Fusion:Compo
     renderer = afx`
         <Neos.Demo:Helper.ScriptTag path="resource://Neos.Twitter.Bootstrap/Public/Libraries/jQuery/jquery-1.10.1.min.js" />
         <Neos.Demo:Helper.ScriptTag path="resource://Neos.Twitter.Bootstrap/Public/3/js/bootstrap.min.js" />
-        <Neos.Demo:Helper.ScriptTag path="resource://Neos.Demo/Public/JavaScript/main.min.js" />
+        <Neos.Demo:Helper.ScriptTag path="resource://Neos.Demo/Public/Scripts/Main.js" />
     `
 }
