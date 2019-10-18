@@ -1,5 +1,5 @@
 /**
- * JavaScript Section for the Page, is included at the end of the body
+ * JavaScript of the page to be included in the header
  */
 prototype(Neos.Demo:Document.Fragment.JavaScripts) < prototype(Neos.Fusion:Component) {
     renderer = afx`

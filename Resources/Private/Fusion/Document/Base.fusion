@@ -11,13 +11,13 @@ prototype(Neos.Demo:Document.Base) < prototype(Neos.Fusion:Component) {
             stylesheets {
                 site = Neos.Demo:Document.Fragment.StyleSheets
             }
+            javascripts {
+                site = Neos.Demo:Document.Fragment.JavaScripts
+            }
             metadata = Neos.Demo:Document.Fragment.MetaData
         }
 
         bodyTag.attributes.class = ${props.bodyClass}
         body = ${props.body}
-
-        bodyScripts = Neos.Demo:Document.Fragment.JavaScripts
-        bodyScripts.@position = 'after body'
     }
 }
