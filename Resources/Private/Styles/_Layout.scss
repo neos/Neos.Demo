@@ -64,7 +64,6 @@ img {
   padding-top: 85px;
   padding-bottom: 115px;
   margin-bottom: 115px;
-  @font font-bold;
 
   &,
   h1 {
@@ -76,8 +75,7 @@ img {
     top: 0;
     left: 0;
     right: 0;
-    padding: 0;
-    padding-top: calc(85px);
+    padding: 85px 0 0;
     background-position: 50% 50%;
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -111,7 +109,7 @@ img {
 }
 
 .main-header.image + .container {
-  margin-top: calc(100vh);
+  margin-top: 100vh;
 }
 
 // Inline alignments
