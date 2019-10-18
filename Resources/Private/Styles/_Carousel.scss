@@ -1,48 +1,48 @@
 // Styling the carousel
 .carousel {
-	margin-bottom: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .carousel-indicators {
-	bottom: 0;
+  bottom: 0;
 
-	li {
-		width: 16px;
-		height: 16px;
-		margin: 0;
-		border-color: #ccc;
-		background-color: #888;
-		@include transition(box-shadow 0.1s);
-		@include box-shadow(0 1px 3px rgba(0, 0, 0, 0.2));
-	}
+  li {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    border-color: #ccc;
+    background-color: #888;
+    @include transition(box-shadow 0.1s);
+    @include box-shadow(0 1px 3px rgba(0, 0, 0, 0.2));
+  }
 
-	.active {
-		width: 16px;
-		height: 16px;
-		background-color: $brandColorPrimary;
-		@include box-shadow(0 1px 6px rgba(0, 0, 0, 0.5));
-	}
+  .active {
+    width: 16px;
+    height: 16px;
+    background-color: $brandColorPrimary;
+    @include box-shadow(0 1px 6px rgba(0, 0, 0, 0.5));
+  }
 
-	@media #{$screen-sm} {
-		display: none;
-	}
+  @media #{$screen-sm} {
+    display: none;
+  }
 }
 
 .carousel-control {
-	&.right,
-	&.left {
-		background: none;
-	}
+  &.right,
+  &.left {
+    background: none;
+  }
 
-	// Don't display carousel controls in Neos backend
-	.neos-backend & {
-		display: none;
-	}
+  // Don't display carousel controls in Neos backend
+  .neos-backend & {
+    display: none;
+  }
 }
 
 .carousel-caption {
-	@media #{$screen-sm} {
-		font-size: 15px;
-		padding-bottom: 0;
-	}
+  @media #{$screen-sm} {
+    font-size: 15px;
+    padding-bottom: 0;
+  }
 }

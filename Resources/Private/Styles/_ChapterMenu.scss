@@ -1,16 +1,15 @@
 .chapter-menu {
+  ul {
+    padding-left: 0;
+  }
 
-	ul {
-		padding-left: 0;
-	}
+  li {
+    margin-bottom: 10px;
+    list-style-type: none;
+    @include clearfix();
 
-	li {
-		margin-bottom: 10px;
-		list-style-type: none;
-		@include clearfix();
-
-		img {
-			margin: 0 15px 10px 0;
-		}
-	}
+    img {
+      margin: 0 15px 10px 0;
+    }
+  }
 }
