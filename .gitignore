@@ -1,3 +1,5 @@
-.sass-cache/
+.sass-cache
+.vscode
+.idea
 
 /Resources/Private/node_modules

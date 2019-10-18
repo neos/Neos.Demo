@@ -1,5 +1,5 @@
 {
-    "name": "neos/demo",
+    "name": "neos/test",
     "type": "neos-site",
     "description": "Site package for the Neos Demo Site",
     "license": [
