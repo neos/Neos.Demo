@@ -1,8 +1,8 @@
-import packages from './webpack.packages';
-import path from 'path';
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import GlobImporter from 'node-sass-glob-importer';
-import TerserPlugin from 'terser-webpack-plugin';
+const packages = require('./webpack.packages');
+const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const GlobImporter = require('node-sass-glob-importer');
+const TerserPlugin = require('terser-webpack-plugin');
 
 function config(
     {
@@ -11,15 +11,9 @@ function config(
         entryPath = 'Resources/Private/Fusion',
         publicPath = 'Resources/Public',
         hasSourceMap = true
-    }: {
-        packageName?: string;
-        filename?: string;
-        entryPath?: string;
-        publicPath?: string;
-        hasSourceMap?: boolean;
     },
-    argv: any
-): object {
+    argv
+) {
     const alias = {};
     const includePaths = [];
     const isInlineAsset = publicPath == 'Resources/Private/Templates/InlineAssets';
@@ -138,4 +132,4 @@ function config(
     };
 }
 
-export default (env, argv) => packages.map(setting => config(setting, argv));
+module.exports = (env, argv) => packages.map(setting => config(setting, argv));

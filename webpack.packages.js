@@ -10,4 +10,4 @@
 
 const packages = [{}];
 
-export default packages;
+module.exports = packages;
