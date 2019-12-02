@@ -34,18 +34,7 @@ module.exports = {
         'postcss-flexbugs-fixes': true,
         'postcss-calc': true,
         'postcss-round-subpixels': true,
-        // 'postcss-pxtorem': {
-        //     rootValue: 16,
-        //     unitPrecision: 5,
-        //     propList: ['font', 'font-size', 'line-height', 'letter-spacing'],
-        //     selectorBlackList: [],
-        //     replace: true,
-        //     mediaQuery: false,
-        //     minPixelValue: 0
-        // },
-        'css-mqpacker': {
-            sort: require('sort-css-media-queries')
-        },
+        'postcss-sort-media-queries': true,
         autoprefixer: {
             grid: true
         },
