@@ -28,7 +28,7 @@ function config(
         const distributionPath = path.resolve(__dirname, distFolder);
         const packagesPath = path.resolve(__dirname, 'Packages');
         alias[distFolder] = distributionPath;
-        alias['Packages'] = packagesPath;
+        alias.Packages = packagesPath;
         includePaths.push(distributionPath);
         includePaths.push(packagesPath);
     }
