@@ -106,9 +106,6 @@ function config(
                             }
                         },
                         {
-                            loader: 'cache-loader'
-                        },
-                        {
                             loader: 'sass-loader',
 
                             options: {
