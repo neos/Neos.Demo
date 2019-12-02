@@ -2,4 +2,4 @@
 .vscode
 .idea
 
-/Resources/Private/node_modules
+node_modules
