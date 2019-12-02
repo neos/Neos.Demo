@@ -14,6 +14,7 @@ We included a frontend build stack based on Node.js_, NVM_, webpack_ and Yarn_. 
 
 .. note:: If you want to have a build stack for a Mono-Repo you can take a look at our Neos.io_ package.
 
+
 Installation
 ------------
 
@@ -25,6 +26,19 @@ Make sure that Node.js_ and Yarn_ are installed. It is recommended to use NVM_ t
  nvm use
  # Install the package dependencies
  yarn
+
+
+Commands
+--------
+
+=================== ==================================================
+Command             Description
+=================== ==================================================
+``yarn build``      Builds all assets
+``yarn pipeline``   Runs install and then build all assets
+``yarn start``      Watches the sources and rebuilds assets on change
+=================== ==================================================
+
 
 Package management
 ------------------
