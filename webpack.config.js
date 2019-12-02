@@ -36,7 +36,7 @@ function config(
 
     return {
         mode: isProduction ? 'production' : 'development',
-        devtool: isProduction ? 'source-map' : 'nosources-source-map',
+        devtool: hasSourceMap ? isProduction ? 'source-map' : 'nosources-source-map' : false,
         stats: {
             modules: false,
             hash: false,
