@@ -95,6 +95,7 @@ function config(
                         {
                             loader: 'css-loader',
                             options: {
+                                url: false,
                                 sourceMap: isInlineAsset ? false : hasSourceMap,
                                 importLoaders: 2
                             }
