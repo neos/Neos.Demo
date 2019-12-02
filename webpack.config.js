@@ -6,7 +6,6 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 function config(
     {
-        packageName = null,
         filename = 'Main.js',
         entryPath = 'Resources/Private/Fusion',
         publicPath = 'Resources/Public',
@@ -14,29 +13,15 @@ function config(
     },
     argv
 ) {
-    const alias = {};
-    const includePaths = [];
+    const includePaths = ['node_modules'];
     const isInlineAsset = publicPath == 'Resources/Private/Templates/InlineAssets';
     const baseFilename = filename.substring(0, filename.lastIndexOf('.'));
     const isProduction = argv.mode == 'production';
-    const distFolder = packageName ? 'DistributionPackages' : '';
     hasSourceMap = isInlineAsset ? false : hasSourceMap;
-    packageName = packageName || '';
-
-    if (packageName) {
-        // We are in a monorepo
-        const distributionPath = path.resolve(__dirname, distFolder);
-        const packagesPath = path.resolve(__dirname, 'Packages');
-        alias[distFolder] = distributionPath;
-        alias.Packages = packagesPath;
-        includePaths.push(distributionPath);
-        includePaths.push(packagesPath);
-    }
-    includePaths.push('node_modules');
 
     return {
         mode: isProduction ? 'production' : 'development',
-        devtool: hasSourceMap ? isProduction ? 'source-map' : 'nosources-source-map' : false,
+        devtool: hasSourceMap ? (isProduction ? 'source-map' : 'nosources-source-map') : false,
         stats: {
             modules: false,
             hash: false,
@@ -49,13 +34,13 @@ function config(
         },
         performance: { hints: false },
         entry: {
-            [path.join(packageName, entryPath, filename)]: './' + path.join(packageName, entryPath, filename)
+            [path.join(entryPath, filename)]: './' + path.join(entryPath, filename)
         },
         output: {
             devtoolModuleFilenameTemplate: isProduction
                 ? 'webpack://[namespace]/[resource-path]?[loaders]'
                 : 'file://[absolute-resource-path]?[loaders]',
-            path: path.resolve(__dirname, distFolder, packageName, publicPath),
+            path: path.resolve(__dirname, publicPath),
             filename: path.join(isInlineAsset ? '' : 'Scripts', `${baseFilename}.js`)
         },
         optimization: isProduction
@@ -74,7 +59,7 @@ function config(
                 filename: path.join(isInlineAsset ? '' : 'Styles', `${baseFilename}.css`)
             })
         ],
-        context: path.resolve(__dirname, distFolder),
+        context: path.resolve(__dirname),
         module: {
             rules: [
                 {
@@ -123,9 +108,7 @@ function config(
             ]
         },
         resolve: {
-            extensions: ['*', '.js', '.jsx', '.ts', '.tsx', '.scss'],
-            // absolute paths for JS and SCSS related files
-            alias: alias
+            extensions: ['*', '.js', '.jsx', '.ts', '.tsx', '.scss']
         }
     };
 }
