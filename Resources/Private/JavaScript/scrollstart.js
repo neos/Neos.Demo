@@ -20,72 +20,66 @@
  * 		});
  *
  */
-(function ($){
-  var
-    ns		= (new Date).getTime()
-    , special	= $.event.special
-    , dispatch	= $.event.handle || $.event.dispatch
+(function($) {
+    var ns = new Date().getTime(),
+        special = $.event.special,
+        dispatch = $.event.handle || $.event.dispatch,
+        scroll = 'scroll',
+        scrollStart = scroll + 'start',
+        scrollEnd = scroll + 'end',
+        nsScrollStart = scroll + '.' + scrollStart + ns,
+        nsScrollEnd = scroll + '.' + scrollEnd + ns;
+    special.scrollstart = {
+        setup: function() {
+            var pid,
+                handler = function(evt /**$.Event*/) {
+                    if (pid == null) {
+                        evt.type = scrollStart;
+                        dispatch.apply(this, arguments);
+                    } else {
+                        clearTimeout(pid);
+                    }
 
-    , scroll		= 'scroll'
-    , scrollStart	= scroll + 'start'
-    , scrollEnd		= scroll + 'end'
-    , nsScrollStart	= scroll +'.'+ scrollStart + ns
-    , nsScrollEnd	= scroll +'.'+ scrollEnd + ns
-    ;
+                    pid = setTimeout(function() {
+                        pid = null;
+                    }, special.scrollend.delay);
+                };
 
-  special.scrollstart = {
-    setup: function (){
-      var pid, handler = function (evt/**$.Event*/){
-        if( pid == null ){
-          evt.type = scrollStart;
-          dispatch.apply(this, arguments);
+            $(this).bind(nsScrollStart, handler);
+        },
+
+        teardown: function() {
+            $(this).unbind(nsScrollStart);
         }
-        else {
-          clearTimeout(pid);
+    };
+
+    special.scrollend = {
+        delay: 300,
+
+        setup: function() {
+            var pid,
+                handler = function(evt /**$.Event*/) {
+                    var _this = this,
+                        args = arguments;
+
+                    clearTimeout(pid);
+                    pid = setTimeout(function() {
+                        evt.type = scrollEnd;
+                        dispatch.apply(_this, args);
+                    }, special.scrollend.delay);
+                };
+
+            $(this).bind(nsScrollEnd, handler);
+        },
+
+        teardown: function() {
+            $(this).unbind(nsScrollEnd);
         }
+    };
 
-        pid = setTimeout(function(){
-          pid = null;
-        }, special.scrollend.delay);
-
-      };
-
-      $(this).bind(nsScrollStart, handler);
-    },
-
-    teardown: function (){
-      $(this).unbind(nsScrollStart);
-    }
-  };
-
-  special.scrollend = {
-    delay: 300,
-
-    setup: function (){
-      var pid, handler = function (evt/**$.Event*/){
-        var _this = this, args = arguments;
-
-        clearTimeout(pid);
-        pid = setTimeout(function(){
-          evt.type = scrollEnd;
-          dispatch.apply(_this, args);
-        }, special.scrollend.delay);
-
-      };
-
-      $(this).bind(nsScrollEnd, handler);
-
-    },
-
-    teardown: function (){
-      $(this).unbind(nsScrollEnd);
-    }
-  };
-
-
-  $.isScrolled = false;
-  $(window).bind(scrollStart+' '+scrollEnd, function (evt/**Event*/){
-    $.isScrolled = (evt.type == scrollStart);
-    $('body')[$.isScrolled ? 'addClass' : 'removeClass']('is-scrolled');
-  });
+    $.isScrolled = false;
+    $(window).bind(scrollStart + ' ' + scrollEnd, function(evt /**Event*/) {
+        $.isScrolled = evt.type == scrollStart;
+        $('body')[$.isScrolled ? 'addClass' : 'removeClass']('is-scrolled');
+    });
 })(jQuery);

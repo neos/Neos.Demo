@@ -2,6 +2,8 @@ prototype(Neos.Demo:Helper.StyleTag) < prototype(Neos.Fusion:Component) {
     media = null
     path = null
 
+    @if.hasPath = ${this.path}
+
     renderer = Neos.Fusion:Tag {
         tagName = 'link'
         attributes.rel = 'stylesheet'

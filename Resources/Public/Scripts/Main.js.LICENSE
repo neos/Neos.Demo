@@ -1,0 +1,22 @@
+/**
+ * jQuery extension, add support `scrollstart` and `scrollend` events.
+ *
+ * @author	RubaXa	<trash@rubaxa.org>
+ * @github	https://gist.github.com/RubaXa/5568964
+ * @license	MIT
+ *
+ *
+ * @settings
+ * 		$.special.scrollend.delay = 300; // default ms
+ *
+ * @flags
+ * 		$.isScrolled; // boolean
+ *
+ * @binding
+ * 		$(window).bind('scrollstart scrollend', function (evt){
+ * 			if( evt.type == 'scrollstart' ){
+ * 				// logic
+ * 			}
+ * 		});
+ *
+ */

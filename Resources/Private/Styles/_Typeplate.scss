@@ -1,26 +1,12 @@
 /*!
- *
-.||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||.
-
-	.                                      '||            .
-  .||.  .... ... ... ...    ....  ... ...   ||   ....   .||.    ....
-   ||    '|.  |   ||'  || .|...||  ||'  ||  ||  '' .||   ||   .|...||
-   ||     '|.|    ||    | ||       ||    |  ||  .|' ||   ||   ||
-   '|.'    '|     ||...'   '|...'  ||...'  .||. '|..'|'  '|.'  '|...'
-		.. |      ||               ||
-		 ''      ''''             ''''      A Typographic Starter Kit
-
-  URL ........... http://typeplate.com
-  VERSION ....... 1.1.1
-  Github ........ https://github.com/typeplate/typeplate.github.io
-  AUTHORS ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
-  LICENSE ....... Creative Commmons Attribution 3.0
-  LICENSE URL ... http://creativecommons.org/licenses/by/3.0
-
- .||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||.
- *
- */
-
+TYPEPLATE
+URL ........... http://typeplate.com
+VERSION ....... 1.1.4
+Github ........ https://github.com/typeplate/bower
+AUTHORS ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
+LICENSE ....... Creative Commmons Attribution 3.0 (http://creativecommons.org/licenses/by/3.0)
+LICENSE URL ... https://github.com/typeplate/bower/blob/master/license.txt
+*/
 
 
 // .x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x //
@@ -42,8 +28,20 @@ $font-weight: normal !default;
 $line-height: 1.65 !default;
 $font-size: 112.5 !default; // percentage value (16 * 112.5% = 18px)
 $font-base: 16 * ($font-size/100) !default; // converts our percentage to a pixel value
-$custom-font-family: false !default; // Custom font-face stack, if set will be added to the $font-family
+$custom-font-family: false !default; // Custom font-face stack, if set will be added to the $base-font-family
 $measure: $font-base * $line-height;
+
+
+// $Variable $Paragraphs
+// -------------------------------------//
+
+// Text Indentation Value
+$indent-val: 1.5em !default;
+
+// Paragraph Styling Boolean
+// 'false' - no vertical whitespace between subsequent paragraphs.
+// 'true' - vertical whitespace between subsequent paragraphs.
+$paragraph-vertical-whitespace: false !default;
 
 
 // $Variable $Small-Print
@@ -96,12 +94,6 @@ $zeta: 18 !default; // 18 = 18 × 1
 // -------------------------------------//
 
 $type-scale-unit-value: rem !default;
-
-
-// $Variable $Text-Indentation
-// -------------------------------------//
-
-$indent-val: 1.5em !default;
 
 
 // $Variable $Pull-Quotes
@@ -210,16 +202,25 @@ $dropcap-bg: transparent !default;
 // divide a given font-size by base font-size & return a relative value
 
 @function context-calc($scale, $base, $value) {
-	@return ($scale/$base)#{$value};
+	@return #{$scale/$base}#{$value};
 }
 
 
 // $Function $Measure-Margin
 // -------------------------------------//
-// divide 1 unit of measure by given font-size & return a relative em value
+// divide 1 unit of measure by given font-size & return a relative value
 
 @function measure-margin($scale, $measure, $value) {
-	@return ($measure/$scale)#{$value};
+	$pixelValue: $measure/$scale;
+	$remValue: $pixelValue * $font-base;
+
+	@if $value == rem {
+		@return $pixelValue#{$value};
+	} @else if $value == em {
+		@return ($remValue/$scale)#{$value};
+	} @else {
+		@return $remValue#{$value};
+	}
 }
 
 
@@ -232,19 +233,29 @@ $dropcap-bg: transparent !default;
 
 // $Mixin $Type-Scale
 // -------------------------------------//
-// provides a pixel fallback if you decide
-// to use 'rems' as a unit over ems.
 
 @mixin type-scale($scale, $base, $value, $measure:"") {
-	// If 'rem' is used as a $value then provide a px fallback.
 	@if $value == rem {
 		font-size: $scale#{px};
+		font-size: context-calc($scale, $base, $value);
+	} @else if $value == em {
+		font-size: context-calc($scale, $base, $value);
+	} @else {
+		font-size: $scale#{px};
 	}
-	font-size: context-calc($scale, $base, $value);
+
 	@if $measure != "" {
-		margin-bottom: measure-margin($scale, $measure, $value);
+		@if $value == rem {
+			margin-bottom: measure-margin($scale, $measure, $value: px);
+			margin-bottom: measure-margin($scale, $measure, $value);
+		} @else if $value == em {
+			margin-bottom: measure-margin($scale, $measure, $value: em);
+		} @else {
+			margin-bottom: measure-margin($scale, $measure, $value);
+		}
 	}
 }
+
 
 // $Mixin $Hypens
 // -------------------------------------//
@@ -514,9 +525,9 @@ $dropcap-bg: transparent !default;
 
 html {
 	@if $custom-font-family {
-		font: $font-weight #{$font-size}%/#{$line-height} $custom-font-family, $font-family;
+		font: $font-weight #{$font-size + "%"}/#{$line-height} $custom-font-family, $font-family;
 	} @else {
-		font: $font-weight #{$font-size}%/#{$line-height} $font-family;
+		font: $font-weight #{$font-size + "%"}/#{$line-height} $font-family;
 	}
 }
 
@@ -542,6 +553,7 @@ small {
 // Extend included classes on any element of your
 // choosing for adjusting type based on the scale
 // provided.
+// Special Props to Harry Roberts for this trick.
 
 // For example:
 
@@ -611,10 +623,14 @@ h6 {
 
 p {
 	margin: auto auto $indent-val;
-	& + p {
-		//siblings indentation
-		text-indent: $indent-val;
-		margin-top: -$indent-val;
+
+	// Conditonal Check For Paragraph Styling
+	@if $paragraph-vertical-whitespace == false {
+		& + p {
+			//siblings indentation
+			text-indent: $indent-val;
+			margin-top: -$indent-val;
+		}
 	}
 }
 
