@@ -70,7 +70,7 @@ File Name                            Explantion
 `.yarnclean <.yarnclean>`_           Cleans and removes unnecessary files from package dependencies
 babel.config.js_                     This is the configuration file for Babel_. If you want to enable something like React_ TypeScript_ or Vue.js_, here is the right place to do this
 package.json_                        In this file all your dependencies from the build stack are stored
-webpack.config.js_                   This is the configuration forr webpack_
+webpack.config.js_                   This is the configuration for webpack_
 yarn.lock_                           This is the lockfile for Yarn_. This is needed to get consistent installs across machines
 ==================================== =========================================================================================
 
