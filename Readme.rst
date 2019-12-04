@@ -57,21 +57,21 @@ Explanation of the config files:
 --------------------------------
 
 ==================================== =========================================================================================
-File Name Explantion
+File Name                            Explantion
 ==================================== =========================================================================================
-`.editorconfig <.editorconfig>`_ EditorConfig_ helps maintain consistent coding styles
-`.eslintignore <.eslintignore>`_ These files get ignored from ESLint_
-`.eslintrc <.eslintrc>`_ The configuration file for ESLint_, a pluggable JavaScript linter
-`.jshintrc <.jshintrc>`_ The configuration for JSHint_, a static code analysis tool for JavaScript
-`.nvmrc <.nvmrc>`_ This file contains the required Node.js_ version and is used by NVM_
+`.editorconfig <.editorconfig>`_     EditorConfig_ helps maintain consistent coding styles
+`.eslintignore <.eslintignore>`_     These files get ignored from ESLint_
+`.eslintrc <.eslintrc>`_             The configuration file for ESLint_, a pluggable JavaScript linter
+`.jshintrc <.jshintrc>`_             The configuration for JSHint_, a static code analysis tool for JavaScript
+`.nvmrc <.nvmrc>`_                   This file contains the required Node.js_ version and is used by NVM_
 `.prettierignore <.prettierignore>`_ These files gets excluded from the Prettier_ code formatting
-`.prettierrc <.prettierrc>`_ This is the configuration file for Prettier_
-`.stylelintrc <.stylelintrc>`_ This is the configuration file for StyleLint_
-`.yarnclean <.yarnclean>`_ Cleans and removes unnecessary files from package dependencies
-babel.config.js_ This is the configuration file for Babel_. If you want to enable something like React_ TypeScript_ or Vue.js_, here is the right place to do this
-package.json_ In this file all your dependencies from the build stack are stored
-webpack.config.js_ This is the configuration forr webpack_
-yarn.lock_ This is the lockfile for Yarn_. This is needed to get consistent installs across machines
+`.prettierrc <.prettierrc>`_         This is the configuration file for Prettier_
+`.stylelintrc <.stylelintrc>`_       This is the configuration file for StyleLint_
+`.yarnclean <.yarnclean>`_           Cleans and removes unnecessary files from package dependencies
+babel.config.js_                     This is the configuration file for Babel_. If you want to enable something like React_ TypeScript_ or Vue.js_, here is the right place to do this
+package.json_                        In this file all your dependencies from the build stack are stored
+webpack.config.js_                   This is the configuration forr webpack_
+yarn.lock_                           This is the lockfile for Yarn_. This is needed to get consistent installs across machines
 ==================================== =========================================================================================
 
 .. _webpack: https://webpack.js.org/
