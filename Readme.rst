@@ -13,7 +13,7 @@ About the frontend build stack
 We included a frontend build stack based on Node.js_, NVM_, webpack_ and Yarn_. The webpack_ configuration includes Babel_, PostCSS_ and Sass_. 
 
     **Note:**
-    If you want to have a build stack for a Mono-Repo you can take a look at our Neos.io_ package.
+    If you want to have a build stack for a Mono-Repo, you can take a look at our Neos.io_ package.
 
 
 Installation
