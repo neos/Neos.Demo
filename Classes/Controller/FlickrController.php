@@ -32,7 +32,7 @@ class FlickrController extends ActionController
     protected $userStreamUriPattern;
 
     /**
-     * @return void
+     * @return void|string
      */
     public function tagStreamAction()
     {
@@ -47,8 +47,8 @@ class FlickrController extends ActionController
     }
 
     /**
-     * @param string $userId
-     * @return void
+     * @param string|null $userId
+     * @return void|string
      */
     public function userStreamAction($userId = null)
     {
@@ -63,7 +63,7 @@ class FlickrController extends ActionController
      * @param string $endpointUrl
      * @return array
      */
-    protected function fetchStream($endpointUrl)
+    protected function fetchStream(string $endpointUrl)
     {
         $stream = file_get_contents($endpointUrl);
         return json_decode($stream, true);

@@ -54,7 +54,7 @@ class RegistrationController extends ActionController
     protected $accountFactory;
 
     /**
-     * @return string
+     * @return void
      */
     public function indexAction()
     {
@@ -82,13 +82,14 @@ class RegistrationController extends ActionController
      *
      * @param Registration $registration
      * @return void
+     * @throws \Exception
      */
     public function createAccountAction(Registration $registration)
     {
         $accountIdentifier = $registration->getUsername();
         $existingAccount = $this->accountRepository->findActiveByAccountIdentifierAndAuthenticationProviderName($accountIdentifier, 'Neos.Neos:Backend');
         if ($existingAccount !== null) {
-            $this->addFlashMessage('An account with the username "%s" already exists.', 'Account already exists', Message::SEVERITY_ERROR, array($accountIdentifier));
+            $this->addFlashMessage('An account with the username "%s" already exists.', 'Account already exists', Message::SEVERITY_ERROR, [$accountIdentifier]);
             $this->forward('newAccount');
         }
 
@@ -98,7 +99,7 @@ class RegistrationController extends ActionController
         $uriBuilder->setRequest($this->request->getParentRequest());
         $redirectUri = $uriBuilder
             ->setCreateAbsoluteUri(true)
-            ->uriFor('index', array('username' => $accountIdentifier), 'Login', 'Neos.Neos');
+            ->uriFor('index', ['username' => $accountIdentifier], 'Login', 'Neos.Neos');
         $this->redirectToUri($redirectUri);
     }
 
@@ -109,11 +110,12 @@ class RegistrationController extends ActionController
      * @param string $password
      * @param string $firstName
      * @param string $lastName
-     * @return Account
+     * @return void
+     * @throws \Exception
      */
-    protected function createTemporaryAccount($accountIdentifier, $password, $firstName, $lastName)
+    protected function createTemporaryAccount($accountIdentifier, $password, $firstName, $lastName): void
     {
-        if (strlen($firstName) === 0 && strlen($lastName) === 0) {
+        if ($firstName === '' && $lastName === '') {
             $firstName = 'Santa';
             $lastName = 'Claus';
         }
@@ -123,7 +125,7 @@ class RegistrationController extends ActionController
         $user->getPreferences()->set('context.workspace', 'user-' . $accountIdentifier);
         $this->partyRepository->add($user);
 
-        $account = $this->accountFactory->createAccountWithPassword($accountIdentifier, $password, array('Neos.Neos:Editor'), 'Neos.Neos:Backend');
+        $account = $this->accountFactory->createAccountWithPassword($accountIdentifier, $password, ['Neos.Neos:Editor'], 'Neos.Neos:Backend');
         $this->partyService->assignAccountToParty($account, $user);
         $account->setExpirationDate(new \DateTime('+1 week'));
 
