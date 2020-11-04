@@ -5,7 +5,7 @@ print = Neos.Demo:Document.Page {
     prototype(Neos.Demo:Document.Fragment.StyleSheets) {
         @process.appendPrintCssWithMediaAll = afx`
             {value}
-            <Neos.Demo:Helper.StyleTag path="resource://Neos.Demo/Public/Styles/Print.css" media="all" />
+            <link rel="stylesheet" href={StaticResource.uri('Neos.Demo', 'Public/Styles/Print.css')} media="all" />
         `
     }
 }
