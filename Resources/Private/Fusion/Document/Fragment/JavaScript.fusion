@@ -3,8 +3,8 @@
  */
 prototype(Neos.Demo:Document.Fragment.JavaScripts) < prototype(Neos.Fusion:Component) {
     renderer = afx`
-        <script src={StaticResource.uri('Neos.Twitter.Bootstrap', 'Public/Libraries/jQuery/jquery-1.10.1.min.js')} />
-        <script src={StaticResource.uri('Neos.Twitter.Bootstrap', 'Public/3/js/bootstrap.min.js')} />
-        <script src={StaticResource.uri('Neos.Demo', 'Public/Scripts/Main.js')} />
+        <script defer src={StaticResource.uri('Neos.Twitter.Bootstrap', 'Public/Libraries/jQuery/jquery-1.10.1.min.js')}></script>
+        <script defer src={StaticResource.uri('Neos.Twitter.Bootstrap', 'Public/3/js/bootstrap.min.js')}></script>
+        <script defer src={StaticResource.uri('Neos.Demo', 'Public/Scripts/Main.js')}></script>
     `
 }
