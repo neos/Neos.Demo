@@ -6,7 +6,7 @@
     Neos.Neos:ContentCollection: true
   constraints:
     nodeTypes:
-      'Neos.Neos:Content': false
+      '*': false
       'Neos.Demo:Constraint.Content.Column': true
 
 ##
