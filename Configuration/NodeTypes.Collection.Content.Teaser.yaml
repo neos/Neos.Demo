@@ -6,7 +6,7 @@
     Neos.Neos:ContentCollection: true
   constraints:
     nodeTypes:
-      'Neos.Neos:Content': false
+      '*': false
       'Neos.Demo:Content.Headline': true
       'Neos.Demo:Content.Text': true
       'Neos.Demo:Content.Image': true
