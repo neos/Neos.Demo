@@ -1,0 +1,65 @@
+##
+# A very simple "contactForm" nodetype based on the Neos.Fusion.Form package
+#
+'Neos.Demo:Content.ContactForm':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.Demo:Constraint.Content.Column': true
+  ui:
+    label: i18n
+    icon: 'icon-envelope'
+    inspector:
+      groups:
+        email:
+          label: i18n
+          icon: envelope
+          tab: default
+        redirect:
+          label: i18n
+          icon: share
+          tab: default
+        message:
+          label: i18n
+          icon: comment
+          tab: default
+  properties:
+    emailName:
+      type: string
+      defaultValue: ''
+      ui:
+        label: i18n
+        inspector:
+          group: email
+    emailAddress:
+      type: string
+      defaultValue: ''
+      ui:
+        label: i18n
+        inspector:
+          group: email
+    emailSubject:
+      type: string
+      defaultValue: ''
+      ui:
+        label: i18n
+        inspector:
+          group: email
+    redirect:
+      type: reference
+      defaultValue: null
+      ui:
+        label: i18n
+        inspector:
+          group: redirect
+          editorOptions:
+            nodeTyps: ['Neos.Neos:Document']
+    message:
+      type: string
+      defaultValue: ''
+      ui:
+        label: i18n
+        inspector:
+          group: message
+          editor: 'Neos.Neos/Inspector/Editors/TextAreaEditor'
+          editorOptions:
+            rows: 7
