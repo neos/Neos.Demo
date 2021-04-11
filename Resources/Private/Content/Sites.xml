@@ -489,19 +489,21 @@
           <properties/>
          </variant>
          <node identifier="9317d743-dd4d-4456-bef3-545bfa90fb12" nodeName="node-pcfhmkpvkqjk2">
-          <variant sortingIndex="200" workspace="live" nodeType="Neos.Demo:Content.ContactForm" version="8" removed="" hidden="" hiddenInIndex="">
+          <variant sortingIndex="200" workspace="live" nodeType="Neos.Demo:Content.ContactForm" version="12" removed="" hidden="" hiddenInIndex="">
            <dimensions>
             <language>en_US</language>
            </dimensions>
            <accessRoles __type="array"/>
            <creationDateTime __type="object" __classname="DateTime">2021-04-08T20:54:32+00:00</creationDateTime>
-           <lastModificationDateTime __type="object" __classname="DateTime">2021-04-09T06:49:56+00:00</lastModificationDateTime>
-           <lastPublicationDateTime __type="object" __classname="DateTime">2021-04-09T06:49:56+00:00</lastPublicationDateTime>
+           <lastModificationDateTime __type="object" __classname="DateTime">2021-04-11T12:17:21+00:00</lastModificationDateTime>
+           <lastPublicationDateTime __type="object" __classname="DateTime">2021-04-11T12:17:21+00:00</lastPublicationDateTime>
            <properties>
-            <emailName __type="string"></emailName>
-            <emailAddress __type="string"></emailAddress>
-            <emailSubject __type="string"></emailSubject>
             <message __type="string">Thank you!</message>
+            <recipientName __type="string"></recipientName>
+            <recipientAddress __type="string"></recipientAddress>
+            <subject __type="string">Contact Form</subject>
+            <senderName __type="string"></senderName>
+            <senderAddress __type="string"></senderAddress>
            </properties>
           </variant>
          </node>
@@ -2778,16 +2780,17 @@
         </variant>
        </node>
        <node identifier="94f7cd09-1ed9-41e4-80d6-d5b8ef5ea6d7" nodeName="node-5678698bab786">
-        <variant sortingIndex="250" workspace="live" nodeType="Neos.Demo:Content.Image" version="7" removed="" hidden="" hiddenInIndex="">
+        <variant sortingIndex="250" workspace="live" nodeType="Neos.Demo:Content.Image" version="8" removed="" hidden="" hiddenInIndex="">
          <dimensions>
           <language>en_US</language>
          </dimensions>
          <accessRoles __type="array"/>
          <creationDateTime __type="object" __classname="DateTime">2015-12-21T22:05:15+00:00</creationDateTime>
-         <lastModificationDateTime __type="object" __classname="DateTime">2019-03-08T09:22:05+00:00</lastModificationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2021-04-11T12:13:43+00:00</lastModificationDateTime>
          <lastPublicationDateTime __type="object" __classname="DateTime">2015-12-21T22:05:26+00:00</lastPublicationDateTime>
          <properties>
           <image __type="object" __identifier="8058d91b-10d9-4813-b894-df8200c4d546" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;8058d91b-10d9-4813-b894-df8200c4d546&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;Travem\u00fcnde Kite Festival&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Drachenfest-Travemu\u0308nde.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;c828d0f88ce197be1aff7cc2e5e86b1244241ac6&quot;,&quot;hash&quot;:&quot;c828d0f88ce197be1aff7cc2e5e86b1244241ac6&quot;,&quot;__identity&quot;:&quot;96080ff0-b883-4886-afc3-7e2a4d7e95da&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]}</image>
+          <caption __type="string"></caption>
          </properties>
         </variant>
        </node>

@@ -20,16 +20,21 @@
             <trans-unit id="properties.redirect" xml:space="preserve">
 				<source>Redirect after submit</source>
 			</trans-unit>
-            <trans-unit id="properties.emailName" xml:space="preserve">
-				<source>Email recipient</source>
+            <trans-unit id="properties.recipientName" xml:space="preserve">
+				<source>Recipient name</source>
 			</trans-unit>
-            <trans-unit id="properties.emailAddress" xml:space="preserve">
-				<source>Email address</source>
+            <trans-unit id="properties.recipientAddress" xml:space="preserve">
+				<source>Recipient email address</source>
 			</trans-unit>
-            <trans-unit id="properties.emailSubject" xml:space="preserve">
-				<source>Email subject</source>
+            <trans-unit id="properties.senderName" xml:space="preserve">
+				<source>Sender name</source>
 			</trans-unit>
-
+            <trans-unit id="properties.senderAddress" xml:space="preserve">
+				<source>Sender email address</source>
+			</trans-unit>
+            <trans-unit id="properties.subject" xml:space="preserve">
+				<source>Subject</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

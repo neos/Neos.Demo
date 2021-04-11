@@ -45,14 +45,15 @@ prototype(Neos.Demo:Content.ContactForm) < prototype(Neos.Neos:ContentComponent)
             }
 
             email {
-                @if.hasRecipientMail = ${q(node).property('emailAddress')}
+                @if.has = ${q(node).property('subject') && q(node).property('recipientAddress') && q(node).property('senderAddress')}
                 type = 'Neos.Fusion.Form.Runtime:Email'
                 options {
-                    senderAddress = ${data.email}
-                    senderName = ${data.name}
-                    recipientName = ${q(node).property('emailName')}
-                    recipientAddress = ${q(node).property('emailAddress')}
-                    subject = ${q(node).property('emailSubject')}
+                    recipientName = ${q(node).property('recipientName')}
+                    recipientAddress = ${q(node).property('recipientAddress')}
+                    senderName = ${q(node).property('senderName')}
+                    senderAddress = ${q(node).property('senderAddress')}
+                    replyToAddress = ${data.email}
+                    subject = ${q(node).property('subject')}
                     html = afx`
                         <p>Message from {data.name}</p>
                         <p>{data.message}</p>
@@ -61,7 +62,7 @@ prototype(Neos.Demo:Content.ContactForm) < prototype(Neos.Neos:ContentComponent)
             }
 
             redirect {
-                @if.hasRedirectTarget = ${q(node).property('redirect')}
+                @if.has = ${q(node).property('redirect')}
                 type = 'Neos.Fusion.Form.Runtime:Redirect'
                 options.uri = Neos.Neos:NodeUri {
                     node = ${q(node).property('redirect')}

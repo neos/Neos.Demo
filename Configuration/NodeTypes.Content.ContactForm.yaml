@@ -23,21 +23,35 @@
           icon: comment
           tab: default
   properties:
-    emailName:
+    subject:
       type: string
       defaultValue: ''
       ui:
         label: i18n
         inspector:
           group: email
-    emailAddress:
+    recipientName:
       type: string
       defaultValue: ''
       ui:
         label: i18n
         inspector:
           group: email
-    emailSubject:
+    recipientAddress:
+      type: string
+      defaultValue: ''
+      ui:
+        label: i18n
+        inspector:
+          group: email
+    senderName:
+      type: string
+      defaultValue: ''
+      ui:
+        label: i18n
+        inspector:
+          group: email
+    senderAddress:
       type: string
       defaultValue: ''
       ui:
