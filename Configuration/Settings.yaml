@@ -4,23 +4,6 @@ Neos:
     flickr:
       tagStreamUriPattern: 'http://api.flickr.com/services/feeds/photos_public.gne?format=json&nojsoncallback=1&tags=%s'
       userStreamUriPattern: 'http://api.flickr.com/services/feeds/photos_public.gne?format=json&nojsoncallback=1&id=%s'
-  Form:
-    yamlPersistenceManager:
-      savePath: 'resource://Neos.Demo/Private/Form/'
-    presets:
-      bootstrap:
-        title: 'Twitter bootstrap'
-        parentPreset: default
-        formElementTypes:
-          'Neos.Form:Base':
-            renderingOptions:
-              layoutPathPattern: 'resource://Neos.Demo/Private/Templates/ContactForm/{@type}.html'
-          'Neos.Form:FormElement':
-            properties:
-              elementClassAttribute: form-control
-          'Neos.Form:MultiLineText':
-            properties:
-              elementClassAttribute: form-control
   Neos:
     userInterface:
       editPreviewModes:

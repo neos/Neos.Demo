@@ -1,0 +1,73 @@
+##
+# "ContactForm" element
+#
+prototype(Neos.Demo:Content.ContactForm) < prototype(Neos.Neos:ContentComponent) {
+
+    renderer = Neos.Fusion.Form:Runtime.RuntimeForm {
+        namespace = 'contact'
+        process {
+            content = afx`
+                <fieldset>
+                    <legend>Contact</legend>
+                    <Neos.Fusion.Form:FieldContainer label="Name" field.name="name" attributes.class="form-group clearfix">
+                        <div class="input">
+                            <Neos.Fusion.Form:Input attributes.class="form-control" />
+                        </div>
+                    </Neos.Fusion.Form:FieldContainer>
+                    <Neos.Fusion.Form:FieldContainer label="Email" field.name="email" attributes.class="form-group clearfix">
+                        <div class="input">
+                            <Neos.Fusion.Form:Input attributes.class="form-control" />
+                        </div>
+                    </Neos.Fusion.Form:FieldContainer>
+                    <Neos.Fusion.Form:FieldContainer label="Message" field.name="message" attributes.class="form-group clearfix">
+                        <div class="input">
+                            <Neos.Fusion.Form:Textarea attributes.class="form-control" />
+                        </div>
+                    </Neos.Fusion.Form:FieldContainer>
+                </fieldset>
+            `
+
+            footer = afx`
+                <button type="submit" class="btn btn-primary">Submit</button>
+            `
+
+            schema {
+                name = ${Form.Schema.string().isRequired()}
+                email = ${Form.Schema.string().isRequired().validator('EmailAddress')}
+                message = ${Form.Schema.string().isRequired()}
+            }
+        }
+
+        action {
+            message {
+                type = 'Neos.Fusion.Form.Runtime:Message'
+                options.message = ${q(node).property('message')}
+            }
+
+            email {
+                @if.has = ${q(node).property('subject') && q(node).property('recipientAddress') && q(node).property('senderAddress')}
+                type = 'Neos.Fusion.Form.Runtime:Email'
+                options {
+                    recipientName = ${q(node).property('recipientName')}
+                    recipientAddress = ${q(node).property('recipientAddress')}
+                    senderName = ${q(node).property('senderName')}
+                    senderAddress = ${q(node).property('senderAddress')}
+                    replyToAddress = ${data.email}
+                    subject = ${q(node).property('subject')}
+                    html = afx`
+                        <p>Message from {data.name}</p>
+                        <p>{data.message}</p>
+                    `
+                }
+            }
+
+            redirect {
+                @if.has = ${q(node).property('redirect')}
+                type = 'Neos.Fusion.Form.Runtime:Redirect'
+                options.uri = Neos.Neos:NodeUri {
+                    node = ${q(node).property('redirect')}
+                }
+            }
+        }
+    }
+}

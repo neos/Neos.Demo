@@ -1,7 +1,0 @@
-Hello,
-
-<f:for each="{form.formState.formValues}" as="value" key="label">
-	{label}: {value}
-</f:for>
-
-Thanks
