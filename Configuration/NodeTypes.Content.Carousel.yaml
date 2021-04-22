@@ -22,7 +22,3 @@
         * HTML
         * YouTube
         * References
-
-'Neos.Demo:Content.Carousel.Collection':
-  superTypes:
-    'Neos.Neos:Content': true
