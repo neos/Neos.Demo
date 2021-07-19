@@ -1142,7 +1142,7 @@
            <text __type="string">&lt;p&gt;
                                                 &lt;/p&gt;&lt;p&gt;Don't explain anymore how editing works. Just
                                                 discover it yourself! All contents are directly edited on the page, just
-                                                styled like the live content. Powered by Aloha Editor and Hallo Editor,
+                                                styled like the live content. Powered by CKEditor,
                                                 you'll directly see what you write, just as the end-user does.&lt;/p&gt;&lt;p&gt;Furthermore,
                                                 the editing is based on semantic technologies such as RDFa, which we
                                                 consume using VIE and CreateJS. This allows to expose the whole content
@@ -6321,7 +6321,7 @@ Créer un contenu de ❤️.&lt;/h1&gt;
           <lastModificationDateTime __type="object" __classname="DateTime">2019-02-25T17:10:06+00:00</lastModificationDateTime>
           <properties>
            <text __type="string">&lt;p&gt;Try out our latest development of the Neos
-                                                user interface. Get a first impression of Aloha, the content editor, and
+                                                user interface. Get a first impression of CKEditor, the content editor, and
                                                 try out the simple publishing mechanism based on workspaces.&lt;/p&gt;&lt;p&gt;The
                                                 registration form is also an example of a &quot;Plugin&quot;-element.&lt;/p&gt;</text>
           </properties>
