@@ -1,0 +1,8 @@
+##
+# Constraint-supertype that makes contents available in carousels
+#
+# this allows to define the usage on the content nodetypes and
+# is recommended if a collection contains many different types
+#
+'Neos.Demo:Constraint.Content.Carousel':
+  abstract: true

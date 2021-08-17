@@ -1,0 +1,10 @@
+##
+# A collection of contents that can be placed in a carousel
+#
+'Neos.Demo:Collection.Content.Carousel':
+  superTypes:
+    Neos.Neos:ContentCollection: true
+  constraints:
+    nodeTypes:
+      '*': false
+      'Neos.Demo:Constraint.Content.Carousel': true

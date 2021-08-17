@@ -1,0 +1,10 @@
+##
+# A collection of contents that can be placed in a column
+#
+'Neos.Demo:Collection.Content.Column':
+  superTypes:
+    Neos.Neos:ContentCollection: true
+  constraints:
+    nodeTypes:
+      '*': false
+      'Neos.Demo:Constraint.Content.Column': true
