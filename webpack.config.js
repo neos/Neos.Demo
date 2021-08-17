@@ -47,9 +47,7 @@ function config(
             ? {
                   minimizer: [
                       new TerserPlugin({
-                          cache: true,
-                          parallel: true,
-                          sourceMap: hasSourceMap
+                          parallel: true
                       })
                   ]
               }
