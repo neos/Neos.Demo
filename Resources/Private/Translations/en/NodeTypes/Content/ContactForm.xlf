@@ -9,7 +9,7 @@
 				<source>Message</source>
 			</trans-unit>
             <trans-unit id="groups.email" xml:space="preserve">
-				<source>EMail</source>
+				<source>Email</source>
 			</trans-unit>
             <trans-unit id="groups.redirect" xml:space="preserve">
 				<source>Redirect</source>
