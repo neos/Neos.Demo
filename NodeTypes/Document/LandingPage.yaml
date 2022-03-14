@@ -1,5 +1,5 @@
 ##
-# A new Document NodeType "Chapter"
+# A new Document NodeType "LandingPage"
 #
 'Neos.Demo:Document.LandingPage':
   ui:
