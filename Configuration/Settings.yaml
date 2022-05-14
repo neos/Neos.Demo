@@ -25,19 +25,27 @@ Neos:
         icon: icon-language
         defaultValue: de
         values:
-          de:
+          'en_US':
+            label: English (US)
+            uriSegment: en
+            specializations:
+              'en_UK':
+                label: English (UK)
+                uriSegment: uk
+
+          'de':
             label: German
             uriSegment: de
             specializations:
-              fr:
-                label: French
-                uriSegment: fr
               nl:
                 label: Dutch
                 uriSegment: nl
-              en:
-                label: English
-                uriSegment: en
-              es:
-                label: Spanish
-                uriSegment: es
+          'fr':
+            label: French
+            uriSegment: fr
+          'da':
+            label: Danish
+            uriSegment: da
+          'lv':
+            label: Latvian
+            uriSegment: lv
