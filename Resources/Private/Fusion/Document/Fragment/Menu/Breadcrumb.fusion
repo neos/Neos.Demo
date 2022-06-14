@@ -14,7 +14,7 @@ prototype(Neos.Demo:Document.Fragment.Menu.Breadcrumb) < prototype(Neos.Fusion:C
     @cache {
         mode = 'cached'
         entryIdentifier {
-            documentNode = ${documentNode}
+            documentNode = ${Neos.Caching.entryIdentifierForNode(documentNode)}
         }
         entryTags {
             1 = ${Neos.Caching.nodeTypeTag('Neos.Neos:Document', documentNode)}
