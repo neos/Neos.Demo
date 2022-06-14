@@ -23,7 +23,7 @@ Neos:
       language:
         label: 'Neos.Demo:Main:contentDimensions.language'
         icon: icon-language
-        defaultValue: de
+        defaultValue: en_US
         values:
           'en_US':
             label: English (US)
