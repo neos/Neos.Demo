@@ -6,9 +6,5 @@ prototype(Neos.Demo:Content.Headline) < prototype(Neos.Neos:ContentComponent) {
         property = 'title'
     }
 
-    renderer = afx`
-        <div>
-            {props.title}
-        </div>
-    `
+    renderer = afx`<Neos.Demo:Presentation.Atom.Headline {...props} />`
 }

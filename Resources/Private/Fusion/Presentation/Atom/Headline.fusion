@@ -1,0 +1,9 @@
+prototype(Neos.Demo:Presentation.Atom.Headline) < prototype(Neos.Neos:ContentComponent) {
+    title = ''
+
+    renderer = afx`
+       <div>
+          {props.title}
+        </div>
+    `
+}
