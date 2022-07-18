@@ -1,0 +1,19 @@
+prototype(Neos.Demo:Presentation.Block.TextWithImage) < prototype(Neos.Fusion:Component) {
+    src = null
+
+    alt = ''
+    title = ''
+    class = null
+
+    hasCaption = false
+    caption = ''
+    text = ''
+
+    renderer = afx`
+		<div >
+			<Neos.Demo:Presentation.Atom.Image {...props} />
+			{props.text}
+		</div>
+    `
+}
+

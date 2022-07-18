@@ -1,0 +1,20 @@
+prototype(Neos.Demo:Presentation.Atom.Image) < prototype(Neos.Neos:ContentComponent) {
+    src = null
+
+    alt = ''
+    title = ''
+    class = null
+
+    hasCaption = false
+    caption = ''
+
+    renderer = afx`
+        <figure class={props.class}>
+            <img src={props.src} title={props.title} alt={props.alt} />
+            <figcaption @if.has={props.hasCaption}>
+                {props.caption}
+            </figcaption>
+        </figure>
+    `
+}
+

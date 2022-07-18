@@ -1,0 +1,34 @@
+##
+# "Text" element
+#
+prototype(Neos.Demo:Content.TextWithImage) < prototype(Neos.Neos:ContentComponent) {
+    src = Neos.Fusion:Case {
+        asset {
+            condition = ${q(node).property('image')}
+            renderer = Neos.Neos:ImageUri {
+                asset = ${q(node).property('image')}
+            }
+        }
+        dummy {
+            condition = ${node.context.inBackend}
+            renderer = Neos.Fusion:ResourceUri {
+                path = 'resource://Neos.Neos/Public/Images/dummy-image.svg'
+            }
+        }
+    }
+
+    alt = ${q(node).property('alternativeText')}
+    title = ${q(node).property('title')}
+    class = null
+
+    hasCaption = ${q(node).property('hasCaption')}
+    caption = Neos.Neos:Editable {
+        property = 'caption'
+    }
+
+    text = Neos.Neos:Editable {
+        property = 'text'
+    }
+
+    renderer = afx`<Neos.Demo:Presentation.Block.TextWithImage {...props} />`
+}

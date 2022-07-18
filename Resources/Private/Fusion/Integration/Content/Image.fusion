@@ -1,7 +1,7 @@
 ##
-# Figure fragment for text and textWithImage
+# "Image" element
 #
-prototype(Neos.Demo:Content.Fragment.Image.Figure) < prototype(Neos.Fusion:Component) {
+prototype(Neos.Demo:Content.Image) < prototype(Neos.Neos:ContentComponent) {
     src = Neos.Fusion:Case {
         asset {
             condition = ${q(node).property('image')}
@@ -27,12 +27,8 @@ prototype(Neos.Demo:Content.Fragment.Image.Figure) < prototype(Neos.Fusion:Compo
     }
 
     renderer = afx`
-        <figure class={props.class}>
-            <img src={props.src} title={props.title} alt={props.alt} />
-            <figcaption @if.has={props.hasCaption && props.caption}>
-                {props.caption}
-            </figcaption>
-        </figure>
+        <div>
+            <Neos.Demo:Presentation.Atom.Image {...props} />
+        </div>
     `
 }
-
