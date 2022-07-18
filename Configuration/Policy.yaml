@@ -7,8 +7,6 @@ privilegeTargets:
 
     Neos_Demo_RegistrationAccess:
       matcher: method(Neos\Demo\Controller\RegistrationController->(index|newAccount|createAccount|createTemporaryAccount)Action())
-    Neos_Demo_FlickrAccess:
-      matcher: method(Neos\Demo\Controller\FlickrController->(tagStream|userStream)Action())
 
   'Neos\ContentRepository\Security\Authorization\Privilege\Node\ReadNodePrivilege':
     'Neos.Demo:MembersArea':
@@ -21,9 +19,6 @@ roles:
     privileges:
       -
         privilegeTarget: Neos_Demo_RegistrationAccess
-        permission: GRANT
-      -
-        privilegeTarget: Neos_Demo_FlickrAccess
         permission: GRANT
 
 
