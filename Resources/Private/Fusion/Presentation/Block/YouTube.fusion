@@ -1,10 +1,10 @@
 ##
 # "YouTube" element
 #
-prototype(Neos.Demo:Content.YouTube) < prototype(Neos.Neos:ContentComponent) {
-    videoId = ${q(node).property('video')}
-    width = ${q(node).property('width')}
-    height = ${q(node).property('height')}
+prototype(Neos.Demo:Presentation.Block.YouTube) < prototype(Neos.Fusion:Component) {
+    videoId = ''
+    width = ''
+    height = ''
 
     renderer = afx`
         <div class="responsive-video">
@@ -17,7 +17,7 @@ prototype(Neos.Demo:Content.YouTube) < prototype(Neos.Neos:ContentComponent) {
                     allowfullscreen
                 ></iframe>
             </figure>
-            <p @if.noVideoID={!props.videoId}>Please specify video ID</p>
+            <p @if.noVideoID={!props.videoId}>{I18n.translate('Neos.Demo:NodeTypes.Content.YouTube:error.no.videoid')}</p>
         </div>
     `
 }

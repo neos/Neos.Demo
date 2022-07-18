@@ -1,0 +1,10 @@
+##
+# "YouTube" element
+#
+prototype(Neos.Demo:Content.YouTube) < prototype(Neos.Neos:ContentComponent) {
+    videoId = ${q(node).property('video')}
+    width = ${q(node).property('width')}
+    height = ${q(node).property('height')}
+
+    renderer = afx`<Neos.Demo:Presentation.Block.YouTube {...props} />`
+}
