@@ -6,9 +6,5 @@ prototype(Neos.Demo:Content.Text) < prototype(Neos.Neos:ContentComponent) {
         property = 'text'
     }
 
-    renderer = afx`
-        <div>
-            {props.text}
-        </div>
-    `
+    renderer = afx`<Neos.Demo:Presentation.Atom.Text {...props} />`
 }
