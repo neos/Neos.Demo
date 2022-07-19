@@ -1,7 +1,10 @@
 prototype(Neos.Demo:Block.YouTube) < prototype(Neos.Fusion:Component) {
     // This is used for the living styleguide (Monocle)
     // Read more about this in the README.md
-    @styleguide.props.videoId = '4DVD03IlXIs'
+    @styleguide.props {
+        videoId = '4DVD03IlXIs'
+        inBackend = true
+    }
 
     videoId = null
     inBackend = false
@@ -16,8 +19,10 @@ prototype(Neos.Demo:Block.YouTube) < prototype(Neos.Fusion:Component) {
                 allowfullscreen
             ></iframe>
         </figure>
-        <p @if={!props.videoId && props.inBackend} class="aspect-video flex items-center justify-center bg-orange-400 text-white text-xl">
-            {I18n.translate('Neos.Demo:NodeTypes.Content.YouTube:error.no.videoid')}
-        </p>
+        <Neos.Demo:Atom.Alert
+            @if={!props.videoId && props.inBackend}
+            class="aspect-video"
+            content={I18n.translate('Neos.Demo:NodeTypes.Content.YouTube:error.no.videoid')}
+        />
     `
 }

@@ -10,7 +10,7 @@
                 <source>Youtube video ID</source>
             </trans-unit>
             <trans-unit id="error.no.videoid" xml:space="preserve">
-                <source>Please specify video ID</source>
+                <source>Please specify a video ID</source>
             </trans-unit>
         </body>
     </file>
