@@ -2,7 +2,7 @@ import ESBUILD from 'esbuild';
 import glob from 'glob';
 import path from 'path';
 
-const fileExtensions = 'js,jsx,ts,tsx';
+const fileExtensions = 'js,ts';
 const outputFolder = argv('outputFolder');
 const entryFolder = argv('entryFolder');
 const watch = argv('watch') === true;
