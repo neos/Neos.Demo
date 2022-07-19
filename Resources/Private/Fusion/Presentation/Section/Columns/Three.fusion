@@ -1,0 +1,15 @@
+prototype(Neos.Demo:Section.Columns.Three) < prototype(Neos.Fusion:Component) {
+    @styleguide.props.content = afx`
+        <Neos.Demo:Atom.Alert content="First column" />
+        <Neos.Demo:Atom.Alert content="Second column" />
+        <Neos.Demo:Atom.Alert content="Third column" />
+    `
+
+    content = null
+
+    renderer = afx`
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {props.content}
+        </div>
+    `
+}

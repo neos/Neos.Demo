@@ -11,9 +11,9 @@ prototype(Neos.Demo:Content.Columns.Two) < prototype(Neos.Neos:ContentComponent)
     }
 
     renderer = afx`
-        <div class="row">
-            <div class="col-sm-6">{props.column0}</div>
-            <div class="col-sm-6">{props.column1}</div>
-        </div>
+        <Neos.Demo:Section.Columns.Three>
+            {props.column0}
+            {props.column1}
+        </Neos.Demo:Section.Columns.Three>
     `
 }
