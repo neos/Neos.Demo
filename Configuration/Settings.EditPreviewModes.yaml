@@ -1,0 +1,31 @@
+Neos:
+  Neos:
+    userInterface:
+      editPreviewModes:
+        tabletLandscape:
+          isEditingMode: false
+          isPreviewMode: true
+          fusionRenderingPath: ''
+          title: 'Neos.Demo:Main:editPreviewModes.tabletLandscape'
+          width: 1024
+          height: 768
+          backgroundColor: '#222'
+          position: 200
+        tabletPortrait:
+          isEditingMode: false
+          isPreviewMode: true
+          fusionRenderingPath: ''
+          title: 'Neos.Demo:Main:editPreviewModes.tabletPortrait'
+          width: 768
+          height: 1024
+          backgroundColor: '#222'
+          position: 210
+        mobile:
+          isEditingMode: false
+          isPreviewMode: true
+          fusionRenderingPath: ''
+          title: 'Neos.Demo:Main:editPreviewModes.mobile'
+          width: 375
+          height: 667
+          backgroundColor: '#222'
+          position: 220
