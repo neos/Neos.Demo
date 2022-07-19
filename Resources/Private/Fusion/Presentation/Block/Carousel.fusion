@@ -1,22 +1,7 @@
-##
-# "Carousel" element
-#
-prototype(Neos.Demo:Content.Carousel) < prototype(Neos.Neos:ContentComponent) {
-    identifier = ${'id-' + q(node).property('_identifier')}
-
-    carouselItems = Neos.Neos:ContentCollection {
-        nodePath = 'carouselitems'
-        attributes.class = 'carousel-inner'
-
-        // Each child item is augmented "item" and "active" class
-        prototype(Neos.Neos:ContentCase) {
-            @process.addItemAndActiveClass = Neos.Fusion:Augmenter {
-                class = ${'item' + (iterator.isFirst ? ' active' : '')}
-            }
-        }
-    }
-
-    carouselItemNumber = ${q(node).children('carouselitems').children().count()}
+prototype(Neos.Demo:Presentation.Block.Carousel) < prototype(Neos.Neos:ContentComponent) {
+    identifier = ''
+    carouselItems = null
+    carouselItemNumber = 0
 
     renderer = afx`
         <div>
