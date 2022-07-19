@@ -1,0 +1,50 @@
+/**
+ * Homepage rendering for the Neos.Demo website
+ */
+prototype(Neos.Demo:Document.Chapter) < prototype(Neos.Fusion:Component) {
+    previousChapter = ${q(documentNode).prev('[instanceof Neos.Neos:Document]').get(0)}
+    nextChapter = ${q(documentNode).next('[instanceof Neos.Neos:Document]').get(0)}
+    chapterImage = ${q(documentNode).property('chapterImage')}
+    chapterLabel = ${q(documentNode).property('_label')}
+
+    breadcrumbMenu = Neos.Demo:Document.Fragment.Menu.Breadcrumb
+    metaMenu = Neos.Demo:Document.Fragment.Menu.Meta
+
+    mainContent = Neos.Demo:Document.Fragment.Content.Main
+    footerContent = Neos.Demo:Document.Fragment.Content.Footer
+
+    title = Neos.Fusion:Tag {
+        tagName = 'h1'
+        content = Neos.Neos:Editable {
+            property = 'title'
+            block = false
+            @process.convertUris = Neos.Neos:ConvertUris
+        }
+        @process.contentElementWrapping = Neos.Neos:ContentElementWrapping
+    }
+
+    renderer = Neos.Fusion:Component {
+        @apply.props = ${props}
+
+        chapterImageSrc = Neos.Neos:ImageUri {
+            @if.has = ${props.chapterImage}
+            asset = ${props.chapterImage}
+        }
+        chapterImageAlt = ${props.chapterImage ? props.chapterImage.alternativeText : null}
+        chapterImageTitle = ${props.chapterImage ? props.chapterImage.title : null}
+
+        previousChapterLabel = ${q(props.previousChapter).property('_label')}
+        previousChapterLink = Neos.Neos:NodeUri {
+            node = ${props.previousChapter}
+        }
+
+        nextChapterLabel = ${q(props.nextChapter).property('_label')}
+        nextChapterLink = Neos.Neos:NodeUri {
+            node = ${props.nextChapter}
+        }
+
+        renderer = afx`
+            <Neos.Demo:Presentation.Document.Chapter {...props}/>
+        `
+    }
+}

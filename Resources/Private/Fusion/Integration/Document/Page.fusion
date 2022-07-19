@@ -1,0 +1,19 @@
+/**
+ * Default page-rendering for the Neos.Demo website
+ */
+prototype(Neos.Demo:Document.Page) < prototype(Neos.Fusion:Component) {
+    mainMenu = Neos.Demo:Document.Fragment.Menu.Main
+    secondaryMenu = Neos.Demo:Document.Fragment.Menu.Secondary
+    metaMenu = Neos.Demo:Document.Fragment.Menu.Meta
+    breadcrumbMenu = Neos.Demo:Document.Fragment.Menu.Breadcrumb
+    languageMenu = Neos.Demo:Document.Fragment.Menu.Language
+
+    mainContent = Neos.Demo:Document.Fragment.Content.Main
+    footerContent = Neos.Demo:Document.Fragment.Content.Footer
+
+    bodyClass = ${q(node).parents().count() >= 1 && q(node).children('[instanceof Neos.Neos:Document]').filter('[_hiddenInIndex=false]').count() > 0 ? 'has-subpages' : null}
+
+    renderer = afx`
+        <Neos.Demo:Presentation.Document.Page {...props}/>
+    `
+}

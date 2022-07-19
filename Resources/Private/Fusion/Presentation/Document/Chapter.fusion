@@ -1,47 +1,29 @@
-/**
- * Homepage rendering for the Neos.Demo website
- */
-prototype(Neos.Demo:Document.Chapter) < prototype(Neos.Fusion:Component) {
-    @context.previousChapter = ${q(documentNode).prev('[instanceof Neos.Neos:Document]').get(0)}
-    @context.nextChapter = ${q(documentNode).next('[instanceof Neos.Neos:Document]').get(0)}
-    @context.chapterImage = ${q(documentNode).property('chapterImage')}
+prototype(Neos.Demo:Presentation.Document.Chapter) < prototype(Neos.Fusion:Component) {
+    previousChapter = null
+    nextChapter = null
+    chapterImage = null
 
-    breadcrumbMenu = Neos.Demo:Document.Fragment.Menu.Breadcrumb
-    metaMenu = Neos.Demo:Document.Fragment.Menu.Meta
+    breadcrumbMenu = ''
+    metaMenu = ''
 
-    mainContent = Neos.Demo:Document.Fragment.Content.Main
-    footerContent = Neos.Demo:Document.Fragment.Content.Footer
+    mainContent = ''
+    footerContent = ''
 
-    title = Neos.Fusion:Tag {
-        tagName = 'h1'
-        content = Neos.Neos:Editable {
-            property = 'title'
-            block = false
-            @process.convertUris = Neos.Neos:ConvertUris
-        }
-        @process.contentElementWrapping = Neos.Neos:ContentElementWrapping
-    }
+    title = ''
 
-    chapterImageSrc = Neos.Neos:ImageUri {
-        @if.has = ${chapterImage}
-        asset = ${chapterImage}
-    }
-    chapterImageAlt = ${chapterImage ? chapterImage.alternativeText : null}
-    chapterImageTitle =${chapterImage ? chapterImage.title : null}
+    chapterImageSrc = ''
+    chapterImageAlt = ''
+    chapterImageTitle = ''
 
-    chapterLabel = ${q(documentNode).property('_label')}
+    chapterLabel = ''
 
-    previousChapterLabel = ${q(previousChapter).property('_label')}
-    previousChapterLink = Neos.Neos:NodeUri {
-        node = ${previousChapter}
-    }
+    previousChapterLabel = ''
+    previousChapterLink = ''
 
-    nextChapterLabel = ${q(nextChapter).property('_label')}
-    nextChapterLink = Neos.Neos:NodeUri {
-        node = ${nextChapter}
-    }
+    nextChapterLabel = ''
+    nextChapterLink = ''
 
-    renderer = Neos.Demo:Document.Base {
+    renderer = Neos.Demo:Presentation.Document.Base {
         bodyClass = 'chapter'
         body = afx`
             <div class="container chapter-container">
