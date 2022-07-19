@@ -1,0 +1,236 @@
+Neos:
+  Neos:
+    nodeTypes:
+      presets:
+        properties:
+          text:
+            inlineEditable:
+              type: string
+              ui:
+                inlineEditable: true
+            headline:
+              type: string
+              search:
+                fulltextExtractor: "${Indexing.extractInto('h2', value)}"
+              ui:
+                inlineEditable: true
+                inline:
+                  editorOptions:
+                    placeholder: 'Neos.Demi:NodeTypes.Placeholder:headline'
+                    autoparagraph: false
+                    hyphens: true
+                    formatting:
+                      strong: false
+                      em: false
+                      underline: false
+                      sub: true
+                      sup: true
+                      p: false
+                      h1: false
+                      h2: false
+                      h3: false
+                      h4: false
+                      h5: false
+                      table: false
+                      a: true
+                      ul: false
+                      ol: false
+                      left: false
+                      right: false
+                      center: false
+                      justify: false
+                      removeFormat: true
+            subheadline:
+              type: string
+              search:
+                fulltextExtractor: "${Indexing.extractInto('h3', value)}"
+              ui:
+                inlineEditable: true
+                inline:
+                  editorOptions:
+                    placeholder: 'Neos.Demi:NodeTypes.Placeholder:subheadline'
+                    autoparagraph: false
+                    hyphens: true
+                    formatting:
+                      strong: false
+                      em: false
+                      underline: false
+                      sub: true
+                      sup: true
+                      p: false
+                      h1: false
+                      h2: false
+                      h3: false
+                      h4: false
+                      h5: false
+                      table: false
+                      a: true
+                      ul: false
+                      ol: false
+                      left: false
+                      right: false
+                      center: false
+                      justify: false
+                      removeFormat: true
+            lead:
+              type: string
+              search:
+                fulltextExtractor: '${Indexing.extractHtmlTags(value)}'
+              ui:
+                inlineEditable: true
+                inline:
+                  editorOptions:
+                    placeholder: 'Neos.Demi:NodeTypes.Placeholder:lead'
+                    autoparagraph: false
+                    hyphens: true
+                    formatting:
+                      strong: true
+                      em: false
+                      underline: false
+                      sub: true
+                      sup: true
+                      p: false
+                      h1: false
+                      h2: false
+                      h3: false
+                      h4: false
+                      h5: false
+                      table: false
+                      a: true
+                      ul: false
+                      ol: false
+                      left: false
+                      right: false
+                      center: false
+                      justify: false
+                      removeFormat: true
+            pure:
+              type: string
+              search:
+                fulltextExtractor: '${Indexing.extractHtmlTags(value)}'
+              ui:
+                inlineEditable: true
+                inline:
+                  editorOptions:
+                    placeholder: 'Neos.Demi:NodeTypes.Placeholder:pure'
+                    autoparagraph: false
+                    hyphens: true
+                    formatting:
+                      strong: true
+                      em: false
+                      underline: false
+                      sub: true
+                      sup: true
+                      p: false
+                      h1: false
+                      h2: false
+                      h3: false
+                      h4: false
+                      h5: false
+                      table: false
+                      a: true
+                      ul: false
+                      ol: false
+                      left: false
+                      right: false
+                      center: false
+                      justify: false
+                      removeFormat: true
+            label:
+              type: string
+              search:
+                fulltextExtractor: '${Indexing.extractHtmlTags(value)}'
+              ui:
+                inlineEditable: true
+                inline:
+                  editorOptions:
+                    placeholder: 'Neos.Demi:NodeTypes.Placeholder:label'
+                    autoparagraph: false
+                    hyphens: true
+                    formatting:
+                      strong: false
+                      em: false
+                      underline: false
+                      sub: false
+                      sup: false
+                      p: false
+                      h1: false
+                      h2: false
+                      h3: false
+                      h4: false
+                      h5: false
+                      table: false
+                      a: false
+                      ul: false
+                      ol: false
+                      left: false
+                      right: false
+                      center: false
+                      justify: false
+                      removeFormat: true
+            link:
+              type: string
+              search:
+                fulltextExtractor: '${Indexing.extractHtmlTags(value)}'
+              ui:
+                inlineEditable: true
+                inline:
+                  editorOptions:
+                    placeholder: 'Neos.Demi:NodeTypes.Placeholder:link'
+                    autoparagraph: false
+                    hyphens: true
+                    formatting:
+                      strong: true
+                      em: false
+                      underline: false
+                      sub: true
+                      sup: true
+                      p: false
+                      h1: false
+                      h2: false
+                      h3: false
+                      h4: false
+                      h5: false
+                      table: false
+                      a: false
+                      ul: false
+                      ol: false
+                      left: false
+                      right: false
+                      center: false
+                      justify: false
+                      removeFormat: true
+            autoparagraph:
+              type: string
+              search:
+                fulltextExtractor: '${Indexing.extractHtmlTags(value)}'
+              ui:
+                inlineEditable: true
+                inline:
+                  editorOptions:
+                    placeholder: 'Neos.Demi:NodeTypes.Placeholder:text'
+                    autoparagraph: true
+                    hyphens: true
+                    formatting:
+                      splitAdd: true
+                      strong: true
+                      em: false
+                      underline: false
+                      sub: true
+                      sup: true
+                      p: true
+                      h1: false
+                      h2: true
+                      h3: true
+                      h4: true
+                      h5: false
+                      pre: false
+                      table: true
+                      a: true
+                      ul: true
+                      ol: true
+                      left: false
+                      right: false
+                      center: false
+                      justify: false
+                      removeFormat: true
