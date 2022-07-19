@@ -1,0 +1,67 @@
+/**
+ *  Special landing page layout with less navigation components
+ */
+prototype(Neos.Demo:Document.LandingPage) < prototype(Neos.Fusion:Component) {
+    mainMenu = Neos.Demo:Document.Fragment.Menu.Main
+    secondaryMenu = Neos.Demo:Document.Fragment.Menu.Secondary
+    languageMenu = Neos.Demo:Document.Fragment.Menu.Language
+    metaMenu = Neos.Demo:Document.Fragment.Menu.Meta
+    breadcrumbMenu = Neos.Demo:Document.Fragment.Menu.Breadcrumb
+
+    teaserContent = Neos.Demo:Document.Fragment.Content.Teaser
+    mainContent = Neos.Demo:Document.Fragment.Content.Main
+    footerContent = Neos.Demo:Document.Fragment.Content.Footer
+
+
+    imageUri = Neos.Neos:ImageUri {
+        asset = ${q(node).property('image')}
+        maximumWidth = 2560
+        maximumHeight = 1280
+        @if.image = ${q(node).property('image')}
+    }
+
+    imageTitleText = ${q(node).property('imageTitleText')}
+
+    renderer = Neos.Demo:Document.Base {
+        bodyClass = ${q(node).parents().count() >= 1 && q(node).children('[instanceof Neos.Neos:Document]').filter('[_hiddenInIndex=false]').count() > 0 ? 'has-subpages' : null}
+
+        body >
+        body = afx`
+             <div class="top-navigation-wrap navbar-fixed-top">
+                <div class="container">
+                    {props.languageMenu}
+                    {props.mainMenu}
+                    {props.secondaryMenu}
+                </div>
+            </div>
+
+            <div class={props.imageUri ? 'main-header image' : 'main-header'}
+                style={props.imageUri ? 'background-image: url(' + props.imageUri + ');' : null}
+                title={props.imageTitleText ? props.imageTitleText : null}
+            >
+                <div class="container">
+                    {props.teaserContent}
+                </div>
+            </div>
+
+            <div class="container">
+                {props.mainContent}
+            </div>
+
+            <footer role="navigation" class="navbar navbar-default">
+                <div class="panel panel-default">
+                    <div class="panel-body clearfix">
+                        <div class="container">
+                            {props.metaMenu}
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="container">
+                            {props.footerContent}
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        `
+    }
+}
