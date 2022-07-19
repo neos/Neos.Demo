@@ -1,0 +1,5 @@
+// If you use Monocole, (See README.md) we add our own styles and javascript here
+prototype(Sitegeist.Monocle:Preview.Page).head {
+    stylesheets.demo = Neos.Demo:Atom.Stylesheet
+    javascripts.demo = Neos.Demo:Atom.Javascript
+}
