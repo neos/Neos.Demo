@@ -13,5 +13,7 @@ prototype(Neos.Demo:Content.Image) < prototype(Neos.Neos:ContentComponent) {
         property = 'caption'
     }
 
+    renderDummyImage = ${node.context.inBackend}
+
     renderer = afx`<Neos.Demo:Atom.Image {...props} />`
 }
