@@ -1,6 +1,15 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 const plugin = require('tailwindcss/plugin');
 
+function getFontSettings(theme, fontSize, fontWeight = 400) {
+    return {
+        fontSize: theme(`fontSize.${fontSize}`)[0],
+        lineHeight: theme(`fontSize.${fontSize}`)[1].lineHeight,
+        letterSpacing: theme(`fontSize.${fontSize}`)[1].letterSpacing,
+        fontWeight,
+    };
+}
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: ['Resources/Private/Fusion/**/*.{fusion,js,ts}', 'NodeTypes/**/*.{fusion,js,ts}'],
@@ -89,41 +98,24 @@ module.exports = {
             typography: (theme) => ({
                 DEFAULT: {
                     css: {
-                        color: null,
-                        strong: {
-                            fontWeight: '800',
-                        },
-                        a: null,
-                        'a:not([class])': {
-                            color: theme('colors.main.light'),
-                            textDecoration: 'underline',
+                        '--tw-prose-links': 'var(--color-light)',
+                        '--tw-prose-bullets': 'rgb(var(--color-light)/50%)',
+
+                        h1: getFontSettings(theme, '5xl'),
+                        h2: getFontSettings(theme, '4xl'),
+                        h3: getFontSettings(theme, '3xl'),
+                        h4: getFontSettings(theme, '2xl'),
+                        h5: getFontSettings(theme, 'xl'),
+                        h6: getFontSettings(theme, 'lg'),
+                        a: {
+                            color: 'rgb(var(--tw-prose-links))',
+                            textDecoration: 'none',
                             '&:hover': {
-                                color: theme('colors.main.dark'),
-                                textDecoration: 'none',
+                                textDecoration: 'underline',
                             },
                             '&:focus': {
-                                color: theme('colors.main.dark'),
-                                textDecoration: 'none',
+                                textDecoration: 'underline',
                             },
-                        },
-                        'ol > li::before': {
-                            color: theme('colors.main.light'),
-                        },
-                        'ul > li::before': {
-                            backgroundColor: theme('colors.main.light'),
-                        },
-                        blockquote: {
-                            borderLeftColor: theme('colors.main.light'),
-                        },
-                        h5: {
-                            color: theme('colors.gray.900'),
-                            fontWeight: '600',
-                            textDecoration: 'underline',
-                        },
-                        h6: {
-                            color: theme('colors.gray.900'),
-                            fontWeight: '400',
-                            textDecoration: 'underline',
                         },
                     },
                 },

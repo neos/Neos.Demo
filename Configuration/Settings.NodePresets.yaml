@@ -16,7 +16,7 @@ Neos:
                 inlineEditable: true
                 inline:
                   editorOptions:
-                    placeholder: 'Neos.Demi:NodeTypes.Placeholder:headline'
+                    placeholder: 'Neos.Demo:NodeTypes.Placeholder:headline'
                     autoparagraph: false
                     hyphens: true
                     formatting:
@@ -48,7 +48,7 @@ Neos:
                 inlineEditable: true
                 inline:
                   editorOptions:
-                    placeholder: 'Neos.Demi:NodeTypes.Placeholder:subheadline'
+                    placeholder: 'Neos.Demo:NodeTypes.Placeholder:subheadline'
                     autoparagraph: false
                     hyphens: true
                     formatting:
@@ -80,7 +80,7 @@ Neos:
                 inlineEditable: true
                 inline:
                   editorOptions:
-                    placeholder: 'Neos.Demi:NodeTypes.Placeholder:lead'
+                    placeholder: 'Neos.Demo:NodeTypes.Placeholder:lead'
                     autoparagraph: false
                     hyphens: true
                     formatting:
@@ -112,7 +112,7 @@ Neos:
                 inlineEditable: true
                 inline:
                   editorOptions:
-                    placeholder: 'Neos.Demi:NodeTypes.Placeholder:pure'
+                    placeholder: 'Neos.Demo:NodeTypes.Placeholder:pure'
                     autoparagraph: false
                     hyphens: true
                     formatting:
@@ -144,7 +144,7 @@ Neos:
                 inlineEditable: true
                 inline:
                   editorOptions:
-                    placeholder: 'Neos.Demi:NodeTypes.Placeholder:label'
+                    placeholder: 'Neos.Demo:NodeTypes.Placeholder:label'
                     autoparagraph: false
                     hyphens: true
                     formatting:
@@ -176,7 +176,7 @@ Neos:
                 inlineEditable: true
                 inline:
                   editorOptions:
-                    placeholder: 'Neos.Demi:NodeTypes.Placeholder:link'
+                    placeholder: 'Neos.Demo:NodeTypes.Placeholder:link'
                     autoparagraph: false
                     hyphens: true
                     formatting:
@@ -208,7 +208,7 @@ Neos:
                 inlineEditable: true
                 inline:
                   editorOptions:
-                    placeholder: 'Neos.Demi:NodeTypes.Placeholder:text'
+                    placeholder: 'Neos.Demo:NodeTypes.Placeholder:text'
                     autoparagraph: true
                     hyphens: true
                     formatting:
