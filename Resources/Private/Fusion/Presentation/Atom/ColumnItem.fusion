@@ -1,0 +1,8 @@
+prototype(Neos.Demo:Presentation.Atom.ColumnItem) < prototype(Neos.Neos:ContentComponent) {
+    content = ''
+    class = ''
+
+    renderer = afx`
+       <div class={props.class}>{props.content}</div>
+    `
+}

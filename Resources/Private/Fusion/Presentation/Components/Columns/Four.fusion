@@ -1,0 +1,15 @@
+prototype(Neos.Demo:Presentation.Components.Columns.Four) < prototype(Neos.Neos:ContentComponent) {
+    column0 = null
+    column1 = null
+    column2 = null
+    column3 = null
+
+    renderer = afx`
+		<div class="row">
+			<Neos.Demo:Presentation.Atom.ColumnItem class="col-sm-3">{props.column0}</Neos.Demo:Presentation.Atom.ColumnItem>
+			<Neos.Demo:Presentation.Atom.ColumnItem class="col-sm-3">{props.column1}</Neos.Demo:Presentation.Atom.ColumnItem>
+			<Neos.Demo:Presentation.Atom.ColumnItem class="col-sm-3">{props.column2}</Neos.Demo:Presentation.Atom.ColumnItem>
+			<Neos.Demo:Presentation.Atom.ColumnItem class="col-sm-3">{props.column3}</Neos.Demo:Presentation.Atom.ColumnItem>
+		</div>
+    `
+}

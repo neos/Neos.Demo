@@ -10,10 +10,5 @@ prototype(Neos.Demo:Content.Columns.Two) < prototype(Neos.Neos:ContentComponent)
         nodePath = 'column1'
     }
 
-    renderer = afx`
-        <div class="row">
-            <div class="col-sm-6">{props.column0}</div>
-            <div class="col-sm-6">{props.column1}</div>
-        </div>
-    `
+    renderer = afx`<Neos.Demo:Presentation.Components.Columns.Two {...props} />`
 }
