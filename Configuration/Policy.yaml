@@ -1,6 +1,6 @@
-#                                                                        #
-# Security policy for the Neos.Demo package                 #
-#                                                                        #
+#
+# Security policy for the Neos.Demo package
+#
 
 privilegeTargets:
   'Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
@@ -8,30 +8,8 @@ privilegeTargets:
     Neos_Demo_RegistrationAccess:
       matcher: method(Neos\Demo\Controller\RegistrationController->(index|newAccount|createAccount|createTemporaryAccount)Action())
 
-  'Neos\ContentRepository\Security\Authorization\Privilege\Node\ReadNodePrivilege':
-    'Neos.Demo:MembersArea':
-      # fee74676-c42f-89da-208e-1741a66525d4 is the node identifier of the "member-area" node, by default located at "/sites/neosdemo/member-area"
-      matcher: 'isDescendantNodeOf("fee74676-c42f-89da-208e-1741a66525d4")'
-
 roles:
-
   'Neos.Flow:Everybody':
     privileges:
-      -
-        privilegeTarget: Neos_Demo_RegistrationAccess
-        permission: GRANT
-
-
-  'Flowpack.Neos.FrontendLogin:User':
-    privileges:
-      -
-        # Grant "frontend users" to access the "Member area"
-        privilegeTarget: 'Neos.Demo:MembersArea'
-        permission: GRANT
-
-  'Neos.Neos:Editor':
-    privileges:
-      -
-        # Grant "backend users" to access the "Member area" - Otherwise those pages would be hidden in the backend, too!
-        privilegeTarget: 'Neos.Demo:MembersArea'
+      - privilegeTarget: Neos_Demo_RegistrationAccess
         permission: GRANT

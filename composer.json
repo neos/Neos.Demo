@@ -7,14 +7,12 @@
     ],
     "require": {
         "neos/neos": "^8.0 || dev-master",
-        "neos/fusion-afx": "*",
         "neos/fusion-form": "^2.0 || dev-master",
-        "neos/nodetypes-basemixins": "*",
-        "neos/nodetypes-assetlist": "*",
-        "neos/nodetypes-contentreferences": "*",
-        "neos/nodetypes-html": "*",
-        "neos/nodetypes-navigation": "*",
-        "flowpack/neos-frontendlogin": "^4.0"
+        "neos/nodetypes-basemixins": "^8.0 || dev-master",
+        "neos/nodetypes-assetlist": "^8.0 || dev-master",
+        "neos/nodetypes-contentreferences": "^8.0 || dev-master",
+        "neos/nodetypes-html": "^8.0 || dev-master",
+        "neos/nodetypes-navigation": "^8.0 || dev-master"
     },
     "autoload": {
         "psr-4": {
