@@ -1,7 +1,59 @@
 ##
-# "Registration" element, extending "Plugin"
+# "Registration" element based on Fusion.Form
 #
-prototype(Neos.Demo:Content.Registration) < prototype(Neos.Neos:Plugin) {
-    package = 'Neos.Demo'
-    controller = 'Registration'
+prototype(Neos.Demo:Content.Registration) < prototype(Neos.Fusion.Form:Runtime.RuntimeForm) {
+    namespace = "neos-demo-registration"
+
+    process {
+        content = afx`
+            <div class="form-group">
+                <Neos.Fusion.Form:FieldContainer field.name="firstName" label="First Name" class="col-lg-4 control-label">
+                    <Neos.Fusion.Form:Input class="form-control" />
+                </Neos.Fusion.Form:FieldContainer>
+                <Neos.Fusion.Form:FieldContainer field.name="lastName" label="Last Name">
+                    <Neos.Fusion.Form:Input class="form-control"/>
+                </Neos.Fusion.Form:FieldContainer>
+                <Neos.Fusion.Form:FieldContainer field.name="username" label="Username">
+                    <Neos.Fusion.Form:Input class="form-control" />
+                </Neos.Fusion.Form:FieldContainer>
+                <Neos.Fusion.Form:FieldContainer field.name="password" label="Password">
+                    <Neos.Fusion.Form:Password class="form-control" />
+                </Neos.Fusion.Form:FieldContainer>
+            </div>
+        `
+
+        schema {
+            firstName = ${Form.Schema.string().isRequired()}
+            lastName = ${Form.Schema.string().isRequired()}
+            username = ${Form.Schema.string().isRequired()}
+            password = ${Form.Schema.string().isRequired()}
+        }
+    }
+
+    action {
+        createBackendUser {
+            type = 'Neos.Demo.Form.Runtime:CreateUser'
+            options {
+                firstName = ${data.firstName}
+                lastName = ${data.lastName}
+                username = ${data.username}
+                password = ${data.password}
+                // you can configure an array of Backend Roles to be added to this user
+                roles = ${['Neos.Neos:Editor']}
+                // this is basically for security reasons if someone
+                // forgets to remove this functionality
+                // you can configure a valid DateTime constructor format here
+                expiry = '+1 week'
+            }
+            @position = 'start'
+        }
+        redirect {
+            type = 'Neos.Fusion.Form.Runtime:Redirect'
+            options.uri = Neos.Fusion:Value {
+                value = ${'/neos/login?username=' + data.username}
+                @process.convertUris = Neos.Neos:ConvertUris
+            }
+            @position = 'end'
+        }
+    }
 }
