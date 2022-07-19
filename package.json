@@ -15,6 +15,17 @@
     "start": "yarn watch",
     "pipeline": "yarn install;yarn build"
   },
+  "dependencies": {
+    "@alpinejs/collapse": "^3.10.2",
+    "@alpinejs/focus": "^3.10.2",
+    "@alpinejs/intersect": "^3.10.2",
+    "@alpinejs/persist": "^3.10.2",
+    "@tailwindcss/forms": "^0.5.2",
+    "@tailwindcss/line-clamp": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.4",
+    "alpinejs": "^3.10.2",
+    "tailwindcss": "^3.1.6"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
     "concurrently": "^7.2.2",
@@ -30,6 +41,7 @@
     "postcss-reporter": "^7.0.5",
     "postcss-sort-media-queries": "^4.2.1",
     "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.12",
     "stylelint": "^14.9.1",
     "stylelint-config-standard": "^26.0.0"
   }

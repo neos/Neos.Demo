@@ -4,6 +4,8 @@ module.exports = (ctx) => ({
         'postcss-easy-import': {
             extensions: ['.pcss', '.css'],
         },
+        'tailwindcss/nesting': true,
+        tailwindcss: true,
         'postcss-sort-media-queries': true,
         autoprefixer: true,
         cssnano: {
