@@ -1,0 +1,29 @@
+prototype(Neos.Demo:Atom.Headline) < prototype(Neos.Fusion:Component) {
+    @styleguide {
+        props {
+            tagName = 'h1'
+            class = ''
+            content = 'I am a headline'
+        }
+    }
+
+    tagName = 'h2'
+    style = ${this.tagName}
+    class = null
+    content = null
+
+    _classMap = Neos.Fusion:DataStructure {
+        h1 = 'text-5xl'
+        h2= 'text-4xl'
+        h3 = 'text-3xl'
+        h4 = 'text-2xl'
+        h5 = 'text-xl'
+        h6 = 'text-lg'
+    }
+
+    renderer = Neos.Fusion:Tag {
+        tagName = ${props.tagName}
+        attributes.class = ${props.class ? props.class : props._classMap[props.tagName]}
+        content = ${props.content}
+    }
+}

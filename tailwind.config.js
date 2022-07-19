@@ -7,6 +7,83 @@ module.exports = {
     theme: {
         extend: {
             minHeight: defaultTheme.spacing,
+            fontSize: {
+                lg: [
+                    '1.125rem',
+                    {
+                        lineHeight: '1.75rem',
+                        letterSpacing: defaultTheme.letterSpacing.tight,
+                    },
+                ],
+                xl: [
+                    '1.25rem',
+                    {
+                        lineHeight: '1.75rem',
+                        letterSpacing: defaultTheme.letterSpacing.tight,
+                    },
+                ],
+                '2xl': [
+                    '1.5rem',
+                    {
+                        lineHeight: '2rem',
+                        letterSpacing: defaultTheme.letterSpacing.tight,
+                    },
+                ],
+                '3xl': [
+                    '1.875rem',
+                    {
+                        lineHeight: '2.25rem',
+                        letterSpacing: defaultTheme.letterSpacing.tighter,
+                    },
+                ],
+                '4xl': [
+                    '2.25rem',
+                    {
+                        lineHeight: '2.5rem',
+                        letterSpacing: defaultTheme.letterSpacing.tighter,
+                    },
+                ],
+                '5xl': [
+                    '3rem',
+                    {
+                        lineHeight: '1',
+                        letterSpacing: '-0.1em',
+                    },
+                ],
+                '6xl': [
+                    '3.75rem',
+                    {
+                        lineHeight: '1',
+                        letterSpacing: '-0.1em',
+                    },
+                ],
+                '7xl': [
+                    '4.5rem',
+                    {
+                        lineHeight: '1',
+                        letterSpacing: '-0.1em',
+                    },
+                ],
+                '8xl': [
+                    '6rem',
+                    {
+                        lineHeight: '1',
+                        letterSpacing: '-0.1em',
+                    },
+                ],
+                '9xl': [
+                    '8rem',
+                    {
+                        lineHeight: '1',
+                        letterSpacing: defaultTheme.letterSpacing.tighter,
+                    },
+                ],
+            },
+            fontSize: {
+                sm: '12px',
+                md: ['16px', { lineHeight: '24px', fontWeight: 500 }],
+                lg: ['20px', { lineHeight: '28px', fontWeight: 'bold' }],
+            },
             colors: {
                 light: 'rgb(var(--color-light) / <alpha-value>)',
                 dark: 'rgb(var(--color-dark) / <alpha-value>)',
@@ -14,6 +91,48 @@ module.exports = {
             fontFamily: {
                 sans: ['Work Sans', ...defaultTheme.fontFamily.sans],
             },
+            typography: (theme) => ({
+                DEFAULT: {
+                    css: {
+                        color: null,
+                        strong: {
+                            fontWeight: '800',
+                        },
+                        a: null,
+                        'a:not([class])': {
+                            color: theme('colors.main.light'),
+                            textDecoration: 'underline',
+                            '&:hover': {
+                                color: theme('colors.main.dark'),
+                                textDecoration: 'none',
+                            },
+                            '&:focus': {
+                                color: theme('colors.main.dark'),
+                                textDecoration: 'none',
+                            },
+                        },
+                        'ol > li::before': {
+                            color: theme('colors.main.light'),
+                        },
+                        'ul > li::before': {
+                            backgroundColor: theme('colors.main.light'),
+                        },
+                        blockquote: {
+                            borderLeftColor: theme('colors.main.light'),
+                        },
+                        h5: {
+                            color: theme('colors.gray.900'),
+                            fontWeight: '600',
+                            textDecoration: 'underline',
+                        },
+                        h6: {
+                            color: theme('colors.gray.900'),
+                            fontWeight: '400',
+                            textDecoration: 'underline',
+                        },
+                    },
+                },
+            }),
         },
     },
     plugins: [
