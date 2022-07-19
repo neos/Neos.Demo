@@ -7,17 +7,18 @@ prototype(Neos.Demo:Content.Registration) < prototype(Neos.Fusion.Form:Runtime.R
     process {
         content = afx`
             <div class="form-group">
-                <Neos.Fusion.Form:FieldContainer field.name="firstName" label="First Name" class="col-lg-4 control-label">
-                    <Neos.Fusion.Form:Input class="form-control" />
+                <Neos.Fusion.Form:FieldContainer field.name="firstName" label="First Name" attributes.style="display:flex;flex-direction:column;justify-content:space-between;">
+                    <Neos.Fusion.Form:Input attributes.style="width:300px;margin-bottom:15px;" />
                 </Neos.Fusion.Form:FieldContainer>
-                <Neos.Fusion.Form:FieldContainer field.name="lastName" label="Last Name">
-                    <Neos.Fusion.Form:Input class="form-control"/>
+                <Neos.Fusion.Form:FieldContainer field.name="lastName" label="Last Name" attributes.style="display:flex;flex-direction:column;justify-content:space-between;">
+                    <Neos.Fusion.Form:Input attributes.style="width:300px;margin-bottom:15px;" />
                 </Neos.Fusion.Form:FieldContainer>
-                <Neos.Fusion.Form:FieldContainer field.name="username" label="Username">
-                    <Neos.Fusion.Form:Input class="form-control" />
+                <Neos.Fusion.Form:FieldContainer field.name="username" label="Username" attributes.style="display:flex;flex-direction:column;justify-content:space-between;">
+                    <small>(lowercase letters and numbers only)</small>
+                    <Neos.Fusion.Form:Input attributes.style="width:300px;margin-bottom:15px;" />
                 </Neos.Fusion.Form:FieldContainer>
-                <Neos.Fusion.Form:FieldContainer field.name="password" label="Password">
-                    <Neos.Fusion.Form:Password class="form-control" />
+                <Neos.Fusion.Form:FieldContainer field.name="password" label="Password" attributes.style="display:flex;flex-direction:column;justify-content:space-between;">
+                    <Neos.Fusion.Form:Password attributes.style="width:300px" />
                 </Neos.Fusion.Form:FieldContainer>
             </div>
         `
