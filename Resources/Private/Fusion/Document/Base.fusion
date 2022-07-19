@@ -9,10 +9,10 @@ prototype(Neos.Demo:Document.Base) < prototype(Neos.Fusion:Component) {
     renderer = Neos.Neos:Page {
         head {
             stylesheets {
-                site = Neos.Demo:Document.Fragment.StyleSheets
+                site = Neos.Demo:Atom.Stylesheet
             }
             javascripts {
-                site = Neos.Demo:Document.Fragment.JavaScripts
+                site = Neos.Demo:Atom.Javascript
             }
             metadata = Neos.Demo:Document.Fragment.MetaData
         }
