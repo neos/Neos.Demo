@@ -1,0 +1,16 @@
+##
+# "ChapterMenu" element
+#
+prototype(Neos.Demo:Presentation.Block.ChapterMenu) < prototype(Neos.Neos:ContentComponent) {
+    chapters = null
+
+    renderer = afx`
+        <div class="chapter-menu">
+            <ul>
+                <Neos.Fusion:Loop items={props.chapters} itemName="chapter">
+                    <Neos.Demo:Presentation.Block.ChapterMenuItem chapter={chapter} />
+                </Neos.Fusion:Loop>
+            </ul>
+        </div>
+    `
+}
