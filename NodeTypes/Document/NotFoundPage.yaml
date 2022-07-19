@@ -6,7 +6,7 @@
     'Neos.Demo:Document.Page': true
   ui:
     label: i18n
-    icon: 'times'
+    icon: 'times-circle'
   # no further sub documents are allowed here
   constraints:
     nodeTypes:
@@ -14,11 +14,11 @@
   properties:
     # default title for autocreated document
     title:
-      defaultValue: 'Not Found'
+      defaultValue: '404'
 
     # default uriPathSegment for autocreated document
     uriPathSegment:
-      defaultValue: 'notfound'
+      defaultValue: '404'
 
     # hidden by default for autocreated document
     # has to be enabled manually
