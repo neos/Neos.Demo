@@ -1,9 +1,7 @@
 prototype(Neos.Demo:Block.YouTube) < prototype(Neos.Fusion:Component) {
-    @styleguide {
-        props {
-            videoId = '4DVD03IlXIs'
-        }
-    }
+    // This is used for the living styleguide (Monocle)
+    // Read more about this in the README.md
+    @styleguide.props.videoId = '4DVD03IlXIs'
 
     videoId = null
     inBackend = false

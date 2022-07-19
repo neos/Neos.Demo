@@ -1,4 +1,6 @@
 prototype(Neos.Demo:Atom.Headline) < prototype(Neos.Fusion:Component) {
+    // This is used for the living styleguide (Monocle)
+    // Read more about this in the README.md
     @styleguide {
         props {
             tagName = 'h1'
