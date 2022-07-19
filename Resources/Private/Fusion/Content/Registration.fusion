@@ -14,6 +14,7 @@ prototype(Neos.Demo:Content.Registration) < prototype(Neos.Fusion.Form:Runtime.R
                     <Neos.Fusion.Form:Input class="form-control"/>
                 </Neos.Fusion.Form:FieldContainer>
                 <Neos.Fusion.Form:FieldContainer field.name="username" label="Username">
+                    <small>(lowercase letters and numbers only)</small>
                     <Neos.Fusion.Form:Input class="form-control" />
                 </Neos.Fusion.Form:FieldContainer>
                 <Neos.Fusion.Form:FieldContainer field.name="password" label="Password">
@@ -25,7 +26,7 @@ prototype(Neos.Demo:Content.Registration) < prototype(Neos.Fusion.Form:Runtime.R
         schema {
             firstName = ${Form.Schema.string().isRequired()}
             lastName = ${Form.Schema.string().isRequired()}
-            username = ${Form.Schema.string().isRequired()}
+            username = ${Form.Schema.string().isRequired().validator('StringLength', {minimum: 6, maximum: 20}).validator('RegularExpression', {regularExpression: '/^[a-z0-9]+$/'})}
             password = ${Form.Schema.string().isRequired()}
         }
     }

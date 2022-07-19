@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace Neos\Demo\Form\Runtime\Action;
 
 /*
- * This file is part of the Neos.Fusion.Form package.
+ * This file is part of the Neos.Demo package.
  *
  * (c) Contributors of the Neos Project - www.neos.io
  *
