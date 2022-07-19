@@ -1,0 +1,44 @@
+@layer base {
+  @font-face {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../Fonts/work-sans-v17-latin-regular.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../Fonts/work-sans-v17-latin-700.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Work Sans";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../Fonts/work-sans-v17-latin-italic.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Work Sans";
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: local("Work Sans"), local("WorkSans-Bold"),
+      url("../Fonts/work-sans-v17-latin-700italic.woff2") format("woff2");
+  }
+
+  body {
+    color: theme(colors.slate.800);
+    background-color: theme(colors.white);
+  }
+
+  [x-cloak] {
+    pointer-events: none !important;
+    visibility: hidden !important;
+  }
+}
