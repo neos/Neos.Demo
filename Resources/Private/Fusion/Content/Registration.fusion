@@ -50,9 +50,13 @@ prototype(Neos.Demo:Content.Registration) < prototype(Neos.Fusion.Form:Runtime.R
         }
         redirect {
             type = 'Neos.Fusion.Form.Runtime:Redirect'
-            options.uri = Neos.Fusion:Value {
-                value = ${'/neos/login?username=' + data.username}
-                @process.convertUris = Neos.Neos:ConvertUris
+            options.uri = Neos.Fusion:UriBuilder {
+                package = 'Neos.Neos'
+                controller = 'Login'
+                action = 'index'
+                additionalParams {
+                    username = ${data.username}
+                }
             }
             @position = 'end'
         }
