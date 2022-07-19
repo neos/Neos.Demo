@@ -22,3 +22,13 @@ prototype(Neos.Demo:Content.Columns.Three) < prototype(Neos.Neos:ContentComponen
         </Neos.Demo:Section.Columns.Three>
     `
 }
+
+prototype(Neos.Demo:Content.Columns.Three.RawContentMode) < prototype(Neos.Neos:ContentComponent) {
+    renderer = afx`
+        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 16px;">
+            <Neos.Neos:RawContent.Node @context.node={q(node).children('column0').get(0)} />
+            <Neos.Neos:RawContent.Node @context.node={q(node).children('column1').get(0)} />
+            <Neos.Neos:RawContent.Node @context.node={q(node).children('column2').get(0)} />
+        </div>
+    `
+}
