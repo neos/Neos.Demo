@@ -1,0 +1,29 @@
+prototype(Neos.Demo:Block.Breadcrumb) < prototype(Neos.Fusion:Component) {
+    // This is used for the living styleguide (Monocle)
+    // Read more about this in the README.md
+    @styleguide {
+        props {
+            menuItems = Neos.Fusion:Map {
+                items = ${['home', 'active', 'current']}
+                itemRenderer = Neos.Fusion:DataStructure {
+                    label = ${'Label: ' + item}
+                    href = ${'#' + item}
+                    state = ${item == 'home' ? 'active' : item}
+                }
+            }
+        }
+    }
+
+    renderer = afx`
+        <ul class="flex flex-wrap">
+            <Neos.Fusion:Loop items={props.menuItems}>
+                <li class="flex items-center">
+                    <span @if={!iterator.isFirst} aria-hidden="true" class="block py-1 px-2 text-slate-500">›</span>
+                    <a href={item.href} class={[item.state == "current" ? "text-slate-600" : "text-slate-500", "block p-1 hocus:text-light hocus:underline"]}>
+                        {item.label}
+                    </a>
+                </li>
+            </Neos.Fusion:Loop>
+        </ul>
+    `
+}
