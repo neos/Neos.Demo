@@ -79,11 +79,6 @@ module.exports = {
                     },
                 ],
             },
-            fontSize: {
-                sm: '12px',
-                md: ['16px', { lineHeight: '24px', fontWeight: 500 }],
-                lg: ['20px', { lineHeight: '28px', fontWeight: 'bold' }],
-            },
             colors: {
                 light: 'rgb(var(--color-light) / <alpha-value>)',
                 dark: 'rgb(var(--color-dark) / <alpha-value>)',
