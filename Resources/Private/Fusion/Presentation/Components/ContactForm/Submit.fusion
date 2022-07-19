@@ -1,0 +1,5 @@
+prototype(Neos.Demo:Presentation.Components.ContactForm.Submit) < prototype(Neos.Fusion:Component) {
+    renderer = afx`
+        <button type="submit" class="btn btn-primary">Submit</button>
+    `
+}

@@ -6,31 +6,8 @@ prototype(Neos.Demo:Content.ContactForm) < prototype(Neos.Neos:ContentComponent)
     renderer = Neos.Fusion.Form:Runtime.RuntimeForm {
         namespace = 'contact'
         process {
-            content = afx`
-                <fieldset>
-                    <legend>Contact</legend>
-                    <Neos.Fusion.Form:FieldContainer label="Name" field.name="name" attributes.class="form-group clearfix">
-                        <div class="input">
-                            <Neos.Fusion.Form:Input attributes.class="form-control" />
-                        </div>
-                    </Neos.Fusion.Form:FieldContainer>
-                    <Neos.Fusion.Form:FieldContainer label="Email" field.name="email" attributes.class="form-group clearfix">
-                        <div class="input">
-                            <Neos.Fusion.Form:Input attributes.class="form-control" />
-                        </div>
-                    </Neos.Fusion.Form:FieldContainer>
-                    <Neos.Fusion.Form:FieldContainer label="Message" field.name="message" attributes.class="form-group clearfix">
-                        <div class="input">
-                            <Neos.Fusion.Form:Textarea attributes.class="form-control" />
-                        </div>
-                    </Neos.Fusion.Form:FieldContainer>
-                </fieldset>
-            `
-
-            footer = afx`
-                <button type="submit" class="btn btn-primary">Submit</button>
-            `
-
+            content = Neos.Demo:Presentation.Components.ContactForm.Content
+            footer = Neos.Demo:Presentation.Components.ContactForm.Submit
             schema {
                 name = ${Form.Schema.string().isRequired()}
                 email = ${Form.Schema.string().isRequired().validator('EmailAddress')}
@@ -54,10 +31,10 @@ prototype(Neos.Demo:Content.ContactForm) < prototype(Neos.Neos:ContentComponent)
                     senderAddress = ${q(node).property('senderAddress')}
                     replyToAddress = ${data.email}
                     subject = ${q(node).property('subject')}
-                    html = afx`
-                        <p>Message from {data.name}</p>
-                        <p>{data.message}</p>
-                    `
+                    html = Neos.Demo:Presentation.Components.ContactForm.Message {
+                        name = ${data.name}
+                        message = ${data.message}
+                    }
                 }
             }
 

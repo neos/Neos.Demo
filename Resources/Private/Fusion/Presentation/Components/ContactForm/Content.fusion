@@ -1,0 +1,23 @@
+prototype(Neos.Demo:Presentation.Components.ContactForm.Content) < prototype(Neos.Fusion:Component) {
+    renderer = afx`
+		<fieldset>
+			<legend>Contact</legend>
+			<Neos.Fusion.Form:FieldContainer label="Name" field.name="name" attributes.class="form-group clearfix">
+				<div class="input">
+					<Neos.Fusion.Form:Input attributes.class="form-control"/>
+				</div>
+			</Neos.Fusion.Form:FieldContainer>
+			<Neos.Fusion.Form:FieldContainer label="Email" field.name="email" attributes.class="form-group clearfix">
+				<div class="input">
+					<Neos.Fusion.Form:Input attributes.class="form-control"/>
+				</div>
+			</Neos.Fusion.Form:FieldContainer>
+			<Neos.Fusion.Form:FieldContainer label="Message" field.name="message"
+											 attributes.class="form-group clearfix">
+				<div class="input">
+					<Neos.Fusion.Form:Textarea attributes.class="form-control"/>
+				</div>
+			</Neos.Fusion.Form:FieldContainer>
+		</fieldset>
+    `
+}

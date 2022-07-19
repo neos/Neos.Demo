@@ -1,0 +1,9 @@
+prototype(Neos.Demo:Presentation.Components.ContactForm.Message) < prototype(Neos.Fusion:Component) {
+    name = ''
+    message = ''
+
+    renderer = afx`
+        <p>Message from {data.name}</p>
+        <p>{data.message}</p>
+    `
+}
