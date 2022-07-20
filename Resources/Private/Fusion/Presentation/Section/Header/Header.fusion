@@ -21,7 +21,8 @@ prototype(Neos.Demo:Section.Header) < prototype(Neos.Fusion:Component) {
         }
     }
 
-    logo = ${StaticResource.content('Neos.Demo', 'Public/Images/logo.svg', true)}
+    logo = null
+    logo.@process.fallback = ${value || StaticResource.content('Neos.Demo', 'Public/Images/logo.svg', true)}
     homeUri = '/'
     menuItems = null
     currentLanguage = null
@@ -33,13 +34,13 @@ prototype(Neos.Demo:Section.Header) < prototype(Neos.Fusion:Component) {
     }
     renderer = afx`
         <header x-data="header" x-bind="header" class="relative lg:sticky z-50 top-0 bg-white/90 text-sm supports-backdrop-blur:bg-white/70 backdrop-blur-sm transition-shadow">
-            <div class="max-w-screen-xl mx-auto mt-6 items-center grid grid-cols-[auto_minmax(0,1fr)_auto_auto] grid-rows-[auto_auto] gap-4 lg:flex lg:gap-10">
-                <a href={props.homeUri} class="block border-transparent border-2" x-ref="logo">
+            <div class="max-w-screen-xl mx-auto py-6 items-center grid grid-cols-[auto_minmax(0,1fr)_auto_auto] grid-rows-[auto_minmax(0,auto)] gap-4 lg:gap-x-10 lg:gap-y-0">
+                <a href={props.homeUri} class="block border-transparent border-2 lg:row-span-full self-start">
                     <Neos.Fusion:Augmenter class="h-14 w-auto">
                         {props.logo}
                     </Neos.Fusion:Augmenter>
                 </a>
-                <nav class="flex-1 row-start-2 col-span-full">
+                <nav class="row-start-2 col-span-full lg:row-start-1 lg:col-span-1">
                     <ul
                         @if={Type.isArray(props.menuItems)}
                         x-collapse
@@ -101,22 +102,22 @@ prototype(Neos.Demo:Section.Header) < prototype(Neos.Fusion:Component) {
                         </Neos.Fusion:Loop>
                     </ul>
                 </nav>
+                 <nav @if={Type.isArray(props.menuItems)} x-cloak class="hidden lg:block col-start-2 row-start-2">
+                    <Neos.Fusion:Loop items={props.menuItems}>
+                        <ul
+                            @if={Type.isArray(item.subItems) && Array.length(item.subItems)}
+                            x-show={"isCurrentPage('" + item.href + "')"}
+                            class="flex items-center gap-10"
+                        >
+                            <Neos.Fusion:Loop items={item.subItems}>
+                                <li>
+                                    <a href={item.href} class="block p-1 text-slate-600 hocus:text-slate-900">{item.label}</a>
+                                </li>
+                            </Neos.Fusion:Loop>
+                        </ul>
+                    </Neos.Fusion:Loop>
+                </nav>
             </div>
-            <nav @if={Type.isArray(props.menuItems)} x-cloak class="max-w-screen-xl mx-auto" :style="'padding-left:'+$refs.logo.offsetWidth+'px'">
-                <Neos.Fusion:Loop items={props.menuItems}>
-                    <ul
-                        @if={Type.isArray(item.subItems) && Array.length(item.subItems)}
-                        x-show={"isCurrentPage('" + item.href + "')"}
-                        class="flex items-center gap-10 pl-10"
-                    >
-                        <Neos.Fusion:Loop items={item.subItems}>
-                            <li>
-                                <a href={item.href} class="block p-1 text-slate-600 hocus:text-slate-900">{item.label}</a>
-                            </li>
-                        </Neos.Fusion:Loop>
-                    </ul>
-                </Neos.Fusion:Loop>
-            </nav>
         </header>
     `
 }

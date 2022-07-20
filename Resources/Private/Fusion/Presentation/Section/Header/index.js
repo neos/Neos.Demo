@@ -9,9 +9,12 @@ Alpine.data('header', () => ({
     },
     onResize() {
         this.mobileMenuOpen = false;
-
         // Check if the mobile menu button is hidden
         this.desktopView = !this.$refs.mobileMenuButton.offsetParent;
+        this.$nextTick(() => {
+            const height = this.$root.offsetHeight;
+            document.documentElement.style.setProperty('--header-height', `${height}px`);
+        });
     },
     onScroll() {
         this.showShaow = this.desktopView && window.pageYOffset;
