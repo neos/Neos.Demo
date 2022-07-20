@@ -1,0 +1,28 @@
+Neos:
+  Neos:
+    userInterface:
+      editPreviewModes:
+        print:
+          isEditingMode: false
+          isPreviewMode: true
+          fusionRenderingPath: print
+          title: 'Neos.Demo:Main:editPreviewModes.print'
+          position: 200
+      translation:
+        autoInclude:
+          Neos.Demo:
+            - Main
+            - 'NodeTypes/*'
+
+      navigateComponent:
+        nodeTree:
+          loadingDepth: 2
+        structureTree:
+          loadingDepth: 3
+
+    nodeTypes:
+      groups:
+        forms:
+          position: end
+          label: 'Neos.Demo:Main:nodeTypes.groups.general'
+          collapsed: false
