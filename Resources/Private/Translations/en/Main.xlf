@@ -15,6 +15,12 @@
             <trans-unit id="contentDimensions.language" xml:space="preserve">
                 <source>Language</source>
             </trans-unit>
+            <trans-unit id="navigation.open" xml:space="preserve">
+                <source>Open menu</source>
+            </trans-unit>
+            <trans-unit id="navigation.close" xml:space="preserve">
+                <source>Close menu</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
