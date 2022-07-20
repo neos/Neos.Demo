@@ -1,4 +1,6 @@
 prototype(Neos.Demo:Section.Columns.Two) < prototype(Neos.Fusion:Component) {
+    // This is used for the living styleguide (Monocle)
+    // Read more about this in the README.md
     @styleguide.props.content = afx`
         <Neos.Demo:Atom.Alert content="First column" />
         <Neos.Demo:Atom.Alert content="Second column" />
