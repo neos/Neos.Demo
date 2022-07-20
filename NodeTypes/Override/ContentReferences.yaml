@@ -1,0 +1,4 @@
+'Neos.NodeTypes.ContentReferences:ContentReferences':
+  superTypes:
+    'Neos.Demo:Constraint.Content.Main': true
+    'Neos.Demo:Constraint.Content.Column': true

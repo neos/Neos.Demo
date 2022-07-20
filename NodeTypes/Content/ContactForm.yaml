@@ -5,9 +5,11 @@
   superTypes:
     'Neos.Neos:Content': true
     'Neos.Demo:Constraint.Content.Column': true
+    'Neos.Demo:Constraint.Content.Main': true
   ui:
     label: i18n
-    icon: 'icon-envelope'
+    icon: 'envelope'
+    group: forms
     inspector:
       groups:
         email:

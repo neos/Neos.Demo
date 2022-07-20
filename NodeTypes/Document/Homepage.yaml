@@ -2,6 +2,8 @@
 # Special homepage nodetype that declares a footer child node for usage as shared footer.
 #
 'Neos.Demo:Document.Homepage':
+  superTypes:
+    'Neos.Demo:Document.LandingPage': true
   ui:
     label: i18n
     icon: 'globe'

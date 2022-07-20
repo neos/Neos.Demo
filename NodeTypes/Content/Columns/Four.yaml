@@ -1,9 +1,10 @@
 'Neos.Demo:Content.Columns.Four':
   superTypes:
     'Neos.Neos:Content': true
+    'Neos.Demo:Constraint.Content.Main': true
   ui:
     label: i18n
-    icon: 'icon-columns'
+    icon: 'columns'
     group: 'structure'
     position: 400
   childNodes:

@@ -4,8 +4,11 @@
 'Neos.Demo:Content.ChapterMenu':
   superTypes:
     'Neos.Neos:Content': true
+    'Neos.Demo:Constraint.Content.Column': true
+    'Neos.Demo:Constraint.Content.Main': true
   ui:
     label: i18n
+    icon: 'book'
     help:
       message: |
         The ChapterMenu renders an overview of all chapters below the current document.

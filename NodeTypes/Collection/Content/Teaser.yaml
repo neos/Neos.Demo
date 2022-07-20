@@ -4,6 +4,7 @@
 'Neos.Demo:Collection.Content.Teaser':
   superTypes:
     Neos.Neos:ContentCollection: true
+  label: "${'Teaser area'}"
   constraints:
     nodeTypes:
       '*': false

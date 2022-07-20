@@ -4,7 +4,8 @@
     'Neos.NodeTypes.BaseMixins:TextMixin': true
     'Neos.Demo:Constraint.Content.Carousel': true
     'Neos.Demo:Constraint.Content.Column': true
+    'Neos.Demo:Constraint.Content.Main': true
   ui:
     label: i18n
-    icon: 'icon-file-text'
+    icon: 'file-text'
     position: 200

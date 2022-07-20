@@ -14,7 +14,7 @@
         image:
           label: i18n
           position: 200
-          icon: 'icon-image'
+          icon: 'image'
   constraints:
     nodeTypes:
       # Neos.NodeTypes is deprecated and we prevent adding documents from this package
@@ -25,8 +25,6 @@
   childNodes:
     'main':
       type: 'Neos.Demo:Collection.Content.Main'
-    'teaser':
-      type: 'Neos.Demo:Collection.Content.Teaser'
   properties:
     'image':
       type: 'Neos\Media\Domain\Model\ImageInterface'

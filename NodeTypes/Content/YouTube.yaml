@@ -6,14 +6,15 @@
     'Neos.Neos:Content': true
     'Neos.Demo:Constraint.Content.Carousel': true
     'Neos.Demo:Constraint.Content.Column': true
+    'Neos.Demo:Constraint.Content.Main': true
   ui:
     label: YouTube
-    icon: 'icon-youtube'
+    icon: 'youtube'
     inspector:
       groups:
         'video':
           label: i18n
-          icon: 'icon-film'
+          icon: 'film'
           position: 50
     help:
       message: 'Embeds a YouTube video as content defined by a video ID.'
