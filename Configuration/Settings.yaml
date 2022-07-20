@@ -1,5 +1,10 @@
 Neos:
   Neos:
+    Ui:
+      resources:
+        javascript:
+          'Neos.Demo:CKEConfig':
+            resource: resource://Neos.Demo/Public/Scripts/CKEConfig/Plugin.js
     userInterface:
       translation:
         autoInclude:
