@@ -27,7 +27,7 @@ prototype(Neos.Demo:Document.Chapter) < prototype(Neos.Fusion:Component) {
         asset = ${chapterImage}
     }
     chapterImageAlt = ${chapterImage ? chapterImage.alternativeText : null}
-    chapterImageTitle =${chapterImage ? chapterImage.title : null}
+    chapterImageTitle = ${chapterImage ? chapterImage.title : null}
 
     chapterLabel = ${q(documentNode).property('_label')}
 

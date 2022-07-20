@@ -1,5 +1,5 @@
 // load scss
 import './Main.scss';
 
-import '../JavaScript/scrollstart';
+// load JavaScript
 import '../JavaScript/main';

@@ -24,7 +24,7 @@ prototype(Neos.Demo:Content.ChapterMenu) < prototype(Neos.Neos:ContentComponent)
                     condition = true
                     renderer = Neos.Fusion:ResourceUri {
                         package = 'Neos.Neos'
-                        path= 'Images/dummy-image.png'
+                        path = 'Images/dummy-image.png'
                     }
                 }
             }
