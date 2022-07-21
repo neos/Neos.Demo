@@ -15,11 +15,11 @@ prototype(Neos.Demo:Content.Columns.Three) < prototype(Neos.Neos:ContentComponen
     }
 
     renderer = afx`
-        <Neos.Demo:Section.Columns.Three>
+        <Neos.Demo:Block.Columns.Three>
             {props.column0}
             {props.column1}
             {props.column2}
-        </Neos.Demo:Section.Columns.Three>
+        </Neos.Demo:Block.Columns.Three>
     `
 }
 

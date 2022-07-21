@@ -1,4 +1,4 @@
-prototype(Neos.Demo:Section.Columns.Two) < prototype(Neos.Fusion:Component) {
+prototype(Neos.Demo:Block.Columns.Two) < prototype(Neos.Demo:Block.Columns) {
     // This is used for the living styleguide (Monocle)
     // Read more about this in the README.md
     @styleguide.props.content = afx`
@@ -7,12 +7,6 @@ prototype(Neos.Demo:Section.Columns.Two) < prototype(Neos.Fusion:Component) {
     `
 
     content = null
-
-    @if.hasContent = ${this.content}
-
-    renderer = afx`
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {props.content}
-        </div>
-    `
+    breakpoint = 'sm'
+    columns = 2
 }
