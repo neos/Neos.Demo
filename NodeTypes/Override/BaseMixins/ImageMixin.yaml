@@ -1,0 +1,12 @@
+'Neos.NodeTypes.BaseMixins:ImageMixin':
+  properties:
+    alternativeText:
+      ui:
+        reloadIfChanged: false
+        inspector:
+          hidden: 'ClientEval: node.properties.image ? false : true'
+    title:
+      ui:
+        reloadIfChanged: false
+        inspector:
+          hidden: 'ClientEval: node.properties.image ? false : true'
