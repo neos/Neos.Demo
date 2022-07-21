@@ -18,7 +18,7 @@
           icon: 'image'
   childNodes:
     'teaser':
-      position: 'end'
+      position: 'before main'
       type: 'Neos.Demo:Collection.Content.Teaser'
   properties:
     'image':
