@@ -186,6 +186,9 @@ module.exports = {
             // Add children variant
             addVariant('children', '& > *');
 
+            // Add first letter in first paragraph variant
+            addVariant('first-letter-in-text', '& > p:first-of-type:first-letter');
+
             // Support variants
             addVariant(
                 'supports-backdrop-blur',
@@ -197,6 +200,16 @@ module.exports = {
             addVariant('scrollbar', '&::-webkit-scrollbar');
             addVariant('scrollbar-track', '&::-webkit-scrollbar-track');
             addVariant('scrollbar-thumb', '&::-webkit-scrollbar-thumb');
+
+            addUtilities({
+                '.dropcap': {
+                    'font-size': defaultTheme.fontSize['7xl'],
+                    'font-family': defaultTheme.fontFamily.serif,
+                    float: 'left',
+                    margin: `0 ${defaultTheme.spacing['4']} -${defaultTheme.spacing['2']} 0`,
+                    'line-height': '1',
+                },
+            });
 
             addUtilities({
                 '.hide-scrollbar': {

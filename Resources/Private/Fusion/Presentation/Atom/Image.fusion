@@ -8,6 +8,7 @@ prototype(Neos.Demo:Atom.Image) < prototype(Neos.Fusion:Component) {
     alt = null
     title = null
     class = null
+    imageClass = null
 
     hasCaption = false
     caption = null
@@ -22,6 +23,7 @@ prototype(Neos.Demo:Atom.Image) < prototype(Neos.Fusion:Component) {
                 src={props.src || StaticResource.uri('Neos.Neos', 'Public/Images/dummy-image.svg')}
                 title={props.title}
                 alt={props.alt}
+                class={props.imageClass}
             />
             <figcaption @if={props.hasCaption && props.caption}>
                 {props.caption}

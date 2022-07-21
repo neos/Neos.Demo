@@ -15,9 +15,11 @@ prototype(Neos.Demo:Block.Breadcrumb) < prototype(Neos.Fusion:Component) {
 
     @if.hasItems = ${Type.isArray(this.menuItems) && Array.length(this.menuItems)}
 
+    class = '-content text-sm mb-4'
+
     renderer = afx`
-        <nav class="-content text-sm mb-4">
-            <ul class="flex flex-wrap">
+        <nav class={props.class}>
+            <ul class="flex flex-wrap m-0">
                 <Neos.Fusion:Loop items={props.menuItems}>
                     <li class="flex items-center">
                         <span @if={!iterator.isFirst} aria-hidden="true" class="block py-1 px-2 text-slate-400">›</span>
