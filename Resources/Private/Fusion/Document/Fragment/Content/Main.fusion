@@ -1,5 +1,0 @@
-prototype(Neos.Demo:Document.Fragment.Content.Main) < prototype(Neos.Neos:ContentCollection) {
-    tagName = 'main'
-    nodePath = 'main'
-    attributes.class = '-content prose'
-}
