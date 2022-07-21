@@ -3,8 +3,7 @@ prototype(Neos.Demo:Block.ChapterMenu) < prototype(Neos.Fusion:Component) {
     // Read more about this in the README.md
     @styleguide.props {
         renderDummyImage = true
-        title = 'Select a chapter to start reading'
-        text = 'Dive deep into the rabbit-hole'
+        content = '<p>Select a chapter to start reading</p>'
         chapters = Neos.Fusion:Map {
             items = ${['I. Down the Rabbit-hole', 'II. The Pool of Tears', 'III. A Caucus-race and a Long Tale', 'IV. The Rabbit sends in a Little Bill', 'V. Advice from a Caterpillar']}
             itemRenderer = Neos.Fusion:DataStructure {
@@ -17,16 +16,17 @@ prototype(Neos.Demo:Block.ChapterMenu) < prototype(Neos.Fusion:Component) {
     }
 
     chapters = null
-    title = null
+    content = null
     renderDummyImage = false
 
-    @if.hasItems = ${Type.isArray(this.chapters) && Array.length(this.chapters)}
+    _hasItems = ${Type.isArray(this.chapters) && Array.length(this.chapters)}
+
+    @if.hasContentOrItems = ${this.content || this._hasItems}
 
     renderer = afx`
-        <section class="max-w-3xl mx-auto">
-            <h2 @if={props.title} class="text-3xl mt-0">{props.title}</h2>
-            <Neos.Demo:Atom.Lead content={props.text} />
-            <nav class="not-prose">
+        <Neos.Demo:Block.Columns.Two breakpoint="lg" tagName="main" class="-content-max-width">
+            {props.content}
+            <nav class="not-prose" @if={props._hasItems}>
                 <ol class="divide-y divide-slate-200">
                     <Neos.Fusion:Loop items={props.chapters}>
                         <li class="flex flex-col sm:flex-row gap-4 py-8 relative">
@@ -49,6 +49,6 @@ prototype(Neos.Demo:Block.ChapterMenu) < prototype(Neos.Fusion:Component) {
                     </Neos.Fusion:Loop>
                 </ol>
             </nav>
-        </section>
+        </Neos.Demo:Block.Columns.Two>
     `
 }

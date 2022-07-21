@@ -1,0 +1,20 @@
+##
+# Document NodeType "ChapterContainer"
+#
+'Neos.Demo:Document.ChapterContainer':
+  superTypes:
+    'Neos.Demo:Document.LandingPage': true
+  constraints:
+    nodeTypes:
+      'Neos.Neos:Document': false
+      'Neos.Demo:Document.Chapter': true
+  childNodes:
+    'main':
+      constraints:
+        nodeTypes:
+          'Neos.Demo:Content.Columns.Two': false
+          'Neos.Demo:Content.Columns.Three': false
+          'Neos.Demo:Content.Columns.Four': false
+  ui:
+    label: i18n
+    icon: 'book'
