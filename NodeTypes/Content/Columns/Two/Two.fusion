@@ -11,10 +11,10 @@ prototype(Neos.Demo:Content.Columns.Two) < prototype(Neos.Neos:ContentComponent)
     }
 
     renderer = afx`
-        <Neos.Demo:Section.Columns.Three>
+        <Neos.Demo:Section.Columns.Two>
             {props.column0}
             {props.column1}
-        </Neos.Demo:Section.Columns.Three>
+        </Neos.Demo:Section.Columns.Two>
     `
 }
 
