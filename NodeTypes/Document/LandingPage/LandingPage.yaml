@@ -1,15 +1,37 @@
 ##
-# A new Document NodeType "LandingPage"
+# Document NodeType "LandingPage"
 #
 'Neos.Demo:Document.LandingPage':
   superTypes:
-    'Neos.Demo:Document.Page': true
+    'Neos.Demo:Mixin.Document': true
   ui:
     label: i18n
     icon: 'plane-arrival'
+    position: 20
     help:
       message: 'A landing Page'
+    inspector:
+      groups:
+        image:
+          label: i18n
+          position: 200
+          icon: 'image'
   childNodes:
     'teaser':
       position: 'end'
       type: 'Neos.Demo:Collection.Content.Teaser'
+  properties:
+    'image':
+      type: 'Neos\Media\Domain\Model\ImageInterface'
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: 'image'
+          position: 50
+          editorOptions:
+            crop:
+              aspectRatio:
+                locked:
+                  width: 2
+                  height: 1

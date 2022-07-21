@@ -11,10 +11,11 @@ prototype(Neos.Demo:Template.Base) < prototype(Neos.Fusion:Component) {
     }
 
     header = null
-    footer = null
     heroContent = null
     heroImage = null
+    breadcrumb = null
     content = null
+    footer = null
 
 
     renderer = afx`
@@ -26,7 +27,7 @@ prototype(Neos.Demo:Template.Base) < prototype(Neos.Fusion:Component) {
         >
             {props.heroContent}
         </div>
-        {props.hero}
+        {props.breadcrumb}
         {props.content}
         {props.footer}
     `

@@ -1,7 +1,7 @@
 /**
  *  Special landing page layout with less navigation components
  */
-prototype(Neos.Demo:Document.LandingPage) < prototype(Neos.Demo:Document.Base) {
+prototype(Neos.Demo:Document.LandingPage) < prototype(Neos.Demo:Mixin.Document) {
     content = Neos.Demo:Document.Fragment.Content.Main
     heroContent = Neos.Demo:Document.Fragment.Content.Teaser
     heroImage = Neos.Neos:ImageUri {

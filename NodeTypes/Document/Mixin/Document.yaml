@@ -1,0 +1,15 @@
+##
+# Mixin for furhter pages
+#
+'Neos.Demo:Mixin.Document':
+  abstract: true
+  superTypes:
+    'Neos.Neos:Document': true
+  constraints:
+    nodeTypes:
+      # Homepage and NotFoundPage are not meant to be added by editors
+      'Neos.Demo:Document.Homepage': false
+      'Neos.Demo:Document.NotFoundPage': false
+  childNodes:
+    'main':
+      type: 'Neos.Demo:Collection.Content.Main'

@@ -1,4 +1,4 @@
-prototype(Neos.Demo:Document.Base) < prototype(Neos.Fusion:Component) {
+prototype(Neos.Demo:Mixin.Document) < prototype(Neos.Fusion:Component) {
     heroContent = null
     heroImage = null
     content = null

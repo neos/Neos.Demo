@@ -3,10 +3,12 @@
 #
 'Neos.Demo:Document.NotFoundPage':
   superTypes:
-    'Neos.Demo:Document.Page': true
+    'Neos.Demo:Mixin.Document': true
   ui:
     label: i18n
     icon: 'times-circle'
+    # Hide document from creation dialog
+    group: ''
   # no further sub documents are allowed here
   constraints:
     nodeTypes:
