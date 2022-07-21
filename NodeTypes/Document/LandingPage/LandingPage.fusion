@@ -2,7 +2,7 @@
  *  Special landing page layout with less navigation components
  */
 prototype(Neos.Demo:Document.LandingPage) < prototype(Neos.Demo:Mixin.Document) {
-    content = Neos.Demo:Document.Fragment.Content.Main
+    content = Neos.Demo:Collection.Content.Main
     heroContent = Neos.Neos:ContentCollection {
         nodePath = 'teaser'
         attributes.class = Neos.Demo:Helper.HeroContentClass

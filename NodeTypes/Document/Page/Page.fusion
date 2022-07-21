@@ -3,5 +3,5 @@
  */
 prototype(Neos.Demo:Document.Page) < prototype(Neos.Demo:Mixin.Document) {
     breadcrumb = Neos.Demo:Integration.Breadcrumb
-    content = Neos.Demo:Document.Fragment.Content.Main
+    content = Neos.Demo:Collection.Content.Main
 }
