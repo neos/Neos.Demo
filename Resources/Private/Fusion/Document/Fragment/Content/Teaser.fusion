@@ -1,4 +1,0 @@
-prototype(Neos.Demo:Document.Fragment.Content.Teaser) < prototype(Neos.Neos:ContentCollection) {
-    nodePath = 'teaser'
-    attributes.class = Neos.Demo:Helper.HeroContentClass
-}

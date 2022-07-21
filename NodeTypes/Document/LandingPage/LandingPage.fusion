@@ -3,7 +3,10 @@
  */
 prototype(Neos.Demo:Document.LandingPage) < prototype(Neos.Demo:Mixin.Document) {
     content = Neos.Demo:Document.Fragment.Content.Main
-    heroContent = Neos.Demo:Document.Fragment.Content.Teaser
+    heroContent = Neos.Neos:ContentCollection {
+        nodePath = 'teaser'
+        attributes.class = Neos.Demo:Helper.HeroContentClass
+    }
     heroImage = Neos.Neos:ImageUri {
         asset = ${q(node).property('image')}
         maximumWidth = 2560
