@@ -14,25 +14,25 @@ Sitegeist:
           position: 80
           match: Block\.
           label: Block
-          icon: icon-gear
+          icon: gear
           color: '#4DBCE9'
         module:
           position: 70
           match: Module\.
           label: Module
-          icon: icon-gears
+          icon: gears
           color: '#26ADE4'
         section:
           position: 60
           match: Section\.
           label: Section
-          icon: icon-certificate
+          icon: certificate
           color: '#D1E751'
         template:
           position: 40
           match: Template\.
           label: Template
-          icon: icon-file
+          icon: file
           color: '#FFFFFF'
       viewportPresets:
         xs:

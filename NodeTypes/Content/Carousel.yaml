@@ -10,7 +10,7 @@
   ui:
     label: i18n
     group: 'plugins'
-    icon: 'icon-picture'
+    icon: 'picture'
     inlineEditable: true
     help:
       message: |

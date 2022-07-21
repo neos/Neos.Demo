@@ -7,7 +7,7 @@
     'Neos.Neos:Plugin': true
   ui:
     label: i18n
-    icon: 'icon-user'
+    icon: 'user'
     help:
       message: |
         A very simple registration to allow quick access to the backend of the demo site.
