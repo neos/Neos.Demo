@@ -2,13 +2,13 @@
 # A new Document NodeType "LandingPage"
 #
 'Neos.Demo:Document.LandingPage':
+  superTypes:
+    'Neos.Demo:Document.Page': true
   ui:
     label: i18n
     icon: 'plane-arrival'
     help:
       message: 'A landing Page'
-  superTypes:
-    'Neos.Demo:Document.Page': true
   childNodes:
     'teaser':
       position: 'end'
