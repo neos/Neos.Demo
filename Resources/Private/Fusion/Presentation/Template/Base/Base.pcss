@@ -18,6 +18,9 @@
   body {
     color: theme(colors.slate.800);
     background-color: theme(colors.white);
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 1px);
   }
 
   img {
@@ -32,14 +35,6 @@
 
   * {
     outline-color: theme(colors.light);
-  }
-}
-
-@layer base {
-  :root {
-    --content-padding: theme("spacing.4");
-    --content-max-width: theme("screens.xl");
-    --content-max-width-wide: theme("screens.2xl");
   }
 }
 
@@ -63,39 +58,21 @@
     }
   }
 
-  .-max-w,
   .-content > .-breakout {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .-max-w--padding,
   .-content > .-breakout--padding {
     padding-left: var(--content-padding);
     padding-right: var(--content-padding);
   }
 
-  .-max-w--narrow,
   .-content > .-breakout--narrow {
     max-width: var(--content-max-width);
   }
 
-  .-max-w--narrow.-max-w--padding,
   .-content > .-breakout--narrow.-breakout--padding {
     max-width: calc(var(--content-max-width) + (var(--content-padding) * 2));
-  }
-
-  .-max-w--wide,
-  .-content > .-breakout--wide {
-    max-width: var(--content-max-width-wide);
-  }
-
-  .-max-w--wide.-max-w--padding,
-  .-content > .-breakout--wide.-breakout--padding {
-    padding-left: var(--content-padding);
-    padding-right: var(--content-padding);
-    max-width: calc(
-      var(--content-max-width-wide) + (var(--content-padding) * 2)
-    );
   }
 }

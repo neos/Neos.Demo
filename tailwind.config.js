@@ -145,6 +145,9 @@ module.exports = {
                         h4: getFontSettings(theme, '2xl'),
                         h5: getFontSettings(theme, 'xl'),
                         h6: getFontSettings(theme, 'lg'),
+                        'h1 + h2': {
+                            marginTop: '0',
+                        },
                         a: {
                             color: 'rgb(var(--tw-prose-links))',
                             textDecoration: 'none',
