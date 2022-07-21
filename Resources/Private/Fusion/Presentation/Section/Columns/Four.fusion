@@ -10,6 +10,8 @@ prototype(Neos.Demo:Section.Columns.Four) < prototype(Neos.Fusion:Component) {
 
     content = null
 
+    @if.hasContent = ${this.content}
+
     renderer = afx`
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {props.content}
