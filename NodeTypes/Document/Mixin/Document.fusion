@@ -9,10 +9,9 @@ prototype(Neos.Demo:Mixin.Document) < prototype(Neos.Fusion:Component) {
         renderPath = '/header'
     }
 
-
-    // footer  = Neos.Fusion:Renderer {
-    //     renderPath = '/footer'
-    // }
+    footer  = Neos.Fusion:Renderer {
+        renderPath = '/footer'
+    }
 
     renderer = Neos.Neos:Page {
         htmlTag.attributes.class = ${String.startsWith(Configuration.setting('Neos.Flow.core.context'), 'Development') ? 'development' : null}

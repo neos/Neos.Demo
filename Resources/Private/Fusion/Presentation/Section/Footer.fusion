@@ -1,0 +1,33 @@
+prototype(Neos.Demo:Section.Footer) < prototype(Neos.Fusion:Component) {
+    // This is used for the living styleguide (Monocle)
+    // Read more about this in the README.md
+    @styleguide.props {
+        menuItems = Neos.Fusion:Map {
+            items = ${['Download', 'Contribute', 'Documentation']}
+            itemRenderer = Neos.Fusion:DataStructure {
+                label = ${item}
+                href = ${'#' + item}
+            }
+        }
+        content = Neos.Fusion:Tag {
+            attributes.class = Neos.Demo:Helper.FooterContentClass
+            content = '<p>Powered by Neos & Flow</p>'
+        }
+    }
+
+
+    _hasMenuItems = ${Type.isArray(this.menuItems) && Array.length(this.menuItems)}
+
+    @if.hasMenuItemsOrContent = ${this._hasMenuItems || this.content}
+
+    renderer = afx`
+        <footer class={['-content mt-12 text-sm', props._hasMenuItems ? 'border-t border-slate-200/80' : null]}>
+            <nav class="py-5  flex flex-wrap gap-x-10" @if={props._hasMenuItems}>
+                <Neos.Fusion:Loop items={props.menuItems}>
+                    <a href={item.href} class="block py-3 text-slate-600 hocus:text-slate-900">{item.label}</a>
+                </Neos.Fusion:Loop>
+            </nav>
+            {props.content}
+        </footer>
+    `
+}

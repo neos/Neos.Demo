@@ -3,10 +3,20 @@ prototype(Neos.Demo:Template.Base) < prototype(Neos.Fusion:Component) {
     // Read more about this in the README.md
     @styleguide {
         props {
+            header = afx`<Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Section.Header'/>`
             heroImage = ${StaticResource.uri('Neos.Neos', 'Public/Images/dummy-image.svg')}
             heroContent = afx`<Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Atom.Headline' props.content='You won‘t need a manual or training to edit content in Neos - because you already know how to do that.' />`
-            header = afx`<Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Section.Header'/>`
-            //footer = afx`<Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Section.Footer' />`
+            content = afx`
+                <main class="-content prose">
+                    <Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Atom.Headline' />
+                    <Neos.Demo:Section.Columns.Two>
+                        <div><Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Atom.Text' /></div>
+                        <div><Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Atom.Text' /></div>
+                    </Neos.Demo:Section.Columns.Two>
+                    <Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Section.Columns.Four' />
+                </main>
+            `
+           footer = afx`<Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Section.Footer' />`
         }
     }
 
