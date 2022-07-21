@@ -1,12 +1,18 @@
 import Alpine from 'alpinejs';
 
-Alpine.data('header', () => ({
+Alpine.data('header', (homeUri) => ({
     mobileMenuOpen: false,
     showShadow: false,
     desktopView: true,
     enableCollapse: false,
     isCurrentPage(path) {
-        return window.location.pathname.startsWith(path);
+        const currentPath = window.location.pathname;
+        // If we are on the homepage, we need to check if the current path is the homepage
+        if (path === homeUri) {
+            return currentPath === homeUri;
+        }
+        // Otherwise we check if the current path starts with the path
+        return currentPath.startsWith(path);
     },
     onResize() {
         this.mobileMenuOpen = false;

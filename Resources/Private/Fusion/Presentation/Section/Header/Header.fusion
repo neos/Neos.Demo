@@ -33,7 +33,7 @@ prototype(Neos.Demo:Section.Header) < prototype(Neos.Fusion:Component) {
         fr = 'Français'
     }
     renderer = afx`
-        <header x-data="header" x-bind="header" class="relative lg:sticky z-50 top-0 bg-white/90 text-sm supports-backdrop-blur:bg-white/80 backdrop-blur-sm transition-shadow">
+        <header x-data={"header('" + props.homeUri + "')"} x-bind="header" class="relative lg:sticky z-50 top-0 bg-white/90 text-sm supports-backdrop-blur:bg-white/80 backdrop-blur-sm transition-shadow">
             <div class="max-w-screen-xl mx-auto py-6 items-center grid grid-cols-[auto_minmax(0,1fr)_auto_auto] grid-rows-[auto_minmax(0,auto)] gap-4 lg:gap-x-10 lg:gap-y-0">
                 <a href={props.homeUri} class="block border-transparent border-2 lg:row-span-full self-start">
                     <Neos.Fusion:Augmenter class="h-14 w-auto">
@@ -45,16 +45,24 @@ prototype(Neos.Demo:Section.Header) < prototype(Neos.Fusion:Component) {
                         @if={Type.isArray(props.menuItems)}
                         x-collapse
                         x-show="mobileMenuOpen||desktopView"
-                        class="flex flex-col lg:flex-row items-center gap-10 text-center"
+                        class="flex flex-col lg:flex-row items-center gap-10 text-center text-slate-600"
                         :class="enableCollapse||'!transition-none'"
                     >
                         <Neos.Fusion:Loop items={props.menuItems}>
                             <li>
-                                <a href={item.href} class="block p-1 text-slate-600 hocus:text-slate-900 text-lg lg:text-sm whitespace-nowrap">{item.label}</a>
+                                <a
+                                    href={item.href}
+                                    :class={"isCurrentPage('" + item.href + "')&&'text-light'"}
+                                    class="block p-1 hocus:text-slate-900 text-lg lg:text-sm whitespace-nowrap"
+                                >{item.label}</a>
                                 <ul @if={Type.isArray(item.subItems) && Array.length(item.subItems)} x-cloak :class="desktopView&&'hidden'">
                                     <Neos.Fusion:Loop items={item.subItems}>
                                         <li>
-                                            <a href={item.href} class="block text-base p-1 whitespace-nowrap">{item.label}</a>
+                                            <a
+                                                href={item.href}
+                                                :class={"isCurrentPage('" + item.href + "')&&'text-light'"}
+                                                class="block text-base p-1 whitespace-nowrap"
+                                            >{item.label}</a>
                                         </li>
                                     </Neos.Fusion:Loop>
                                 </ul>
@@ -108,11 +116,15 @@ prototype(Neos.Demo:Section.Header) < prototype(Neos.Fusion:Component) {
                         <ul
                             @if={Type.isArray(item.subItems) && Array.length(item.subItems)}
                             x-show={"isCurrentPage('" + item.href + "')"}
-                            class="flex flex-wrap items-center gap-x-10"
+                            class="flex flex-wrap items-center gap-x-10 text-slate-600"
                         >
                             <Neos.Fusion:Loop items={item.subItems}>
                                 <li>
-                                    <a href={item.href} class="block p-1 text-slate-600 hocus:text-slate-900 whitespace-nowrap">{item.label}</a>
+                                    <a
+                                        href={item.href}
+                                        :class={"isCurrentPage('" + item.href + "')&&'text-light'"}
+                                        class="block p-1 hocus:text-slate-900 whitespace-nowrap"
+                                    >{item.label}</a>
                                 </li>
                             </Neos.Fusion:Loop>
                         </ul>
