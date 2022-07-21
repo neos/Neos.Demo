@@ -6,7 +6,7 @@
   ui:
     label: i18n
     icon: header
-    position: 100
+    position: 10
     inspector:
       groups:
         settings:

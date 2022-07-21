@@ -9,6 +9,7 @@
   ui:
     label: YouTube
     icon: youtube
+    position: 50
     inspector:
       groups:
         'video':

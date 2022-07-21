@@ -21,6 +21,9 @@
             <trans-unit id="navigation.close" xml:space="preserve">
                 <source>Close menu</source>
             </trans-unit>
+            <trans-unit id="nodeTypes.groups.forms" xml:space="preserve">
+                <source>Forms</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

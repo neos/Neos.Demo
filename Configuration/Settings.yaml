@@ -1,5 +1,11 @@
 Neos:
   Neos:
+    nodeTypes:
+      groups:
+        forms:
+          position: 200
+          label: 'Neos.Demo:Main:nodeTypes.groups.forms'
+          collapsed: false
     Ui:
       resources:
         javascript:

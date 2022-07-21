@@ -5,7 +5,7 @@
     label: i18n
     icon: 'columns'
     group: 'structure'
-    position: 400
+    position: 30
   childNodes:
     column0:
       type: 'Neos.Demo:Collection.Content.Column'

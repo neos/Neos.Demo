@@ -6,7 +6,7 @@
   ui:
     label: i18n
     icon: file-text
-    position: 200
+    position: 20
   properties:
     text:
       options:
