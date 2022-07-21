@@ -12,12 +12,18 @@ prototype(Neos.Demo:Atom.Image) < prototype(Neos.Fusion:Component) {
     hasCaption = false
     caption = null
 
+    renderDummyImage = false
+
     @if.hasSource = ${this.src || this.renderDummyImage}
 
     renderer = afx`
         <figure class={props.class}>
-            <img src={props.src || StaticResource.uri('Neos.Neos', 'Public/Images/dummy-image.svg')} title={props.title} alt={props.alt} />
-            <figcaption @if.has={props.hasCaption && props.caption}>
+            <img
+                src={props.src || StaticResource.uri('Neos.Neos', 'Public/Images/dummy-image.svg')}
+                title={props.title}
+                alt={props.alt}
+            />
+            <figcaption @if={props.hasCaption && props.caption}>
                 {props.caption}
             </figcaption>
         </figure>

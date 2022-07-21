@@ -1,0 +1,40 @@
+##
+# "ChapterMenu" element
+#
+prototype(Neos.Demo:Content.ChapterMenu) < prototype(Neos.Neos:ContentComponent) {
+    title = Neos.Neos:Editable {
+        property = 'title'
+        block = false
+    }
+    text = Neos.Neos:Editable {
+        property = 'text'
+        block = false
+    }
+    chapters = Neos.Fusion:Map {
+        items = ${q(documentNode).children('[instanceof Neos.Demo:Document.Chapter]').get()}
+        itemName = 'chapter'
+        itemRenderer = Neos.Fusion:Component {
+            href = Neos.Neos:NodeUri {
+                node = ${chapter}
+            }
+            title = ${q(chapter).property('title')}
+            chapterImage  = ${q(chapter).property('chapterImage')}
+            imageAlt = ${q(chapter).property('chapterImageAlt')}
+            description =  ${q(chapter).property('chapterDescription')}
+            renderer = Neos.Fusion:DataStructure {
+                @apply.props = ${props}
+                imageSrc = Neos.Neos:ImageUri {
+                    @if.hasImage = ${props.chapterImage}
+                    asset = ${props.chapterImage}
+                    maximumWidth = 144
+                }
+            }
+        }
+    }
+
+    renderDummyImage = ${node.context.inBackend}
+
+    renderer = afx`<Neos.Demo:Block.ChapterMenu {...props} />`
+}
+/*
+*/

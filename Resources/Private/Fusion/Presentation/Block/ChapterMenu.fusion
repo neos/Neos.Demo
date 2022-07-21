@@ -1,0 +1,54 @@
+prototype(Neos.Demo:Block.ChapterMenu) < prototype(Neos.Fusion:Component) {
+    // This is used for the living styleguide (Monocle)
+    // Read more about this in the README.md
+    @styleguide.props {
+        renderDummyImage = true
+        title = 'Select a chapter to start reading'
+        text = 'Dive deep into the rabbit-hole'
+        chapters = Neos.Fusion:Map {
+            items = ${['I. Down the Rabbit-hole', 'II. The Pool of Tears', 'III. A Caucus-race and a Long Tale', 'IV. The Rabbit sends in a Little Bill', 'V. Advice from a Caterpillar']}
+            itemRenderer = Neos.Fusion:DataStructure {
+                title = ${item}
+                href = '#'
+                description = ${'Description: ' + item}
+                imageAlt = ${'imageAlt: ' + item}
+            }
+        }
+    }
+
+    chapters = null
+    title = null
+    renderDummyImage = false
+
+    @if.hasItems = ${Type.isArray(this.chapters) && Array.length(this.chapters)}
+
+    renderer = afx`
+        <section class="max-w-3xl mx-auto">
+            <h2 @if={props.title} class="text-3xl mt-0">{props.title}</h2>
+            <Neos.Demo:Atom.Lead content={props.text} />
+            <nav class="not-prose">
+                <ol class="divide-y divide-slate-200">
+                    <Neos.Fusion:Loop items={props.chapters}>
+                        <li class="flex flex-col sm:flex-row gap-4 py-8 relative">
+                            <p class="flex-1">
+                                <a href={item.href} class="block peer">
+                                    <span class="absolute inset-y-8 inset-x-0" aria-hidden="true"></span>
+                                    {item.title}
+                                </a>
+                                <span @if={item.description} class="block text-slate-400 peer-hocus:text-slate-600 text-sm">
+                                    {item.description}
+                                </span>
+                            </p>
+                            <Neos.Demo:Atom.Image
+                                class="w-36"
+                                renderDummyImage={props.renderDummyImage}
+                                src={item.imageSrc}
+                                alt={item.imageAlt}
+                            />
+                        </li>
+                    </Neos.Fusion:Loop>
+                </ol>
+            </nav>
+        </section>
+    `
+}

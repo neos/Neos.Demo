@@ -13,3 +13,10 @@
         * title
         * chapter description
         * chapter image
+  properties:
+    title:
+      options:
+        preset: 'text.headline'
+    text:
+      options:
+        preset: 'text.pure'
