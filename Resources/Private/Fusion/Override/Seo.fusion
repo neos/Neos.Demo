@@ -1,0 +1,4 @@
+prototype(Neos.Seo:AlternateLanguageLinks) {
+    // We enable this, because we use this for our language menu
+    @if.onlyRenderWhenInLiveWorkspace = true
+}
