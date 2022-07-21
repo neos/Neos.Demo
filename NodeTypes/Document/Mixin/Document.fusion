@@ -1,6 +1,7 @@
 prototype(Neos.Demo:Mixin.Document) < prototype(Neos.Fusion:Component) {
     heroContent = null
     heroImage = null
+    breadcrumb = null
     content = null
     bodyClass = null
     bodyStyles = Neos.Fusion:DataStructure
@@ -37,6 +38,7 @@ prototype(Neos.Demo:Mixin.Document) < prototype(Neos.Fusion:Component) {
             header = ${props.header}
             heroContent = ${props.heroContent}
             heroImage = ${props.heroImage}
+            breadcrumb = ${props.breadcrumb}
             content = ${props.content}
             footer  = ${props.footer}
         }

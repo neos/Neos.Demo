@@ -2,6 +2,6 @@
  * Default page-rendering for the Neos.Demo website
  */
 prototype(Neos.Demo:Document.Page) < prototype(Neos.Demo:Mixin.Document) {
-    breadcrumb = null
+    breadcrumb = Neos.Demo:Integration.Breadcrumb
     content = Neos.Demo:Document.Fragment.Content.Main
 }
