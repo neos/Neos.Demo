@@ -2,8 +2,9 @@ import Alpine from 'alpinejs';
 
 Alpine.data('header', () => ({
     mobileMenuOpen: false,
-    showShaow: false,
+    showShadow: false,
     desktopView: true,
+    enableCollapse: false,
     isCurrentPage(path) {
         return window.location.pathname.startsWith(path);
     },
@@ -14,10 +15,11 @@ Alpine.data('header', () => ({
         this.$nextTick(() => {
             const height = this.$root.offsetHeight;
             document.documentElement.style.setProperty('--header-height', `${height}px`);
+            this.enableCollapse = !this.desktopView;
         });
     },
     onScroll() {
-        this.showShaow = this.desktopView && window.pageYOffset;
+        this.showShadow = this.desktopView && !!window.pageYOffset;
     },
     init() {
         this.onResize();
@@ -27,6 +29,9 @@ Alpine.data('header', () => ({
         '@resize.window.passive.throttle'() {
             this.onResize();
         },
+        '@resize.window.passive.debounce'() {
+            this.onResize();
+        },
         '@scroll.window.passive.throttle'() {
             this.onScroll();
         },
@@ -34,7 +39,7 @@ Alpine.data('header', () => ({
             this.onScroll();
         },
         ':class'() {
-            return this.showShaow && 'shadow-lg';
+            return this.showShadow && 'shadow-lg';
         },
         '@keydown.window.escape'() {
             this.mobileMenuOpen = false;
