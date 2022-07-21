@@ -10,4 +10,9 @@ Alpine.plugin(intersect);
 Alpine.plugin(collapse);
 Alpine.plugin(persist);
 
+// We use this to enable the AlpineJS debugger in the browser.
+if (document.documentElement.classList.contains('development')) {
+    window.Alpine = Alpine;
+}
+
 Alpine.start();
