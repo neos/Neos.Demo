@@ -9,9 +9,5 @@ prototype(Neos.Demo:Atom.Text) < prototype(Neos.Fusion:Component) {
 
     @if.hasText = ${this.text}
 
-    renderer = afx`
-        <div class="prose">
-            {props.text}
-        </div>
-    `
+    renderer = afx`{props.text}`
 }

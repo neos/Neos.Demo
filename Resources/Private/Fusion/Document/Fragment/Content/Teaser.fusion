@@ -1,5 +1,4 @@
-prototype(Neos.Demo:Document.Fragment.Content.Teaser) < prototype(Neos.Fusion:Component) {
-    renderer = Neos.Neos:ContentCollection {
-        nodePath = 'teaser'
-    }
+prototype(Neos.Demo:Document.Fragment.Content.Teaser) < prototype(Neos.Neos:ContentCollection) {
+    nodePath = 'teaser'
+    attributes.class = Neos.Demo:Helper.HeroContentClass
 }
