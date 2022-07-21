@@ -1,0 +1,101 @@
+@layer base {
+  @font-face {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("../Fonts/WorkSans.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Work Sans";
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("../Fonts/WorkSans-Italic.woff2") format("woff2");
+  }
+
+  body {
+    color: theme(colors.slate.800);
+    background-color: theme(colors.white);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  [x-cloak] {
+    pointer-events: none !important;
+    visibility: hidden !important;
+  }
+
+  * {
+    outline-color: theme(colors.light);
+  }
+}
+
+@layer base {
+  :root {
+    --content-padding: theme("spacing.4");
+    --content-max-width: theme("screens.xl");
+    --content-max-width-wide: theme("screens.2xl");
+  }
+}
+
+@layer components {
+  .-content {
+    display: grid;
+    gap: 0;
+    grid-template-columns:
+      [full-start] minmax(var(--content-padding), 1fr)
+      [main-start] minmax(0, var(--content-max-width)) [main-end]
+      minmax(var(--content-padding), 1fr) [full-end];
+
+    & > * {
+      grid-column: main;
+    }
+
+    & > .-content,
+    & > .-breakout {
+      grid-column: full;
+      width: 100%;
+    }
+  }
+
+  .-max-w,
+  .-content > .-breakout {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .-max-w--padding,
+  .-content > .-breakout--padding {
+    padding-left: var(--content-padding);
+    padding-right: var(--content-padding);
+  }
+
+  .-max-w--narrow,
+  .-content > .-breakout--narrow {
+    max-width: var(--content-max-width);
+  }
+
+  .-max-w--narrow.-max-w--padding,
+  .-content > .-breakout--narrow.-breakout--padding {
+    max-width: calc(var(--content-max-width) + (var(--content-padding) * 2));
+  }
+
+  .-max-w--wide,
+  .-content > .-breakout--wide {
+    max-width: var(--content-max-width-wide);
+  }
+
+  .-max-w--wide.-max-w--padding,
+  .-content > .-breakout--wide.-breakout--padding {
+    padding-left: var(--content-padding);
+    padding-right: var(--content-padding);
+    max-width: calc(
+      var(--content-max-width-wide) + (var(--content-padding) * 2)
+    );
+  }
+}

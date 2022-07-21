@@ -1,0 +1,3 @@
+prototype(Neos.Demo:Helper.HeroContentClass) < prototype(Neos.Fusion:Value) {
+    value = '-content content-center justify-items-center prose prose-2xl prose-white flex-1'
+}

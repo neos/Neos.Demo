@@ -1,5 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 const plugin = require('tailwindcss/plugin');
+const colors = require('tailwindcss/colors');
 
 function getFontSettings(theme, fontSize, fontWeight = 400) {
     return {
@@ -16,6 +17,13 @@ module.exports = {
     theme: {
         extend: {
             minHeight: defaultTheme.spacing,
+            maxWidth: (theme) => ({
+                'screen-md-p': `calc(${theme('screens.md')} + ${theme('spacing.16')})`,
+                'screen-lg-p': `calc(${theme('screens.lg')} + ${theme('spacing.16')})`,
+                'screen-xl-p': `calc(${theme('screens.xl')} + ${theme('spacing.16')})`,
+                'screen-2xl-p': `calc(${theme('screens.2xl')} + ${theme('spacing.16')})`,
+                'screen-3xl-p': `calc(${theme('screens.3xl')} + ${theme('spacing.16')})`,
+            }),
             fontSize: {
                 lg: [
                     '1.125rem',
@@ -56,28 +64,28 @@ module.exports = {
                     '3rem',
                     {
                         lineHeight: '1',
-                        letterSpacing: '-0.1em',
+                        letterSpacing: defaultTheme.letterSpacing.tighter,
                     },
                 ],
                 '6xl': [
                     '3.75rem',
                     {
                         lineHeight: '1',
-                        letterSpacing: '-0.1em',
+                        letterSpacing: defaultTheme.letterSpacing.tighter,
                     },
                 ],
                 '7xl': [
                     '4.5rem',
                     {
                         lineHeight: '1',
-                        letterSpacing: '-0.1em',
+                        letterSpacing: defaultTheme.letterSpacing.tighter,
                     },
                 ],
                 '8xl': [
                     '6rem',
                     {
                         lineHeight: '1',
-                        letterSpacing: '-0.1em',
+                        letterSpacing: defaultTheme.letterSpacing.tighter,
                     },
                 ],
                 '9xl': [
@@ -96,11 +104,41 @@ module.exports = {
                 sans: ['Work Sans', ...defaultTheme.fontFamily.sans],
             },
             typography: (theme) => ({
+                white: {
+                    css: {
+                        '--tw-prose-body': colors.white,
+                        '--tw-prose-headings': colors.white,
+                        '--tw-prose-lead': colors.white,
+                        '--tw-prose-links': colors.white,
+                        '--tw-prose-bold': colors.white,
+                        '--tw-prose-counters': colors.white,
+                        '--tw-prose-bullets': colors.white,
+                        '--tw-prose-hr': colors.white,
+                        '--tw-prose-quotes': colors.white,
+                        '--tw-prose-quote-borders': colors.white,
+                        '--tw-prose-captions': colors.white,
+                        '--tw-prose-code': colors.white,
+                        '--tw-prose-pre-code': colors.white,
+                        '--tw-prose-pre-bg': colors.white,
+                        '--tw-prose-th-borders': colors.white,
+                        '--tw-prose-td-borders': colors.white,
+
+                        a: {
+                            textDecoration: 'underline',
+                            '&:hover': {
+                                textDecoration: 'none',
+                            },
+                            '&:focus': {
+                                textDecoration: 'none',
+                            },
+                        },
+                    },
+                },
                 DEFAULT: {
                     css: {
                         '--tw-prose-links': 'var(--color-light)',
                         '--tw-prose-bullets': 'rgb(var(--color-light)/50%)',
-
+                        maxWidth: null,
                         h1: getFontSettings(theme, '5xl'),
                         h2: getFontSettings(theme, '4xl'),
                         h3: getFontSettings(theme, '3xl'),
