@@ -1,0 +1,13 @@
+prototype(Neos.Neos:Page) {
+    htmlTag.attributes.class = ${String.startsWith(Configuration.setting('Neos.Flow.core.context'), 'Development') ? 'development' : null}
+    head {
+        stylesheets {
+            site = Neos.Demo:Atom.Stylesheet
+        }
+        javascripts {
+            site = Neos.Demo:Atom.Javascript
+        }
+        metadata = '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
+    }
+    @process.convertUris = Neos.Neos:ConvertUris
+}

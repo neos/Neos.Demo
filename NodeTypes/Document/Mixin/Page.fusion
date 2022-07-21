@@ -1,0 +1,24 @@
+// this is used for an entry point for settings CSS custom properties to the body tag
+
+prototype(Neos.Demo:Mixin.Page) < prototype(Neos.Fusion:Component) {
+    style = Neos.Fusion:DataStructure {
+        // RGB values (Plain numbers)
+        // '--color-light' = '255 52 34'
+        // '--color-dark' = '0 0 0'
+    }
+    class = null
+    content = null
+
+    renderer = Neos.Neos:Page {
+        body = ${props.content}
+        bodyTag.attributes {
+            class = ${props.class}
+            style = Neos.Fusion:Loop {
+                @if.hasStyles = ${Type.isArray(props.style) && Array.length(props.style)}
+                @glue = ';'
+                items = ${props.style}
+                itemRenderer = ${itemKey + ':' + item}
+            }
+        }
+    }
+}
