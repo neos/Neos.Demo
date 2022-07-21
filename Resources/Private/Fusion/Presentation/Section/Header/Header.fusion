@@ -42,7 +42,7 @@ prototype(Neos.Demo:Section.Header) < prototype(Neos.Fusion:Component) {
                 </a>
                 <nav class="row-start-2 col-span-full lg:row-start-1 lg:col-span-1">
                     <ul
-                        @if={Type.isArray(props.menuItems)}
+                        @if={Type.isArray(props.menuItems) && Array.length(props.menuItems)}
                         x-collapse
                         x-show="mobileMenuOpen||desktopView"
                         class="flex flex-col lg:flex-row items-center gap-10 text-center text-slate-600"
