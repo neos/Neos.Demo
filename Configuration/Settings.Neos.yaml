@@ -24,7 +24,7 @@ Neos:
       groups:
         forms:
           position: end
-          label: 'Neos.Demo:Main:nodeTypes.groups.general'
+          label: 'Neos.Demo:Main:nodeTypes.groups.forms'
           collapsed: false
 
     Ui:
