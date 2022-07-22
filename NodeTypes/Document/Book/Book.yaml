@@ -1,12 +1,19 @@
 ##
-# Document NodeType "ChapterContainer"
+# Document NodeType "Book" which can have "Chapters"
 #
-'Neos.Demo:Document.ChapterContainer':
+'Neos.Demo:Document.Book':
   superTypes:
     'Neos.Demo:Document.LandingPage': true
+    'Neos.Demo:Constraint.Document.NoSubDocument': true
+    'Neos.Demo:Constraint.Document.Restricted': true
+  ui:
+    label: i18n
+    icon: 'book'
+    position: 300
+    help:
+      message: 'A book which can have chapters.'
   constraints:
     nodeTypes:
-      'Neos.Neos:Document': false
       'Neos.Demo:Document.Chapter': true
   childNodes:
     'main':
@@ -15,6 +22,3 @@
           'Neos.Demo:Content.Columns.Two': false
           'Neos.Demo:Content.Columns.Three': false
           'Neos.Demo:Content.Columns.Four': false
-  ui:
-    label: i18n
-    icon: 'book'
