@@ -1,0 +1,5 @@
+'Neos.NodeTypes.ContentReferences:ContentReferences':
+  properties:
+    references:
+      ui:
+        showInCreationDialog: true

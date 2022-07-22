@@ -1,5 +1,8 @@
 'Neos.NodeTypes.BaseMixins:ImageMixin':
   properties:
+    image:
+      ui:
+        showInCreationDialog: true
     alternativeText:
       ui:
         reloadIfChanged: false

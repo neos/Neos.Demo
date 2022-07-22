@@ -1,0 +1,5 @@
+'Neos.NodeTypes.AssetList:AssetList':
+  properties:
+    assets:
+      ui:
+        showInCreationDialog: true
