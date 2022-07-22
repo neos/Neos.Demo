@@ -41,6 +41,22 @@
   .prose .neos-contentcollection :where(p, figure):first-child {
     margin-top: 0;
   }
+
+  @media print {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      break-after: avoid-page;
+    }
+
+    figure,
+    p {
+      break-inside: avoid-page;
+    }
+  }
 }
 
 @layer components {

@@ -21,9 +21,9 @@ prototype(Neos.Demo:Section.Footer) < prototype(Neos.Fusion:Component) {
     @if.hasMenuItemsOrContent = ${this._hasMenuItems || this.content}
 
     renderer = afx`
-        <div aria-hidden="true" class="flex-1"><!-- This element is needed to set the footer at the bottom of the page --></div>
-        <footer class={['-content mt-12 text-sm', props._hasMenuItems ? 'border-t border-slate-200/80' : null]}>
-            <nav class="py-5  flex flex-wrap gap-x-10" @if={props._hasMenuItems}>
+        <div aria-hidden="true" class="flex-1 print:hidden"><!-- This element is needed to set the footer at the bottom of the page --></div>
+        <footer class={['-content mt-12 text-sm print:border-t print:border-slate-200/80', props._hasMenuItems ? 'border-t border-slate-200/80' : null]}>
+            <nav class="py-5 flex flex-wrap gap-x-10 print:hidden" @if={props._hasMenuItems}>
                 <Neos.Fusion:Loop items={props.menuItems}>
                     <a href={item.href} class="block py-3 text-slate-600 hocus:text-slate-900">{item.label}</a>
                 </Neos.Fusion:Loop>

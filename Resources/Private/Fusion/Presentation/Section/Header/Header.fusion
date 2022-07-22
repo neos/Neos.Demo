@@ -32,12 +32,17 @@ prototype(Neos.Demo:Section.Header) < prototype(Neos.Fusion:Component) {
         de = 'Deutsch'
     }
 
+    defaultLogo = ${StaticResource.content('Neos.Demo', 'Public/Images/logo.svg', true)}
+
     renderer = afx`
-        <header x-data={"header('" + props.homeUri + "')"} x-bind="header" class="relative lg:sticky z-50 top-0 bg-white/90 text-sm supports-backdrop-blur:bg-white/80 backdrop-blur-sm transition-shadow">
+        <Neos.Fusion:Augmenter class="hidden print:block w-auto max-h-32 mr-auto">
+            {props.logo || props.defaultLogo}
+        </Neos.Fusion:Augmenter>
+        <header x-data={"header('" + props.homeUri + "')"} x-bind="header" class="relative lg:sticky print:hidden z-50 top-0 bg-white/90 text-sm supports-backdrop-blur:bg-white/80 backdrop-blur-sm transition-shadow">
             <div class="max-w-screen-xl mx-auto py-6 items-center grid grid-cols-[auto_minmax(0,1fr)_auto_auto] grid-rows-[auto_minmax(0,auto)] gap-4 lg:gap-x-10 lg:gap-y-0">
                 <a href={props.homeUri} class="block border-transparent border-2 lg:row-span-full self-start">
                     <Neos.Fusion:Augmenter class="h-14 w-auto">
-                        {props.logo || StaticResource.content('Neos.Demo', 'Public/Images/logo.svg', true)}
+                        {props.logo || props.defaultLogo}
                     </Neos.Fusion:Augmenter>
                 </a>
                 <nav class="row-start-2 col-span-full lg:row-start-1 lg:col-span-1">
