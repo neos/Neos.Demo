@@ -24,7 +24,7 @@ prototype(Neos.Demo:Block.ChapterMenu) < prototype(Neos.Fusion:Component) {
     @if.hasContentOrItems = ${this.content || this._hasItems}
 
     renderer = afx`
-        <Neos.Demo:Block.Columns.Two breakpoint="lg" tagName="main" class="-content-max-width">
+        <Neos.Demo:Block.Columns.Two breakpoint="lg" tagName="main" class="content">
             {props.content}
             <nav class="not-prose" @if={props._hasItems}>
                 <ol class="divide-y divide-slate-200">

@@ -10,7 +10,7 @@ prototype(Neos.Demo:Section.Footer) < prototype(Neos.Fusion:Component) {
             }
         }
         content = Neos.Fusion:Tag {
-            attributes.class = Neos.Demo:Helper.FooterContentClass
+            attributes.class = 'content'
             content = '<p>Powered by Neos & Flow</p>'
         }
     }
@@ -22,13 +22,15 @@ prototype(Neos.Demo:Section.Footer) < prototype(Neos.Fusion:Component) {
 
     renderer = afx`
         <div aria-hidden="true" class="flex-1 print:hidden"><!-- This element is needed to set the footer at the bottom of the page --></div>
-        <footer class={['-content mt-12 text-sm print:border-t print:border-slate-200/80', props._hasMenuItems ? 'border-t border-slate-200/80' : null]}>
-            <nav class="py-5 flex flex-wrap gap-x-10 print:hidden" @if={props._hasMenuItems}>
+        <footer class={['mt-12 text-sm print:border-t print:border-slate-200/80', props._hasMenuItems ? 'border-t border-slate-200/80' : null]}>
+            <nav class="content py-5 flex flex-wrap gap-x-10 print:hidden" @if={props._hasMenuItems}>
                 <Neos.Fusion:Loop items={props.menuItems}>
                     <a href={item.href} class="block py-3 text-slate-600 hocus:text-slate-900">{item.label}</a>
                 </Neos.Fusion:Loop>
             </nav>
-            {props.content}
+            <div @if={props.content} class="py-5 bg-slate-100 shadow-inner empty:hidden print:bg-transparent print:shadow-none">
+                {props.content}
+            </div>
         </footer>
     `
 }

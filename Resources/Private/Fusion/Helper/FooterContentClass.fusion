@@ -1,3 +1,0 @@
-prototype(Neos.Demo:Helper.FooterContentClass) < prototype(Neos.Fusion:Value) {
-    value = '-content py-5 bg-slate-100 prose prose-sm shadow-inner empty:hidden print:bg-transparent print:shadow-none'
-}

@@ -7,7 +7,7 @@ prototype(Neos.Demo:Template.Base) < prototype(Neos.Fusion:Component) {
             heroImage = ${StaticResource.uri('Neos.Neos', 'Public/Images/dummy-image.svg')}
             heroContent = afx`<Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Atom.Headline' props.content='You won‘t need a manual or training to edit content in Neos - because you already know how to do that.' />`
             content = afx`
-                <main class="-content prose">
+                <main class="content prose">
                     <Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Atom.Headline' />
                     <Neos.Demo:Block.Columns.Two>
                         <div><Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Atom.Text' /></div>
@@ -32,7 +32,7 @@ prototype(Neos.Demo:Template.Base) < prototype(Neos.Fusion:Component) {
         {props.header}
         <div
             @if={props.heroContent || props.heroImage}
-            class={['overflow-hidden mb-28 bg-dark flex flex-col print:bg-transparent print:m-0 print:py-20', props.heroImage ? 'bg-cover bg-center -mt-[var(--header-height)] h-screen print:h-auto print:!bg-none' : 'pt-20 pb-32']}
+            class={['overflow-hidden bg-dark flex flex-col print:bg-transparent print:m-0 print:py-20', props.heroImage ? 'bg-cover bg-center -mt-[var(--header-height)] h-screen print:h-auto print:!bg-none' : 'pt-20 pb-32']}
             style={props.heroImage ? 'background-image: url(' + props.heroImage + ');text-shadow:1px 0 0 rgb(0 0 0 / 50%);' : null}
         >
             {props.heroContent}

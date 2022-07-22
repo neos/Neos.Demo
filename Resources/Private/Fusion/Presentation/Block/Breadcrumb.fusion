@@ -15,10 +15,10 @@ prototype(Neos.Demo:Block.Breadcrumb) < prototype(Neos.Fusion:Component) {
 
     @if.hasItems = ${Type.isArray(this.menuItems) && Array.length(this.menuItems)}
 
-    class = '-content text-sm mb-4'
+    class = 'content text-sm mb-4'
 
     renderer = afx`
-        <nav class={props.class}>
+        <nav class={[props.class, 'print:hidden']}>
             <ul class="flex flex-wrap m-0">
                 <Neos.Fusion:Loop items={props.menuItems}>
                     <li class="flex items-center">

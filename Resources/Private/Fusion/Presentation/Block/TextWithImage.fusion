@@ -25,9 +25,9 @@ prototype(Neos.Demo:Block.TextWithImage) < prototype(Neos.Fusion:Component) {
     @if.hasText = ${this.text || (this.src || this.renderDummyImage)}
 
     renderer = afx`
-        <div class="clear-both w-full">
-            <Neos.Demo:Atom.Image {...props} class="mt-0 mb-4 md:float-left md:mr-8" />
-            {props.text}
+        <div class="md:flex md:flex-wrap md:gap-4 md:flex-row">
+            <Neos.Demo:Atom.Image {...props} class="md:mb-0" imageClass="w-full max-w-none" />
+            <div class="min-w-[30ch] flex-1">{props.text}</div>
         </div>
     `
 }

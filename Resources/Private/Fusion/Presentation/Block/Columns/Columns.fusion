@@ -17,7 +17,7 @@ prototype(Neos.Demo:Block.Columns) < prototype(Neos.Fusion:Component) {
         tagName = ${props.tagName}
         attributes.class = Neos.Fusion:DataStructure {
             class = ${props.class}
-            base = 'grid grid-cols-1 gap-8'
+            base = 'grid grid-cols-1 gap-8 [&>*>:where(p,ul,ol,figure):first-child]:mt-0 [&>*>:where(p,ul,ol,figure):last-child]:mb-0'
             columns = Neos.Fusion:Match {
                 @subject = ${props.breakpoint + props.columns}
                 @default = 'sm:grid-cols-2'

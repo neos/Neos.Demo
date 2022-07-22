@@ -21,7 +21,7 @@ prototype(Neos.Demo:Integration.Footer.Renderer) < prototype(Neos.Demo:Section.F
     }
     content = Neos.Neos:ContentCollection {
         nodePath = ${q(site).children('footer').property('_path')}
-        attributes.class = Neos.Demo:Helper.FooterContentClass
+        attributes.class = 'content'
     }
 
     @cache {

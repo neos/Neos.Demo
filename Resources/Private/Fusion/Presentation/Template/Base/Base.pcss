@@ -15,6 +15,11 @@
     src: url("../Fonts/WorkSans-Italic.woff2") format("woff2");
   }
 
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   body {
     color: theme(colors.slate.800);
     background-color: theme(colors.white);
@@ -38,9 +43,9 @@
     outline-color: theme(colors.light);
   }
 
-  .prose .neos-contentcollection :where(p, figure):first-child {
+  /* .prose .neos-contentcollection :where(p, figure):first-child {
     margin-top: 0;
-  }
+  } */
 
   @media print {
     h1,
@@ -60,48 +65,17 @@
 }
 
 @layer components {
-  .-content-max-width {
+  .content {
     padding-left: var(--content-padding);
     padding-right: var(--content-padding);
-    max-width: var(--content-max-width);
+    width: min(100%, var(--content-max-width));
     margin-left: auto;
     margin-right: auto;
-  }
 
-  .-content {
-    display: grid;
-    gap: 0;
-    grid-template-columns:
-      [full-start] minmax(var(--content-padding), 1fr)
-      [main-start] minmax(0, var(--content-max-width)) [main-end]
-      minmax(var(--content-padding), 1fr) [full-end];
-
-    & > * {
-      grid-column: main;
+    & .content,
+    & .breakout {
+      margin-left: calc(-50vw + 50%);
+      margin-right: calc(-50vw + 50%);
     }
-
-    & > .-content,
-    & > .-breakout {
-      grid-column: full;
-      width: 100%;
-    }
-  }
-
-  .-content > .-breakout {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .-content > .-breakout--padding {
-    padding-left: var(--content-padding);
-    padding-right: var(--content-padding);
-  }
-
-  .-content > .-breakout--narrow {
-    max-width: var(--content-max-width);
-  }
-
-  .-content > .-breakout--narrow.-breakout--padding {
-    max-width: calc(var(--content-max-width) + (var(--content-padding) * 2));
   }
 }
