@@ -16,9 +16,10 @@ Alpine.data('header', (homeUri) => ({
     },
     onResize() {
         this.mobileMenuOpen = false;
-        // Check if the mobile menu button is hidden
-        this.desktopView = !this.$refs.mobileMenuButton.offsetParent;
+
         this.$nextTick(() => {
+            // Check if the mobile menu button is hidden
+            this.desktopView = !this.$refs.mobileMenuButton.offsetParent;
             const height = this.$root.offsetHeight;
             document.documentElement.style.setProperty('--header-height', `${height}px`);
             this.enableCollapse = !this.desktopView;
