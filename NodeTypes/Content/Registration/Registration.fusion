@@ -6,21 +6,21 @@ prototype(Neos.Demo:Content.Registration) < prototype(Neos.Fusion.Form:Runtime.R
 
     process {
         content = afx`
-            <div class="form-group">
-                <Neos.Fusion.Form:FieldContainer field.name="firstName" label="First Name" attributes.style="display:flex;flex-direction:column;justify-content:space-between;">
-                    <Neos.Fusion.Form:Input attributes.style="width:300px;margin-bottom:15px;" />
+            <fieldset class="space-y-6 mb-8 max-w-[300px]">
+                <Neos.Fusion.Form:FieldContainer field.name="firstName" label="First Name" attributes.class="flex flex-col">
+                    <Neos.Fusion.Form:Input attributes.class="form-input" />
                 </Neos.Fusion.Form:FieldContainer>
-                <Neos.Fusion.Form:FieldContainer field.name="lastName" label="Last Name" attributes.style="display:flex;flex-direction:column;justify-content:space-between;">
-                    <Neos.Fusion.Form:Input attributes.style="width:300px;margin-bottom:15px;" />
+                <Neos.Fusion.Form:FieldContainer field.name="lastName" label="Last Name" attributes.class="flex flex-col">
+                    <Neos.Fusion.Form:Input attributes.class="form-input" />
                 </Neos.Fusion.Form:FieldContainer>
-                <Neos.Fusion.Form:FieldContainer field.name="username" label="Username" attributes.style="display:flex;flex-direction:column;justify-content:space-between;">
+                <Neos.Fusion.Form:FieldContainer field.name="username" label="Username" attributes.class="flex flex-col">
+                    <Neos.Fusion.Form:Input attributes.class="form-input" />
                     <small>(lowercase letters and numbers only)</small>
-                    <Neos.Fusion.Form:Input attributes.style="width:300px;margin-bottom:15px;" />
                 </Neos.Fusion.Form:FieldContainer>
-                <Neos.Fusion.Form:FieldContainer field.name="password" label="Password" attributes.style="display:flex;flex-direction:column;justify-content:space-between;">
-                    <Neos.Fusion.Form:Password attributes.style="width:300px" />
+                <Neos.Fusion.Form:FieldContainer field.name="password" label="Password" attributes.class="flex flex-col">
+                    <Neos.Fusion.Form:Password attributes.class="form-input" />
                 </Neos.Fusion.Form:FieldContainer>
-            </div>
+            </fieldset>
         `
 
         schema {

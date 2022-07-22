@@ -43,9 +43,20 @@
     outline-color: theme(colors.light);
   }
 
-  /* .prose .neos-contentcollection :where(p, figure):first-child {
-    margin-top: 0;
-  } */
+  button[type="submit"] {
+    min-width: theme(spacing.32);
+    background-color: theme(colors.light);
+    padding: theme(spacing.2) theme(spacing.4);
+    border: none;
+    color: theme(colors.white);
+    transition: background-color theme(transitionDuration.DEFAULT)
+      theme(transitionTimingFunction.DEFAULT);
+
+    &:hover,
+    &:focus {
+      background-color: theme(colors.dark);
+    }
+  }
 
   @media print {
     h1,
@@ -77,5 +88,11 @@
       margin-left: calc(-50vw + 50%);
       margin-right: calc(-50vw + 50%);
     }
+  }
+}
+
+@layer utilities {
+  :is(.form-input, .form-multiselect, .form-select, .form-textarea):focus {
+    --tw-ring-color: theme(colors.light);
   }
 }

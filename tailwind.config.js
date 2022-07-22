@@ -100,6 +100,9 @@ module.exports = {
                 light: 'rgb(var(--color-light) / <alpha-value>)',
                 dark: 'rgb(var(--color-dark) / <alpha-value>)',
             },
+            ringColor: {
+                DEFAULT: 'rgb(var(--color-light))',
+            },
             fontFamily: {
                 sans: ['Work Sans', ...defaultTheme.fontFamily.sans],
             },
@@ -164,7 +167,9 @@ module.exports = {
         },
     },
     plugins: [
-        require('@tailwindcss/forms'),
+        require('@tailwindcss/forms')({
+            strategy: 'class',
+        }),
         require('@tailwindcss/typography'),
         require('@tailwindcss/line-clamp'),
         plugin(({ addVariant, addUtilities }) => {
