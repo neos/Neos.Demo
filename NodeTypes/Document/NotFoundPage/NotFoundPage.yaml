@@ -4,15 +4,13 @@
 'Neos.Demo:Document.NotFoundPage':
   superTypes:
     'Neos.Demo:Mixin.Document': true
+    'Neos.Demo:Constraint.Document.Restricted': true
+    'Neos.Demo:Constraint.Document.NoSubDocument': true
   ui:
     label: i18n
     icon: 'times-circle'
     # Hide document from creation dialog
     group: ''
-  # no further sub documents are allowed here
-  constraints:
-    nodeTypes:
-      'Neos.Neos:Document': false
   properties:
     # default title for autocreated document
     title:

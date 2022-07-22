@@ -4,6 +4,7 @@
 'Neos.Demo:Document.Homepage':
   superTypes:
     'Neos.Demo:Document.LandingPage': true
+    'Neos.Demo:Constraint.Document.Restricted': true
   ui:
     label: i18n
     icon: 'globe'
@@ -12,6 +13,7 @@
   constraints:
     nodeTypes:
       'Neos.Demo:Document.NotFoundPage': true
+      'Neos.Demo:Document.Book': true
   childNodes:
     'notfound':
       type: 'Neos.Demo:Document.NotFoundPage'
