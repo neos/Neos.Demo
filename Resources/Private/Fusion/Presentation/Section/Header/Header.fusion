@@ -50,7 +50,7 @@ prototype(Neos.Demo:Section.Header) < prototype(Neos.Fusion:Component) {
                         @if={Type.isArray(props.menuItems) && Array.length(props.menuItems)}
                         x-collapse
                         x-show="mobileMenuOpen||desktopView"
-                        class="flex flex-col lg:flex-row items-center gap-10 text-center text-slate-600"
+                        class="flex flex-col items-center gap-10 text-center text-slate-600 lg:!flex lg:!h-auto lg:!overflow-visible lg:flex-row"
                         :class="enableCollapse||'!transition-none'"
                     >
                         <Neos.Fusion:Loop items={props.menuItems}>
@@ -60,7 +60,7 @@ prototype(Neos.Demo:Section.Header) < prototype(Neos.Fusion:Component) {
                                     :class={"isCurrentPage('" + item.href + "')&&'text-light'"}
                                     class="block p-1 hocus:text-slate-900 text-lg lg:text-sm whitespace-nowrap"
                                 >{item.label}</a>
-                                <ul @if={Type.isArray(item.subItems) && Array.length(item.subItems)} x-cloak :class="desktopView&&'hidden'">
+                                <ul @if={Type.isArray(item.subItems) && Array.length(item.subItems)} class="lg:hidden">
                                     <Neos.Fusion:Loop items={item.subItems}>
                                         <li>
                                             <a
