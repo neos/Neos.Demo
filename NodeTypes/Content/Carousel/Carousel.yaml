@@ -1,0 +1,27 @@
+##
+# A "Carousel" content element that renders "Image" child nodes into a JavaScript based slideshow
+#
+'Neos.Demo:Content.Carousel':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.Neos:ContentCollection': true
+  label: "${Neos.Node.labelForNode(node).override(' ' + I18n.translate('contentcollection.label', '', [q(node).children().count()], 'NodeTypes/Content/Carousel', 'Neos.Demo', q(node).children().count()))}"
+  constraints:
+    nodeTypes:
+      '*': false
+      'Neos.Demo:Constraint.Content.Carousel': true
+  ui:
+    label: i18n
+    icon: 'exchange-alt'
+    position: 100
+    inlineEditable: true
+    help:
+      message: |
+        Carousel which can display the following types of content:
+        * Headline
+        * Text
+        * TextWithImage
+        * Image
+        * HTML
+        * YouTube
+        * References

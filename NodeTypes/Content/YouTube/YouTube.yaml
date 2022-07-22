@@ -4,7 +4,6 @@
 'Neos.Demo:Content.YouTube':
   superTypes:
     'Neos.Neos:Content': true
-    'Neos.Demo:Constraint.Content.Carousel': true
     'Neos.Demo:Constraint.Content.Column': true
   ui:
     label: YouTube

@@ -4,6 +4,7 @@ import intersect from '@alpinejs/intersect';
 import collapse from '@alpinejs/collapse';
 import persist from '@alpinejs/persist';
 import './Presentation/Section/Header';
+import './Presentation/Section/Splide';
 
 Alpine.plugin(focus);
 Alpine.plugin(intersect);

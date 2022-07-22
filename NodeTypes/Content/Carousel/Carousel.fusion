@@ -1,0 +1,63 @@
+##
+# "Carousel" element
+#
+prototype(Neos.Demo:Content.Carousel) < prototype(Neos.Neos:ContentComponent) {
+    content = Neos.Neos:ContentCollection {
+        nodePath = ''
+        tagName = 'ul'
+        attributes.class = 'splide__list'
+
+        prototype(Neos.Neos:ContentComponent) {
+            renderer.@process.wrap = Neos.Demo:Section.Splide.Fragment.Item {
+                videoUri = ${props.videoUri}
+                youtubeId = ${props.youtubeId}
+                vimdeoId = ${props.vimdeoId}
+                content = ${value}
+            }
+        }
+    }
+
+    renderer = afx`<Neos.Demo:Section.Splide {...props} />`
+
+    // identifier = ${'id-' + q(node).property('_identifier')}
+
+    // carouselItems = Neos.Neos:ContentCollection {
+    //     nodePath = 'carouselitems'
+    //     attributes.class = 'carousel-inner'
+
+    //     // Each child item is augmented "item" and "active" class
+    //     prototype(Neos.Neos:ContentCase) {
+    //         @process.addItemAndActiveClass = Neos.Fusion:Augmenter {
+    //             class = ${'item' + (iterator.isFirst ? ' active' : '')}
+    //         }
+    //     }
+    // }
+
+    //carouselItemNumber = ${q(node).children('carouselitems').children().count()}
+
+    // renderer = afx`
+    //     <div>
+    //         <div class="carousel slide" id={props.identifier}>
+
+    //             <ol class="carousel-indicators">
+    //                 <Neos.Fusion:Loop items={Array.range(1, props.carouselItemNumber)} itemName="index" iterationName="iterator">
+    //                     <li
+    //                         data-target={'#' + props.identifier}
+    //                         data-slide-to={iterator.index}
+    //                         class={iterator.isFirst ? 'active' : ''}
+    //                     ></li>
+    //                 </Neos.Fusion:Loop>
+    //             </ol>
+
+    //             {props.carouselItems}
+
+    //             <a class="left carousel-control" href={'#' + props.identifier} data-slide="prev">
+    //                 <span class="icon-prev"></span>
+    //             </a>
+    //             <a class="right carousel-control" href={'#' + props.identifier} data-slide="next">
+    //                 <span class="icon-next"></span>
+    //             </a>
+    //         </div>
+    //     </div>
+    // `
+}
