@@ -22,7 +22,6 @@ prototype(Neos.Demo:Section.Header) < prototype(Neos.Fusion:Component) {
     }
 
     logo = null
-    logo.@process.fallback = ${value || StaticResource.content('Neos.Demo', 'Public/Images/logo.svg', true)}
     homeUri = '/'
     menuItems = null
     currentLanguage = null
@@ -37,7 +36,7 @@ prototype(Neos.Demo:Section.Header) < prototype(Neos.Fusion:Component) {
             <div class="max-w-screen-xl mx-auto py-6 items-center grid grid-cols-[auto_minmax(0,1fr)_auto_auto] grid-rows-[auto_minmax(0,auto)] gap-4 lg:gap-x-10 lg:gap-y-0">
                 <a href={props.homeUri} class="block border-transparent border-2 lg:row-span-full self-start">
                     <Neos.Fusion:Augmenter class="h-14 w-auto">
-                        {props.logo}
+                        {props.logo || StaticResource.content('Neos.Demo', 'Public/Images/logo.svg', true)}
                     </Neos.Fusion:Augmenter>
                 </a>
                 <nav class="row-start-2 col-span-full lg:row-start-1 lg:col-span-1">

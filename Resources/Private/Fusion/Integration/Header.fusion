@@ -3,6 +3,9 @@ header = Neos.Demo:Section.Header {
         node = ${site}
     }
 
+    // You can add your own logo here
+    logo = null
+
     menuItems = Neos.Fusion:Map {
         items = Neos.Neos:MenuItems {
             maximumLevels = 2
