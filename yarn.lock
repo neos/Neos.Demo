@@ -14,16 +14,6 @@
   dependencies:
     focus-trap "^6.6.1"
 
-"@alpinejs/intersect@^3.10.2":
-  version "3.10.2"
-  resolved "https://registry.yarnpkg.com/@alpinejs/intersect/-/intersect-3.10.2.tgz#8f44c6eaefffdd1bc9c55f55ccf757540b88eeb1"
-  integrity sha512-BP6rO7lwqDF2mpa6ami3FPPu8zK622sWLQ27Ru5Hu4YzFhMUnX05jwZc1pEsZzY46QWyeInDLgMTB+XyH5e6sQ==
-
-"@alpinejs/persist@^3.10.2":
-  version "3.10.2"
-  resolved "https://registry.yarnpkg.com/@alpinejs/persist/-/persist-3.10.2.tgz#b59580bda33ca4f9f308745b9cfdf0a3dfd55b64"
-  integrity sha512-BYnc4CxiuBHEaMqeMkU9KVrmV88lOEkdWY6qo5ryDnPMJGg1T/YhAMl3JxPImLJTsdc4r9fmcRgWeCXNPSGJew==
-
 "@babel/code-frame@^7.0.0":
   version "7.18.6"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.18.6.tgz#3b25d38c89600baa2dcc219edfa88a74eb2c427a"
