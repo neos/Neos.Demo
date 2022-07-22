@@ -25,12 +25,13 @@ prototype(Neos.Demo:Section.Header) < prototype(Neos.Fusion:Component) {
     homeUri = '/'
     menuItems = null
     currentLanguage = null
+    # TODO: Use DimensionMenuItems
     languages = Neos.Fusion:DataStructure {
         en_US = 'English (US)'
         en_UK = 'English (UK)'
         de = 'Deutsch'
-        fr = 'Français'
     }
+
     renderer = afx`
         <header x-data={"header('" + props.homeUri + "')"} x-bind="header" class="relative lg:sticky z-50 top-0 bg-white/90 text-sm supports-backdrop-blur:bg-white/80 backdrop-blur-sm transition-shadow">
             <div class="max-w-screen-xl mx-auto py-6 items-center grid grid-cols-[auto_minmax(0,1fr)_auto_auto] grid-rows-[auto_minmax(0,auto)] gap-4 lg:gap-x-10 lg:gap-y-0">

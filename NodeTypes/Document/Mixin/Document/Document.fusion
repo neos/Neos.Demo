@@ -5,13 +5,8 @@ prototype(Neos.Demo:Mixin.Document) < prototype(Neos.Fusion:Component) {
     content = null
     bodyClass = null
 
-    header = Neos.Fusion:Renderer {
-        renderPath = '/header'
-    }
-
-    footer  = Neos.Fusion:Renderer {
-        renderPath = '/footer'
-    }
+    header = Neos.Demo:Integration.Header
+    footer  = Neos.Demo:Integration.Footer
 
     renderer = Neos.Demo:Mixin.Page {
         class = ${props.bodyClass}

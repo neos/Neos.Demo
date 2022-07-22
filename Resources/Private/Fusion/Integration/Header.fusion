@@ -1,10 +1,18 @@
-header = Neos.Demo:Section.Header {
+##
+# The header section is a globally cached fragment that is used on every page.
+# To make global caching possible the renderer is separated and instance on the root level.
+# The component just renders this globally defined instance.
+# This is necessary as the fusion path is part of the cache identifier and would include
+# the current document if it's included directly without the global instance.
+#
+prototype(Neos.Demo:Integration.Header) < prototype(Neos.Fusion:Renderer) {
+    renderPath = '/header'
+}
+
+prototype(Neos.Demo:Integration.Header.Renderer) < prototype(Neos.Demo:Section.Header) {
     homeUri = Neos.Neos:NodeUri {
         node = ${site}
     }
-
-    // You can add your own logo here
-    logo = null
 
     menuItems = Neos.Fusion:Map {
         items = Neos.Neos:MenuItems {
@@ -44,3 +52,5 @@ header = Neos.Demo:Section.Header {
         }
     }
 }
+
+header = Neos.Demo:Integration.Header.Renderer
