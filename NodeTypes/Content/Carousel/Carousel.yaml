@@ -11,6 +11,7 @@
     nodeTypes:
       '*': false
       'Neos.Demo:Constraint.Content.Carousel': true
+      'Neos.Demo:Content.CarouselYouTube': true
   ui:
     label: i18n
     icon: 'exchange-alt'
