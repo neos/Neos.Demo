@@ -32,7 +32,7 @@ prototype(Neos.Demo:Template.Base) < prototype(Neos.Fusion:Component) {
         {props.header}
         <div
             @if={props.heroContent || props.heroImage}
-            class={['overflow-hidden mb-28 bg-slate-900 flex flex-col', props.heroImage ? 'bg-cover bg-center -mt-[var(--header-height)] h-screen' : 'pt-20 pb-32']}
+            class={['overflow-hidden mb-28 bg-dark flex flex-col', props.heroImage ? 'bg-cover bg-center -mt-[var(--header-height)] h-screen' : 'pt-20 pb-32']}
             style={props.heroImage ? 'background-image: url(' + props.heroImage + ');text-shadow:1px 0 0 rgb(0 0 0 / 50%);' : null}
         >
             {props.heroContent}
