@@ -8,6 +8,7 @@ prototype(Neos.Demo:Content.TextWithImage) < prototype(Neos.Neos:ContentComponen
     src = Neos.Neos:ImageUri {
         @if.hasAsset = ${this.asset}
         asset = ${q(node).property('image')}
+        maximumWidth = 500
     }
     alt = ${q(node).property('alternativeText')}
     title = ${q(node).property('title')}
