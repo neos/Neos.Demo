@@ -1,13 +1,6 @@
 Neos:
   Neos:
     userInterface:
-      editPreviewModes:
-        print:
-          isEditingMode: false
-          isPreviewMode: true
-          fusionRenderingPath: print
-          title: 'Neos.Demo:Main:editPreviewModes.print'
-          position: 200
       translation:
         autoInclude:
           Neos.Demo:
