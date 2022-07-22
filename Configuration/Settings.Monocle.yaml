@@ -1,0 +1,65 @@
+# This is used for the living styleguide (Monocle)
+# Read more about this in the README.md
+Sitegeist:
+  Monocle:
+    ui:
+      structure:
+        atom:
+          position: 90
+          match: Atom\.
+          label: Atom
+          icon: atom
+          color: '#AAA'
+        block:
+          position: 80
+          match: Block\.
+          label: Block
+          icon: gear
+          color: '#4DBCE9'
+        module:
+          position: 70
+          match: Module\.
+          label: Module
+          icon: gears
+          color: '#26ADE4'
+        section:
+          position: 60
+          match: Section\.
+          label: Section
+          icon: certificate
+          color: '#D1E751'
+        template:
+          position: 40
+          match: Template\.
+          label: Template
+          icon: file
+          color: '#FFFFFF'
+      viewportPresets:
+        xs:
+          label: xs
+          width: 400
+          height: 600
+        sm:
+          label: sm
+          width: 640
+          height: 800
+        md:
+          label: md
+          width: 768
+          height: 400
+        l:
+          label: lg
+          width: 1024
+          height: 800
+        xl:
+          label: xl
+          width: 1280
+          height: 1024
+        xxl:
+          label: xxl
+          width: 1520
+          height: 1280
+        xxxl:
+          label: xxxl
+          width: 1740
+          height: 1520

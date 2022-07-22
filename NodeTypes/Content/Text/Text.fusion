@@ -1,0 +1,10 @@
+##
+# "Text" element
+#
+prototype(Neos.Demo:Content.Text) < prototype(Neos.Neos:ContentComponent) {
+    content = Neos.Neos:Editable {
+        property = 'text'
+    }
+
+    renderer = afx`<Neos.Demo:Atom.Text {...props} />`
+}

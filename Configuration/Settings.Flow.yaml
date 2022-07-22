@@ -1,0 +1,7 @@
+Neos:
+  Flow:
+    mvc:
+      routes:
+        'Neos.Neos':
+          variables:
+            defaultUriSuffix: ''

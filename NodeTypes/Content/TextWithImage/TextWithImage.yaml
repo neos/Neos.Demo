@@ -1,0 +1,16 @@
+'Neos.Demo:Content.TextWithImage':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.NodeTypes.BaseMixins:ImageMixin': true
+    'Neos.NodeTypes.BaseMixins:ImageCaptionMixin': true
+    'Neos.Demo:Constraint.Content.Carousel': true
+    'Neos.Demo:Constraint.Content.Column': true
+    'Neos.Demo:Constraint.Content.Main': true
+  ui:
+    label: i18n
+    icon: picture
+    position: 40
+  properties:
+    text:
+      options:
+        preset: 'text.autoparagraph'

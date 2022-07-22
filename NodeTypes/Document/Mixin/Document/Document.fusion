@@ -1,0 +1,27 @@
+prototype(Neos.Demo:Mixin.Document) < prototype(Neos.Fusion:Component) {
+    heroContent = null
+    heroImage = null
+    breadcrumb = null
+    content = null
+    bodyClass = null
+
+    header = Neos.Fusion:Renderer {
+        renderPath = '/header'
+    }
+
+    footer  = Neos.Fusion:Renderer {
+        renderPath = '/footer'
+    }
+
+    renderer = Neos.Demo:Mixin.Page {
+        class = ${props.bodyClass}
+        content = Neos.Demo:Template.Base {
+            header = ${props.header}
+            heroContent = ${props.heroContent}
+            heroImage = ${props.heroImage}
+            breadcrumb = ${props.breadcrumb}
+            content = ${props.content}
+            footer  = ${props.footer}
+        }
+    }
+}

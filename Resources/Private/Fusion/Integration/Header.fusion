@@ -1,0 +1,46 @@
+header = Neos.Demo:Section.Header {
+    homeUri = Neos.Neos:NodeUri {
+        node = ${site}
+    }
+
+    // You can add your own logo here
+    logo = null
+
+    menuItems = Neos.Fusion:Map {
+        items = Neos.Neos:MenuItems {
+            maximumLevels = 2
+        }
+        itemRenderer = Neos.Fusion:DataStructure {
+            label = ${item.label}
+            href = Neos.Neos:NodeUri {
+                node = ${item.node}
+            }
+            subItems = Neos.Fusion:Map {
+                items = ${item.subItems}
+                itemRenderer = Neos.Fusion:DataStructure {
+                    label = ${item.label}
+                    href = Neos.Neos:NodeUri {
+                        node = ${item.node}
+                    }
+                }
+            }
+        }
+    }
+
+    currentLanguage = ${site.context.dimensions.language[0]}
+
+    renderer.@process.convertUris = Neos.Neos:ConvertUris {
+        forceConversion = true
+    }
+
+    @cache {
+        mode = 'cached'
+        entryIdentifier {
+            static = 'header'
+            site = ${site}
+        }
+        entryTags {
+            1 = ${Neos.Caching.nodeTypeTag('Neos.Neos:Document', site)}
+        }
+    }
+}

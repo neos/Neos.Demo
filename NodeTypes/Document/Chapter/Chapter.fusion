@@ -1,0 +1,46 @@
+/**
+ * Render for the chapter site
+ */
+prototype(Neos.Demo:Document.Chapter) < prototype(Neos.Fusion:Component) {
+    bodyClass = null
+    breadcrumb = Neos.Demo:Integration.Breadcrumb {
+        class = 'not-prose mb-4'
+    }
+    footer  = Neos.Fusion:Renderer {
+        renderPath = '/footer'
+    }
+    previousChapter = ${q(documentNode).prev('[instanceof Neos.Neos:Document]').get(0)}
+    nextChapter = ${q(documentNode).next('[instanceof Neos.Neos:Document]').get(0)}
+    chapterImage = ${q(documentNode).property('chapterImage')}
+    chapterImageAlt = ${q(documentNode).property('chapterImageAlt')}
+    chapterLabel = ${q(documentNode).property('_label')}
+    content = Neos.Demo:Collection.Content.Main {
+        attributes.class = null
+    }
+    title = Neos.Neos:ContentComponent {
+        renderer = Neos.Neos:Editable {
+            property = 'title'
+            block = false
+        }
+    }
+    renderer = Neos.Demo:Mixin.Page {
+        class = ${props.bodyClass}
+        content = Neos.Demo:Template.Chapter {
+            @apply.props = ${props}
+            chapterImageSrc = Neos.Neos:ImageUri {
+                @if.has = ${props.chapterImage}
+                asset = ${props.chapterImage}
+            }
+            previousChapterLabel = ${props.previousChapter ? q(props.previousChapter).property('_label') : null}
+            previousChapterLink = Neos.Neos:NodeUri {
+                @if.set = ${props.previousChapter}
+                node = ${props.previousChapter}
+            }
+            nextChapterLabel = ${props.nextChapter ? q(props.nextChapter).property('_label') : null}
+            nextChapterLink = Neos.Neos:NodeUri {
+                @if.set = ${props.nextChapter}
+                node = ${props.nextChapter}
+            }
+        }
+    }
+}

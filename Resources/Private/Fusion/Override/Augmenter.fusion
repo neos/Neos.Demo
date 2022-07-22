@@ -1,0 +1,4 @@
+// This allow arrays as class
+prototype(Neos.Fusion:Augmenter) {
+    class.@process.allowArrays = ${Type.isArray(value) ? Array.join(value, ' ') : value}
+}

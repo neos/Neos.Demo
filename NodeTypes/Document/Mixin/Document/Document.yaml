@@ -1,0 +1,10 @@
+##
+# Mixin for furhter pages
+#
+'Neos.Demo:Mixin.Document':
+  abstract: true
+  superTypes:
+    'Neos.Neos:Document': true
+  childNodes:
+    'main':
+      type: 'Neos.Demo:Collection.Content.Main'

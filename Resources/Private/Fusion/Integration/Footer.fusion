@@ -1,0 +1,26 @@
+footer = Neos.Demo:Section.Footer {
+    menuItems = Neos.Fusion:Map {
+        items = ${q(site).property('metaNavigationItems')}
+        itemRenderer = Neos.Fusion:DataStructure {
+            label = ${item.label}
+            href = Neos.Neos:NodeUri {
+                node = ${item}
+            }
+        }
+    }
+    content = Neos.Neos:ContentCollection {
+        nodePath = ${q(site).children('footer').property('_path')}
+        attributes.class = Neos.Demo:Helper.FooterContentClass
+    }
+
+    @cache {
+        mode = 'cached'
+        entryIdentifier {
+            static = 'footer'
+            site = ${site}
+        }
+        entryTags {
+            1 = ${Neos.Caching.nodeTypeTag('Neos.Neos:Document', site)}
+        }
+    }
+}

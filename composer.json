@@ -14,6 +14,10 @@
         "neos/nodetypes-html": "^8.0 || dev-master",
         "neos/nodetypes-navigation": "^8.0 || dev-master"
     },
+    "suggest": {
+        "sitegeist/monocle": "An living-styleguide for Neos that is based on the actual fusion-code",
+        "yoast/yoast-seo-for-neos": "Yoast SEO for Neos CMS"
+    },
     "autoload": {
         "psr-4": {
             "Neos\\Demo\\": "Classes"

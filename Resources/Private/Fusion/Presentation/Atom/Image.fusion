@@ -1,0 +1,33 @@
+prototype(Neos.Demo:Atom.Image) < prototype(Neos.Fusion:Component) {
+    // This is used for the living styleguide (Monocle)
+    // Read more about this in the README.md
+    @styleguide.props.renderDummyImage = true
+
+    src = null
+
+    alt = null
+    title = null
+    class = null
+    imageClass = null
+
+    hasCaption = false
+    caption = null
+
+    renderDummyImage = false
+
+    @if.hasSource = ${this.src || this.renderDummyImage}
+
+    renderer = afx`
+        <figure class={props.class}>
+            <img
+                src={props.src || StaticResource.uri('Neos.Neos', 'Public/Images/dummy-image.svg')}
+                title={props.title}
+                alt={props.alt}
+                class={props.imageClass}
+            />
+            <figcaption @if={props.hasCaption && props.caption}>
+                {props.caption}
+            </figcaption>
+        </figure>
+    `
+ }

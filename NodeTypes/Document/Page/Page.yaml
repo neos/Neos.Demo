@@ -1,0 +1,12 @@
+##
+# Document NodeType "Page"
+#
+'Neos.Demo:Document.Page':
+  superTypes:
+    'Neos.Demo:Mixin.Document': true
+  ui:
+    label: i18n
+    icon: 'file'
+    position: 10
+    help:
+      message: 'A Page'

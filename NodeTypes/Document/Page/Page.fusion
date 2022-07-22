@@ -1,0 +1,7 @@
+/**
+ * Default page-rendering for the Neos.Demo website
+ */
+prototype(Neos.Demo:Document.Page) < prototype(Neos.Demo:Mixin.Document) {
+    breadcrumb = Neos.Demo:Integration.Breadcrumb
+    content = Neos.Demo:Collection.Content.Main
+}

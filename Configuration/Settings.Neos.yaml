@@ -26,3 +26,9 @@ Neos:
           position: end
           label: 'Neos.Demo:Main:nodeTypes.groups.general'
           collapsed: false
+
+    Ui:
+      resources:
+        javascript:
+          'Neos.Demo:CKEConfig':
+            resource: resource://Neos.Demo/Public/Scripts/CKEConfig/Plugin.js
