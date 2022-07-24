@@ -16,19 +16,19 @@
     "pipeline": "yarn install;yarn build"
   },
   "dependencies": {
-    "@alpinejs/collapse": "^3.10.2",
-    "@alpinejs/focus": "^3.10.2",
+    "@alpinejs/collapse": "^3.10.3",
+    "@alpinejs/focus": "^3.10.3",
     "@splidejs/splide": "^4.0.7",
     "@splidejs/splide-extension-video": "^0.7.1",
     "@tailwindcss/forms": "^0.5.2",
     "@tailwindcss/line-clamp": "^0.4.0",
     "@tailwindcss/typography": "^0.5.4",
-    "alpinejs": "^3.10.2",
+    "alpinejs": "^3.10.3",
     "tailwindcss": "^3.1.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
-    "concurrently": "^7.2.2",
+    "concurrently": "^7.3.0",
     "cssnano": "^5.1.12",
     "esbuild": "^0.14.49",
     "eslint": "^8.20.0",
