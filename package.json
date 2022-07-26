@@ -30,7 +30,7 @@
     "autoprefixer": "^10.4.7",
     "concurrently": "^7.3.0",
     "cssnano": "^5.1.12",
-    "esbuild": "^0.14.49",
+    "esbuild": "^0.14.50",
     "eslint": "^8.20.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -41,7 +41,7 @@
     "postcss-reporter": "^7.0.5",
     "postcss-sort-media-queries": "^4.2.1",
     "prettier": "^2.7.1",
-    "prettier-plugin-tailwindcss": "^0.1.12",
+    "prettier-plugin-tailwindcss": "^0.1.13",
     "stylelint": "^14.9.1",
     "stylelint-config-standard": "^26.0.0"
   }
