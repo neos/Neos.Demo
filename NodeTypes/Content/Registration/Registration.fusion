@@ -3,6 +3,10 @@
 #
 prototype(Neos.Demo:Content.Registration) < prototype(Neos.Fusion.Form:Runtime.RuntimeForm) {
     namespace = "neos-demo-registration"
+    attributes {
+        id = ${'form-' + node.identifier}
+        action = ${'#' + this.id}
+    }
 
     process {
         content = afx`

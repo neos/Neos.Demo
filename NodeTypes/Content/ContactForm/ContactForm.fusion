@@ -2,6 +2,10 @@
 # "ContactForm" element
 #
 prototype(Neos.Demo:Content.ContactForm) < prototype(Neos.Neos:ContentComponent) {
+    attributes {
+        id = ${'form-' + node.identifier}
+        action = ${'#' + this.id}
+    }
 
     renderer = Neos.Fusion.Form:Runtime.RuntimeForm {
         namespace = 'contact'
