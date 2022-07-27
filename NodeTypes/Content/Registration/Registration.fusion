@@ -8,17 +8,17 @@ prototype(Neos.Demo:Content.Registration) < prototype(Neos.Fusion.Form:Runtime.R
         content = afx`
             <fieldset class="space-y-6 mb-8 max-w-[300px]">
                 <Neos.Fusion.Form:FieldContainer field.name="firstName" label="First Name">
-                    <Neos.Fusion.Form:Input attributes.class="form-input" />
+                    <Neos.Fusion.Form:Input attributes.required={true} />
                 </Neos.Fusion.Form:FieldContainer>
                 <Neos.Fusion.Form:FieldContainer field.name="lastName" label="Last Name">
-                    <Neos.Fusion.Form:Input attributes.class="form-input" />
+                    <Neos.Fusion.Form:Input attributes.required={true} />
                 </Neos.Fusion.Form:FieldContainer>
                 <Neos.Fusion.Form:FieldContainer field.name="username" label="Username">
-                    <Neos.Fusion.Form:Input attributes.class="form-input" />
+                    <Neos.Fusion.Form:Input attributes.required={true} attributes.pattern="[a-z0-9]+" />
                     <small>(lowercase letters and numbers only)</small>
                 </Neos.Fusion.Form:FieldContainer>
                 <Neos.Fusion.Form:FieldContainer field.name="password" label="Password">
-                    <Neos.Fusion.Form:Password attributes.class="form-input" />
+                    <Neos.Fusion.Form:Password attributes.required={true} />
                 </Neos.Fusion.Form:FieldContainer>
             </fieldset>
         `

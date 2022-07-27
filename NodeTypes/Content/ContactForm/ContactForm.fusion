@@ -10,13 +10,13 @@ prototype(Neos.Demo:Content.ContactForm) < prototype(Neos.Neos:ContentComponent)
                 <fieldset class="space-y-6 mb-8">
                     <legend class="text-2xl">Contact</legend>
                     <Neos.Fusion.Form:FieldContainer label="Name" field.name="name">
-                        <Neos.Fusion.Form:Input />
+                        <Neos.Fusion.Form:Input attributes.required={true} />
                     </Neos.Fusion.Form:FieldContainer>
                     <Neos.Fusion.Form:FieldContainer label="Email" field.name="email">
-                        <Neos.Fusion.Form:Input />
+                        <Neos.Fusion.Form:Input attributes.type="email" attributes.required={true} />
                     </Neos.Fusion.Form:FieldContainer>
                     <Neos.Fusion.Form:FieldContainer label="Message" field.name="message">
-                        <Neos.Fusion.Form:Textarea />
+                        <Neos.Fusion.Form:Textarea attributes.required={true} />
                     </Neos.Fusion.Form:FieldContainer>
                 </fieldset>
             `
