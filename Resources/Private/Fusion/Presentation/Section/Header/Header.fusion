@@ -25,11 +25,11 @@ prototype(Neos.Demo:Section.Header) < prototype(Neos.Fusion:Component) {
     homeUri = '/'
     menuItems = null
     currentLanguage = null
-    # TODO: Use DimensionMenuItems
-    languages = Neos.Fusion:DataStructure {
-        en_US = 'English (US)'
-        en_UK = 'English (UK)'
-        de = 'Deutsch'
+
+    languages = Neos.Fusion:Map {
+        items = ${Configuration.Setting('Neos.ContentRepository.contentDimensions.language.presets')}
+        keyRenderer = ${itemKey}
+        itemRenderer = ${item.label}
     }
 
     defaultLogo = ${StaticResource.content('Neos.Demo', 'Public/Images/logo.svg', true)}
