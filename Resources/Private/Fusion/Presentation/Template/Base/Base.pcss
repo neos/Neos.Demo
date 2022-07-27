@@ -89,10 +89,37 @@
       margin-right: calc(-50vw + 50%);
     }
   }
-}
 
-@layer utilities {
   :is(.form-input, .form-multiselect, .form-select, .form-textarea):focus {
     --tw-ring-color: theme(colors.light);
+  }
+
+  .form-error {
+    & .form-input,
+    & .form-multiselect,
+    & .form-select,
+    & .form-textarea {
+      border-color: theme(colors.red.500);
+
+      &:focus {
+        --tw-ring-color: theme(colors.red.500);
+      }
+    }
+  }
+
+  .form-errors {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: theme(fontSize.sm);
+    color: theme(colors.red.600);
+    gap: theme(spacing.1);
+
+    & li {
+      padding: 0;
+      margin: 0;
+    }
   }
 }

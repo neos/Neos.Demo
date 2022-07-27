@@ -9,14 +9,14 @@ prototype(Neos.Demo:Content.ContactForm) < prototype(Neos.Neos:ContentComponent)
             content = afx`
                 <fieldset class="space-y-6 mb-8">
                     <legend class="text-2xl">Contact</legend>
-                    <Neos.Fusion.Form:FieldContainer label="Name" field.name="name" attributes.class="flex flex-col">
-                        <Neos.Fusion.Form:Input attributes.class="form-input" />
+                    <Neos.Fusion.Form:FieldContainer label="Name" field.name="name">
+                        <Neos.Fusion.Form:Input />
                     </Neos.Fusion.Form:FieldContainer>
-                    <Neos.Fusion.Form:FieldContainer label="Email" field.name="email" attributes.class="flex flex-col">
-                        <Neos.Fusion.Form:Input attributes.class="form-input" />
+                    <Neos.Fusion.Form:FieldContainer label="Email" field.name="email">
+                        <Neos.Fusion.Form:Input />
                     </Neos.Fusion.Form:FieldContainer>
-                    <Neos.Fusion.Form:FieldContainer label="Message" field.name="message" attributes.class="flex flex-col">
-                        <Neos.Fusion.Form:Textarea attributes.class="form-textarea" />
+                    <Neos.Fusion.Form:FieldContainer label="Message" field.name="message">
+                        <Neos.Fusion.Form:Textarea />
                     </Neos.Fusion.Form:FieldContainer>
                 </fieldset>
             `
