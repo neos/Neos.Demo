@@ -19,7 +19,7 @@ Neos:
               - en_US
             uriSegment: uk
           de:
-            label: German
+            label: Deutsch
             values:
               - de
             uriSegment: de
