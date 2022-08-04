@@ -8,29 +8,23 @@ prototype(Neos.Demo:Content.Registration) < prototype(Neos.Fusion.Form:Runtime.R
         action = ${'#' + this.id}
     }
 
+    form.method = 'POST'
+
     process {
         content = afx`
             <fieldset class="space-y-6 mb-8 max-w-[300px]">
-                <Neos.Fusion.Form:FieldContainer field.name="firstName" label="First Name">
-                    <Neos.Fusion.Form:Input attributes.required={true} />
-                </Neos.Fusion.Form:FieldContainer>
-                <Neos.Fusion.Form:FieldContainer field.name="lastName" label="Last Name">
-                    <Neos.Fusion.Form:Input attributes.required={true} />
-                </Neos.Fusion.Form:FieldContainer>
-                <Neos.Fusion.Form:FieldContainer field.name="username" label="Username">
-                    <Neos.Fusion.Form:Input attributes.required={true} attributes.pattern="[a-z0-9]+" />
+                <Neos.Fusion.Form:FieldContainer field.name="username">
+                    <Neos.Fusion.Form:Input attributes.required={true} attributes.placeholder="Username" attributes.pattern="[a-z0-9]+" />
                     <small>(lowercase letters and numbers only)</small>
                 </Neos.Fusion.Form:FieldContainer>
-                <Neos.Fusion.Form:FieldContainer field.name="password" label="Password">
-                    <Neos.Fusion.Form:Password attributes.required={true} />
+                <Neos.Fusion.Form:FieldContainer field.name="password">
+                    <Neos.Fusion.Form:Password attributes.required={true} attributes.placeholder="Password" />
                 </Neos.Fusion.Form:FieldContainer>
             </fieldset>
         `
 
         schema {
-            firstName = ${Form.Schema.string().isRequired()}
-            lastName = ${Form.Schema.string().isRequired()}
-            username = ${Form.Schema.string().isRequired()}
+            username = ${Form.Schema.string().isRequired().validator('Neos\Demo\Form\Runtime\Validation\Validator\UsernameInUseValidator')}
             password = ${Form.Schema.string().isRequired()}
         }
     }
@@ -39,8 +33,6 @@ prototype(Neos.Demo:Content.Registration) < prototype(Neos.Fusion.Form:Runtime.R
         createBackendUser {
             type = 'Neos.Demo.Form.Runtime:CreateUser'
             options {
-                firstName = ${data.firstName}
-                lastName = ${data.lastName}
                 username = ${data.username}
                 password = ${data.password}
                 // you can configure an array of Backend Roles to be added to this user

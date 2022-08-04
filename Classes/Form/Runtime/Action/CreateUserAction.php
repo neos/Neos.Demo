@@ -51,18 +51,14 @@ class CreateUserAction extends AbstractAction
     {
         $accountIdentifier = $this->options['username'];
         $password = $this->options['password'];
-        $firstName = $this->options['firstName'];
-        $lastName = $this->options['lastName'];
 
         $existingAccount = $this->accountRepository->findActiveByAccountIdentifierAndAuthenticationProviderName($accountIdentifier, 'Neos.Neos:Backend');
         if ($existingAccount !== null) {
             throw new ActionException('Account already exists');
         }
 
-        if ($firstName === '' && $lastName === '') {
-            $firstName = 'Santa';
-            $lastName = 'Claus';
-        }
+        $firstName = ucfirst($accountIdentifier);
+        $lastName = 'Demo';
 
         $user = new User();
         $user->setName(new PersonName('', $firstName, '', $lastName));
