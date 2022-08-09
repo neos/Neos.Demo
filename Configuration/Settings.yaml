@@ -18,34 +18,37 @@ Neos:
           Neos.Demo:
             - Main
             - 'NodeTypes/*'
-  ContentRepository:
-    contentDimensions:
-      language:
-        label: 'Neos.Demo:Main:contentDimensions.language'
-        icon: icon-language
-        defaultValue: en_US
-        values:
-          'en_US':
-            label: English (US)
-            uriSegment: en
-            specializations:
-              'en_UK':
-                label: English (UK)
-                uriSegment: uk
+  ContentRepositoryRegistry:
+    contentRepositories:
+      default:
+        contentDimensions:
+          language:
+            label: 'Neos.Demo:Main:contentDimensions.language'
+            icon: icon-language
+            defaultValue: en_US
+            values:
+              'en_US':
+                label: English (US)
+                # TODO -> site config uriSegment: en
+                specializations:
+                  'en_UK':
+                    label: English (UK)
+                    # TODO -> site config uriSegment: uk
 
-          'de':
-            label: German
-            uriSegment: de
-            specializations:
-              nl:
-                label: Dutch
-                uriSegment: nl
-          'fr':
-            label: French
-            uriSegment: fr
-          'da':
-            label: Danish
-            uriSegment: da
-          'lv':
-            label: Latvian
-            uriSegment: lv
+              'de':
+                label: German
+                uriSegment: de
+                specializations:
+                  nl:
+                    label: Dutch
+                    # TODO -> site config uriSegment: nl
+              'fr':
+                label: French
+                # TODO -> site config uriSegment: fr
+              'da':
+                label: Danish
+                # TODO -> site config uriSegment: da
+              'lv':
+                label: Latvian
+                # TODO -> site config uriSegment: lv
+
