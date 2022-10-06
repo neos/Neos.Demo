@@ -1,20 +1,20 @@
-prototype(Neos.Demo:Template.Chapter) < prototype(Neos.Fusion:Component) {
+prototype(Neos.Demo:Layout.Chapter) < prototype(Neos.Fusion:Component) {
     // This is used for the living styleguide (Monocle)
     // Read more about this in the README.md
     @styleguide {
         props {
             renderDummyImage = true
-            breadcrumb = afx`<Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Block.Breadcrumb' />`
+            breadcrumb = afx`<Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Breadcrumb' />`
             chapterImageSrc = ${StaticResource.uri('Neos.Neos', 'Public/Images/dummy-image.svg')}
             chapterImageAlt = 'Alternative text'
             content = afx`
                 <main class="content prose">
-                    <Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Atom.Text' />
-                    <Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Atom.Text' />
-                    <Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Atom.Text' />
+                    <Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Text' />
+                    <Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Text' />
+                    <Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Text' />
                 </main>
             `
-           footer = afx`<Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Section.Footer' />`
+           footer = afx`<Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Footer' />`
         }
     }
 
@@ -29,7 +29,7 @@ prototype(Neos.Demo:Template.Chapter) < prototype(Neos.Fusion:Component) {
             <header class="mb-4 not-prose">
                 <h1 class="text-6xl">{props.title}</h1>
             </header>
-            <Neos.Demo:Atom.Image
+            <Neos.Demo:Presentation.Image
                 renderDummyImage={props.renderDummyImage}
                 src={props.chapterImageSrc}
                 alt={props.chapterImageAlt}
@@ -50,22 +50,3 @@ prototype(Neos.Demo:Template.Chapter) < prototype(Neos.Fusion:Component) {
         {props.footer}
     `
 }
-
-/*
-
-            <ul class="chapter-pager">
-                    <li @if.has={props.previousChapterLink}>
-                        <a href={props.previousChapterLink}>
-                            {props.previousChapterLabel}
-                        </a>
-                        &mdash;
-                    </li>
-                    <li>{props.chapterLabel}</li>
-                    <li @if.has={props.nextChapterLink}>
-                        &mdash;
-                        <a href={props.nextChapterLink}>
-                            {props.nextChapterLabel}
-                        </a>
-                    </li>
-                </ul>
-                */

@@ -1,4 +1,6 @@
 Neos:
+  Demo:
+    debugMode: false
   Neos:
     userInterface:
       translation:
@@ -24,4 +26,5 @@ Neos:
       resources:
         javascript:
           'Neos.Demo:CKEConfig':
+            #TODO Rename this
             resource: resource://Neos.Demo/Public/Scripts/CKEConfig/Plugin.js

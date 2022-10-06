@@ -8,5 +8,5 @@ prototype(Neos.Demo:Content.CarouselYouTube) < prototype(Neos.Neos:ContentCompon
 
     renderDummyImage = ${node.context.inBackend}
 
-    renderer = afx`<Neos.Demo:Atom.Image {...props} />`
+    renderer = afx`<Neos.Demo:Presentation.Image {...props} />`
 }

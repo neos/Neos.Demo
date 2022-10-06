@@ -1,4 +1,4 @@
-prototype(Neos.Demo:Atom.Text) < prototype(Neos.Fusion:Component) {
+prototype(Neos.Demo:Presentation.Text) < prototype(Neos.Fusion:Component) {
     // This is used for the living styleguide (Monocle)
     // Read more about this in the README.md
     @styleguide.props.content = '<h2>Lorem ipsum dolor sit amet,</h2>

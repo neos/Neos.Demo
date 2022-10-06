@@ -2,8 +2,8 @@
 prototype(Sitegeist.Monocle:Preview.Page) {
     htmlTag.attributes.lang = 'en-US'
     head {
-        stylesheets.demo = Neos.Demo:Atom.Stylesheet
-        javascripts.demo = Neos.Demo:Atom.Javascript
+        stylesheets.demo = Neos.Demo:Presentation.Stylesheet
+        javascripts.demo = Neos.Demo:Presentation.Javascript
         languagesLinks = afx`
             <link rel="alternate" hreflang="en-US" href="#enUS" />
             <link rel="alternate" hreflang="en-UK" href="#enUK" />

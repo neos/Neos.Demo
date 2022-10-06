@@ -1,11 +1,11 @@
 prototype(Neos.Neos:Page) {
-    htmlTag.attributes.class = ${String.startsWith(Configuration.setting('Neos.Flow.core.context'), 'Development') ? 'development' : null}
+    htmlTag.attributes.data-debug = ${Configuration.setting('Neos.Demo.debugMode')}
     head {
         stylesheets {
-            site = Neos.Demo:Atom.Stylesheet
+            site = Neos.Demo:Presentation.Stylesheet
         }
         javascripts {
-            site = Neos.Demo:Atom.Javascript
+            site = Neos.Demo:Presentation.Javascript
         }
         metadata = '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
     }

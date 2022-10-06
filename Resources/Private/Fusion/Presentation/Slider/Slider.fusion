@@ -1,4 +1,4 @@
-prototype(Neos.Demo:Section.Splide) < prototype(Neos.Fusion:Component) {
+prototype(Neos.Demo:Presentation.Slider) < prototype(Neos.Fusion:Component) {
     // This is used for the living styleguide (Monocle)
     // Read more about this in the README.md
     @styleguide.props.items  = Neos.Fusion:Map {
@@ -43,7 +43,7 @@ prototype(Neos.Demo:Section.Splide) < prototype(Neos.Fusion:Component) {
             <div class="splide__track">
                 <ul class="splide__list" @if={props._hasItems && !props.content}>
                     <Neos.Fusion:Loop items={props.items}>
-                        <Neos.Demo:Section.Splide.Fragment.Item class={props.slideItemClass} content={item} />
+                        <Neos.Demo:Presentation.Slider.Fragment.Item class={props.slideItemClass} content={item} />
                     </Neos.Fusion:Loop>
                 </ul>
                 <!-- content is used as entry for contentcollections -->

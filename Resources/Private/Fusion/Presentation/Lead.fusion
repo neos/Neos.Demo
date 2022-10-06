@@ -1,4 +1,4 @@
-prototype(Neos.Demo:Atom.Lead) < prototype(Neos.Fusion:Component) {
+prototype(Neos.Demo:Presentation.Lead) < prototype(Neos.Fusion:Component) {
     // This is used for the living styleguide (Monocle)
     // Read more about this in the README.md
     @styleguide.props.content = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <strong><em>sed diam</em> nonumy eirmod</strong> tempor <code>invidunt</code> ut <em>labore et dolore</em> magna aliquyam erat, sed diam voluptua.'

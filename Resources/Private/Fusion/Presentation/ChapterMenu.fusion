@@ -1,4 +1,4 @@
-prototype(Neos.Demo:Block.ChapterMenu) < prototype(Neos.Fusion:Component) {
+prototype(Neos.Demo:Presentation.ChapterMenu) < prototype(Neos.Fusion:Component) {
     // This is used for the living styleguide (Monocle)
     // Read more about this in the README.md
     @styleguide.props {
@@ -24,7 +24,7 @@ prototype(Neos.Demo:Block.ChapterMenu) < prototype(Neos.Fusion:Component) {
     @if.hasContentOrItems = ${this.content || this._hasItems}
 
     renderer = afx`
-        <Neos.Demo:Block.Columns.Two breakpoint="lg" tagName="main" class="content">
+        <Neos.Demo:Presentation.Columns.Two breakpoint="lg" tagName="main" class="content">
             {props.content}
             <nav class="not-prose" @if={props._hasItems}>
                 <ol class="divide-y divide-slate-200">
@@ -39,7 +39,7 @@ prototype(Neos.Demo:Block.ChapterMenu) < prototype(Neos.Fusion:Component) {
                                     {item.description}
                                 </span>
                             </p>
-                            <Neos.Demo:Atom.Image
+                            <Neos.Demo:Presentation.Image
                                 class="w-36"
                                 renderDummyImage={props.renderDummyImage}
                                 src={item.imageSrc}
@@ -49,6 +49,6 @@ prototype(Neos.Demo:Block.ChapterMenu) < prototype(Neos.Fusion:Component) {
                     </Neos.Fusion:Loop>
                 </ol>
             </nav>
-        </Neos.Demo:Block.Columns.Two>
+        </Neos.Demo:Presentation.Columns.Two>
     `
 }

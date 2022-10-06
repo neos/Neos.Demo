@@ -9,7 +9,7 @@ prototype(Neos.Demo:Integration.Header) < prototype(Neos.Fusion:Renderer) {
     renderPath = '/header'
 }
 
-prototype(Neos.Demo:Integration.Header.Renderer) < prototype(Neos.Demo:Section.Header) {
+prototype(Neos.Demo:Integration.Header.Renderer) < prototype(Neos.Demo:Presentation.Header) {
     homeUri = Neos.Neos:NodeUri {
         node = ${site}
     }

@@ -9,7 +9,7 @@ prototype(Neos.Demo:Integration.Breadcrumb) < prototype(Neos.Fusion:Component) {
         }
     }
 
-    renderer = afx`<Neos.Demo:Block.Breadcrumb {...props} />`
+    renderer = afx`<Neos.Demo:Presentation.Breadcrumb {...props} />`
 
     @cache {
         mode = 'cached'

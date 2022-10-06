@@ -1,4 +1,4 @@
-prototype(Neos.Demo:Block.YouTube) < prototype(Neos.Fusion:Component) {
+prototype(Neos.Demo:Presentation.YouTube) < prototype(Neos.Fusion:Component) {
     // This is used for the living styleguide (Monocle)
     // Read more about this in the README.md
     @styleguide.props {
@@ -19,7 +19,7 @@ prototype(Neos.Demo:Block.YouTube) < prototype(Neos.Fusion:Component) {
                 allowfullscreen
             ></iframe>
         </figure>
-        <Neos.Demo:Atom.Alert
+        <Neos.Demo:Presentation.Alert
             @if={!props.videoId && props.inBackend}
             class="aspect-video"
             content={I18n.translate('Neos.Demo:NodeTypes.Content.YouTube:error.no.videoid')}

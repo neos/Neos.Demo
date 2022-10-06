@@ -19,12 +19,12 @@ prototype(Neos.Demo:Content.Columns.Four) < prototype(Neos.Neos:ContentComponent
     }
 
     renderer = afx`
-        <Neos.Demo:Block.Columns.Four>
+        <Neos.Demo:Presentation.Columns.Four>
             {props.column0}
             {props.column1}
             {props.column2}
             {props.column3}
-        </Neos.Demo:Block.Columns.Four>
+        </Neos.Demo:Presentation.Columns.Four>
     `
 }
 

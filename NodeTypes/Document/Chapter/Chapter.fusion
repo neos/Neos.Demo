@@ -25,7 +25,7 @@ prototype(Neos.Demo:Document.Chapter) < prototype(Neos.Fusion:Component) {
     }
     renderer = Neos.Demo:Mixin.Page {
         class = ${props.bodyClass}
-        content = Neos.Demo:Template.Chapter {
+        content = Neos.Demo:Layout.Chapter {
             @apply.props = ${props}
             chapterImageSrc = Neos.Neos:ImageUri {
                 @if.has = ${props.chapterImage}

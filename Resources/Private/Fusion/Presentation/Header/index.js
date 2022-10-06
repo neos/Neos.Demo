@@ -33,28 +33,29 @@ Alpine.data('header', (homeUri) => ({
         this.onScroll();
     },
     header: {
-        '@resize.window.passive.throttle'() {
+        // You could also write @resize.window.passive.throttle
+        'x-on:resize.window.passive.throttle'() {
             this.onResize();
         },
-        '@resize.window.passive.debounce'() {
+        'x-on:resize.window.passive.debounce'() {
             this.onResize();
         },
-        '@scroll.window.passive.throttle'() {
+        'x-on:scroll.window.passive.throttle'() {
             this.onScroll();
         },
-        '@scroll.window.passive.debounce'() {
+        'x-on:scroll.window.passive.debounce'() {
             this.onScroll();
         },
         ':class'() {
             return this.showShadow && 'shadow-lg';
         },
-        '@keydown.window.escape'() {
+        'x-on:keydown.window.escape'() {
             this.mobileMenuOpen = false;
         },
         'x-trap.noscroll.inert'() {
             return this.mobileMenuOpen;
         },
-        '@click.outside'() {
+        'x-on:click.outside'() {
             this.mobileMenuOpen = false;
         },
     },

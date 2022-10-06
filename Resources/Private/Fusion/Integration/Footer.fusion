@@ -9,7 +9,7 @@ prototype(Neos.Demo:Integration.Footer) < prototype(Neos.Fusion:Renderer) {
     renderPath = '/footer'
 }
 
-prototype(Neos.Demo:Integration.Footer.Renderer) < prototype(Neos.Demo:Section.Footer) {
+prototype(Neos.Demo:Integration.Footer.Renderer) < prototype(Neos.Demo:Presentation.Footer) {
     menuItems = Neos.Fusion:Map {
         items = ${q(site).property('metaNavigationItems')}
         itemRenderer = Neos.Fusion:DataStructure {

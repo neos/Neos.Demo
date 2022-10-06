@@ -9,5 +9,5 @@ prototype(Neos.Demo:Content.Headline) < prototype(Neos.Neos:ContentComponent) {
         block = false
     }
 
-    renderer = afx`<Neos.Demo:Atom.Headline {...props} />`
+    renderer = afx`<Neos.Demo:Presentation.Headline {...props} />`
 }

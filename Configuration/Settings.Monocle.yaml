@@ -4,34 +4,16 @@ Sitegeist:
   Monocle:
     ui:
       structure:
-        atom:
-          position: 90
-          match: Atom\.
-          label: Atom
-          icon: atom
-          color: '#AAA'
-        block:
-          position: 80
-          match: Block\.
-          label: Block
-          icon: gear
-          color: '#4DBCE9'
-        module:
-          position: 70
-          match: Module\.
-          label: Module
-          icon: gears
-          color: '#26ADE4'
-        section:
-          position: 60
-          match: Section\.
-          label: Section
+        presentation:
+          position: 20
+          match: Presentation\.
+          label: Presentation
           icon: certificate
           color: '#D1E751'
-        template:
-          position: 40
-          match: Template\.
-          label: Template
+        layout:
+          position: 10
+          match: Layout\.
+          label: Layout
           icon: file
           color: '#FFFFFF'
       viewportPresets:
@@ -47,7 +29,7 @@ Sitegeist:
           label: md
           width: 768
           height: 400
-        l:
+        lg:
           label: lg
           width: 1024
           height: 800

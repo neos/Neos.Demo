@@ -31,6 +31,6 @@ prototype(Neos.Demo:Document.Book) < prototype(Neos.Demo:Document.LandingPage) {
             }
         }
 
-        renderer = afx`<Neos.Demo:Block.ChapterMenu {...props} />`
+        renderer = afx`<Neos.Demo:Presentation.ChapterMenu {...props} />`
     }
 }

@@ -1,4 +1,4 @@
-prototype(Neos.Demo:Section.Footer) < prototype(Neos.Fusion:Component) {
+prototype(Neos.Demo:Presentation.Footer) < prototype(Neos.Fusion:Component) {
     // This is used for the living styleguide (Monocle)
     // Read more about this in the README.md
     @styleguide.props {

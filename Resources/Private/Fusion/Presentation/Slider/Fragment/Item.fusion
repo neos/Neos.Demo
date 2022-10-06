@@ -1,4 +1,4 @@
-prototype(Neos.Demo:Section.Splide.Fragment.Item) < prototype(Neos.Fusion:Component) {
+prototype(Neos.Demo:Presentation.Slider.Fragment.Item) < prototype(Neos.Fusion:Component) {
     videoUri = null
     youtubeId = null
     vimdeoId = null

@@ -10,7 +10,7 @@ prototype(Neos.Demo:Mixin.Document) < prototype(Neos.Fusion:Component) {
 
     renderer = Neos.Demo:Mixin.Page {
         class = ${props.bodyClass}
-        content = Neos.Demo:Template.Base {
+        content = Neos.Demo:Layout.Page {
             header = ${props.header}
             heroContent = ${props.heroContent}
             heroImage = ${props.heroImage}

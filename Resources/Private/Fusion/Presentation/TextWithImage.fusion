@@ -1,4 +1,4 @@
-prototype(Neos.Demo:Block.TextWithImage) < prototype(Neos.Fusion:Component) {
+prototype(Neos.Demo:Presentation.TextWithImage) < prototype(Neos.Fusion:Component) {
     // This is used for the living styleguide (Monocle)
     // Read more about this in the README.md
     @styleguide.props {
@@ -26,7 +26,7 @@ prototype(Neos.Demo:Block.TextWithImage) < prototype(Neos.Fusion:Component) {
 
     renderer = afx`
         <div class="md:flex md:flex-wrap md:gap-4 md:flex-row">
-            <Neos.Demo:Atom.Image {...props} class="md:mb-0" imageClass="w-full max-w-none" />
+            <Neos.Demo:Presentation.Image {...props} class="md:mb-0" imageClass="w-full max-w-none" />
             <div class="min-w-[30ch] flex-1">{props.text}</div>
         </div>
     `
