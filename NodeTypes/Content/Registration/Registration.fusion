@@ -12,12 +12,12 @@ prototype(Neos.Demo:Content.Registration) < prototype(Neos.Fusion.Form:Runtime.R
 
     process {
         content = afx`
-            <fieldset class="space-y-6 mb-8 max-w-[300px]">
-                <Neos.Fusion.Form:FieldContainer field.name="username">
+            <fieldset class="space-y-6 mb-8 max-w-[300px] [&_label]:sr-only">
+                <Neos.Fusion.Form:FieldContainer field.name="username" label="Username">
                     <Neos.Fusion.Form:Input attributes.required={true} attributes.placeholder="Username" attributes.pattern="[a-z0-9]+" />
                     <small>(lowercase letters and numbers only)</small>
                 </Neos.Fusion.Form:FieldContainer>
-                <Neos.Fusion.Form:FieldContainer field.name="password">
+                <Neos.Fusion.Form:FieldContainer field.name="password" label="Password">
                     <Neos.Fusion.Form:Password attributes.required={true} attributes.placeholder="Password" />
                 </Neos.Fusion.Form:FieldContainer>
             </fieldset>
