@@ -1,6 +1,6 @@
 // this is used for an entry point for settings CSS custom properties to the body tag
 
-prototype(Neos.Demo:Mixin.Page) < prototype(Neos.Fusion:Component) {
+prototype(Neos.Demo:DocumentRenderer) < prototype(Neos.Fusion:Component) {
     style = Neos.Fusion:DataStructure {
         // RGB values (Plain numbers)
         // '--color-light' = '255 52 34'

@@ -1,7 +1,25 @@
 /**
  * Default page-rendering for the Neos.Demo website
  */
-prototype(Neos.Demo:Document.Page) < prototype(Neos.Demo:Mixin.Document) {
+prototype(Neos.Demo:Document.Page) < prototype(Neos.Fusion:Component) {
+    bodyClass = null
+
+    header = Neos.Demo:Integration.Header
+    heroContent = null
+    heroImage = null
     breadcrumb = Neos.Demo:Integration.Breadcrumb
     content = Neos.Demo:Collection.Content.Main
+    footer  = Neos.Demo:Integration.Footer
+
+    renderer = Neos.Demo:DocumentRenderer {
+        class = ${props.bodyClass}
+        content = Neos.Demo:Layout.Page {
+            header = ${props.header}
+            heroContent = ${props.heroContent}
+            heroImage = ${props.heroImage}
+            breadcrumb = ${props.breadcrumb}
+            content = ${props.content}
+            footer  = ${props.footer}
+        }
+    }
 }

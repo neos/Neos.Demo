@@ -23,7 +23,7 @@ prototype(Neos.Demo:Document.Chapter) < prototype(Neos.Fusion:Component) {
             block = false
         }
     }
-    renderer = Neos.Demo:Mixin.Page {
+    renderer = Neos.Demo:DocumentRenderer {
         class = ${props.bodyClass}
         content = Neos.Demo:Layout.Chapter {
             @apply.props = ${props}

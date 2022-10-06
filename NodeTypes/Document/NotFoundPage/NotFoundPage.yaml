@@ -3,7 +3,7 @@
 #
 'Neos.Demo:Document.NotFoundPage':
   superTypes:
-    'Neos.Demo:Mixin.Document': true
+    'Neos.Demo:Document.Page': true
     'Neos.Demo:Constraint.Document.Restricted': true
     'Neos.Demo:Constraint.Document.NoSubDocument': true
   ui:

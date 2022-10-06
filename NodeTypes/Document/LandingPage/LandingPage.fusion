@@ -1,8 +1,8 @@
 /**
  *  Special landing page layout with less navigation components
  */
-prototype(Neos.Demo:Document.LandingPage) < prototype(Neos.Demo:Mixin.Document) {
-    content = Neos.Demo:Collection.Content.Main
+prototype(Neos.Demo:Document.LandingPage) < prototype(Neos.Demo:Document.Page) {
+    breadcrumb >
     heroContent = Neos.Neos:ContentCollection {
         nodePath = 'teaser'
         attributes.class = Neos.Demo:Helper.HeroContentClass
