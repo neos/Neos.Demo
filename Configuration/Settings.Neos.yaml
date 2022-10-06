@@ -25,6 +25,5 @@ Neos:
     Ui:
       resources:
         javascript:
-          'Neos.Demo:CKEConfig':
-            #TODO Rename this
-            resource: resource://Neos.Demo/Public/Scripts/CKEConfig/Plugin.js
+          'Neos.Demo:CodeTag':
+            resource: resource://Neos.Demo/Public/Scripts/CodeTagPlugin/Plugin.js

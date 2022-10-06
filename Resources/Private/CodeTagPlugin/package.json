@@ -1,5 +1,5 @@
 {
-  "description": "CKEConfig",
+  "description": "Adds a button for a code tag to the ckeditor",
   "license": "GNU GPLv3",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
     "@neos-project/neos-ui-extensibility": "^8.0.0"
   },
   "neos": {
-    "buildTargetDirectory": "../../Public/Scripts/CKEConfig"
+    "buildTargetDirectory": "../../Public/Scripts/CodeTagPlugin"
   },
   "dependencies": {
     "@ckeditor/ckeditor5-basic-styles": "10.1.0"
