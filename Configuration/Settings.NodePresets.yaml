@@ -3,6 +3,8 @@ Neos:
     nodeTypes:
       presets:
         properties:
+        # TODO Add and use image preset
+        # TODO Rename this to neosdemo
           text:
             inlineEditable:
               type: string
