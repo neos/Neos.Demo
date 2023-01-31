@@ -8,13 +8,13 @@ prototype(Neos.Demo:Presentation.Header) < prototype(Neos.Fusion:Component) {
             items = ${['Home', 'Features', 'Try me', 'Download', 'The book']}
             itemRenderer = Neos.Fusion:DataStructure {
                 label = ${item}
-                href = ${'#' + item}
+                uri = ${'#' + item}
                 subItems = Neos.Fusion:Map {
                     @if.set = ${iterator.isEven}
                     items = ${['Sub item 1', 'Sub item 2', 'Sub item 3']}
                     itemRenderer = Neos.Fusion:DataStructure {
                         label = ${item}
-                        href = ${'#' + item}
+                        uri = ${'#' + item}
                     }
                 }
             }
@@ -56,16 +56,16 @@ prototype(Neos.Demo:Presentation.Header) < prototype(Neos.Fusion:Component) {
                         <Neos.Fusion:Loop items={props.menuItems}>
                             <li>
                                 <a
-                                    href={item.href}
-                                    :class={"isCurrentPage('" + item.href + "')&&'text-light'"}
+                                    href={item.uri}
+                                    :class={"isCurrentPage('" + item.uri + "')&&'text-light'"}
                                     class="block p-1 hocus:text-slate-900 text-lg lg:text-sm whitespace-nowrap"
                                 >{item.label}</a>
                                 <ul @if={Type.isArray(item.subItems) && Array.length(item.subItems)} class="lg:hidden">
                                     <Neos.Fusion:Loop items={item.subItems}>
                                         <li>
                                             <a
-                                                href={item.href}
-                                                :class={"isCurrentPage('" + item.href + "')&&'text-light'"}
+                                                href={item.uri}
+                                                :class={"isCurrentPage('" + item.uri + "')&&'text-light'"}
                                                 class="block text-base p-1 whitespace-nowrap"
                                             >{item.label}</a>
                                         </li>
@@ -120,14 +120,14 @@ prototype(Neos.Demo:Presentation.Header) < prototype(Neos.Fusion:Component) {
                     <Neos.Fusion:Loop items={props.menuItems}>
                         <ul
                             @if={Type.isArray(item.subItems) && Array.length(item.subItems)}
-                            x-show={"isCurrentPage('" + item.href + "')"}
+                            x-show={"isCurrentPage('" + item.uri + "')"}
                             class="flex flex-wrap items-center gap-x-10 text-slate-600"
                         >
                             <Neos.Fusion:Loop items={item.subItems}>
                                 <li>
                                     <a
-                                        href={item.href}
-                                        :class={"isCurrentPage('" + item.href + "')&&'text-light'"}
+                                        href={item.uri}
+                                        :class={"isCurrentPage('" + item.uri + "')&&'text-light'"}
                                         class="block p-1 hocus:text-slate-900 whitespace-nowrap"
                                     >{item.label}</a>
                                 </li>

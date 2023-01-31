@@ -14,7 +14,7 @@ prototype(Neos.Demo:Integration.Footer.Renderer) < prototype(Neos.Demo:Presentat
         items = ${q(site).property('metaNavigationItems')}
         itemRenderer = Neos.Fusion:DataStructure {
             label = ${item.label}
-            href = Neos.Neos:NodeUri {
+            uri = Neos.Neos:NodeUri {
                 node = ${item}
             }
         }

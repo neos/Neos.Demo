@@ -1,13 +1,5 @@
 prototype(Neos.Demo:Integration.Breadcrumb) < prototype(Neos.Fusion:Component) {
-    menuItems = Neos.Fusion:Map {
-        items = Neos.Neos:BreadcrumbMenuItems
-        itemRenderer = Neos.Fusion:DataStructure {
-            label = ${item.label}
-            href = Neos.Neos:NodeUri {
-                node = ${item.node}
-            }
-        }
-    }
+    menuItems = Neos.Neos:BreadcrumbMenuItems
 
     renderer = afx`<Neos.Demo:Presentation.Breadcrumb {...props} />`
 

@@ -14,25 +14,8 @@ prototype(Neos.Demo:Integration.Header.Renderer) < prototype(Neos.Demo:Presentat
         node = ${site}
     }
 
-    menuItems = Neos.Fusion:Map {
-        items = Neos.Neos:MenuItems {
-            maximumLevels = 2
-        }
-        itemRenderer = Neos.Fusion:DataStructure {
-            label = ${item.label}
-            href = Neos.Neos:NodeUri {
-                node = ${item.node}
-            }
-            subItems = Neos.Fusion:Map {
-                items = ${item.subItems}
-                itemRenderer = Neos.Fusion:DataStructure {
-                    label = ${item.label}
-                    href = Neos.Neos:NodeUri {
-                        node = ${item.node}
-                    }
-                }
-            }
-        }
+    menuItems = Neos.Neos:MenuItems {
+        maximumLevels = 2
     }
 
     currentLanguage = ${site.context.dimensions.language[0]}
