@@ -6,13 +6,13 @@
         "GPL-3.0-or-later"
     ],
     "require": {
-        "neos/neos": "^8.0 || dev-master",
+        "neos/neos": "^8.2 || dev-master",
         "neos/fusion-form": "^2.0 || dev-master",
-        "neos/nodetypes-basemixins": "^8.0 || dev-master",
-        "neos/nodetypes-assetlist": "^8.0 || dev-master",
-        "neos/nodetypes-contentreferences": "^8.0 || dev-master",
-        "neos/nodetypes-html": "^8.0 || dev-master",
-        "neos/nodetypes-navigation": "^8.0 || dev-master"
+        "neos/nodetypes-basemixins": "^8.2 || dev-master",
+        "neos/nodetypes-assetlist": "^8.2 || dev-master",
+        "neos/nodetypes-contentreferences": "^8.2 || dev-master",
+        "neos/nodetypes-html": "^8.2 || dev-master",
+        "neos/nodetypes-navigation": "^8.2 || dev-master"
     },
     "suggest": {
         "sitegeist/monocle": "An living-styleguide for Neos that is based on the actual fusion-code",
