@@ -5,7 +5,6 @@
   superTypes:
     'Neos.Demo:Content.YouTube': true
     'Neos.Demo:Constraint.Content.Carousel': true
-    'Neos.Demo:Constraint.Content.Restricted': true
     'Neos.NodeTypes.BaseMixins:ImageMixin': true
   ui:
     label: YouTube

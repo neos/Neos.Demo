@@ -4,6 +4,8 @@
     'Neos.Demo:Constraint.Content.Carousel': true
     'Neos.Demo:Constraint.Content.Column': true
     'Neos.Demo:Constraint.Content.Main': true
+    'Neos.Demo:Constraint.Content.Teaser': true
+    'Neos.Demo:Constraint.Content.Footer': true
   ui:
     label: i18n
     icon: file-text

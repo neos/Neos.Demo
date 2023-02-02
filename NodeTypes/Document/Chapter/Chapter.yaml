@@ -1,11 +1,10 @@
 ##
-# Document NodeType "Chapter"
+# The "Chapter" which can be added to the "Book" node type
 #
 'Neos.Demo:Document.Chapter':
+  final: true
   superTypes:
-    'Neos.Neos:Document': true
-    'Neos.Demo:Constraint.Document.NoSubDocument': true
-    'Neos.Demo:Constraint.Document.Restricted': true
+    'Neos.Demo:Document.Mixin.AbstractPage': true
   childNodes:
     'main':
       type: 'Neos.Demo:Collection.Content.Main'

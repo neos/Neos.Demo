@@ -1,10 +1,12 @@
 ##
 # Special homepage nodetype that declares a footer child node for usage as shared footer.
+# It should be used only once and is not allowed to be added as subpage.
 #
 'Neos.Demo:Document.Homepage':
+  final: true
   superTypes:
     'Neos.Demo:Document.LandingPage': true
-    'Neos.Demo:Constraint.Document.Restricted': true
+    'Neos.Demo:Constraint.Document.SubPage': false
   ui:
     label: i18n
     icon: 'globe'
@@ -21,10 +23,6 @@
           label: i18n
           icon: gears
           tab: site
-  constraints:
-    nodeTypes:
-      'Neos.Demo:Document.NotFoundPage': true
-      'Neos.Demo:Document.Book': true
   childNodes:
     'notfound':
       type: 'Neos.Demo:Document.NotFoundPage'

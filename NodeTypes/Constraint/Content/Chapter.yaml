@@ -1,0 +1,5 @@
+##
+# Constraint-supertype that makes contents available in the chapter pages
+#
+'Neos.Demo:Constraint.Content.Chapter':
+  abstract: true

@@ -2,10 +2,10 @@
 # Document NodeType "NotFoundPage"
 #
 'Neos.Demo:Document.NotFoundPage':
+  final: true
   superTypes:
     'Neos.Demo:Document.Page': true
-    'Neos.Demo:Constraint.Document.Restricted': true
-    'Neos.Demo:Constraint.Document.NoSubDocument': true
+    'Neos.Demo:Constraint.Document.SubPage': false
   ui:
     label: i18n
     icon: 'times-circle'
@@ -32,3 +32,6 @@
     # set meta no-index by default
     metaRobotsNoindex:
       defaultValue: true
+  constraints:
+    nodeTypes:
+      'Neos.Demo:Constraint.Document.SubPage': false

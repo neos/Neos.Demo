@@ -1,5 +1,5 @@
 ##
-# Document NodeType "LandingPage"
+# The type "LandingPage" is to be used for special topic landing pages.
 #
 'Neos.Demo:Document.LandingPage':
   superTypes:

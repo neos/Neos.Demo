@@ -8,6 +8,4 @@
   constraints:
     nodeTypes:
       '*': false
-      'Neos.Demo:Content.Headline': true
-      'Neos.Demo:Content.Text': true
-      'Neos.Demo:Content.Image': true
+      'Neos.Demo:Constraint.Content.Teaser': true
