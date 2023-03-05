@@ -18,6 +18,13 @@ Neos:
           Neos.Demo:
             - Main
             - 'NodeTypes/*'
+    sites:
+      '*':
+        contentDimensions:
+          # the defaultDimensionSpacePoint is used when resolving the "/" URL.
+          defaultDimensionSpacePoint:
+            language: en_US
+
   ContentRepositoryRegistry:
     contentRepositories:
       default:
@@ -25,7 +32,6 @@ Neos:
           language:
             label: 'Neos.Demo:Main:contentDimensions.language'
             icon: icon-language
-            defaultValue: en_US
             values:
               'en_US':
                 label: English (US)
@@ -37,7 +43,6 @@ Neos:
 
               'de':
                 label: German
-                uriSegment: de
                 specializations:
                   nl:
                     label: Dutch
