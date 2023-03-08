@@ -1,0 +1,36 @@
+/**
+ * Blog rendering for the Neos.Demo website
+ */
+prototype(Neos.Demo:Document.Blog) < prototype(Neos.Demo:Document.LandingPage) {
+    structuredData.blog = Neos.Seo:StructuredData.RootObject {
+        type = "Blog"
+        attributes = Neos.Fusion:DataStructure {
+            url = Neos.Neos:NodeUri {
+                node = ${documentNode}
+            }
+            title = ${q(node).property('title')}
+        }
+    }
+
+    # content is overwritten to render a list of cards for the latest 10 blog postings
+    content >
+    content = Neos.Fusion:Join {
+
+        intro = Neos.Fusion:Loop {
+            items = ${q(documentNode).children('[instanceof Neos.Demo:Document.BlogPosting]').sort("datePublished", "DESC").get()}
+            itemName = 'blogPosting'
+            itemRenderer = afx`
+                <Neos.Neos:NodeLink node={blogPosting}>
+                    <Neos.Neos:ImageTag asset={q(blogPosting).property('image')} maximumWidth="200" maximumHeight="200" />
+                    <h3>{q(blogPosting).property('headline')}</h3>
+                    <p>{q(blogPosting).property('abstract')}</p>
+                </Neos.Neos:NodeLink>
+            `
+        }
+
+        main = Neos.Neos:PrimaryContent {
+            nodePath = 'main'
+            @process.convertUris = Neos.Neos:ConvertUris
+        }
+    }
+}
