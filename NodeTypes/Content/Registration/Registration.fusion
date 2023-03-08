@@ -1,60 +1,67 @@
 ##
 # "Registration" element based on Fusion.Form
 #
-prototype(Neos.Demo:Content.Registration) < prototype(Neos.Fusion.Form:Runtime.RuntimeForm) {
-    namespace = "neos-demo-registration"
-    attributes {
-        id = ${'form-' + node.identifier}
-        action = ${'#' + this.id}
-    }
+prototype(Neos.Demo:Content.Registration) < prototype(Neos.Neos:ContentComponent) {
 
-    form.method = 'POST'
-
-    process {
-        content = afx`
-            <fieldset class="space-y-6 mb-8 max-w-[300px] [&_label]:sr-only">
-                <Neos.Fusion.Form:FieldContainer field.name="username" label="Username">
-                    <Neos.Fusion.Form:Input attributes.required={true} attributes.placeholder="Username" attributes.pattern="[a-z0-9]+" />
-                    <small>(lowercase letters and numbers only)</small>
-                </Neos.Fusion.Form:FieldContainer>
-                <Neos.Fusion.Form:FieldContainer field.name="password" label="Password">
-                    <Neos.Fusion.Form:Password attributes.required={true} attributes.placeholder="Password" />
-                </Neos.Fusion.Form:FieldContainer>
-            </fieldset>
-        `
-
-        schema {
-            username = ${Form.Schema.string().isRequired().validator('Neos\Demo\Form\Runtime\Validation\Validator\UsernameInUseValidator')}
-            password = ${Form.Schema.string().isRequired()}
+    renderer = Neos.Fusion.Form:Runtime.RuntimeForm {
+        namespace = "neos-demo-registration"
+        attributes {
+            id = ${'form-' + node.identifier}
+            action = ${'#' + this.id}
         }
-    }
 
-    action {
+        form.method = 'POST'
+
+        process {
+            content = afx`
+                <fieldset class="space-y-6 mb-8 max-w-[300px] [&_label]:sr-only">
+                    <Neos.Fusion.Form:FieldContainer field.name="username" label="Username">
+                        <Neos.Fusion.Form:Input attributes.required={true} attributes.placeholder="Username" attributes.pattern="[a-z0-9]+" />
+                        <small>(lowercase letters and numbers only)</small>
+                    </Neos.Fusion.Form:FieldContainer>
+                    <Neos.Fusion.Form:FieldContainer field.name="password" label="Password">
+                        <Neos.Fusion.Form:Password attributes.required={true} attributes.placeholder="Password" />
+                    </Neos.Fusion.Form:FieldContainer>
+                </fieldset>
+            `
+
+            schema {
+                username = ${Form.
+
+            Schema.string().isRequired().validator('Neos\Demo\Form\Runtime\Validation\Validator\UsernameInUseValidator')}
+                password = ${Form.Schema.string().isRequired()}
+            }
+        }
+
+        action {
+
+
         createBackendUser {
-            type = 'Neos.Demo.Form.Runtime:CreateUser'
-            options {
-                username = ${data.username}
-                password = ${data.password}
-                // you can configure an array of Backend Roles to be added to this user
-                roles = ${['Neos.Neos:Editor']}
-                // this is basically for security reasons if someone
-                // forgets to remove this functionality
-                // you can configure a valid DateTime constructor format here
-                expiry = '+1 week'
-            }
-            @position = 'start'
-        }
-        redirect {
-            type = 'Neos.Fusion.Form.Runtime:Redirect'
-            options.uri = Neos.Fusion:UriBuilder {
-                package = 'Neos.Neos'
-                controller = 'Login'
-                action = 'index'
-                additionalParams {
+                type = 'Neos.Demo.Form.Runtime:CreateUser'
+                options {
                     username = ${data.username}
+                    password = ${data.password}
+                    // you can configure an array of Backend Roles to be added to this user
+                    roles = ${['Neos.Neos:Editor']}
+                    // this is basically for security reasons if someone
+                    // forgets to remove this functionality
+                    // you can configure a valid DateTime constructor format here
+                    expiry = '+1 week'
                 }
+                @position = 'start'
             }
-            @position = 'end'
+            redirect {
+                type = 'Neos.Fusion.Form.Runtime:Redirect'
+                options.uri = Neos.Fusion:UriBuilder {
+                    package = 'Neos.Neos'
+                    controller = 'Login'
+                    action = 'index'
+                    additionalParams {
+                        username = ${data.username}
+                    }
+                }
+                @position = 'end'
+            }
         }
     }
 }
