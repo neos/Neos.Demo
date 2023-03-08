@@ -1,6 +1,6 @@
 // this is used for an entry point for settings CSS custom properties to the body tag
 
-prototype(Neos.Demo:DocumentRenderer) < prototype(Neos.Fusion:Component) {
+prototype(Neos.Demo:Document) < prototype(Neos.Fusion:Component) {
     style = Neos.Fusion:DataStructure {
         // RGB values (Plain numbers)
         // '--color-light' = '255 52 34'
@@ -10,6 +10,16 @@ prototype(Neos.Demo:DocumentRenderer) < prototype(Neos.Fusion:Component) {
     content = null
 
     renderer = Neos.Neos:Page {
+        htmlTag.attributes.data-debug = ${Configuration.setting('Neos.Demo.debugMode')}
+        head {
+            stylesheets {
+                site = Neos.Demo:Presentation.Stylesheet
+            }
+            javascripts {
+                site = Neos.Demo:Presentation.Javascript
+            }
+            metadata = '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
+        }
         body = ${props.content}
         bodyTag.attributes {
             class = ${props.class}

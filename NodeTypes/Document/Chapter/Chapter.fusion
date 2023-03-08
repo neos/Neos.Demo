@@ -16,6 +16,7 @@ prototype(Neos.Demo:Document.Chapter) < prototype(Neos.Fusion:Component) {
     chapterLabel = ${q(documentNode).property('_label')}
     content = Neos.Neos:PrimaryContent {
         nodePath = 'main'
+        @process.convertUris = Neos.Neos:ConvertUris
     }
     title = Neos.Neos:ContentComponent {
         renderer = Neos.Neos:Editable {
@@ -23,7 +24,7 @@ prototype(Neos.Demo:Document.Chapter) < prototype(Neos.Fusion:Component) {
             block = false
         }
     }
-    renderer = Neos.Demo:DocumentRenderer {
+    renderer = Neos.Demo:Document {
         class = ${props.bodyClass}
         content = Neos.Demo:Presentation.Layout.Chapter {
             @apply.props = ${props}

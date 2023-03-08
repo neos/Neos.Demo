@@ -1,16 +1,33 @@
 /**
  *  Special landing page layout with less navigation components
  */
-prototype(Neos.Demo:Document.LandingPage) < prototype(Neos.Demo:Document.Page) {
-    breadcrumb >
+prototype(Neos.Demo:Document.LandingPage) < prototype(Neos.Fusion:Component) {
     heroContent = Neos.Neos:ContentCollection {
         nodePath = 'teaser'
-        attributes.class = Neos.Demo:Helper.HeroContentClass
+        @process.convertUris = Neos.Neos:ConvertUris
     }
+
     heroImage = Neos.Neos:ImageUri {
         asset = ${q(node).property('image')}
         maximumWidth = 2560
         maximumHeight = 1280
         @if.image = ${q(node).property('image')}
+    }
+
+    header = Neos.Demo:Integration.Header
+    content = Neos.Neos:PrimaryContent {
+        nodePath = 'main'
+        @process.convertUris = Neos.Neos:ConvertUris
+    }
+    footer  = Neos.Demo:Integration.Footer
+
+    renderer = Neos.Demo:Document {
+        content = Neos.Demo:Presentation.Layout.LandingPage {
+            heroImage = ${props.heroImage}
+            heroContent = ${props.heroContent}
+            header = ${props.header}
+            content = ${props.content}
+            footer  = ${props.footer}
+        }
     }
 }

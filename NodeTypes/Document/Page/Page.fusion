@@ -2,23 +2,18 @@
  * Default page-rendering for the Neos.Demo website
  */
 prototype(Neos.Demo:Document.Page) < prototype(Neos.Fusion:Component) {
-    bodyClass = null
 
     header = Neos.Demo:Integration.Header
-    heroContent = null
-    heroImage = null
     breadcrumb = Neos.Demo:Integration.Breadcrumb
     content = Neos.Neos:PrimaryContent {
         nodePath = 'main'
+        @process.convertUris = Neos.Neos:ConvertUris
     }
     footer  = Neos.Demo:Integration.Footer
 
-    renderer = Neos.Demo:DocumentRenderer {
-        class = ${props.bodyClass}
+    renderer = Neos.Demo:Document {
         content = Neos.Demo:Presentation.Layout.Page {
             header = ${props.header}
-            heroContent = ${props.heroContent}
-            heroImage = ${props.heroImage}
             breadcrumb = ${props.breadcrumb}
             content = ${props.content}
             footer  = ${props.footer}
