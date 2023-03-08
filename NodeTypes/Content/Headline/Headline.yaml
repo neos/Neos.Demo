@@ -18,7 +18,7 @@
   properties:
     title:
       options:
-        preset: 'text.headline'
+        preset: 'neosdemo.text.headline'
     tagName:
       type: string
       defaultValue: 'h2'

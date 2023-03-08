@@ -13,5 +13,7 @@
       message: 'A book which can have chapters.'
   constraints:
     nodeTypes:
+      # Not all SubPage documents can be placed below
       'Neos.Demo:Constraint.Document.SubPage': false
+      # but chapters are explicitly allowed
       'Neos.Demo:Document.Chapter': true

@@ -8,12 +8,14 @@ prototype(Neos.Demo:Document.Page) < prototype(Neos.Fusion:Component) {
     heroContent = null
     heroImage = null
     breadcrumb = Neos.Demo:Integration.Breadcrumb
-    content = Neos.Demo:Collection.Content.Main
+    content = Neos.Neos:PrimaryContent {
+        nodePath = 'main'
+    }
     footer  = Neos.Demo:Integration.Footer
 
     renderer = Neos.Demo:DocumentRenderer {
         class = ${props.bodyClass}
-        content = Neos.Demo:Layout.Page {
+        content = Neos.Demo:Presentation.Layout.Page {
             header = ${props.header}
             heroContent = ${props.heroContent}
             heroImage = ${props.heroImage}

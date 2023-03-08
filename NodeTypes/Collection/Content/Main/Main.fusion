@@ -1,5 +1,0 @@
-prototype(Neos.Demo:Collection.Content.Main) < prototype(Neos.Neos:ContentCollection) {
-    tagName = 'main'
-    nodePath = 'main'
-    attributes.class = 'content prose'
-}

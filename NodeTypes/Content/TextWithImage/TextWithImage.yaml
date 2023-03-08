@@ -13,4 +13,4 @@
   properties:
     text:
       options:
-        preset: 'text.autoparagraph'
+        preset: 'neosdemo.text.autoparagraph'

@@ -14,8 +14,8 @@ prototype(Neos.Demo:Document.Chapter) < prototype(Neos.Fusion:Component) {
     chapterImage = ${q(documentNode).property('chapterImage')}
     chapterImageAlt = ${q(documentNode).property('chapterImageAlt')}
     chapterLabel = ${q(documentNode).property('_label')}
-    content = Neos.Demo:Collection.Content.Main {
-        attributes.class = null
+    content = Neos.Neos:PrimaryContent {
+        nodePath = 'main'
     }
     title = Neos.Neos:ContentComponent {
         renderer = Neos.Neos:Editable {
@@ -25,7 +25,7 @@ prototype(Neos.Demo:Document.Chapter) < prototype(Neos.Fusion:Component) {
     }
     renderer = Neos.Demo:DocumentRenderer {
         class = ${props.bodyClass}
-        content = Neos.Demo:Layout.Chapter {
+        content = Neos.Demo:Presentation.Layout.Chapter {
             @apply.props = ${props}
             chapterImageSrc = Neos.Neos:ImageUri {
                 @if.has = ${props.chapterImage}

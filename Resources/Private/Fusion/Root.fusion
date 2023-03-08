@@ -2,6 +2,4 @@
 # Include all .fusion files
 #
 include: **/*.fusion
-// TODO Remove this line when the following PR is merged:
-// https://github.com/neos/neos-development-collection/pull/3903
-include: ../../../NodeTypes/**/*.fusion
+include: nodetypes://Neos.Demo/**/*.fusion

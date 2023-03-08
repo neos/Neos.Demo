@@ -1,4 +1,4 @@
-prototype(Neos.Demo:Layout.Page) < prototype(Neos.Fusion:Component) {
+prototype(Neos.Demo:Presentation.Layout.Page) < prototype(Neos.Fusion:Component) {
     // This is used for the living styleguide (Monocle)
     // Read more about this in the README.md
     @styleguide {
@@ -7,14 +7,12 @@ prototype(Neos.Demo:Layout.Page) < prototype(Neos.Fusion:Component) {
             heroImage = ${StaticResource.uri('Neos.Neos', 'Public/Images/dummy-image.svg')}
             heroContent = afx`<Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Headline' props.content='You won‘t need a manual or training to edit content in Neos - because you already know how to do that.' />`
             content = afx`
-                <main class="content prose">
-                    <Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Headline' />
-                    <Neos.Demo:Presentation.Columns.Two>
-                        <div><Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Text' /></div>
-                        <div><Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Text' /></div>
-                    </Neos.Demo:Presentation.Columns.Two>
-                    <Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Columns.Four' />
-                </main>
+                <Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Headline' />
+                <Neos.Demo:Presentation.Columns.Two>
+                    <div><Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Text' /></div>
+                    <div><Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Text' /></div>
+                </Neos.Demo:Presentation.Columns.Two>
+                <Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Columns.Four' />
             `
            footer = afx`<Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Footer' />`
         }
@@ -38,7 +36,9 @@ prototype(Neos.Demo:Layout.Page) < prototype(Neos.Fusion:Component) {
             {props.heroContent}
         </div>
         {props.breadcrumb}
-        {props.content}
+        <main class="content prose">
+            {props.content}
+        </main>
         {props.footer}
     `
 }

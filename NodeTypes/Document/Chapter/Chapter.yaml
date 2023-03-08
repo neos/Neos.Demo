@@ -4,7 +4,8 @@
 'Neos.Demo:Document.Chapter':
   final: true
   superTypes:
-    'Neos.Demo:Document.Mixin.AbstractPage': true
+    'Neos.Demo:Document': true
+    'Neos.Demo:Constraint.Document.SubPage': false
   childNodes:
     'main':
       type: 'Neos.Demo:Collection.Content.Main'
@@ -47,7 +48,7 @@
     title:
       validation: ~
       options:
-        preset: 'text.headline'
+        preset: 'neosdemo.text.headline'
       ui:
         inspector:
           group: ~
