@@ -22,8 +22,9 @@ Neos:
           label: 'Neos.Demo:Main:nodeTypes.groups.forms'
           collapsed: false
 
-    Ui:
-      resources:
-        javascript:
-          'Neos.Demo:CodeTag':
-            resource: resource://Neos.Demo/Public/Scripts/CodeTagPlugin/Plugin.js
+#    @TODO: fix the plugin build that broke with the esbuild change
+#    Ui:
+#      resources:
+#        javascript:
+#          'Neos.Demo:CodeTag':
+#            resource: resource://Neos.Demo/Public/Scripts/CodeTagPlugin/Plugin.js

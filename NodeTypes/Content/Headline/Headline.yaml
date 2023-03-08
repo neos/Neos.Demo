@@ -25,7 +25,6 @@
       ui:
         label: i18n
         reloadIfChanged: true
-        showInCreationDialog: true
         inspector:
           group: settings
           position: 10

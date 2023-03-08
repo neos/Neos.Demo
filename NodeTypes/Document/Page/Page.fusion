@@ -9,9 +9,12 @@ prototype(Neos.Demo:Document.Page) < prototype(Neos.Fusion:Component) {
         nodePath = 'main'
         @process.convertUris = Neos.Neos:ConvertUris
     }
-    footer  = Neos.Demo:Integration.Footer
+    footer = Neos.Demo:Integration.Footer
+
+    structuredData = Neos.Seo:StructuredData.Container
 
     renderer = Neos.Demo:Document {
+        structuredData = ${props.structuredData}
         content = Neos.Demo:Presentation.Layout.Page {
             header = ${props.header}
             breadcrumb = ${props.breadcrumb}

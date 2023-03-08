@@ -21,7 +21,10 @@ prototype(Neos.Demo:Document.LandingPage) < prototype(Neos.Fusion:Component) {
     }
     footer  = Neos.Demo:Integration.Footer
 
+    structuredData = Neos.Seo:StructuredData.Container
+
     renderer = Neos.Demo:Document {
+        structuredData = ${props.structuredData}
         content = Neos.Demo:Presentation.Layout.LandingPage {
             heroImage = ${props.heroImage}
             heroContent = ${props.heroContent}
