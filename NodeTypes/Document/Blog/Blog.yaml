@@ -10,6 +10,7 @@
     label: i18n
     icon: 'newspaper'
     position: 300
+    group: special
     help:
       message: 'A blog'
   constraints:

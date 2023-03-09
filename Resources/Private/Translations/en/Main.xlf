@@ -24,6 +24,9 @@
             <trans-unit id="nodeTypes.groups.forms" xml:space="preserve">
                 <source>Forms</source>
             </trans-unit>
+            <trans-unit id="nodeTypes.groups.special" xml:space="preserve">
+                <source>Special</source>
+            </trans-unit>
             <trans-unit id="splide.prev" xml:space="preserve">
                 <source>Previous slide</source>
             </trans-unit>

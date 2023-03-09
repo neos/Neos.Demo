@@ -17,8 +17,12 @@ Neos:
 
     nodeTypes:
       groups:
+        special:
+          position: end 100
+          label: 'Neos.Demo:Main:nodeTypes.groups.special'
+          collapsed: false
         forms:
-          position: end
+          position: end 200
           label: 'Neos.Demo:Main:nodeTypes.groups.forms'
           collapsed: false
 

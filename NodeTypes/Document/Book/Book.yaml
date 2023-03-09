@@ -9,6 +9,7 @@
     label: i18n
     icon: 'book'
     position: 300
+    group: special
     help:
       message: 'A book which can have chapters.'
   constraints:

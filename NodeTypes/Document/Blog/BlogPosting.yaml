@@ -10,6 +10,7 @@
     label: i18n
     icon: 'file-alt'
     position: 300
+    group: special
     help:
       message: 'A blog posting'
   constraints:

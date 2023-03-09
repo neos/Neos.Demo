@@ -12,6 +12,7 @@ prototype(Neos.Demo:Document.Blog) < prototype(Neos.Demo:Document.LandingPage) {
         }
     }
 
+
     # content is overwritten to render a list of cards for the latest 10 blog postings
     content >
     content = Neos.Fusion:Join {
@@ -19,6 +20,8 @@ prototype(Neos.Demo:Document.Blog) < prototype(Neos.Demo:Document.LandingPage) {
         intro = Neos.Fusion:Loop {
             items = ${q(documentNode).children('[instanceof Neos.Demo:Document.BlogPosting]').sort("datePublished", "DESC").get()}
             itemName = 'blogPosting'
+
+            # @todo the teaser should be made pretty and extracted as presentational component
             itemRenderer = afx`
                 <Neos.Neos:NodeLink node={blogPosting}>
                     <Neos.Neos:ImageTag asset={q(blogPosting).property('image')} maximumWidth="200" maximumHeight="200" />
