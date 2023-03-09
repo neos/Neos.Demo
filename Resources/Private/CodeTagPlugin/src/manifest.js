@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import manifest from '@neos-project/neos-ui-extensibility';
 import { $get, $add } from 'plow-js';
-import CodeFormating from './codePlugin';
+import CodeFormatting from './codePlugin';
 import { IconButton } from '@neos-project/react-ui-components';
 
 class IconButtonComponent extends PureComponent {
@@ -25,7 +25,7 @@ manifest('main', {}, (globalRegistry) => {
     const richtextToolbar = ckEditorRegistry.get('richtextToolbar');
     const config = ckEditorRegistry.get('config');
 
-    config.set('code', addPlugin(CodeFormating, $get('formatting.code')));
+    config.set('code', addPlugin(CodeFormatting, $get('formatting.code')));
 
     richtextToolbar.set('code', {
         commandName: 'code',

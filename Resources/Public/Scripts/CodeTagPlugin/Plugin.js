@@ -101,26 +101,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = undefined;
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _command = __webpack_require__(/*! @ckeditor/ckeditor5-core/src/command */ "./node_modules/@ckeditor/ckeditor5-core/src/command.js");
 
 var _command2 = _interopRequireDefault(_command);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * For licensing, see LICENSE.md.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-
-/**
- * @module basic-styles/attributecommand
- */
 
 /**
  * An extension of the base {@link module:core/command~Command} class, which provides utilities for a command
@@ -134,15 +119,13 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
  *
  * @extends module:core/command~Command
  */
-var AttributeCommand = function (_Command) {
-	_inherits(AttributeCommand, _Command);
-
+var AttributeCommand = class AttributeCommand extends _command2.default {
 	/**
   * @param {module:core/editor/editor~Editor} editor
   * @param {String} attributeKey Attribute that will be set by the command.
   */
-	function AttributeCommand(editor, attributeKey) {
-		_classCallCheck(this, AttributeCommand);
+	constructor(editor, attributeKey) {
+		super(editor);
 
 		/**
    * The attribute that will be set by the command.
@@ -150,9 +133,7 @@ var AttributeCommand = function (_Command) {
    * @readonly
    * @member {String}
    */
-		var _this = _possibleConstructorReturn(this, (AttributeCommand.__proto__ || Object.getPrototypeOf(AttributeCommand)).call(this, editor));
-
-		_this.attributeKey = attributeKey;
+		this.attributeKey = attributeKey;
 
 		/**
    * Flag indicating whether the command is active. The command is active when the
@@ -166,173 +147,166 @@ var AttributeCommand = function (_Command) {
    * @readonly
    * @member {Boolean} #value
    */
-		return _this;
 	}
 
 	/**
   * Updates the command's {@link #value} and {@link #isEnabled} based on the current selection.
   */
+	refresh() {
+		var model = this.editor.model;
+		var doc = model.document;
 
+		this.value = this._getValueFromFirstAllowedNode();
+		this.isEnabled = model.schema.checkAttributeInSelection(doc.selection, this.attributeKey);
+	}
 
-	_createClass(AttributeCommand, [{
-		key: 'refresh',
-		value: function refresh() {
-			var model = this.editor.model;
-			var doc = model.document;
+	/**
+  * Executes the command &mdash; applies the attribute to the selection or removes it from the selection.
+  *
+  * If the command is active (`value == true`), it will remove attributes. Otherwise, it will set attributes.
+  *
+  * The execution result differs, depending on the {@link module:engine/model/document~Document#selection}:
+  *
+  * * If the selection is on a range, the command applies the attribute to all nodes in that range
+  * (if they are allowed to have this attribute by the {@link module:engine/model/schema~Schema schema}).
+  * * If the selection is collapsed in a non-empty node, the command applies the attribute to the
+  * {@link module:engine/model/document~Document#selection} itself (note that typed characters copy attributes from the selection).
+  * * If the selection is collapsed in an empty node, the command applies the attribute to the parent node of the selection (note
+  * that the selection inherits all attributes from a node if it is in an empty node).
+  *
+  * @fires execute
+  * @param {Object} [options] Command options.
+  * @param {Boolean} [options.forceValue] If set, it will force the command behavior. If `true`, the command will apply the attribute,
+  * otherwise the command will remove the attribute.
+  * If not set, the command will look for its current value to decide what it should do.
+  */
+	execute() {
+		var _this = this;
 
-			this.value = this._getValueFromFirstAllowedNode();
-			this.isEnabled = model.schema.checkAttributeInSelection(doc.selection, this.attributeKey);
-		}
+		var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
 
-		/**
-   * Executes the command &mdash; applies the attribute to the selection or removes it from the selection.
-   *
-   * If the command is active (`value == true`), it will remove attributes. Otherwise, it will set attributes.
-   *
-   * The execution result differs, depending on the {@link module:engine/model/document~Document#selection}:
-   *
-   * * If the selection is on a range, the command applies the attribute to all nodes in that range
-   * (if they are allowed to have this attribute by the {@link module:engine/model/schema~Schema schema}).
-   * * If the selection is collapsed in a non-empty node, the command applies the attribute to the
-   * {@link module:engine/model/document~Document#selection} itself (note that typed characters copy attributes from the selection).
-   * * If the selection is collapsed in an empty node, the command applies the attribute to the parent node of the selection (note
-   * that the selection inherits all attributes from a node if it is in an empty node).
-   *
-   * @fires execute
-   * @param {Object} [options] Command options.
-   * @param {Boolean} [options.forceValue] If set, it will force the command behavior. If `true`, the command will apply the attribute,
-   * otherwise the command will remove the attribute.
-   * If not set, the command will look for its current value to decide what it should do.
-   */
+		var model = this.editor.model;
+		var doc = model.document;
+		var selection = doc.selection;
+		var value = options.forceValue === undefined ? !this.value : options.forceValue;
 
-	}, {
-		key: 'execute',
-		value: function execute() {
-			var _this2 = this;
-
-			var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-			var model = this.editor.model;
-			var doc = model.document;
-			var selection = doc.selection;
-			var value = options.forceValue === undefined ? !this.value : options.forceValue;
-
-			model.change(function (writer) {
-				if (selection.isCollapsed) {
-					if (value) {
-						writer.setSelectionAttribute(_this2.attributeKey, true);
-					} else {
-						writer.removeSelectionAttribute(_this2.attributeKey);
-					}
-				} else {
-					var ranges = model.schema.getValidRanges(selection.getRanges(), _this2.attributeKey);
-
-					var _iteratorNormalCompletion = true;
-					var _didIteratorError = false;
-					var _iteratorError = undefined;
-
-					try {
-						for (var _iterator = ranges[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-							var range = _step.value;
-
-							if (value) {
-								writer.setAttribute(_this2.attributeKey, value, range);
-							} else {
-								writer.removeAttribute(_this2.attributeKey, range);
-							}
-						}
-					} catch (err) {
-						_didIteratorError = true;
-						_iteratorError = err;
-					} finally {
-						try {
-							if (!_iteratorNormalCompletion && _iterator.return) {
-								_iterator.return();
-							}
-						} finally {
-							if (_didIteratorError) {
-								throw _iteratorError;
-							}
-						}
-					}
-				}
-			});
-		}
-
-		/**
-   * Checks the attribute value of the first node in the selection that allows the attribute.
-   * For the collapsed selection returns the selection attribute.
-   *
-   * @private
-   * @returns {Boolean} The attribute value.
-   */
-
-	}, {
-		key: '_getValueFromFirstAllowedNode',
-		value: function _getValueFromFirstAllowedNode() {
-			var model = this.editor.model;
-			var schema = model.schema;
-			var selection = model.document.selection;
-
+		model.change(function (writer) {
 			if (selection.isCollapsed) {
-				return selection.hasAttribute(this.attributeKey);
-			}
-
-			var _iteratorNormalCompletion2 = true;
-			var _didIteratorError2 = false;
-			var _iteratorError2 = undefined;
-
-			try {
-				for (var _iterator2 = selection.getRanges()[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-					var range = _step2.value;
-					var _iteratorNormalCompletion3 = true;
-					var _didIteratorError3 = false;
-					var _iteratorError3 = undefined;
-
-					try {
-						for (var _iterator3 = range.getItems()[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-							var item = _step3.value;
-
-							if (schema.checkAttribute(item, this.attributeKey)) {
-								return item.hasAttribute(this.attributeKey);
-							}
-						}
-					} catch (err) {
-						_didIteratorError3 = true;
-						_iteratorError3 = err;
-					} finally {
-						try {
-							if (!_iteratorNormalCompletion3 && _iterator3.return) {
-								_iterator3.return();
-							}
-						} finally {
-							if (_didIteratorError3) {
-								throw _iteratorError3;
-							}
-						}
-					}
+				if (value) {
+					writer.setSelectionAttribute(_this.attributeKey, true);
+				} else {
+					writer.removeSelectionAttribute(_this.attributeKey);
 				}
-			} catch (err) {
-				_didIteratorError2 = true;
-				_iteratorError2 = err;
-			} finally {
+			} else {
+				var ranges = model.schema.getValidRanges(selection.getRanges(), _this.attributeKey);
+
+				var _iteratorNormalCompletion = true;
+				var _didIteratorError = false;
+				var _iteratorError = undefined;
+
 				try {
-					if (!_iteratorNormalCompletion2 && _iterator2.return) {
-						_iterator2.return();
+					for (var _iterator = ranges[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+						var range = _step.value;
+
+						if (value) {
+							writer.setAttribute(_this.attributeKey, value, range);
+						} else {
+							writer.removeAttribute(_this.attributeKey, range);
+						}
 					}
+				} catch (err) {
+					_didIteratorError = true;
+					_iteratorError = err;
 				} finally {
-					if (_didIteratorError2) {
-						throw _iteratorError2;
+					try {
+						if (!_iteratorNormalCompletion && _iterator.return) {
+							_iterator.return();
+						}
+					} finally {
+						if (_didIteratorError) {
+							throw _iteratorError;
+						}
 					}
 				}
 			}
+		});
+	}
 
-			return false;
+	/**
+  * Checks the attribute value of the first node in the selection that allows the attribute.
+  * For the collapsed selection returns the selection attribute.
+  *
+  * @private
+  * @returns {Boolean} The attribute value.
+  */
+	_getValueFromFirstAllowedNode() {
+		var model = this.editor.model;
+		var schema = model.schema;
+		var selection = model.document.selection;
+
+		if (selection.isCollapsed) {
+			return selection.hasAttribute(this.attributeKey);
 		}
-	}]);
 
-	return AttributeCommand;
-}(_command2.default);
+		var _iteratorNormalCompletion2 = true;
+		var _didIteratorError2 = false;
+		var _iteratorError2 = undefined;
+
+		try {
+			for (var _iterator2 = selection.getRanges()[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+				var range = _step2.value;
+				var _iteratorNormalCompletion3 = true;
+				var _didIteratorError3 = false;
+				var _iteratorError3 = undefined;
+
+				try {
+					for (var _iterator3 = range.getItems()[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+						var item = _step3.value;
+
+						if (schema.checkAttribute(item, this.attributeKey)) {
+							return item.hasAttribute(this.attributeKey);
+						}
+					}
+				} catch (err) {
+					_didIteratorError3 = true;
+					_iteratorError3 = err;
+				} finally {
+					try {
+						if (!_iteratorNormalCompletion3 && _iterator3.return) {
+							_iterator3.return();
+						}
+					} finally {
+						if (_didIteratorError3) {
+							throw _iteratorError3;
+						}
+					}
+				}
+			}
+		} catch (err) {
+			_didIteratorError2 = true;
+			_iteratorError2 = err;
+		} finally {
+			try {
+				if (!_iteratorNormalCompletion2 && _iterator2.return) {
+					_iterator2.return();
+				}
+			} finally {
+				if (_didIteratorError2) {
+					throw _iteratorError2;
+				}
+			}
+		}
+
+		return false;
+	}
+}; /**
+    * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+    * For licensing, see LICENSE.md.
+    */
+
+/**
+ * @module basic-styles/attributecommand
+ */
 
 exports.default = AttributeCommand;
 
@@ -353,15 +327,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = undefined;
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      * For licensing, see LICENSE.md.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      */
-
-/**
- * @module core/command
- */
-
 var _observablemixin = __webpack_require__(/*! @ckeditor/ckeditor5-utils/src/observablemixin */ "./node_modules/@ckeditor/ckeditor5-utils/src/observablemixin.js");
 
 var _observablemixin2 = _interopRequireDefault(_observablemixin);
@@ -371,8 +336,6 @@ var _mix = __webpack_require__(/*! @ckeditor/ckeditor5-utils/src/mix */ "./node_
 var _mix2 = _interopRequireDefault(_mix);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /**
  * The base class for CKEditor commands.
@@ -388,16 +351,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  *
  * @mixes module:utils/observablemixin~ObservableMixin
  */
-var Command = function () {
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module core/command
+ */
+
+var Command = class Command {
 	/**
   * Creates a new `Command` instance.
   *
   * @param {module:core/editor/editor~Editor} editor Editor on which this command will be used.
   */
-	function Command(editor) {
+	constructor(editor) {
 		var _this = this;
-
-		_classCallCheck(this, Command);
 
 		/**
    * The editor on which this command will be used.
@@ -496,59 +466,44 @@ var Command = function () {
   * This method is automatically called when
   * {@link module:engine/model/document~Document#event:change any changes are applied to the document}.
   */
+	refresh() {
+		this.isEnabled = true;
+	}
 
+	/**
+  * Executes the command.
+  *
+  * A command may accept parameters. They will be passed from {@link module:core/editor/editor~Editor#execute `editor.execute()`}
+  * to the command.
+  *
+  * The `execute()` method will automatically abort when the command is disabled ({@link #isEnabled} is `false`).
+  * This behavior is implemented by a high priority listener to the {@link #event:execute} event.
+  *
+  * In order to see how to disable a command from "outside" see the {@link #isEnabled} documentation.
+  *
+  * @fires execute
+  */
+	execute() {}
 
-	_createClass(Command, [{
-		key: 'refresh',
-		value: function refresh() {
-			this.isEnabled = true;
-		}
+	/**
+  * Destroys the command.
+  */
+	destroy() {
+		this.stopListening();
+	}
 
-		/**
-   * Executes the command.
-   *
-   * A command may accept parameters. They will be passed from {@link module:core/editor/editor~Editor#execute `editor.execute()`}
-   * to the command.
-   *
-   * The `execute()` method will automatically abort when the command is disabled ({@link #isEnabled} is `false`).
-   * This behavior is implemented by a high priority listener to the {@link #event:execute} event.
-   *
-   * In order to see how to disable a command from "outside" see the {@link #isEnabled} documentation.
-   *
-   * @fires execute
-   */
-
-	}, {
-		key: 'execute',
-		value: function execute() {}
-
-		/**
-   * Destroys the command.
-   */
-
-	}, {
-		key: 'destroy',
-		value: function destroy() {
-			this.stopListening();
-		}
-
-		/**
-   * Event fired by the {@link #execute} method. The command action is a listener to this event so it's
-   * possible to change/cancel the behavior of the command by listening to this event.
-   *
-   * See {@link module:utils/observablemixin~ObservableMixin.decorate} for more information and samples.
-   *
-   * **Note:** This event is fired even if command is disabled. However, it is automatically blocked
-   * by a high priority listener in order to prevent command execution.
-   *
-   * @event execute
-   */
-
-	}]);
-
-	return Command;
-}();
-
+	/**
+  * Event fired by the {@link #execute} method. The command action is a listener to this event so it's
+  * possible to change/cancel the behavior of the command by listening to this event.
+  *
+  * See {@link module:utils/observablemixin~ObservableMixin.decorate} for more information and samples.
+  *
+  * **Note:** This event is fired even if command is disabled. However, it is automatically blocked
+  * by a high priority listener in order to prevent command execution.
+  *
+  * @event execute
+  */
+};
 exports.default = Command;
 
 
@@ -575,17 +530,7 @@ function forceDisable(evt) {
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 exports.attachLinkToDocumentation = attachLinkToDocumentation;
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
 /**
  * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md.
@@ -610,10 +555,7 @@ var DOCUMENTATION_URL = exports.DOCUMENTATION_URL = 'https://ckeditor.com/docs/c
  *
  * @extends Error
  */
-
-var CKEditorError = function (_Error) {
-	_inherits(CKEditorError, _Error);
-
+var CKEditorError = class CKEditorError extends Error {
 	/**
   * Creates an instance of the CKEditorError class.
   *
@@ -626,29 +568,26 @@ var CKEditorError = function (_Error) {
   * will be appended to the error message, so the data are quickly visible in the console. The original
   * data object will also be later available under the {@link #data} property.
   */
-	function CKEditorError(message, data) {
-		_classCallCheck(this, CKEditorError);
-
+	constructor(message, data) {
 		message = attachLinkToDocumentation(message);
 
 		if (data) {
 			message += ' ' + JSON.stringify(data);
 		}
 
+		super(message);
+
 		/**
    * @member {String}
    */
-		var _this = _possibleConstructorReturn(this, (CKEditorError.__proto__ || Object.getPrototypeOf(CKEditorError)).call(this, message));
-
-		_this.name = 'CKEditorError';
+		this.name = 'CKEditorError';
 
 		/**
    * The additional error data passed to the constructor. Undefined if none was passed.
    *
    * @member {Object|undefined}
    */
-		_this.data = data;
-		return _this;
+		this.data = data;
 	}
 
 	/**
@@ -657,17 +596,10 @@ var CKEditorError = function (_Error) {
   * @param {Object} error Object to check.
   * @returns {Boolean}
   */
-
-
-	_createClass(CKEditorError, null, [{
-		key: 'isCKEditorError',
-		value: function isCKEditorError(error) {
-			return error instanceof CKEditorError;
-		}
-	}]);
-
-	return CKEditorError;
-}(Error);
+	static isCKEditorError(error) {
+		return error instanceof CKEditorError;
+	}
+};
 
 /**
  * Attaches link to the documentation at the end of the error message.
@@ -675,7 +607,6 @@ var CKEditorError = function (_Error) {
  * @param {String} message Message to be logged.
  * @returns {String}
  */
-
 
 exports.default = CKEditorError;
 function attachLinkToDocumentation(message) {
@@ -1520,84 +1451,81 @@ var _spy2 = _interopRequireDefault(_spy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } } /**
-                                                                                                                                                           * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
-                                                                                                                                                           * For licensing, see LICENSE.md.
-                                                                                                                                                           */
-
-/**
- * @module utils/eventinfo
- */
-
 /**
  * The event object passed to event callbacks. It is used to provide information about the event as well as a tool to
  * manipulate it.
  */
-var EventInfo =
+var EventInfo = class EventInfo {
+	/**
+  * @param {Object} source The emitter.
+  * @param {String} name The event name.
+  */
+	constructor(source, name) {
+		/**
+   * The object that fired the event.
+   *
+   * @readonly
+   * @member {Object}
+   */
+		this.source = source;
+
+		/**
+   * The event name.
+   *
+   * @readonly
+   * @member {String}
+   */
+		this.name = name;
+
+		/**
+   * Path this event has followed. See {@link module:utils/emittermixin~EmitterMixin#delegate}.
+   *
+   * @readonly
+   * @member {Array.<Object>}
+   */
+		this.path = [];
+
+		// The following methods are defined in the constructor because they must be re-created per instance.
+
+		/**
+   * Stops the event emitter to call further callbacks for this event interaction.
+   *
+   * @method #stop
+   */
+		this.stop = (0, _spy2.default)();
+
+		/**
+   * Removes the current callback from future interactions of this event.
+   *
+   * @method #off
+   */
+		this.off = (0, _spy2.default)();
+
+		/**
+   * The value which will be returned by {@link module:utils/emittermixin~EmitterMixin#fire}.
+   *
+   * It's `undefined` by default and can be changed by an event listener:
+   *
+   *		dataController.fire( 'getSelectedContent', ( evt ) => {
+   *			// This listener will make `dataController.fire( 'getSelectedContent' )`
+   *			// always return an empty DocumentFragment.
+   *			evt.return = new DocumentFragment();
+   *
+   *			// Make sure no other listeners are executed.
+   *			evt.stop();
+   *		} );
+   *
+   * @member #return
+   */
+	}
+}; /**
+    * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+    * For licensing, see LICENSE.md.
+    */
+
 /**
- * @param {Object} source The emitter.
- * @param {String} name The event name.
+ * @module utils/eventinfo
  */
-function EventInfo(source, name) {
-	_classCallCheck(this, EventInfo);
-
-	/**
-  * The object that fired the event.
-  *
-  * @readonly
-  * @member {Object}
-  */
-	this.source = source;
-
-	/**
-  * The event name.
-  *
-  * @readonly
-  * @member {String}
-  */
-	this.name = name;
-
-	/**
-  * Path this event has followed. See {@link module:utils/emittermixin~EmitterMixin#delegate}.
-  *
-  * @readonly
-  * @member {Array.<Object>}
-  */
-	this.path = [];
-
-	// The following methods are defined in the constructor because they must be re-created per instance.
-
-	/**
-  * Stops the event emitter to call further callbacks for this event interaction.
-  *
-  * @method #stop
-  */
-	this.stop = (0, _spy2.default)();
-
-	/**
-  * Removes the current callback from future interactions of this event.
-  *
-  * @method #off
-  */
-	this.off = (0, _spy2.default)();
-
-	/**
-  * The value which will be returned by {@link module:utils/emittermixin~EmitterMixin#fire}.
-  *
-  * It's `undefined` by default and can be changed by an event listener:
-  *
-  *		dataController.fire( 'getSelectedContent', ( evt ) => {
-  *			// This listener will make `dataController.fire( 'getSelectedContent' )`
-  *			// always return an empty DocumentFragment.
-  *			evt.return = new DocumentFragment();
-  *
-  *			// Make sure no other listeners are executed.
-  *			evt.stop();
-  *		} );
-  *
-  * @member #return
-  */
-};
 
 exports.default = EventInfo;
 
@@ -2750,9 +2678,17 @@ function uid() {
 "use strict";
 
 
-exports.__esModule = true;
-var tslib_1 = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-var manifest_1 = tslib_1.__importDefault(__webpack_require__(/*! ./manifest */ "./node_modules/@neos-project/neos-ui-extensibility/dist/manifest.js"));
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = createConsumerApi;
+
+var _manifest = __webpack_require__(/*! ./manifest */ "./node_modules/@neos-project/neos-ui-extensibility/dist/manifest.js");
+
+var _manifest2 = _interopRequireDefault(_manifest);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 var createReadOnlyValue = function createReadOnlyValue(value) {
     return {
         value: value,
@@ -2766,10 +2702,9 @@ function createConsumerApi(manifests, exposureMap) {
     Object.keys(exposureMap).forEach(function (key) {
         Object.defineProperty(api, key, createReadOnlyValue(exposureMap[key]));
     });
-    Object.defineProperty(api, '@manifest', createReadOnlyValue(manifest_1["default"](manifests)));
+    Object.defineProperty(api, '@manifest', createReadOnlyValue((0, _manifest2.default)(manifests)));
     Object.defineProperty(window, '@Neos:HostPluginAPI', createReadOnlyValue(api));
 }
-exports["default"] = createConsumerApi;
 //# sourceMappingURL=createConsumerApi.js.map
 
 /***/ }),
@@ -2784,16 +2719,28 @@ exports["default"] = createConsumerApi;
 "use strict";
 
 
-exports.__esModule = true;
-var tslib_1 = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-var createConsumerApi_1 = tslib_1.__importDefault(__webpack_require__(/*! ./createConsumerApi */ "./node_modules/@neos-project/neos-ui-extensibility/dist/createConsumerApi.js"));
-exports.createConsumerApi = createConsumerApi_1["default"];
-var readFromConsumerApi_1 = tslib_1.__importDefault(__webpack_require__(/*! ./readFromConsumerApi */ "./node_modules/@neos-project/neos-ui-extensibility/dist/readFromConsumerApi.js"));
-exports.readFromConsumerApi = readFromConsumerApi_1["default"];
-var index_1 = __webpack_require__(/*! ./registry/index */ "./node_modules/@neos-project/neos-ui-extensibility/dist/registry/index.js");
-exports.SynchronousRegistry = index_1.SynchronousRegistry;
-exports.SynchronousMetaRegistry = index_1.SynchronousMetaRegistry;
-exports["default"] = readFromConsumerApi_1["default"]('manifest');
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.SynchronousMetaRegistry = exports.SynchronousRegistry = exports.readFromConsumerApi = exports.createConsumerApi = undefined;
+
+var _createConsumerApi = __webpack_require__(/*! ./createConsumerApi */ "./node_modules/@neos-project/neos-ui-extensibility/dist/createConsumerApi.js");
+
+var _createConsumerApi2 = _interopRequireDefault(_createConsumerApi);
+
+var _readFromConsumerApi = __webpack_require__(/*! ./readFromConsumerApi */ "./node_modules/@neos-project/neos-ui-extensibility/dist/readFromConsumerApi.js");
+
+var _readFromConsumerApi2 = _interopRequireDefault(_readFromConsumerApi);
+
+var _index = __webpack_require__(/*! ./registry/index */ "./node_modules/@neos-project/neos-ui-extensibility/dist/registry/index.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = (0, _readFromConsumerApi2.default)('manifest');
+exports.createConsumerApi = _createConsumerApi2.default;
+exports.readFromConsumerApi = _readFromConsumerApi2.default;
+exports.SynchronousRegistry = _index.SynchronousRegistry;
+exports.SynchronousMetaRegistry = _index.SynchronousMetaRegistry;
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -2808,14 +2755,18 @@ exports["default"] = readFromConsumerApi_1["default"]('manifest');
 "use strict";
 
 
-exports.__esModule = true;
-exports["default"] = function (manifests) {
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+exports.default = function (manifests) {
     return function (identifier, options, bootstrap) {
-        var _a;
-        manifests.push((_a = {}, _a[identifier] = {
+        manifests.push(_defineProperty({}, identifier, {
             options: options,
             bootstrap: bootstrap
-        }, _a));
+        }));
     };
 };
 //# sourceMappingURL=manifest.js.map
@@ -2832,22 +2783,20 @@ exports["default"] = function (manifests) {
 "use strict";
 
 
-exports.__esModule = true;
-var tslib_1 = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = readFromConsumerApi;
 function readFromConsumerApi(key) {
     return function () {
-        var _a;
-        var args = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i] = arguments[_i];
+        if (window['@Neos:HostPluginAPI'] && window['@Neos:HostPluginAPI']['@' + key]) {
+            var _window$NeosHostPlu;
+
+            return (_window$NeosHostPlu = window['@Neos:HostPluginAPI'])['@' + key].apply(_window$NeosHostPlu, arguments);
         }
-        if (window['@Neos:HostPluginAPI'] && window['@Neos:HostPluginAPI']["@" + key]) {
-            return (_a = window['@Neos:HostPluginAPI'])["@" + key].apply(_a, tslib_1.__spread(args));
-        }
-        throw new Error("You are trying to read from a consumer api that hasn't been initialized yet!");
+        throw new Error('You are trying to read from a consumer api that hasn\'t been initialized yet!');
     };
 }
-exports["default"] = readFromConsumerApi;
 //# sourceMappingURL=readFromConsumerApi.js.map
 
 /***/ }),
@@ -2862,16 +2811,18 @@ exports["default"] = readFromConsumerApi;
 "use strict";
 
 
-exports.__esModule = true;
-var AbstractRegistry = function () {
-    function AbstractRegistry(description) {
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var AbstractRegistry = class AbstractRegistry {
+    constructor(description) {
         this.SERIAL_VERSION_UID = 'd8a5aa78-978e-11e6-ae22-56b6b6499611';
         this.description = description;
     }
-    return AbstractRegistry;
-}();
-exports["default"] = AbstractRegistry;
+};
 //# sourceMappingURL=AbstractRegistry.js.map
+
+exports.default = AbstractRegistry;
 
 /***/ }),
 
@@ -2885,24 +2836,28 @@ exports["default"] = AbstractRegistry;
 "use strict";
 
 
-exports.__esModule = true;
-var tslib_1 = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-var SynchronousRegistry_1 = tslib_1.__importDefault(__webpack_require__(/*! ./SynchronousRegistry */ "./node_modules/@neos-project/neos-ui-extensibility/dist/registry/SynchronousRegistry.js"));
-var SynchronousMetaRegistry = function (_super) {
-    tslib_1.__extends(SynchronousMetaRegistry, _super);
-    function SynchronousMetaRegistry() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    SynchronousMetaRegistry.prototype.set = function (key, value) {
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = undefined;
+
+var _SynchronousRegistry = __webpack_require__(/*! ./SynchronousRegistry */ "./node_modules/@neos-project/neos-ui-extensibility/dist/registry/SynchronousRegistry.js");
+
+var _SynchronousRegistry2 = _interopRequireDefault(_SynchronousRegistry);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var SynchronousMetaRegistry = class SynchronousMetaRegistry extends _SynchronousRegistry2.default {
+    set(key, value) {
         if (value.SERIAL_VERSION_UID !== 'd8a5aa78-978e-11e6-ae22-56b6b6499611') {
             throw new Error('You can only add registries to a meta registry');
         }
-        return _super.prototype.set.call(this, key, value);
-    };
-    return SynchronousMetaRegistry;
-}(SynchronousRegistry_1["default"]);
-exports["default"] = SynchronousMetaRegistry;
+        return super.set(key, value);
+    }
+};
 //# sourceMappingURL=SynchronousMetaRegistry.js.map
+
+exports.default = SynchronousMetaRegistry;
 
 /***/ }),
 
@@ -2916,21 +2871,29 @@ exports["default"] = SynchronousMetaRegistry;
 "use strict";
 
 
-exports.__esModule = true;
-var tslib_1 = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-var AbstractRegistry_1 = tslib_1.__importDefault(__webpack_require__(/*! ./AbstractRegistry */ "./node_modules/@neos-project/neos-ui-extensibility/dist/registry/AbstractRegistry.js"));
-var positional_array_sorter_1 = tslib_1.__importDefault(__webpack_require__(/*! @neos-project/positional-array-sorter */ "./node_modules/@neos-project/positional-array-sorter/dist/positionalArraySorter.js"));
-var SynchronousRegistry = function (_super) {
-    tslib_1.__extends(SynchronousRegistry, _super);
-    function SynchronousRegistry(description) {
-        var _this = _super.call(this, description) || this;
-        _this._registry = [];
-        return _this;
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = undefined;
+
+var _AbstractRegistry = __webpack_require__(/*! ./AbstractRegistry */ "./node_modules/@neos-project/neos-ui-extensibility/dist/registry/AbstractRegistry.js");
+
+var _AbstractRegistry2 = _interopRequireDefault(_AbstractRegistry);
+
+var _positionalArraySorter = __webpack_require__(/*! @neos-project/positional-array-sorter */ "./node_modules/@neos-project/positional-array-sorter/dist/positionalArraySorter.js");
+
+var _positionalArraySorter2 = _interopRequireDefault(_positionalArraySorter);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var SynchronousRegistry = class SynchronousRegistry extends _AbstractRegistry2.default {
+    constructor(description) {
+        super(description);
+        this._registry = [];
     }
-    SynchronousRegistry.prototype.set = function (key, value, position) {
-        if (position === void 0) {
-            position = 0;
-        }
+    set(key, value) {
+        var position = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
+
         if (typeof key !== 'string') {
             throw new Error('Key must be a string');
         }
@@ -2950,8 +2913,8 @@ var SynchronousRegistry = function (_super) {
             this._registry[indexOfItemWithTheSameKey] = entry;
         }
         return value;
-    };
-    SynchronousRegistry.prototype.get = function (key) {
+    }
+    get(key) {
         if (typeof key !== 'string') {
             console.error('Key must be a string');
             return null;
@@ -2960,26 +2923,26 @@ var SynchronousRegistry = function (_super) {
             return item.key === key;
         });
         return result ? result.value : null;
-    };
-    SynchronousRegistry.prototype._getChildrenWrapped = function (searchKey) {
+    }
+    _getChildrenWrapped(searchKey) {
         var unsortedChildren = this._registry.filter(function (item) {
             return item.key.indexOf(searchKey + '/') === 0;
         });
-        return positional_array_sorter_1["default"](unsortedChildren);
-    };
-    SynchronousRegistry.prototype.getChildrenAsObject = function (searchKey) {
+        return (0, _positionalArraySorter2.default)(unsortedChildren);
+    }
+    getChildrenAsObject(searchKey) {
         var result = {};
         this._getChildrenWrapped(searchKey).forEach(function (item) {
             result[item.key] = item.value;
         });
         return result;
-    };
-    SynchronousRegistry.prototype.getChildren = function (searchKey) {
+    }
+    getChildren(searchKey) {
         return this._getChildrenWrapped(searchKey).map(function (item) {
             return item.value;
         });
-    };
-    SynchronousRegistry.prototype.has = function (key) {
+    }
+    has(key) {
         if (typeof key !== 'string') {
             console.error('Key must be a string');
             return false;
@@ -2987,26 +2950,26 @@ var SynchronousRegistry = function (_super) {
         return Boolean(this._registry.find(function (item) {
             return item.key === key;
         }));
-    };
-    SynchronousRegistry.prototype._getAllWrapped = function () {
-        return positional_array_sorter_1["default"](this._registry);
-    };
-    SynchronousRegistry.prototype.getAllAsObject = function () {
+    }
+    _getAllWrapped() {
+        return (0, _positionalArraySorter2.default)(this._registry);
+    }
+    getAllAsObject() {
         var result = {};
         this._getAllWrapped().forEach(function (item) {
             result[item.key] = item.value;
         });
         return result;
-    };
-    SynchronousRegistry.prototype.getAllAsList = function () {
+    }
+    getAllAsList() {
         return this._getAllWrapped().map(function (item) {
             return Object.assign({ id: item.key }, item.value);
         });
-    };
-    return SynchronousRegistry;
-}(AbstractRegistry_1["default"]);
-exports["default"] = SynchronousRegistry;
+    }
+};
 //# sourceMappingURL=SynchronousRegistry.js.map
+
+exports.default = SynchronousRegistry;
 
 /***/ }),
 
@@ -3020,12 +2983,23 @@ exports["default"] = SynchronousRegistry;
 "use strict";
 
 
-exports.__esModule = true;
-var tslib_1 = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-var SynchronousRegistry_1 = tslib_1.__importDefault(__webpack_require__(/*! ./SynchronousRegistry */ "./node_modules/@neos-project/neos-ui-extensibility/dist/registry/SynchronousRegistry.js"));
-exports.SynchronousRegistry = SynchronousRegistry_1["default"];
-var SynchronousMetaRegistry_1 = tslib_1.__importDefault(__webpack_require__(/*! ./SynchronousMetaRegistry */ "./node_modules/@neos-project/neos-ui-extensibility/dist/registry/SynchronousMetaRegistry.js"));
-exports.SynchronousMetaRegistry = SynchronousMetaRegistry_1["default"];
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.SynchronousMetaRegistry = exports.SynchronousRegistry = undefined;
+
+var _SynchronousRegistry = __webpack_require__(/*! ./SynchronousRegistry */ "./node_modules/@neos-project/neos-ui-extensibility/dist/registry/SynchronousRegistry.js");
+
+var _SynchronousRegistry2 = _interopRequireDefault(_SynchronousRegistry);
+
+var _SynchronousMetaRegistry = __webpack_require__(/*! ./SynchronousMetaRegistry */ "./node_modules/@neos-project/neos-ui-extensibility/dist/registry/SynchronousMetaRegistry.js");
+
+var _SynchronousMetaRegistry2 = _interopRequireDefault(_SynchronousMetaRegistry);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.SynchronousRegistry = _SynchronousRegistry2.default;
+exports.SynchronousMetaRegistry = _SynchronousMetaRegistry2.default;
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -3120,16 +3094,13 @@ module.exports = (0, _readFromConsumerApi2.default)('vendor')().React;
 "use strict";
 
 
-exports.__esModule = true;
-var tslib_1 = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-var positionalArraySorter = function positionalArraySorter(subject, position, idKey) {
-    var e_1, _a, e_2, _b, e_3, _c, e_4, _d, e_5, _e, e_6, _f, e_7, _g;
-    if (position === void 0) {
-        position = 'position';
-    }
-    if (idKey === void 0) {
-        idKey = 'key';
-    }
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var positionalArraySorter = function positionalArraySorter(subject) {
+    var position = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'position';
+    var idKey = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'key';
+
     var positionAccessor = typeof position === 'string' ? function (value) {
         return value[position];
     } : position;
@@ -3153,41 +3124,41 @@ var positionalArraySorter = function positionalArraySorter(subject, position, id
             }
             startKeys[weight].push(key);
         } else if (position.startsWith('end')) {
-            var weightMatch = position.match(/end\s+(\d+)/);
-            var weight = weightMatch && weightMatch[1] ? Number(weightMatch[1]) : 0;
-            if (!endKeys[weight]) {
-                endKeys[weight] = [];
+            var _weightMatch = position.match(/end\s+(\d+)/);
+            var _weight = _weightMatch && _weightMatch[1] ? Number(_weightMatch[1]) : 0;
+            if (!endKeys[_weight]) {
+                endKeys[_weight] = [];
             }
-            endKeys[weight].push(key);
+            endKeys[_weight].push(key);
         } else if (position.startsWith('before')) {
             var match = position.match(/before\s+(\S+)(\s+(\d+))?/);
             if (!match) {
                 invalid = true;
             } else {
                 var reference = match[1];
-                var weight = match[3] ? Number(match[3]) : 0;
+                var _weight2 = match[3] ? Number(match[3]) : 0;
                 if (!beforeKeys[reference]) {
                     beforeKeys[reference] = {};
                 }
-                if (!beforeKeys[reference][weight]) {
-                    beforeKeys[reference][weight] = [];
+                if (!beforeKeys[reference][_weight2]) {
+                    beforeKeys[reference][_weight2] = [];
                 }
-                beforeKeys[reference][weight].push(key);
+                beforeKeys[reference][_weight2].push(key);
             }
         } else if (position.startsWith('after')) {
-            var match = position.match(/after\s+(\S+)(\s+(\d+))?/);
-            if (!match) {
+            var _match = position.match(/after\s+(\S+)(\s+(\d+))?/);
+            if (!_match) {
                 invalid = true;
             } else {
-                var reference = match[1];
-                var weight = match[3] ? Number(match[3]) : 0;
-                if (!afterKeys[reference]) {
-                    afterKeys[reference] = {};
+                var _reference = _match[1];
+                var _weight3 = _match[3] ? Number(_match[3]) : 0;
+                if (!afterKeys[_reference]) {
+                    afterKeys[_reference] = {};
                 }
-                if (!afterKeys[reference][weight]) {
-                    afterKeys[reference][weight] = [];
+                if (!afterKeys[_reference][_weight3]) {
+                    afterKeys[_reference][_weight3] = [];
                 }
-                afterKeys[reference][weight].push(key);
+                afterKeys[_reference][_weight3].push(key);
             }
         } else {
             invalid = true;
@@ -3217,158 +3188,252 @@ var positionalArraySorter = function positionalArraySorter(subject, position, id
     };
     var addToResults = function addToResults(keys, result) {
         keys.forEach(function (key) {
-            var e_8, _a, e_9, _b;
             if (processedKeys.indexOf(key) >= 0) {
                 return;
             }
             processedKeys.push(key);
             if (beforeKeys[key]) {
                 var beforeWeights = sortedWeights(beforeKeys[key], true);
+                var _iteratorNormalCompletion = true;
+                var _didIteratorError = false;
+                var _iteratorError = undefined;
+
                 try {
-                    for (var beforeWeights_1 = tslib_1.__values(beforeWeights), beforeWeights_1_1 = beforeWeights_1.next(); !beforeWeights_1_1.done; beforeWeights_1_1 = beforeWeights_1.next()) {
-                        var i = beforeWeights_1_1.value;
+                    for (var _iterator = beforeWeights[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                        var i = _step.value;
+
                         addToResults(beforeKeys[key][i], result);
                     }
-                } catch (e_8_1) {
-                    e_8 = { error: e_8_1 };
+                } catch (err) {
+                    _didIteratorError = true;
+                    _iteratorError = err;
                 } finally {
                     try {
-                        if (beforeWeights_1_1 && !beforeWeights_1_1.done && (_a = beforeWeights_1["return"])) _a.call(beforeWeights_1);
+                        if (!_iteratorNormalCompletion && _iterator.return) {
+                            _iterator.return();
+                        }
                     } finally {
-                        if (e_8) throw e_8.error;
+                        if (_didIteratorError) {
+                            throw _iteratorError;
+                        }
                     }
                 }
             }
             result.push(key);
             if (afterKeys[key]) {
                 var afterWeights = sortedWeights(afterKeys[key], false);
+                var _iteratorNormalCompletion2 = true;
+                var _didIteratorError2 = false;
+                var _iteratorError2 = undefined;
+
                 try {
-                    for (var afterWeights_1 = tslib_1.__values(afterWeights), afterWeights_1_1 = afterWeights_1.next(); !afterWeights_1_1.done; afterWeights_1_1 = afterWeights_1.next()) {
-                        var i = afterWeights_1_1.value;
-                        addToResults(afterKeys[key][i], result);
+                    for (var _iterator2 = afterWeights[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                        var _i = _step2.value;
+
+                        addToResults(afterKeys[key][_i], result);
                     }
-                } catch (e_9_1) {
-                    e_9 = { error: e_9_1 };
+                } catch (err) {
+                    _didIteratorError2 = true;
+                    _iteratorError2 = err;
                 } finally {
                     try {
-                        if (afterWeights_1_1 && !afterWeights_1_1.done && (_b = afterWeights_1["return"])) _b.call(afterWeights_1);
+                        if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                            _iterator2.return();
+                        }
                     } finally {
-                        if (e_9) throw e_9.error;
+                        if (_didIteratorError2) {
+                            throw _iteratorError2;
+                        }
                     }
                 }
             }
         });
     };
+    var _iteratorNormalCompletion3 = true;
+    var _didIteratorError3 = false;
+    var _iteratorError3 = undefined;
+
     try {
-        for (var _h = tslib_1.__values(sortedWeights(startKeys, false)), _j = _h.next(); !_j.done; _j = _h.next()) {
-            var i = _j.value;
+        for (var _iterator3 = sortedWeights(startKeys, false)[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+            var i = _step3.value;
+
             addToResults(startKeys[i], resultStart);
         }
-    } catch (e_1_1) {
-        e_1 = { error: e_1_1 };
+    } catch (err) {
+        _didIteratorError3 = true;
+        _iteratorError3 = err;
     } finally {
         try {
-            if (_j && !_j.done && (_a = _h["return"])) _a.call(_h);
+            if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                _iterator3.return();
+            }
         } finally {
-            if (e_1) throw e_1.error;
+            if (_didIteratorError3) {
+                throw _iteratorError3;
+            }
         }
     }
+
+    var _iteratorNormalCompletion4 = true;
+    var _didIteratorError4 = false;
+    var _iteratorError4 = undefined;
+
     try {
-        for (var _k = tslib_1.__values(sortedWeights(middleKeys, true)), _l = _k.next(); !_l.done; _l = _k.next()) {
-            var i = _l.value;
-            addToResults(middleKeys[i], resultMiddle);
+        for (var _iterator4 = sortedWeights(middleKeys, true)[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+            var _i2 = _step4.value;
+
+            addToResults(middleKeys[_i2], resultMiddle);
         }
-    } catch (e_2_1) {
-        e_2 = { error: e_2_1 };
+    } catch (err) {
+        _didIteratorError4 = true;
+        _iteratorError4 = err;
     } finally {
         try {
-            if (_l && !_l.done && (_b = _k["return"])) _b.call(_k);
+            if (!_iteratorNormalCompletion4 && _iterator4.return) {
+                _iterator4.return();
+            }
         } finally {
-            if (e_2) throw e_2.error;
+            if (_didIteratorError4) {
+                throw _iteratorError4;
+            }
         }
     }
+
+    var _iteratorNormalCompletion5 = true;
+    var _didIteratorError5 = false;
+    var _iteratorError5 = undefined;
+
     try {
-        for (var _m = tslib_1.__values(sortedWeights(endKeys, true)), _o = _m.next(); !_o.done; _o = _m.next()) {
-            var i = _o.value;
-            addToResults(endKeys[i], resultEnd);
+        for (var _iterator5 = sortedWeights(endKeys, true)[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
+            var _i3 = _step5.value;
+
+            addToResults(endKeys[_i3], resultEnd);
         }
-    } catch (e_3_1) {
-        e_3 = { error: e_3_1 };
+    } catch (err) {
+        _didIteratorError5 = true;
+        _iteratorError5 = err;
     } finally {
         try {
-            if (_o && !_o.done && (_c = _m["return"])) _c.call(_m);
+            if (!_iteratorNormalCompletion5 && _iterator5.return) {
+                _iterator5.return();
+            }
         } finally {
-            if (e_3) throw e_3.error;
+            if (_didIteratorError5) {
+                throw _iteratorError5;
+            }
         }
     }
+
+    var _iteratorNormalCompletion6 = true;
+    var _didIteratorError6 = false;
+    var _iteratorError6 = undefined;
+
     try {
-        for (var _p = tslib_1.__values(Object.keys(beforeKeys)), _q = _p.next(); !_q.done; _q = _p.next()) {
-            var key = _q.value;
+        for (var _iterator6 = Object.keys(beforeKeys)[Symbol.iterator](), _step6; !(_iteratorNormalCompletion6 = (_step6 = _iterator6.next()).done); _iteratorNormalCompletion6 = true) {
+            var key = _step6.value;
+
             if (processedKeys.indexOf(key) >= 0) {
                 continue;
             }
+            var _iteratorNormalCompletion8 = true;
+            var _didIteratorError8 = false;
+            var _iteratorError8 = undefined;
+
             try {
-                for (var _r = (e_5 = void 0, tslib_1.__values(sortedWeights(beforeKeys[key], false))), _s = _r.next(); !_s.done; _s = _r.next()) {
-                    var i = _s.value;
-                    addToResults(beforeKeys[key][i], resultStart);
+                for (var _iterator8 = sortedWeights(beforeKeys[key], false)[Symbol.iterator](), _step8; !(_iteratorNormalCompletion8 = (_step8 = _iterator8.next()).done); _iteratorNormalCompletion8 = true) {
+                    var _i4 = _step8.value;
+
+                    addToResults(beforeKeys[key][_i4], resultStart);
                 }
-            } catch (e_5_1) {
-                e_5 = { error: e_5_1 };
+            } catch (err) {
+                _didIteratorError8 = true;
+                _iteratorError8 = err;
             } finally {
                 try {
-                    if (_s && !_s.done && (_e = _r["return"])) _e.call(_r);
+                    if (!_iteratorNormalCompletion8 && _iterator8.return) {
+                        _iterator8.return();
+                    }
                 } finally {
-                    if (e_5) throw e_5.error;
+                    if (_didIteratorError8) {
+                        throw _iteratorError8;
+                    }
                 }
             }
         }
-    } catch (e_4_1) {
-        e_4 = { error: e_4_1 };
+    } catch (err) {
+        _didIteratorError6 = true;
+        _iteratorError6 = err;
     } finally {
         try {
-            if (_q && !_q.done && (_d = _p["return"])) _d.call(_p);
+            if (!_iteratorNormalCompletion6 && _iterator6.return) {
+                _iterator6.return();
+            }
         } finally {
-            if (e_4) throw e_4.error;
+            if (_didIteratorError6) {
+                throw _iteratorError6;
+            }
         }
     }
+
+    var _iteratorNormalCompletion7 = true;
+    var _didIteratorError7 = false;
+    var _iteratorError7 = undefined;
+
     try {
-        for (var _t = tslib_1.__values(Object.keys(afterKeys)), _u = _t.next(); !_u.done; _u = _t.next()) {
-            var key = _u.value;
-            if (processedKeys.indexOf(key) >= 0) {
+        for (var _iterator7 = Object.keys(afterKeys)[Symbol.iterator](), _step7; !(_iteratorNormalCompletion7 = (_step7 = _iterator7.next()).done); _iteratorNormalCompletion7 = true) {
+            var _key = _step7.value;
+
+            if (processedKeys.indexOf(_key) >= 0) {
                 continue;
             }
+            var _iteratorNormalCompletion9 = true;
+            var _didIteratorError9 = false;
+            var _iteratorError9 = undefined;
+
             try {
-                for (var _v = (e_7 = void 0, tslib_1.__values(sortedWeights(afterKeys[key], false))), _w = _v.next(); !_w.done; _w = _v.next()) {
-                    var i = _w.value;
-                    addToResults(afterKeys[key][i], resultMiddle);
+                for (var _iterator9 = sortedWeights(afterKeys[_key], false)[Symbol.iterator](), _step9; !(_iteratorNormalCompletion9 = (_step9 = _iterator9.next()).done); _iteratorNormalCompletion9 = true) {
+                    var _i5 = _step9.value;
+
+                    addToResults(afterKeys[_key][_i5], resultMiddle);
                 }
-            } catch (e_7_1) {
-                e_7 = { error: e_7_1 };
+            } catch (err) {
+                _didIteratorError9 = true;
+                _iteratorError9 = err;
             } finally {
                 try {
-                    if (_w && !_w.done && (_g = _v["return"])) _g.call(_v);
+                    if (!_iteratorNormalCompletion9 && _iterator9.return) {
+                        _iterator9.return();
+                    }
                 } finally {
-                    if (e_7) throw e_7.error;
+                    if (_didIteratorError9) {
+                        throw _iteratorError9;
+                    }
                 }
             }
         }
-    } catch (e_6_1) {
-        e_6 = { error: e_6_1 };
+    } catch (err) {
+        _didIteratorError7 = true;
+        _iteratorError7 = err;
     } finally {
         try {
-            if (_u && !_u.done && (_f = _t["return"])) _f.call(_t);
+            if (!_iteratorNormalCompletion7 && _iterator7.return) {
+                _iterator7.return();
+            }
         } finally {
-            if (e_6) throw e_6.error;
+            if (_didIteratorError7) {
+                throw _iteratorError7;
+            }
         }
     }
-    var sortedKeys = tslib_1.__spread(resultStart, resultMiddle, resultEnd);
+
+    var sortedKeys = [].concat(resultStart, resultMiddle, resultEnd);
     return sortedKeys.map(function (key) {
         return indexMapping[key];
     }).map(function (i) {
         return subject[i];
     });
 };
-exports["default"] = positionalArraySorter;
+exports.default = positionalArraySorter;
 //# sourceMappingURL=positionalArraySorter.js.map
 
 /***/ }),
@@ -36726,260 +36791,6 @@ var zipWith = Object(_baseRest_js__WEBPACK_IMPORTED_MODULE_0__["default"])(funct
 
 /***/ }),
 
-/***/ "./node_modules/tslib/tslib.es6.js":
-/*!*****************************************!*\
-  !*** ./node_modules/tslib/tslib.es6.js ***!
-  \*****************************************/
-/*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __createBinding, __exportStar, __values, __read, __spread, __spreadArrays, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault, __classPrivateFieldGet, __classPrivateFieldSet */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__extends", function() { return __extends; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__assign", function() { return __assign; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__rest", function() { return __rest; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__decorate", function() { return __decorate; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__param", function() { return __param; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__metadata", function() { return __metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__awaiter", function() { return __awaiter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__generator", function() { return __generator; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__createBinding", function() { return __createBinding; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__exportStar", function() { return __exportStar; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__values", function() { return __values; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__read", function() { return __read; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spread", function() { return __spread; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spreadArrays", function() { return __spreadArrays; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__await", function() { return __await; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncGenerator", function() { return __asyncGenerator; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncDelegator", function() { return __asyncDelegator; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncValues", function() { return __asyncValues; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__makeTemplateObject", function() { return __makeTemplateObject; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importStar", function() { return __importStar; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importDefault", function() { return __importDefault; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldGet", function() { return __classPrivateFieldGet; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldSet", function() { return __classPrivateFieldSet; });
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-/* global Reflect, Promise */
-
-var extendStatics = function(d, b) {
-    extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return extendStatics(d, b);
-};
-
-function __extends(d, b) {
-    extendStatics(d, b);
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-
-var __assign = function() {
-    __assign = Object.assign || function __assign(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-        }
-        return t;
-    }
-    return __assign.apply(this, arguments);
-}
-
-function __rest(s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
-}
-
-function __decorate(decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-}
-
-function __param(paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-}
-
-function __metadata(metadataKey, metadataValue) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
-}
-
-function __awaiter(thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-}
-
-function __generator(thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-}
-
-function __createBinding(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}
-
-function __exportStar(m, exports) {
-    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-
-function __values(o) {
-    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
-    if (m) return m.call(o);
-    if (o && typeof o.length === "number") return {
-        next: function () {
-            if (o && i >= o.length) o = void 0;
-            return { value: o && o[i++], done: !o };
-        }
-    };
-    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
-}
-
-function __read(o, n) {
-    var m = typeof Symbol === "function" && o[Symbol.iterator];
-    if (!m) return o;
-    var i = m.call(o), r, ar = [], e;
-    try {
-        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-    }
-    catch (error) { e = { error: error }; }
-    finally {
-        try {
-            if (r && !r.done && (m = i["return"])) m.call(i);
-        }
-        finally { if (e) throw e.error; }
-    }
-    return ar;
-}
-
-function __spread() {
-    for (var ar = [], i = 0; i < arguments.length; i++)
-        ar = ar.concat(__read(arguments[i]));
-    return ar;
-}
-
-function __spreadArrays() {
-    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-    for (var r = Array(s), k = 0, i = 0; i < il; i++)
-        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-            r[k] = a[j];
-    return r;
-};
-
-function __await(v) {
-    return this instanceof __await ? (this.v = v, this) : new __await(v);
-}
-
-function __asyncGenerator(thisArg, _arguments, generator) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var g = generator.apply(thisArg, _arguments || []), i, q = [];
-    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
-    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
-    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
-    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
-    function fulfill(value) { resume("next", value); }
-    function reject(value) { resume("throw", value); }
-    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
-}
-
-function __asyncDelegator(o) {
-    var i, p;
-    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
-    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
-}
-
-function __asyncValues(o) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var m = o[Symbol.asyncIterator], i;
-    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
-    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
-    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
-}
-
-function __makeTemplateObject(cooked, raw) {
-    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-    return cooked;
-};
-
-function __importStar(mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result.default = mod;
-    return result;
-}
-
-function __importDefault(mod) {
-    return (mod && mod.__esModule) ? mod : { default: mod };
-}
-
-function __classPrivateFieldGet(receiver, privateMap) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to get private field on non-instance");
-    }
-    return privateMap.get(receiver);
-}
-
-function __classPrivateFieldSet(receiver, privateMap, value) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to set private field on non-instance");
-    }
-    privateMap.set(receiver, value);
-    return value;
-}
-
-
-/***/ }),
-
 /***/ "./node_modules/webpack/buildin/global.js":
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
@@ -37061,8 +36872,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = undefined;
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _ckeditor5Exports = __webpack_require__(/*! ckeditor5-exports */ "./node_modules/@neos-project/neos-ui-extensibility/src/shims/vendor/ckeditor5-exports/index.js");
 
 var _attributecommand = __webpack_require__(/*! @ckeditor/ckeditor5-basic-styles/src/attributecommand */ "./node_modules/@ckeditor/ckeditor5-basic-styles/src/attributecommand.js");
@@ -37071,44 +36880,22 @@ var _attributecommand2 = _interopRequireDefault(_attributecommand);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
 var CODE = 'code';
 
-var CodeFormating = function (_Plugin) {
-    _inherits(CodeFormating, _Plugin);
-
-    function CodeFormating() {
-        _classCallCheck(this, CodeFormating);
-
-        return _possibleConstructorReturn(this, (CodeFormating.__proto__ || Object.getPrototypeOf(CodeFormating)).apply(this, arguments));
+var CodeFormatting = class CodeFormatting extends _ckeditor5Exports.Plugin {
+    static get pluginName() {
+        return 'CodeFormatting';
     }
-
-    _createClass(CodeFormating, [{
-        key: 'init',
-        value: function init() {
-            this.editor.model.schema.extend('$text', { allowAttributes: CODE });
-            this.editor.conversion.attributeToElement({
-                model: CODE,
-                view: CODE
-            });
-            this.editor.commands.add(CODE, new _attributecommand2.default(this.editor, CODE));
-        }
-    }], [{
-        key: 'pluginName',
-        get: function get() {
-            return 'CodeFormating';
-        }
-    }]);
-
-    return CodeFormating;
-}(_ckeditor5Exports.Plugin);
-
-exports.default = CodeFormating;
+    init() {
+        this.editor.model.schema.extend('$text', { allowAttributes: CODE });
+        this.editor.conversion.attributeToElement({
+            model: CODE,
+            view: CODE
+        });
+        this.editor.commands.add(CODE, new _attributecommand2.default(this.editor, CODE));
+    }
+};
+exports.default = CodeFormatting;
 
 /***/ }),
 
@@ -37138,8 +36925,6 @@ __webpack_require__(/*! ./manifest */ "./src/manifest.js");
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _react = __webpack_require__(/*! react */ "./node_modules/@neos-project/neos-ui-extensibility/src/shims/vendor/react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
@@ -37160,38 +36945,20 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var IconButtonComponent = class IconButtonComponent extends _react.PureComponent {
+    render() {
+        var _props = this.props,
+            formattingRule = _props.formattingRule,
+            inlineEditorOptions = _props.inlineEditorOptions,
+            i18nRegistry = _props.i18nRegistry,
+            tooltip = _props.tooltip,
+            isActive = _props.isActive,
+            finalProps = _objectWithoutProperties(_props, ['formattingRule', 'inlineEditorOptions', 'i18nRegistry', 'tooltip', 'isActive']);
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var IconButtonComponent = function (_PureComponent) {
-    _inherits(IconButtonComponent, _PureComponent);
-
-    function IconButtonComponent() {
-        _classCallCheck(this, IconButtonComponent);
-
-        return _possibleConstructorReturn(this, (IconButtonComponent.__proto__ || Object.getPrototypeOf(IconButtonComponent)).apply(this, arguments));
+        return _react2.default.createElement(_reactUiComponents.IconButton, _extends({}, finalProps, { isActive: Boolean(isActive), title: tooltip }));
     }
+};
 
-    _createClass(IconButtonComponent, [{
-        key: 'render',
-        value: function render() {
-            var _props = this.props,
-                formattingRule = _props.formattingRule,
-                inlineEditorOptions = _props.inlineEditorOptions,
-                i18nRegistry = _props.i18nRegistry,
-                tooltip = _props.tooltip,
-                isActive = _props.isActive,
-                finalProps = _objectWithoutProperties(_props, ['formattingRule', 'inlineEditorOptions', 'i18nRegistry', 'tooltip', 'isActive']);
-
-            return _react2.default.createElement(_reactUiComponents.IconButton, _extends({}, finalProps, { isActive: Boolean(isActive), title: tooltip }));
-        }
-    }]);
-
-    return IconButtonComponent;
-}(_react.PureComponent);
 
 var addPlugin = function addPlugin(Plugin, isEnabled) {
     return function (ckEditorConfiguration, options) {

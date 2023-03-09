@@ -3,9 +3,9 @@ import AttributeCommand from '@ckeditor/ckeditor5-basic-styles/src/attributecomm
 
 const CODE = 'code';
 
-export default class CodeFormating extends Plugin {
+export default class CodeFormatting extends Plugin {
     static get pluginName() {
-        return 'CodeFormating';
+        return 'CodeFormatting';
     }
     init() {
         this.editor.model.schema.extend('$text', { allowAttributes: CODE });
