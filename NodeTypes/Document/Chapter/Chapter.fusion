@@ -2,10 +2,7 @@
  * Render for the chapter site
  */
 prototype(Neos.Demo:Document.Chapter) < prototype(Neos.Fusion:Component) {
-    bodyClass = null
-    breadcrumb = Neos.Demo:Integration.Breadcrumb {
-        class = 'not-prose mb-4'
-    }
+    breadcrumb = Neos.Demo:Integration.Breadcrumb
     footer  = Neos.Fusion:Renderer {
         renderPath = '/footer'
     }
@@ -25,7 +22,6 @@ prototype(Neos.Demo:Document.Chapter) < prototype(Neos.Fusion:Component) {
         }
     }
     renderer = Neos.Demo:Document {
-        class = ${props.bodyClass}
         content = Neos.Demo:Presentation.Layout.Chapter {
             @apply.props = ${props}
             chapterImageSrc = Neos.Neos:ImageUri {

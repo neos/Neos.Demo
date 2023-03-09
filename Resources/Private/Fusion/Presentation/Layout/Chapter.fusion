@@ -24,7 +24,7 @@ prototype(Neos.Demo:Presentation.Layout.Chapter) < prototype(Neos.Fusion:Compone
     renderer = afx`
         <div class="max-w-screen-sm px-4 pt-4 text-justify mx-auto prose prose-lg [&_p:first-of-type:first-letter]:dropcap [&_p:first-of-type:first-letter]:text-light">
             {props.breadcrumb}
-            <header class="mb-4 not-prose">
+            <header class="mb-4">
                 <h1 class="text-6xl">{props.title}</h1>
             </header>
             <Neos.Demo:Presentation.Image

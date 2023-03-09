@@ -7,27 +7,22 @@ prototype(Neos.Demo:Document.Book) < prototype(Neos.Demo:Document.LandingPage) {
         renderDummyImage = ${node.context.inBackend}
         content = Neos.Neos:ContentCollection {
             nodePath = 'main'
-            attributes.class = 'prose'
         }
         chapters = Neos.Fusion:Map {
             items = ${q(documentNode).children('[instanceof Neos.Demo:Document.Chapter]').get()}
             itemName = 'chapter'
-            itemRenderer = Neos.Fusion:Component {
+            itemRenderer = Neos.Fusion:DataStructure {
                 href = Neos.Neos:NodeUri {
                     node = ${chapter}
                 }
                 title = ${q(chapter).property('title')}
-                chapterImage  = ${q(chapter).property('chapterImage')}
-                imageAlt = ${q(chapter).property('chapterImageAlt')}
                 description =  ${q(chapter).property('chapterDescription')}
-                renderer = Neos.Fusion:DataStructure {
-                    @apply.props = ${props}
-                    imageSrc = Neos.Neos:ImageUri {
-                        @if.hasImage = ${props.chapterImage}
-                        asset = ${props.chapterImage}
-                        maximumWidth = 144
-                    }
+                imageSrc = Neos.Neos:ImageUri {
+                    @if.hasImage = ${q(chapter).property('chapterImage')}
+                    asset = ${q(chapter).property('chapterImage')}
+                    maximumWidth = 144
                 }
+                imageAlt = ${q(chapter).property('chapterImageAlt')}
             }
         }
 
