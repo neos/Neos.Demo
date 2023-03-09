@@ -12,6 +12,9 @@
             <trans-unit id="properties.datePublished" xml:space="preserve">
                 <source>Publishing date</source>
             </trans-unit>
+            <trans-unit id="properties.authorName" xml:space="preserve">
+                <source>Author name</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

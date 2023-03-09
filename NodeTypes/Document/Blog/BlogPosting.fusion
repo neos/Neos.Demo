@@ -9,10 +9,13 @@ prototype(Neos.Demo:Document.BlogPosting) < prototype(Neos.Demo:Document.Page) {
             url = Neos.Neos:NodeUri {
                 node = ${documentNode}
             }
+            author = Neos.Seo:StructuredData.Object {
+                type = "Person"
+                attributes.name = ${q(node).property('authorName')}
+            }
             headline = ${q(node).property('headline')}
             abstract = ${q(node).property('abstract')}
             datePublished = ${Date.format(q(node).property('datePublished'), 'Y-m-d')}
-            datePublished.@if.exists = ${q(node).property('datePublished')}
         }
     }
 
@@ -29,7 +32,7 @@ prototype(Neos.Demo:Document.BlogPosting) < prototype(Neos.Demo:Document.Page) {
         intro = afx`
             <h1 class="text-center"><Neos.Neos:Editable property="headline" block={false} /></h1>
             <p class="text-center"><Neos.Neos:Editable property="abstract" block={false} /></p>
-            <p class="text-center" @if={q(node).property('datePublished')}>{Date.format(q(node).property('datePublished'), 'd.m.Y')}</p>
+            <p class="text-center">{Date.format(q(node).property('datePublished'), 'd.m.Y')} - {q(node).property('authorName')}</p>
         `
         intro.@process.contentElementWrapping = Neos.Neos:ContentElementWrapping
 
