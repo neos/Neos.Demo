@@ -5,7 +5,7 @@ prototype(Neos.Demo:Presentation.Header) < prototype(Neos.Fusion:Component) {
         homeUri = '#'
         currentLanguage = 'en_US'
         menuItems = Neos.Fusion:Map {
-            items = ${['Home', 'Features', 'Try me', 'Download', 'The book']}
+            items = ${['Home', 'Features', 'Try me', 'Download']}
             itemRenderer = Neos.Fusion:DataStructure {
                 label = ${item}
                 uri = ${'#' + item}
