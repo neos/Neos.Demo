@@ -1,13 +1,14 @@
 prototype(Neos.Demo:Presentation.Slider) < prototype(Neos.Fusion:Component) {
     // This is used for the living styleguide (Monocle)
     // Read more about this in the README.md
-    @styleguide.props.items  = Neos.Fusion:Map {
+    @styleguide.props.items = Neos.Fusion:Map {
         items = ${Array.range(1, 10)}
         itemRenderer = afx`
-            <img class="w-full" src={"https://picsum.photos/800/400?random=" + item} alt="placeholder image" />
+            <img class="w-full" src={"https://picsum.photos/800/400?random=" + item} alt="placeholder image"/>
         `
     }
 
+    //todo rework this component, to verify what is used and/or needed
     tagName = 'section'
     sliderIsDecoration = false
     class = null
@@ -18,37 +19,36 @@ prototype(Neos.Demo:Presentation.Slider) < prototype(Neos.Fusion:Component) {
         gap = 12
     }
 
-    attributes = Neos.Fusion:DataStructure
-
     i18n = Neos.Fusion:Map {
         items = ${['prev', 'next', 'first', 'last', 'slideX', 'pageX', 'play', 'pause', 'carousel', 'select', 'slide', 'slideLabel', 'playVideo']}
         keyRenderer = ${item}
         itemRenderer = ${I18n.translate('Neos.Demo:Main:splide.' + item)}
     }
 
-    _hasItems = ${Type.isArray(this.items) && Array.length(this.items)}
-    @if.hasItemsOrContent = ${this._hasItems || this.content}
-
-    renderer = Neos.Fusion:Tag {
-        tagName = ${props.tagName}
-        attributes {
+    @private {
+        hasItems = ${Type.isArray(props.items) && Array.length(props.items)}
+        attributes = Neos.Fusion:DataStructure {
             x-data = 'slider'
             data-splide = ${Json.stringify(Array.concat({i18n:props.i18n}, props.options))}
             aria-label = ${props.label}
             role = ${props.sliderIsDecoration ? 'group' : null}
             class = ${Array.push('splide', props.class)}
-            @apply.attributes = ${props.attributes}
         }
-        content = afx`
+    }
+
+    renderer.@if.hasItemsOrContent = ${private.hasItems || props.content}
+
+    renderer = afx`
+        <Neos.Fusion:Tag tagName={props.tagName} attributes={private.attributes}>
             <div class="splide__track">
-                <ul class="splide__list" @if={props._hasItems && !props.content}>
+                <ul class="splide__list" @if={private.hasItems && !props.content}>
                     <Neos.Fusion:Loop items={props.items}>
-                        <Neos.Demo:Presentation.Slider.Fragment.Item class={props.slideItemClass} content={item} />
+                        <Neos.Demo:Presentation.Slider.Fragment.Item class={props.slideItemClass} content={item}/>
                     </Neos.Fusion:Loop>
                 </ul>
-                <!-- content is used as entry for contentcollections -->
+                <!-- content is used as entry for content-collections -->
                 {props.content}
             </div>
-        `
-    }
+        </Neos.Fusion:Tag>
+    `
 }
