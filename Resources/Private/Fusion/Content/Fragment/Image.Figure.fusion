@@ -10,8 +10,7 @@ prototype(Neos.Demo:Content.Fragment.Image.Figure) < prototype(Neos.Fusion:Compo
             }
         }
         dummy {
-            # TODO: inBackend helper should be moved OUT of Neos.Ui, as it is public API
-            condition = ${Neos.Ui.NodeInfo.inBackend(node)}
+            condition = ${Neos.Node.inBackend(node)}
             renderer = Neos.Fusion:ResourceUri {
                 path = 'resource://Neos.Neos/Public/Images/dummy-image.svg'
             }
