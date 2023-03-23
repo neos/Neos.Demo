@@ -1,0 +1,48 @@
+prototype(Neos.Demo:Presentation.Cards.Card) < prototype(Neos.Fusion:Component) {
+    // This is used for the living styleguide (Monocle)
+    // Read more about this in the README.md
+    @styleguide {
+        props {
+            uri = 'https://example.com'
+            title = 'Card title'
+            content = 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+            imageUri = ''
+            class = ''
+        }
+    }
+
+    uri = null
+    imageUri = null
+    title = null
+    content = null
+
+    class = null
+
+    renderer = afx`
+        <div
+            class={"block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700 " + props.class}>
+            <a href={props.uri}>
+                <img
+                    class="rounded-t-lg"
+                    src={props.imageUri || StaticResource.uri('Neos.Neos', 'Public/Images/dummy-image.svg')}
+                    alt="" />
+            </a>
+            <div class="p-10">
+                <h5
+                    class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                    {props.title}
+                </h5>
+                <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                    {props.content}
+                </p>
+                <button
+                    href={props.uri}
+                    type="button"
+                    class="inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] hover:bg-primary-600 focus:bg-primary-600 active:bg-primary-700"
+                >
+                    More
+                </button>
+            </div>
+        </div>
+    `
+}

@@ -17,18 +17,28 @@ prototype(Neos.Demo:Document.Blog) < prototype(Neos.Demo:Document.LandingPage) {
     content >
     content = Neos.Fusion:Join {
 
-        intro = Neos.Fusion:Loop {
-            items = ${q(documentNode).children('[instanceof Neos.Demo:Document.BlogPosting]').sort("datePublished", "DESC").get()}
-            itemName = 'blogPosting'
+        intro = Neos.Demo:Presentation.Cards.Container {
+            content = Neos.Fusion:Loop {
+                items = ${q(documentNode).children('[instanceof Neos.Demo:Document.BlogPosting]')}
+                items.@process.sortBy = ${value.sort("datePublished", "ASC")}
+                items.@process.limit = ${value.slice(0, 10)}
 
-            # @todo the teaser should be made pretty and extracted as presentational component
-            itemRenderer = afx`
-                <Neos.Neos:NodeLink node={blogPosting}>
-                    <Neos.Neos:ImageTag asset={q(blogPosting).property('image')} maximumWidth="200" maximumHeight="200" />
-                    <h3>{q(blogPosting).property('headline')}</h3>
-                    <p>{q(blogPosting).property('abstract')}</p>
-                </Neos.Neos:NodeLink>
-            `
+                itemName = 'blogPosting'
+
+                itemRenderer = Neos.Demo:Presentation.Cards.Card {
+                    imageUri = Neos.Neos:ImageUri {
+                        asset = ${q(blogPosting).property('image')}
+                        maximumWidth = "200"
+                        maximumHeight = "200"
+                    }
+                    title = ${q(blogPosting).property('headline')}
+                    content = ${q(blogPosting).property('abstract')}
+                    uri = Neos.Neos:NodeUri {
+                        node = ${blogPosting}
+                    }
+                }
+            }
+            @process.convertUris = Neos.Neos:ConvertUris
         }
 
         main = Neos.Neos:PrimaryContent {

@@ -1,0 +1,30 @@
+##
+# "BlogPostingList" element
+#
+prototype(Neos.Demo:Content.BlogPostingList) < prototype(Neos.Neos:ContentComponent) {
+
+    blogArticles.@if.has = ${q(node).property('blogs')}
+    blogArticles = ${q(q(node).property('blogs')).children('[instanceof Neos.Demo:Document.BlogPosting]')}
+    blogArticles.@process.sortBy = ${value.sort("datePublished", "ASC")}
+    blogArticles.@process.limit = ${value.slice(0, q(node).property('limit'))}
+
+    renderer = Neos.Demo:Presentation.Cards.Container {
+        content = Neos.Fusion:Loop {
+            items = ${props.blogArticles}
+            itemName = "blogPosting"
+            itemRenderer = Neos.Demo:Presentation.Cards.Card {
+                imageUri = Neos.Neos:ImageUri {
+                    asset = ${q(blogPosting).property('image')}
+                    maximumWidth = "200"
+                    maximumHeight = "200"
+                }
+                title = ${q(blogPosting).property('headline')}
+                content = ${q(blogPosting).property('abstract')}
+                uri = Neos.Neos:NodeUri {
+                    node = ${blogPosting}
+                }
+            }
+        }
+        @process.convertUris = Neos.Neos:ConvertUris
+    }
+}

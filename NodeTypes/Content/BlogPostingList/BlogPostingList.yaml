@@ -1,0 +1,44 @@
+##
+# A "BlogPostingList" content element that renders "Image" child nodes into a JavaScript based slideshow
+#
+'Neos.Demo:Content.BlogPostingList':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.Demo:Constraint.Content.Main': true
+  label: "${Neos.Node.labelForNode(node).override(' ' + I18n.translate('contentcollection.label', '', [q(node).children().count()], 'NodeTypes/Content/Carousel', 'Neos.Demo', q(node).children().count()))}"
+  ui:
+    label: i18n
+    icon: 'newspaper'
+    position: 100
+    inlineEditable: true
+    inspector:
+      groups:
+        'blog':
+          label: i18n
+          icon: 'newspaper'
+          position: 50
+    help:
+      message: |
+        List of BlogPosting that allows to specify the blogs and the number of
+        articles to display.
+  properties:
+    blogs:
+      type: references
+      defaultValue: ''
+      ui:
+        label: i18n
+        showInCreationDialog: true
+        reloadIfChanged: true
+        inspector:
+          group: 'blog'
+          editorOptions:
+            nodeTypes: ['Neos.Demo:Document.Blog']
+    limit:
+      type: integer
+      defaultValue: 5
+      ui:
+        label: i18n
+        showInCreationDialog: true
+        reloadIfChanged: true
+        inspector:
+          group: 'blog'
