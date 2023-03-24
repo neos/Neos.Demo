@@ -28,10 +28,10 @@ prototype(Neos.Demo:Document.Blog) < prototype(Neos.Demo:Document.LandingPage) {
                 itemRenderer = Neos.Demo:Presentation.Cards.Card {
                     imageUri = Neos.Neos:ImageUri {
                         asset = ${q(blogPosting).property('image')}
-                        maximumWidth = "200"
-                        maximumHeight = "200"
+                        maximumWidth = 400
+                        maximumHeight = 225
                     }
-                    title = ${q(blogPosting).property('headline')}
+                    title = ${q(blogPosting).property('title')}
                     content = ${q(blogPosting).property('abstract')}
                     uri = Neos.Neos:NodeUri {
                         node = ${blogPosting}

@@ -8,6 +8,8 @@ prototype(Neos.Demo:Presentation.Cards.Container) < prototype(Neos.Fusion:Compon
                 <Sitegeist.Monocle:Preview.Prototype prototypeName="Neos.Demo:Presentation.Cards.Card" />
                 <Sitegeist.Monocle:Preview.Prototype prototypeName="Neos.Demo:Presentation.Cards.Card" />
                 <Sitegeist.Monocle:Preview.Prototype prototypeName="Neos.Demo:Presentation.Cards.Card" />
+                <Sitegeist.Monocle:Preview.Prototype prototypeName="Neos.Demo:Presentation.Cards.Card" />
+                <Sitegeist.Monocle:Preview.Prototype prototypeName="Neos.Demo:Presentation.Cards.Card" />
             `
         }
     }
@@ -16,7 +18,7 @@ prototype(Neos.Demo:Presentation.Cards.Container) < prototype(Neos.Fusion:Compon
     content = null
 
     renderer = afx`
-        <div class={"flex justify-center " + props.class}>
+        <div class={"grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 not-prose" + props.class}>
             {props.content}
         </div>
     `

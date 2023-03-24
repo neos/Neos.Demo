@@ -13,9 +13,18 @@ prototype(Neos.Demo:Document.BlogPosting) < prototype(Neos.Demo:Document.Page) {
                 type = "Person"
                 attributes.name = ${q(node).property('authorName')}
             }
-            headline = ${q(node).property('headline')}
+            headline = ${q(node).property('title')}
             abstract = ${q(node).property('abstract')}
             datePublished = ${Date.format(q(node).property('datePublished'), 'Y-m-d')}
+            image = Neos.Seo:StructuredData.Object {
+                type = "ImageObject"
+                attributes.url = Neos.Neos:ImageUri {
+                    asset = ${q(node).property('image')}
+                    maximumWidth = 400
+                    maximumHeight = 225
+                    allowCropping = true
+                }
+            }
         }
     }
 
@@ -26,7 +35,7 @@ prototype(Neos.Demo:Document.BlogPosting) < prototype(Neos.Demo:Document.Page) {
         # @todo the intro should be made pretty and extracted as presentational component
         intro = afx`
             <Neos.Neos:ImageTag asset={q(node).property('image')} maximumWidth="1000" maximumHeight="200" />
-            <h1 class="text-center"><Neos.Neos:Editable property="headline" block={false} /></h1>
+            <h1 class="text-center"><Neos.Neos:Editable property="title" block={false} /></h1>
             <p class="text-center"><Neos.Neos:Editable property="abstract" block={false} /></p>
             <p class="text-center">{Date.format(q(node).property('datePublished'), 'd.m.Y')} - {q(node).property('authorName')}</p>
         `

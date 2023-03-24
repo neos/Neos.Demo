@@ -18,9 +18,11 @@
       # No documents below here
       'Neos.Demo:Constraint.Document.SubPage': false
   properties:
-    headline:
-      options:
-        preset: 'neosdemo.text.headline'
+    # Hide title field in inspector as this will be inline editable on this page.
+    title:
+      ui:
+        inspector:
+          group: ~
     abstract:
       options:
         preset: 'neosdemo.text.lead'

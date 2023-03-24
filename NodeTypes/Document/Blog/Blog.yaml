@@ -19,3 +19,7 @@
       'Neos.Demo:Constraint.Document.SubPage': false
       # but BlogPostings are explicitly allowed
       'Neos.Demo:Document.BlogPosting': true
+  childNodes:
+    'teaser':
+      position: 'before main'
+      type: 'Neos.Demo:Collection.Content.Teaser'
