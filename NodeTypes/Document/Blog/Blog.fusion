@@ -38,7 +38,6 @@ prototype(Neos.Demo:Document.Blog) < prototype(Neos.Demo:Document.LandingPage) {
                     }
                 }
             }
-            @process.convertUris = Neos.Neos:ConvertUris
         }
 
         main = Neos.Neos:PrimaryContent {

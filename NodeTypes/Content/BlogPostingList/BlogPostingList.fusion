@@ -25,6 +25,5 @@ prototype(Neos.Demo:Content.BlogPostingList) < prototype(Neos.Neos:ContentCompon
                 }
             }
         }
-        @process.convertUris = Neos.Neos:ConvertUris
     }
 }

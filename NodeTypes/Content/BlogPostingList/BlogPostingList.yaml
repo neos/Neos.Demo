@@ -11,16 +11,17 @@
     icon: 'newspaper'
     position: 100
     inlineEditable: true
+    group: special
+    help:
+      message: |
+        List of BlogPosting that allows to specify the blogs and the number of
+        articles to display.
     inspector:
       groups:
         'blog':
           label: i18n
           icon: 'newspaper'
           position: 50
-    help:
-      message: |
-        List of BlogPosting that allows to specify the blogs and the number of
-        articles to display.
   properties:
     blogs:
       type: references
