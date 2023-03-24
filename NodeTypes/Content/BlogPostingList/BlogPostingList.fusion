@@ -5,7 +5,7 @@ prototype(Neos.Demo:Content.BlogPostingList) < prototype(Neos.Neos:ContentCompon
 
     blogArticles.@if.has = ${q(node).property('blogs')}
     blogArticles = ${q(q(node).property('blogs')).children('[instanceof Neos.Demo:Document.BlogPosting]')}
-    blogArticles.@process.sortBy = ${value.sort("datePublished", "ASC")}
+    blogArticles.@process.sortBy = ${value.sort("datePublished", "DESC")}
     blogArticles.@process.limit = ${value.slice(0, q(node).property('limit'))}
 
     renderer = Neos.Demo:Presentation.Cards.Container {
@@ -24,6 +24,17 @@ prototype(Neos.Demo:Content.BlogPostingList) < prototype(Neos.Neos:ContentCompon
                     node = ${blogPosting}
                 }
             }
+        }
+    }
+
+    @cache {
+        mode = "cached"
+        entryIdentifier {
+            node = ${node}
+        }
+        entryTags {
+            # recalculate once a blogposting was modified as this might affect the list
+            1 = ${Neos.Caching.nodeTypeTag('Neos.Demo:Document.BlogPosting', node)}
         }
     }
 }

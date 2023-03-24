@@ -20,7 +20,7 @@ prototype(Neos.Demo:Document.Blog) < prototype(Neos.Demo:Document.LandingPage) {
         intro = Neos.Demo:Presentation.Cards.Container {
             content = Neos.Fusion:Loop {
                 items = ${q(documentNode).children('[instanceof Neos.Demo:Document.BlogPosting]')}
-                items.@process.sortBy = ${value.sort("datePublished", "ASC")}
+                items.@process.sortBy = ${value.sort("datePublished", "DESC")}
                 items.@process.limit = ${value.slice(0, 10)}
 
                 itemName = 'blogPosting'
@@ -36,6 +36,17 @@ prototype(Neos.Demo:Document.Blog) < prototype(Neos.Demo:Document.LandingPage) {
                     uri = Neos.Neos:NodeUri {
                         node = ${blogPosting}
                     }
+                }
+            }
+
+            @cache {
+                mode = "cached"
+                entryIdentifier {
+                    documentNode = ${documentNode}
+                }
+                entryTags {
+                    # recalculate a node below the blog changes as this might affect the list
+                    1 = ${Neos.Caching.descendantOfTag(documentNode)}
                 }
             }
         }
