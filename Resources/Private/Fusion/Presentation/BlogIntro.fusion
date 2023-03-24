@@ -1,0 +1,33 @@
+prototype(Neos.Demo:Presentation.BlogIntro) < prototype(Neos.Fusion:Component) {
+    // This is used for the living styleguide (Monocle)
+    // Read more about this in the README.md
+    @styleguide {
+        container = ${'<div class="prose">' + value + '</div>'}
+        props {
+            title = 'Some blog article'
+            abstract = 'Some quick example text for an abstract.'
+            imageUri = ''
+            author = 'Neos Team'
+            date = ${Date.now()}
+        }
+    }
+
+    title = null
+    abstract = null
+    imageUri = null
+    author = null
+    date = null
+
+    renderer = afx`
+        <div class="flex flex-wrap justify-center">
+            <div class="text-center lg:w-8/12">
+                <Neos.Demo:Presentation.Headline tagName="h1" tagStyle="h1">{props.title}</Neos.Demo:Presentation.Headline>
+                <p>{props.abstract}</p>
+                <p>{Date.format(props.date, 'd.m.Y')} - {props.author}</p>
+            </div>
+        </div>
+        <div @if={props.imageUri}
+             class="bg-cover bg-center max-h-48 h-screen print:h-auto print:!bg-none"
+             style={props.imageUri ? 'background-image: url(' + props.imageUri + ');' : null}></div>
+    `
+}
