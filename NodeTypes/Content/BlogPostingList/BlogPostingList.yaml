@@ -10,7 +10,7 @@
     label: i18n
     icon: 'newspaper'
     position: 100
-    inlineEditable: true
+    inlineEditable: false
     group: special
     help:
       message: |

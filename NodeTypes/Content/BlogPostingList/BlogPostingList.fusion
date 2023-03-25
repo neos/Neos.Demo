@@ -33,8 +33,12 @@ prototype(Neos.Demo:Content.BlogPostingList) < prototype(Neos.Neos:ContentCompon
             node = ${node}
         }
         entryTags {
-            # recalculate once a blogposting was modified as this might affect the list
-            1 = ${Neos.Caching.nodeTypeTag('Neos.Demo:Document.BlogPosting', node)}
+            # invalidate cache when the node rendered changes
+            1 = ${Neos.Caching.nodeTag(node)}
+            # invalidate cache when one of the selected blogs changes (might become hidden)
+            2 = ${Neos.Caching.nodeTag(q(node).property('blogs'))}
+            # invalidate cache when a descendent of the selected blogs changes
+            3 = ${Neos.Caching.descendantOfTag(q(node).property('blogs'))}
         }
     }
 }

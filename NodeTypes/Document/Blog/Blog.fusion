@@ -45,8 +45,10 @@ prototype(Neos.Demo:Document.Blog) < prototype(Neos.Demo:Document.LandingPage) {
                     documentNode = ${documentNode}
                 }
                 entryTags {
-                    # recalculate a node below the blog changes as this might affect the list
-                    1 = ${Neos.Caching.descendantOfTag(documentNode)}
+                    # invalidate cache entry when the document changes
+                    1 = ${Neos.Caching.nodeTag(documentNode)}
+                    # invalidate cache entry when a child the document changes as this might be a blogposting
+                    2 = ${Neos.Caching.descendantOfTag(documentNode)}
                 }
             }
         }
