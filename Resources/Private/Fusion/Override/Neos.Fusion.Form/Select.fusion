@@ -1,0 +1,3 @@
+prototype(Neos.Fusion.Form:Select) {
+    attributes.class = ${field.isMultiple() ? 'form-multiselect' : 'form-select'}
+}

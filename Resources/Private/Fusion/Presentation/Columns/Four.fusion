@@ -1,0 +1,14 @@
+prototype(Neos.Demo:Presentation.Columns.Four) < prototype(Neos.Demo:Presentation.Columns) {
+    // This is used for the living styleguide (Monocle)
+    // Read more about this in the README.md
+    @styleguide.props.content = afx`
+        <Neos.Demo:Presentation.Alert content="First column" />
+        <Neos.Demo:Presentation.Alert content="Second column" />
+        <Neos.Demo:Presentation.Alert content="Third column" />
+        <Neos.Demo:Presentation.Alert content="Fourth column" />
+    `
+
+    content = null
+    breakpoint = 'sm'
+    columns = 4
+}

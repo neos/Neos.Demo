@@ -1,0 +1,28 @@
+prototype(Neos.Demo:Presentation.YouTube) < prototype(Neos.Fusion:Component) {
+    // This is used for the living styleguide (Monocle)
+    // Read more about this in the README.md
+    @styleguide.props {
+        videoId = '4DVD03IlXIs'
+        inBackend = true
+    }
+
+    videoId = null
+    inBackend = false
+
+    renderer = afx`
+        <figure  @if={props.videoId} class="aspect-video">
+            <iframe
+                src={'https://www.youtube.com/embed/' + props.videoId + '?wmode=transparent'}
+                width="100%"
+                height="100%"
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+        </figure>
+        <Neos.Demo:Presentation.Alert
+            @if={!props.videoId && props.inBackend}
+            class="aspect-video"
+            content={I18n.translate('Neos.Demo:NodeTypes.Content.YouTube:error.no.videoid')}
+        />
+    `
+}

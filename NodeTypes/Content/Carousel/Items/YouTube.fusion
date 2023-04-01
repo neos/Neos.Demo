@@ -1,0 +1,12 @@
+prototype(Neos.Demo:Content.CarouselYouTube) < prototype(Neos.Neos:ContentComponent) {
+    src = Neos.Neos:ImageUri {
+        @if.hasAsset = ${this.asset}
+        asset = ${q(node).property('image')}
+    }
+    alt = ${q(node).property('alternativeText')}
+    youtubeId = ${q(node).property('video')}
+
+    renderDummyImage = ${node.context.inBackend}
+
+    renderer = afx`<Neos.Demo:Presentation.Image {...props} />`
+}

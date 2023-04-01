@@ -1,0 +1,40 @@
+##
+# "FourColumn" element
+#
+prototype(Neos.Demo:Content.Columns.Four) < prototype(Neos.Neos:ContentComponent) {
+    column0 = Neos.Neos:ContentCollection {
+        nodePath = 'column0'
+    }
+
+    column1 = Neos.Neos:ContentCollection {
+        nodePath = 'column1'
+    }
+
+    column2 = Neos.Neos:ContentCollection {
+        nodePath = 'column2'
+    }
+
+    column3 = Neos.Neos:ContentCollection {
+        nodePath = 'column3'
+    }
+
+    renderer = afx`
+        <Neos.Demo:Presentation.Columns.Four>
+            {props.column0}
+            {props.column1}
+            {props.column2}
+            {props.column3}
+        </Neos.Demo:Presentation.Columns.Four>
+    `
+}
+
+prototype(Neos.Demo:Content.Columns.Four.RawContentMode) < prototype(Neos.Neos:ContentComponent) {
+    renderer = afx`
+        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-gap: 16px;">
+            <Neos.Neos:RawContent.Node @context.node={q(node).children('column0').get(0)} />
+            <Neos.Neos:RawContent.Node @context.node={q(node).children('column1').get(0)} />
+            <Neos.Neos:RawContent.Node @context.node={q(node).children('column2').get(0)} />
+            <Neos.Neos:RawContent.Node @context.node={q(node).children('column3').get(0)} />
+        </div>
+    `
+}

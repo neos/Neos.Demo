@@ -1,0 +1,6 @@
+##
+# Every document node type that should be allowed to be added to the site tree should inherit from this nodetype.
+##
+
+'Neos.Demo:Constraint.Document.SubPage':
+  abstract: true

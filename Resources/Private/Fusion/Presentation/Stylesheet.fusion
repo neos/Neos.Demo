@@ -1,0 +1,8 @@
+/**
+ * Stylesheets of the page to be included in the header
+ */
+prototype(Neos.Demo:Presentation.Stylesheet) < prototype(Neos.Fusion:Component) {
+    renderer = afx`
+        <link rel="stylesheet" href={StaticResource.uri('Neos.Demo', 'Public/Styles/Main.css')} />
+    `
+}

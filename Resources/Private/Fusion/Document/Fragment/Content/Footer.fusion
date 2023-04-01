@@ -1,5 +1,0 @@
-prototype(Neos.Demo:Document.Fragment.Content.Footer) < prototype(Neos.Fusion:Component) {
-    renderer = Neos.Neos:ContentCollection {
-        nodePath = ${q(site).children('footer').property('_path')}
-    }
-}

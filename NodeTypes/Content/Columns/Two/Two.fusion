@@ -1,0 +1,28 @@
+##
+# "TwoColumn" element
+#
+prototype(Neos.Demo:Content.Columns.Two) < prototype(Neos.Neos:ContentComponent) {
+    column0 = Neos.Neos:ContentCollection {
+        nodePath = 'column0'
+    }
+
+    column1 = Neos.Neos:ContentCollection {
+        nodePath = 'column1'
+    }
+
+    renderer = afx`
+        <Neos.Demo:Presentation.Columns.Two>
+            {props.column0}
+            {props.column1}
+        </Neos.Demo:Presentation.Columns.Two>
+    `
+}
+
+prototype(Neos.Demo:Content.Columns.Two.RawContentMode) < prototype(Neos.Neos:ContentComponent) {
+    renderer = afx`
+        <div style="display:grid; grid-template-columns: 1fr 1fr; grid-gap: 16px;">
+            <Neos.Neos:RawContent.Node @context.node={q(node).children('column0').get(0)} />
+            <Neos.Neos:RawContent.Node @context.node={q(node).children('column1').get(0)} />
+        </div>
+    `
+}

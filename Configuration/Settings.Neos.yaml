@@ -1,0 +1,33 @@
+Neos:
+  Demo:
+    debugMode: false
+  Neos:
+    userInterface:
+      translation:
+        autoInclude:
+          Neos.Demo:
+            - Main
+            - 'NodeTypes/*'
+
+      navigateComponent:
+        nodeTree:
+          loadingDepth: 2
+        structureTree:
+          loadingDepth: 3
+
+    nodeTypes:
+      groups:
+        special:
+          position: end 100
+          label: 'Neos.Demo:Main:nodeTypes.groups.special'
+          collapsed: false
+        forms:
+          position: end 200
+          label: 'Neos.Demo:Main:nodeTypes.groups.forms'
+          collapsed: false
+
+    Ui:
+      resources:
+        javascript:
+          'Neos.Demo:CodeTag':
+            resource: resource://Neos.Demo/Public/Scripts/CodeTagPlugin/Plugin.js

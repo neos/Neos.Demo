@@ -1,0 +1,14 @@
+'Neos.Demo:Content.Columns.Two':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.Demo:Constraint.Content.Main': true
+  ui:
+    label: i18n
+    icon: 'columns'
+    group: 'structure'
+    position: 10
+  childNodes:
+    column0:
+      type: 'Neos.Demo:Collection.Content.Column'
+    column1:
+      type: 'Neos.Demo:Collection.Content.Column'

@@ -1,0 +1,36 @@
+prototype(Neos.Demo:Presentation.Footer) < prototype(Neos.Fusion:Component) {
+    // This is used for the living styleguide (Monocle)
+    // Read more about this in the README.md
+    @styleguide.props {
+        menuItems = Neos.Fusion:Map {
+            items = ${['Download', 'Contribute', 'Documentation']}
+            itemRenderer = Neos.Fusion:DataStructure {
+                label = ${item}
+                uri = ${'#' + item}
+            }
+        }
+        content = Neos.Fusion:Tag {
+            attributes.class = 'content'
+            content = '<p>Powered by Neos & Flow</p>'
+        }
+    }
+
+
+    _hasMenuItems = ${Type.isArray(this.menuItems) && Array.length(this.menuItems)}
+
+    @if.hasMenuItemsOrContent = ${this._hasMenuItems || this.content}
+
+    renderer = afx`
+        <div aria-hidden="true" class="flex-1 print:hidden"><!-- This element is needed to set the footer at the bottom of the page --></div>
+        <footer class={['mt-12 text-sm print:border-t print:border-slate-200/80', props._hasMenuItems ? 'border-t border-slate-200/80' : null]}>
+            <nav class="content py-5 flex flex-wrap gap-x-10 print:hidden" @if={props._hasMenuItems}>
+                <Neos.Fusion:Loop items={props.menuItems}>
+                    <a href={item.uri} class="block py-3 text-slate-600 hocus:text-slate-900">{item.label}</a>
+                </Neos.Fusion:Loop>
+            </nav>
+            <div @if={props.content} class="py-5 bg-slate-100 shadow-inner empty:hidden print:bg-transparent print:shadow-none">
+                {props.content}
+            </div>
+        </footer>
+    `
+}

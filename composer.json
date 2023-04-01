@@ -6,13 +6,17 @@
         "GPL-3.0-or-later"
     ],
     "require": {
-        "neos/neos": "^8.0",
+        "neos/neos": "^8.3",
         "neos/fusion-form": "^2.0 || dev-master",
-        "neos/nodetypes-basemixins": "^8.0",
-        "neos/nodetypes-assetlist": "^8.0",
-        "neos/nodetypes-contentreferences": "^8.0",
-        "neos/nodetypes-html": "^8.0",
-        "neos/nodetypes-navigation": "^8.0"
+        "neos/nodetypes-basemixins": "^8.3",
+        "neos/nodetypes-assetlist": "^8.3",
+        "neos/nodetypes-contentreferences": "^8.3",
+        "neos/nodetypes-html": "^8.3",
+        "neos/nodetypes-navigation": "^8.3"
+    },
+    "suggest": {
+        "sitegeist/monocle": "An living-styleguide for Neos that is based on the actual fusion-code",
+        "yoast/yoast-seo-for-neos": "Yoast SEO for Neos CMS"
     },
     "autoload": {
         "psr-4": {

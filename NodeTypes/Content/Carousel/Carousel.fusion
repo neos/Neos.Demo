@@ -1,0 +1,21 @@
+##
+# "Carousel" element
+#
+prototype(Neos.Demo:Content.Carousel) < prototype(Neos.Neos:ContentComponent) {
+    content = Neos.Neos:ContentCollection {
+        nodePath = ''
+        tagName = 'ul'
+        attributes.class = 'splide__list'
+
+        prototype(Neos.Neos:ContentComponent) {
+            renderer.@process.wrap = Neos.Demo:Presentation.Slider.Fragment.Item {
+                videoUri = ${props.videoUri}
+                youtubeId = ${props.youtubeId}
+                vimdeoId = ${props.vimdeoId}
+                content = ${value}
+            }
+        }
+    }
+
+    renderer = afx`<Neos.Demo:Presentation.Slider {...props} />`
+}

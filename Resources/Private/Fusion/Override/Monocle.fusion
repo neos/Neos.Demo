@@ -1,0 +1,13 @@
+// If you use Monocole, (See README.md) we add our own styles and javascript here
+prototype(Sitegeist.Monocle:Preview.Page) {
+    htmlTag.attributes.lang = 'en-US'
+    head {
+        stylesheets.demo = Neos.Demo:Presentation.Stylesheet
+        javascripts.demo = Neos.Demo:Presentation.Javascript
+        languagesLinks = afx`
+            <link rel="alternate" hreflang="en-US" href="#enUS" />
+            <link rel="alternate" hreflang="en-UK" href="#enUK" />
+            <link rel="alternate" hreflang="de" href="#de" />
+        `
+    }
+}

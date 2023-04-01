@@ -16,6 +16,7 @@ namespace Neos\Demo\Form\Runtime\Action;
 use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Mvc\ActionResponse;
 use Neos\Flow\Persistence\Doctrine\PersistenceManager;
+use Neos\Flow\Persistence\Exception\IllegalObjectTypeException;
 use Neos\Fusion\Form\Runtime\Domain\Exception\ActionException;
 use Neos\Flow\Security\AccountFactory;
 use Neos\Flow\Security\AccountRepository;
@@ -28,56 +29,36 @@ use Neos\Fusion\Form\Runtime\Action\AbstractAction;
 
 class CreateUserAction extends AbstractAction
 {
-    /**
-     * @Flow\Inject
-     * @var AccountRepository
-     */
-    protected $accountRepository;
+    #[Flow\Inject]
+    protected ?AccountRepository $accountRepository;
+
+    #[Flow\Inject]
+    protected ?PartyRepository $partyRepository;
+
+    #[Flow\Inject]
+    protected ?PartyService $partyService;
+
+    #[Flow\Inject]
+    protected ?AccountFactory $accountFactory;
+
+    #[Flow\Inject]
+    protected ?PersistenceManager $persistenceManager;
 
     /**
-     * @Flow\Inject
-     * @var PartyRepository
-     */
-    protected $partyRepository;
-
-    /**
-     * @Flow\Inject
-     * @var PartyService
-     */
-    protected $partyService;
-
-    /**
-     * @Flow\Inject
-     * @var AccountFactory
-     */
-    protected $accountFactory;
-
-    /**
-     * @Flow\Inject
-     * @var PersistenceManager
-     */
-    protected $persistenceManager;
-
-    /**
-     * @return ActionResponse|null
-     * @throws ActionException
+     * @throws ActionException|IllegalObjectTypeException
      */
     public function perform(): ?ActionResponse
     {
         $accountIdentifier = $this->options['username'];
         $password = $this->options['password'];
-        $firstName = $this->options['firstName'];
-        $lastName = $this->options['lastName'];
 
         $existingAccount = $this->accountRepository->findActiveByAccountIdentifierAndAuthenticationProviderName($accountIdentifier, 'Neos.Neos:Backend');
         if ($existingAccount !== null) {
             throw new ActionException('Account already exists');
         }
 
-        if ($firstName === '' && $lastName === '') {
-            $firstName = 'Santa';
-            $lastName = 'Claus';
-        }
+        $firstName = ucfirst($accountIdentifier);
+        $lastName = 'Demo';
 
         $user = new User();
         $user->setName(new PersonName('', $firstName, '', $lastName));
