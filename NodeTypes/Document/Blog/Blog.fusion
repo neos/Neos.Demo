@@ -1,0 +1,61 @@
+/**
+ * Blog rendering for the Neos.Demo website
+ */
+prototype(Neos.Demo:Document.Blog) < prototype(Neos.Demo:Document.LandingPage) {
+    structuredData.blog = Neos.Seo:StructuredData.RootObject {
+        type = "Blog"
+        attributes = Neos.Fusion:DataStructure {
+            url = Neos.Neos:NodeUri {
+                node = ${documentNode}
+            }
+            title = ${q(node).property('title')}
+        }
+    }
+
+
+    # content is overwritten to render a list of cards for the latest 10 blog postings
+    content >
+    content = Neos.Fusion:Join {
+
+        intro = Neos.Demo:Presentation.Cards.Container {
+            content = Neos.Fusion:Loop {
+                items = ${q(documentNode).children('[instanceof Neos.Demo:Document.BlogPosting]')}
+                items.@process.sortBy = ${value.sort("datePublished", "DESC")}
+                items.@process.limit = ${value.slice(0, 10)}
+
+                itemName = 'blogPosting'
+
+                itemRenderer = Neos.Demo:Presentation.Cards.Card {
+                    imageUri = Neos.Neos:ImageUri {
+                        asset = ${q(blogPosting).property('image')}
+                        maximumWidth = 400
+                        maximumHeight = 225
+                    }
+                    title = ${q(blogPosting).property('title')}
+                    content = ${q(blogPosting).property('abstract')}
+                    uri = Neos.Neos:NodeUri {
+                        node = ${blogPosting}
+                    }
+                }
+            }
+
+            @cache {
+                mode = "cached"
+                entryIdentifier {
+                    documentNode = ${documentNode}
+                }
+                entryTags {
+                    # invalidate cache entry when the document changes
+                    1 = ${Neos.Caching.nodeTag(documentNode)}
+                    # invalidate cache entry when a child the document changes as this might be a blogposting
+                    2 = ${Neos.Caching.descendantOfTag(documentNode)}
+                }
+            }
+        }
+
+        main = Neos.Neos:PrimaryContent {
+            nodePath = 'main'
+            @process.convertUris = Neos.Neos:ConvertUris
+        }
+    }
+}

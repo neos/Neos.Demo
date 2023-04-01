@@ -4,16 +4,9 @@
 'Neos.Demo:Collection.Content.Main':
   superTypes:
     Neos.Neos:ContentCollection: true
+  # TODO Add translation for label
+  label: "${'Main content area'}"
   constraints:
     nodeTypes:
-      # Nodetypes of Neos.NodeTypes package are deprecated
-      # if the package is installed we prevent adding those contents
-      'Neos.NodeTypes:Headline': false
-      'Neos.NodeTypes:Text': false
-      'Neos.NodeTypes:Image': false
-      'Neos.NodeTypes:TextWithImage': false
-      # Nodetypes of Neos.NodeTypes.Columnlayouts are not used in
-      # Neos.Demo and thus are disabled if they are present
-      'Neos.NodeTypes.ColumnLayouts:TwoColumn': false
-      'Neos.NodeTypes.ColumnLayouts:ThreeColumn': false
-      'Neos.NodeTypes.ColumnLayouts:FourColumn': false
+      '*': false
+      'Neos.Demo:Constraint.Content.Main': true

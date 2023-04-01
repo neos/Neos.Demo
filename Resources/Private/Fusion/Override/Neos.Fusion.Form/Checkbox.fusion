@@ -1,0 +1,3 @@
+prototype(Neos.Fusion.Form:Checkbox) {
+    attributes.class = 'form-checkbox'
+}

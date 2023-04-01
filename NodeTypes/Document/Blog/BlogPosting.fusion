@@ -1,0 +1,58 @@
+/**
+ * BlogPosting rendering for the Neos.Demo website
+ */
+prototype(Neos.Demo:Document.BlogPosting) < prototype(Neos.Demo:Document.Page) {
+
+    structuredData.blogPosting = Neos.Seo:StructuredData.RootObject {
+        type = "BlogPosting"
+        attributes = Neos.Fusion:DataStructure {
+            url = Neos.Neos:NodeUri {
+                node = ${documentNode}
+            }
+            author = Neos.Seo:StructuredData.Object {
+                type = "Person"
+                attributes.name = ${q(node).property('authorName')}
+            }
+            headline = ${q(node).property('title')}
+            abstract = ${q(node).property('abstract')}
+            datePublished = ${Date.format(q(node).property('datePublished'), 'Y-m-d')}
+            image = Neos.Seo:StructuredData.Object {
+                type = "ImageObject"
+                attributes.url = Neos.Neos:ImageUri {
+                    asset = ${q(node).property('image')}
+                    maximumWidth = 400
+                    maximumHeight = 225
+                    allowCropping = true
+                }
+            }
+        }
+    }
+
+    # content is overwritten to render the intro section first
+    content >
+    content = Neos.Fusion:Join {
+        intro = Neos.Demo:Presentation.BlogIntro {
+            title = Neos.Neos:Editable {
+                property = 'title'
+                block = false
+            }
+            abstract = Neos.Neos:Editable {
+                property = 'abstract'
+                block = false
+            }
+            imageUri = Neos.Neos:ImageUri {
+                asset = ${q(node).property('image')}
+                width = 1248
+                height = 702
+            }
+            author = ${q(node).property('authorName')}
+            date = ${q(node).property('datePublished')}
+        }
+        intro.@process.contentElementWrapping = Neos.Neos:ContentElementWrapping
+
+        main = Neos.Neos:PrimaryContent {
+            nodePath = 'main'
+            @process.convertUris = Neos.Neos:ConvertUris
+        }
+    }
+}

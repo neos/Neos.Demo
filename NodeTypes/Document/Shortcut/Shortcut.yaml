@@ -1,0 +1,8 @@
+##
+# The shortcut which only extends the default Neos shortcut to allow constraint usage and adding custom configuration
+#
+'Neos.Demo:Document.Shortcut':
+  final: true
+  superTypes:
+    'Neos.Neos:Shortcut': true
+    'Neos.Demo:Constraint.Document.SubPage': true

@@ -1,0 +1,27 @@
+Neos:
+  ContentRepository:
+    contentDimensions:
+      language:
+        label: 'Neos.Demo:Main:contentDimensions.language'
+        icon: language
+        default: en_US
+        defaultPreset: en_US
+        presets:
+          en_US:
+            label: 'English (US)'
+            values:
+              - en_US
+            # The default preset can also have an empty uriSegment value.
+            # https://docs.neos.io/cms/manual/content-repository/content-dimensions#behind-the-scenes-routing
+            uriSegment: en
+          en_UK:
+            label: 'English (UK)'
+            values:
+              - en_UK
+              - en_US
+            uriSegment: uk
+          de:
+            label: Deutsch
+            values:
+              - de
+            uriSegment: de

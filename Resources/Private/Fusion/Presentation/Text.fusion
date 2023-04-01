@@ -1,0 +1,17 @@
+prototype(Neos.Demo:Presentation.Text) < prototype(Neos.Fusion:Component) {
+
+    // This is used for the living styleguide (Monocle)
+    // Read more about this in the README.md
+    @styleguide {
+        container = ${'<div class="prose">' + value + '</div>'}
+        props.content = '<h2>Lorem ipsum dolor sit amet,</h2>
+            <p>consetetur sadipscing elitr, <strong><em>sed diam</em> nonumy eirmod</strong> tempor <code>invidunt</code> ut <em>labore et dolore</em> magna aliquyam erat, sed diam voluptua.</p>
+            <p>At vero <a href="#">eos et accusam et</a> justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <ul><li>List item 1</li><li>List item 2</li><li>List item 3<ul><li>List item 3.1</li><li>List item 3.2</li><li>List item 3.3</li></ul></li></ul>
+            <ol><li>List item 1</li><li>List item 2</li><li>List item 3<ol><li>List item 3.1</li><li>List item 3.2</li><li>List item 3.3</li></ol></li></ol>'
+    }
+
+    @if.hasContent = ${this.content}
+
+    renderer = ${props.content}
+}
