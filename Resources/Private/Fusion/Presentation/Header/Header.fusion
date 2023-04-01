@@ -25,12 +25,7 @@ prototype(Neos.Demo:Presentation.Header) < prototype(Neos.Fusion:Component) {
     homeUri = '/'
     menuItems = null
     currentLanguage = null
-
-    languages = Neos.Fusion:Map {
-        items = ${Configuration.Setting('Neos.ContentRepository.contentDimensions.language.presets')}
-        keyRenderer = ${itemKey}
-        itemRenderer = ${item.label}
-    }
+    languages = null
 
     defaultLogo = ${StaticResource.content('Neos.Demo', 'Public/Images/logo.svg', true)}
 
