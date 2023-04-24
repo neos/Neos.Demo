@@ -2431,18 +2431,18 @@
       </node>
      </node>
      <node identifier="b3212301-8165-4116-9716-d4c2d7953239" nodeName="node-w1v3lgv0u18gk">
-      <variant sortingIndex="550" workspace="live" nodeType="Neos.Demo:Document.BlogPosting" version="9" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="550" workspace="live" nodeType="Neos.Demo:Document.BlogPosting" version="11" removed="" hidden="" hiddenInIndex="">
        <dimensions>
         <language>en_US</language>
        </dimensions>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2023-04-24T09:52:00+00:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2023-04-24T10:32:38+00:00</lastModificationDateTime>
-       <lastPublicationDateTime __type="object" __classname="DateTime">2023-04-24T10:32:38+00:00</lastPublicationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2023-04-24T19:27:54+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2023-04-24T19:27:54+00:00</lastPublicationDateTime>
        <properties>
-        <image __type="object" __identifier="8e4abeb1-b102-416e-b9e4-c95a031029fd" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;8e4abeb1-b102-416e-b9e4-c95a031029fd&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;615ce77c-b4ed-476a-9900-ee63fa7eb911&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;Neos 8.3 Wallpaper&quot;,&quot;copyrightNotice&quot;:&quot;Daniel Bischoff&quot;,&quot;caption&quot;:&quot;Sunset River&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Wallpaper.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;38ec9ca676083edf0e3ae108b866b458ad1bad57&quot;,&quot;hash&quot;:&quot;38ec9ca676083edf0e3ae108b866b458ad1bad57&quot;,&quot;__identity&quot;:&quot;c1bc2341-92b7-444c-92cf-a993b2e6a88b&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:952,&quot;position&quot;:10,&quot;width&quot;:2500,&quot;x&quot;:0,&quot;y&quot;:397,&quot;__identity&quot;:&quot;870204f4-d88d-4aa8-a924-912eaf713dfb&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
+        <image __type="object" __identifier="1f5df049-e6da-450d-8702-a62b904fa6cb" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;1f5df049-e6da-450d-8702-a62b904fa6cb&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;615ce77c-b4ed-476a-9900-ee63fa7eb911&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;Neos 8.3 Wallpaper&quot;,&quot;copyrightNotice&quot;:&quot;Daniel Bischoff&quot;,&quot;caption&quot;:&quot;Sunset River&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Wallpaper.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;38ec9ca676083edf0e3ae108b866b458ad1bad57&quot;,&quot;hash&quot;:&quot;38ec9ca676083edf0e3ae108b866b458ad1bad57&quot;,&quot;__identity&quot;:&quot;c1bc2341-92b7-444c-92cf-a993b2e6a88b&quot;},&quot;tags&quot;:[],&quot;assetCollections&quot;:[]},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:1406,&quot;position&quot;:10,&quot;width&quot;:2500,&quot;x&quot;:0,&quot;y&quot;:156,&quot;__identity&quot;:&quot;eb03dbd4-288b-44de-a763-75d796caa540&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
         <title __type="string">Neos 8.3 released</title>
-        <abstract __type="string">We are thrilled to announce the release of Neos CMS version 8.3, the Long-Term Support (LTS) version of the Neos 8 branch. As an LTS version is designed for long-term use, and many users tend to upgrade from one LTS version to the next, we focused this release on improving the user and developer experience.&lt;br&gt;&lt;br&gt;&amp;nbsp;We as Neos development team have always believed that the community plays a vital role in shaping the future of the framework and CMS. Therefore, before the release, we reached out to the Neos community to understand their needs better. The team asked the community about the most requested features and the most frustrating aspects of using Neos. The response was overwhelming, with a multitude of messages pouring in. We collected all the ideas and feedback in our &lt;a href=&quot;https://discuss.neos.io/t/attention-neos-community/6206&quot;&gt;forum&lt;/a&gt; and are excited to announce that some of these ideas will be included in this latest release. We as the Neos team would like to express our gratitude to the Neos community for the valuable feedback and ideas that helped shape the latest release and as we could not implement all the feedback for 8.3, we are looking to a bright future of new Neos releases.</abstract>
+        <abstract __type="string">We are thrilled to announce the release of Neos CMS version 8.3, the Long-Term Support (LTS) version of the Neos 8 branch. As an LTS version is designed for long-term use, and many users tend to upgrade from one LTS version to the next, we focused this release on improving the user and developer experience.</abstract>
         <authorName __type="string">Markus Günther</authorName>
         <datePublished __type="object" __classname="DateTime">2023-04-23T00:00:00+00:00</datePublished>
         <uriPathSegment __type="string">neos-8-3-released</uriPathSegment>
@@ -2536,6 +2536,20 @@
           </variant>
          </node>
         </node>
+       </node>
+       <node identifier="80e31411-2f59-4a93-94bd-a13ec3225d7a" nodeName="node-uj6udebcw812j">
+        <variant sortingIndex="25" workspace="live" nodeType="Neos.Demo:Content.Text" version="4" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>en_US</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2023-04-24T19:26:57+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2023-04-24T19:27:15+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2023-04-24T19:27:15+00:00</lastPublicationDateTime>
+         <properties>
+          <text __type="string">&lt;p&gt;We as Neos development team have always believed that the community plays a vital role in shaping the future of the framework and CMS. Therefore, before the release, we reached out to the Neos community to understand their needs better. The team asked the community about the most requested features and the most frustrating aspects of using Neos. The response was overwhelming, with a multitude of messages pouring in. We collected all the ideas and feedback in our &lt;a href=&quot;https://discuss.neos.io/t/attention-neos-community/6206&quot;&gt;forum&lt;/a&gt; and are excited to announce that some of these ideas will be included in this latest release. We as the Neos team would like to express our gratitude to the Neos community for the valuable feedback and ideas that helped shape the latest release and as we could not implement all the feedback for 8.3, we are looking to a bright future of new Neos releases.&lt;/p&gt;</text>
+         </properties>
+        </variant>
        </node>
       </node>
      </node>
