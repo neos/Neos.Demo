@@ -5,7 +5,7 @@
   superTypes:
     Neos.Neos:ContentCollection: true
   # TODO Add translation for label
-  label: "${'Main content area'}"
+  label: 'Main content area'
   constraints:
     nodeTypes:
       '*': false
