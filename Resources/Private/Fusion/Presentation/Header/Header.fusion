@@ -89,7 +89,7 @@ prototype(Neos.Demo:Presentation.Header) < prototype(Neos.Fusion:Component) {
                 </button>
                 <nav x-data="language" @if={props.currentLanguage} x-cloak class="text-sm relative col-start-4">
                     <button type="button" x-on:click="open=!open" class="flex p-2 items-center hocus:text-light">
-                        {props.languages[props.currentLanguage]}
+                        {props.currentLanguage.configuration.label}
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 320 512"
