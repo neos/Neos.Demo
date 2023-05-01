@@ -19,12 +19,7 @@ prototype(Neos.Demo:Integration.Header.Renderer) < prototype(Neos.Demo:Presentat
     }
 
     currentLanguage = ${Neos.Dimension.currentValue(site, 'language')}
-    languages = Neos.Fusion:Map {
-        items = ${Neos.Dimension.all(site)['language'].values.iterator}
-        itemName = 'dimensionValue'
-        keyRenderer = ${dimensionValue.value}
-        itemRenderer = ${dimensionValue.configuration.label}
-    }
+    languages = ${Neos.Dimension.allDimensionValues(site, 'language')}
 
     renderer.@process.convertUris = Neos.Neos:ConvertUris {
         forceConversion = true

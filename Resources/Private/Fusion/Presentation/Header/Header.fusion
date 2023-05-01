@@ -106,7 +106,7 @@ prototype(Neos.Demo:Presentation.Header) < prototype(Neos.Fusion:Component) {
                                     :href={"getLink('" + itemKey + "')"}
                                     :class={"current=='" + itemKey + "'&&'text-light'"}
                                     class="px-4 py-2 block whitespace-nowrap hocus:bg-dark hocus:text-white"
-                                >{item}</a>
+                                >{item.configuration.label}</a>
                             </li>
                         </Neos.Fusion:Loop>
                     </ul>
