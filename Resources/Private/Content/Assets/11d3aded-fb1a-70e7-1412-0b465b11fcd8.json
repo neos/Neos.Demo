@@ -1,0 +1,14 @@
+{
+    "identifier": "11d3aded-fb1a-70e7-1412-0b465b11fcd8",
+    "type": "IMAGE",
+    "title": "",
+    "copyrightNotice": "",
+    "caption": "",
+    "assetSourceIdentifier": "neos",
+    "resource": {
+        "filename": "alice-2.jpg",
+        "collectionName": "persistent",
+        "mediaType": "image\/jpeg",
+        "sha1": "0641ce611d5171161c853f70ff1ae0f33dd4dc24"
+    }
+}

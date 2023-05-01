@@ -1,0 +1,14 @@
+{
+    "identifier": "6aac7ce2-b2e1-4e20-6987-42daa4edfbd2",
+    "type": "IMAGE",
+    "title": "",
+    "copyrightNotice": "",
+    "caption": "",
+    "assetSourceIdentifier": "neos",
+    "resource": {
+        "filename": "Mad-Hatter.jpg",
+        "collectionName": "persistent",
+        "mediaType": "image\/jpeg",
+        "sha1": "510905a6fae272e24c71a11c3646a96bf9443a70"
+    }
+}
