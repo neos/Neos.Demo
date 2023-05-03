@@ -1,0 +1,14 @@
+{
+    "identifier": "615ce77c-b4ed-476a-9900-ee63fa7eb911",
+    "type": "IMAGE",
+    "title": "Neos 8.3 Wallpaper",
+    "copyrightNotice": "",
+    "caption": "Sunset River",
+    "assetSourceIdentifier": "neos",
+    "resource": {
+        "filename": "Wallpaper.jpg",
+        "collectionName": "persistent",
+        "mediaType": "image\/jpeg",
+        "sha1": "38ec9ca676083edf0e3ae108b866b458ad1bad57"
+    }
+}

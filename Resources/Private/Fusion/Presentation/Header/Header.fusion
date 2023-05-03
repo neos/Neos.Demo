@@ -25,12 +25,7 @@ prototype(Neos.Demo:Presentation.Header) < prototype(Neos.Fusion:Component) {
     homeUri = '/'
     menuItems = null
     currentLanguage = null
-
-    languages = Neos.Fusion:Map {
-        items = ${Configuration.Setting('Neos.ContentRepository.contentDimensions.language.presets')}
-        keyRenderer = ${itemKey}
-        itemRenderer = ${item.label}
-    }
+    languages = null
 
     defaultLogo = ${StaticResource.content('Neos.Demo', 'Public/Images/logo.svg', true)}
 
@@ -94,7 +89,7 @@ prototype(Neos.Demo:Presentation.Header) < prototype(Neos.Fusion:Component) {
                 </button>
                 <nav x-data="language" @if={props.currentLanguage} x-cloak class="text-sm relative col-start-4">
                     <button type="button" x-on:click="open=!open" class="flex p-2 items-center hocus:text-light">
-                        {props.languages[props.currentLanguage]}
+                        {props.currentLanguage.configuration.label}
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 320 512"
@@ -111,7 +106,7 @@ prototype(Neos.Demo:Presentation.Header) < prototype(Neos.Fusion:Component) {
                                     :href={"getLink('" + itemKey + "')"}
                                     :class={"current=='" + itemKey + "'&&'text-light'"}
                                     class="px-4 py-2 block whitespace-nowrap hocus:bg-dark hocus:text-white"
-                                >{item}</a>
+                                >{item.configuration.label}</a>
                             </li>
                         </Neos.Fusion:Loop>
                     </ul>

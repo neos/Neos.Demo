@@ -42,7 +42,7 @@ prototype(Neos.Demo:Document.Blog) < prototype(Neos.Demo:Document.LandingPage) {
             @cache {
                 mode = "cached"
                 entryIdentifier {
-                    documentNode = ${documentNode}
+                    documentNode = ${Neos.Caching.entryIdentifierForNode(documentNode)}
                 }
                 entryTags {
                     # invalidate cache entry when the document changes

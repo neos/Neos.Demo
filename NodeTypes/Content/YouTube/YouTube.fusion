@@ -1,6 +1,6 @@
 prototype(Neos.Demo:Content.YouTube) < prototype(Neos.Neos:ContentComponent) {
     videoId = ${q(node).property('video')}
-    inBackend = ${node.context.inBackend}
+    inBackend = ${Neos.Node.inBackend(node)}
 
     renderer = afx`<Neos.Demo:Presentation.YouTube {...props} />`
 }

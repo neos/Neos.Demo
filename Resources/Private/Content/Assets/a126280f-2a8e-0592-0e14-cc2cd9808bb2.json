@@ -1,0 +1,14 @@
+{
+    "identifier": "a126280f-2a8e-0592-0e14-cc2cd9808bb2",
+    "type": "IMAGE",
+    "title": "",
+    "copyrightNotice": "",
+    "caption": "",
+    "assetSourceIdentifier": "neos",
+    "resource": {
+        "filename": "Alice-In-Wonderland.jpg",
+        "collectionName": "persistent",
+        "mediaType": "image\/jpeg",
+        "sha1": "53e0e394fda7e8943fd5e15f041da1919e03d534"
+    }
+}

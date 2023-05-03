@@ -30,7 +30,7 @@ prototype(Neos.Demo:Content.BlogPostingList) < prototype(Neos.Neos:ContentCompon
     @cache {
         mode = "cached"
         entryIdentifier {
-            node = ${node}
+            node = ${Neos.Caching.entryIdentifierForNode(node)}
         }
         entryTags {
             # invalidate cache when the node rendered changes
