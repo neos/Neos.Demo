@@ -1,0 +1,36 @@
+prototype(Neos.Demo:Presentation.Columns) < prototype(Neos.Fusion:Component) {
+    tagName = 'div'
+
+    // sm, md or lg
+    breakpoint = 'sm'
+
+    // Between 2 and 4
+    columns = 2
+
+    class = null
+
+    content = null
+
+    @if.hasContent = ${this.content}
+
+    renderer = Neos.Fusion:Tag {
+        tagName = ${props.tagName}
+        attributes.class = Neos.Fusion:DataStructure {
+            class = ${props.class}
+            base = 'grid grid-cols-1 gap-8 [&>*>:where(p,ul,ol,figure):first-child]:mt-0 [&>*>:where(p,ul,ol,figure):last-child]:mb-0'
+            columns = Neos.Fusion:Match {
+                @subject = ${props.breakpoint + props.columns}
+                @default = 'sm:grid-cols-2'
+                sm3 = 'sm:grid-cols-3'
+                sm4 = 'sm:grid-cols-2 md:grid-cols-4'
+                md2 = 'md:grid-cols-2'
+                md3 = 'md:grid-cols-3'
+                md4 = 'md:grid-cols-2 lg:grid-cols-4'
+                lg2 = 'lg:grid-cols-2'
+                lg3 = 'lg:grid-cols-3'
+                lg4 = 'lg:grid-cols-2 xl:grid-cols-4'
+            }
+        }
+        content = ${props.content}
+    }
+}

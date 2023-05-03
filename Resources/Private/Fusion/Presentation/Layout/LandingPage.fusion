@@ -1,0 +1,44 @@
+prototype(Neos.Demo:Presentation.Layout.LandingPage) < prototype(Neos.Fusion:Component) {
+    // This is used for the living styleguide (Monocle)
+    // Read more about this in the README.md
+    @styleguide {
+        props {
+            header = afx`<Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Header'/>`
+            heroImage = ${StaticResource.uri('Neos.Neos', 'Public/Images/dummy-image.svg')}
+            heroContent = afx`<Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Headline' props.content='You won‘t need a manual or training to edit content in Neos - because you already know how to do that.' />`
+            content = afx`
+                <Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Headline' />
+                <Neos.Demo:Presentation.Columns.Two>
+                    <div><Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Text' /></div>
+                    <div><Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Text' /></div>
+                </Neos.Demo:Presentation.Columns.Two>
+                <Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Columns.Four' />
+            `
+           footer = afx`<Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Footer' />`
+        }
+    }
+
+    header = null
+    heroContent = null
+    heroImage = null
+    content = null
+    footer = null
+
+
+    renderer = afx`
+        {props.header}
+        <div
+            @if={props.heroContent || props.heroImage}
+            class={['overflow-hidden bg-dark flex flex-col print:bg-transparent print:m-0 print:py-20', props.heroImage ? 'bg-cover bg-center -mt-[var(--header-height)] h-screen print:h-auto print:!bg-none' : 'pt-20 pb-32']}
+            style={props.heroImage ? 'background-image: url(' + props.heroImage + ');text-shadow:1px 0 0 rgb(0 0 0 / 50%);' : null}
+        >
+            <div class="content flex flex-col items-center justify-center prose prose-2xl prose-white print:prose flex-1">
+                {props.heroContent}
+            </div>
+        </div>
+        <main class="content prose">
+            {props.content}
+        </main>
+        {props.footer}
+    `
+}

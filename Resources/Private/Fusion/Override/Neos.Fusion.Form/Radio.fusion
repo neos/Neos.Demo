@@ -1,0 +1,3 @@
+prototype(Neos.Fusion.Form:Radio) {
+    attributes.class = 'form-radio'
+}

@@ -1,0 +1,41 @@
+##
+# Special homepage nodetype that declares a footer child node for usage as shared footer.
+# It should be used only once and is not allowed to be added as subpage.
+#
+'Neos.Demo:Document.Homepage':
+  final: true
+  superTypes:
+    'Neos.Demo:Document.LandingPage': true
+    'Neos.Demo:Constraint.Document.SubPage': false
+  ui:
+    label: i18n
+    icon: 'globe'
+    help:
+      message: 'The homepage type is to be used only once and adds the shared footer.'
+    inspector:
+      tabs:
+        site:
+          label: i18n
+          icon: gears
+          position: 'after default'
+      groups:
+        site:
+          label: i18n
+          icon: gears
+          tab: site
+  childNodes:
+    'notfound':
+      type: 'Neos.Demo:Document.NotFoundPage'
+    'footer':
+      position: 'end'
+      type: 'Neos.Demo:Collection.Content.Footer'
+  properties:
+    metaNavigationItems:
+      type: references
+      ui:
+        label: i18n
+        inspector:
+          group: site
+          editorOptions:
+            nodeTypes:
+              - Neos.Demo:Document.Page

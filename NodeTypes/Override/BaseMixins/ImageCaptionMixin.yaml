@@ -1,0 +1,7 @@
+'Neos.NodeTypes.BaseMixins:ImageCaptionMixin':
+  abstract: true
+  properties:
+    hasCaption:
+      ui:
+        inspector:
+          hidden: 'ClientEval: node.properties.image ? false : true'

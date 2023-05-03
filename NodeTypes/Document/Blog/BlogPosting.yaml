@@ -1,0 +1,56 @@
+##
+# Document NodeType "BlogPosting" based on https://schema.org/BlogPosting
+#
+'Neos.Demo:Document.BlogPosting':
+  final: true
+  superTypes:
+    'Neos.Demo:Document.Page': true
+    'Neos.Demo:Constraint.Document.SubPage': false
+  ui:
+    label: i18n
+    icon: 'file-alt'
+    position: 300
+    group: special
+    help:
+      message: 'A blog posting'
+  constraints:
+    nodeTypes:
+      # No documents below here
+      'Neos.Demo:Constraint.Document.SubPage': false
+  properties:
+    # Hide title field in inspector as this will be inline editable on this page.
+    title:
+      ui:
+        inspector:
+          group: ~
+    abstract:
+      options:
+        preset: 'neosdemo.text.lead'
+    image:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: default
+    datePublished:
+      type: DateTime
+      defaultValue: now
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        showInCreationDialog: true
+        inspector:
+          group: default
+      validation:
+        Neos.Neos/Validation/NotEmptyValidator: {}
+    authorName:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        showInCreationDialog: true
+        inspector:
+          group: default
+      validation:
+        Neos.Neos/Validation/NotEmptyValidator: {}

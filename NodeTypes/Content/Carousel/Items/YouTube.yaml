@@ -1,0 +1,25 @@
+##
+# A "Youtube" carousel element
+#
+'Neos.Demo:Content.CarouselYouTube':
+  superTypes:
+    'Neos.Demo:Content.YouTube': true
+    'Neos.Demo:Constraint.Content.Carousel': true
+    'Neos.NodeTypes.BaseMixins:ImageMixin': true
+  ui:
+    label: YouTube
+    icon: youtube
+    position: 50
+    inspector:
+      groups:
+        'video':
+          label: i18n
+          icon: film
+          position: 50
+    help:
+      message: 'Embeds a YouTube video as content defined by a video ID.'
+  properties:
+    title: {}
+    video:
+      validation:
+        Neos.Neos/Validation/NotEmptyValidator: {}

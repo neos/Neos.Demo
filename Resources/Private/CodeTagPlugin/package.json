@@ -1,0 +1,18 @@
+{
+  "description": "Adds a button for a code tag to the ckeditor",
+  "license": "GNU GPLv3",
+  "private": true,
+  "scripts": {
+    "build": "neos-react-scripts build --production",
+    "watch": "neos-react-scripts watch"
+  },
+  "devDependencies": {
+    "@neos-project/neos-ui-extensibility": "^8.2.0"
+  },
+  "neos": {
+    "buildTargetDirectory": "../../Public/Scripts/CodeTagPlugin"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-basic-styles": "10.1.0"
+  }
+}

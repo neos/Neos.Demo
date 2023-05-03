@@ -1,0 +1,29 @@
+{
+    "identifier": "f1aed746-643b-74f4-c4e9-02a52e889f08",
+    "originalAssetIdentifier": "08aaeb84-dccc-6af4-0086-93499de4e1bc",
+    "name": "",
+    "width": 200,
+    "height": 278,
+    "presetIdentifier": null,
+    "presetVariantName": null,
+    "imageAdjustments": [
+        {
+            "type": "CROP_IMAGE",
+            "properties": {
+                "x": 0,
+                "y": 0,
+                "width": 359,
+                "height": 500
+            }
+        },
+        {
+            "type": "RESIZE_IMAGE",
+            "properties": {
+                "width": 200,
+                "height": 278,
+                "ratioMode": "inset",
+                "allowUpScaling": false
+            }
+        }
+    ]
+}

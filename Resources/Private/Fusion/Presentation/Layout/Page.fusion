@@ -1,0 +1,33 @@
+prototype(Neos.Demo:Presentation.Layout.Page) < prototype(Neos.Fusion:Component) {
+    // This is used for the living styleguide (Monocle)
+    // Read more about this in the README.md
+    @styleguide {
+        props {
+            header = afx`<Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Header'/>`
+            content = afx`
+                <Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Headline' />
+                <Neos.Demo:Presentation.Columns.Two>
+                    <div><Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Text' /></div>
+                    <div><Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Text' /></div>
+                </Neos.Demo:Presentation.Columns.Two>
+                <Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Columns.Four' />
+            `
+           footer = afx`<Sitegeist.Monocle:Preview.Prototype prototypeName='Neos.Demo:Presentation.Footer' />`
+        }
+    }
+
+    header = null
+    breadcrumb = null
+    content = null
+    footer = null
+
+
+    renderer = afx`
+        {props.header}
+        {props.breadcrumb}
+        <main class="content prose">
+            {props.content}
+        </main>
+        {props.footer}
+    `
+}

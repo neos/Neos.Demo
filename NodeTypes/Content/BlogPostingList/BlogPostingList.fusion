@@ -1,0 +1,44 @@
+##
+# "BlogPostingList" element
+#
+prototype(Neos.Demo:Content.BlogPostingList) < prototype(Neos.Neos:ContentComponent) {
+
+    blogArticles.@if.has = ${q(node).property('blogs')}
+    blogArticles = ${q(q(node).property('blogs')).children('[instanceof Neos.Demo:Document.BlogPosting]')}
+    blogArticles.@process.sortBy = ${value.sort("datePublished", "DESC")}
+    blogArticles.@process.limit = ${value.slice(0, q(node).property('limit'))}
+
+    renderer = Neos.Demo:Presentation.Cards.Container {
+        content = Neos.Fusion:Loop {
+            items = ${props.blogArticles}
+            itemName = "blogPosting"
+            itemRenderer = Neos.Demo:Presentation.Cards.Card {
+                imageUri = Neos.Neos:ImageUri {
+                    asset = ${q(blogPosting).property('image')}
+                    maximumWidth = 400
+                    maximumHeight = 225
+                }
+                title = ${q(blogPosting).property('title')}
+                content = ${q(blogPosting).property('abstract')}
+                uri = Neos.Neos:NodeUri {
+                    node = ${blogPosting}
+                }
+            }
+        }
+    }
+
+    @cache {
+        mode = "cached"
+        entryIdentifier {
+            node = ${Neos.Caching.entryIdentifierForNode(node)}
+        }
+        entryTags {
+            # invalidate cache when the node rendered changes
+            1 = ${Neos.Caching.nodeTag(node)}
+            # invalidate cache when one of the selected blogs changes (might become hidden)
+            2 = ${Neos.Caching.nodeTag(q(node).property('blogs'))}
+            # invalidate cache when a descendent of the selected blogs changes
+            3 = ${Neos.Caching.descendantOfTag(q(node).property('blogs'))}
+        }
+    }
+}

@@ -1,0 +1,4 @@
+prototype(Neos.Fusion.Form:FieldContainer) {
+    class = 'flex flex-col'
+    errorClass = 'form-error'
+}

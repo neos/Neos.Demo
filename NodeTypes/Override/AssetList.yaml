@@ -1,0 +1,8 @@
+'Neos.NodeTypes.AssetList:AssetList':
+  superTypes:
+    'Neos.Demo:Constraint.Content.Main': true
+    'Neos.Demo:Constraint.Content.Column': true
+  properties:
+    assets:
+      ui:
+        showInCreationDialog: true

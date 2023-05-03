@@ -1,0 +1,40 @@
+##
+# The header section is a globally cached fragment that is used on every page.
+# To make global caching possible the renderer is separated and instance on the root level.
+# The component just renders this globally defined instance.
+# This is necessary as the fusion path is part of the cache identifier and would include
+# the current document if it's included directly without the global instance.
+#
+prototype(Neos.Demo:Integration.Header) < prototype(Neos.Fusion:Renderer) {
+    renderPath = '/header'
+}
+
+prototype(Neos.Demo:Integration.Header.Renderer) < prototype(Neos.Demo:Presentation.Header) {
+    homeUri = Neos.Neos:NodeUri {
+        node = ${site}
+    }
+
+    menuItems = Neos.Neos:MenuItems {
+        maximumLevels = 2
+    }
+
+    currentLanguage = ${Neos.Dimension.currentValue(site, 'language')}
+    languages = ${Neos.Dimension.allDimensionValues(site, 'language')}
+
+    renderer.@process.convertUris = Neos.Neos:ConvertUris {
+        forceConversion = true
+    }
+
+    @cache {
+        mode = 'cached'
+        entryIdentifier {
+            static = 'header'
+            site = ${Neos.Caching.entryIdentifierForNode(site)}
+        }
+        entryTags {
+            1 = ${Neos.Caching.nodeTypeTag('Neos.Neos:Document', site)}
+        }
+    }
+}
+
+header = Neos.Demo:Integration.Header.Renderer

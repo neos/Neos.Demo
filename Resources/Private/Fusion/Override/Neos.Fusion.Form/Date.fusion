@@ -1,0 +1,3 @@
+prototype(Neos.Fusion.Form:Date) {
+    attributes.class = 'form-input'
+}

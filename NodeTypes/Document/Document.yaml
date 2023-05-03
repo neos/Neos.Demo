@@ -1,0 +1,15 @@
+##
+# The abstract base type for all Demo page types
+# This is used to have better control of allowed types via constraints and querying Demo exclusive pages
+#
+'Neos.Demo:Document':
+  abstract: true
+  superTypes:
+    'Neos.Neos:Document': true
+  constraints:
+    nodeTypes:
+      # The generic rule to allow all documents is disabled
+      'Neos.Neos:Document': false
+      # Instead all documents that are marked as Neos.Demo:Constraint.Document.SubPage are allowed
+      'Neos.Demo:Constraint.Document.SubPage': true
+

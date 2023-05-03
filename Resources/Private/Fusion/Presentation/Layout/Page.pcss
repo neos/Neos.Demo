@@ -1,0 +1,125 @@
+@layer base {
+  @font-face {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("../Fonts/WorkSans.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Work Sans";
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("../Fonts/WorkSans-Italic.woff2") format("woff2");
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    color: theme(colors.slate.800);
+    background-color: theme(colors.white);
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 1px);
+    hyphens: auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  [x-cloak] {
+    pointer-events: none !important;
+    visibility: hidden !important;
+  }
+
+  * {
+    outline-color: theme(colors.light);
+  }
+
+  button[type="submit"] {
+    min-width: theme(spacing.32);
+    background-color: theme(colors.light);
+    padding: theme(spacing.2) theme(spacing.4);
+    border: none;
+    color: theme(colors.white);
+    transition: background-color theme(transitionDuration.DEFAULT)
+      theme(transitionTimingFunction.DEFAULT);
+
+    &:hover,
+    &:focus {
+      background-color: theme(colors.dark);
+    }
+  }
+
+  @media print {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      break-after: avoid-page;
+    }
+
+    figure,
+    p {
+      break-inside: avoid-page;
+    }
+  }
+}
+
+@layer components {
+  .content {
+    padding-left: var(--content-padding);
+    padding-right: var(--content-padding);
+    width: min(100%, var(--content-max-width));
+    margin-left: auto;
+    margin-right: auto;
+
+    & .content,
+    & .breakout {
+      margin-left: calc(-50vw + 50%);
+      margin-right: calc(-50vw + 50%);
+    }
+  }
+
+  :is(.form-input, .form-multiselect, .form-select, .form-textarea):focus {
+    --tw-ring-color: theme(colors.light);
+  }
+
+  .form-error {
+    & .form-input,
+    & .form-multiselect,
+    & .form-select,
+    & .form-textarea {
+      border-color: theme(colors.red.500);
+
+      &:focus {
+        --tw-ring-color: theme(colors.red.500);
+      }
+    }
+  }
+
+  .form-errors {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: theme(fontSize.sm);
+    color: theme(colors.red.600);
+    gap: theme(spacing.1);
+
+    & li {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

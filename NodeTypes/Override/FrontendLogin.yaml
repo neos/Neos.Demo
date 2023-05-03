@@ -1,0 +1,4 @@
+'Flowpack.Neos.FrontendLogin:LoginForm':
+  ui:
+    group: forms
+    position: 30

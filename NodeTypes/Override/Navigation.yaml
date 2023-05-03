@@ -1,0 +1,4 @@
+Neos.NodeTypes.Navigation:Navigation:
+  superTypes:
+    'Neos.Demo:Constraint.Content.Main': true
+    'Neos.Demo:Constraint.Content.Column': true

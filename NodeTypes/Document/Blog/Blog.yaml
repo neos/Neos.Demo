@@ -1,0 +1,25 @@
+##
+# Document NodeType "Blog" which can have "BlogPositings"
+# based on https://schema.org/Blog
+#
+'Neos.Demo:Document.Blog':
+  final: true
+  superTypes:
+    'Neos.Demo:Document.LandingPage': true
+  ui:
+    label: i18n
+    icon: 'newspaper'
+    position: 300
+    group: special
+    help:
+      message: 'A blog'
+  constraints:
+    nodeTypes:
+      # Not all SubPage documents can be placed below
+      'Neos.Demo:Constraint.Document.SubPage': false
+      # but BlogPostings are explicitly allowed
+      'Neos.Demo:Document.BlogPosting': true
+  childNodes:
+    'teaser':
+      position: 'before main'
+      type: 'Neos.Demo:Collection.Content.Teaser'

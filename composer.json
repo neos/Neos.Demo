@@ -7,14 +7,16 @@
     ],
     "require": {
         "neos/neos": "^9.0 || dev-master",
-        "neos/fusion-afx": "*",
         "neos/fusion-form": "^2.0 || dev-master",
         "neos/nodetypes-basemixins": "*",
         "neos/nodetypes-assetlist": "*",
         "neos/nodetypes-contentreferences": "*",
         "neos/nodetypes-html": "*",
-        "neos/nodetypes-navigation": "*",
-        "flowpack/neos-frontendlogin": "^4.0"
+        "neos/nodetypes-navigation": "*"
+    },
+    "suggest": {
+        "sitegeist/monocle": "An living-styleguide for Neos that is based on the actual fusion-code",
+        "yoast/yoast-seo-for-neos": "Yoast SEO for Neos CMS"
     },
     "autoload": {
         "psr-4": {

@@ -1,0 +1,38 @@
+##
+# The type "LandingPage" is to be used for special topic landing pages.
+#
+'Neos.Demo:Document.LandingPage':
+  superTypes:
+    'Neos.Demo:Document.Page': true
+  ui:
+    label: i18n
+    icon: 'plane-arrival'
+    group: special
+    position: 20
+    help:
+      message: 'A landing Page'
+    inspector:
+      groups:
+        image:
+          label: i18n
+          position: 200
+          icon: 'image'
+  childNodes:
+    'teaser':
+      position: 'before main'
+      type: 'Neos.Demo:Collection.Content.Teaser'
+  properties:
+    'image':
+      type: 'Neos\Media\Domain\Model\ImageInterface'
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: 'image'
+          position: 50
+          editorOptions:
+            crop:
+              aspectRatio:
+                locked:
+                  width: 2
+                  height: 1

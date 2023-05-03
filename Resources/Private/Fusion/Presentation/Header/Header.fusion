@@ -1,0 +1,136 @@
+prototype(Neos.Demo:Presentation.Header) < prototype(Neos.Fusion:Component) {
+    // This is used for the living styleguide (Monocle)
+    // Read more about this in the README.md
+    @styleguide.props {
+        homeUri = '#'
+        currentLanguage = 'en_US'
+        menuItems = Neos.Fusion:Map {
+            items = ${['Home', 'Features', 'Try me', 'Download']}
+            itemRenderer = Neos.Fusion:DataStructure {
+                label = ${item}
+                uri = ${'#' + item}
+                subItems = Neos.Fusion:Map {
+                    @if.set = ${iterator.isEven}
+                    items = ${['Sub item 1', 'Sub item 2', 'Sub item 3']}
+                    itemRenderer = Neos.Fusion:DataStructure {
+                        label = ${item}
+                        uri = ${'#' + item}
+                    }
+                }
+            }
+        }
+    }
+
+    logo = null
+    homeUri = '/'
+    menuItems = null
+    currentLanguage = null
+    languages = null
+
+    defaultLogo = ${StaticResource.content('Neos.Demo', 'Public/Images/logo.svg', true)}
+
+    renderer = afx`
+        <Neos.Fusion:Augmenter class="hidden print:block w-auto max-h-32 mr-auto">
+            {props.logo || props.defaultLogo}
+        </Neos.Fusion:Augmenter>
+        <header x-data={"header('" + props.homeUri + "')"} x-bind="header" class="relative lg:sticky print:hidden z-50 top-0 bg-white/90 text-sm supports-backdrop-blur:bg-white/80 backdrop-blur-sm transition-shadow">
+            <div class="max-w-screen-xl mx-auto py-6 items-center grid grid-cols-[auto_minmax(0,1fr)_auto_auto] grid-rows-[auto_minmax(0,auto)] gap-4 lg:gap-x-10 lg:gap-y-0">
+                <a href={props.homeUri} class="block border-transparent border-2 lg:row-span-full self-start">
+                    <Neos.Fusion:Augmenter class="h-14 w-auto">
+                        {props.logo || props.defaultLogo}
+                    </Neos.Fusion:Augmenter>
+                </a>
+                <nav class="row-start-2 col-span-full lg:row-start-1 lg:col-span-1">
+                    <ul
+                        @if={Type.isArray(props.menuItems) && Array.length(props.menuItems)}
+                        x-collapse
+                        x-show="mobileMenuOpen||desktopView"
+                        class="flex flex-col items-center gap-10 text-center text-slate-600 lg:!flex lg:!h-auto lg:!overflow-visible lg:flex-row"
+                        :class="enableCollapse||'!transition-none'"
+                    >
+                        <Neos.Fusion:Loop items={props.menuItems}>
+                            <li>
+                                <a
+                                    href={item.uri}
+                                    :class={"isCurrentPage('" + item.uri + "')&&'text-light'"}
+                                    class="block p-1 hocus:text-slate-900 text-lg lg:text-sm whitespace-nowrap"
+                                >{item.label}</a>
+                                <ul @if={Type.isArray(item.subItems) && Array.length(item.subItems)} class="lg:hidden">
+                                    <Neos.Fusion:Loop items={item.subItems}>
+                                        <li>
+                                            <a
+                                                href={item.uri}
+                                                :class={"isCurrentPage('" + item.uri + "')&&'text-light'"}
+                                                class="block text-base p-1 whitespace-nowrap"
+                                            >{item.label}</a>
+                                        </li>
+                                    </Neos.Fusion:Loop>
+                                </ul>
+                            </li>
+                        </Neos.Fusion:Loop>
+                    </ul>
+                </nav>
+                <button
+                    x-on:click="mobileMenuOpen=!mobileMenuOpen"
+                    x-ref="mobileMenuButton"
+                    type="button"
+                    class="col-start-3 p-2 inline-flex items-center justify-center hocus:text-light transition-colors lg:hidden"
+                >
+                    <span class="sr-only sm:not-sr-only sm:pr-4 sm:block">
+                        <span :class="mobileMenuOpen&&'hidden'">{Translation.translate('navigation.open', 'Open menu', [], null, 'Neos.Demo')}</span>
+                        <span :class="mobileMenuOpen||'hidden'">{Translation.translate('navigation.close', 'Close menu', [], null, 'Neos.Demo')}</span>
+                    </span>
+                    <svg class="h-6 w-6 fill-current" :class="mobileMenuOpen||'hidden'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                       <path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/>
+                    </svg>
+                    <svg class="h-6 w-6 fill-current" :class="mobileMenuOpen&&'hidden'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/>
+                    </svg>
+                </button>
+                <nav x-data="language" @if={props.currentLanguage} x-cloak class="text-sm relative col-start-4">
+                    <button type="button" x-on:click="open=!open" class="flex p-2 items-center hocus:text-light">
+                        {props.currentLanguage.configuration.label}
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512"
+                            class="w-4 h-4 ml-2 fill-current transition-transform"
+                            :class="open&&'rotate-180'"
+                        >
+                            <path d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"/>
+                        </svg>
+                    </button>
+                    <ul x-show="open" x-collapse class="absolute bg-white shadow right-4 mt-2 rounded-sm overflow-hidden" :aria-hidden="!open" "x-on:click.outside"="open=false">
+                        <Neos.Fusion:Loop items={props.languages}>
+                            <li x-show={"!!getLink('" + itemKey + "')"}>
+                                <a
+                                    :href={"getLink('" + itemKey + "')"}
+                                    :class={"current=='" + itemKey + "'&&'text-light'"}
+                                    class="px-4 py-2 block whitespace-nowrap hocus:bg-dark hocus:text-white"
+                                >{item.configuration.label}</a>
+                            </li>
+                        </Neos.Fusion:Loop>
+                    </ul>
+                </nav>
+                 <nav @if={Type.isArray(props.menuItems)} x-cloak class="hidden lg:block col-start-2 row-start-2 col-span-3">
+                    <Neos.Fusion:Loop items={props.menuItems}>
+                        <ul
+                            @if={Type.isArray(item.subItems) && Array.length(item.subItems)}
+                            x-show={"isCurrentPage('" + item.uri + "')"}
+                            class="flex flex-wrap items-center gap-x-10 text-slate-600"
+                        >
+                            <Neos.Fusion:Loop items={item.subItems}>
+                                <li>
+                                    <a
+                                        href={item.uri}
+                                        :class={"isCurrentPage('" + item.uri + "')&&'text-light'"}
+                                        class="block p-1 hocus:text-slate-900 whitespace-nowrap"
+                                    >{item.label}</a>
+                                </li>
+                            </Neos.Fusion:Loop>
+                        </ul>
+                    </Neos.Fusion:Loop>
+                </nav>
+            </div>
+        </header>
+    `
+}

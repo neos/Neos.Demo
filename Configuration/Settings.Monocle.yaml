@@ -1,0 +1,47 @@
+# This is used for the living styleguide (Monocle)
+# Read more about this in the README.md
+Sitegeist:
+  Monocle:
+    ui:
+      structure:
+        presentation:
+          position: 20
+          match: Presentation\.
+          label: Presentation
+          icon: certificate
+          color: '#D1E751'
+        layout:
+          position: 10
+          match: Layout\.
+          label: Layout
+          icon: file
+          color: '#FFFFFF'
+      viewportPresets:
+        xs:
+          label: xs
+          width: 400
+          height: 600
+        sm:
+          label: sm
+          width: 640
+          height: 800
+        md:
+          label: md
+          width: 768
+          height: 400
+        lg:
+          label: lg
+          width: 1024
+          height: 800
+        xl:
+          label: xl
+          width: 1280
+          height: 1024
+        xxl:
+          label: xxl
+          width: 1520
+          height: 1280
+        xxxl:
+          label: xxxl
+          width: 1740
+          height: 1520

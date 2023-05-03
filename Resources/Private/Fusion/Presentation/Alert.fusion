@@ -1,0 +1,16 @@
+prototype(Neos.Demo:Presentation.Alert) < prototype(Neos.Fusion:Component) {
+    // This is used for the living styleguide (Monocle)
+    // Read more about this in the README.md
+    @styleguide.props.content = 'This is an alert!'
+
+    content = null
+    class = null
+
+    @if.hasContent = ${this.content}
+
+    renderer = afx`
+        <p class={[props.class, "flex items-center justify-center p-8 bg-orange-400 text-white text-xl"]}>
+            {props.content}
+        </p>
+    `
+}

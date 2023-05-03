@@ -1,0 +1,35 @@
+Neos:
+  Neos:
+    sites:
+      '*':
+        contentDimensions:
+          # the defaultDimensionSpacePoint is used when resolving the "/" URL.
+          defaultDimensionSpacePoint:
+            language: en_US
+          resolver:
+            factoryClassName: Neos\Neos\FrontendRouting\DimensionResolution\Resolver\UriPathResolverFactory
+            options:
+              segments:
+                - dimensionIdentifier: language
+                  dimensionValueMapping:
+                    # dimension value -> URL path segment
+                    en_US: en
+                    en_UK: uk
+                    de: de
+
+  ContentRepositoryRegistry:
+    contentRepositories:
+      default:
+        contentDimensions:
+          language:
+            label: 'Neos.Demo:Main:contentDimensions.language'
+            icon: language
+            values:
+              'en_US':
+                label: English (US)
+                specializations:
+                  'en_UK':
+                    label: English (UK)
+
+              'de':
+                label: Deutsch

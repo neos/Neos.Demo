@@ -1,0 +1,39 @@
+##
+# The footer section is a globally cached fragment that is used on every page.
+# To make global caching possible the renderer is separated and instance on the root level.
+# The component just renders this globally defined instance.
+# This is necessary as the fusion path is part of the cache identifier and would include
+# the current document if it's included directly without the global instance.
+#
+prototype(Neos.Demo:Integration.Footer) < prototype(Neos.Fusion:Renderer) {
+    renderPath = '/footer'
+}
+
+prototype(Neos.Demo:Integration.Footer.Renderer) < prototype(Neos.Demo:Presentation.Footer) {
+    menuItems = Neos.Fusion:Map {
+        items = ${q(site).property('metaNavigationItems')}
+        itemRenderer = Neos.Fusion:DataStructure {
+            label = ${item.label}
+            uri = Neos.Neos:NodeUri {
+                node = ${item}
+            }
+        }
+    }
+    content = Neos.Neos:ContentCollection {
+        nodePath = ${q(site).children('footer').property('_path')}
+        attributes.class = 'content'
+    }
+
+    @cache {
+        mode = 'cached'
+        entryIdentifier {
+            static = 'footer'
+            site = ${Neos.Caching.entryIdentifierForNode(site)}
+        }
+        entryTags {
+            1 = ${Neos.Caching.nodeTypeTag('Neos.Neos:Document', site)}
+        }
+    }
+}
+
+footer = Neos.Demo:Integration.Footer.Renderer

@@ -5,6 +5,15 @@
 			<trans-unit id="ui.label" xml:space="preserve">
 				<source>Homepage</source>
 			</trans-unit>
+			<trans-unit id="groups.site" xml:space="preserve">
+				<source>Site configuration</source>
+			</trans-unit>
+            <trans-unit id="tabs.site" xml:space="preserve">
+				<source>Site configuration</source>
+			</trans-unit>
+			<trans-unit id="properties.metaNavigationItems" xml:space="preserve">
+				<source>Meta navigation items</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
