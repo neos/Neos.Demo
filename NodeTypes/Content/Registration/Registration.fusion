@@ -26,9 +26,7 @@ prototype(Neos.Demo:Content.Registration) < prototype(Neos.Neos:ContentComponent
             `
 
             schema {
-                username = ${Form.
-
-            Schema.string().isRequired().validator('Neos\Demo\Form\Runtime\Validation\Validator\UsernameInUseValidator')}
+                username = ${Form.Schema.string().isRequired().validator('Neos\Demo\Form\Runtime\Validation\Validator\UsernameInUseValidator')}
                 password = ${Form.Schema.string().isRequired()}
             }
         }
