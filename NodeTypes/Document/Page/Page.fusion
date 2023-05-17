@@ -5,7 +5,7 @@ prototype(Neos.Demo:Document.Page) < prototype(Neos.Fusion:Component) {
 
     header = Neos.Demo:Integration.Header
     breadcrumb = Neos.Demo:Integration.Breadcrumb
-    content = Neos.Neos:PrimaryContent {
+    content = Neos.Neos:ContentCollection {
         nodePath = 'main'
         @process.convertUris = Neos.Neos:ConvertUris
     }

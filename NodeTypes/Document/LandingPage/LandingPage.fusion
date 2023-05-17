@@ -15,7 +15,7 @@ prototype(Neos.Demo:Document.LandingPage) < prototype(Neos.Fusion:Component) {
     }
 
     header = Neos.Demo:Integration.Header
-    content = Neos.Neos:PrimaryContent {
+    content = Neos.Neos:ContentCollection {
         nodePath = 'main'
         @process.convertUris = Neos.Neos:ConvertUris
     }
