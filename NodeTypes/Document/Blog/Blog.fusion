@@ -53,7 +53,7 @@ prototype(Neos.Demo:Document.Blog) < prototype(Neos.Demo:Document.LandingPage) {
             }
         }
 
-        main = Neos.Neos:PrimaryContent {
+        main = Neos.Neos:ContentCollection {
             nodePath = 'main'
             @process.convertUris = Neos.Neos:ConvertUris
         }
