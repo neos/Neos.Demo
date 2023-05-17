@@ -50,7 +50,7 @@ prototype(Neos.Demo:Document.BlogPosting) < prototype(Neos.Demo:Document.Page) {
         }
         intro.@process.contentElementWrapping = Neos.Neos:ContentElementWrapping
 
-        main = Neos.Neos:PrimaryContent {
+        main = Neos.Neos:ContentCollection {
             nodePath = 'main'
             @process.convertUris = Neos.Neos:ConvertUris
         }
