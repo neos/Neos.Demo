@@ -4,6 +4,19 @@ This is the default site package installed with the Neos base distribution. With
 a look into how easy content can be generated and changed.
 It also shows the basic concepts of how to build a site package with custom node types and plugins.
 
+## Use exported Neos.Demo content for setting up a new Neos 9 test project
+
+Please follow these steps after `composer install`:
+
+1) `./flow doctrine:migrate`
+2) `./flow user:create --roles="Neos.Neos:Administrator" <username> <password> <first name> <last name>`
+3) `./flow cr:setup`
+4) `./flow site:create neosdemo Neos.Demo Neos.Demo:Document.Homepage`
+5) `./flow cr:prune`
+6) `./flow cr:import ./Packages/Sites/Neos.Demo/Resources/Private/Content/`
+
+*Hint:* This will probably change in the future as we still have to work on the setup process. 
+
 ## About the frontend build stack
 
 We included a frontend build stack based on [Node.js], [NVM], [esbuild], [PostCSS] and [Yarn].
