@@ -1,0 +1,82 @@
+prototype(Neos.Demo:Presentation.Favicons) < prototype(Neos.Fusion:Component) {
+
+    faviconPaths = Neos.Fusion:DataStructure {
+
+        apple = Neos.Fusion:ResourceUri {
+            path = 'resource://Neos.Demo/Public/Assets/Favicons/apple-touch-icon.png'
+            package = 'Neos.Demo'
+        }
+
+        favicon16 = Neos.Fusion:ResourceUri {
+            path = 'resource://Neos.Demo/Public/Assets/Favicons/favicon-16x16.png'
+            package = 'Neos.Demo'
+        }
+
+        favicon32 = Neos.Fusion:ResourceUri {
+            path = 'resource://Neos.Demo/Public/Assets/Favicons/favicon-32x32.png'
+            package = 'Neos.Demo'
+        }
+
+        mstile70 = Neos.Fusion:ResourceUri {
+            path = 'resource://Neos.Demo/Public/Assets/Favicons/mstile-70x70.png'
+            package = 'Neos.Demo'
+        }
+
+        mstile144 = Neos.Fusion:ResourceUri {
+            path = 'resource://Neos.Demo/Public/Assets/Favicons/mstile-144x144.png'
+            package = 'Neos.Demo'
+        }
+
+        mstile150 = Neos.Fusion:ResourceUri {
+            path = 'resource://Neos.Demo/Public/Assets/Favicons/mstile-150x150.png'
+            package = 'Neos.Demo'
+        }
+
+        mstile310 = Neos.Fusion:ResourceUri {
+            path = 'resource://Neos.Demo/Public/Assets/Favicons/mstile-310x310.png'
+            package = 'Neos.Demo'
+        }
+
+        mstile310x150 = Neos.Fusion:ResourceUri {
+            path = 'resource://Neos.Demo/Public/Assets/Favicons/mstile-310x150.png'
+            package = 'Neos.Demo'
+        }
+
+        android192 = Neos.Fusion:ResourceUri {
+            path = 'resource://Neos.Demo/Public/Assets/Favicons/android-chrome-192x192.png'
+            package = 'Neos.Demo'
+        }
+
+        android512 = Neos.Fusion:ResourceUri {
+            path = 'resource://Neos.Demo/Public/Assets/Favicons/android-chrome-512x512.png'
+            package = 'Neos.Demo'
+        }
+
+        manifestFile = Neos.Fusion:ResourceUri {
+            path = 'resource://Neos.Demo/Public/Assets/Favicons/site.webmanifest'
+            package = 'Neos.Demo'
+        }
+
+        safariPinnedTab = Neos.Fusion:ResourceUri {
+            path = 'resource://Neos.Demo/Public/Assets/Favicons/safari-pinned-tab.svg'
+            package = 'Neos.Demo'
+        }
+    }
+
+    renderer = afx`
+        <link rel="apple-touch-icon" sizes="180x180" href={props.faviconPaths.apple} />
+        <link rel="icon" type="image/png" sizes="16x16" href={props.faviconPaths.favicon16} />
+        <link rel="icon" type="image/png" sizes="32x32" href={props.faviconPaths.favicon32} />
+        <link rel="icon" type="image/png" sizes="32x32" href={props.faviconPaths.mstile70} />
+        <link rel="icon" type="image/png" sizes="32x32" href={props.faviconPaths.mstile144} />
+        <link rel="icon" type="image/png" sizes="32x32" href={props.faviconPaths.mstile150} />
+        <link rel="icon" type="image/png" sizes="32x32" href={props.faviconPaths.mstile310} />
+        <link rel="icon" type="image/png" sizes="32x32" href={props.faviconPaths.mstile310x150} />
+        <link rel="icon" type="image/png" sizes="32x32" href={props.faviconPaths.android192} />
+        <link rel="icon" type="image/png" sizes="32x32" href={props.faviconPaths.android512} />
+        <link rel="manifest" href={props.faviconPaths.manifestFile} />
+        <link rel="mask-icon" href={props.faviconPaths.safariPinnedTab} color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#2d89ef" />
+        <meta name="theme-color" content="#ffffff" />
+    `
+}
