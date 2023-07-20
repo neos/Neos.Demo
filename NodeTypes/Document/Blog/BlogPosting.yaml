@@ -35,7 +35,6 @@
           group: default
     datePublished:
       type: DateTime
-      defaultValue: now
       ui:
         label: i18n
         reloadIfChanged: true
