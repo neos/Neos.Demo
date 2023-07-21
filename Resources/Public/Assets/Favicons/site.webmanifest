@@ -2,12 +2,6 @@
     "name": "Neos",
     "short_name": "Neos",
     "prefer_related_applications": true,
-    "related_applications": [
-      {
-        "platform": "play",
-        "id": "de.sandstorm.neosconference"
-      }
-    ],
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -15,8 +9,18 @@
             "type": "image/png"
         },
         {
-            "src": "/android-chrome-512x512.png",
-            "sizes": "512x512",
+            "src": "/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "/mstile-70x70.png",
+            "sizes": "70x70",
             "type": "image/png"
         }
     ],
