@@ -15,6 +15,8 @@ prototype(Neos.Demo:Presentation.Cards.Card) < prototype(Neos.Fusion:Component) 
     imageUri = null
     title = null
     content = null
+    date = null
+    authorName = null
 
     class = null
 
@@ -25,18 +27,28 @@ prototype(Neos.Demo:Presentation.Cards.Card) < prototype(Neos.Fusion:Component) 
                 <img
                     class="w-full"
                     src={props.imageUri || StaticResource.uri('Neos.Neos', 'Public/Images/dummy-image.svg')}
-                    alt="" />
+                    alt=""
+                />
             </a>
-            <div class="p-8">
+
+            <div class="mt-5 ml-8 italic text-sm">
+                <p>
+                    {props.date}
+                </p>
+            </div>
+            <div class="p-8 pt-3">
                 <h2 class="mb-2 text-xl font-medium leading-tight">
                     {props.title}
                 </h2>
                 <p class="mb-4 text-base">
                     {props.content}
                 </p>
+                <p class="pb-3 italic text-sm">
+                    {I18n.translate('Neos.Demo:Presentation.Cards:cards.authorPublishedBy') + props.authorName}
+                </p>
                 <a href={props.uri}
                     class="inline-block bg-light px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-md hover:bg-light focus:bg-light active:bg-light">
-                    More
+                    {I18n.translate('Neos.Demo:Presentation.Cards:cards.moreButton')}
                 </a>
             </div>
         </div>
