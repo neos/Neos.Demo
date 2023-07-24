@@ -34,9 +34,9 @@ prototype(Neos.Demo:Presentation.Cards.Card) < prototype(Neos.Fusion:Component) 
             </a>
 
             <div class="mt-5 ml-8 italic text-sm">
-                <p>
-                    {props.date}
-                </p>
+                <time datetime={Date.format(props.date, 'Y-m-d')} @if={props.date}>
+                    {Date.formatCldr(props.date, 'd. MMMM y')}
+                </time>
             </div>
             <div class="p-8 pt-3">
                 <h2 class="mb-2 text-xl font-medium leading-tight">
@@ -45,8 +45,8 @@ prototype(Neos.Demo:Presentation.Cards.Card) < prototype(Neos.Fusion:Component) 
                 <p class="mb-4 text-base">
                     {props.content}
                 </p>
-                <p class="pb-3 italic text-sm">
-                    {I18n.translate('Neos.Demo:Presentation.Cards:cards.authorPublishedBy') + props.authorName}
+                <p class="pb-3 italic text-sm" @if={props.authorName}>
+                    {I18n.translate('cards.authorPublishedBy', 'Published by {authorName}', { authorName: props.authorName }, 'Presentation.Cards:cards', 'Neos.Demo')}
                 </p>
                 <a href={props.uri}
                     class="inline-block bg-light px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-md hover:bg-light focus:bg-light active:bg-light">
