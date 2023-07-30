@@ -31,6 +31,8 @@ prototype(Neos.Demo:Document.Blog) < prototype(Neos.Demo:Document.LandingPage) {
                         maximumWidth = 400
                         maximumHeight = 225
                     }
+                    date = ${q(blogPosting).property('datePublished')}
+                    authorName = ${q(blogPosting).property('authorName')}
                     title = ${q(blogPosting).property('title')}
                     content = ${q(blogPosting).property('abstract')}
                     uri = Neos.Neos:NodeUri {

@@ -6,6 +6,8 @@ prototype(Neos.Demo:Presentation.Cards.Card) < prototype(Neos.Fusion:Component) 
             uri = 'https://example.com'
             title = 'Card title'
             content = 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+            date = ''
+            authorName = ''
             imageUri = ''
             class = ''
         }
@@ -15,6 +17,8 @@ prototype(Neos.Demo:Presentation.Cards.Card) < prototype(Neos.Fusion:Component) 
     imageUri = null
     title = null
     content = null
+    date = null
+    authorName = null
 
     class = null
 
@@ -25,18 +29,28 @@ prototype(Neos.Demo:Presentation.Cards.Card) < prototype(Neos.Fusion:Component) 
                 <img
                     class="w-full"
                     src={props.imageUri || StaticResource.uri('Neos.Neos', 'Public/Images/dummy-image.svg')}
-                    alt="" />
+                    alt=""
+                />
             </a>
-            <div class="p-8">
+
+            <div class="mt-5 ml-8 italic text-sm">
+                <time datetime={Date.format(props.date, 'Y-m-d')} @if={props.date}>
+                    {Date.formatCldr(props.date, 'd. MMMM y')}
+                </time>
+            </div>
+            <div class="p-8 pt-3">
                 <h2 class="mb-2 text-xl font-medium leading-tight">
                     {props.title}
                 </h2>
                 <p class="mb-4 text-base">
                     {props.content}
                 </p>
+                <p class="pb-3 italic text-sm" @if={props.authorName}>
+                    {I18n.translate('cards.authorPublishedBy', 'Published by {authorName}', { authorName: props.authorName }, 'Presentation.Cards:cards', 'Neos.Demo')}
+                </p>
                 <a href={props.uri}
                     class="inline-block bg-light px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-md hover:bg-light focus:bg-light active:bg-light">
-                    More
+                    {I18n.translate('Neos.Demo:Presentation.Cards:cards.moreButton')}
                 </a>
             </div>
         </div>
