@@ -13,7 +13,7 @@ Please follow these steps after `composer install`:
 3) `./flow cr:setup`
 4) `./flow site:create neosdemo Neos.Demo Neos.Demo:Document.Homepage`
 5) `./flow cr:prune`
-6) `./flow cr:import ./Packages/Sites/Neos.Demo/Resources/Private/Content/`
+6) `./flow cr:import resource://Neos.Demo/Private/Content`
 
 *Hint:* This will probably change in the future as we still have to work on the setup process. 
 
