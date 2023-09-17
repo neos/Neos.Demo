@@ -12,7 +12,7 @@
     position: 300
     group: special
     help:
-      message: 'A blog posting'
+      message: i18n
   constraints:
     nodeTypes:
       # No documents below here
@@ -35,7 +35,6 @@
           group: default
     datePublished:
       type: DateTime
-      defaultValue: now
       ui:
         label: i18n
         reloadIfChanged: true
