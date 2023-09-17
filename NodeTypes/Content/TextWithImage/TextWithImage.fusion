@@ -17,7 +17,7 @@ prototype(Neos.Demo:Content.TextWithImage) < prototype(Neos.Neos:ContentComponen
         property = 'caption'
     }
 
-    renderDummyImage = ${Neos.Node.inBackend(node)}
+    renderDummyImage = ${renderingMode.isEdit || renderingMode.isPreview}
 
     renderer = afx`<Neos.Demo:Presentation.TextWithImage {...props} />`
 }

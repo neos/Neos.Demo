@@ -6,7 +6,7 @@ prototype(Neos.Demo:Content.CarouselYouTube) < prototype(Neos.Neos:ContentCompon
     alt = ${q(node).property('alternativeText')}
     youtubeId = ${q(node).property('video')}
 
-    renderDummyImage = ${Neos.Node.inBackend(node)}
+    renderDummyImage = ${renderingMode.isEdit || renderingMode.isPreview}
 
     renderer = afx`<Neos.Demo:Presentation.Image {...props} />`
 }
