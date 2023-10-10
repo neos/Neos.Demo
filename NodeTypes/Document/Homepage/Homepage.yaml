@@ -7,6 +7,7 @@
   superTypes:
     'Neos.Demo:Document.LandingPage': true
     'Neos.Demo:Constraint.Document.SubPage': false
+    'Neos.Neos:Site': true
   ui:
     label: i18n
     icon: 'globe'
