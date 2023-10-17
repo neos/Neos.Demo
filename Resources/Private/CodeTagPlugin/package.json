@@ -3,14 +3,11 @@
   "license": "GNU GPLv3",
   "private": true,
   "scripts": {
-    "build": "neos-react-scripts build --production",
-    "watch": "neos-react-scripts watch"
+    "build": "node build.js"
   },
   "devDependencies": {
-    "@neos-project/neos-ui-extensibility": "^8.2.0"
-  },
-  "neos": {
-    "buildTargetDirectory": "../../Public/Scripts/CodeTagPlugin"
+    "@neos-project/neos-ui-extensibility": "~8.3.0",
+    "esbuild": "^0.19.0"
   },
   "dependencies": {
     "@ckeditor/ckeditor5-basic-styles": "10.1.0"
