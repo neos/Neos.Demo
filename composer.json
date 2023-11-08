@@ -8,11 +8,11 @@
     "require": {
         "neos/neos": "^9.0 || dev-master",
         "neos/fusion-form": "^2.0 || dev-master",
-        "neos/nodetypes-basemixins": "*",
-        "neos/nodetypes-assetlist": "*",
-        "neos/nodetypes-contentreferences": "*",
-        "neos/nodetypes-html": "*",
-        "neos/nodetypes-navigation": "*"
+        "neos/nodetypes-basemixins": "~9.0.0",
+        "neos/nodetypes-assetlist": "~9.0.0",
+        "neos/nodetypes-contentreferences": "~9.0.0",
+        "neos/nodetypes-html": "~9.0.0",
+        "neos/nodetypes-navigation": "~9.0.0"
     },
     "suggest": {
         "sitegeist/monocle": "An living-styleguide for Neos that is based on the actual fusion-code",
