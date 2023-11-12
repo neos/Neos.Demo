@@ -4,8 +4,8 @@
 'Neos.Demo:Collection.Content.Main':
   superTypes:
     Neos.Neos:ContentCollection: true
-  # TODO Add translation for label
-  label: 'Main content area'
+  ui:
+    label: i18n
   constraints:
     nodeTypes:
       '*': false
