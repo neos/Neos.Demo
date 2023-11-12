@@ -10,4 +10,4 @@
     nodeTypes:
       '*': false
       'Neos.Demo:Constraint.Content.Main': true
-      'Neos.Demo:Content.CarouselYouTube': false
+      'Neos.Demo:Constraint.Content.Carousel': false
