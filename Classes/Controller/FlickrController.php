@@ -36,7 +36,7 @@ class FlickrController extends ActionController
      */
     public function tagStreamAction()
     {
-        $tags = $this->request->getInternalArgument('__tags') ?: 'default-tag'; // todo how to pass `__tags` from node?
+        $tags = $this->request->getInternalArgument('__tags');
         if ($tags === null || $tags === '') {
             return '<p>Please specify Flickr tag(s)</p>';
         }
