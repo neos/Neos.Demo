@@ -11,9 +11,10 @@ Please follow these steps after `composer install`:
 1) `./flow doctrine:migrate`
 2) `./flow user:create --roles="Neos.Neos:Administrator" <username> <password> <first name> <last name>`
 3) `./flow cr:setup`
-4) `./flow site:create neosdemo Neos.Demo Neos.Demo:Document.Homepage`
-5) `./flow cr:prune`
-6) `./flow cr:import resource://Neos.Demo/Private/Content`
+4) `./flow cr:import resource://Neos.Demo/Private/Content`
+TODO adjust after solving https://github.com/neos/neos-development-collection/issues/4918
+Connect to a Neos site 
+5) `./flow site:create neosdemo Neos.Demo Neos.Demo:Document.Homepage`
 
 *Hint:* This will probably change in the future as we still have to work on the setup process. 
 
