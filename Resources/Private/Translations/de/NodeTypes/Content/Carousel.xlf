@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2"
+    xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="Neos.Demo" source-language="en" target-language="de" datatype="plaintext">
+        <body>
+            <trans-unit id="ui.label" xml:space="preserve">
+                <source>Carousel</source>
+            </trans-unit>
+            <group id="contentcollection.label" restype="x-gettext-plurals">
+                <trans-unit id="contentcollection.label[0]" xml:space="preserve">
+                    <source>Carousel with {0} slide</source>
+                </trans-unit>
+                <trans-unit id="contentcollection.label[1]" xml:space="preserve">
+                    <source>Carousel with {0} slides</source>
+                </trans-unit>
+            </group>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2"
+       xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="Neos.Demo" source-language="en" target-language="de" datatype="plaintext">
+        <body>
+            <trans-unit id="cards.authorPublishedBy" xml:space="preserve">
+                <source>Published by {authorName}</source>
+            </trans-unit>
+            <trans-unit id="cards.moreButton" xml:space="preserve">
+                <source>More</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
