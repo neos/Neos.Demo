@@ -4,7 +4,8 @@
 'Neos.Demo:Collection.Content.Teaser':
   superTypes:
     Neos.Neos:ContentCollection: true
-  label: 'Teaser area'
+  ui:
+    label: i18n
   constraints:
     nodeTypes:
       '*': false
