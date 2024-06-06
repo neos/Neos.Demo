@@ -2,6 +2,78 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file original="" product-name="Neos.Demo" source-language="en" target-language="de" datatype="plaintext">
     <body>
-            </body>
+      <trans-unit id="editPreviewModes.tabletLandscape" xml:space="preserve">
+        <source>Tablet (Landscape)</source>
+        <target state="translated">Tablet (Querformat)</target>
+      </trans-unit>
+      <trans-unit id="splide.play" xml:space="preserve">
+        <source>Start autoplay</source>
+        <target state="translated">Automatisches Abspielen starten</target>
+      </trans-unit>
+      <trans-unit id="editPreviewModes.tabletPortrait" xml:space="preserve">
+        <source>Tablet (Portrait)</source>
+        <target state="translated">Tablet (Hochformat)</target>
+      </trans-unit>
+      <trans-unit id="editPreviewModes.mobile" xml:space="preserve">
+        <source>Mobile</source>
+        <target state="translated">Mobilgerät</target>
+      </trans-unit>
+      <trans-unit id="contentDimensions.language" xml:space="preserve">
+        <source>Language</source>
+        <target state="translated">Sprache</target>
+      </trans-unit>
+      <trans-unit id="navigation.open" xml:space="preserve">
+        <source>Open menu</source>
+        <target state="translated">Menü öffnen</target>
+      </trans-unit>
+      <trans-unit id="navigation.close" xml:space="preserve">
+        <source>Close menu</source>
+        <target state="translated">Menü schließen</target>
+      </trans-unit>
+      <trans-unit id="nodeTypes.groups.forms" xml:space="preserve">
+        <source>Forms</source>
+        <target state="translated">Formulare</target>
+      </trans-unit>
+      <trans-unit id="splide.prev" xml:space="preserve">
+        <source>Previous slide</source>
+        <target state="translated">Vorherige Folie</target>
+      </trans-unit>
+      <trans-unit id="splide.next" xml:space="preserve">
+        <source>Next slide</source>
+        <target state="translated">Nächste Folie</target>
+      </trans-unit>
+      <trans-unit id="splide.first" xml:space="preserve">
+        <source>Go to first slide</source>
+        <target state="translated">Zur ersten Folie</target>
+      </trans-unit>
+      <trans-unit id="splide.last" xml:space="preserve">
+        <source>Go to last slide</source>
+        <target state="translated">Zur letzten Folie</target>
+      </trans-unit>
+      <trans-unit id="splide.slideX" xml:space="preserve">
+        <source>Go to slide %s</source>
+        <target state="translated">Zu Folie %s</target>
+      </trans-unit>
+      <trans-unit id="splide.pageX" xml:space="preserve">
+        <source>Go to page %s</source>
+        <target state="translated">Zu Seite %s</target>
+      </trans-unit>
+      <trans-unit id="splide.pause" xml:space="preserve">
+        <source>Pause autoplay</source>
+        <target state="translated">Automatisches Abspielen pausieren</target>
+      </trans-unit>
+      <trans-unit id="splide.select" xml:space="preserve">
+        <source>Select a slide to show</source>
+        <target state="translated">Wählen sie eine anzuzeigende Folie</target>
+      </trans-unit>
+      <trans-unit id="splide.slideLabel" xml:space="preserve">
+        <source>%s of %s</source>
+        <target state="translated">%s von %s</target>
+      </trans-unit>
+      <trans-unit id="splide.playVideo" xml:space="preserve">
+        <source>Play Video</source>
+        <target state="translated">Video abspielen</target>
+      </trans-unit>
+    </body>
   </file>
 </xliff>

@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff version="1.2"
-    xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file original="" product-name="Neos.Demo" source-language="en" target-language="de" datatype="plaintext">
-        <body>
-            <trans-unit id="ui.label" xml:space="preserve">
-                <source>Blog Post</source>
-            </trans-unit>
-            <trans-unit id="properties.image" xml:space="preserve">
-                <source>Image</source>
-            </trans-unit>
-            <trans-unit id="properties.datePublished" xml:space="preserve">
-                <source>Publishing date</source>
-            </trans-unit>
-            <trans-unit id="properties.authorName" xml:space="preserve">
-                <source>Author name</source>
-            </trans-unit>
-            <trans-unit id="ui.help.message" xml:space="preserve">
-                <source>Create a new blog post and share your thoughts with the world.</source>
-            </trans-unit>
-        </body>
-    </file>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="" product-name="Neos.Demo" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="properties.image" xml:space="preserve">
+        <source>Image</source>
+        <target state="needs-translation">Bild</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>

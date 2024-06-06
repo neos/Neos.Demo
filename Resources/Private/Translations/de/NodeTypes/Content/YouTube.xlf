@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff version="1.2"
-    xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file original="" product-name="Neos.Demo" source-language="en" target-language="de" datatype="plaintext">
-        <body>
-            <trans-unit id="groups.video" xml:space="preserve">
-                <source>Video</source>
-            </trans-unit>
-            <trans-unit id="properties.video" xml:space="preserve">
-                <source>Youtube video ID</source>
-            </trans-unit>
-            <trans-unit id="error.no.videoid" xml:space="preserve">
-                <source>Please specify a video ID</source>
-            </trans-unit>
-        </body>
-    </file>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="" product-name="Neos.Demo" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="groups.video" xml:space="preserve">
+        <source>Video</source>
+        <target state="needs-translation">Video</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
