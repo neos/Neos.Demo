@@ -33,9 +33,6 @@
             <trans-unit id="splide.next" xml:space="preserve">
                 <source>Next slide</source>
             </trans-unit>
-            <trans-unit id="splide.prev" xml:space="preserve">
-                <source>Previous slide</source>
-            </trans-unit>
             <trans-unit id="splide.first" xml:space="preserve">
                 <source>Go to first slide</source>
             </trans-unit>
