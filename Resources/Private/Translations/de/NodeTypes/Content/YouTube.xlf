@@ -4,7 +4,15 @@
     <body>
       <trans-unit id="groups.video" xml:space="preserve">
         <source>Video</source>
-        <target state="needs-translation">Video</target>
+        <target state="translated">Video</target>
+      </trans-unit>
+      <trans-unit id="properties.video" xml:space="preserve">
+        <source>Youtube video ID</source>
+        <target state="translated">YouTube-Video-ID</target>
+      </trans-unit>
+      <trans-unit id="error.no.videoid" xml:space="preserve">
+        <source>Please specify a video ID</source>
+        <target state="translated">Bitte geben Sie eine Video-ID an</target>
       </trans-unit>
     </body>
   </file>

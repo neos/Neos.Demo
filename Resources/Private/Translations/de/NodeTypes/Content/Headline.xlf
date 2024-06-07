@@ -4,11 +4,15 @@
     <body>
       <trans-unit id="ui.label" xml:space="preserve">
         <source>Headline</source>
-        <target state="needs-translation">Überschrift</target>
+        <target state="translated">Überschrift</target>
       </trans-unit>
       <trans-unit id="properties.tagName" xml:space="preserve">
         <source>Type</source>
-        <target state="needs-translation">Typ</target>
+        <target state="translated">Typ</target>
+      </trans-unit>
+      <trans-unit id="properties.tagStyle" xml:space="preserve">
+        <source>Style</source>
+        <target state="translated">Stil</target>
       </trans-unit>
     </body>
   </file>
