@@ -12,7 +12,8 @@
         "neos/nodetypes-assetlist": "~9.0.0",
         "neos/nodetypes-contentreferences": "~9.0.0",
         "neos/nodetypes-html": "~9.0.0",
-        "neos/nodetypes-navigation": "~9.0.0"
+        "neos/nodetypes-navigation": "~9.0.0",
+        "neos/seo": "~4.1"
     },
     "suggest": {
         "sitegeist/monocle": "An living-styleguide for Neos that is based on the actual fusion-code",

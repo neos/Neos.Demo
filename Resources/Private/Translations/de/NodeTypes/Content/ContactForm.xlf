@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="" product-name="Neos.Demo" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="ui.label" xml:space="preserve">
+        <source>Contact Form</source>
+        <target state="translated">Kontaktformular</target>
+      </trans-unit>
+      <trans-unit id="groups.message" xml:space="preserve">
+        <source>Message</source>
+        <target state="translated">Nachricht</target>
+      </trans-unit>
+      <trans-unit id="groups.email" xml:space="preserve">
+        <source>Email</source>
+        <target state="translated">E-Mail</target>
+      </trans-unit>
+      <trans-unit id="groups.redirect" xml:space="preserve">
+        <source>Redirect</source>
+        <target state="translated">Weiterleitung</target>
+      </trans-unit>
+      <trans-unit id="properties.message" xml:space="preserve">
+        <source>Message after submit</source>
+        <target state="translated">Nachricht nach dem Senden</target>
+      </trans-unit>
+      <trans-unit id="properties.redirect" xml:space="preserve">
+        <source>Redirect after submit</source>
+        <target state="translated">Weiterleitung nach dem Senden</target>
+      </trans-unit>
+      <trans-unit id="properties.recipientName" xml:space="preserve">
+        <source>Recipient name</source>
+        <target state="translated">Name des Empfängers</target>
+      </trans-unit>
+      <trans-unit id="properties.recipientAddress" xml:space="preserve">
+        <source>Recipient email address</source>
+        <target state="translated">E-Mail-Adresse des Empfängers</target>
+      </trans-unit>
+      <trans-unit id="properties.senderName" xml:space="preserve">
+        <source>Sender name</source>
+        <target state="translated">Name des Senders</target>
+      </trans-unit>
+      <trans-unit id="properties.senderAddress" xml:space="preserve">
+        <source>Sender email address</source>
+        <target state="translated">E-Mail-Adresse des Senders</target>
+      </trans-unit>
+      <trans-unit id="properties.subject" xml:space="preserve">
+        <source>Subject</source>
+        <target state="translated">Betreff</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

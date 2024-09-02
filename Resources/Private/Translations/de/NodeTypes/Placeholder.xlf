@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="" product-name="Neos.Demo" source-language="en" target-language="de" datatype="plaintext">
+    <body>
+      <trans-unit id="headline" xml:space="preserve">
+        <source>Enter headline here</source>
+        <target state="translated">Überschrift hier eingeben</target>
+      </trans-unit>
+      <trans-unit id="subheadline" xml:space="preserve">
+        <source>Enter subtitle here</source>
+        <target state="translated">Untertitel hier eingeben</target>
+      </trans-unit>
+      <trans-unit id="pure" xml:space="preserve">
+        <source>Enter text here</source>
+        <target state="translated">Text hier eingeben</target>
+      </trans-unit>
+      <trans-unit id="label" xml:space="preserve">
+        <source>Enter label here</source>
+        <target state="translated">Bezeichnung hier eingeben</target>
+      </trans-unit>
+      <trans-unit id="lead" xml:space="preserve">
+        <source>Enter introduction text here</source>
+        <target state="translated">Einleitungstext hier eingeben</target>
+      </trans-unit>
+      <trans-unit id="link" xml:space="preserve">
+        <source>Enter text here</source>
+        <target state="translated">Text hier eingeben</target>
+      </trans-unit>
+      <trans-unit id="text" xml:space="preserve">
+        <source>Enter text here</source>
+        <target state="translated">Text hier eingeben</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
