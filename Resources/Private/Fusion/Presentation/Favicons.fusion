@@ -1,0 +1,13 @@
+prototype(Neos.Demo:Presentation.Favicons) < prototype(Neos.Fusion:Component) {
+
+    renderer = afx`
+        <link rel="apple-touch-icon" sizes="180x180" href={StaticResource.uri('Neos.Demo', 'Public/Assets/Favicons/apple-touch-icon.png')} />
+        <link rel="icon" type="image/png" sizes="16x16" href={StaticResource.uri('Neos.Demo', 'Public/Assets/Favicons/favicon-16x16.png')} />
+        <link rel="icon" type="image/png" sizes="70x70" href={StaticResource.uri('Neos.Demo', 'Public/Assets/Favicons/mstile-70x70.png')} />
+        <link rel="icon" type="image/png" sizes="192x192" href={StaticResource.uri('Neos.Demo', 'Public/Assets/Favicons/android-chrome-192x192.png')} />
+        <link rel="manifest" href={StaticResource.uri('Neos.Demo', 'Public/Assets/Favicons/site.webmanifest')} />
+        <link rel="mask-icon" href={StaticResource.uri('Neos.Demo', 'Public/Assets/Favicons/safari-pinned-tab.svg')} color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#2d89ef" />
+        <meta name="theme-color" content="#ffffff" />
+    `
+}
