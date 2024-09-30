@@ -24,7 +24,6 @@ use Neos\Party\Domain\Repository\PartyRepository;
 use Neos\Party\Domain\Service\PartyService;
 use Neos\Neos\Domain\Model\User;
 use Neos\Party\Domain\Model\PersonName;
-use Neos\Neos\Utility\User as UserUtility;
 use Neos\Fusion\Form\Runtime\Action\AbstractAction;
 
 class CreateUserAction extends AbstractAction
@@ -62,8 +61,6 @@ class CreateUserAction extends AbstractAction
 
         $user = new User();
         $user->setName(new PersonName('', $firstName, '', $lastName));
-        $userWorkspaceName = UserUtility::getPersonalWorkspaceNameForUsername($accountIdentifier);
-        $user->getPreferences()->set('context.workspace', $userWorkspaceName);
         $this->partyRepository->add($user);
 
         $account = $this->accountFactory->createAccountWithPassword($accountIdentifier, $password, $this->options['roles'], 'Neos.Neos:Backend');
