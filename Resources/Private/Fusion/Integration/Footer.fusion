@@ -20,7 +20,7 @@ prototype(Neos.Demo:Integration.Footer.Renderer) < prototype(Neos.Demo:Presentat
         }
     }
     content = Neos.Neos:ContentCollection {
-        nodePath = ${q(site).children('footer').property('_path')}
+        @context.node = ${q(site).children('footer').get(0)}
         attributes.class = 'content'
     }
 
