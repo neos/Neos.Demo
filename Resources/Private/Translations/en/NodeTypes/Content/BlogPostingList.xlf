@@ -9,7 +9,7 @@
             <trans-unit id="groups.blog" xml:space="preserve">
                 <source>Blog</source>
             </trans-unit>
-            <trans-unit id="properties.blogs" xml:space="preserve">
+            <trans-unit id="references.blogs" xml:space="preserve">
                 <source>Blogs</source>
             </trans-unit>
             <trans-unit id="properties.limit" xml:space="preserve">

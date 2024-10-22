@@ -22,9 +22,8 @@
           label: i18n
           icon: 'newspaper'
           position: 50
-  properties:
+  references:
     blogs:
-      type: references
       ui:
         label: i18n
         showInCreationDialog: true
@@ -33,6 +32,7 @@
           group: 'blog'
           editorOptions:
             nodeTypes: ['Neos.Demo:Document.Blog']
+  properties:
     limit:
       type: integer
       defaultValue: 5

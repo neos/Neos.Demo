@@ -17,7 +17,7 @@
             <trans-unit id="properties.message" xml:space="preserve">
 				<source>Message after submit</source>
 			</trans-unit>
-            <trans-unit id="properties.redirect" xml:space="preserve">
+            <trans-unit id="references.redirect" xml:space="preserve">
 				<source>Redirect after submit</source>
 			</trans-unit>
             <trans-unit id="properties.recipientName" xml:space="preserve">

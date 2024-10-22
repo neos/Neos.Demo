@@ -30,9 +30,8 @@
     'footer':
       position: 'end'
       type: 'Neos.Demo:Collection.Content.Footer'
-  properties:
+  references:
     metaNavigationItems:
-      type: references
       ui:
         label: i18n
         inspector:

@@ -22,7 +22,7 @@
         <source>Message after submit</source>
         <target state="translated">Nachricht nach dem Senden</target>
       </trans-unit>
-      <trans-unit id="properties.redirect" xml:space="preserve">
+      <trans-unit id="references.redirect" xml:space="preserve">
         <source>Redirect after submit</source>
         <target state="translated">Weiterleitung nach dem Senden</target>
       </trans-unit>

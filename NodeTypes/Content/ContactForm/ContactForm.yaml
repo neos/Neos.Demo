@@ -24,6 +24,16 @@
           label: i18n
           icon: comment
           tab: default
+  references:
+    redirect:
+      constraints:
+        maxItems: 1
+      ui:
+        label: i18n
+        inspector:
+          group: redirect
+          editorOptions:
+            nodeTyps: [ 'Neos.Neos:Document' ]
   properties:
     subject:
       type: string
@@ -60,15 +70,6 @@
         label: i18n
         inspector:
           group: email
-    redirect:
-      type: reference
-      defaultValue: null
-      ui:
-        label: i18n
-        inspector:
-          group: redirect
-          editorOptions:
-            nodeTyps: ['Neos.Neos:Document']
     message:
       type: string
       defaultValue: ''

@@ -2,7 +2,7 @@
   superTypes:
     'Neos.Demo:Constraint.Content.Main': true
     'Neos.Demo:Constraint.Content.Column': true
-  properties:
+  references:
     references:
       ui:
         showInCreationDialog: true
