@@ -3,7 +3,7 @@
 #
 prototype(Neos.Demo:Content.ContactForm) < prototype(Neos.Neos:ContentComponent) {
     attributes {
-        id = ${'form-' + q(node).id()}
+        id = ${'form-' + q(node).nodeAggregateId}
         action = ${'#' + this.id}
     }
 

@@ -6,7 +6,7 @@ prototype(Neos.Demo:Content.Registration) < prototype(Neos.Neos:ContentComponent
     renderer = Neos.Fusion.Form:Runtime.RuntimeForm {
         namespace = "neos-demo-registration"
         attributes {
-            id = ${'form-' + q(node).id()}
+            id = ${'form-' + node.aggregateId}
             action = ${'#' + this.id}
         }
 
