@@ -13,7 +13,7 @@ prototype(Neos.Demo:Integration.Footer.Renderer) < prototype(Neos.Demo:Presentat
     menuItems = Neos.Fusion:Map {
         items = ${q(site).property('metaNavigationItems')}
         itemRenderer = Neos.Fusion:DataStructure {
-            label = ${item.label}
+            label = ${item.properties.title}
             uri = Neos.Neos:NodeUri {
                 node = ${item}
             }

@@ -24,7 +24,7 @@ prototype(Neos.Demo:Presentation.Breadcrumb) < prototype(Neos.Fusion:Component) 
                     <li class="flex items-center">
                         <span @if={!iterator.isFirst} aria-hidden="true" class="block py-1 px-2 text-slate-400">›</span>
                         <a href={item.uri} class="block py-2 text-slate-500 hocus:text-light hocus:underline">
-                            {item.label}
+                            {item.properties.title}
                         </a>
                     </li>
                 </Neos.Fusion:Loop>
