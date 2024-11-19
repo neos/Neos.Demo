@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Neos Demo",
+        "nodeName": "neosdemo",
+        "siteResourcesPackageKey": "Neos.Demo",
+        "online": true,
+        "domains": []
+    }
+]
