@@ -4,6 +4,8 @@
 'Neos.Demo:Content.CarouselYouTube':
   superTypes:
     'Neos.Demo:Content.YouTube': true
+    # prevent the item from being in the main cc: https://github.com/neos/Neos.Demo/issues/180
+    'Neos.Demo:Constraint.Content.Main': false
     'Neos.Demo:Constraint.Content.Carousel': true
     'Neos.NodeTypes.BaseMixins:ImageMixin': true
   ui:
