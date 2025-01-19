@@ -4,66 +4,87 @@
     <body>
       <trans-unit id="editPreviewModes.tabletLandscape" xml:space="preserve">
         <source>Tablet (Landscape)</source>
+        <target state="translated">டேப்லெட் (நிலப்பரப்பு)</target>
       </trans-unit>
       <trans-unit id="editPreviewModes.tabletPortrait" xml:space="preserve">
         <source>Tablet (Portrait)</source>
+        <target state="translated">டேப்லெட் (உருவப்படம்)</target>
       </trans-unit>
       <trans-unit id="editPreviewModes.mobile" xml:space="preserve">
         <source>Mobile</source>
+        <target state="translated">மொபைல்</target>
       </trans-unit>
       <trans-unit id="contentDimensions.language" xml:space="preserve">
         <source>Language</source>
+        <target state="translated">மொழி</target>
       </trans-unit>
       <trans-unit id="navigation.open" xml:space="preserve">
         <source>Open menu</source>
+        <target state="translated">திறந்த பட்டியல்</target>
       </trans-unit>
       <trans-unit id="navigation.close" xml:space="preserve">
         <source>Close menu</source>
+        <target state="translated">பட்டியல் மூடு</target>
       </trans-unit>
       <trans-unit id="nodeTypes.groups.forms" xml:space="preserve">
         <source>Forms</source>
+        <target state="translated">படிவங்கள்</target>
       </trans-unit>
       <trans-unit id="nodeTypes.groups.special" xml:space="preserve">
         <source>Special</source>
+        <target state="translated">சிறப்பு</target>
       </trans-unit>
       <trans-unit id="splide.prev" xml:space="preserve">
         <source>Previous slide</source>
+        <target state="translated">முந்தைய ச்லைடு</target>
       </trans-unit>
       <trans-unit id="splide.next" xml:space="preserve">
         <source>Next slide</source>
+        <target state="translated">அடுத்த ச்லைடு</target>
       </trans-unit>
       <trans-unit id="splide.first" xml:space="preserve">
         <source>Go to first slide</source>
+        <target state="translated">முதல் ச்லைடுக்குச் செல்லுங்கள்</target>
       </trans-unit>
       <trans-unit id="splide.last" xml:space="preserve">
         <source>Go to last slide</source>
+        <target state="translated">கடைசி ச்லைடுக்குச் செல்லுங்கள்</target>
       </trans-unit>
       <trans-unit id="splide.slideX" xml:space="preserve">
         <source>Go to slide %s</source>
+        <target state="translated">ச்லைடு %s க்குச் செல்லுங்கள்</target>
       </trans-unit>
       <trans-unit id="splide.pageX" xml:space="preserve">
         <source>Go to page %s</source>
+        <target state="translated">பக்கம் %s க்குச் செல்லவும்</target>
       </trans-unit>
       <trans-unit id="splide.play" xml:space="preserve">
         <source>Start autoplay</source>
+        <target state="translated">ஆட்டோபிளேவைத் தொடங்கவும்</target>
       </trans-unit>
       <trans-unit id="splide.pause" xml:space="preserve">
         <source>Pause autoplay</source>
+        <target state="translated">இடைநிறுத்தப்பட்ட ஆட்டோபிளே</target>
       </trans-unit>
       <trans-unit id="splide.carousel" xml:space="preserve">
         <source>carousel</source>
+        <target state="translated">கொணர்வி</target>
       </trans-unit>
       <trans-unit id="splide.select" xml:space="preserve">
         <source>Select a slide to show</source>
+        <target state="translated">காண்பிக்க ஒரு ச்லைடைத் தேர்ந்தெடுக்கவும்</target>
       </trans-unit>
       <trans-unit id="splide.slide" xml:space="preserve">
         <source>slide</source>
+        <target state="translated">ச்லைடு</target>
       </trans-unit>
       <trans-unit id="splide.slideLabel" xml:space="preserve">
         <source>%s of %s</source>
+        <target state="translated">%s %s</target>
       </trans-unit>
       <trans-unit id="splide.playVideo" xml:space="preserve">
         <source>Play Video</source>
+        <target state="translated">வீடியோ விளையாடுங்கள்</target>
       </trans-unit>
     </body>
   </file>
