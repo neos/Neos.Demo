@@ -5,6 +5,12 @@
 			<trans-unit id="ui.label" xml:space="preserve">
 				<source>Two column content</source>
 			</trans-unit>
+			<trans-unit id="childNodes.column0" xml:space="preserve">
+				<source>Left column</source>
+			</trans-unit>
+			<trans-unit id="childNodes.column1" xml:space="preserve">
+				<source>Right column</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

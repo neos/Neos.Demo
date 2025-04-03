@@ -9,8 +9,8 @@
     position: 10
   childNodes:
     column0:
+      label: i18n
       type: 'Neos.Demo:Collection.Content.Column'
-      label: 'Left column'
     column1:
+      label: i18n
       type: 'Neos.Demo:Collection.Content.Column'
-      label: 'Right column'
