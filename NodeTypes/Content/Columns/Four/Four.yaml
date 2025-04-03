@@ -9,10 +9,14 @@
     position: 30
   childNodes:
     column0:
+      label: 'Left column'
       type: 'Neos.Demo:Collection.Content.Column'
     column1:
+      label: 'Center left column'
       type: 'Neos.Demo:Collection.Content.Column'
     column2:
+      label: 'Center right column'
       type: 'Neos.Demo:Collection.Content.Column'
     column3:
+      label: 'Right column'
       type: 'Neos.Demo:Collection.Content.Column'
