@@ -1,0 +1,30 @@
+/**
+ * BlogCategory rendering for the Neos.Demo website
+ */
+prototype(Neos.Demo:Document.BlogCategory) < prototype(Neos.Demo:Document.Page) {
+    # content is overwritten to render the intro section first
+    content >
+    content = Neos.Fusion:Join {
+        intro = Neos.Demo:Presentation.BlogIntro {
+            title = Neos.Neos:Editable {
+                property = 'title'
+                block = false
+            }
+            abstract = Neos.Neos:Editable {
+                property = 'abstract'
+                block = false
+            }
+            imageUri = Neos.Neos:ImageUri {
+                asset = ${q(node).property('image')}
+                width = 1248
+                height = 702
+            }
+        }
+        intro.@process.contentElementWrapping = Neos.Neos:ContentElementWrapping
+
+        main = Neos.Neos:ContentCollection {
+            nodePath = 'main'
+            @process.convertUris = Neos.Neos:ConvertUris
+        }
+    }
+}
