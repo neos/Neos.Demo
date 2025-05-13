@@ -45,8 +45,9 @@ prototype(Neos.Demo:Document.BlogPosting) < prototype(Neos.Demo:Document.Page) {
                 width = 1248
                 height = 702
             }
-            author = ${q(node).property('authorName')}
-            date = ${q(node).property('datePublished')}
+            metadata = afx`
+                {Date.format(q(node).property('datePublished'), 'd.m.Y')} - {q(node).property('authorName')}
+            `
         }
         intro.@process.contentElementWrapping = Neos.Neos:ContentElementWrapping
 

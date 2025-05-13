@@ -7,23 +7,23 @@ prototype(Neos.Demo:Presentation.BlogIntro) < prototype(Neos.Fusion:Component) {
             title = 'Some blog article'
             abstract = 'Some quick example text for an abstract.'
             imageUri = ''
-            author = 'Neos Team'
-            date = ${Date.now()}
+            metadata = afx`
+                {Date.format('now', 'd.m.Y')} - Neos Team
+            `
         }
     }
 
     title = null
     abstract = null
     imageUri = null
-    author = null
-    date = null
+    metadata = null
 
     renderer = afx`
         <div class="flex flex-wrap justify-center">
             <div class="text-center lg:w-8/12">
                 <Neos.Demo:Presentation.Headline tagName="h1" tagStyle="h1">{props.title}</Neos.Demo:Presentation.Headline>
                 <p>{props.abstract}</p>
-                <p>{Date.format(props.date, 'd.m.Y')} - {props.author}</p>
+                <p @if={props.metadata}>{props.metadata}</p>
             </div>
         </div>
         <div @if={props.imageUri}
