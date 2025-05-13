@@ -36,6 +36,7 @@
         inspector:
           group: default
     datePublished:
+      scope: nodeAggregate
       type: DateTime
       ui:
         label: i18n
