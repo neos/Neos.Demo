@@ -2,7 +2,7 @@
  * BlogCategory rendering for the Neos.Demo website
  */
 prototype(Neos.Demo:Document.BlogCategory) < prototype(Neos.Demo:Document.Page) {
-    # content is overwritten to render the intro section first
+
     content >
     content = Neos.Fusion:Join {
         intro = Neos.Demo:Presentation.BlogIntro {
@@ -21,6 +21,41 @@ prototype(Neos.Demo:Document.BlogCategory) < prototype(Neos.Demo:Document.Page) 
             }
         }
         intro.@process.contentElementWrapping = Neos.Neos:ContentElementWrapping
+
+        cards = Neos.Demo:Presentation.Cards.Container {
+            content = Neos.Fusion:Loop {
+                items = ${q(documentNode).backReferenceNodes('categories')}
+                items.@process.sortBy = ${value.sort("datePublished", "DESC")}
+
+                itemName = 'blogPosting'
+
+                itemRenderer = Neos.Demo:Presentation.Cards.Card {
+                    imageUri = Neos.Neos:ImageUri {
+                        asset = ${q(blogPosting).property('image')}
+                        maximumWidth = 400
+                        maximumHeight = 225
+                    }
+                    date = ${q(blogPosting).property('datePublished')}
+                    authorName = ${q(blogPosting).property('authorName')}
+                    title = ${q(blogPosting).property('title')}
+                    content = ${q(blogPosting).property('abstract')}
+                    uri = Neos.Neos:NodeUri {
+                        node = ${blogPosting}
+                    }
+                }
+            }
+
+            @cache {
+                mode = "cached"
+                entryIdentifier {
+                    documentNode = ${Neos.Caching.entryIdentifierForNode(documentNode)}
+                }
+                entryTags {
+                    # invalidate cache entry when a blog posting changes as that might be linked
+                    1 = ${Neos.Caching.nodeTypeTag('Neos.Demo:Document.BlogPosting', documentNode)}
+                }
+            }
+        }
 
         main = Neos.Neos:ContentCollection {
             nodePath = 'main'

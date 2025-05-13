@@ -53,3 +53,17 @@
           group: default
       validation:
         Neos.Neos/Validation/NotEmptyValidator: {}
+  references:
+    categories:
+      constraints:
+        nodeTypes:
+          '*': false
+          'Neos.Demo:Document.BlogCategory': true
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        showInCreationDialog: true
+        inspector:
+          group: default
+          editorOptions:
+            nodeTypes: ['Neos.Demo:Document.BlogCategory']

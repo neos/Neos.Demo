@@ -45,9 +45,18 @@ prototype(Neos.Demo:Document.BlogPosting) < prototype(Neos.Demo:Document.Page) {
                 width = 1248
                 height = 702
             }
-            metadata = afx`
-                {Date.format(q(node).property('datePublished'), 'd.m.Y')} - {q(node).property('authorName')}
-            `
+            metadata = Neos.Fusion:Join {
+                @glue = ' - '
+                date = ${Date.format(q(node).property('datePublished'), 'd.m.Y')}
+                author = ${q(node).property('authorName')}
+                category = Neos.Fusion:Loop {
+                    @context.categories = ${q(node).referenceNodes('categories').get()}
+                    @if.has = ${categories != []}
+                    @glue = ', '
+                    items = ${categories}
+                    itemRenderer = ${q(item).property('title')}
+                }
+            }
         }
         intro.@process.contentElementWrapping = Neos.Neos:ContentElementWrapping
 

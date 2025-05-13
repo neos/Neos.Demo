@@ -6,6 +6,10 @@
         <source>Image</source>
         <target state="translated">Bild</target>
       </trans-unit>
+      <trans-unit id="references.categories" xml:space="preserve">
+        <source>Categories</source>
+            <target state="translated">Kategorien</target>
+      </trans-unit>
       <trans-unit id="ui.label" xml:space="preserve">
         <source>Blog Post</source>
         <target state="translated">Blog-Beitrag</target>
