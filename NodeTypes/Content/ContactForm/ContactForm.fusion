@@ -2,13 +2,14 @@
 # "ContactForm" element
 #
 prototype(Neos.Demo:Content.ContactForm) < prototype(Neos.Neos:ContentComponent) {
-    attributes {
-        id = ${'form-' + node.identifier}
-        action = ${'#' + this.id}
-    }
-
     renderer = Neos.Fusion.Form:Runtime.RuntimeForm {
+        attributes {
+            id = ${'form-' + node.aggregateId}
+            action = ${'#' + this.id}
+        }
+
         namespace = 'contact'
+
         process {
             content = afx`
                 <fieldset class="space-y-6 mb-8">
