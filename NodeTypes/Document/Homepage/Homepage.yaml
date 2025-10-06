@@ -5,6 +5,7 @@
 'Neos.Demo:Document.Homepage':
   final: true
   superTypes:
+    'Neos.Neos:Site': true
     'Neos.Demo:Document.LandingPage': true
     'Neos.Demo:Constraint.Document.SubPage': false
   ui:
