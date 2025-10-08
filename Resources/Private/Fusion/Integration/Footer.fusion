@@ -28,7 +28,7 @@ prototype(Neos.Demo:Integration.Footer.Renderer) < prototype(Neos.Demo:Presentat
         mode = 'cached'
         entryIdentifier {
             static = 'footer'
-            site = ${site}
+            site = ${Neos.Caching.entryIdentifierForNode(site)}
         }
         entryTags {
             1 = ${Neos.Caching.nodeTypeTag('Neos.Neos:Document', site)}

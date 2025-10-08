@@ -6,7 +6,7 @@ prototype(Neos.Demo:Integration.Breadcrumb) < prototype(Neos.Fusion:Component) {
     @cache {
         mode = 'cached'
         entryIdentifier {
-            documentNode = ${documentNode}
+            documentNode = ${Neos.Caching.entryIdentifierForNode(documentNode)}
         }
         entryTags {
             1 = ${Neos.Caching.nodeTypeTag('Neos.Neos:Document', documentNode)}
