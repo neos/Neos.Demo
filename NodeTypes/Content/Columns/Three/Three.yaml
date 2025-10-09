@@ -10,7 +10,10 @@
   childNodes:
     column0:
       type: 'Neos.Demo:Collection.Content.Column'
+      label: 'Left column'
     column1:
       type: 'Neos.Demo:Collection.Content.Column'
+      label: 'Center column'
     column2:
       type: 'Neos.Demo:Collection.Content.Column'
+      label: 'Right column'
