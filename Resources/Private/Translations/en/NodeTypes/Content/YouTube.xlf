@@ -6,9 +6,6 @@
             <trans-unit id="groups.video" xml:space="preserve">
                 <source>Video</source>
             </trans-unit>
-            <trans-unit id="properties.video" xml:space="preserve">
-                <source>Youtube video ID</source>
-            </trans-unit>
             <trans-unit id="error.no.videoid" xml:space="preserve">
                 <source>Please specify a video ID</source>
             </trans-unit>
