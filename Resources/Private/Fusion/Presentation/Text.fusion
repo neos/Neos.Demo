@@ -13,5 +13,9 @@ prototype(Neos.Demo:Presentation.Text) < prototype(Neos.Fusion:Component) {
 
     @if.hasContent = ${this.content}
 
-    renderer = ${props.content}
+    renderer = afx`
+        <div class="prose">
+            {props.content}
+        </div>
+    `
 }
