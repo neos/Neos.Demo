@@ -19,7 +19,6 @@ Neos:
                     editorOptions:
                       placeholder: 'Neos.Demo:NodeTypes.Placeholder:headline'
                       autoparagraph: false
-                      hyphens: true
                       formatting:
                         strong: false
                         em: false
@@ -52,7 +51,6 @@ Neos:
                     editorOptions:
                       placeholder: 'Neos.Demo:NodeTypes.Placeholder:subheadline'
                       autoparagraph: false
-                      hyphens: true
                       formatting:
                         strong: false
                         em: false
@@ -85,7 +83,6 @@ Neos:
                     editorOptions:
                       placeholder: 'Neos.Demo:NodeTypes.Placeholder:lead'
                       autoparagraph: false
-                      hyphens: true
                       formatting:
                         strong: true
                         em: true
@@ -118,7 +115,6 @@ Neos:
                     editorOptions:
                       placeholder: 'Neos.Demo:NodeTypes.Placeholder:pure'
                       autoparagraph: false
-                      hyphens: true
                       formatting:
                         strong: true
                         em: true
@@ -151,7 +147,6 @@ Neos:
                     editorOptions:
                       placeholder: 'Neos.Demo:NodeTypes.Placeholder:label'
                       autoparagraph: false
-                      hyphens: true
                       formatting:
                         strong: false
                         em: false
@@ -184,7 +179,6 @@ Neos:
                     editorOptions:
                       placeholder: 'Neos.Demo:NodeTypes.Placeholder:link'
                       autoparagraph: false
-                      hyphens: true
                       formatting:
                         strong: true
                         em: true
@@ -217,7 +211,6 @@ Neos:
                     editorOptions:
                       placeholder: 'Neos.Demo:NodeTypes.Placeholder:text'
                       autoparagraph: true
-                      hyphens: true
                       formatting:
                         strong: true
                         em: true
