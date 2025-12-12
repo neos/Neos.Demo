@@ -11,7 +11,7 @@ prototype(Neos.Demo:Integration.Footer) < prototype(Neos.Fusion:Renderer) {
 
 prototype(Neos.Demo:Integration.Footer.Renderer) < prototype(Neos.Demo:Presentation.Footer) {
     menuItems = Neos.Neos:MenuItems {
-        itemCollection = ${q(site).property('metaNavigationItems') || []}
+        itemCollection = ${q(site).referenceNodes('metaNavigationItems').get() || []}
     }
     content = Neos.Neos:ContentCollection {
         @context.node = ${q(site).children('footer').get(0)}

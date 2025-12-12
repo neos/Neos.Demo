@@ -60,10 +60,12 @@ prototype(Neos.Demo:Content.ContactForm) < prototype(Neos.Neos:ContentComponent)
             }
 
             redirect {
-                @if.has = ${q(node).property('redirect')}
+                redirectNode = ${q(node).referenceNodes('redirect').get(0)}
+                @context.redirectNode = ${this.redirectNode}
+                @if.has = ${this.redirectNode}
                 type = 'Neos.Fusion.Form.Runtime:Redirect'
                 options.uri = Neos.Neos:NodeUri {
-                    node = ${q(node).property('redirect')}
+                    node = ${redirectNode}
                 }
             }
         }

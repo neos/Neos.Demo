@@ -3,8 +3,7 @@
 #
 prototype(Neos.Demo:Content.BlogPostingList) < prototype(Neos.Neos:ContentComponent) {
 
-    blogArticles.@if.has = ${q(node).property('blogs')}
-    blogArticles = ${q(q(node).property('blogs')).children('[instanceof Neos.Demo:Document.BlogPosting]')}
+    blogArticles = ${q(node).referenceNodes('blogs').first().children('[instanceof Neos.Demo:Document.BlogPosting]')}
     blogArticles.@process.sortBy = ${value.sort("datePublished", "DESC")}
     blogArticles.@process.limit = ${value.slice(0, q(node).property('limit'))}
 
