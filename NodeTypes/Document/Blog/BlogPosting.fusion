@@ -19,6 +19,7 @@ prototype(Neos.Demo:Document.BlogPosting) < prototype(Neos.Demo:Document.Page) {
             image = Neos.Seo:StructuredData.Object {
                 type = "ImageObject"
                 attributes.url = Neos.Neos:ImageUri {
+                    @if.hasAsset = ${this.asset}
                     asset = ${q(node).property('image')}
                     maximumWidth = 400
                     maximumHeight = 225
@@ -41,6 +42,7 @@ prototype(Neos.Demo:Document.BlogPosting) < prototype(Neos.Demo:Document.Page) {
                 block = false
             }
             imageUri = Neos.Neos:ImageUri {
+                @if.hasAsset = ${this.asset}
                 asset = ${q(node).property('image')}
                 width = 1248
                 height = 702

@@ -8,10 +8,10 @@ prototype(Neos.Demo:Document.LandingPage) < prototype(Neos.Fusion:Component) {
     }
 
     heroImage = Neos.Neos:ImageUri {
+        @if.hasAsset = ${this.asset}
         asset = ${q(node).property('image')}
         maximumWidth = 2560
         maximumHeight = 1280
-        @if.image = ${q(node).property('image')}
     }
 
     header = Neos.Demo:Integration.Header

@@ -13,6 +13,7 @@ prototype(Neos.Demo:Content.BlogPostingList) < prototype(Neos.Neos:ContentCompon
             itemName = "blogPosting"
             itemRenderer = Neos.Demo:Presentation.Cards.Card {
                 imageUri = Neos.Neos:ImageUri {
+                    @if.hasAsset = ${this.asset}
                     asset = ${q(blogPosting).property('image')}
                     maximumWidth = 400
                     maximumHeight = 225

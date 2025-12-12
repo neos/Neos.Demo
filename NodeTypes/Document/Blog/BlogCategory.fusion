@@ -15,6 +15,7 @@ prototype(Neos.Demo:Document.BlogCategory) < prototype(Neos.Demo:Document.Page) 
                 block = false
             }
             imageUri = Neos.Neos:ImageUri {
+                @if.hasAsset = ${this.asset}
                 asset = ${q(node).property('image')}
                 width = 1248
                 height = 702
@@ -31,6 +32,7 @@ prototype(Neos.Demo:Document.BlogCategory) < prototype(Neos.Demo:Document.Page) 
 
                 itemRenderer = Neos.Demo:Presentation.Cards.Card {
                     imageUri = Neos.Neos:ImageUri {
+                        @if.hasAsset = ${this.asset}
                         asset = ${q(blogPosting).property('image')}
                         maximumWidth = 400
                         maximumHeight = 225
