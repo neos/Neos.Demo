@@ -25,9 +25,3 @@ Neos:
           position: end 200
           label: 'Neos.Demo:Main:nodeTypes.groups.forms'
           collapsed: false
-
-    Ui:
-      resources:
-        javascript:
-          'Neos.Demo:CodeTag':
-            resource: resource://Neos.Demo/Public/Scripts/CodeTagPlugin/Plugin.js
