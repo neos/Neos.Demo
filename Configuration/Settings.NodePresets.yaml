@@ -219,26 +219,33 @@ Neos:
                       autoparagraph: true
                       hyphens: true
                       formatting:
-                        splitAdd: true
                         strong: true
                         em: true
-                        underline: false
+                        underline: true
                         sub: true
                         sup: true
+                        indent: true
                         p: true
                         h1: false
                         h2: true
                         h3: true
                         h4: true
-                        h5: false
-                        pre: false
+                        h5: true
+                        blockquote: true
+                        pre: true
                         table: true
                         a: true
                         ul: true
                         ol: true
-                        left: false
-                        right: false
-                        center: false
-                        justify: false
+                        left: true
+                        right: true
+                        center: true
+                        justify: true
                         removeFormat: true
                         code: true
+                        undo: true
+                        horizontalLine: true
+                        styleDefinitions:
+                          - name: Mark
+                            element: mark
+                            classes: ['mark']
