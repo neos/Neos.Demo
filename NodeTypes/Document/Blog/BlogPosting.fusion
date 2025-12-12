@@ -54,12 +54,8 @@ prototype(Neos.Demo:Document.BlogPosting) < prototype(Neos.Demo:Document.Page) {
                     @if.has = ${categories != []}
                     @glue = ', '
                     items = ${categories}
-                    itemRenderer = Neos.Fusion:Tag {
-                        tagName = 'a'
-                        attributes.href = Neos.Neos:NodeUri {
-                            node = ${item}
-                        }
-                        content = ${q(item).property('title')}
+                    itemRenderer = Neos.Neos:NodeLink {
+                        node = ${item}
                     }
                 }
             }
