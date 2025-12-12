@@ -8,11 +8,11 @@ prototype(Neos.Demo:Presentation.Slider) < prototype(Neos.Fusion:Component) {
         `
     }
 
-    //todo rework this component, to verify what is used and/or needed
     tagName = 'section'
     sliderIsDecoration = false
     class = null
     slideItemClass = 'flex flex-col items-center justify-center'
+    content = null
 
     options = Neos.Fusion:DataStructure {
         # The gap between slides. The CSS format is acceptable, such as 1em.
@@ -36,10 +36,12 @@ prototype(Neos.Demo:Presentation.Slider) < prototype(Neos.Fusion:Component) {
         }
     }
 
-    renderer.@if.hasItemsOrContent = ${private.hasItems || props.content}
-
     renderer = afx`
-        <Neos.Fusion:Tag tagName={props.tagName} attributes={private.attributes}>
+        <Neos.Fusion:Tag
+            tagName={props.tagName}
+            attributes={private.attributes}
+            @if={private.hasItems || props.content}
+        >
             <div class="splide__track">
                 <ul class="splide__list" @if={private.hasItems && !props.content}>
                     <Neos.Fusion:Loop items={props.items}>
