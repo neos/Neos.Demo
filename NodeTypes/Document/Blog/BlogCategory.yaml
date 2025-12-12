@@ -1,0 +1,32 @@
+'Neos.Demo:Document.BlogCategory':
+  final: true
+  superTypes:
+    'Neos.Demo:Document.Page': true
+    'Neos.Demo:Constraint.Document.SubPage': false
+  ui:
+    label: i18n
+    icon: 'tag'
+    position: 310
+    group: special
+    help:
+      message: i18n
+  constraints:
+    nodeTypes:
+      # No documents below here
+      'Neos.Demo:Constraint.Document.SubPage': false
+  properties:
+    # Hide title field in inspector as this will be inline editable on this page.
+    title:
+      ui:
+        inspector:
+          group: ~
+    abstract:
+      options:
+        preset: 'neosdemo.text.lead'
+    image:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: default
