@@ -1,5 +1,5 @@
 ##
-# A "BlogPostingList" content element that renders "Image" child nodes into a JavaScript based slideshow
+# A "BlogPostingList" content element that renders blog posts teasers of the selected blogs.
 #
 'Neos.Demo:Content.BlogPostingList':
   superTypes:
