@@ -4,42 +4,55 @@
     <body>
       <trans-unit id="editPreviewModes.tabletLandscape" xml:space="preserve">
         <source>Tablet (Landscape)</source>
+        <target state="translated">Tablet (Paisagem)</target>
       </trans-unit>
       <trans-unit id="editPreviewModes.tabletPortrait" xml:space="preserve">
         <source>Tablet (Portrait)</source>
+        <target state="translated">Tablet (Retrato)</target>
       </trans-unit>
       <trans-unit id="editPreviewModes.mobile" xml:space="preserve">
         <source>Mobile</source>
+        <target state="translated">Móvel</target>
       </trans-unit>
       <trans-unit id="contentDimensions.language" xml:space="preserve">
         <source>Language</source>
+        <target state="translated">Idioma</target>
       </trans-unit>
       <trans-unit id="navigation.open" xml:space="preserve">
         <source>Open menu</source>
+        <target state="translated">Abrir Menu</target>
       </trans-unit>
       <trans-unit id="navigation.close" xml:space="preserve">
         <source>Close menu</source>
+        <target state="translated">Fechar Menu</target>
       </trans-unit>
       <trans-unit id="nodeTypes.groups.forms" xml:space="preserve">
         <source>Forms</source>
+        <target state="translated">Formulários</target>
       </trans-unit>
       <trans-unit id="nodeTypes.groups.special" xml:space="preserve">
         <source>Special</source>
+        <target state="translated">Especial</target>
       </trans-unit>
       <trans-unit id="splide.prev" xml:space="preserve">
         <source>Previous slide</source>
+        <target state="translated">Slide anterior</target>
       </trans-unit>
       <trans-unit id="splide.next" xml:space="preserve">
         <source>Next slide</source>
+        <target state="translated">Próximo slide</target>
       </trans-unit>
       <trans-unit id="splide.first" xml:space="preserve">
         <source>Go to first slide</source>
+        <target state="translated">Ir para o primeiro slide</target>
       </trans-unit>
       <trans-unit id="splide.last" xml:space="preserve">
         <source>Go to last slide</source>
+        <target state="translated">Ir para o último slide</target>
       </trans-unit>
       <trans-unit id="splide.slideX" xml:space="preserve">
         <source>Go to slide %s</source>
+        <target state="translated">Ir para slide %s</target>
       </trans-unit>
       <trans-unit id="splide.pageX" xml:space="preserve">
         <source>Go to page %s</source>

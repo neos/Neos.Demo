@@ -4,66 +4,87 @@
     <body>
       <trans-unit id="editPreviewModes.tabletLandscape" xml:space="preserve">
         <source>Tablet (Landscape)</source>
+        <target state="translated">Tablet (Landschapsformaat)</target>
       </trans-unit>
       <trans-unit id="editPreviewModes.tabletPortrait" xml:space="preserve">
         <source>Tablet (Portrait)</source>
+        <target state="translated">Tablet (Portretformaat)</target>
       </trans-unit>
       <trans-unit id="editPreviewModes.mobile" xml:space="preserve">
         <source>Mobile</source>
+        <target state="translated">Mobiel</target>
       </trans-unit>
       <trans-unit id="contentDimensions.language" xml:space="preserve">
         <source>Language</source>
+        <target state="translated">Taal</target>
       </trans-unit>
       <trans-unit id="navigation.open" xml:space="preserve">
         <source>Open menu</source>
+        <target state="translated">Open menu</target>
       </trans-unit>
       <trans-unit id="navigation.close" xml:space="preserve">
         <source>Close menu</source>
+        <target state="translated">Sluit menu</target>
       </trans-unit>
       <trans-unit id="nodeTypes.groups.forms" xml:space="preserve">
         <source>Forms</source>
+        <target state="translated">Formulieren</target>
       </trans-unit>
       <trans-unit id="nodeTypes.groups.special" xml:space="preserve">
         <source>Special</source>
+        <target state="translated">Speciaal</target>
       </trans-unit>
       <trans-unit id="splide.prev" xml:space="preserve">
         <source>Previous slide</source>
+        <target state="translated">Vorige dia</target>
       </trans-unit>
       <trans-unit id="splide.next" xml:space="preserve">
         <source>Next slide</source>
+        <target state="translated">Volgende dia</target>
       </trans-unit>
       <trans-unit id="splide.first" xml:space="preserve">
         <source>Go to first slide</source>
+        <target state="translated">Ga naar erste dia</target>
       </trans-unit>
       <trans-unit id="splide.last" xml:space="preserve">
         <source>Go to last slide</source>
+        <target state="translated">Ga naar laatste dia</target>
       </trans-unit>
       <trans-unit id="splide.slideX" xml:space="preserve">
         <source>Go to slide %s</source>
+        <target state="translated">Ga naar dia %s</target>
       </trans-unit>
       <trans-unit id="splide.pageX" xml:space="preserve">
         <source>Go to page %s</source>
+        <target state="translated">Ga naar pagina %s</target>
       </trans-unit>
       <trans-unit id="splide.play" xml:space="preserve">
         <source>Start autoplay</source>
+        <target state="translated">Start automatisch afspelen</target>
       </trans-unit>
       <trans-unit id="splide.pause" xml:space="preserve">
         <source>Pause autoplay</source>
+        <target state="translated">Pauzeer automatisch afspelen</target>
       </trans-unit>
       <trans-unit id="splide.carousel" xml:space="preserve">
         <source>carousel</source>
+        <target state="translated">carousel</target>
       </trans-unit>
       <trans-unit id="splide.select" xml:space="preserve">
         <source>Select a slide to show</source>
+        <target state="translated">Selecteer een dia om te tonen</target>
       </trans-unit>
       <trans-unit id="splide.slide" xml:space="preserve">
         <source>slide</source>
+        <target state="translated">dia</target>
       </trans-unit>
       <trans-unit id="splide.slideLabel" xml:space="preserve">
         <source>%s of %s</source>
+        <target state="translated">%s van %s</target>
       </trans-unit>
       <trans-unit id="splide.playVideo" xml:space="preserve">
         <source>Play Video</source>
+        <target state="translated">Speel video af</target>
       </trans-unit>
     </body>
   </file>

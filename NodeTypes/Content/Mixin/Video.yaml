@@ -1,0 +1,30 @@
+##
+# A video mixin which can be added to other nodetypes to provide a property for YouTube videos.
+#
+'Neos.Demo:Mixin.Video':
+  abstract: true
+  ui:
+    inspector:
+      groups:
+        'video':
+          label: i18n
+          icon: film
+  properties:
+    'video':
+      type: string
+      defaultValue: ''
+      ui:
+        label: i18n
+        showInCreationDialog: true
+        reloadIfChanged: true
+        inspector:
+          group: 'video'
+        help:
+          message: |
+            The video identifier is visible in the URL to a youtube video
+
+            Eg. in the URL
+
+            `https://youtu.be/G6D1YI-41ao`
+
+            the video id is `G6D1YI-41ao`.

@@ -3,7 +3,7 @@ import Alpine from 'alpinejs';
 Alpine.data('header', (homeUri) => ({
     mobileMenuOpen: false,
     showShadow: false,
-    desktopView: true,
+    desktopView: false,
     enableCollapse: false,
     isCurrentPage(path) {
         const currentPath = window.location.pathname;

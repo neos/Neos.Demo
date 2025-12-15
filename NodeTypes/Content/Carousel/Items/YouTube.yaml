@@ -2,22 +2,16 @@
 # A "Youtube" carousel element
 #
 'Neos.Demo:Content.CarouselYouTube':
+  final: true
   superTypes:
-    'Neos.Demo:Content.YouTube': true
-    # prevent the item from being in the main cc: https://github.com/neos/Neos.Demo/issues/180
-    'Neos.Demo:Constraint.Content.Main': false
+    'Neos.Neos:Content': true
     'Neos.Demo:Constraint.Content.Carousel': true
     'Neos.NodeTypes.BaseMixins:ImageMixin': true
+    'Neos.Demo:Mixin.Video': true
   ui:
     label: YouTube
     icon: youtube
     position: 50
-    inspector:
-      groups:
-        'video':
-          label: i18n
-          icon: film
-          position: 50
     help:
       message: 'Embeds a YouTube video as content defined by a video ID.'
   properties:
