@@ -211,6 +211,11 @@ Neos:
                     editorOptions:
                       placeholder: 'Neos.Demo:NodeTypes.Placeholder:text'
                       autoparagraph: true
+                      linking:
+                        title: true
+                        relNofollow: true
+                        targetBlank: true
+                        download: true
                       formatting:
                         strong: true
                         em: true
