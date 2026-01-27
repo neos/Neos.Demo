@@ -12,6 +12,7 @@
       </trans-unit>
       <trans-unit id="tabs.site" xml:space="preserve">
         <source>Site configuration</source>
+        <target state="needs-translation" state-qualifier="leveraged-mt">Website-Einstellungen</target>
       </trans-unit>
       <trans-unit id="references.metaNavigationItems" xml:space="preserve">
         <source>Meta navigation items</source>
