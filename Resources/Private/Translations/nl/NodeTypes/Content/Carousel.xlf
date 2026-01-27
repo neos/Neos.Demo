@@ -2,6 +2,8 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file original="Weblate" source-language="en" datatype="plaintext">
     <body>
-      </body>
+      <group id="contentcollection.label" restype="x-gettext-plurals">
+        </group>
+    </body>
   </file>
 </xliff>
