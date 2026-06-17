@@ -16,9 +16,11 @@
       </trans-unit>
       <trans-unit id="navigation.open" xml:space="preserve">
         <source>Open menu</source>
+        <target state="translated">打开菜单</target>
       </trans-unit>
       <trans-unit id="navigation.close" xml:space="preserve">
         <source>Close menu</source>
+        <target state="translated">关闭菜单</target>
       </trans-unit>
       <trans-unit id="nodeTypes.groups.forms" xml:space="preserve">
         <source>Forms</source>
