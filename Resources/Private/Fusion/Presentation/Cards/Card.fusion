@@ -46,7 +46,7 @@ prototype(Neos.Demo:Presentation.Cards.Card) < prototype(Neos.Fusion:Component) 
                     {props.content}
                 </p>
                 <p class="pb-3 italic text-sm" @if={props.authorName}>
-                    {I18n.translate('cards.authorPublishedBy', 'Published by {authorName}', { authorName: props.authorName }, 'Presentation.Cards:cards', 'Neos.Demo')}
+                    {I18n.translate('cards.authorPublishedBy', 'Published by {authorName}', { authorName: props.authorName }, 'Presentation.Cards', 'Neos.Demo')}
                 </p>
                 <a href={props.uri}
                     class="inline-block bg-light px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-md hover:bg-light focus:bg-light active:bg-light">
