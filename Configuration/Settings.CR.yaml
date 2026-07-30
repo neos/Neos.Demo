@@ -14,7 +14,7 @@ Neos:
                   dimensionValueMapping:
                     # dimension value -> URL path segment
                     en_US: en
-                    en_UK: uk
+                    en_GB: uk
                     de: de
 
   ContentRepositoryRegistry:
@@ -28,8 +28,8 @@ Neos:
               'en_US':
                 label: English (US)
                 specializations:
-                  'en_UK':
-                    label: English (UK)
+                  'en_GB':
+                    label: English (GB)
 
               'de':
                 label: Deutsch
