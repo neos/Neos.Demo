@@ -13,6 +13,7 @@
         "neos/nodetypes-contentreferences": "~9.2.0",
         "neos/nodetypes-html": "~9.2.0",
         "neos/nodetypes-navigation": "~9.2.0",
+        "neos/timeable-node-visibility": "~9.2.0",
         "neos/seo": "~4.1"
     },
     "suggest": {
