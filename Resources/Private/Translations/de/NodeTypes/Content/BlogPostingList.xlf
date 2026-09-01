@@ -12,9 +12,11 @@
       </trans-unit>
       <trans-unit id="properties.blogs" xml:space="preserve">
         <source>Blogs</source>
+        <target state="translated">Blogs</target>
       </trans-unit>
       <trans-unit id="properties.limit" xml:space="preserve">
         <source>Limit</source>
+        <target state="translated">Begrenzung</target>
       </trans-unit>
     </body>
   </file>

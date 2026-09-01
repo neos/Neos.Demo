@@ -74,6 +74,18 @@
         <source>Play Video</source>
         <target state="translated">Video abspielen</target>
       </trans-unit>
+      <trans-unit id="nodeTypes.groups.special" xml:space="preserve">
+        <source>Special</source>
+        <target state="translated">Spezielles</target>
+      </trans-unit>
+      <trans-unit id="splide.carousel" xml:space="preserve">
+        <source>carousel</source>
+        <target state="translated">Karussell</target>
+      </trans-unit>
+      <trans-unit id="splide.slide" xml:space="preserve">
+        <source>slide</source>
+        <target state="translated">Folie</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -10,6 +10,18 @@
         <source>Blog Post</source>
         <target state="translated">Blog-Beitrag</target>
       </trans-unit>
+      <trans-unit id="properties.datePublished" xml:space="preserve">
+        <source>Publishing date</source>
+        <target state="translated">Veröffentlichungsdatum</target>
+      </trans-unit>
+      <trans-unit id="properties.authorName" xml:space="preserve">
+        <source>Author name</source>
+        <target state="translated">Autorenname</target>
+      </trans-unit>
+      <trans-unit id="ui.help.message" xml:space="preserve">
+        <source>Create a new blog post and share your thoughts with the world.</source>
+        <target state="translated">Lege einen neuen Blog-Post an und teile deine Gedanken mit der Welt.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
