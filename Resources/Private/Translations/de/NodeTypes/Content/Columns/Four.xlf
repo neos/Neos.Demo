@@ -6,6 +6,22 @@
         <source>Four column content</source>
         <target state="translated">Vierspaltiger Inhalt</target>
       </trans-unit>
+      <trans-unit id="childNodes.column0" xml:space="preserve">
+        <source>Left column</source>
+        <target state="translated">Linke Spalte</target>
+      </trans-unit>
+      <trans-unit id="childNodes.column1" xml:space="preserve">
+        <source>Middle left column</source>
+        <target state="translated">Mittlere Spalte links</target>
+      </trans-unit>
+      <trans-unit id="childNodes.column2" xml:space="preserve">
+        <source>Middle right column</source>
+        <target state="translated">Mittlere Spalte rechts</target>
+      </trans-unit>
+      <trans-unit id="childNodes.column3" xml:space="preserve">
+        <source>Right column</source>
+        <target state="translated">Rechte Spalte</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

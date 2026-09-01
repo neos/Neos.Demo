@@ -2,6 +2,34 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file original="" product-name="Neos.Demo" source-language="en" datatype="plaintext" target-language="lv">
     <body>
-      </body>
+      <trans-unit id="editPreviewModes.mobile" xml:space="preserve">
+        <source>Mobile</source>
+        <target state="translated">Mobilais</target>
+      </trans-unit>
+      <trans-unit id="contentDimensions.language" xml:space="preserve">
+        <source>Language</source>
+        <target state="translated">Valoda</target>
+      </trans-unit>
+      <trans-unit id="nodeTypes.groups.special" xml:space="preserve">
+        <source>Special</source>
+        <target state="translated">Speciālie</target>
+      </trans-unit>
+      <trans-unit id="splide.prev" xml:space="preserve">
+        <source>Previous slide</source>
+        <target state="translated">Iepriekšējais slaids</target>
+      </trans-unit>
+      <trans-unit id="splide.next" xml:space="preserve">
+        <source>Next slide</source>
+        <target state="translated">Nākošais slaids</target>
+      </trans-unit>
+      <trans-unit id="splide.carousel" xml:space="preserve">
+        <source>carousel</source>
+        <target state="translated">Karuselis</target>
+      </trans-unit>
+      <trans-unit id="splide.slideLabel" xml:space="preserve">
+        <source>%s of %s</source>
+        <target state="translated">%s no %s</target>
+      </trans-unit>
+    </body>
   </file>
 </xliff>

@@ -16,6 +16,7 @@
       </trans-unit>
       <trans-unit id="references.metaNavigationItems" xml:space="preserve">
         <source>Meta navigation items</source>
+        <target state="translated">Einträge in Meta-Navigation</target>
       </trans-unit>
     </body>
   </file>
