@@ -1,0 +1,20 @@
+##
+# "OneColumn" element
+#
+prototype(Neos.Demo:Content.Columns.One) < prototype(Neos.Neos:ContentComponent) {
+    column0 = Neos.Neos:ContentCollectionRenderer
+
+    renderer = Neos.Demo:Presentation.Columns.One {
+        content = ${props.column0}
+    }
+}
+
+prototype(Neos.Demo:Content.Columns.One.RawContentMode) < prototype(Neos.Neos:ContentComponent) {
+    renderer = afx`
+        <div style="display:grid; grid-template-columns: 1fr 1fr; grid-gap: 16px;">
+            <Neos.Fusion:Loop items={q(node).children()}>
+                <Neos.Neos:RawContent.Node @context.node={item} />
+            </Neos.Fusion:Loop>
+        </div>
+    `
+}
