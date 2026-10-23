@@ -11,10 +11,13 @@ prototype(Neos.Demo:Presentation.Columns) < prototype(Neos.Fusion:Component) {
 
     content = null
 
+    attributes = Neos.Fusion:DataStructure
+
     @if.hasContent = ${this.content}
 
     renderer = Neos.Fusion:Tag {
         tagName = ${props.tagName}
+        attributes.@apply.custom = ${props.attributes}
         attributes.class = Neos.Fusion:DataStructure {
             class = ${props.class}
             base = 'grid grid-cols-1 gap-8 [&>*>:where(p,ul,ol,figure):first-child]:mt-0 [&>*>:where(p,ul,ol,figure):last-child]:mb-0'
