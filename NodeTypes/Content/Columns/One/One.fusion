@@ -1,0 +1,30 @@
+##
+# "OneColumn" element
+#
+prototype(Neos.Demo:Content.Columns.One) < prototype(Neos.Neos:ContentComponent) {
+    column0 = Neos.Neos:ContentCollectionRenderer
+
+    renderer = Neos.Demo:Presentation.Columns.One {
+        # The additional div with the insertion anchor shows how to use a content element as collection with a more complex markup.
+        # Not including the insertion anchor could lead the ui to insert new content in the outer most div instead of where the content should be inserted.
+        content = afx`
+            <div
+                class="neos-contentcollection"
+                data-__neos-insertion-anchor={true}
+                data-__neos-insertion-anchor.@if.onlyRenderInBackend={renderingMode.isEdit}
+            >
+                {props.column0}
+            </div>
+        `
+    }
+}
+
+prototype(Neos.Demo:Content.Columns.One.RawContentMode) < prototype(Neos.Neos:ContentComponent) {
+    renderer = afx`
+        <div style="display:grid; grid-template-columns: 1fr 1fr; grid-gap: 16px;">
+            <Neos.Fusion:Loop items={q(node).children()}>
+                <Neos.Neos:RawContent.Node @context.node={item} />
+            </Neos.Fusion:Loop>
+        </div>
+    `
+}
