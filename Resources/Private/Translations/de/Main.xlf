@@ -74,6 +74,18 @@
         <source>Play Video</source>
         <target state="translated">Video abspielen</target>
       </trans-unit>
+      <trans-unit id="nodeTypes.groups.special" xml:space="preserve">
+        <source>Special</source>
+        <target state="needs-translation" state-qualifier="leveraged-mt">Spezielles</target>
+      </trans-unit>
+      <trans-unit id="splide.carousel" xml:space="preserve">
+        <source>carousel</source>
+        <target state="needs-translation" state-qualifier="leveraged-mt">Karussell</target>
+      </trans-unit>
+      <trans-unit id="splide.slide" xml:space="preserve">
+        <source>slide</source>
+        <target state="needs-translation" state-qualifier="leveraged-mt">Folie</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
